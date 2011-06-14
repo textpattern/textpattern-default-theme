@@ -5,7 +5,7 @@ This project is designed as a replacement for the default theme that comes as st
 #### Features
 
 1. The code is commented throughout with helpful information to help you learn some of the techniques and tags available within Textpattern.
-2. Current best practices gathered from all over the web - in particular the [HTML5 Boilerplate](http://example.net/).
+2. Current best practices gathered from all over the web - in particular the [HTML5 Boilerplate](http://html5boilerplate.com/).
 3. Responsive CSS adapts to various device screen sizes.
 4. No images used at all.
 5. Tested on a wide range of devices, browsers and operating systems.
