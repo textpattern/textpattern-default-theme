@@ -33,7 +33,7 @@
 
 <!-- all JavaScript should go at the bottom, except for Modernizr which enables HTML5 elements & feature detects.
     you should replace this with your own build containing only the tests you actually need via: www.modernizr.com/download/ -->
-    <script src="/js/libs/modernizr-2.0.min.js"></script>
+    <script src="/js/libs/modernizr.js"></script>
 
 </head>
 
@@ -90,6 +90,11 @@
     </footer>
 
 <!-- javascript at the bottom for fast page loading -->
+    <!-- jQuery - load from Google CDN first, load locally if CDN is unavailable -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js//libs/jquery.js"><\/script>')</script>
+
+    <!-- add your own JavaScript here -->
 
 
 <!-- Google Analytics (amend the separate TXP form with your own unique ID) -->
