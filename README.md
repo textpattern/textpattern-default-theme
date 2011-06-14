@@ -1,11 +1,11 @@
 # txp-h5bp-theme: a replacement for the Textpattern CMS default theme
 
-This project is designed as a replacement for the default theme that comes as standard with the Textpattern CMS. It is intended as a starting point for new users learning Textpattern for the first time or existing users that want to adapt their current code for modern standards and is not intended as a finished production theme (though can could use it as such if you want to).
+This project is designed as a replacement for the default theme that comes as standard with the Textpattern CMS. It is intended as a starting point for new users learning Textpattern for the first time or existing users that want to adapt their current code for modern standards, and is not intended as a finished production theme (though can could use it as such if you want to).
 
 #### Features
 
 1. The code is commented throughout with helpful information to help you learn some of the techniques and tags available within Textpattern.
-2. Current best practices gathered from all over the web - in particular the [HTML5 Boilderplate](http://example.net/).
+2. Current best practices gathered from all over the web - in particular the [HTML5 Boilerplate](http://example.net/).
 3. Responsive CSS adapts to various device screen sizes.
 4. No images used at all.
 5. Tested on a wide range of devices, browsers and operating systems.
@@ -14,7 +14,7 @@ You can see the latest version of theme running at http://www.philwareham.co.uk/
 
 ## How to use these files
 
-Textpattern differs from many CMS solutions in that it stores the all template files (used to build the final page a browser sees) directly in the mySQL database as 'styles' (the CSS styling), 'pages' (the main page templates) and 'forms' snippets of code and logic that form building blocks within the 'pages'.
+Textpattern differs from many CMS solutions in that it stores the all template files (used to build the final page a browser sees) directly in the database as 'styles' (the CSS styling), 'pages' (the main page templates) and 'forms' snippets of code and logic that form building blocks within the 'pages'.
 
 However, many of us like to use our preferred IDE (integrated development environment) to write code and leverage all the tools those applications provide to make code writing easier. That means you will have to copy/paste from your IDE into the corresponding parts of the Textpattern admin-side which adds a bit of time.
 
@@ -73,7 +73,7 @@ Note that preferred link is via Google's CDN hosted copy of jQuery, with a fallb
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/js//libs/jquery.js"><\/script>')</script>
 
-The advantages of using the CDN version over your own hosted copy is threefold - one, it saves bandwidth on your own server; two, Google's servers are extremely low latency and high bandwidth; three, there is a fair chance an end user will already have a copy of Google's CDN jQuery already cached in their browser if they have been to another site that has also used this method to provide jQuery - that means they will not have to reload it and ultimately makes your site render quicker, bonus points!
+The advantages of using the CDN version over your own hosted copy is threefold - one, it saves bandwidth on your own server; two, Google's servers are extremely low latency and high bandwidth; three, there is a fair chance an end user will already have a copy of Google's CDN jQuery already cached in their browser if they have been to another site that has also used this method to provide jQuery, that means they will not have to reload it and ultimately makes your site render quicker - bonus points!
 
 #### /js/libs/modernizr.js
 
