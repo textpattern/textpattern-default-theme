@@ -18,11 +18,11 @@ Textpattern differs from many CMS solutions in that it stores the all template f
 
 However, many of us like to use our preferred IDE (integrated development environment) to write code and leverage all the tools those applications provide to make code writing easier. That means you will have to copy/paste from your IDE into the corresponding parts of the Textpattern admin-side which adds a bit of time.
 
-With CSS files you could simply use external stylesheet and link in the traditional way (see below). However there is another solution in the form of the ['cnk_versioning' Textpattern plugin](http://forum.textpattern.com/viewtopic.php?id=27516), which effectively moves the 'styles', 'pages' and 'forms' back out of the database and into external directories for easier editing - a good solution when used in combination with an IDE.
+With CSS files you could simply use external stylesheet and link in the traditional way (see below). However there is another solution in the form of the ['cnk_versioning' Textpattern plugin](http://forum.textpattern.com/viewtopic.php?id=27516), which effectively moves the 'styles', 'pages' and 'forms' back out of the database and into external directories for easier editing - a good solution when used in combination with an IDE. If you do use that plugin then dropping the files from this project into your correspondingly named directories will suffice. Detailed information on how to use ckn_versioning is [available at the Textpattern form](http://forum.textpattern.com/viewtopic.php?id=27516).
 
 ### CSS
 
-#### /css/textpattern.css
+#### /css/default.css
 
 You can either copy/paste the whole stylesheet into admin area > presentation > style > default, and link as:
 
@@ -30,7 +30,7 @@ You can either copy/paste the whole stylesheet into admin area > presentation > 
 
 or serve as an external stylesheet and link as (for example):
 
-    <link rel="stylesheet" href="/css/textpattern.css">
+    <link rel="stylesheet" href="/css/default.css">
 
 There are advantages/disadvanatges to both methods...
 
@@ -40,7 +40,13 @@ The second method is much more traditional and flexible though it relies on you 
 
 ### Forms
 
-TO BE ADDED
+The forms follow the cnk_versioning standard of labelling, in that 'xxxx.misc.txp' is a misc type form, 'xxxx.article.txp' is an article type form, etc. This is only for file structure, when you actually create new forms within Textpattern you should **not** include the '.xxxx.txp', just the first part of the filename. See the analytics form description below.
+
+#### /forms/analytics.misc.txp
+
+Create a new form in the system with name 'analytics' and type 'misc', then copy/paste the code from this file into it.
+
+**CURRENTLY INCOMPLETE - MORE FORMS TO BE ADDED SOON**
 
 ### Pages
 
