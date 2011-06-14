@@ -90,7 +90,7 @@
 
 
 <!-- Google Analytics (amend the separate TXP form with your own unique ID) -->
-    <txp:output_form name="analytics" />
+    <txp:output_form form="analytics" />
 
 </body>
 </html>
