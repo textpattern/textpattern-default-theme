@@ -32,8 +32,9 @@
     <txp:css format="link" />
     <!-- or you can use external CSS files eg. <link rel="stylesheet" href="/css/style.css"> -->
 
-<!-- all JavaScript should go at the bottom, except for Modernizr which enables HTML5 elements & feature detects: www.modernizr.com/download/ -->
-    <script src="/js/modernizr.js"></script>
+<!-- all JavaScript should go at the bottom, except for Modernizr which enables HTML5 elements & feature detects.
+    you should replace this with your own build containing only the tests you actually need via: www.modernizr.com/download/ -->
+    <script src="/js/libs/modernizr-2.0.min.js"></script>
 
 </head>
 
