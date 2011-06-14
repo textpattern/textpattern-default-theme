@@ -1,40 +1,40 @@
-txp-h5bp-theme: a replacement for Textpattern default theme
-===========================================================
+# txp-h5bp-theme: a replacement for Textpattern default theme
 
 This project is designed as a replacement for the default theme that comes as standard with the Textpattern CMS. It is intended as a starting point for new users or existing users that want to adapt their current code and is not intended as a finished theme (though you could use it 'as is' if you want to).
 
-How to use these files
-----------------------
+## How to use these files
 
-**BOOST** uses the 'mobile-first' methodology & to find out more, please read the excellent post 'Mobile First' by Luke Wroblewski at http://www.lukew.com/ff/entry.asp?933
+### CSS
 
+#### /css/textpattern.css
+You can either copy/paste the whole stylesheet into admin area > presentation > style > default, and link as:
 
-## CSS
+    <txp:css format="link" />
 
-### style.css
-Mostly a mix of the HTML5 Boilerplate & Inuit.css. Watch out for the .keywords (line ~201), .message (line ~362) & the non-semantic but very useful helper classes (line ~674)
+or serve as an external stylesheet and link as (for example):
 
-### forms.css
-Mostly styles from http://formalize.me with a small amount from Inuit
+    <link rel="stylesheet" href="/css/textpattern.css">
 
-### handheld.css
-Straight from the HTML5 Boilerplate
+### Pages
 
-## HTML
-1.	Mixture of '320 and up' & HTML5 Boilerplate.
-2.	example.html has almost every 
+#### /pages/archive.txp
 
-## Javascript 
+This page template is utilised when viewing a list of articles.
 
-### script.js
-Fix for orientation change glitch in iOS
+Copy/paste over the existing page of the same name that was part of the standard Textpattern install.
 
-### helper.js
-Mobile related fixes & utilities
+#### /pages/default.txp
 
+This page template is utilised as the standard page layout.
 
-### Polyfills
-1.	respond.js - get mediaqueries working in older browsers
-2.	imgsizer.js - better responsive images in Internet Explorer (Find out more: )
-3.	dd_belatedpng.js - transparent png support in IE6
+Copy/paste over the existing page of the same name that was part of the standard Textpattern install.
 
+#### /pages/error_default.txp
+
+This page template is utilised when viewing a page error (such as a 404 page not found).
+
+Copy/paste over the existing page of the same name that was part of the standard Textpattern install
+
+### Forms
+
+TO BE DONE
