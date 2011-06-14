@@ -18,7 +18,7 @@ Textpattern differs from many CMS solutions in that it stores the all template f
 
 However, many of us like to use our preferred IDE (integrated development environment) to write code and leverage all the tools those applications provide to make code writing easier. That means you will have to copy/paste from your IDE into the corresponding parts of the Textpattern admin-side which adds a bit of time.
 
-With CSS files you could simply use external stylesheet and link in the traditional way (see below). However there is another solution in the form of the ['cnk_versioning' Textpattern plugin](http://forum.textpattern.com/viewtopic.php?id=27516), which effectively moves the 'styles', 'pages' and 'forms' back out of the database and into external directories for easier editing - a good solution when used in combination with an IDE. If you do use that plugin then dropping the files from this project into your correspondingly named directories will suffice. Detailed information on how to use ckn_versioning is [available at the Textpattern form](http://forum.textpattern.com/viewtopic.php?id=27516).
+With CSS files you could simply use external stylesheet and link in the traditional way (see below). However there is another solution in the form of the ['cnk_versioning' Textpattern plugin](http://forum.textpattern.com/viewtopic.php?id=27516), which effectively moves the 'styles', 'pages' and 'forms' back out of the database and into external directories for easier editing - a good solution when used in combination with an IDE. If you do use that plugin then dropping the files from this project into your correspondingly named directories will suffice. Detailed information on how to use ckn_versioning is [available at the Textpattern forum](http://forum.textpattern.com/viewtopic.php?id=27516).
 
 ### CSS
 
@@ -44,7 +44,7 @@ The forms follow the cnk_versioning standard of labelling, in that 'xxxx.misc.tx
 
 #### /forms/analytics.misc.txp
 
-Create a new form in the system with name 'analytics' and type 'misc', then copy/paste the code from this file into it.
+Create a new form in the system with name 'analytics' and type 'misc', then copy/paste the code from this file into it and save it.
 
 **CURRENTLY INCOMPLETE - MORE FORMS TO BE ADDED SOON**
 
