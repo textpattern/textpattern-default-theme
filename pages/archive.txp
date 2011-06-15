@@ -71,7 +71,7 @@
 
 <!-- right column -->
 	<div id="sidebar">
-        <txp:search_input />
+        <txp:search_input /> <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
 		<p><txp:feed_link label="RSS" /> / <txp:feed_link flavor="atom" label="Atom" /></p>
 		<txp:linklist wraptag="p" />
     </div>
