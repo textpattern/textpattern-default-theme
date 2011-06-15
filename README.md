@@ -44,7 +44,7 @@ The forms follow the cnk_versioning standard of labelling, in that 'xxxx.misc.tx
 
 #### /forms/analytics.misc.txp
 
-Create a new form in the system with name 'analytics' and type 'misc', then copy/paste the code from this file into it and save it.
+Add your unique Google Analytics ID into the code where indicated. Create a new form in the system with name 'analytics' and type 'misc', then copy/paste the code from this file into it, and save it. 
 
 **CURRENTLY INCOMPLETE - MORE FORMS TO BE ADDED SOON**
 

@@ -240,15 +240,34 @@ small {
 
 /* forms */
 
+/* make sure form elements indicate they are clickable (except disabled ones) */
+label,input[type="button"],input[type="submit"],input[type="reset"],input[type="image"],button,.checkbox{
+	cursor:pointer
+}
+input[disabled]{
+	cursor:default
+}
+/* make Safari render search inputs as text inputs (and unstyled) */
+input[type="search"]{
+	-webkit-appearance:textfield;
+	-webkit-box-sizing:content-box;
+}
+::-webkit-search-decoration{
+	display:none;
+}
+/* webkit browsers add a 2px margin outside the chrome of form elements */
+button,input,select,textarea{
+	margin:0;
+}
 /* colour placeholder text (Webkit and Mozilla only, so far) */
-input::-webkit-input-placeholder {
-	color:#aaa;
+::-webkit-input-placeholder{
+	color:#bbb;
 }
-input:-moz-placeholder {
-	color:#aaa;
+:-moz-placeholder{
+	color:#bbb;
 }
-
 input[type="text"],
+input[type="search"],
 textarea {
     font:13px/1.5em font-family: Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
     border:solid 1px #d4d4d4;
@@ -257,6 +276,8 @@ textarea {
 }
 input[type="text"]:hover,
 input[type="text"]:focus,
+input[type="search"]:hover,
+input[type="search"]:focus,
 textarea:hover,
 textarea:focus {
     background-color:#fcf6e6;
@@ -271,7 +292,6 @@ label {
 	*display:inline;
 	vertical-align:baseline;
 }
-
 /* align checkboxes, radios, text inputs with their label by Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
 input[type="radio"]{
 	vertical-align:text-bottom;
