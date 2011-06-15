@@ -56,7 +56,7 @@ Which is used to target language strings from the language you set in the Textpa
 
     <txp:text item="search" />
 
-You can get a idea of the items you can target with this tag by looking through the specific language file within the textpattern > lang directory which was created as part of your installation. Personally I would not use this tag very often unless I was designing a multi-language site as it adds needlessly to the amount of PHP database calls (that is also true for other tags such as <txp:site_name />) - it's included here purely as an example of what the tag is for.
+You can get a idea of the items you can target with this tag by looking through the specific language file within the textpattern > lang directory which was created as part of your installation. Personally I would not use this tag very often unless I was designing a multi-language site as it adds needlessly to the amount of PHP database calls (that is also true for other tags such as `<txp:site_name />`) - it's included here purely as an example of what the tag is for.
 
 **CURRENTLY INCOMPLETE - MORE FORMS TO BE ADDED SOON**
 
