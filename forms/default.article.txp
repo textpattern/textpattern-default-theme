@@ -1,0 +1,20 @@
+<article>
+
+<!-- If not an individual article then make the title <h1> a link -->
+<txp:if_individual_article>
+<h1><txp:title /></h1>
+<txp:else />
+<h1><txp:permlink><txp:title /></txp:permlink></h1>
+</txp:if_individual_article>
+
+<p><strong>Posted:</strong> <txp:posted /></p>
+
+<txp:body />
+
+<p><strong>Author:</strong> <txp:author /></p>
+
+<p><strong>Tagged under:</strong> <txp:category1 title="1" link="1" />, <txp:category2 title="1" link="1" /></p>
+
+</article>
+
+<txp:comments_invite wraptag="p" />

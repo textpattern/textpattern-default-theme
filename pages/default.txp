@@ -65,7 +65,7 @@
 		<h2><txp:text item="search_results" />: <txp:page_url type="q" /></h2>
 	</txp:if_search>
 		<div class="hfeed">
-		<txp:article limit="5" />
+		<txp:article limit="5" /> <!-- links by default to form: 'default.article.txp' unless you specify a different form -->
 		</div>
     </txp:if_category>
 	

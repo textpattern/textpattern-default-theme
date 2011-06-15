@@ -1,0 +1,5 @@
+<txp:if_first_article><ul></txp:if_first_article>
+
+<li><txp:permlink><txp:title /></txp:permlink> &#183; <txp:posted format="%Y-%m-%d" /> by <txp:author /></li>
+
+<txp:if_last_article></ul></txp:if_last_article>
