@@ -1,13 +1,36 @@
+<!-- we're going to use some raw PHP to load the article author's email into a variable for use later in form: comments.comment.txp -->
+<txp:if_individual_article>
+  <txp:php>global $thisarticle,$variable;$variable['author_email']=safe_field("email","txp_users","name='".$thisarticle['authorid']."'");</txp:php>
+</txp:if_individual_article>
+<!-- basically we've loaded the author email address into a txp:variable using PHP because no core txp tag currently exists to do that -->
+
 <article>
 
-<!-- If not an individual article then make the title <h1> a link -->
+<!-- if not an individual article then make the title <h1> a link -->
 <txp:if_individual_article>
-<h1><txp:title /></h1>
+  <h1><txp:title /></h1>
 <txp:else />
-<h1><txp:permlink><txp:title /></txp:permlink></h1>
+  <h1><txp:permlink><txp:title /></txp:permlink></h1>
 </txp:if_individual_article>
 
-<p><strong>Posted:</strong> <txp:posted /></p>
+<!-- using HTML5 'time' tag, note that the correct format for datetime attribute should be Y-m-dTH:M (e.g. 2011-01-31T15:31) -->
+<p><strong>Posted:</strong> <time datetime="<txp:posted format='%Y-%m-%d' />T<txp:posted format='%H:%M' />" pubdate><txp:posted format="%d %B %Y" /> at <txp:posted format='%l:%M%P' /></time></p>
+<!-- see http://php.net/manual/en/function.strftime.php for reference list of time/date strings -->
+
+<p><strong>Feedback:</strong> <a class="comment-count" href="<txp:permlink />#comments-head" title="View the comments&hellip;">
+
+<!-- if comments then display the number, if no comments then print 'no' -->
+<txp:if_comments>
+  <txp:comments_count />
+<txp:else />
+  no
+</txp:if_comments>
+
+<!-- load the comment count into a variable... -->
+<txp:variable name="comments_count" value='<txp:comments_count />' />
+
+<!-- ...now use that variable to determine with to put an 's' on the end of 'comment' -->
+comment<txp:if_variable name="comments_count" value="1"><txp:else />s</txp:if_variable></a></p>
 
 <txp:body />
 
@@ -16,5 +39,3 @@
 <p><strong>Tagged under:</strong> <txp:category1 title="1" link="1" />, <txp:category2 title="1" link="1" /></p>
 
 </article>
-
-<txp:comments_invite wraptag="p" />
