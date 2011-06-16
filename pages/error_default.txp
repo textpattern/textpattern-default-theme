@@ -67,7 +67,9 @@
     </div>
 
 <!-- footer -->
+	<!-- footer -->
 	<footer>
+        <!-- we're using a small snippet of PHP to dynamically update the copyright year -->
         <small>Copyright <txp:php>echo date('Y');</txp:php> <txp:site_name />. Powered by <a href="http://textpattern.com">Textpattern</a>.</small>
     </footer>
 
