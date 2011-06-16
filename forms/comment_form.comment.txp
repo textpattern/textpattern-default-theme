@@ -1,0 +1,27 @@
+<!-- I'm going to use <b> tags for required fields, as it has no semantic meaning (using <em> or <strong> would be illogical, captain) -->
+<p><strong class="form-intro">Enter you comment below.</strong> Fields marked <b class="required">*</b> are required. You must preview your comment first before finally posting.</p>
+
+<!-- if there is an error, then tell us -->
+<txp:if_comments_error>
+  <p class="error_message">Required fields are not completed.</p>
+</txp:if_comments_error>
+
+<fieldset>
+
+<p class="text large"><label for="name">Name <b class="required">*</b></label><br>
+<txp:comment_name_input /></p>
+
+<p class="text large"><label for="email">Email <b class="required">*</b></label><br>
+<txp:comment_email_input /></p>
+<!-- unfortunately Textpattern currently does not currently use HTML5 input type="email", though it can made to!
+  see README.md regarding the very handy 'rah_replace' plugin for more details) -->
+
+<p class="checkboxes"><span class="clearfix"><txp:comment_remember /></span></p>
+
+<p class="small"><label for="message">Comment <b class="required">*</b></label><br>
+<txp:comment_message_input /></p>
+
+</fieldset>
+
+<!-- preview and submit buttons (note: submit button will have a class of 'disabled' applied until you have previewed message) -->
+<p><txp:comment_preview /> <txp:comment_submit /></p>

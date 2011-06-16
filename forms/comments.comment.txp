@@ -1,3 +1,13 @@
+<!-- is this a comment preview? -->
+<txp:if_comments_preview>
+
+  <!-- load the comment email into a variable. we'll be using below this along with author email loaded in form: default.article.txp... -->
+  <txp:variable name="this_comment_preview" value='<txp:comment_email />' />
+
+  <p id="cpreview"><strong>Note:</strong> The following is a preview of what your comment will look like. Please do not forget to scroll down and actually hit the <strong><a href="#txpCommentSubmit" title="Go to the submit button">submit</a></strong> button!</p>
+
+</txp:if_comments_preview>
+
 <!-- load the comment email into a variable. we'll be using below this along with author email loaded in form: default.article.txp... -->
 <txp:variable name="this_comment" value='<txp:comment_email />' />
 
@@ -10,10 +20,23 @@
 
 <txp:comment_name link="0" />
 
-<!-- ...now check the comment email variable against article author email variable, and if it matches add '(author)' text -->
-<txp:if_variable name="this_comment" value='<txp:variable name="author_email" />'>
-  <span>(author)</span>
-</txp:if_variable>
+<!-- I'll say it again, is this a comment preview? -->
+<txp:if_comments_preview>
+
+  <!-- ...now check the comment preview email variable against article author email variable, and if it matches add '(author)' text -->
+  <txp:if_variable name="this_comment_preview" value='<txp:variable name="author_email" />'>
+    <span>(author)</span>
+  </txp:if_variable>
+
+<!-- is this not a comment preview? -->
+<txp:else />
+
+  <!-- ...now check the comment email variable against article author email variable, and if it matches add '(author)' text -->
+  <txp:if_variable name="this_comment" value='<txp:variable name="author_email" />'>
+    <span>(author)</span>
+  </txp:if_variable>
+
+</txp:if_comments_preview>
 
 </h4>
 

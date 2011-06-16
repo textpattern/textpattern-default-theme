@@ -38,4 +38,9 @@ comment<txp:if_variable name="comments_count" value="1"><txp:else />s</txp:if_va
 
 <p><strong>Tagged under:</strong> <txp:category1 title="1" link="1" />, <txp:category2 title="1" link="1" /></p>
 
+<!-- if this is an individual article then add the comments section via form: comments_display.article.txp -->
+<txp:if_individual_article>
+  <txp:article form="comments_display" />
+</txp:if_individual_article>
+
 </article>

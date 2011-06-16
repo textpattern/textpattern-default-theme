@@ -1,0 +1,40 @@
+<!-- we've added an id attribute to the section so we can link directly to here e.g. http://mysite.com/section/article#comments-head -->
+
+<section id="comments-head">
+
+<h3>comments</h3>
+
+<!-- if there are comments, display them... -->
+<txp:if_comments>
+
+  <txp:comments class="comments-list" break="" /> <!-- links by default to form: 'comments.comment.txp' unless you specify a different form -->
+
+  <!-- ...and if user is currently previewing comment, display it -->
+  <txp:if_comments_preview>
+    <txp:comments_preview /> <!-- links by default to form: 'comments.comment.txp' unless you specify a different form -->
+  </txp:if_comments_preview>
+
+<txp:else />
+
+  <!-- else if there are no comments and if user is currently previewing comment, display it -->
+  <txp:if_comments_preview>
+    <txp:comments_preview /> <!-- links by default to form: 'comments.comment.txp' unless you specify a different form -->
+
+  <txp:else />
+
+    <!-- else just display that there are simply no comments whatsoever :( -->
+    <p>There are currently no comments on this article.</p>
+
+  </txp:if_comments_preview>
+
+</txp:if_comments>
+
+<!-- if new comments are allowed for this article then display comment form, if not then display 'closed' message -->
+<txp:if_comments_allowed>
+  <h3>add a comment</h3>
+  <txp:comments_form isize="32" msgcols="64" msgrows="4" /> <!-- links by default to form: 'comment_form.comment.txp' unless you specify a different form -->
+<txp:else />
+  <p><strong>Comments are closed for this article.</strong></p>
+</txp:if_comments_allowed>
+
+</section>
