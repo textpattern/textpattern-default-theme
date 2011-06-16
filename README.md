@@ -46,6 +46,10 @@ The forms follow the cnk_versioning standard of labelling, in that 'xxxx.misc.tx
 
 Add your unique Google Analytics ID into the code where indicated. Create a new form in the system with name 'analytics' and type 'misc', then copy/paste the code from this file into it, and save it. 
 
+#### /forms/files.file.txp
+
+Copy/paste over the existing form of the same name that was part of the standard Textpattern install. You can call this form from within an article by simply using `<txp:file_download id="xxx" />`. You can also call this form from other any other forms and pages using the same method as above (just mind your <p>'s).
+
 #### /forms/search_input.misc.txp
 
 Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Note that this form makes use of the following tag:
