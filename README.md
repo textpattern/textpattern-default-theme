@@ -48,7 +48,7 @@ Add your unique Google Analytics ID into the code where indicated. Create a new 
 
 #### /forms/files.file.txp
 
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. You can call this form from within an article by simply using `<txp:file_download id="xxx" />`. You can also call this form from other any other forms and pages using the same method as above (just mind your <p>'s).
+Copy/paste over the existing form of the same name that was part of the standard Textpattern install. You can call this form from within an article by simply using `<txp:file_download id="xxx" />`. You can also call this form from other any other forms and pages using the same method as above (just mind your `<p>`'s).
 
 #### /forms/search_input.misc.txp
 
