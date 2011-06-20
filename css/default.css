@@ -10,7 +10,7 @@ nav ul,nav li{margin:0;}
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 a{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;background:transparent;}
-a:active{outline:none;}
+a:active{outline:0;}
 ins{background:#ff9;color:#000;text-decoration:none;}
 mark{background:#ff9;color:#000;font-style:italic;font-weight:bold;}
 del{text-decoration:line-through;}
@@ -349,7 +349,7 @@ input[type="submit"] {
 	*display:inline;
 	vertical-align:baseline;
 	margin:0 2px;
-	outline:none;
+	outline:0;
 	cursor:pointer;
 	text-align:center;
 	padding:.5em 1em .55em;
@@ -428,7 +428,7 @@ html{
 a:focus,
 input:focus,
 button:focus {
-    outline:none;
+    outline:0;
 	background-color:#fcf6e6;
     -webkit-box-shadow:0 0 5px rgba(255,192,16,1); 
     box-shadow:0 0 5px rgba(255,192,16,1);
