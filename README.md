@@ -48,7 +48,15 @@ Add your unique Google Analytics ID into the code where indicated. Create a new 
 
 #### /forms/files.file.txp
 
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. You can call this form from within an article by simply using `<txp:file_download id="xxx" />` - you can also call this form from within other any other forms and pages using the same method (just mind your `<p>`'s).
+Copy/paste over the existing form of the same name that was part of the standard Textpattern install. You can call this form from within an article by simply using `<txp:file_download id="xxx" />` (you don't need to specify a form name as 'files' is the default form for files) - you can also call this form from within other any other forms and pages using the same method (just mind your `<p>`'s).
+
+#### /forms/links.link.txp
+
+Copy/paste over the existing form of the same name that was part of the standard Textpattern install. You can call this form from within a form, page or article by using `<txp:linklist form="links" />`.
+
+#### /forms/plainlinks.link.txp
+
+Copy/paste over the existing form of the same name that was part of the standard Textpattern install. You could for example use this form to display a list of the 10 most recently added links in the admin-side links page by using `<txp:linklist wraptag="ul" break="li" limit="10" />` within a form, page or article (you don't need to specify a form name as 'plainlinks' is the default form for links). Note we are using 'wraptag' and 'break' attributes to add the `<ul>` and `<li>` respectively. We've also limited the list to 10 items - the default is unlimited (no limit).
 
 #### /forms/search_input.misc.txp
 
