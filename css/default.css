@@ -427,6 +427,7 @@ html{
 /* get rid of proprietary focus glows and add our own */
 a:focus,
 input:focus,
+textarea:focus,
 button:focus {
     outline:0;
 	background-color:#fcf6e6;
