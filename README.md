@@ -25,7 +25,9 @@ You can see the latest version of the theme running at http://www.philwareham.co
 
 #### Recommended but optional
 
-1. I don't tend to leave CMS managed images files loose in the 'images' directory. I'd suggest it's tidier (and more secure) to create an additonal 'cms' directory under 'images' directory and use that for any Textpattern managed images instead. Then set the Textpattern advance preference 'Image directory' to your new directory 'images/cms'. Make sure that PHP is able to write to 'images/cms/' (usually chmod 777) - you can also set the original 'images' directory back to something more secure (such as chmod 755).
+1. I don't tend to leave Textpattern managed images files loose in the 'images' directory. I'd suggest it's tidier (and more secure) to create an additonal 'cms' directory within the 'images' directory and use that for any Textpattern managed images instead. Then set the Textpattern advance preference 'Image directory' to your new directory 'images/cms'. Make sure that PHP is able to write to 'images/cms' (usually chmod 777) - you can also set the original 'images' directory back to something more secure (such as chmod 755).
+2. Removing 'sbl.spamhaus.org' from the advanced preference 'Spam blacklists (comma-separated)' may yield a (very minor) speed increase.
+3. You might as well set 'New comment means site updated?' to 'yes' since [search engines like fresh content](http://www.seoguide.org/seo201-google-ranking.htm).
 
 **CURRENTLY INCOMPLETE - MORE TEXT TO BE ADDED SOON**
 
