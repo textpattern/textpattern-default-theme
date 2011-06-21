@@ -12,6 +12,36 @@ This project is designed as a replacement for the default theme that comes as st
 
 You can see the latest version of the theme running at http://www.philwareham.co.uk/.
 
+## Before you begin (fresh installs)
+
+### Adjust Textpattern preferences
+
+#### Essential
+
+1. Set 'Automatically append comments to articles?' to 'no'. [More info](http://textpattern.com/faq/95/comment-display-confusion).
+2. Set 'Allow PHP in pages?' to 'yes'. Leave 'Allow PHP in articles?' and 'Allow raw PHP?' set to 'no' for security reasons (you don't really want authors to be adding their own custom PHP to their articles).
+
+**CURRENTLY INCOMPLETE - MORE TEXT TO BE ADDED SOON**
+
+#### Recommended but optional
+
+1. I don't tend to leave CMS managed images files loose in the 'images' directory. I'd suggest it's tidier (and more secure) to create an additonal 'cms' directory under 'images' directory and use that for any Textpattern managed images instead. Then set the Textpattern advance preference 'Image directory' to your new directory 'images/cms'. Make sure that PHP is able to write to 'images/cms/' (usually chmod 777) - you can also set the original 'images' directory back to something more secure (such as chmod 755).
+
+**CURRENTLY INCOMPLETE - MORE TEXT TO BE ADDED SOON**
+
+### Delete surplus forms
+
+There were a number of forms and pages that formed part of the original default theme for Textpattern. For the most part we will be reusing those existing forms with our own code. However, there are some forms you can safely remove from the system as we will not be using them (in fact the original default Textpattern theme does not require them either - they are mostly left over from earlier versions of Textpattern and not used any more).
+
+#### You can safely delete the following forms from your fresh install:
+
+* lofi (article type form)
+* noted (link type form)
+* popup_comments (comment type form)
+* single (article type form)
+
+**CURRENTLY INCOMPLETE - MORE TEXT TO BE ADDED SOON**
+
 ## How to use these files
 
 Textpattern differs from many CMS solutions in that it stores the all template files (used to build the final page a browser sees) directly in the database as 'styles' (the CSS styling), 'pages' (the main page templates) and 'forms' snippets of code and logic that form building blocks within the 'pages'.
@@ -70,7 +100,7 @@ Which is used to target language strings from the language you set in the Textpa
 
 You can get a idea of the items you can target with this tag by looking through the specific language file within the textpattern > lang directory which was created as part of your installation. Personally I would not use this tag very often unless I was designing a multi-language site as it adds needlessly to the amount of PHP database calls (that is also true for other tags such as `<txp:site_name />`) - it's included here purely as an example of what the tag is for.
 
-**CURRENTLY INCOMPLETE - MORE FORMS TO BE ADDED SOON**
+**CURRENTLY INCOMPLETE - MORE TEXT TO BE ADDED SOON**
 
 ### Pages
 
