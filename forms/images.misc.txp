@@ -1,0 +1,9 @@
+<figure>
+
+<!-- image - we are overriding the width and height to let the image scale to fit parent container -->
+<txp:image width="0" height="0" />
+
+<!-- image caption - we don't need to specify the attribute type="caption" as that's the default setting for <txp:image_info /> tag -->
+<figcaption><txp:image_info /></figcaption>
+
+</figure>
