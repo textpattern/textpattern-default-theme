@@ -234,36 +234,42 @@ small {
 /* articles */
 
 .directory {
-	list-style-type: circle;
+	list-style-type:circle;
 }
 
 
 /* forms */
 
-/* make sure form elements indicate they are clickable (except disabled ones) */
-label,input[type="button"],input[type="submit"],input[type="reset"],input[type="image"],button,.checkbox{
-	cursor:pointer
+/* hand cursor on clickable input elements (except disabled ones) */
+label,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+	cursor:pointer;
 }
-input[disabled]{
+input[disabled] {
 	cursor:default
 }
 /* make Safari render search inputs as text inputs (and unstyled) */
-input[type="search"]{
+input[type="search"] {
 	-webkit-appearance:textfield;
-	-webkit-box-sizing:content-box;
 }
 ::-webkit-search-decoration{
 	display:none;
 }
 /* webkit browsers add a 2px margin outside the chrome of form elements */
-button,input,select,textarea{
+button,
+input,
+select,
+textarea {
 	margin:0;
 }
 /* colour placeholder text (Webkit and Mozilla only, so far) */
-::-webkit-input-placeholder{
+::-webkit-input-placeholder {
 	color:#bbb;
 }
-:-moz-placeholder{
+:-moz-placeholder {
 	color:#bbb;
 }
 input[type="text"],
@@ -272,7 +278,13 @@ textarea {
     font:13px/1.5em font-family: Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
     border:solid 1px #d4d4d4;
     background-color:#fff;
-    padding:.5em .5em .55em;
+    padding:.5em .2em .55em .5em;
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+}
+input[type="search"] {
+    padding:.5em 0 .55em .5em;
 }
 input[type="text"]:hover,
 input[type="text"]:focus,
@@ -305,20 +317,6 @@ input[type="checkbox"] {
 /* fix firefox button height discrepancy: http://christophzillgens.com/en/articles/equal-height-input-and-button-elements-in-firefox-and-safari  */
 input[type="submit"]::-moz-focus-inner {
     border:0;
-}
-/* hand cursor on clickable input elements */
-label, input[type="button"],
-input[type="submit"],
-input[type="reset"],
-button {
-	cursor:pointer;
-}
-/* webkit browsers add a 2px margin outside the chrome of form elements */  
-button,
-input,
-select,
-textarea{
-	margin:0;
 }
 
 
