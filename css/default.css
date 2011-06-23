@@ -28,6 +28,7 @@ sub{bottom:-0.25em;}
 .clearfix:after{clear:both;}
 .clearfix{zoom:1;}
 
+
 }/* end of @media all */
 
 
@@ -46,7 +47,7 @@ html {
 
 body {
 	background-color:#fff;
-    margin:0 auto;
+    margin:0 auto 20px;
 	width:960px;
 }
 
@@ -66,7 +67,9 @@ nav {
     border:solid 1px #e1a61a;
 	background:#ffda44;
 	background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#ffda44),color-stop(1,#fabc2b));
-	background:-moz-linear-gradient(top,#ffda44,#fabc2b);
+	background:-moz-linear-gradient(#ffda44,#fabc2b);
+	background:-ms-linear-gradient(#ffda44,#fabc2b);
+	background:linear-gradient(#ffda44,#fabc2b);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffda44',endColorstr='#fabc2b');
 	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffda44',endColorstr='#fabc2b')";
 	border-radius:0 0 5px 5px;
@@ -90,7 +93,9 @@ nav a:active {
     text-decoration:none;
     background:#fcdd62;
     background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fcdd62),color-stop(1,#fec94c));
-	background:-moz-linear-gradient(top,#fcdd62,#fec94c);
+	background:-moz-linear-gradient(#fcdd62,#fec94c);
+	background:-ms-linear-gradient(#fcdd62,#fec94c);
+	background:linear-gradient(#fcdd62,#fec94c);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcdd62',endColorstr='#fec94c');
 	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcdd62',endColorstr='#fec94c')";
 }
@@ -218,8 +223,16 @@ p {
     padding-bottom:1em;
 }
 
-small {
+small,
+figcaption,
+.footnote {
     font-size:10px;
+	line-height:15px;
+}
+
+figcaption,
+.footnote {
+	color:#888;
 }
 
 
@@ -248,16 +261,20 @@ input[type="reset"],
 button {
 	cursor:pointer;
 }
+
 input[disabled] {
 	cursor:default
 }
+
 /* make Safari render search inputs as text inputs (and unstyled) */
 input[type="search"] {
 	-webkit-appearance:textfield;
 }
+
 ::-webkit-search-decoration{
 	display:none;
 }
+
 /* webkit browsers add a 2px margin outside the chrome of form elements */
 button,
 input,
@@ -265,27 +282,44 @@ select,
 textarea {
 	margin:0;
 }
+
 /* colour placeholder text (Webkit and Mozilla only, so far) */
 ::-webkit-input-placeholder {
 	color:#bbb;
 }
+
 :-moz-placeholder {
 	color:#bbb;
 }
+
 input[type="text"],
 input[type="search"],
 textarea {
     font:13px/1.5em font-family: Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
     border:solid 1px #d4d4d4;
     background-color:#fff;
-    padding:.5em .2em .55em .5em;
-	-webkit-box-sizing:content-box;
-	-moz-box-sizing:content-box;
-	box-sizing:content-box;
+    padding:.5em 5px .55em;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
 }
+
 input[type="search"] {
-    padding:.5em 0 .55em .5em;
+    width:182px;
+	padding:.5em 0 .55em 5px;
+	display:inline-block;
+	zoom:1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display:inline;
+	vertical-align:baseline;
 }
+
+textarea {
+	width:100%;
+	-webkit-resize:vertical;
+	-moz-resize:vertical;
+	resize:vertical;
+}
+
 input[type="text"]:hover,
 input[type="text"]:focus,
 input[type="search"]:hover,
@@ -294,29 +328,47 @@ textarea:hover,
 textarea:focus {
     background-color:#fcf6e6;
 }
-label {
-    display:block;
+
+.large input{
+	width:300px;
 }
-#search-textbox {
-    width:180px;
-	display:inline-block;
-	zoom:1; /* zoom and *display = ie7 hack for display:inline-block */
-	*display:inline;
-	vertical-align:baseline;
+
+.small input{
+	width:150px;
 }
-/* align checkboxes, radios, text inputs with their label by Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
-input[type="radio"]{
-	vertical-align:text-bottom;
+
+.large textarea{
+	height:156px;
 }
-input[type="checkbox"] {
-	vertical-align:bottom;
+
+.small textarea{
+	height:78px;
 }
-.ie7 input[type="checkbox"] {
-	vertical-align:baseline;
+
+.checkboxes,
+.radiobuttons {
+	padding:0 0 7px;
 }
-/* fix firefox button height discrepancy: http://christophzillgens.com/en/articles/equal-height-input-and-button-elements-in-firefox-and-safari  */
-input[type="submit"]::-moz-focus-inner {
-    border:0;
+
+.checkboxes span,
+.radiobuttons span {
+	display:block;
+}
+
+.checkboxes input,
+.radiobuttons input {
+	float:left;
+	margin:3px 8px 0 0;
+}
+
+.checkboxes label,
+.radiobuttons label {
+	float:left;
+	display:block;
+}
+
+.required {
+	color:#c00;
 }
 
 
@@ -327,13 +379,16 @@ input,button{
 	width:auto;
 	overflow:visible
 }
-/* Remove extra padding and inner border in Firefox */
+
+/* fix firefox button height discrepancy: http://christophzillgens.com/en/articles/equal-height-input-and-button-elements-in-firefox-and-safari */
 input::-moz-focus-inner,
 button::-moz-focus-inner{
 	border:0;
 	padding:0
 }
-button, input[type="button"],
+
+button,
+input[type="button"],
 input[type="submit"] {
 	font:13px/1.5em font-family: Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
     font-weight:normal;
@@ -357,17 +412,22 @@ input[type="submit"] {
 	box-shadow:0 1px 2px rgba(0,0,0,.2);
 	background:#ffda44;
 	background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#ffda44),color-stop(1,#fabc2b));
-	background:-moz-linear-gradient(top,#ffda44,#fabc2b);
+	background:-moz-linear-gradient(#ffda44,#fabc2b);
+	background:-ms-linear-gradient(#ffda44,#fabc2b);
+	background:linear-gradient(#ffda44,#fabc2b);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffda44',endColorstr='#fabc2b');
 	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffda44',endColorstr='#fabc2b')";
 }
+
 
 button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
 	background:#fcdd62;
     background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fcdd62),color-stop(1,#fec94c));
-	background:-moz-linear-gradient(top,#fcdd62,#fec94c);
+	background:-moz-linear-gradient(#fcdd62,#fec94c);
+	background:-ms-linear-gradient(#fcdd62,#fec94c);
+	background:linear-gradient(#fcdd62,#fec94c);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcdd62',endColorstr='#fec94c');
 	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcdd62',endColorstr='#fec94c')";
 }
@@ -378,19 +438,35 @@ input[type="submit"]:active {
 	color:#000;
 	background:#fec94c;
     background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fec94c),color-stop(1,#fcdd62));
-	background:-moz-linear-gradient(top,#fec94c,#fcdd62);
+	background:-moz-linear-gradient(#fec94c,#fcdd62);
+	background:-ms-linear-gradient(#fec94c,#fcdd62);
+	background:linear-gradient(#fec94c,#fcdd62);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fec94c',endColorstr='#fcdd62');
 	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#fec94c',endColorstr='#fcdd62')";
     position:relative;
 	top:1px;
 }
 
+input[type="submit"].disabled {
+	color:#fff;
+	text-shadow:-1px -1px #ccc;
+	cursor:default;
+	border:solid 1px #d2d2d2;
+	background:#dadada;
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#e6e6e6),color-stop(1,#dadada));
+	background:-moz-linear-gradient(#e6e6e6,#dadada);
+	background:-ms-linear-gradient(#e6e6e6,#dadada);
+	background:linear-gradient(#e6e6e6,#dadada);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6e6e6',endColorstr='#dadada');
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6e6e6',endColorstr='#dadada')";
+	top:0;
+}
+
 
 /* comments */
 
 .comments_error {
-	color: #000;
-	background-color: #fff4f4;
+	background: #fff4f4 !important;
 }
 
 ul.comments_error {
@@ -422,6 +498,7 @@ form#txpCommentInputForm td {
 html{
 	overflow-y:scroll;
 }
+
 /* get rid of proprietary focus glows and add our own */
 a:focus,
 input:focus,
@@ -432,19 +509,23 @@ button:focus {
     -webkit-box-shadow:0 0 5px rgba(255,192,16,1); 
     box-shadow:0 0 5px rgba(255,192,16,1);
 }
+
 /* get rid of proprietary text selection colour and use our own */
 ::selection {
     background:#ffe699;
     text-shadow:none
 }
+
 ::-moz-selection {
     background:#ffe699;
     text-shadow:none
 }
+
 /* get rid of image selection colour */
 img::selection {
     background:transparent
 }
+
 img::-moz-selection {
     background:transparent
 }
@@ -484,6 +565,7 @@ footer {
 	width:618px;
 }
 
+
 }/* end of @media handheld between 640px-960px */
 
 
@@ -505,6 +587,7 @@ footer {
 	width:298px;
 }
 
+
 }/* end of @media handheld <640px */
 
 
@@ -520,33 +603,40 @@ body {
     font:8pt/1.6em Helvetica,Arial,SunSans-Regular,sans-serif;
     padding:2em 6em;
 }
+
 nav {
     display:none;
 }
+
 a {
     color:#000;
     text-decoration:none;
 }
+
 a:link:after,
 a:visited:after{ 
     content:" ("attr(href)") ";
 }
+
 h1 {
 	font-size:36px;
     font-weight:normal;
     line-height:1.3em;
 	padding-bottom:2em;
 }
+
 h2 {
 	font-size:24px;
     line-height:1.4em;
 	padding-bottom:1em;
 }
+
 h3 {
 	font-size:18px;
     line-height:1.5em;
 	padding-bottom:1em;
 }
+
 p {
     padding-bottom:1em;
 }
@@ -554,10 +644,12 @@ footer {
     font-size:6pt;
     line-height:1.6em;
 }
+
 ul {
 	list-style:square;
 	margin:0 0 1em 1.8em;
 }
+
 ol {
 	list-style:decimal;
 	margin:0 0 1em 1.8em;
