@@ -15,9 +15,6 @@
 
 <h4>
 
-<!-- add a permlink so people can link direct to this comment (I personally never use this line of code - just here as an example) -->
-<txp:comment_permlink>#</txp:comment_permlink>
-
 <txp:comment_name link="0" />
 
 <!-- I'll say it again, is this a comment preview? -->
@@ -37,6 +34,9 @@
   </txp:if_variable>
 
 </txp:if_comments_preview>
+
+<!-- add a permlink so people can link direct to this comment (I personally never use this line of code - just here as an example) -->
+<txp:comment_permlink>#</txp:comment_permlink>
 
 </h4>
 

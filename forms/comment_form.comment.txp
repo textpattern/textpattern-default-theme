@@ -8,10 +8,10 @@
 
 <fieldset>
 
-<p class="text large"><label for="name">Name <b class="required">*</b></label><br>
+<p class="large"><label for="name">Name <b class="required">*</b></label><br>
 <txp:comment_name_input /></p>
 
-<p class="text large"><label for="email">Email <b class="required">*</b></label><br>
+<p class="large"><label for="email">Email <b class="required">*</b></label><br>
 <txp:comment_email_input /></p>
 <!-- unfortunately Textpattern currently does not currently use HTML5 input type="email", though it can made to!
   see README.md regarding the very handy 'rah_replace' plugin for more details) -->
