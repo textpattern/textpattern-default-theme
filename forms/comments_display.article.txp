@@ -7,7 +7,7 @@
 <!-- if there are comments, display them... -->
 <txp:if_comments>
 
-  <txp:comments class="comments-list" break="li" /> <!-- links by default to form: 'comments.comment.txp' unless you specify a different form -->
+  <txp:comments class="comments-list" wraptag="ol" break="li" /> <!-- links by default to form: 'comments.comment.txp' unless you specify a different form -->
 
   <!-- ...and if user is currently previewing comment, display it -->
   <txp:if_comments_preview>
