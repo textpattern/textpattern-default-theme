@@ -239,7 +239,9 @@ figcaption,
 /* lists */
 
 #main ul,
-#main ol {
+#main ol,
+#sidebar ul,
+#sidebar ol {
     margin:0 0 1em 20px;
 }
 
