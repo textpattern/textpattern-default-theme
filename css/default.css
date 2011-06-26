@@ -41,6 +41,7 @@ sub{bottom:-0.25em;}
 /* layout */
 
 html {
+	-webkit-overflow-scrolling:touch;
 	-webkit-text-size-adjust:100%;
 	-ms-text-size-adjust:100%;
 }
