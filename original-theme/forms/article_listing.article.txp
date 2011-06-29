@@ -1,0 +1,5 @@
+<txp:if_first_article><ul class="directory"></txp:if_first_article>
+
+<li><span class="entry-title"><txp:permlink><txp:title /></txp:permlink></span> &#183; <span class="published"><txp:posted format="%Y-%m-%d" /></span></li>
+
+<txp:if_last_article></ul></txp:if_last_article>

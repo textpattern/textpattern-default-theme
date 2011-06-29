@@ -1,0 +1,7 @@
+<h3 class="entry-title"><txp:permlink><txp:title /></txp:permlink></h3>
+	<p class="published"><txp:posted /></p>
+
+<div class="entry-content">
+<txp:body />
+</div>
+

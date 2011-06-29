@@ -1,0 +1,9 @@
+<h3 class="entry-title"><txp:permlink><txp:title /></txp:permlink></h3>
+
+<p class="published"><txp:posted /></p>
+
+<p class="entry-summary"><txp:search_result_excerpt /></p>
+
+<p class="small"><txp:permlink><txp:permlink /></txp:permlink></p>
+
+<div class="divider"><txp:image id="1" /></div>

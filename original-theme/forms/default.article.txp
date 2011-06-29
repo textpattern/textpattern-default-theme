@@ -1,0 +1,20 @@
+<txp:if_individual_article>
+<h1 class="entry-title"><txp:permlink><txp:title /></txp:permlink></h1>
+<txp:else />
+<h3 class="entry-title"><txp:permlink><txp:title /></txp:permlink></h3>
+</txp:if_individual_article>
+
+<p class="published"><txp:posted /></p>
+
+<div class="entry-content">
+<txp:body />
+</div>
+
+<address class="vcard author">&#8212; <span class="fn"><txp:author /></span></address>
+
+<p class="tags"><txp:category1 title="1" link="1" />, <txp:category2 title="1" link="1" /></p>
+
+<txp:comments_invite wraptag="p" />
+
+<div class="divider"><txp:image id="1" /></div>
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title><txp:page_title /></title>
+
+	<link rel="home" href="<txp:site_url />" />
+
+	<txp:feed_link flavor="atom" format="link" label="Atom" />
+	<txp:feed_link flavor="rss" format="link" label="RSS" />
+
+	<txp:css format="link" />
+
+	<txp:rsd />
+</head>
+<body id="<txp:section />">
+
+<!-- accessibility -->
+<div id="accessibility">
+	<ul>
+		<li><a href="#content"><txp:text item="go_content" /></a></li>
+		<li><a href="#sidebar-1"><txp:text item="go_nav" /></a></li>
+		<li><a href="#sidebar-2"><txp:text item="go_search" /></a></li>
+	</ul>
+</div>
+
+<div id="container">
+
+<!-- head -->
+	<div id="head">
+		<p id="site-name"><txp:link_to_home><txp:site_name /></txp:link_to_home></p>
+		<p id="site-slogan"><txp:site_slogan /></p>
+	</div>
+
+<!-- left -->
+	<div id="sidebar-1">
+		<txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="li">
+			<txp:if_section name='<txp:section />'>&raquo;</txp:if_section>
+			<txp:section link="1" title="1" />
+			<txp:if_section name='<txp:section />'>
+				<txp:article_custom  section='<txp:section />' wraptag="ul" break="li">
+					<txp:if_article_id>&rsaquo;</txp:if_article_id>
+					<txp:permlink><txp:title /></txp:permlink>
+				</txp:article_custom>
+			</txp:if_section>
+		</txp:section_list>
+
+		<txp:search_input wraptag="p" />
+
+		<p><txp:feed_link label="RSS" /> / <txp:feed_link flavor="atom" label="Atom" /></p>
+	</div>
+
+<!-- right -->
+	<div id="sidebar-2">
+		<txp:linklist wraptag="p" />
+
+		<p><a href="http://textpattern.com/"><txp:image id="2" /></a></p>
+	</div>
+
+<!-- center -->
+	<div id="content">
+		<txp:if_article_list><h1><txp:section title="1" /></h1></txp:if_article_list>
+
+		<div class="hfeed">
+		<txp:article listform="article_listing" limit="5" />
+		</div>
+	
+<txp:if_individual_article>
+		<div class="divider"><txp:image id="1" /></div>
+
+		<p><txp:link_to_prev>&#171; <txp:prev_title /></txp:link_to_prev> 
+			<txp:link_to_next><txp:next_title /> &#187;</txp:link_to_next></p>
+<txp:else />
+		<p><txp:older>&#171; <txp:text item="older" /></txp:older> 
+			<txp:newer><txp:text item="newer" /> &#187;</txp:newer></p>
+</txp:if_individual_article>
+	</div>
+
+<!-- footer -->
+	<div id="foot">&nbsp;</div>
+
+</div>
+
+</body>
+</html>

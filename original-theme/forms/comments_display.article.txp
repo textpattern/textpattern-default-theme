@@ -1,0 +1,15 @@
+<h2 id="<txp:text item="comment" />"><txp:comments_invite textonly="1" showalways="1" showcount="0" /></h2>
+
+<txp:comments />
+
+<txp:if_comments_preview>
+<div id="cpreview">
+<txp:comments_preview />
+</div>
+</txp:if_comments_preview>
+
+<txp:if_comments_allowed>
+<txp:comments_form isize="25" msgcols="45" msgrows="15" />
+<txp:else />
+<p><txp:text item="comments_closed" /></p>
+</txp:if_comments_allowed>

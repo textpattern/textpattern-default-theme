@@ -1,0 +1,3 @@
+<txp:comment_message />
+
+<p class="small">&#8212; <txp:comment_name /> &#183; <txp:comment_time /> &#183; <txp:comment_permlink>#</txp:comment_permlink></p>

@@ -1,0 +1,7 @@
+<txp:text item="file" />: 
+<txp:file_download_link>
+<txp:file_download_name /> [<txp:file_download_size format="auto" decimals="2" />]
+</txp:file_download_link>
+<br />
+<txp:text item="category" />: <txp:file_download_category /><br />
+<txp:text item="download" />: <txp:file_download_downloads />
