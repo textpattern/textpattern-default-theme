@@ -307,7 +307,7 @@ textarea {
 }
 
 input[type="search"] {
-    width:182px;
+    width:180px;
 	padding:.5em 0 .55em 5px;
 	display:inline-block;
 	zoom:1; /* zoom and *display = ie7 hack for display:inline-block */
