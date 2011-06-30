@@ -6,35 +6,35 @@
 <meta charset="utf-8">
 
 <!-- page title and metas, no meta keywords as they are now obsolete -->
-    <title><txp:site_name />: <txp:error_status /></title>
-    <meta name="description" content="<txp:error_status />">
-    <meta name="robots" content="none">
+	<title><txp:site_name />: <txp:error_status /></title>
+	<meta name="description" content="<txp:error_status />">
+	<meta name="robots" content="none">
 
 <!-- Mobile viewport optimized: j.mp/bplateviewport -->
-    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1">
 
 <!-- place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references: mathiasbynens.be/notes/touch-icons -->
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <!-- content feeds -->
-    <txp:feed_link flavor="atom" format="link" label="Atom" />
+	<txp:feed_link flavor="atom" format="link" label="Atom" />
 	<txp:feed_link flavor="rss" format="link" label="RSS" />
-    <txp:rsd />
+	<txp:rsd />
 
 <!-- canonical sections, more info: http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html -->
-    <txp:if_section name=""><txp:else /><txp:if_individual_article><txp:else /><link rel="canonical" href="<txp:site_url /><txp:section />" /></txp:if_individual_article></txp:if_section>
+	<txp:if_section name=""><txp:else /><txp:if_individual_article><txp:else /><link rel="canonical" href="<txp:site_url /><txp:section />" /></txp:if_individual_article></txp:if_section>
 
 <!-- css -->
-    <!-- Google font API -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold,bolditalic&subset=latin">
+	<!-- Google font API -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold,bolditalic&subset=latin">
 
-    <txp:css format="link" />
-    <!-- or you can use external CSS files eg. <link rel="stylesheet" href="/css/default.css"> -->
+	<txp:css format="link" />
+	<!-- or you can use external CSS files eg. <link rel="stylesheet" href="/css/default.css"> -->
 
 <!-- all JavaScript should go at the bottom, except for Modernizr which enables HTML5 elements & feature detects.
-    you should replace this with your own build containing only the tests you actually need via: www.modernizr.com/download/ -->
-    <script src="/js/libs/modernizr.js"></script>
+	you should replace this with your own build containing only the tests you actually need via: www.modernizr.com/download/ -->
+	<script src="/js/libs/modernizr.js"></script>
 
 </head>
 
@@ -42,50 +42,50 @@
 
 <!-- header -->
 	<header>
-        <h2><txp:link_to_home><txp:site_name /></txp:link_to_home></h2>
-        <h3><txp:site_slogan /></h3>
+		<h2><txp:link_to_home><txp:site_name /></txp:link_to_home></h2>
+		<h3><txp:site_slogan /></h3>
 	</header>
 
 <!-- navigation -->
-    <nav class="clearfix">
+	<nav class="clearfix">
 		<txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="li">
 			<txp:section link="1" title="1" />
 		</txp:section_list>
 	</nav>
 
 <!-- left (main) column -->
-    <div id="main">
+	<div id="main">
 		<h1 class="error-status"><txp:error_status /></h1>
 		<p class="error-msg"><txp:error_message /></p>
 	</div>
 
 <!-- right column -->
 	<div id="sidebar">
-        <txp:search_input /> <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
+		<txp:search_input /> <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
 		<p><txp:feed_link label="RSS" /> / <txp:feed_link flavor="atom" label="Atom" /></p>
 
 		<p>External Links</p>
 		<txp:linklist wraptag="ul" break="li" limit="10" /> <!-- links by default to form: 'plainlinks.link.txp' unless you specify a different form -->
-    </div>
+	</div>
 
 <!-- footer -->
 	<!-- footer -->
 	<footer>
-        <!-- we're using a small snippet of PHP to dynamically update the copyright year -->
-        <small>Copyright <txp:php>echo date('Y');</txp:php> <txp:site_name />. Powered by <a href="http://textpattern.com">Textpattern</a>.</small>
-    </footer>
+		<!-- we're using a small snippet of PHP to dynamically update the copyright year -->
+		<small>Copyright <txp:php>echo date('Y');</txp:php> <txp:site_name />. Powered by <a href="http://textpattern.com">Textpattern</a>.</small>
+	</footer>
 
 <!-- javascript at the bottom for fast page loading -->
-    <noscript>JavaScript is currently disabled in your browser - please activate it for the best experience.</noscript>
-    <!-- jQuery - load from Google CDN first, load locally if CDN is unavailable -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/js//libs/jquery.js"><\/script>')</script>
+	<noscript>JavaScript is currently disabled in your browser - please activate it for the best experience.</noscript>
+	<!-- jQuery - load from Google CDN first, load locally if CDN is unavailable -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/js//libs/jquery.js"><\/script>')</script>
 
-    <!-- add your own JavaScript here -->
+	<!-- add your own JavaScript here -->
 
 
 <!-- Google Analytics (amend the separate TXP form with your own unique ID), links to form: 'analytics.misc.txp' -->
-    <txp:output_form form="analytics" />
+	<txp:output_form form="analytics" />
 
 </body>
 </html>
