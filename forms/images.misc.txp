@@ -1,19 +1,22 @@
 <!-- use <txp:variable /> to check whether a image also has a caption associated with it... -->
 <txp:variable name="caption" value="<txp:image_info />" />
 
-<!-- ...then use that image caption and wrap img inside a figure with figcaption tags, otherwise just use a plain img tag -->
+<!-- ...now use that image caption and wrap img inside a figure with figcaption tags, otherwise just use a plain img tag -->
 <txp:if_variable name="caption" value="">
-  
+
 <!-- image - we are overriding the width and height to let the image scale to fit parent container -->
 <txp:image width="0" height="0" />
 
 <txp:else />
 
 <figure>
+
 <!-- image - we are overriding the width and height to let the image scale to fit parent container -->
-  <txp:image width="0" height="0" />
+	<txp:image width="0" height="0" />
+
 <!-- we don't need to specify the attribute type="caption" as that's the default setting for <txp:image_info /> tag -->
-  <figcaption><txp:image_info /></figcaption> 
+	<figcaption><txp:image_info /></figcaption>
+
 </figure>
 
 <txp:if_variable>

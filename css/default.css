@@ -47,15 +47,15 @@ html {
 
 body {
 	background:#fff;
-    margin:0 auto 20px;
+	margin:0 auto 20px;
 	width:960px;
 }
 
 header {
-    border-left:solid 1px #d4d4d4;
-    border-right:solid 1px #d4d4d4;
-    background:#f0f2f6;
-    padding:20px 10px 0;
+	border-left:solid 1px #d4d4d4;
+	border-right:solid 1px #d4d4d4;
+	background:#f0f2f6;
+	padding:20px 10px 0;
 }
 
 nav ul,
@@ -64,7 +64,7 @@ nav li {
 } 
 
 nav {
-    border:solid 1px #e1a61a;
+	border:solid 1px #e1a61a;
 	background:#ffda44;
 	background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#ffda44),color-stop(1,#fabc2b));
 	background:-moz-linear-gradient(#ffda44,#fabc2b);
@@ -76,23 +76,23 @@ nav {
 }
 
 nav li {
-    float:left;
-    border-right:solid 1px #e1a61a;
+	float:left;
+	border-right:solid 1px #e1a61a;
 }
 
 nav a {
-    display:block;
-    padding:10px;
-    text-decoration:none;
-    color:#333;
-    text-shadow:1px 1px #fbd978;
+	display:block;
+	padding:10px;
+	text-decoration:none;
+	color:#333;
+	text-shadow:1px 1px #fbd978;
 }
 
 nav a:hover,
 nav a:active {
-    text-decoration:none;
-    background:#fcdd62;
-    background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fcdd62),color-stop(1,#fec94c));
+	text-decoration:none;
+	background:#fcdd62;
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fcdd62),color-stop(1,#fec94c));
 	background:-moz-linear-gradient(#fcdd62,#fec94c);
 	background:-ms-linear-gradient(#fcdd62,#fec94c);
 	background:linear-gradient(#fcdd62,#fec94c);
@@ -102,27 +102,27 @@ nav a:active {
 
 #main {
 	float:left;
-    width:620px;
-    margin:20px 10px 0;
+	width:620px;
+	margin:20px 10px 0;
 }
 
 #sidebar {
 	float:left;
-    border:solid 1px #d4d4d4;
-    background:#f0f2f6;
-    width:278px;
-    margin:20px 10px;
-    padding:10px 10px 0;
+	border:solid 1px #d4d4d4;
+	background:#f0f2f6;
+	width:278px;
+	margin:20px 10px;
+	padding:10px 10px 0;
 	border-radius:5px;
 }
 
 footer {
 	clear:both;
-    border:solid 1px #d4d4d4;
-    background:#f0f2f6;
-    padding:10px;
+	border:solid 1px #d4d4d4;
+	background:#f0f2f6;
+	padding:10px;
 	width:938px; /* declare width to fix for IE7 double padding bug */
-    border-radius:5px;
+	border-radius:5px;
 }
 
 blockquote {
@@ -135,13 +135,13 @@ blockquote {
 
 a {
 	-webkit-tap-highlight-color:rgba(255,230,153,.5);
-    text-decoration:none;
-    color:#551a8b;
+	text-decoration:none;
+	color:#551a8b;
 }
 
 header a {
 	text-decoration:none;
-    color:#333;
+	color:#333;
 }
 
 #main a:hover,
@@ -149,7 +149,7 @@ header a {
 #sidebar a:hover,
 #sidebar a:active {
 	text-decoration:underline;
-    color:#551a8b;
+	color:#551a8b;
 }
 
 #main h1 a {
@@ -158,9 +158,9 @@ header a {
 
 #main h1 a:hover,
 #main h1 a:active {
-    text-decoration:none;
-    background:#f0f2f6;
-    color:#333;
+	text-decoration:none;
+	background:#f0f2f6;
+	color:#333;
 }
 
 
@@ -168,18 +168,18 @@ header a {
 
 body {
 	font-size:13px;
-    line-height:1.5em;
-    font-family:verdana, tahoma, arial, sans-serif;
+	line-height:1.5em;
+	font-family:verdana, tahoma, arial, sans-serif;
 	color:#333;
 }
 
 strong,
 th {
-    font-weight:bold;
+	font-weight:bold;
 }
 
 em {
-    font-style:italic;
+	font-style:italic;
 }
 
 abbr,
@@ -196,37 +196,37 @@ h3 {
 
 h1 {
 	font-size:40px;
-    line-height:1.1em;
-    padding-top:10px;
-    font-weight:bold;
-    font-family:Helvetica, Arial, verdana, sans-serif;
-    letter-spacing:-1px;
+	line-height:1.1em;
+	padding-top:10px;
+	font-weight:bold;
+	font-family:Helvetica, Arial, verdana, sans-serif;
+	letter-spacing:-1px;
 }
 
 h2 {
 	font-size:40px;
-    line-height:1.1em;
-    font-weight:bold;
-    font-family:Helvetica, Arial, verdana, sans-serif;
-    letter-spacing:-1px;
+	line-height:1.1em;
+	font-weight:bold;
+	font-family:Helvetica, Arial, verdana, sans-serif;
+	letter-spacing:-1px;
 }
 
 h3 {
 	font-size:26px;
-    line-height:1.3em;
+	line-height:1.3em;
 	font-style:italic;
-    font-weight:normal;
-    font-family:'Droid Serif', Georgia, Times, serif;
+	font-weight:normal;
+	font-family:'Droid Serif', Georgia, Times, serif;
 }
 
 p {
-    padding-bottom:1em;
+	padding-bottom:1em;
 }
 
 small,
 figcaption,
 .footnote {
-    font-size:10px;
+	font-size:10px;
 	line-height:15px;
 }
 
@@ -242,7 +242,7 @@ figcaption,
 #main ol,
 #sidebar ul,
 #sidebar ol {
-    margin:0 0 1em 20px;
+	margin:0 0 1em 20px;
 }
 
 
@@ -297,17 +297,17 @@ textarea {
 input[type="text"],
 input[type="search"],
 textarea {
-    font:13px/1.5em font-family: Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
-    border:solid 1px #d4d4d4;
-    background:#fff;
-    padding:.5em 5px .55em;
+	font:13px/1.5em font-family: Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
+	border:solid 1px #d4d4d4;
+	background:#fff;
+	padding:.5em 5px .55em;
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 }
 
 input[type="search"] {
-    width:180px;
+	width:160px;
 	padding:.5em 0 .55em 5px;
 	display:inline-block;
 	zoom:1; /* zoom and *display = ie7 hack for display:inline-block */
@@ -328,7 +328,7 @@ input[type="search"]:hover,
 input[type="search"]:focus,
 textarea:hover,
 textarea:focus {
-    background:#fcf6e6;
+	background:#fcf6e6;
 }
 
 .large input{
@@ -393,13 +393,13 @@ button,
 input[type="button"],
 input[type="submit"] {
 	font:13px/1.5em font-family: Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
-    font-weight:normal;
+	font-weight:normal;
 	height:2.4em;
 	width:auto; /* ie7 padding bug hack */
 	overflow:visible; /* ie7 padding bug hack */
-    color:#333;
-    text-shadow:1px 1px #fbd978;
-    display:inline-block;
+	color:#333;
+	text-shadow:1px 1px #fbd978;
+	display:inline-block;
 	zoom:1; /* zoom and *display = ie7 hack for display:inline-block */
 	*display:inline;
 	vertical-align:baseline;
@@ -408,9 +408,9 @@ input[type="submit"] {
 	cursor:pointer;
 	text-align:center;
 	padding:.5em 1em .55em;
-    border:solid 1px #e1a61a;
+	border:solid 1px #e1a61a;
 	border-radius:5px;
-    -webkit-box-shadow:0 1px 2px rgba(0,0,0,.2);
+	-webkit-box-shadow:0 1px 2px rgba(0,0,0,.2);
 	box-shadow:0 1px 2px rgba(0,0,0,.2);
 	background:#ffda44;
 	background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#ffda44),color-stop(1,#fabc2b));
@@ -426,7 +426,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
 	background:#fcdd62;
-    background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fcdd62),color-stop(1,#fec94c));
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fcdd62),color-stop(1,#fec94c));
 	background:-moz-linear-gradient(#fcdd62,#fec94c);
 	background:-ms-linear-gradient(#fcdd62,#fec94c);
 	background:linear-gradient(#fcdd62,#fec94c);
@@ -439,13 +439,13 @@ input[type="button"]:active,
 input[type="submit"]:active {
 	color:#000;
 	background:#fec94c;
-    background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fec94c),color-stop(1,#fcdd62));
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fec94c),color-stop(1,#fcdd62));
 	background:-moz-linear-gradient(#fec94c,#fcdd62);
 	background:-ms-linear-gradient(#fec94c,#fcdd62);
 	background:linear-gradient(#fec94c,#fcdd62);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fec94c',endColorstr='#fcdd62');
 	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#fec94c',endColorstr='#fcdd62')";
-    position:relative;
+	position:relative;
 	top:1px;
 }
 
@@ -484,30 +484,30 @@ a:focus,
 input:focus,
 textarea:focus,
 button:focus {
-    outline:0;
+	outline:0;
 	background:#fcf6e6;
-    -webkit-box-shadow:0 0 5px rgba(255,192,16,1); 
-    box-shadow:0 0 5px rgba(255,192,16,1);
+	-webkit-box-shadow:0 0 5px rgba(255,192,16,1); 
+	box-shadow:0 0 5px rgba(255,192,16,1);
 }
 
 /* get rid of proprietary text selection colour and use our own */
 ::selection {
-    background:#ffe699;
-    text-shadow:none;
+	background:#ffe699;
+	text-shadow:none;
 }
 
 ::-moz-selection {
-    background:#ffe699;
-    text-shadow:none;
+	background:#ffe699;
+	text-shadow:none;
 }
 
 /* get rid of image selection colour */
 img::selection {
-    background:transparent;
+	background:transparent;
 }
 
 img::-moz-selection {
-    background:transparent;
+	background:transparent;
 }
 
 
@@ -521,7 +521,7 @@ img::-moz-selection {
 
 
 html {
-    -webkit-text-size-adjust:none;
+	-webkit-text-size-adjust:none;
 }
 
 body {
@@ -530,15 +530,15 @@ body {
 
 #main {
 	float:none;
-    width:620px;
-    margin:20px 10px 0;
+	width:620px;
+	margin:20px 10px 0;
 }
 
 #sidebar {
 	float:none;
-    width:278px;
-    margin:0 10px 20px;
-    padding:10px 10px 0;
+	width:278px;
+	margin:0 10px 20px;
+	padding:10px 10px 0;
 }
 
 footer {
@@ -560,7 +560,7 @@ body {
 }
 
 #main {
-    width:300px;
+	width:300px;
 }
 
 footer {
@@ -580,49 +580,49 @@ footer {
 *{background:transparent !important;color:#000 !important;text-shadow:none !important;}
 
 body {
-    font:8pt/1.6em Helvetica,Arial,SunSans-Regular,sans-serif;
-    padding:2em 6em;
+	font:8pt/1.6em Helvetica,Arial,SunSans-Regular,sans-serif;
+	padding:2em 6em;
 }
 
 nav {
-    display:none;
+	display:none;
 }
 
 a {
-    color:#000;
-    text-decoration:none;
+	color:#000;
+	text-decoration:none;
 }
 
 a:link:after,
 a:visited:after{ 
-    content:" ("attr(href)") ";
+	content:" ("attr(href)") ";
 }
 
 h1 {
 	font-size:36px;
-    font-weight:normal;
-    line-height:1.3em;
+	font-weight:normal;
+	line-height:1.3em;
 	padding-bottom:2em;
 }
 
 h2 {
 	font-size:24px;
-    line-height:1.4em;
+	line-height:1.4em;
 	padding-bottom:1em;
 }
 
 h3 {
 	font-size:18px;
-    line-height:1.5em;
+	line-height:1.5em;
 	padding-bottom:1em;
 }
 
 p {
-    padding-bottom:1em;
+	padding-bottom:1em;
 }
 footer {
-    font-size:6pt;
-    line-height:1.6em;
+	font-size:6pt;
+	line-height:1.6em;
 }
 
 ul {

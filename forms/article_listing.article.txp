@@ -1,7 +1,5 @@
 <!-- see default.article.txp for info on HTML5 'time' tag -->
 
 <txp:if_first_article><ul></txp:if_first_article>
-
-<li><txp:permlink><txp:title /></txp:permlink> &#183; <time datetime="<txp:posted format='%Y-%m-%d' />T<txp:posted format='%H:%M' />" pubdate><txp:posted format="%d %B %Y" /></time> by <txp:author /></li>
-
+	<li><txp:permlink><txp:title /></txp:permlink> &#183; <time datetime="<txp:posted format='%Y-%m-%d' />T<txp:posted format='%H:%M' />" pubdate><txp:posted format="%d %B %Y" /></time> by <txp:author /></li>
 <txp:if_last_article></ul></txp:if_last_article>

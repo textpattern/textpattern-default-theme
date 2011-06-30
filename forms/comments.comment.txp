@@ -1,48 +1,48 @@
-<!-- is this a comment preview? -->
-<txp:if_comments_preview>
-
-  <!-- load the comment email into a variable. we'll be using below this along with author email loaded in form: default.article.txp... -->
-  <txp:variable name="this_comment_preview" value='<txp:comment_email />' />
-
-  <p id="cpreview"><strong>Note:</strong> The following is a preview of what your comment will look like. Please do not forget to scroll down and actually hit the <strong><a href="#txpCommentSubmit" title="Go to the submit button">submit</a></strong> button!</p>
-
-</txp:if_comments_preview>
-
 <!-- load the comment email into a variable. we'll be using below this along with author email loaded in form: default.article.txp... -->
 <txp:variable name="this_comment" value='<txp:comment_email />' />
 
-<article class="comments">
-
-<h4>
-
-<txp:comment_name link="0" />
-
-<!-- I'll say it again, is this a comment preview? -->
+<!-- is this a comment preview? -->
 <txp:if_comments_preview>
 
-  <!-- ...now check the comment preview email variable against article author email variable, and if it matches add '(author)' text -->
-  <txp:if_variable name="this_comment_preview" value='<txp:variable name="author_email" />'>
-    <span>(author)</span>
-  </txp:if_variable>
+	<!-- load the comment email into a variable. we'll be using below this along with author email loaded in form: default.article.txp... -->
+	<txp:variable name="this_comment_preview" value='<txp:comment_email />' />
 
-<!-- is this not a comment preview? -->
-<txp:else />
-
-  <!-- ...now check the comment email variable against article author email variable, and if it matches add '(author)' text -->
-  <txp:if_variable name="this_comment" value='<txp:variable name="author_email" />'>
-    <span>(author)</span>
-  </txp:if_variable>
+	<p id="cpreview"><strong>Note:</strong> The following is a preview of what your comment will look like. Please do not forget to scroll down and actually hit the <strong><a href="#txpCommentSubmit" title="Go to the submit button">submit</a></strong> button!</p>
 
 </txp:if_comments_preview>
 
-<!-- add a permlink so people can link direct to this comment (I personally never use this line of code - just here as an example) -->
-<txp:comment_permlink>#</txp:comment_permlink>
+<article class="comments">
 
-</h4>
+	<h4>
+
+	<txp:comment_name link="0" />
+
+<!-- I'll say it again, is this a comment preview? -->
+	<txp:if_comments_preview>
+
+<!-- ...now check the comment preview email variable against article author email variable, and if it matches add '(author)' text -->
+		<txp:if_variable name="this_comment_preview" value='<txp:variable name="author_email" />'>
+			<span>(author)</span>
+		</txp:if_variable>
+
+<!-- is this not a comment preview? -->
+	<txp:else />
+
+<!-- ...now check the comment email variable against article author email variable, and if it matches add '(author)' text -->
+		<txp:if_variable name="this_comment" value='<txp:variable name="author_email" />'>
+			<span>(author)</span>
+		</txp:if_variable>
+
+	</txp:if_comments_preview>
+
+<!-- add a permlink so people can link direct to this comment (I personally never use this line of code - just here as an example) -->
+	<txp:comment_permlink>#</txp:comment_permlink>
+
+	</h4>
 
 <!-- add time info for comment, see default.article.txp for info on HTML5 'time' tag - also adding a 'since' to show comment freshness -->
-<p class="footnote"><time datetime="<txp:comment_time format='%Y-%m-%d' />T<txp:comment_time format='%H:%M' />"><txp:comment_time format="%d/%m/%y" /> at <txp:comment_time format="%H:%M" /> (<txp:comment_time format="since" />)</time></p>
+	<p class="footnote"><time datetime="<txp:comment_time format='%Y-%m-%d' />T<txp:comment_time format='%H:%M' />"><txp:comment_time format="%d/%m/%y" /> at <txp:comment_time format="%H:%M" /> (<txp:comment_time format="since" />)</time></p>
 
-<txp:comment_message />
+	<txp:comment_message />
 
 </article>
