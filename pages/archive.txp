@@ -87,8 +87,5 @@
 
 	<!-- add your own JavaScript here -->
 
-<!-- Google Analytics (amend the separate TXP form with your own unique ID), links to form: analytics.misc.txp -->
-	<txp:output_form form="analytics" />
-
 </body>
 </html>
