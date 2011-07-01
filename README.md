@@ -104,11 +104,11 @@ Copy/paste over the existing form of the same name that was part of the standard
 
 #### /forms/search_input.misc.txp
 
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Note that this form makes use of the following tag:
+Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Note that this form makes use of the following tag...
 
     <txp:text />
 
-Which is used to target language strings from the language you set in the Textpattern preferences. For example to display 'Search' in your chosen language the tag would be:
+...which is used to target language strings from the database 'txp_lang' table for the language you set in the Textpattern preferences. For example to display 'Search' in your chosen language the tag would be:
 
     <txp:text item="search" />
 
