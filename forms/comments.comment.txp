@@ -22,7 +22,7 @@
 
 <!-- ...now check the comment preview email variable against article author email variable, and if it matches add '(author)' text -->
 		<txp:if_variable name="this_comment_preview" value='<txp:variable name="author_email" />'>
-			<span>(author)</span>
+			<span>(<txp:text item="author" />)</span>
 		</txp:if_variable>
 
 <!-- is this not a comment preview? -->
@@ -30,7 +30,7 @@
 
 <!-- ...now check the comment email variable against article author email variable, and if it matches add '(author)' text -->
 		<txp:if_variable name="this_comment" value='<txp:variable name="author_email" />'>
-			<span>(author)</span>
+			<span>(<txp:text item="author" />)</span>
 		</txp:if_variable>
 
 	</txp:if_comments_preview>
