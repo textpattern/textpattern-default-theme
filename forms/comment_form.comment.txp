@@ -1,7 +1,6 @@
-<!-- we're going to use <b> tags for required fields, as it has no semantic meaning (using <em> or <strong> would be illogical, captain) -->
 <p><strong class="form-intro">Enter you comment below.</strong> Fields marked <b class="required">*</b> are required. You must preview your comment first before finally posting.</p>
 
-<!-- if there is an error, then tell us -->
+<!-- if there is an error, then inform user -->
 <txp:if_comments_error>
 	<p class="error_message">Required fields are not completed.</p>
 </txp:if_comments_error>
@@ -24,5 +23,5 @@
 
 </fieldset>
 
-<!-- preview and submit buttons (note: submit button will have a class of 'disabled' applied until you have previewed message) -->
+<!-- preview and submit buttons (note: submit button will have a class of 'disabled' applied until you have previewed the message at least once) -->
 <p><txp:comment_preview /> <txp:comment_submit /></p>

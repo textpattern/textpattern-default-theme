@@ -51,7 +51,7 @@
 
 	</txp:article>
 
-<!-- we're going to check if there are further results and provide buttons or disabled buttons depending on the result -->
+<!-- check if there are further results and provide buttons or disabled buttons depending on the result -->
 	<txp:if_search_results min="11">
 
 		<txp:variable name="prev" value='<txp:older />' />

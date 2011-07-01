@@ -9,7 +9,7 @@
 	<title><txp:page_title /></title>
 	<meta name="description" content="">
 
-<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+<!-- mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1">
 
 <!-- place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references: mathiasbynens.be/notes/touch-icons -->
@@ -78,11 +78,11 @@
 
 <!-- footer -->
 	<footer>
-		<!-- we're using a small snippet of PHP to dynamically update the copyright year -->
+		<!-- using PHP to dynamically update the copyright year -->
 		<small>Copyright <txp:php>echo date('Y');</txp:php> <txp:site_name />. Powered by <a href="http://textpattern.com">Textpattern</a>.</small>
 	</footer>
 
-<!-- javascript at the bottom for fast page loading -->
+<!-- JavaScript at the bottom for fast page loading -->
 	<noscript>JavaScript is currently disabled in your browser - please activate it for the best experience.</noscript>
 
 	<!-- add your own JavaScript here -->

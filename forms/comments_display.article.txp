@@ -1,4 +1,4 @@
-<!-- we've added an id attribute to the section so we can link directly to here e.g. http://mysite.com/section/article#comments-head -->
+<!-- added an id attribute to the section so we can link directly to here e.g. http://mysite.com/section/article#comments-head -->
 
 <section id="comments-head">
 

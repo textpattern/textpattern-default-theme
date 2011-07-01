@@ -1,4 +1,4 @@
-<!-- use <txp:variable /> to check whether a file also has a description associated with it... -->
+<!-- set up a <txp:variable /> to check whether a file also has a description associated with it... -->
 <txp:variable name="file_download_description" value="<txp:file_download_description />" />
 
 <strong>Download: <a href="<txp:file_download_link />" title="<txp:file_download_name title='1' />"><txp:file_download_name title="1" /></a></strong><br>

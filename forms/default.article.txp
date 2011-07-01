@@ -1,8 +1,8 @@
-<!-- we're going to use some raw PHP to load the article author's email into a variable for use later in form: comments.comment.txp -->
+<!-- using some raw PHP to load the article author's email into a variable for use later in form: comments.comment.txp -->
 <txp:if_individual_article>
 	<txp:php>global $thisarticle,$variable;$variable['author_email']=safe_field("email","txp_users","name='".$thisarticle['authorid']."'");</txp:php>
 </txp:if_individual_article>
-<!-- basically we've loaded the author email address into a txp:variable using PHP because no core txp tag currently exists to do that -->
+<!-- you have loaded the author email address into a txp:variable using PHP because no core txp tag currently exists to do that -->
 
 <article>
 
