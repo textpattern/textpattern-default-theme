@@ -15,7 +15,7 @@
 
 	<h4>
 
-	<txp:comment_name link="0" />
+	<txp:comment_name />
 
 <!-- I'll say it again, is this a comment preview? -->
 	<txp:if_comments_preview>
