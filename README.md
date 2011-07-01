@@ -138,18 +138,18 @@ Copy/paste over the existing page of the same name that was part of the standard
 
 ### JavaScript
 
-#### /js/libs/jquery.js
+#### /js/jquery.js
 
 The ubiquitous jQuery JavaScript library used on thousands of sites worldwide. Although the theme contains no elements that actually require jQuery, it is included here for convenience.
 
 Note that preferred link is via Google's CDN hosted copy of jQuery, with a fallback to the locally hosted copy if the CDN is unavailable.
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/js//libs/jquery.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="<txp:site_url />js/libs/jquery.js"><\/script>')</script>
 
 The advantages of using the CDN version over your own hosted copy is threefold - one, it saves bandwidth on your own server; two, Google's servers are extremely low latency and high bandwidth; three, there is a fair chance an end user will already have a copy of Google's CDN jQuery already cached in their browser if they have been to another site that has also used this method to provide jQuery, that means they will not have to reload it and ultimately makes your site render quicker - bonus points!
 
-#### /js/libs/modernizr.js
+#### /js/modernizr.js
 
 The theme uses [Modernizr](http://www.modernizr.com/) to provide a HTML5 shim for older pre-HTML5 browsers. Modernizr is a great tool that also equips you with a set of tests that can be used to help provide a good experience to all end users, regardless of their browser choice (within limits!) - techniques commonly known as 'progressive enhancement' or 'graceful degradation' depending on whether you add features for capable browsers or provide fallback methods for less-capable browsers respectively.
 
