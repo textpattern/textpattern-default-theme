@@ -64,18 +64,17 @@
 		<txp:search_input /> <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
 		<p><txp:feed_link label="RSS" /> / <txp:feed_link flavor="atom" label="Atom" /></p>
 
-		<p>External Links</p>
+		<p><txp:text item="links" /></p>
 		<txp:linklist wraptag="ul" break="li" limit="10" /> <!-- links by default to form: 'plainlinks.link.txp' unless you specify a different form -->
 	</div>
 
 <!-- footer -->
 	<footer>
 		<!-- using PHP to dynamically update the copyright year -->
-		<small>Copyright <txp:php>echo date('Y');</txp:php> <txp:site_name />. Powered by <a href="http://textpattern.com">Textpattern</a>.</small>
+		<small>&#169;<txp:php>echo date('Y');</txp:php> <txp:site_name />. Powered by <a href="http://textpattern.com">Textpattern</a>.</small>
 	</footer>
 
 <!-- JavaScript at the bottom for fast page loading -->
-	<noscript>JavaScript is currently disabled in your browser - please activate it for the best experience.</noscript>
 
 	<!-- add your own JavaScript here -->
 

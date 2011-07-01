@@ -2,7 +2,7 @@
 
 <!-- if there is an error, then inform user -->
 <txp:if_comments_error>
-	<p class="error_message">Required fields are not completed.</p>
+	<txp:comments_error wraptag="ol" break="li" class="error_message" />
 </txp:if_comments_error>
 
 <fieldset>

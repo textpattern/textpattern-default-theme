@@ -2,7 +2,7 @@
 
 <section id="comments-head">
 
-<h3>comments</h3>
+<h3><txp:text item="comments" /></h3>
 
 <!-- if there are comments, display them... -->
 <txp:if_comments>

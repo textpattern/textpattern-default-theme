@@ -17,7 +17,7 @@
 	<p><strong><txp:text item="posted" />:</strong> <time datetime="<txp:posted format='%Y-%m-%d' />T<txp:posted format='%H:%M' />" pubdate><txp:posted format="%d %B %Y" /> at <txp:posted format='%l:%M%P' /></time></p>
 <!-- see http://php.net/manual/en/function.strftime.php for reference list of time/date strings -->
 
-	<p><strong>Feedback:</strong> <a class="comment-count" href="<txp:permlink />#comments-head" title="View the comments&hellip;">
+	<p><strong>Feedback:</strong> <a class="comment-count" href="<txp:permlink />#comments-head" title="<txp:text item='view' />&#8230;">
 
 <!-- if comments then display the number, if no comments then print 'no' -->
 <txp:if_comments>
