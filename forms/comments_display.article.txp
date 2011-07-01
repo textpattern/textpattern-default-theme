@@ -37,7 +37,7 @@
 
 <txp:else />
 
-	<p><strong>Comments are closed for this article.</strong></p>
+	<p><strong><txp:text item="comments_closed" /></strong></p>
 
 </txp:if_comments_allowed>
 

@@ -13,7 +13,7 @@
 <txp:if_variable>
 
 <span class="footnote">
-	Category: <txp:file_download_category /> &#124; 
+	<txp:text item="category" />: <txp:file_download_category /> &#124; 
 	Size: <txp:file_download_size /> &#124; 
 	Last modified: <txp:file_download_created format="%d %B %Y" /> &#124; 
 	Downloads: <txp:file_download_downloads />
