@@ -577,7 +577,7 @@ footer {
 @media print{
 
 
-*{background:transparent !important;color:#000 !important;text-shadow:none !important;}
+*{background:transparent !important;color:black !important;text-shadow:none !important;}
 
 body {
 	font:8pt/1.6em Helvetica,Arial,SunSans-Regular,sans-serif;
@@ -589,7 +589,6 @@ nav {
 }
 
 a {
-	color:#000;
 	text-decoration:none;
 }
 
