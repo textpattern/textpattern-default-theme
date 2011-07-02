@@ -73,7 +73,7 @@
 		<txp:search_input /> <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
 		<p><txp:feed_link label="RSS" /> / <txp:feed_link flavor="atom" label="Atom" /></p>
 
-		<p><txp:text item="links" /></p>
+		<p>External links</p>
 		<txp:linklist wraptag="ul" break="li" limit="10" /> <!-- links by default to form: 'plainlinks.link.txp' unless you specify a different form -->
 	</div>
 
