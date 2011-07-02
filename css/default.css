@@ -134,7 +134,7 @@ blockquote {
 a {
 	-webkit-tap-highlight-color:rgba(255,230,153,.5);
 	text-decoration:none;
-	color:#551a8b;
+	color:#1a428b;
 }
 
 header a {
@@ -147,6 +147,11 @@ header a {
 #sidebar a:hover,
 #sidebar a:active {
 	text-decoration:underline;
+	color:#1a428b;
+}
+
+#main a:visited,
+#sidebar a:visited {
 	color:#551a8b;
 }
 
@@ -155,7 +160,8 @@ header a {
 }
 
 #main h1 a:hover,
-#main h1 a:active {
+#main h1 a:active,
+#main h1 a:visited {
 	text-decoration:none;
 	background:#f0f2f6;
 	color:#333;
