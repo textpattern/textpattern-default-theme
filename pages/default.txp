@@ -47,6 +47,7 @@
 
 <!-- navigation -->
 	<nav role="navigation" class="clearfix">
+		<h2>Site navigation</h2>
 		<txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="li">
 			<txp:section link="1" title="1" />
 		</txp:section_list>

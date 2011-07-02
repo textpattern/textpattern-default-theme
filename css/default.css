@@ -58,6 +58,10 @@ header {
 	padding:20px 10px 0;
 }
 
+nav h2 {
+	display:none;
+}
+
 nav ul,
 nav li {
 	margin:0;
