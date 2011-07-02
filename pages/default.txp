@@ -40,20 +40,20 @@
 <body id="<txp:if_section name="">front<txp:else /><txp:section /></txp:if_section>">
 
 <!-- header -->
-	<header>
+	<header role="banner">
 		<h2><txp:link_to_home><txp:site_name /></txp:link_to_home></h2>
 		<h3><txp:site_slogan /></h3>
 	</header>
 
 <!-- navigation -->
-	<nav class="clearfix">
+	<nav role="navigation" class="clearfix">
 		<txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="li">
 			<txp:section link="1" title="1" />
 		</txp:section_list>
 	</nav>
 
 <!-- left (main) column -->
-	<div id="main">
+	<div role="main" id="main">
 
 	<txp:if_category>
 
@@ -82,7 +82,7 @@
 	</div>
 
 <!-- right column -->
-	<div id="sidebar">
+	<div role="complementary" id="sidebar">
 		<txp:search_input /> <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
 		<p><txp:feed_link label="RSS" /> / <txp:feed_link flavor="atom" label="Atom" /></p>
 
@@ -91,7 +91,7 @@
 	</div>
 
 <!-- footer -->
-	<footer>
+	<footer role="contentinfo">
 		<!-- using PHP to dynamically update the copyright year -->
 		<small>&#169;<txp:php>echo date('Y');</txp:php> <txp:site_name />. Powered by <a href="http://textpattern.com">Textpattern</a>.</small>
 	</footer>
