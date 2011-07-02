@@ -490,26 +490,6 @@ button:focus {
 	box-shadow:0 0 5px rgba(255,192,16,1);
 }
 
-/* get rid of proprietary text selection colour and use our own */
-::selection {
-	background:#ffe699;
-	text-shadow:none;
-}
-
-::-moz-selection {
-	background:#ffe699;
-	text-shadow:none;
-}
-
-/* get rid of image selection colour */
-img::selection {
-	background:transparent;
-}
-
-img::-moz-selection {
-	background:transparent;
-}
-
 
 }/* end of @media screen */
 
