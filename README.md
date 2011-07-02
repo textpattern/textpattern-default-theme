@@ -154,3 +154,15 @@ The advantages of using the CDN version over your own hosted copy is threefold -
 The theme uses [Modernizr](http://www.modernizr.com/) to provide a HTML5 shim for older pre-HTML5 browsers. Modernizr is a great tool that also equips you with a set of tests that can be used to help provide a good experience to all end users, regardless of their browser choice (within limits!) - techniques commonly known as 'progressive enhancement' or 'graceful degradation' depending on whether you add features for capable browsers or provide fallback methods for less-capable browsers respectively.
 
 It is strongly recommended that you read the Modernizr documentation available at their website and then build you own streamlined version of Modernizr with just the tests you'll actually foresee yourself using (the version included here is a full 'kitchen-sink' version with all tests included, not ideal for production use).
+
+## License:
+
+Major components:
+
+* Modernizr: MIT/BSD license
+* jQuery: MIT/GPL license
+* HTML5Doctor CSS reset: Public Domain
+
+Everything else:
+
+* [The Unlicense](http://unlicense.org) (aka: public domain)
