@@ -32,7 +32,7 @@
 <!-- if new comments are allowed for this article then display comment form, if not then display 'closed' message -->
 <txp:if_comments_allowed>
 
-	<h3>add a comment</h3>
+	<h3>Add a comment</h3>
 	<txp:comments_form isize="32" msgcols="64" msgrows="4" /> <!-- links by default to form: 'comment_form.comment.txp' unless you specify a different form -->
 
 <txp:else />
