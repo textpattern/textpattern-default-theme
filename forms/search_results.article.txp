@@ -4,7 +4,7 @@
 
 	<txp:if_search_results>
 
-<!-- count how many results return, if >200 then display excessive results message -->
+<!-- count how many results return, if greater than 200 then display excessive results message -->
 		<txp:if_search_results max="200">
 
 			<h3><txp:search_result_count /> matching your search request &#8216;<txp:search_term />&#8217;&#8230;</h3>
