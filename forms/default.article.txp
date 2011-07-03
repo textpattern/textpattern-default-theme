@@ -4,7 +4,7 @@
 </txp:if_individual_article>
 <!-- you have loaded the author email address into a txp:variable using PHP because no core txp tag currently exists to do that -->
 
-<article>
+<article role="article">
 
 <!-- if not an individual article then make the title <h1> a link -->
 <txp:if_individual_article>
