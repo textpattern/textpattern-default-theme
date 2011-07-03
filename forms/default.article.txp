@@ -6,7 +6,7 @@
 
 <article role="article">
 
-<!-- if not an individual article then make the title <h1> a link -->
+<!-- if not an individual article then make the title h1 a link -->
 <txp:if_individual_article>
 	<h1><txp:title /></h1>
 <txp:else />
@@ -36,7 +36,10 @@
 
 	<p><strong><txp:text item="author" />:</strong> <txp:author /></p>
 
-	<p><strong><txp:text item="categories" />:</strong> <txp:category1 title="1" link="1" />, <txp:category2 title="1" link="1" /></p>
+<!-- only display categories if they are actually set for an article, otherwise omit -->
+	<txp:if_article_category>
+		<p><strong><txp:text item="categories" />:</strong> <txp:category1 title="1" link="1" /><txp:if_article_category number="2">, <txp:category2 title="1" link="1" /></txp:if_article_category></p>
+	</txp:if_article_category>
 
 <!-- if this is an individual article then add the comments section via form: comments_display.article.txp -->
 <txp:if_individual_article>
