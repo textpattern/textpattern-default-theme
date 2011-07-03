@@ -177,7 +177,7 @@ header a {
 body {
 	font-size:13px;
 	line-height:1.5em;
-	font-family:verdana, tahoma, arial, sans-serif;
+	font-family:Verdana, Tahoma, Arial, sans-serif;
 	color:#333;
 }
 
@@ -207,7 +207,7 @@ h1 {
 	line-height:1.1em;
 	padding-top:10px;
 	font-weight:bold;
-	font-family:Helvetica, Arial, verdana, sans-serif;
+	font-family:Helvetica, Arial, Verdana, sans-serif;
 	letter-spacing:-1px;
 }
 
@@ -215,7 +215,7 @@ h2 {
 	font-size:40px;
 	line-height:1.1em;
 	font-weight:bold;
-	font-family:Helvetica, Arial, verdana, sans-serif;
+	font-family:Helvetica, Arial, Verdana, sans-serif;
 	letter-spacing:-1px;
 }
 
