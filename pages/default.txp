@@ -3,7 +3,7 @@
 <!--[if gt IE 6]><!--><html lang="<txp:lang />" class="no-js"><!--<![endif]-->
 
 <head>
-<meta charset="utf-8">
+	<meta charset="utf-8">
 
 <!-- page title and metas, no meta keywords as they are now obsolete -->
 	<title><txp:page_title /></title>
