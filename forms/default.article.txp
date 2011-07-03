@@ -36,7 +36,7 @@
 
 	<p><strong><txp:text item="author" />:</strong> <txp:author /></p>
 
-	<p><strong>Tagged under:</strong> <txp:category1 title="1" link="1" />, <txp:category2 title="1" link="1" /></p>
+	<p><strong><txp:text item="categories" />:</strong> <txp:category1 title="1" link="1" />, <txp:category2 title="1" link="1" /></p>
 
 <!-- if this is an individual article then add the comments section via form: comments_display.article.txp -->
 <txp:if_individual_article>
