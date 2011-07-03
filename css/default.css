@@ -196,12 +196,6 @@ acronym { /* acronym to be phased out of textile in favour of abbr */
 	cursor:help;
 }
 
-h1,
-h2,
-h3 {
-    padding-bottom:20px;
-}
-
 h1 {
 	font-size:40px;
 	line-height:1.1em;
@@ -209,6 +203,7 @@ h1 {
 	font-weight:bold;
 	font-family:Helvetica, Arial, Verdana, sans-serif;
 	letter-spacing:-1px;
+	padding-bottom:20px;
 }
 
 h2 {
@@ -217,14 +212,16 @@ h2 {
 	font-weight:bold;
 	font-family:Helvetica, Arial, Verdana, sans-serif;
 	letter-spacing:-1px;
+	padding-bottom:20px;
 }
 
 h3 {
-	font-size:26px;
+	font-size:25px;
 	line-height:1.3em;
 	font-style:italic;
 	font-weight:normal;
 	font-family:'Droid Serif', Georgia, Times, serif;
+	padding-bottom:12px;
 }
 
 p {
@@ -243,7 +240,7 @@ figcaption,
 	color:#888;
 }
 figcaption {
-	margin-top:10px;
+	margin-top:.75em;
 	font-style:italic;
 }
 
@@ -251,6 +248,7 @@ figcaption {
 /* images */
 
 article img {
+	margin:3px 0;
 	height:auto;
 	max-width:100%;
 }
@@ -327,7 +325,7 @@ textarea {
 }
 
 input[type="search"] {
-	width:160px;
+	width:210px;
 	padding:.5em 0 .55em 5px;
 	display:inline-block;
 	zoom:1; /* zoom and *display = ie7 hack for display:inline-block */
