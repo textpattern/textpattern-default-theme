@@ -242,6 +242,17 @@ figcaption,
 .footnote {
 	color:#888;
 }
+figcaption {
+	margin-top:10px;
+}
+
+
+/* images */
+
+article img {
+	height:auto;
+	max-width:100%;
+}
 
 
 /* lists */
@@ -474,6 +485,9 @@ input[type="submit"].disabled {
 .comments_error {
 	background: #fff4f4 !important;
 }
+.error_message li {
+	color: #c00;
+}
 
 
 /* vanity */
@@ -549,6 +563,15 @@ body {
 
 footer {
 	width:298px;
+}
+
+h1,
+h2 {
+	font-size:32px;
+}
+
+h3 {
+	font-size:21px;
 }
 
 
