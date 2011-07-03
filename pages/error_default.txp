@@ -27,7 +27,7 @@
 
 <!-- css -->
 	<!-- Google font API -->
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold,bolditalic&subset=latin">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:n4,i4,n7,i7">
 
 	<txp:css format="link" />
 	<!-- or you can use external CSS files eg. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
