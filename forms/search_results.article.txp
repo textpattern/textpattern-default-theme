@@ -28,8 +28,9 @@
 
 			<h1><txp:permlink><txp:title /></txp:permlink></h1>
 
-<!-- see default.article.txp for info on HTML5 'time' tag -->
+<!-- using HTML5 'time' tag, note that the correct format for datetime attribute should be Y-m-dTH:M (e.g. 2011-01-31T15:31) -->
 			<p><strong><txp:text item="posted" />:</strong> <time datetime="<txp:posted format='%Y-%m-%d' />T<txp:posted format='%H:%M' />" pubdate><txp:posted format="%d %B %Y" /> at <txp:posted format='%l:%M%P' /></time></p>
+<!-- see http://php.net/manual/en/function.strftime.php for reference list of time/date strings -->
 
 <!-- if the article has a defined article image, display the thumbnail of that (note: relies on you having created a thumbnail version) -->
 			<txp:if_article_image>
