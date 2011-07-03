@@ -34,7 +34,7 @@
 
 <!-- all JavaScript should go at the bottom, except for Modernizr which enables HTML5 elements & feature detects.
 	you should replace this with your own build containing only the tests you actually need via: www.modernizr.com/download/ -->
-	<script src="<txp:site_url />js/libs/modernizr.js"></script>
+	<script src="<txp:site_url />js/modernizr.js"></script>
 
 </head>
 
