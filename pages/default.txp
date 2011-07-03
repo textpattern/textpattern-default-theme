@@ -58,7 +58,7 @@
 
 	<txp:if_category>
 
-		<h2><txp:text item="category" />: <txp:category title="1" /></h2>
+		<h1><txp:text item="category" />: <txp:category title="1" /></h1>
 		<txp:article form="article_listing" limit="5" />
 
 	<txp:else />
