@@ -376,6 +376,7 @@ textarea {
 input[type="search"] {
 	width:210px;
 	padding:.5em 0 .55em 5px;
+	margin-right:2px;
 	display:inline-block;
 	zoom:1; /* zoom and *display = ie7 hack for display:inline-block */
 	*display:inline;
@@ -444,7 +445,9 @@ textarea:focus {
 /* buttons */
 
 /* Make buttons play nice in IE: www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
-input,button{
+input,
+button,
+.button {
 	width:auto;
 	overflow:visible;
 }
@@ -457,11 +460,12 @@ button::-moz-focus-inner{
 }
 
 button,
+.button,
 input[type="button"],
 input[type="submit"] {
-	font:13px/1.5em font-family: Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
+	font:11px/1.5em Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
 	font-weight:normal;
-	height:2.4em;
+	height:2.6em;
 	width:auto; /* ie7 padding bug hack */
 	overflow:visible; /* ie7 padding bug hack */
 	color:#333;
@@ -470,7 +474,7 @@ input[type="submit"] {
 	zoom:1; /* zoom and *display = ie7 hack for display:inline-block */
 	*display:inline;
 	vertical-align:baseline;
-	margin:0 2px;
+	margin:0;
 	outline:0;
 	cursor:pointer;
 	text-align:center;
@@ -489,6 +493,7 @@ input[type="submit"] {
 
 
 button:hover,
+.button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
 	background:#fcdd62;
@@ -500,6 +505,7 @@ input[type="submit"]:hover {
 }
 
 button:active,
+.button:active,
 input[type="button"]:active,
 input[type="submit"]:active {
 	color:#000;
@@ -513,7 +519,8 @@ input[type="submit"]:active {
 	top:1px;
 }
 
-input[type="submit"].disabled {
+input[type="submit"].disabled,
+#paginator span.disabled {
 	color:#fff;
 	text-shadow:-1px -1px #ccc;
 	cursor:default;
@@ -527,14 +534,35 @@ input[type="submit"].disabled {
 	top:0;
 }
 
+#paginator {
+	margin:1em 0;
+}
+#paginator .button {
+	height:1.5em;
+	padding:.1em .66em;
+}
+
+#paginator a.button {
+	color:#333;
+	text-decoration:none;
+}
+
+#paginator-l {
+	float:left;
+}
+
+#paginator-r {
+	float:right;
+}
+
 
 /* comments */
 
 .comments_error {
-	background: #fff4f4 !important;
+	background:#fff4f4 !important;
 }
 .error_message li {
-	color: #c00;
+	color:#c00;
 }
 
 

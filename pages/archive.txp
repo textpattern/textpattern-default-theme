@@ -59,12 +59,45 @@
 		<txp:if_article_list><h1><txp:section title="1" /></h1></txp:if_article_list>
 
 		<txp:article listform="article_listing" limit="5" />
-	
-	<txp:if_individual_article>
-		<p><txp:link_to_prev>&#171; <txp:prev_title /></txp:link_to_prev> <txp:link_to_next><txp:next_title /> &#187;</txp:link_to_next></p>
-	<txp:else />
-		<p><txp:older>&#171; <txp:text item="older" /></txp:older> <txp:newer><txp:text item="newer" /> &#187;</txp:newer></p>
-	</txp:if_individual_article>
+
+		<!-- add pagination links to foot of article/article listings if there are more articles available,
+			this method is more flexibile than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
+		<p id="paginator" class="clearfix">
+
+		<txp:if_individual_article>
+
+			<txp:variable name="prev" value='<txp:link_to_prev />' />
+			<txp:variable name="next" value='<txp:link_to_next />' />
+
+			<txp:if_variable name="prev" value="">
+				<span id="paginator-l" class="button disabled">&#171; <txp:text item="older" /></span>
+			<txp:else />
+				<a id="paginator-l" href="<txp:link_to_prev />" title="<txp:prev_title />" class="button">&#171; <txp:text item="older" /></a>
+			</txp:if_variable>
+			<txp:if_variable name="next" value="">
+				<span id="paginator-r" class="button disabled"><txp:text item="newer" /> &#187;</span>
+			<txp:else />
+				<a id="paginator-r" href="<txp:link_to_next />" title="<txp:next_title />" class="button"><txp:text item="newer" /> &#187;</a>
+			</txp:if_variable>
+
+		<txp:else />
+
+			<txp:variable name="prev" value='<txp:older />' />
+			<txp:variable name="next" value='<txp:newer />' />
+			<txp:if_variable name="prev" value="">
+				<span id="paginator-l" class="button disabled">&#171; <txp:text item="older" /></span>
+			<txp:else />
+				<a id="paginator-l" href="<txp:older />" title="<txp:text item='older' />" class="button">&#171; <txp:text item="older" /></a>
+			</txp:if_variable>
+			<txp:if_variable name="next" value="">
+				<span id="paginator-r" class="button disabled"><txp:text item="newer" /> &#187;</span>
+			<txp:else />
+				<a id="paginator-r" href="<txp:newer />" title="<txp:text item='newer' />" class="button"><txp:text item="newer" /> &#187;</a>
+			</txp:if_variable>
+
+		</txp:if_individual_article>
+
+		</p>
 
 	</div>
 
