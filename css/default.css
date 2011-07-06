@@ -403,7 +403,7 @@ input[type="search"]:hover,
 input[type="search"]:focus,
 textarea:hover,
 textarea:focus {
-	background:#fcf6e6;
+	background:#fdf8eb;
 }
 
 .large input{
@@ -587,7 +587,7 @@ input:focus,
 textarea:focus,
 button:focus {
 	outline:0;
-	background:#fcf6e6;
+	background:#fdf8eb;
 	-webkit-box-shadow:0 0 5px rgba(255,192,16,1); 
 	box-shadow:0 0 5px rgba(255,192,16,1);
 }
