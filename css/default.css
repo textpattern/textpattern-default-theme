@@ -279,16 +279,18 @@ article img {
 #sidebar ol {
 	margin:0 0 1em 20px;
 }
+
 #sidebar #monthly-list {
 	list-style:none;
 	margin:0;
-	padding:5px 0 8px;
+	padding:5px 0 10px;
 }
+
 #sidebar #monthly-list a {
 	display:block;
 	float:left;
 	min-width:36px;
-	margin:0 6px 8px 0;
+	margin:0 4px 6px 0;
 	text-align:center;
 	color:#444;
 	text-decoration:none;
@@ -298,16 +300,16 @@ article img {
 	-webkit-box-shadow:2px 2px 2px rgba(99,102,112,.2);
 	box-shadow:2px 2px 2px rgba(99,102,112,.2);
 }
-#sidebar #monthly-list li:nth-child(6n) a{ /* remove right margin from every 6th item in list */
-	margin-right:0;
-}
+
 #sidebar #monthly-list a:hover {
 	color:#000;
 	background:#fdf8eb;
 }
+
 #monthly-list span {
 	display:block;
 }
+
 #monthly-list a .archive-year {
 	font-size:10px;
 	font-size:1rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
@@ -321,6 +323,7 @@ article img {
 	background:-o-linear-gradient(#ffda44,#fabc2b);
 	background:linear-gradient(#ffda44,#fabc2b);
 }
+
 #monthly-list a:hover .archive-year {
 	background:#fcdd62;
 	background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fcdd62),color-stop(1,#fec94c));
