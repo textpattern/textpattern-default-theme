@@ -1,4 +1,4 @@
-@media all{
+@media all {
 
 
 /* HTML5 Reset Stylesheet v1.6.1 (Customised) http://html5doctor.com/html-5-reset-stylesheet/ */
@@ -29,13 +29,14 @@ sub{bottom:-.25em;}
 .clearfix{zoom:1;}
 
 
-}/* end of @media all */
+}
+/* end of @media all */
 
 
 
 
-/* standard styling For screen >960px */
-@media screen{
+/* standard styling and layout for screen > 959px */
+@media screen {
 
 
 /* layout */
@@ -630,13 +631,14 @@ button:focus {
 }
 
 
-}/* end of @media screen */
+}
+/* end of standard styling and layout for screen > 959px */
 
 
 
 
-/* layout changes for screen between 640px-960px */
-@media handheld and (max-width:480px),screen and (max-device-width:480px),screen and (max-width:960px){
+/* layout for screen < 960px */
+@media handheld and (max-width:480px),screen and (max-device-width:480px),screen and (max-width:960px) {
 
 
 html {
@@ -661,17 +663,18 @@ footer {
 }
 
 
-}/* end of @media handheld between 640px-960px */
+}
+/* end of layout for screen < 960px */
 
 
 
 
-/* layout changes for screen <640px */
-@media handheld and (max-width:480px),screen and (max-device-width:480px),screen and (max-width:640px){
+/* layout for screen < 768px */
+@media only screen and (max-width: 767px) {
 
 
 body {
-	width:300px;
+	width:440px;
 }
 
 header {
@@ -679,11 +682,11 @@ header {
 }
 
 #main {
-	width:280px;
+	width:420px;
 }
 
 footer {
-	width:278px;
+	width:418px;
 }
 
 h1,
@@ -707,12 +710,36 @@ h3 {
 }
 
 
-}/* end of @media handheld <640px */
+}
+/* end of layout for screen < 768px */
 
 
 
 
-/* styling For print */
+/* layout for screen < 480px */
+@media only screen and (max-width: 479px) {
+
+
+body {
+	width:300px;
+}
+
+#main {
+	width:280px;
+}
+
+footer {
+	width:278px;
+}
+
+
+}
+/* end of layout for screen < 480px */
+
+
+
+
+/* styling for print */
 @media print{
 
 
@@ -774,4 +801,5 @@ ol {
 }
 
 
-}/* end of @media print */
+}
+/* end of styling for print */
