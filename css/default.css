@@ -41,6 +41,7 @@ sub{bottom:-.25em;}
 /* layout */
 
 html {
+	font-size:62.5%;
 	-webkit-text-size-adjust:100%;
 	-ms-text-size-adjust:100%;
 }
@@ -176,6 +177,7 @@ header a {
 
 body {
 	font-size:13px;
+	font-size:1.3rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
 	line-height:1.5em;
 	font-family:Verdana, Tahoma, Arial, sans-serif;
 	color:#333;
@@ -198,6 +200,7 @@ acronym { /* acronym to be phased out of textile in favour of abbr */
 
 h1 {
 	font-size:40px;
+	font-size:4rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
 	line-height:1.1em;
 	padding-top:10px;
 	font-weight:bold;
@@ -208,6 +211,7 @@ h1 {
 
 h2 {
 	font-size:40px;
+	font-size:4rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
 	line-height:1.1em;
 	font-weight:bold;
 	font-family:Helvetica, Arial, Verdana, sans-serif;
@@ -217,6 +221,7 @@ h2 {
 
 h3 {
 	font-size:25px;
+	font-size:2.5rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
 	line-height:1.3em;
 	font-style:italic;
 	font-weight:normal;
@@ -235,7 +240,8 @@ p {
 small,
 figcaption,
 .footnote {
-	font-size:10px;
+	font-size:11px;
+	font-size:1.1rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
 	line-height:15px;
 }
 
@@ -293,6 +299,7 @@ article img {
 }
 #monthly-list a .archive-year {
 	font-size:10px;
+	font-size:1rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
 	font-weight:bold;
 	text-shadow:1px 1px #fbd978;
 	border-radius:5px 5px 0 0;
@@ -364,7 +371,7 @@ textarea {
 input[type="text"],
 input[type="search"],
 textarea {
-	font:13px/1.5em font-family: Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
+	font:11px/1.5em Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
 	border:solid 1px #d4d4d4;
 	background:#fff;
 	padding:.5em 5px .55em;
@@ -464,6 +471,7 @@ button,
 input[type="button"],
 input[type="submit"] {
 	font:11px/1.5em Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
+	font-size:1.1rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
 	font-weight:normal;
 	height:2.6em;
 	width:auto; /* ie7 padding bug hack */
@@ -644,10 +652,12 @@ footer {
 h1,
 h2 {
 	font-size:32px;
+	font-size:3.2rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
 }
 
 h3 {
 	font-size:21px;
+	font-size:2.1rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
 }
 
 
@@ -681,20 +691,20 @@ a:visited:after{
 }
 
 h1 {
-	font-size:36px;
+	font-size:36pt;
 	font-weight:normal;
 	line-height:1.3em;
 	padding-bottom:2em;
 }
 
 h2 {
-	font-size:24px;
+	font-size:24pt;
 	line-height:1.4em;
 	padding-bottom:1em;
 }
 
 h3 {
-	font-size:18px;
+	font-size:18pt;
 	line-height:1.5em;
 	padding-bottom:1em;
 }
