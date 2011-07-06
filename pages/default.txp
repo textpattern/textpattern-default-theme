@@ -101,6 +101,9 @@
 	<div role="complementary" id="sidebar">
 		<txp:search_input /> <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
 
+		<!-- Feed links, default flavor is rss, so we don't need to specify a flavor on the first feed_link -->
+		<p><txp:feed_link label="RSS" class="feed-rss" /> / <txp:feed_link flavor="atom" label="Atom" class="feed-atom" /></p>
+
 		<h5><txp:text item="recent_articles" /></h5>
 		<ul id="monthly-list" class="clearfix">
 			<!-- using if_different tag to populate list only with months that actually contain articles -->
@@ -118,7 +121,7 @@
 <!-- footer -->
 	<footer role="contentinfo">
 		<!-- using PHP to dynamically update the copyright year -->
-		<small>&#169;<txp:php>echo date('Y');</txp:php> <txp:site_name />. <txp:feed_link label="RSS" /> / <txp:feed_link flavor="atom" label="Atom" />. Powered by <a href="http://textpattern.com" rel="external">Textpattern</a>.</small>
+		<small>&#169;<txp:php>echo date('Y');</txp:php> <txp:site_name />. Powered by <a href="http://textpattern.com" rel="external">Textpattern</a>.</small>
 	</footer>
 
 <!-- JavaScript at the bottom for fast page loading -->
