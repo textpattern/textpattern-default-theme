@@ -198,6 +198,13 @@ acronym { /* acronym to be phased out of textile in favour of abbr */
 	cursor:help;
 }
 
+code,
+pre,
+kbd {
+	font-family:Cousine, Consolas, Monaco, monospace;
+	background:#fdf8eb;
+}
+
 h1 {
 	font-size:40px;
 	font-size:4rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
@@ -566,9 +573,32 @@ input[type="submit"].disabled,
 
 /* comments */
 
+.comments {
+	background-color:#f7f8fb;
+	padding:1em 10px 0;
+	margin-bottom:20px;
+	border-radius:5px;
+}
+
+.comments h4 span {
+	font-weight:normal;
+}
+
+.comments h4 .comment-anchor {
+	float:right;
+}
+
+#cpreview {
+	background-color:#fDf8eb;
+	padding:1em 10px;
+	border-radius:5px;
+	margin-bottom:2px;
+}
+
 .comments_error {
 	background:#fff4f4 !important;
 }
+
 .error_message li {
 	color:#c00;
 }
