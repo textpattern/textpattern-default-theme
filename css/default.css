@@ -300,6 +300,7 @@ article img {
 }
 #sidebar #monthly-list a:hover {
 	color:#000;
+	background:#fdf8eb;
 }
 #monthly-list span {
 	display:block;
@@ -589,7 +590,7 @@ input[type="submit"].disabled,
 }
 
 #cpreview {
-	background-color:#fDf8eb;
+	background-color:#fdf8eb;
 	padding:1em 10px;
 	border-radius:5px;
 	margin-bottom:2px;
