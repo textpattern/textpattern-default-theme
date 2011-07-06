@@ -740,7 +740,7 @@ footer {
 
 
 /* styling for print */
-@media print{
+@media print {
 
 
 *{background:transparent !important;color:black !important;text-shadow:none !important;}
