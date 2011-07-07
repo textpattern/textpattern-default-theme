@@ -335,10 +335,10 @@ article img {
 }
 
 
-/* articles */
+/* search page */
 
-.directory {
-	list-style-type:circle;
+#search-page #main article:last-of-type {
+	margin-bottom:10px;
 }
 
 
