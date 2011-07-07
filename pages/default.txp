@@ -56,13 +56,7 @@
 <!-- left (main) column -->
 	<div role="main" id="main">
 
-	<txp:if_category>
-
-		<h1><txp:text item="category" />: <txp:category title="1" /></h1>
-		<txp:article form="article_listing" limit="5" />
-
-	<txp:else />
-
+	<!-- is this result result page? also omits the pagination links below (uses pagination format within search_results.article.txp instead) -->
 	<txp:if_search>
 
 		<h1><txp:text item="search_results" /></h1>
@@ -70,12 +64,20 @@
 
 	<txp:else />
 
-		<txp:article limit="5" /> <!-- links by default to form: 'default.article.txp' unless you specify a different form -->
+		<!-- else is this an article category list? -->
+		<txp:if_category>
 
-	</txp:if_search>
-	</txp:if_category>
+			<h1><txp:text item="category" />: <txp:category title="1" /></h1>
+			<txp:article form="article_listing" limit="5" />
+
+		<!-- else display articles normally -->
+		<txp:else />
+
+			<txp:article limit="5" /> <!-- links by default to form: 'default.article.txp' unless you specify a different form -->
+
+		</txp:if_category>
 	
-	<!-- add pagination links to foot of article/article listings if there are more articles available,
+		<!-- add pagination links to foot of article/article listings/category listings if there are more articles available,
 			this method is more flexibile than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
 		<p id="paginator" class="clearfix">
 
@@ -94,6 +96,8 @@
 		</txp:if_variable>
 
 		</p>
+
+	</txp:if_search>
 
 	</div>
 
