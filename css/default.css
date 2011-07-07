@@ -57,7 +57,7 @@ header {
 	border-left:solid 1px #d4d4d4;
 	border-right:solid 1px #d4d4d4;
 	background:#f0f2f6;
-	padding:20px 10px 0;
+	padding:10px 10px 0;
 }
 
 nav h2 {
@@ -675,10 +675,6 @@ footer {
 
 body {
 	width:440px;
-}
-
-header {
-	padding:10px 10px 0;
 }
 
 #main {
