@@ -1,5 +1,5 @@
 <!doctype html>
-<!--[if IE 6 ]><html lang="en" class="no-js ie6"><![endif]-->
+<!--[if IE 6 ]><html lang="<txp:lang />" class="no-js ie6"><![endif]-->
 <!--[if gt IE 6]><!--><html lang="<txp:lang />" class="no-js"><!--<![endif]-->
 
 <head>
