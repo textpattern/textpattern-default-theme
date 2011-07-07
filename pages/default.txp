@@ -37,7 +37,7 @@
 
 </head>
 
-<body id="<txp:if_section name="">front<txp:else /><txp:section /></txp:if_section>">
+<body id="<txp:if_section name=""><txp:if_search>search<txp:else />front</txp:if_search><txp:else /><txp:section /></txp:if_section>-page">
 
 <!-- header -->
 	<header role="banner">
