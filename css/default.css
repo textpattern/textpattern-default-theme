@@ -206,6 +206,11 @@ kbd {
 	background:#fdf8eb;
 }
 
+pre {
+	padding:10px;
+	margin-bottom:1em;
+}
+
 h1 {
 	font-size:40px;
 	font-size:4rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
