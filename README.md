@@ -74,10 +74,6 @@ The second method is much more traditional and flexible though it relies on you 
 
 The forms follow the cnk_versioning standard of labelling, in that 'xxxx.misc.txp' is a misc type form, 'xxxx.article.txp' is an article type form, etc. This is only for file structure, when you actually create new forms within Textpattern you should **not** include the '.xxxx.txp', just the first part of the filename. See the analytics form description below.
 
-#### /forms/analytics.misc.txp
-
-Create a new form in the system with name of 'analytics' and type of 'misc', then copy/paste the code from this file into it. Add your unique Google Analytics ID into the code where indicated and then save the form.
-
 #### /forms/comment_form.comment.txp
 
 Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to format the form for inputting comments.
@@ -145,17 +141,6 @@ This page template is utilised when viewing a page error (such as a 404 page not
 Copy/paste over the existing page of the same name that was part of the standard Textpattern install
 
 ### JavaScript
-
-#### /js/jquery.js
-
-The ubiquitous jQuery JavaScript library used on thousands of sites worldwide. Although the theme contains no elements that actually require jQuery, it is included here for convenience.
-
-Note that preferred link is via Google's CDN hosted copy of jQuery, with a fallback to the locally hosted copy if the CDN is unavailable.
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="<txp:site_url />js/libs/jquery.js"><\/script>')</script>
-
-The advantages of using the CDN version over your own hosted copy is threefold - one, it saves bandwidth on your own server; two, Google's servers are extremely low latency and high bandwidth; three, there is a fair chance an end user will already have a copy of Google's CDN jQuery already cached in their browser if they have been to another site that has also used this method to provide jQuery, that means they will not have to reload it and ultimately makes your site render quicker - bonus points!
 
 #### /js/modernizr.js
 
