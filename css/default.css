@@ -184,7 +184,8 @@ th {
 	font-weight:bold;
 }
 
-em {
+em,
+cite {
 	font-style:italic;
 }
 
