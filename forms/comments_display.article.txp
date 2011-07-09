@@ -9,9 +9,7 @@
 <txp:if_comments>
 	<ol class="comments-list">
 
-		<li>
-			<txp:comments wraptag="" break="" /> <!-- links by default to form: 'comments.comment.txp' unless you specify a different form -->
-		</li>
+		<txp:comments wraptag="" break="li" /> <!-- links by default to form: 'comments.comment.txp' unless you specify a different form -->
 
 	<!-- if this is a comment preview, display it (but only if there is no error) -->
 		<txp:if_comments_preview>
