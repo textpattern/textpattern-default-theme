@@ -179,11 +179,13 @@ body {
 	color:#333;
 }
 
+b,
 strong,
 th {
 	font-weight:bold;
 }
 
+i,
 em,
 cite {
 	font-style:italic;
