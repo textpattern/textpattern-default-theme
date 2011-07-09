@@ -385,11 +385,22 @@ th {
 	background:linear-gradient(#fcdd62,#fec94c);
 }
 
+#main #article-list {
+	list-style:none;
+	margin:0 0 2em 0;
+	border-top:1px solid #f0f2f6;
+}
+
+#article-list li {
+	border-bottom:1px solid #f0f2f6;
+	padding-top:1em;
+}
+
 
 /* search page */
 
 #search-page #main article:last-of-type {
-	margin-bottom:10px;
+	margin-bottom:1em;
 }
 
 
