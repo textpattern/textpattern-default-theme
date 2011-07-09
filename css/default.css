@@ -210,13 +210,13 @@ pre,
 kbd {
 	font-family:Cousine, Consolas, Monaco, monospace;
 	background:#fdf8eb;
-	border-radius:5px;
 }
 
 pre {
 	padding:1em 10px;
 	margin-bottom:1em;
 	overflow-x:auto;
+	border-radius:5px;
 }
 
 h1 {
