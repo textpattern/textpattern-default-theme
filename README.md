@@ -1,6 +1,6 @@
 # txp-h5bp-theme: a replacement for the Textpattern CMS default theme
 
-This project is designed as a replacement for the default theme that comes as standard with the Textpattern CMS. It is intended as a starting point for new users learning Textpattern for the first time or existing users that want to adapt their current code for modern standards, and is not intended as a finished production theme (though you could use it as such if you want to I guess).
+This project is designed as a proposed replacement (TXP5) for the default theme that comes as standard with the Textpattern CMS (TXP4). It is intended as a starting point for new users learning the Textpattern CMS for the first time or existing users that want to adapt their current code for modern standards, and is not intended as a finished production theme (though you could use it as such if you want to).
 
 #### Features
 
