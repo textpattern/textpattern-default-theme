@@ -21,8 +21,12 @@
 	<txp:feed_link flavor="rss" format="link" label="RSS" />
 	<txp:rsd />
 
-<!-- canonical sections, more info: http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html -->
-	<txp:if_section name=""><txp:else /><txp:if_individual_article><txp:else /><link rel="canonical" href="<txp:site_url /><txp:section />" /></txp:if_individual_article></txp:if_section>
+<!-- specify canonical, more info: http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html -->
+	<txp:if_individual_article>
+		<link rel="canonical" href="<txp:permlink />">
+	<txp:else />
+		<link rel="canonical" href="<txp:site_url /><txp:section />">
+	</txp:if_individual_article>
 
 <!-- css -->
 	<!-- Google font API -->
