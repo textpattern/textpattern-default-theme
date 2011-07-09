@@ -76,7 +76,7 @@ The forms follow the cnk_versioning standard of labelling, in that 'xxxx.misc.tx
 
 #### /forms/analytics.misc.txp
 
-Add your unique Google Analytics ID into the code where indicated. Create a new form in the system with name of 'analytics' and type of 'misc', then copy/paste the code from this file into it, and save it. 
+Create a new form in the system with name of 'analytics' and type of 'misc', then copy/paste the code from this file into it. Add your unique Google Analytics ID into the code where indicated and then save the form.
 
 #### /forms/comment_form.comment.txp
 
@@ -93,6 +93,14 @@ Copy/paste over the existing form of the same name that was part of the standard
 #### /forms/files.file.txp
 
 Copy/paste over the existing form of the same name that was part of the standard Textpattern install. You can call this form from within an article by simply using `<txp:file_download id="xxx" />` (you don't need to specify a form name as 'files' is the default form for files) - you can also call this form from within other any other forms and pages using the same method (just mind your `<p>`'s).
+
+#### /forms/images.misc.txp
+
+Create a new form in the system with name of 'images' and type of 'misc', then copy/paste the code from this file into it. You could then for example display article_images by inserting the following code into a written article...
+
+    notextile. <txp:images form="images" />
+
+...you should use the `notextile.` prefix in this instance because the HTML `<figure>` tag cannot be wrapped inside a `<p>` tag.
 
 #### /forms/links.link.txp
 

@@ -5,7 +5,7 @@
 <txp:if_variable name="caption" value="">
 
 <!-- image - overriding the width and height to let the image scale to fit parent container -->
-	<txp:image width="0" height="0" />
+	<p><txp:image width="0" height="0" /></p>
 
 <txp:else />
 

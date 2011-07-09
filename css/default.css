@@ -277,6 +277,10 @@ article img {
 	max-width:100%;
 }
 
+figure {
+	margin-bottom:1.3em;
+}
+
 
 /* tables */
 
