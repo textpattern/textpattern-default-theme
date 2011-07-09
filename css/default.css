@@ -311,10 +311,6 @@ tbody {
 	border-left:1px solid #f0f2f6;
 }
 
-tbody tr:nth-of-type(even) { /* very subtle zebra striping */
-	background:#fdfdfe;
-}
-
 th,
 td {
 	padding:.25em 9px;
