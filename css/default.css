@@ -251,6 +251,7 @@ p {
 
 small,
 figcaption,
+tfoot,
 .footnote {
 	font-size:11px;
 	font-size:1.1rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
@@ -258,6 +259,7 @@ figcaption,
 }
 
 figcaption,
+tfoot,
 .footnote {
 	color:#888;
 }
@@ -273,6 +275,55 @@ article img {
 	margin:3px 0;
 	height:auto;
 	max-width:100%;
+}
+
+
+/* tables */
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	width:100%;
+	margin-bottom:1.3em;
+}
+
+caption {
+	font-family:'Droid Serif', Georgia, Times, serif;
+	font-style:italic;
+	text-align:left;
+	margin-bottom:.5em;
+}
+
+thead {
+	background:#f0f2f6;
+	border-right:1px solid #f0f2f6;
+	border-left:1px solid #f0f2f6;
+}
+
+tfoot {
+	background:#f7f8fb;
+	border-right:1px solid #f0f2f6;
+	border-left:1px solid #f0f2f6;
+}
+
+tbody {
+	border-right:1px solid #f0f2f6;
+	border-left:1px solid #f0f2f6;
+}
+
+tbody tr:nth-of-type(even) { /* very subtle zebra striping */
+	background:#fdfdfe;
+}
+
+th,
+td {
+	padding:.25em 9px;
+	border-bottom:1px solid #f0f2f6;
+}
+
+th {
+	text-align:left;
+	border-top:1px solid #f0f2f6;
 }
 
 
