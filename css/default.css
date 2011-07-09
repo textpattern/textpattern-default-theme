@@ -210,6 +210,7 @@ pre,
 kbd {
 	font-family:Cousine, Consolas, Monaco, monospace;
 	background:#fdf8eb;
+	border-radius:5px;
 }
 
 pre {
