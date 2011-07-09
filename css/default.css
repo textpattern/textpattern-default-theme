@@ -129,11 +129,6 @@ footer {
 	border-radius:5px;
 }
 
-blockquote {
-	float:right;
-	margin-left:20px;
-}
-
 
 /* links */
 
@@ -199,6 +194,17 @@ acronym { /* acronym to be phased out of textile in favour of abbr */
 	cursor:help;
 }
 
+blockquote {
+	float:right;
+	font-family:'Droid Serif', Georgia, Times, serif;
+	font-style:italic;
+	width:260px;
+	background:#f7f8fb;
+	border-radius:5px;
+	padding:1em 10px 0;
+	margin:0 0 .5em 1em;
+}
+
 code,
 pre,
 kbd {
@@ -207,7 +213,7 @@ kbd {
 }
 
 pre {
-	padding:10px;
+	padding:1em 10px;
 	margin-bottom:1em;
 	overflow-x:auto;
 }
@@ -691,6 +697,11 @@ footer {
 	width:418px;
 }
 
+blockquote {
+	width:400px;
+	margin-bottom:1em;
+}
+
 h1,
 h2 {
 	font-size:30px;
@@ -732,6 +743,11 @@ body {
 
 footer {
 	width:278px;
+}
+
+blockquote {
+	width:260px;
+	margin-bottom:1em;
 }
 
 
