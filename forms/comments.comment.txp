@@ -1,7 +1,12 @@
 <!-- load the comment email into a variable. you will be using below this along with author email variable loaded in form: default.article.txp... -->
 <txp:variable name="this_comment" value='<txp:comment_email />' />
 
-<article class="comments">
+<!-- ...now check the comment email variable against article author email variable, and if it matches add 'comments-author' class -->
+<txp:if_variable name="this_comment" value='<txp:variable name="author_email" />'>
+	<article class="comments comments-author">
+<txp:else />
+	<article class="comments">
+</txp:if_variable>
 
 	<h4>
 

@@ -644,10 +644,14 @@ input[type="submit"].disabled,
 /* comments */
 
 .comments {
-	background-color:#f7f8fb;
+	background:#f7f8fb;
 	padding:1em 10px 0;
 	margin-bottom:20px;
 	border-radius:5px;
+}
+
+.comments-author {
+	background:#f4fcf3;
 }
 
 .comments h4 span {
@@ -659,7 +663,7 @@ input[type="submit"].disabled,
 }
 
 #cpreview {
-	background-color:#fdf8eb;
+	background:#fdf8eb;
 	padding:1em 10px;
 	border-radius:5px;
 	margin-bottom:2px;
