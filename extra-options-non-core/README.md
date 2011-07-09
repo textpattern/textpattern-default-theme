@@ -18,7 +18,7 @@ Add the option for politely informing any users of Internet Explorer 6 that they
 
 You could also target IE 7 (or newer) if you so desired by amending the code `<!--[if lt IE 7]>` to `<!--[if lt IE 8]>` for example for IE 7 (the code `lt IE 8` means lower than IE 8).
 
-#### /extra-options-non-core/jquery/
+### /extra-options-non-core/jquery/
 
 The ubiquitous [jQuery](http://jquery.com/) JavaScript library is used on thousands of sites worldwide.
 
