@@ -22,9 +22,6 @@
 	<txp:feed_link flavor="rss" format="link" label="RSS" />
 	<txp:rsd />
 
-<!-- canonical sections, more info: http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html -->
-	<txp:if_section name=""><txp:else /><txp:if_individual_article><txp:else /><link rel="canonical" href="<txp:site_url /><txp:section />" /></txp:if_individual_article></txp:if_section>
-
 <!-- css -->
 	<!-- Google font API -->
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:n4,i4,n7,i7|Cousine">
