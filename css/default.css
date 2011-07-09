@@ -209,6 +209,7 @@ kbd {
 pre {
 	padding:10px;
 	margin-bottom:1em;
+	overflow-x:auto;
 }
 
 h1 {
