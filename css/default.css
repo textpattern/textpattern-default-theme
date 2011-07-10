@@ -335,9 +335,16 @@ th {
 
 #main ul,
 #main ol,
+#main dl,
 #sidebar ul,
-#sidebar ol {
+#sidebar ol,
+#sidebar dl {
 	margin:0 0 1em 20px;
+}
+
+dt {
+	font-family:'Droid Serif', Georgia, Times, serif;
+	font-style:italic;
 }
 
 #sidebar #monthly-list {
