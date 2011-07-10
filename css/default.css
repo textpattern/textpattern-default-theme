@@ -196,6 +196,10 @@ blockquote {
 	margin:0 0 .5em 1em;
 }
 
+ins {
+	background:#fdf8eb;
+}
+
 code,
 pre,
 kbd {
