@@ -722,10 +722,6 @@ button:focus {
 @media handheld and (max-width:480px),screen and (max-device-width:480px),screen and (max-width:960px) {
 
 
-html {
-  -webkit-text-size-adjust:none;
-}
-
 body {
   width:660px;
 }
