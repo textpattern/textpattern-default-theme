@@ -32,7 +32,7 @@
 <!-- ...now use that variable to determine with to put an 's' on the end of 'comment' -->
   comment<txp:if_variable name="comments_count" value="1"><txp:else />s</txp:if_variable></a></p>
 
-<txp:body />
+  <txp:body />
 
   <p><strong><txp:text item="author" />:</strong> <txp:author /></p>
 
