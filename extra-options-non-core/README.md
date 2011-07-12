@@ -18,6 +18,14 @@ Add the option for politely informing any users of Internet Explorer 6 that they
 
 You could also target IE 7 (or newer) if you so desired by amending the code `<!--[if lt IE 7]>` to `<!--[if lt IE 8]>` for example for IE 7 (the code `lt IE 8` means lower than IE 8).
 
+### Extra code option: google_plus1
+
+Add a Google +1 button to each of your articles.
+
+#### /extra-options-non-core/jquery/jquery.txp
+
+Paste the code from that form your default.article.txp form (around line 15 is recommended). Note that we are loading this as asynchronous JavaScript so it does not delay page rendering.
+
 ### Extra code option: jquery
 
 The ubiquitous [jQuery](http://jquery.com/) JavaScript library is used on thousands of sites worldwide.
