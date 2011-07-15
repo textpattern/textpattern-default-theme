@@ -43,7 +43,6 @@ sub{bottom:-.25em;}
 /* layout */
 
 html {
-  font-size:62.5%;
   -webkit-text-size-adjust:100%;
   -ms-text-size-adjust:100%;
 }
@@ -176,7 +175,6 @@ header a {
 
 body {
   font-size:13px;
-  font-size:1.3rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
   line-height:1.5em;
   font-family:Verdana, Tahoma, Arial, sans-serif;
   color:#333;
@@ -219,7 +217,6 @@ pre {
 
 h1 {
   font-size:40px;
-  font-size:4rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
   line-height:1.1em;
   padding-top:10px;
   font-weight:bold;
@@ -230,7 +227,6 @@ h1 {
 
 h2 {
   font-size:40px;
-  font-size:4rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
   line-height:1.1em;
   font-weight:bold;
   font-family:Helvetica, Arial, Verdana, sans-serif;
@@ -240,7 +236,6 @@ h2 {
 
 h3 {
   font-size:25px;
-  font-size:2.5rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
   line-height:1.3em;
   font-style:italic;
   font-weight:normal;
@@ -261,7 +256,6 @@ figcaption,
 tfoot,
 .footnote {
   font-size:11px;
-  font-size:1.1rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
   line-height:15px;
 }
 
@@ -382,7 +376,6 @@ dt {
 
 #monthly-list a .archive-year {
   font-size:10px;
-  font-size:1rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
   font-weight:bold;
   text-shadow:1px 1px #fbd978;
   border-radius:5px 5px 0 0;
@@ -568,7 +561,6 @@ button,
 input[type="button"],
 input[type="submit"] {
   font:11px/1.5em Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
-  font-size:1.1rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
   font-weight:normal;
   height:2.65em;
   width:auto; /* ie7 padding bug hack */
@@ -778,13 +770,11 @@ blockquote {
 h1,
 h2 {
   font-size:30px;
-  font-size:3rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
   padding-top:0;
 }
 
 h3 {
   font-size:18px;
-  font-size:1.8rem; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
 }
 
 .large input{
