@@ -3,138 +3,138 @@
 <!--[if gt IE 6]><!--><html lang="<txp:lang />" class="no-js"><!--<![endif]-->
 
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
 <!-- page title and metas, no meta keywords as they are now obsolete -->
-  <title><txp:page_title /></title>
-  <meta name="description" content="">
+    <title><txp:page_title /></title>
+    <meta name="description" content="">
 
 <!-- mobile viewport optimized: j.mp/bplateviewport -->
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1">
+    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1">
 
 <!-- place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references: mathiasbynens.be/notes/touch-icons -->
-  <link rel="shortcut icon" href="<txp:site_url />favicon.ico">
-  <link rel="apple-touch-icon" href="<txp:site_url />apple-touch-icon.png">
+    <link rel="shortcut icon" href="<txp:site_url />favicon.ico">
+    <link rel="apple-touch-icon" href="<txp:site_url />apple-touch-icon.png">
 
 <!-- content feeds -->
-  <txp:feed_link flavor="atom" format="link" label="Atom" />
-  <txp:feed_link flavor="rss" format="link" label="RSS" />
-  <txp:rsd />
+    <txp:feed_link flavor="atom" format="link" label="Atom" />
+    <txp:feed_link flavor="rss" format="link" label="RSS" />
+    <txp:rsd />
 
 <!-- specify canonical, more info: http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html -->
-  <txp:if_individual_article>
-    <link rel="canonical" href="<txp:permlink />">
-  <txp:else />
-    <link rel="canonical" href="<txp:site_url /><txp:section />">
-  </txp:if_individual_article>
+    <txp:if_individual_article>
+        <link rel="canonical" href="<txp:permlink />">
+    <txp:else />
+        <link rel="canonical" href="<txp:site_url /><txp:section />">
+    </txp:if_individual_article>
 
 <!-- css -->
-  <!-- Google font API -->
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:n4,i4,n7,i7|Cousine">
+    <!-- Google font API -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:n4,i4,n7,i7|Cousine">
 
-  <txp:css format="link" />
-  <!-- or you can use external CSS files eg. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
+    <txp:css format="link" />
+    <!-- or you can use external CSS files eg. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
 
 <!-- all JavaScript should go at the bottom, except for Modernizr which enables HTML5 elements & feature detects.
-  you should replace this with your own build containing only the tests you actually need via: www.modernizr.com/download/ -->
-  <script src="<txp:site_url />js/modernizr.js"></script>
+    you should replace this with your own build containing only the tests you actually need via: www.modernizr.com/download/ -->
+    <script src="<txp:site_url />js/modernizr.js"></script>
 
 </head>
 
 <body id="<txp:section />-page">
 
 <!-- header -->
-  <header role="banner">
-    <h2><txp:link_to_home><txp:site_name /></txp:link_to_home></h2>
-    <h3><txp:site_slogan /></h3>
-  </header>
+    <header role="banner">
+        <h2><txp:link_to_home><txp:site_name /></txp:link_to_home></h2>
+        <h3><txp:site_slogan /></h3>
+    </header>
 
 <!-- navigation -->
-  <nav role="navigation" class="clearfix">
-    <h2>Site navigation</h2>
-    <txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="li">
-      <txp:section link="1" title="1" />
-    </txp:section_list>
-  </nav>
+    <nav role="navigation" class="clearfix">
+        <h2>Site navigation</h2>
+        <txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="li">
+            <txp:section link="1" title="1" />
+        </txp:section_list>
+    </nav>
 
 <!-- left (main) column -->
-  <div role="main" id="main">
+    <div role="main" id="main">
 
-    <txp:if_article_list><h1><txp:section title="1" /></h1></txp:if_article_list>
+        <txp:if_article_list><h1><txp:section title="1" /></h1></txp:if_article_list>
 
-    <txp:article listform="article_listing" limit="5" />
+        <txp:article listform="article_listing" limit="5" />
 
-    <!-- add pagination links to foot of article/article listings if there are more articles available,
-      this method is more flexibile than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
-    <p id="paginator" class="clearfix">
+        <!-- add pagination links to foot of article/article listings if there are more articles available,
+            this method is more flexibile than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
+        <p id="paginator" class="clearfix">
 
-    <txp:if_individual_article>
+        <txp:if_individual_article>
 
-      <txp:variable name="prev" value='<txp:link_to_prev />' />
-      <txp:variable name="next" value='<txp:link_to_next />' />
+            <txp:variable name="prev" value='<txp:link_to_prev />' />
+            <txp:variable name="next" value='<txp:link_to_next />' />
 
-      <txp:if_variable name="prev" value="">
-        <span id="paginator-l" class="button disabled">&#171; <txp:text item="older" /></span>
-      <txp:else />
-        <a id="paginator-l" href="<txp:link_to_prev />" title="<txp:prev_title />" class="button">&#171; <txp:text item="older" /></a>
-      </txp:if_variable>
-      <txp:if_variable name="next" value="">
-        <span id="paginator-r" class="button disabled"><txp:text item="newer" /> &#187;</span>
-      <txp:else />
-        <a id="paginator-r" href="<txp:link_to_next />" title="<txp:next_title />" class="button"><txp:text item="newer" /> &#187;</a>
-      </txp:if_variable>
+            <txp:if_variable name="prev" value="">
+                <span id="paginator-l" class="button disabled">&#171; <txp:text item="older" /></span>
+            <txp:else />
+                <a id="paginator-l" href="<txp:link_to_prev />" title="<txp:prev_title />" class="button">&#171; <txp:text item="older" /></a>
+            </txp:if_variable>
+            <txp:if_variable name="next" value="">
+                <span id="paginator-r" class="button disabled"><txp:text item="newer" /> &#187;</span>
+            <txp:else />
+                <a id="paginator-r" href="<txp:link_to_next />" title="<txp:next_title />" class="button"><txp:text item="newer" /> &#187;</a>
+            </txp:if_variable>
 
-    <txp:else />
+        <txp:else />
 
-      <txp:variable name="prev" value='<txp:older />' />
-      <txp:variable name="next" value='<txp:newer />' />
-      <txp:if_variable name="prev" value="">
-        <span id="paginator-l" class="button disabled">&#171; <txp:text item="older" /></span>
-      <txp:else />
-        <a id="paginator-l" href="<txp:older />" title="<txp:text item='older' />" class="button">&#171; <txp:text item="older" /></a>
-      </txp:if_variable>
-      <txp:if_variable name="next" value="">
-        <span id="paginator-r" class="button disabled"><txp:text item="newer" /> &#187;</span>
-      <txp:else />
-        <a id="paginator-r" href="<txp:newer />" title="<txp:text item='newer' />" class="button"><txp:text item="newer" /> &#187;</a>
-      </txp:if_variable>
+            <txp:variable name="prev" value='<txp:older />' />
+            <txp:variable name="next" value='<txp:newer />' />
+            <txp:if_variable name="prev" value="">
+                <span id="paginator-l" class="button disabled">&#171; <txp:text item="older" /></span>
+            <txp:else />
+                <a id="paginator-l" href="<txp:older />" title="<txp:text item='older' />" class="button">&#171; <txp:text item="older" /></a>
+            </txp:if_variable>
+            <txp:if_variable name="next" value="">
+                <span id="paginator-r" class="button disabled"><txp:text item="newer" /> &#187;</span>
+            <txp:else />
+                <a id="paginator-r" href="<txp:newer />" title="<txp:text item='newer' />" class="button"><txp:text item="newer" /> &#187;</a>
+            </txp:if_variable>
 
-    </txp:if_individual_article>
+        </txp:if_individual_article>
 
-    </p>
+        </p>
 
-  </div>
+    </div>
 
 <!-- right column -->
-  <div role="complementary" id="sidebar">
-    <txp:search_input /> <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
+    <div role="complementary" id="sidebar">
+        <txp:search_input /> <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
 
-    <!-- Feed links, default flavor is rss, so we don't need to specify a flavor on the first feed_link -->
-    <p><txp:feed_link label="RSS" class="feed-rss" /> / <txp:feed_link flavor="atom" label="Atom" class="feed-atom" /></p>
+        <!-- Feed links, default flavor is rss, so we don't need to specify a flavor on the first feed_link -->
+        <p><txp:feed_link label="RSS" class="feed-rss" /> / <txp:feed_link flavor="atom" label="Atom" class="feed-atom" /></p>
 
-    <h5><txp:text item="recent_articles" /></h5>
-    <ul id="monthly-list" class="clearfix">
-      <txp:article_custom section="articles" limit="12">
-        <!-- using if_different tag to populate list only with months that actually contain articles -->
-        <txp:if_different>
-          <li><a href="<txp:site_url />articles/?month=<txp:posted format="%Y-%m"/>"><span class="archive-year"><txp:posted format="%Y" /></span> <span class="archive-month"><txp:posted format="%b"/></span></a></li>
-        </txp:if_different>
-      </txp:article_custom>
-    </ul>
+        <h5><txp:text item="recent_articles" /></h5>
+        <ul id="monthly-list" class="clearfix">
+            <txp:article_custom section="articles" limit="12">
+                <!-- using if_different tag to populate list only with months that actually contain articles -->
+                <txp:if_different>
+                    <li><a href="<txp:site_url />articles/?month=<txp:posted format="%Y-%m"/>"><span class="archive-year"><txp:posted format="%Y" /></span> <span class="archive-month"><txp:posted format="%b"/></span></a></li>
+                </txp:if_different>
+            </txp:article_custom>
+        </ul>
 
-    <h5>External Links</h5>
-    <txp:linklist wraptag="ul" break="li" limit="10" /> <!-- links by default to form: 'plainlinks.link.txp' unless you specify a different form -->
-  </div>
+        <h5>External Links</h5>
+        <txp:linklist wraptag="ul" break="li" limit="10" /> <!-- links by default to form: 'plainlinks.link.txp' unless you specify a different form -->
+    </div>
 
 <!-- footer -->
-  <footer role="contentinfo">
-    <!-- using PHP to dynamically update the copyright year -->
-    <small>&#169;<txp:php>echo date('Y');</txp:php> <txp:site_name />. Powered by <a href="http://textpattern.com" rel="external">Textpattern</a>.</small>
-  </footer>
+    <footer role="contentinfo">
+        <!-- using PHP to dynamically update the copyright year -->
+        <small>&#169;<txp:php>echo date('Y');</txp:php> <txp:site_name />. Powered by <a href="http://textpattern.com" rel="external">Textpattern</a>.</small>
+    </footer>
 
 <!-- JavaScript at the bottom for fast page loading -->
 
-  <!-- add your own JavaScript here -->
+    <!-- add your own JavaScript here -->
 
 </body>
 </html>

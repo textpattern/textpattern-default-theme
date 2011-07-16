@@ -1,11 +1,11 @@
 <!-- Google +1 button support; add code below into your default.article.txp form (around line 15 is recommended) -->
 <script>
-(function(){
-document.write('<p class="g-plusone"><g:plusone size="medium" href="<txp:permlink />"></g:plusone></p>');
-var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
-s.type = 'text/javascript';
-s.async = true;
-s.src = 'http://apis.google.com/js/plusone.js';
-s1.parentNode.insertBefore(s, s1);
-})();
+    (function(){
+        document.write('<p class="g-plusone"><g:plusone size="medium" href="<txp:permlink />"></g:plusone></p>');
+        var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'http://apis.google.com/js/plusone.js';
+        s1.parentNode.insertBefore(s, s1);
+    })();
 </script>

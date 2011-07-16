@@ -2,154 +2,154 @@
 ----------------------------------------------- */
 
 body {
-	margin: 0;
-	padding: 0;
-	font-family: Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
-	color: #000;
-	background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
+    color: #000;
+    background-color: #fff;
 }
 
 blockquote, h3, p, li {
-	padding-right: 10px;
-	padding-left: 10px;
-	font-size: 0.9em;
-	line-height: 1.6em;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 0.9em;
+    line-height: 1.6em;
 }
 
 blockquote {
-	margin-right: 0;
-	margin-left: 20px;
+    margin-right: 0;
+    margin-left: 20px;
 }
 
 h1, h2, h3 {
-	margin: 0 0 15px 0;
-	padding: 0 10px;
-	font-weight: normal;
+    margin: 0 0 15px 0;
+    padding: 0 10px;
+    font-weight: normal;
 }
 
 h1, h2 {
-	font-family: Georgia, Times, serif;
+    font-family: Georgia, Times, serif;
 }
 
 h1 {
-	font-size: 1.4em;
+    font-size: 1.4em;
 }
 
 h2 {
-	font-size: 1em;
-	font-style: italic;
+    font-size: 1em;
+    font-style: italic;
 }
 
 hr {
-	margin: 2em auto;
-	width: 370px;
-	height: 1px;
-	color: #7a7e7d;
-	background-color: #7a7e7d;
-	border: none;
+    margin: 2em auto;
+    width: 370px;
+    height: 1px;
+    color: #7a7e7d;
+    background-color: #7a7e7d;
+    border: none;
 }
 
 small, .small {
-	font-size: 0.9em;
+    font-size: 0.9em;
 }
 
 /* links
 ----------------------------------------------- */
 
 a {
-	text-decoration: none;
-	color: #000;
-	border-bottom: 1px #000 solid;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px #000 solid;
 }
 
 a img {
-	border: none;
+    border: none;
 }
 
 h1 a, h2 a, h3 a {
-	border: none;
+    border: none;
 }
 
 h3 a {
-	font: 1.5em Georgia, Times, serif;
+    font: 1.5em Georgia, Times, serif;
 }
 
 #site-name a {
-	border: none;
+    border: none;
 }
 
 #sidebar-2 a, #sidebar-1 a {
-	color: #c00;
-	border: none;
+    color: #c00;
+    border: none;
 }
 
 /* layout
 ----------------------------------------------- */
 
 #accessibility {
-	position: absolute;
-	top: -10000px;
+    position: absolute;
+    top: -10000px;
 }
 
 #container {
-	margin: 10px auto;
-	padding: 10px;
-	width: 760px;
+    margin: 10px auto;
+    padding: 10px;
+    width: 760px;
 }
 
 #head {
-	text-align: center;
+    text-align: center;
 }
 
 #site-name {
-	margin: 15px 0;
-	font: 3em Georgia, Times, serif;
+    margin: 15px 0;
+    font: 3em Georgia, Times, serif;
 }
 
 #site-slogan {
-	font: italic 1em Georgia, Times, serif;
+    font: italic 1em Georgia, Times, serif;
 }
 
 #sidebar-1, #sidebar-2 {
-	padding-top: 50px;
-	width: 150px;
+    padding-top: 50px;
+    width: 150px;
 }
 
 #sidebar-1 {
-	margin-right: 5px;
-	float: left;
-	text-align: right;
+    margin-right: 5px;
+    float: left;
+    text-align: right;
 }
 
 #sidebar-2 {
-	margin-left: 5px;
-	float: right;
+    margin-left: 5px;
+    float: right;
 }
 
 .section_list {
-	margin: 0 0 10px 0;
-	padding: 0;
-	list-style-type: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 .section_list ul {
-	list-style-type: none;
+    list-style-type: none;
 }
 
 .section_list li {
-	margin: 0 10px 2px 0;
-	padding: 0;
+    margin: 0 10px 2px 0;
+    padding: 0;
 }
 
 #content {
-	margin: 0 155px;
-	padding-top: 30px;
+    margin: 0 155px;
+    padding-top: 30px;
 }
 
 #foot {
-	margin-top: 5px;
-	clear: both;
-	text-align: center;
+    margin-top: 5px;
+    clear: both;
+    text-align: center;
 }
 
 /* box model hacks
@@ -170,69 +170,69 @@ w\idth: 150px;
 ----------------------------------------------- */
 
 #sidebar-2 p, #sidebar-1 p {
-	font-size: 0.8em;
-	line-height: 1.5em;
+    font-size: 0.8em;
+    line-height: 1.5em;
 }
 
 .caps {
-	font-size: 0.9em;
-	letter-spacing: 0.1em;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
 }
 
 div.divider {
-	margin: 2em 0;
-	text-align: center;
+    margin: 2em 0;
+    text-align: center;
 }
 
 /* articles
 ----------------------------------------------- */
 
 .directory {
-	list-style-type: circle;
+    list-style-type: circle;
 }
 
 .author {
-	font-style: normal;
-	font-size: 0.8em;
+    font-style: normal;
+    font-size: 0.8em;
 }
 
 .published {
-	font-size: 0.8em;
+    font-size: 0.8em;
 }
 
 /* comments
 ----------------------------------------------- */
 
 .comments_error {
-	color: #000;
-	background-color: #fff4f4;
+    color: #000;
+    background-color: #fff4f4;
 }
 
 ul.comments_error {
-	padding : 0.3em;
-	list-style-type: circle;
-	list-style-position: inside;
-	border: 2px solid #fdd;
+    padding : 0.3em;
+    list-style-type: circle;
+    list-style-position: inside;
+    border: 2px solid #fdd;
 }
 
 div#cpreview {
-	color: #000;
-	background-color: #f1f1f1;
-	border: 2px solid #ddd;
+    color: #000;
+    background-color: #f1f1f1;
+    border: 2px solid #ddd;
 }
 
 form#txpCommentInputForm td {
-	vertical-align: top;
+    vertical-align: top;
 }
 
 #comments-help {
-	margin: 2px 0 15px 0;
-	font-size: 0.7em;
+    margin: 2px 0 15px 0;
+    font-size: 0.7em;
 }
 
 /* error page
 ----------------------------------------------- */
 
 .error-status {
-	font: 1.3em Georgia, Times, serif;
+    font: 1.3em Georgia, Times, serif;
 }

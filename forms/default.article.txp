@@ -1,6 +1,6 @@
 <!-- using some raw PHP to load the article author's email into a variable for use later in form: comments.comment.txp -->
 <txp:if_individual_article>
-  <txp:php>global $thisarticle,$variable;$variable['author_email']=safe_field("email","txp_users","name='".$thisarticle['authorid']."'");</txp:php>
+    <txp:php>global $thisarticle,$variable;$variable['author_email']=safe_field("email","txp_users","name='".$thisarticle['authorid']."'");</txp:php>
 </txp:if_individual_article>
 <!-- you have loaded the author email address into a txp:variable using PHP because no core txp tag currently exists to do that -->
 
@@ -8,42 +8,42 @@
 
 <!-- if not an individual article then make the title h1 a link -->
 <txp:if_individual_article>
-  <h1><txp:title /></h1>
+    <h1><txp:title /></h1>
 <txp:else />
-  <h1><txp:permlink><txp:title /></txp:permlink></h1>
+    <h1><txp:permlink><txp:title /></txp:permlink></h1>
 </txp:if_individual_article>
 
 <!-- using HTML5 'time' tag, note that the correct format for datetime attribute should be Y-m-dTH:M (e.g. 2011-01-31T15:31) -->
-  <p><strong><txp:text item="posted" />:</strong> <time datetime="<txp:posted format='%Y-%m-%d' />T<txp:posted format='%H:%M' />" pubdate><txp:posted format="%d %B %Y" /> at <txp:posted format='%l:%M%P' /></time></p>
+    <p><strong><txp:text item="posted" />:</strong> <time datetime="<txp:posted format='%Y-%m-%d' />T<txp:posted format='%H:%M' />" pubdate><txp:posted format="%d %B %Y" /> at <txp:posted format='%l:%M%P' /></time></p>
 <!-- see http://php.net/manual/en/function.strftime.php for reference list of time/date strings -->
 
-  <p><strong>Feedback:</strong> <a class="comment-count" href="<txp:permlink />#comments-head" title="<txp:text item='view' />&#8230;">
+    <p><strong>Feedback:</strong> <a class="comment-count" href="<txp:permlink />#comments-head" title="<txp:text item='view' />&#8230;">
 
 <!-- if comments then display the number, if no comments then print 'no' -->
 <txp:if_comments>
-  <txp:comments_count />
+    <txp:comments_count />
 <txp:else />
-  no
+    no
 </txp:if_comments>
 
 <!-- load the comment count into a variable... -->
 <txp:variable name="comments_count" value='<txp:comments_count />' />
 
 <!-- ...now use that variable to determine with to put an 's' on the end of 'comment' -->
-  comment<txp:if_variable name="comments_count" value="1"><txp:else />s</txp:if_variable></a></p>
+    comment<txp:if_variable name="comments_count" value="1"><txp:else />s</txp:if_variable></a></p>
 
-  <txp:body />
+    <txp:body />
 
-  <p><strong><txp:text item="author" />:</strong> <txp:author /></p>
+    <p><strong><txp:text item="author" />:</strong> <txp:author /></p>
 
 <!-- only display categories if they are actually set for an article, otherwise omit -->
-  <txp:if_article_category>
-    <p><strong><txp:text item="categories" />:</strong> <txp:category1 title="1" link="1" /><txp:if_article_category number="2">, <txp:category2 title="1" link="1" /></txp:if_article_category></p>
-  </txp:if_article_category>
+    <txp:if_article_category>
+        <p><strong><txp:text item="categories" />:</strong> <txp:category1 title="1" link="1" /><txp:if_article_category number="2">, <txp:category2 title="1" link="1" /></txp:if_article_category></p>
+    </txp:if_article_category>
 
 <!-- if this is an individual article then add the comments section via form: comments_display.article.txp -->
 <txp:if_individual_article>
-  <txp:article form="comments_display" />
+    <txp:article form="comments_display" />
 </txp:if_individual_article>
 
 </article>

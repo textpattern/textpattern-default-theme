@@ -1,10 +1,10 @@
 <article>
-  <h4><txp:link /></h4>
-  <p><txp:link_description /><br>
-  <span class="footnote">
-    <txp:text item="category" />: <txp:link_category /> &#124; 
-    <txp:text item="author" />: <txp:link_author /> &#124; 
-    Date Added: <time datetime="<txp:link_date format='%Y-%m-%d' />T<txp:link_date format='%H:%M' />" pubdate><txp:link_date format="%d %B %Y" /></time>
-  </span>
-  </p>
+    <h4><txp:link /></h4>
+    <p><txp:link_description /><br>
+    <span class="footnote">
+        <txp:text item="category" />: <txp:link_category /> &#124; 
+        <txp:text item="author" />: <txp:link_author /> &#124; 
+        Date Added: <time datetime="<txp:link_date format='%Y-%m-%d' />T<txp:link_date format='%H:%M' />" pubdate><txp:link_date format="%d %B %Y" /></time>
+    </span>
+    </p>
 </article>

@@ -3,7 +3,7 @@
 <p class="published"><txp:posted /></p>
 
 <div class="entry-content">
-<txp:body />
+    <txp:body />
 </div>
 
 <hr />

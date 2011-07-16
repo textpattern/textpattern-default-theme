@@ -43,288 +43,288 @@ sub{bottom:-.25em;}
 /* layout */
 
 html {
-  -webkit-text-size-adjust:100%;
-  -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+        -ms-text-size-adjust:100%;
 }
 
 body {
-  background:#fff;
-  margin:0 auto 20px;
-  width:960px;
+    background:#fff;
+    margin:0 auto 20px;
+    width:960px;
 }
 
 header {
-  border-left:solid 1px #d4d4d4;
-  border-right:solid 1px #d4d4d4;
-  background:#f0f2f6;
-  padding:10px 10px 0;
+    border-left:solid 1px #d4d4d4;
+    border-right:solid 1px #d4d4d4;
+    background:#f0f2f6;
+    padding:10px 10px 0;
 }
 
 nav h2 {
-  display:none;
+    display:none;
 }
 
 nav ul,
 nav li {
-  margin:0;
+    margin:0;
 } 
 
 nav {
-  border:solid 1px #e1a61a;
-  background:#ffda44;
-  background:-webkit-gradient(linear,left top,left bottom,from(#ffda44),to(#fabc2b)); /* Safari 4+, Chrome */
-  background:-webkit-linear-gradient(#ffda44,#fabc2b); /* Safari 5.1+, Chrome 10+ */
-  background:   -moz-linear-gradient(#ffda44,#fabc2b); /* Firefox 3.6 */
-  background:    -ms-linear-gradient(#ffda44,#fabc2b); /* IE10 */
-  background:     -o-linear-gradient(#ffda44,#fabc2b); /* Opera 11.10+ */
-  background:        linear-gradient(#ffda44,#fabc2b);
-  border-radius:0 0 5px 5px;
+    border:solid 1px #e1a61a;
+    background:#ffda44;
+    background:-webkit-gradient(linear,left top,left bottom,from(#ffda44),to(#fabc2b)); /* Safari 4+, Chrome */
+    background:-webkit-linear-gradient(#ffda44,#fabc2b); /* Safari 5.1+, Chrome 10+ */
+    background:   -moz-linear-gradient(#ffda44,#fabc2b); /* Firefox 3.6 */
+    background:    -ms-linear-gradient(#ffda44,#fabc2b); /* IE10 */
+    background:     -o-linear-gradient(#ffda44,#fabc2b); /* Opera 11.10+ */
+    background:        linear-gradient(#ffda44,#fabc2b);
+    border-radius:0 0 5px 5px;
 }
 
 nav li {
-  float:left;
-  border-right:solid 1px #e1a61a;
+    float:left;
+    border-right:solid 1px #e1a61a;
 }
 
 nav a {
-  display:block;
-  padding:10px;
-  text-decoration:none;
-  color:#333;
-  text-shadow:1px 1px #fbd978;
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    color:#333;
+    text-shadow:1px 1px #fbd978;
 }
 
 nav a:hover,
 nav a:active {
-  text-decoration:none;
-  background:#fcdd62;
-  background:-webkit-gradient(linear,left top,left bottom,from(#fcdd62),to(#fec94c)); /* Safari 4+, Chrome */
-  background:-webkit-linear-gradient(#fcdd62,#fec94c); /* Safari 5.1+, Chrome 10+ */
-  background:   -moz-linear-gradient(#fcdd62,#fec94c); /* Firefox 3.6 */
-  background:    -ms-linear-gradient(#fcdd62,#fec94c); /* IE10 */
-  background:     -o-linear-gradient(#fcdd62,#fec94c); /* Opera 11.10+ */
-  background:        linear-gradient(#fcdd62,#fec94c);
+    text-decoration:none;
+    background:#fcdd62;
+    background:-webkit-gradient(linear,left top,left bottom,from(#fcdd62),to(#fec94c)); /* Safari 4+, Chrome */
+    background:-webkit-linear-gradient(#fcdd62,#fec94c); /* Safari 5.1+, Chrome 10+ */
+    background:   -moz-linear-gradient(#fcdd62,#fec94c); /* Firefox 3.6 */
+    background:    -ms-linear-gradient(#fcdd62,#fec94c); /* IE10 */
+    background:     -o-linear-gradient(#fcdd62,#fec94c); /* Opera 11.10+ */
+    background:        linear-gradient(#fcdd62,#fec94c);
 }
 
 #main {
-  float:left;
-  width:640px;
-  margin:20px 10px 0;
+    float:left;
+    width:640px;
+    margin:20px 10px 0;
 }
 
 #sidebar {
-  float:left;
-  border:solid 1px #d4d4d4;
-  background:#f0f2f6;
-  width:258px;
-  margin:20px 10px;
-  padding:10px 10px 0;
-  border-radius:5px;
+    float:left;
+    border:solid 1px #d4d4d4;
+    background:#f0f2f6;
+    width:258px;
+    margin:20px 10px;
+    padding:10px 10px 0;
+    border-radius:5px;
 }
 
 footer {
-  clear:both;
-  border:solid 1px #d4d4d4;
-  background:#f0f2f6;
-  padding:10px;
-  width:938px; /* declare width to fix for IE7 double padding bug */
-  border-radius:5px;
+    clear:both;
+    border:solid 1px #d4d4d4;
+    background:#f0f2f6;
+    padding:10px;
+    width:938px; /* declare width to fix for IE7 double padding bug */
+    border-radius:5px;
 }
 
 
 /* links */
 
 a {
-  -webkit-tap-highlight-color:rgba(255,230,153,.5);
-  text-decoration:none;
-  color:#1a428b;
+    -webkit-tap-highlight-color:rgba(255,230,153,.5);
+    text-decoration:none;
+    color:#1a428b;
 }
 
 header a {
-  text-decoration:none;
-  color:#333;
+    text-decoration:none;
+    color:#333;
 }
 
 #main a:hover,
 #main a:active,
 #sidebar a:hover,
 #sidebar a:active {
-  text-decoration:underline;
-  color:#1a428b;
+    text-decoration:underline;
+    color:#1a428b;
 }
 
 #main a:visited,
 #sidebar a:visited {
-  color:#551a8b;
+    color:#551a8b;
 }
 
 #main h1 a {
-  color:#333;
+    color:#333;
 }
 
 #main h1 a:hover,
 #main h1 a:active,
 #main h1 a:visited {
-  text-decoration:none;
-  background:#f0f2f6;
-  color:#333;
+    text-decoration:none;
+    background:#f0f2f6;
+    color:#333;
 }
 
 
 /* typography */
 
 body {
-  font-size:13px;
-  line-height:1.5em;
-  font-family:Verdana, Tahoma, Arial, sans-serif;
-  color:#333;
+    font-size:13px;
+    line-height:1.5em;
+    font-family:Verdana, Tahoma, Arial, sans-serif;
+    color:#333;
 }
 
 abbr,
 acronym { /* acronym to be phased out of textile in favour of abbr */
-  border-bottom:1px dotted #999;
-  cursor:help;
+    border-bottom:1px dotted #999;
+    cursor:help;
 }
 
 blockquote {
-  float:right;
-  font-family:'Droid Serif', Georgia, Times, serif;
-  font-style:italic;
-  width:260px;
-  background:#f0f2f6;
-  border-radius:5px;
-  padding:1em 10px 0;
-  margin:0 0 .5em 1em;
+    float:right;
+    font-family:'Droid Serif', Georgia, Times, serif;
+    font-style:italic;
+    width:260px;
+    background:#f0f2f6;
+    border-radius:5px;
+    padding:1em 10px 0;
+    margin:0 0 .5em 1em;
 }
 
 ins {
-  background:#fdf8eb;
+    background:#fdf8eb;
 }
 
 code,
 pre,
 kbd {
-  font-family:Cousine, Consolas, Monaco, monospace;
-  background:#fdf8eb;
+    font-family:Cousine, Consolas, Monaco, monospace;
+    background:#fdf8eb;
 }
 
 pre {
-  padding:1em 10px;
-  margin-bottom:1.3em;
-  overflow-x:auto;
-  border-radius:5px;
+    padding:1em 10px;
+    margin-bottom:1.3em;
+    overflow-x:auto;
+    border-radius:5px;
 }
 
 h1 {
-  font-size:40px;
-  line-height:1.1em;
-  padding-top:10px;
-  font-weight:bold;
-  font-family:Helvetica, Arial, Verdana, sans-serif;
-  letter-spacing:-1px;
-  padding-bottom:20px;
+    font-size:40px;
+    line-height:1.1em;
+    padding-top:10px;
+    font-weight:bold;
+    font-family:Helvetica, Arial, Verdana, sans-serif;
+    letter-spacing:-1px;
+    padding-bottom:20px;
 }
 
 h2 {
-  font-size:40px;
-  line-height:1.1em;
-  font-weight:bold;
-  font-family:Helvetica, Arial, Verdana, sans-serif;
-  letter-spacing:-1px;
-  padding-bottom:20px;
+    font-size:40px;
+    line-height:1.1em;
+    font-weight:bold;
+    font-family:Helvetica, Arial, Verdana, sans-serif;
+    letter-spacing:-1px;
+    padding-bottom:20px;
 }
 
 h3 {
-  font-size:25px;
-  line-height:1.3em;
-  font-style:italic;
-  font-weight:normal;
-  font-family:'Droid Serif', Georgia, Times, serif;
-  padding-bottom:12px;
+    font-size:25px;
+    line-height:1.3em;
+    font-style:italic;
+    font-weight:normal;
+    font-family:'Droid Serif', Georgia, Times, serif;
+    padding-bottom:12px;
 }
 
 h5 {
-  font-weight:normal;
+    font-weight:normal;
 }
 
 p {
-  padding-bottom:1em;
+    padding-bottom:1em;
 }
 
 small,
 figcaption,
 tfoot,
 .footnote {
-  font-size:11px;
-  line-height:15px;
+    font-size:11px;
+    line-height:15px;
 }
 
 figcaption,
 tfoot,
 .footnote {
-  color:#888;
+    color:#888;
 }
 figcaption {
-  margin-top:.75em;
-  font-style:italic;
+    margin-top:.75em;
+    font-style:italic;
 }
 
 
 /* images */
 
 article img {
-  margin:3px 0;
-  height:auto;
-  max-width:100%;
+    margin:3px 0;
+    height:auto;
+    max-width:100%;
 }
 
 figure {
-  margin-bottom:1.3em;
+    margin-bottom:1.3em;
 }
 
 
 /* tables */
 
 table {
-  border-collapse:collapse;
-  border-spacing:0;
-  width:100%;
-  margin-bottom:1.3em;
+    border-collapse:collapse;
+    border-spacing:0;
+    width:100%;
+    margin-bottom:1.3em;
 }
 
 caption {
-  font-family:'Droid Serif', Georgia, Times, serif;
-  font-style:italic;
-  text-align:left;
-  margin-bottom:.5em;
+    font-family:'Droid Serif', Georgia, Times, serif;
+    font-style:italic;
+    text-align:left;
+    margin-bottom:.5em;
 }
 
 thead {
-  background:#f0f2f6;
-  border-right:1px solid #f0f2f6;
-  border-left:1px solid #f0f2f6;
+    background:#f0f2f6;
+    border-right:1px solid #f0f2f6;
+    border-left:1px solid #f0f2f6;
 }
 
 tfoot {
-  background:#f7f8fb;
-  border-right:1px solid #f0f2f6;
-  border-left:1px solid #f0f2f6;
+    background:#f7f8fb;
+    border-right:1px solid #f0f2f6;
+    border-left:1px solid #f0f2f6;
 }
 
 tbody {
-  border-right:1px solid #f0f2f6;
-  border-left:1px solid #f0f2f6;
+    border-right:1px solid #f0f2f6;
+    border-left:1px solid #f0f2f6;
 }
 
 th,
 td {
-  padding:.25em 9px;
-  border-bottom:1px solid #f0f2f6;
+    padding:.25em 9px;
+    border-bottom:1px solid #f0f2f6;
 }
 
 th {
-  text-align:left;
-  border-top:1px solid #f0f2f6;
+    text-align:left;
+    border-top:1px solid #f0f2f6;
 }
 
 
@@ -336,84 +336,84 @@ th {
 #sidebar ul,
 #sidebar ol,
 #sidebar dl {
-  margin:0 0 1em 20px;
+    margin:0 0 1em 20px;
 }
 
 dt {
-  font-family:'Droid Serif', Georgia, Times, serif;
-  font-style:italic;
+    font-family:'Droid Serif', Georgia, Times, serif;
+    font-style:italic;
 }
 
 #sidebar #monthly-list {
-  list-style:none;
-  margin:0;
-  padding:5px 0 10px;
+    list-style:none;
+    margin:0;
+    padding:5px 0 10px;
 }
 
 #sidebar #monthly-list a {
-  display:block;
-  float:left;
-  min-width:36px;
-  margin:0 4px 6px 0;
-  text-align:center;
-  color:#444;
-  text-decoration:none;
-  background:#fff;
-  border:1px solid #ccc;
+    display:block;
+    float:left;
+    min-width:36px;
+    margin:0 4px 6px 0;
+    text-align:center;
+    color:#444;
+    text-decoration:none;
+    background:#fff;
+    border:1px solid #ccc;
     border-radius:5px;
-  -webkit-box-shadow:2px 2px 2px rgba(99,102,112,.2);
-  box-shadow:2px 2px 2px rgba(99,102,112,.2);
+    -webkit-box-shadow:2px 2px 2px rgba(99,102,112,.2);
+            box-shadow:2px 2px 2px rgba(99,102,112,.2);
 }
 
 #sidebar #monthly-list a:hover {
-  color:#000;
-  background:#fdf8eb;
+    color:#000;
+    background:#fdf8eb;
 }
 
 #monthly-list span {
-  display:block;
+    display:block;
 }
 
 #monthly-list a .archive-year {
-  font-size:10px;
-  font-weight:bold;
-  text-shadow:1px 1px #fbd978;
-  border-radius:5px 5px 0 0;
-  background:#ffda44;
-  background:-webkit-gradient(linear,left top,left bottom,from(#ffda44),to(#fabc2b)); /* Safari 4+, Chrome */
-  background:-webkit-linear-gradient(#ffda44,#fabc2b); /* Safari 5.1+, Chrome 10+ */
-  background:   -moz-linear-gradient(#ffda44,#fabc2b); /* Firefox 3.6 */
-  background:    -ms-linear-gradient(#ffda44,#fabc2b); /* IE10 */
-  background:     -o-linear-gradient(#ffda44,#fabc2b); /* Opera 11.10+ */
-  background:        linear-gradient(#ffda44,#fabc2b);
+    font-size:10px;
+    font-weight:bold;
+    text-shadow:1px 1px #fbd978;
+    border-radius:5px 5px 0 0;
+    background:#ffda44;
+    background:-webkit-gradient(linear,left top,left bottom,from(#ffda44),to(#fabc2b)); /* Safari 4+, Chrome */
+    background:-webkit-linear-gradient(#ffda44,#fabc2b); /* Safari 5.1+, Chrome 10+ */
+    background:   -moz-linear-gradient(#ffda44,#fabc2b); /* Firefox 3.6 */
+    background:    -ms-linear-gradient(#ffda44,#fabc2b); /* IE10 */
+    background:     -o-linear-gradient(#ffda44,#fabc2b); /* Opera 11.10+ */
+    background:        linear-gradient(#ffda44,#fabc2b);
 }
 
 #monthly-list a:hover .archive-year {
-  background:#fcdd62;
-  background:-webkit-gradient(linear,left top,left bottom,from(#fcdd62),to(#fec94c)); /* Safari 4+, Chrome */
-  background:-webkit-linear-gradient(#fcdd62,#fec94c); /* Safari 5.1+, Chrome 10+ */
-  background:   -moz-linear-gradient(#fcdd62,#fec94c); /* Firefox 3.6 */
-  background:    -ms-linear-gradient(#fcdd62,#fec94c); /* IE10 */
-  background:     -o-linear-gradient(#fcdd62,#fec94c); /* Opera 11.10+ */
-  background:        linear-gradient(#fcdd62,#fec94c);
+    background:#fcdd62;
+    background:-webkit-gradient(linear,left top,left bottom,from(#fcdd62),to(#fec94c)); /* Safari 4+, Chrome */
+    background:-webkit-linear-gradient(#fcdd62,#fec94c); /* Safari 5.1+, Chrome 10+ */
+    background:   -moz-linear-gradient(#fcdd62,#fec94c); /* Firefox 3.6 */
+    background:    -ms-linear-gradient(#fcdd62,#fec94c); /* IE10 */
+    background:     -o-linear-gradient(#fcdd62,#fec94c); /* Opera 11.10+ */
+    background:        linear-gradient(#fcdd62,#fec94c);
 }
 
 #main #article-list {
-  list-style:none;
-  margin:0 0 2em 0;
-  border-top:1px solid #f0f2f6;
+    list-style:none;
+    margin:0 0 2em 0;
+    border-top:1px solid #f0f2f6;
 }
 
 #article-list li {
-  border-bottom:1px solid #f0f2f6;
-  padding-top:1em;
+    border-bottom:1px solid #f0f2f6;
+    padding-top:1em;
 }
 
 
 /* search page */
 
 #search-page #main article:last-of-type {
-  margin-bottom:1em;
+    margin-bottom:1em;
 }
 
 
@@ -425,20 +425,20 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"],
 button {
-  cursor:pointer;
+    cursor:pointer;
 }
 
 input[disabled] {
-  cursor:default;
+    cursor:default;
 }
 
 /* make Safari render search inputs as text inputs (and unstyled) */
 input[type="search"] {
-  -webkit-appearance:textfield;
+    -webkit-appearance:textfield;
 }
 
 ::-webkit-search-decoration{
-  display:none;
+    display:none;
 }
 
 /* webkit browsers add a 2px margin outside the chrome of form elements */
@@ -446,45 +446,42 @@ button,
 input,
 select,
 textarea {
-  margin:0;
+    margin:0;
 }
 
 /* colour placeholder text (Webkit and Mozilla only, so far) */
-::-webkit-input-placeholder {
-  color:#bbb;
-}
-
+::-webkit-input-placeholder,
 :-moz-placeholder {
-  color:#bbb;
+    color:#bbb;
 }
 
 input[type="text"],
 input[type="search"],
 textarea {
-  font:11px/1.5em Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
-  border:solid 1px #d4d4d4;
-  background:#fff;
-  padding:.5em 5px .55em;
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  box-sizing:border-box;
+    font:11px/1.5em Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
+    border:solid 1px #d4d4d4;
+    background:#fff;
+    padding:.5em 5px .55em;
+    -webkit-box-sizing:border-box;
+       -moz-box-sizing:border-box;
+            box-sizing:border-box;
 }
 
 input[type="search"] {
-  width:192px;
-  padding:.5em 0 .55em 5px;
-  margin-right:2px;
-  display:inline-block;
-  zoom:1; /* zoom and *display = ie7 hack for display:inline-block */
-  *display:inline;
-  vertical-align:baseline;
+    width:192px;
+    padding:.5em 0 .55em 5px;
+    margin-right:2px;
+    display:inline-block;
+    zoom:1; /* zoom and *display = ie7 hack for display:inline-block */
+    *display:inline;
+    vertical-align:baseline;
 }
 
 textarea {
-  width:100%;
-  -webkit-resize:vertical;
-  -moz-resize:vertical;
-  resize:vertical;
+    width:100%;
+    -webkit-resize:vertical;
+       -moz-resize:vertical;
+            resize:vertical;
 }
 
 input[type="text"]:hover,
@@ -493,49 +490,49 @@ input[type="search"]:hover,
 input[type="search"]:focus,
 textarea:hover,
 textarea:focus {
-  background:#fdf8eb;
+    background:#fdf8eb;
 }
 
 .large input{
-  width:320px;
+    width:320px;
 }
 
 .small input{
-  width:160px;
+    width:160px;
 }
 
 .large textarea{
-  height:156px;
+    height:156px;
 }
 
 .small textarea{
-  height:78px;
+    height:78px;
 }
 
 .checkboxes,
 .radiobuttons {
-  padding:0 0 7px;
+    padding:0 0 7px;
 }
 
 .checkboxes span,
 .radiobuttons span {
-  display:block;
+    display:block;
 }
 
 .checkboxes input,
 .radiobuttons input {
-  float:left;
-  margin:3px 8px 0 0;
+    float:left;
+    margin:3px 8px 0 0;
 }
 
 .checkboxes label,
 .radiobuttons label {
-  float:left;
-  display:block;
+    float:left;
+    display:block;
 }
 
 .required {
-  color:#c00;
+    color:#c00;
 }
 
 
@@ -545,151 +542,151 @@ textarea:focus {
 input,
 button,
 .button {
-  width:auto;
-  overflow:visible;
+    width:auto;
+    overflow:visible;
 }
 
 /* fix firefox button height discrepancy: http://christophzillgens.com/en/articles/equal-height-input-and-button-elements-in-firefox-and-safari */
 input::-moz-focus-inner,
 button::-moz-focus-inner{
-  border:0;
-  padding:0;
+    border:0;
+    padding:0;
 }
 
 button,
 .button,
 input[type="button"],
 input[type="submit"] {
-  font:11px/1.5em Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
-  font-weight:normal;
-  height:2.65em;
-  width:auto; /* ie7 padding bug hack */
-  overflow:visible; /* ie7 padding bug hack */
-  color:#333;
-  text-shadow:1px 1px #fbd978;
-  display:inline-block;
-  zoom:1; /* zoom and *display = ie7 hack for display:inline-block */
-  *display:inline;
-  vertical-align:baseline;
-  margin:0;
-  outline:0;
-  cursor:pointer;
-  text-align:center;
-  padding:.5em .8em .5em;
-  border:solid 1px #e1a61a;
-  border-radius:5px;
-  -webkit-box-shadow:0 1px 2px rgba(0,0,0,.2);
-  box-shadow:0 1px 2px rgba(0,0,0,.2);
-  background:#ffda44;
-  background:-webkit-gradient(linear,left top,left bottom,from(#ffda44),to(#fabc2b)); /* Safari 4+, Chrome */
-  background:-webkit-linear-gradient(#ffda44,#fabc2b); /* Safari 5.1+, Chrome 10+ */
-  background:   -moz-linear-gradient(#ffda44,#fabc2b); /* Firefox 3.6 */
-  background:    -ms-linear-gradient(#ffda44,#fabc2b); /* IE10 */
-  background:     -o-linear-gradient(#ffda44,#fabc2b); /* Opera 11.10+ */
-  background:        linear-gradient(#ffda44,#fabc2b);
+    font:11px/1.5em Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
+    font-weight:normal;
+    height:2.65em;
+    width:auto; /* ie7 padding bug hack */
+    overflow:visible; /* ie7 padding bug hack */
+    color:#333;
+    text-shadow:1px 1px #fbd978;
+    display:inline-block;
+    zoom:1; /* zoom and *display = ie7 hack for display:inline-block */
+    *display:inline;
+    vertical-align:baseline;
+    margin:0;
+    outline:0;
+    cursor:pointer;
+    text-align:center;
+    padding:.5em .8em .5em;
+    border:solid 1px #e1a61a;
+    border-radius:5px;
+    -webkit-box-shadow:0 1px 2px rgba(0,0,0,.2);
+            box-shadow:0 1px 2px rgba(0,0,0,.2);
+    background:#ffda44;
+    background:-webkit-gradient(linear,left top,left bottom,from(#ffda44),to(#fabc2b)); /* Safari 4+, Chrome */
+    background:-webkit-linear-gradient(#ffda44,#fabc2b); /* Safari 5.1+, Chrome 10+ */
+    background:   -moz-linear-gradient(#ffda44,#fabc2b); /* Firefox 3.6 */
+    background:    -ms-linear-gradient(#ffda44,#fabc2b); /* IE10 */
+    background:     -o-linear-gradient(#ffda44,#fabc2b); /* Opera 11.10+ */
+    background:        linear-gradient(#ffda44,#fabc2b);
 }
 
 button:hover,
 .button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
-  background:#fcdd62;
-  background:-webkit-gradient(linear,left top,left bottom,from(#fcdd62),to(#fec94c)); /* Safari 4+, Chrome */
-  background:-webkit-linear-gradient(#fcdd62,#fec94c); /* Safari 5.1+, Chrome 10+ */
-  background:   -moz-linear-gradient(#fcdd62,#fec94c); /* Firefox 3.6 */
-  background:    -ms-linear-gradient(#fcdd62,#fec94c); /* IE10 */
-  background:     -o-linear-gradient(#fcdd62,#fec94c); /* Opera 11.10+ */
-  background:        linear-gradient(#fcdd62,#fec94c);
+    background:#fcdd62;
+    background:-webkit-gradient(linear,left top,left bottom,from(#fcdd62),to(#fec94c)); /* Safari 4+, Chrome */
+    background:-webkit-linear-gradient(#fcdd62,#fec94c); /* Safari 5.1+, Chrome 10+ */
+    background:   -moz-linear-gradient(#fcdd62,#fec94c); /* Firefox 3.6 */
+    background:    -ms-linear-gradient(#fcdd62,#fec94c); /* IE10 */
+    background:     -o-linear-gradient(#fcdd62,#fec94c); /* Opera 11.10+ */
+    background:        linear-gradient(#fcdd62,#fec94c);
 }
 
 button:active,
 .button:active,
 input[type="button"]:active,
 input[type="submit"]:active {
-  color:#000;
-  background:#fec94c;
-  background:-webkit-gradient(linear,left top,left bottom,from(#fec94c),to(#fcdd62)); /* Safari 4+, Chrome */
-  background:-webkit-linear-gradient(#fec94c,#fcdd62); /* Safari 5.1+, Chrome 10+ */
-  background:   -moz-linear-gradient(#fec94c,#fcdd62); /* Firefox 3.6 */
-  background:    -ms-linear-gradient(#fec94c,#fcdd62); /* IE10 */
-  background:     -o-linear-gradient(#fec94c,#fcdd62); /* Opera 11.10+ */
-  background:        linear-gradient(#fec94c,#fcdd62);
-  position:relative;
-  top:1px;
+    color:#000;
+    background:#fec94c;
+    background:-webkit-gradient(linear,left top,left bottom,from(#fec94c),to(#fcdd62)); /* Safari 4+, Chrome */
+    background:-webkit-linear-gradient(#fec94c,#fcdd62); /* Safari 5.1+, Chrome 10+ */
+    background:   -moz-linear-gradient(#fec94c,#fcdd62); /* Firefox 3.6 */
+    background:    -ms-linear-gradient(#fec94c,#fcdd62); /* IE10 */
+    background:     -o-linear-gradient(#fec94c,#fcdd62); /* Opera 11.10+ */
+    background:        linear-gradient(#fec94c,#fcdd62);
+    position:relative;
+    top:1px;
 }
 
 input[type="submit"].disabled,
 #paginator span.disabled {
-  color:#fff;
-  text-shadow:-1px -1px #ccc;
-  cursor:default;
-  border:solid 1px #d2d2d2;
-  background:#dadada;
-  background:-webkit-gradient(linear,left top,left bottom,from(#e6e6e6),to(#dadada)); /* Safari 4+, Chrome */
-  background:-webkit-linear-gradient(#e6e6e6,#dadada); /* Safari 5.1+, Chrome 10+ */
-  background:   -moz-linear-gradient(#e6e6e6,#dadada); /* Firefox 3.6 */
-  background:    -ms-linear-gradient(#e6e6e6,#dadada); /* IE10 */
-  background:     -o-linear-gradient(#e6e6e6,#dadada); /* Opera 11.10+ */
-  background:        linear-gradient(#e6e6e6,#dadada);
-  top:0;
+    color:#fff;
+    text-shadow:-1px -1px #ccc;
+    cursor:default;
+    border:solid 1px #d2d2d2;
+    background:#dadada;
+    background:-webkit-gradient(linear,left top,left bottom,from(#e6e6e6),to(#dadada)); /* Safari 4+, Chrome */
+    background:-webkit-linear-gradient(#e6e6e6,#dadada); /* Safari 5.1+, Chrome 10+ */
+    background:   -moz-linear-gradient(#e6e6e6,#dadada); /* Firefox 3.6 */
+    background:    -ms-linear-gradient(#e6e6e6,#dadada); /* IE10 */
+    background:     -o-linear-gradient(#e6e6e6,#dadada); /* Opera 11.10+ */
+    background:        linear-gradient(#e6e6e6,#dadada);
+    top:0;
 }
 
 #paginator {
-  margin:1em 0;
+    margin:1em 0;
 }
 #paginator .button {
-  height:1.5em;
-  padding:.1em .66em;
+    height:1.5em;
+    padding:.1em .66em;
 }
 
 #paginator a.button {
-  color:#333;
-  text-decoration:none;
+    color:#333;
+    text-decoration:none;
 }
 
 #paginator-l {
-  float:left;
+    float:left;
 }
 
 #paginator-r {
-  float:right;
+    float:right;
 }
 
 
 /* comments */
 
 .comments {
-  background:#f7f8fb;
-  padding:1em 10px 0;
-  margin-bottom:20px;
-  border-radius:5px;
+    background:#f7f8fb;
+    padding:1em 10px 0;
+    margin-bottom:20px;
+    border-radius:5px;
 }
 
 .comments-author {
-  background:#f4fcf3;
+    background:#f4fcf3;
 }
 
 .comments h4 span {
-  font-weight:normal;
+    font-weight:normal;
 }
 
 .comments h4 .comment-anchor {
-  float:right;
+    float:right;
 }
 
 #cpreview {
-  background:#fdf8eb;
-  padding:1em 10px;
-  border-radius:5px;
-  margin-bottom:2px;
+    background:#fdf8eb;
+    padding:1em 10px;
+    border-radius:5px;
+    margin-bottom:2px;
 }
 
 .comments_error {
-  background:#fff4f4 !important;
+    background:#fff4f4 !important;
 }
 
 .error_message li {
-  color:#c00;
+    color:#c00;
 }
 
 
@@ -697,7 +694,7 @@ input[type="submit"].disabled,
 
 /* always force scrollbar padding so we don't get 'jumping' */
 html {
-  overflow-y:scroll;
+    overflow-y:scroll;
 }
 
 /* get rid of proprietary focus glows and add our own */
@@ -705,10 +702,10 @@ a:focus,
 input:focus,
 textarea:focus,
 button:focus {
-  outline:0;
-  background:#fdf8eb;
-  -webkit-box-shadow:0 0 5px rgba(255,192,16,1); 
-  box-shadow:0 0 5px rgba(255,192,16,1);
+    outline:0;
+    background:#fdf8eb;
+    -webkit-box-shadow:0 0 5px rgba(255,192,16,1); 
+            box-shadow:0 0 5px rgba(255,192,16,1);
 }
 
 
@@ -723,20 +720,20 @@ button:focus {
 
 
 body {
-  width:660px;
+    width:660px;
 }
 
 #main {
-  float:none;
+    float:none;
 }
 
 #sidebar {
-  float:none;
-  margin:0 10px 20px;
+    float:none;
+    margin:0 10px 20px;
 }
 
 footer {
-  width:638px;
+    width:638px;
 }
 
 
@@ -751,38 +748,38 @@ footer {
 
 
 body {
-  width:440px;
+    width:440px;
 }
 
 #main {
-  width:420px;
+    width:420px;
 }
 
 footer {
-  width:418px;
+    width:418px;
 }
 
 blockquote {
-  width:400px;
-  margin-bottom:1em;
+    width:400px;
+    margin-bottom:1em;
 }
 
 h1,
 h2 {
-  font-size:30px;
-  padding-top:0;
+    font-size:30px;
+    padding-top:0;
 }
 
 h3 {
-  font-size:18px;
+    font-size:18px;
 }
 
 .large input{
-  width:280px;
+    width:280px;
 }
 
 .small input{
-  width:140px;
+    width:140px;
 }
 
 
@@ -797,20 +794,20 @@ h3 {
 
 
 body {
-  width:300px;
+    width:300px;
 }
 
 #main {
-  width:280px;
+    width:280px;
 }
 
 footer {
-  width:278px;
+    width:278px;
 }
 
 blockquote {
-  width:260px;
-  margin-bottom:1em;
+    width:260px;
+    margin-bottom:1em;
 }
 
 
@@ -824,61 +821,65 @@ blockquote {
 @media print {
 
 
-*{background:transparent !important;color:black !important;text-shadow:none !important;}
+*{
+    background:transparent !important;
+    color:black !important;
+    text-shadow:none !important;
+}
 
 body {
-  font:8pt/1.6em Helvetica,Arial,SunSans-Regular,sans-serif;
-  padding:2em 6em;
+    font:8pt/1.6em Helvetica,Arial,SunSans-Regular,sans-serif;
+    padding:2em 6em;
 }
 
 nav {
-  display:none;
+    display:none;
 }
 
 a {
-  text-decoration:none;
+    text-decoration:none;
 }
 
 a:link:after,
 a:visited:after{ 
-  content:" ("attr(href)") ";
+    content:" ("attr(href)") ";
 }
 
 h1 {
-  font-size:36pt;
-  font-weight:normal;
-  line-height:1.3em;
-  padding-bottom:2em;
+    font-size:36pt;
+    font-weight:normal;
+    line-height:1.3em;
+    padding-bottom:2em;
 }
 
 h2 {
-  font-size:24pt;
-  line-height:1.4em;
-  padding-bottom:1em;
+    font-size:24pt;
+    line-height:1.4em;
+    padding-bottom:1em;
 }
 
 h3 {
-  font-size:18pt;
-  line-height:1.5em;
-  padding-bottom:1em;
+    font-size:18pt;
+    line-height:1.5em;
+    padding-bottom:1em;
 }
 
 p {
-  padding-bottom:1em;
+    padding-bottom:1em;
 }
 footer {
-  font-size:6pt;
-  line-height:1.6em;
+    font-size:6pt;
+    line-height:1.6em;
 }
 
 ul {
-  list-style:square;
-  margin:0 0 1em 1.8em;
+    list-style:square;
+    margin:0 0 1em 1.8em;
 }
 
 ol {
-  list-style:decimal;
-  margin:0 0 1em 1.8em;
+    list-style:decimal;
+    margin:0 0 1em 1.8em;
 }
 
 

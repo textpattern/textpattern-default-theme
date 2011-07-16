@@ -1,69 +1,69 @@
 <txp:if_search>
 
 <!-- count how many results return -->
-  <txp:article limit="10" pgonly="1" />
+    <txp:article limit="10" pgonly="1" />
 
-  <txp:if_search_results>
+    <txp:if_search_results>
 
 <!-- if search result count greater than 200 then display excessive results message, otherwise show search result count -->
-    <txp:if_search_results max="200">
-      <h3><txp:search_result_count /> matching your search request &#8216;<txp:search_term />&#8217;&#8230;</h3>
-    <txp:else />
-      <h3>It seems like you are looking for a very common search term, maybe try a more specific phrase than &#8216;<txp:search_term />&#8217;</h3>
-    </txp:if_search_results>
+        <txp:if_search_results max="200">
+            <h3><txp:search_result_count /> matching your search request &#8216;<txp:search_term />&#8217;&#8230;</h3>
+        <txp:else />
+            <h3>It seems like you are looking for a very common search term, maybe try a more specific phrase than &#8216;<txp:search_term />&#8217;</h3>
+        </txp:if_search_results>
 
 <!-- if no search results, then display no search results message -->
-  <txp:else />
-    <h3>Sorry, no results found matching your search request &#8216;<txp:search_term />&#8217;</h3>
+    <txp:else />
+        <h3>Sorry, no results found matching your search request &#8216;<txp:search_term />&#8217;</h3>
 
-  </txp:if_search_results>
+    </txp:if_search_results>
 
 <!-- display resulting articles (10 per page) -->
-  <txp:article limit="10">
+    <txp:article limit="10">
 
-    <article>
+        <article>
 
-      <h1><txp:permlink><txp:title /></txp:permlink></h1>
+            <h1><txp:permlink><txp:title /></txp:permlink></h1>
 
 <!-- see default.article.txp for info on HTML5 'time' tag -->
-      <p><strong><txp:text item="posted" />:</strong> <time datetime="<txp:posted format='%Y-%m-%d' />T<txp:posted format='%H:%M' />" pubdate><txp:posted format="%d %B %Y" /> at <txp:posted format='%l:%M%P' /></time></p>
+            <p><strong><txp:text item="posted" />:</strong> <time datetime="<txp:posted format='%Y-%m-%d' />T<txp:posted format='%H:%M' />" pubdate><txp:posted format="%d %B %Y" /> at <txp:posted format='%l:%M%P' /></time></p>
 
 <!-- if the article has an excerpt, display that, otherwise show highlighted keywords in context of article -->
-      <txp:if_excerpt>
-        <txp:excerpt />
-      <txp:else />
-        <p><txp:search_result_excerpt /></p>
-      </txp:if_excerpt>
+            <txp:if_excerpt>
+                <txp:excerpt />
+            <txp:else />
+                <p><txp:search_result_excerpt /></p>
+            </txp:if_excerpt>
 
 <!-- display the URL of the article as text (and link) -->
-      <p class="footnote"><txp:permlink><txp:permlink /></txp:permlink></p>
+            <p class="footnote"><txp:permlink><txp:permlink /></txp:permlink></p>
 
-    </article>
+        </article>
 
-  </txp:article>
+    </txp:article>
 
 <!-- check if there are further results and provide pagination links or disabled buttons depending on the result,
-  this method is more flexibile than using simple txp:older/txp:newer tags -->
-  <txp:if_search_results min="11">
+    this method is more flexibile than using simple txp:older/txp:newer tags -->
+    <txp:if_search_results min="11">
 
-    <p id="paginator" class="clearfix">
+        <p id="paginator" class="clearfix">
 
-    <txp:variable name="prev" value='<txp:older />' />
-    <txp:variable name="next" value='<txp:newer />' />
+        <txp:variable name="prev" value='<txp:older />' />
+        <txp:variable name="next" value='<txp:newer />' />
 
-    <txp:if_variable name="next" value="">
-      <span id="paginator-l" class="button disabled">&#171; <txp:text item="prev" /></span>
-    <txp:else />
-        <a id="paginator-l" href="<txp:newer />" title="&#171; <txp:text item="prev" />" class="button">&#171; <txp:text item="prev" /></a>
-    </txp:if_variable>
-    <txp:if_variable name="prev" value="">
-      <span id="paginator-r" class="button disabled"><txp:text item="next" /> &#187;</span>
-    <txp:else />
-      <a id="paginator-r" href="<txp:older />" title="<txp:text item="next" /> &#187;" class="button"><txp:text item="next" /> &#187;</a>
-    </txp:if_variable>
+        <txp:if_variable name="next" value="">
+            <span id="paginator-l" class="button disabled">&#171; <txp:text item="prev" /></span>
+        <txp:else />
+                <a id="paginator-l" href="<txp:newer />" title="&#171; <txp:text item="prev" />" class="button">&#171; <txp:text item="prev" /></a>
+        </txp:if_variable>
+        <txp:if_variable name="prev" value="">
+            <span id="paginator-r" class="button disabled"><txp:text item="next" /> &#187;</span>
+        <txp:else />
+            <a id="paginator-r" href="<txp:older />" title="<txp:text item="next" /> &#187;" class="button"><txp:text item="next" /> &#187;</a>
+        </txp:if_variable>
 
-    </p>
+        </p>
 
-  </txp:if_search_results>
+    </txp:if_search_results>
 
 </txp:if_search>

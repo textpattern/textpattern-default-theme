@@ -2,24 +2,24 @@
 
 <!-- if there is an error, then inform user -->
 <txp:if_comments_error>
-  <txp:comments_error wraptag="ol" break="li" class="error_message" />
+    <txp:comments_error wraptag="ol" break="li" class="error_message" />
 </txp:if_comments_error>
 
 <fieldset>
 
-  <p class="large"><label for="name"><txp:text item="comment_name" /> <b class="required">*</b></label><br>
-  <txp:comment_name_input /></p>
+    <p class="large"><label for="name"><txp:text item="comment_name" /> <b class="required">*</b></label><br>
+    <txp:comment_name_input /></p>
 
-  <p class="large"><label for="email"><txp:text item="comment_email" /> <b class="required">*</b></label><br>
-  <txp:comment_email_input /></p> <!-- Textpattern currently does not currently use HTML5 input type="email" -->
+    <p class="large"><label for="email"><txp:text item="comment_email" /> <b class="required">*</b></label><br>
+    <txp:comment_email_input /></p> <!-- Textpattern currently does not currently use HTML5 input type="email" -->
 
-  <p class="large"><label for="web"><txp:text item="comment_web" /></label><br>
-  <txp:comment_web_input /></p> <!-- Textpattern currently does not currently use HTML5 input type="url" -->
+    <p class="large"><label for="web"><txp:text item="comment_web" /></label><br>
+    <txp:comment_web_input /></p> <!-- Textpattern currently does not currently use HTML5 input type="url" -->
 
-  <p class="checkboxes"><span class="clearfix"><txp:comment_remember /></span></p>
+    <p class="checkboxes"><span class="clearfix"><txp:comment_remember /></span></p>
 
-  <p class="small"><label for="message"><txp:text item="comment_message" /> <b class="required">*</b></label><br>
-  <txp:comment_message_input /></p>
+    <p class="small"><label for="message"><txp:text item="comment_message" /> <b class="required">*</b></label><br>
+    <txp:comment_message_input /></p>
 
 </fieldset>
 

@@ -2,55 +2,55 @@
 
 <table cellpadding="4" cellspacing="0" border="0">
 <tr>
-	<td align="right">
-		<label for="name"><txp:text item="comment_name" /></label>
-	</td>
+    <td align="right">
+        <label for="name"><txp:text item="comment_name" /></label>
+    </td>
 
-	<td>
-		<txp:comment_name_input />
-		<txp:comment_remember />
-	</td>
+    <td>
+        <txp:comment_name_input />
+        <txp:comment_remember />
+    </td>
 </tr>
 
 <tr>
-	<td align="right">
-		<label for="email"><txp:text item="comment_email" /></label>
-	</td>
+    <td align="right">
+        <label for="email"><txp:text item="comment_email" /></label>
+    </td>
 
-	<td>
-		<txp:comment_email_input />
-	</td>
+    <td>
+        <txp:comment_email_input />
+    </td>
 </tr>
 
 <tr>
-	<td align="right">
-		<label for="web"><txp:text item="comment_web" /></label>
-	</td>
+    <td align="right">
+        <label for="web"><txp:text item="comment_web" /></label>
+    </td>
 
-	<td>
-		<txp:comment_web_input />
-	</td>
+    <td>
+        <txp:comment_web_input />
+    </td>
 </tr>
 
 <tr>
-	<td align="right">
-		<label for="message"><txp:text item="comment_message" /></label>
-	</td>
+    <td align="right">
+        <label for="message"><txp:text item="comment_message" /></label>
+    </td>
 
-	<td>
-		<txp:comment_message_input />
-		<div id="comments-help"><txp:comments_help /></div>
-	</td>
+    <td>
+        <txp:comment_message_input />
+        <div id="comments-help"><txp:comments_help /></div>
+    </td>
 
 </tr>
 
 <tr>
-	<td>&nbsp;</td>
+    <td>&nbsp;</td>
 
-	<td>
-		<txp:comment_preview />
-		<txp:comment_submit />
-	</td>
+    <td>
+        <txp:comment_preview />
+        <txp:comment_submit />
+    </td>
 </tr>
 
 </table>
