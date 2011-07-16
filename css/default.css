@@ -2,7 +2,7 @@
 
 
 /* HTML5 Reset Stylesheet v1.6.1 (Customised) http://html5doctor.com/html-5-reset-stylesheet/ */
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;*font-size:16px;vertical-align:baseline;background:transparent;}
 body{line-height:1;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
 nav ul{list-style:none;}
@@ -174,10 +174,46 @@ header a {
 /* typography */
 
 body {
-    font-size:13px;
-    line-height:1.5em;
+    font-size:.8125em;               /* 13px */
+    line-height:1.461538461538462em; /* 19px */
     font-family:Verdana, Tahoma, Arial, sans-serif;
     color:#333;
+}
+
+h1 {
+    font-size:3em;                   /* 39px */
+    line-height:1.128205128205128em; /* 44px */
+    font-family:Helvetica, Arial, Verdana, sans-serif;
+    font-weight:bold;
+    letter-spacing:-1px;
+    padding-top:10px;
+    padding-bottom:20px;
+}
+
+h2 {
+    font-size:3em;                   /* 39px */
+    line-height:1.128205128205128em; /* 44px */
+    font-family:Helvetica, Arial, Verdana, sans-serif;
+    font-weight:bold;
+    letter-spacing:-1px;
+    padding-bottom:20px;
+}
+
+h3 {
+    font-size:2em;                   /* 26px */
+    line-height:1.307692307692308em; /* 34px */
+    font-family:'Droid Serif', Georgia, Times, serif;
+    font-weight:normal;
+    font-style:italic;
+    padding-bottom:12px;
+}
+
+h5 {
+    font-weight:normal;
+}
+
+p {
+    padding-bottom:1em;
 }
 
 abbr,
@@ -187,9 +223,9 @@ acronym { /* acronym to be phased out of textile in favour of abbr */
 }
 
 blockquote {
-    float:right;
     font-family:'Droid Serif', Georgia, Times, serif;
     font-style:italic;
+    float:right;
     width:260px;
     background:#f0f2f6;
     border-radius:5px;
@@ -215,48 +251,12 @@ pre {
     border-radius:5px;
 }
 
-h1 {
-    font-size:40px;
-    line-height:1.1em;
-    padding-top:10px;
-    font-weight:bold;
-    font-family:Helvetica, Arial, Verdana, sans-serif;
-    letter-spacing:-1px;
-    padding-bottom:20px;
-}
-
-h2 {
-    font-size:40px;
-    line-height:1.1em;
-    font-weight:bold;
-    font-family:Helvetica, Arial, Verdana, sans-serif;
-    letter-spacing:-1px;
-    padding-bottom:20px;
-}
-
-h3 {
-    font-size:25px;
-    line-height:1.3em;
-    font-style:italic;
-    font-weight:normal;
-    font-family:'Droid Serif', Georgia, Times, serif;
-    padding-bottom:12px;
-}
-
-h5 {
-    font-weight:normal;
-}
-
-p {
-    padding-bottom:1em;
-}
-
 small,
 figcaption,
 tfoot,
 .footnote {
-    font-size:11px;
-    line-height:15px;
+    font-size:.846153846153846em;    /* 11px */
+    line-height:1.363636363636364em; /* 15px */
 }
 
 figcaption,
@@ -265,7 +265,7 @@ tfoot,
     color:#888;
 }
 figcaption {
-    margin-top:.75em;
+    margin-top:8px;
     font-style:italic;
 }
 
@@ -356,8 +356,8 @@ dt {
     min-width:36px;
     margin:0 4px 6px 0;
     text-align:center;
-    color:#444;
     text-decoration:none;
+    color:#444;
     background:#fff;
     border:1px solid #ccc;
     border-radius:5px;
@@ -375,7 +375,8 @@ dt {
 }
 
 #monthly-list a .archive-year {
-    font-size:10px;
+    font-size:.769230769230769em;    /* 10px */
+    line-height:1.5em;               /* 15px */
     font-weight:bold;
     text-shadow:1px 1px #fbd978;
     border-radius:5px 5px 0 0;
@@ -458,7 +459,9 @@ textarea {
 input[type="text"],
 input[type="search"],
 textarea {
-    font:11px/1.5em Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
+    font-size:.846153846153846em;    /* 11px */
+    line-height:1.363636363636364em; /* 15px */
+    font-family:Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
     border:solid 1px #d4d4d4;
     background:#fff;
     padding:.5em 5px .55em;
@@ -557,9 +560,11 @@ button,
 .button,
 input[type="button"],
 input[type="submit"] {
-    font:11px/1.5em Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
+    font-size:.846153846153846em;    /* 11px */
+    line-height:1.363636363636364em; /* 15px */
+    font-family:Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
     font-weight:normal;
-    height:2.65em;
+    height:2.545454545454545em;      /* 28px */
     width:auto; /* ie7 padding bug hack */
     overflow:visible; /* ie7 padding bug hack */
     color:#333;
@@ -766,12 +771,14 @@ blockquote {
 
 h1,
 h2 {
-    font-size:30px;
+    font-size:2.307692307692308em;   /* 30px */
+    line-height:1.133333333333333em; /* 34px */
     padding-top:0;
 }
 
 h3 {
-    font-size:18px;
+    font-size:1.384615384615385em;   /* 18px */
+    line-height:1.333333333333333em; /* 24px */
 }
 
 .large input{
