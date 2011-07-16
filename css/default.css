@@ -48,16 +48,16 @@ html {
 }
 
 body {
-    background:#fff;
-    margin:0 auto 20px;
     width:960px;
+    margin:0 auto 20px;
+    background:#fff;
 }
 
 header {
     border-left:solid 1px #d4d4d4;
     border-right:solid 1px #d4d4d4;
-    background:#f0f2f6;
     padding:10px 10px 0;
+    background:#f0f2f6;
 }
 
 nav h2 {
@@ -71,6 +71,7 @@ nav li {
 
 nav {
     border:solid 1px #e1a61a;
+    border-radius:0 0 5px 5px;
     background:#ffda44;
     background:-webkit-gradient(linear,left top,left bottom,from(#ffda44),to(#fabc2b)); /* Safari 4+, Chrome */
     background:-webkit-linear-gradient(#ffda44,#fabc2b); /* Safari 5.1+, Chrome 10+ */
@@ -78,7 +79,6 @@ nav {
     background:    -ms-linear-gradient(#ffda44,#fabc2b); /* IE10 */
     background:     -o-linear-gradient(#ffda44,#fabc2b); /* Opera 11.10+ */
     background:        linear-gradient(#ffda44,#fabc2b);
-    border-radius:0 0 5px 5px;
 }
 
 nav li {
@@ -87,11 +87,11 @@ nav li {
 }
 
 nav a {
+    text-decoration:none;
+    text-shadow:1px 1px #fbd978;
     display:block;
     padding:10px;
-    text-decoration:none;
     color:#333;
-    text-shadow:1px 1px #fbd978;
 }
 
 nav a:hover,
@@ -114,21 +114,21 @@ nav a:active {
 
 #sidebar {
     float:left;
-    border:solid 1px #d4d4d4;
-    background:#f0f2f6;
-    width:258px;
     margin:20px 10px;
-    padding:10px 10px 0;
+    border:solid 1px #d4d4d4;
     border-radius:5px;
+    padding:10px 10px 0;
+    width:258px;
+    background:#f0f2f6;
 }
 
 footer {
     clear:both;
     border:solid 1px #d4d4d4;
-    background:#f0f2f6;
+    border-radius:5px;
     padding:10px;
     width:938px; /* declare width to fix for IE7 double padding bug */
-    border-radius:5px;
+    background:#f0f2f6;
 }
 
 
@@ -166,8 +166,8 @@ header a {
 #main h1 a:active,
 #main h1 a:visited {
     text-decoration:none;
-    background:#f0f2f6;
     color:#333;
+    background:#f0f2f6;
 }
 
 
@@ -218,19 +218,19 @@ p {
 
 abbr,
 acronym { /* acronym to be phased out of textile in favour of abbr */
-    border-bottom:1px dotted #999;
     cursor:help;
+    border-bottom:1px dotted #999;
 }
 
 blockquote {
     font-family:'Droid Serif', Georgia, Times, serif;
     font-style:italic;
     float:right;
-    width:260px;
-    background:#f0f2f6;
+    margin:0 0 .5em 1em;
     border-radius:5px;
     padding:1em 10px 0;
-    margin:0 0 .5em 1em;
+    width:260px;
+    background:#f0f2f6;
 }
 
 ins {
@@ -245,10 +245,10 @@ kbd {
 }
 
 pre {
-    padding:1em 10px;
     margin-bottom:1.3em;
-    overflow-x:auto;
+    padding:1em 10px;
     border-radius:5px;
+    overflow-x:auto;
 }
 
 small,
@@ -265,8 +265,8 @@ tfoot,
     color:#888;
 }
 figcaption {
-    margin-top:8px;
     font-style:italic;
+    margin-top:8px;
 }
 
 
@@ -286,10 +286,10 @@ figure {
 /* tables */
 
 table {
+    margin-bottom:1.3em;
     border-collapse:collapse;
     border-spacing:0;
     width:100%;
-    margin-bottom:1.3em;
 }
 
 caption {
@@ -300,15 +300,15 @@ caption {
 }
 
 thead {
-    background:#f0f2f6;
     border-right:1px solid #f0f2f6;
     border-left:1px solid #f0f2f6;
+    background:#f0f2f6;
 }
 
 tfoot {
-    background:#f7f8fb;
     border-right:1px solid #f0f2f6;
     border-left:1px solid #f0f2f6;
+    background:#f7f8fb;
 }
 
 tbody {
@@ -318,8 +318,8 @@ tbody {
 
 th,
 td {
-    padding:.25em 9px;
     border-bottom:1px solid #f0f2f6;
+    padding:.25em 9px;
 }
 
 th {
@@ -351,16 +351,16 @@ dt {
 }
 
 #sidebar #monthly-list a {
-    display:block;
-    float:left;
-    min-width:36px;
-    margin:0 4px 6px 0;
     text-align:center;
     text-decoration:none;
-    color:#444;
-    background:#fff;
+    float:left;
+    display:block;
+    margin:0 4px 6px 0;
+    min-width:36px;
     border:1px solid #ccc;
     border-radius:5px;
+    color:#444;
+    background:#fff;
     -webkit-box-shadow:2px 2px 2px rgba(99,102,112,.2);
             box-shadow:2px 2px 2px rgba(99,102,112,.2);
 }
@@ -463,21 +463,21 @@ textarea {
     line-height:1.363636363636364em; /* 15px */
     font-family:Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
     border:solid 1px #d4d4d4;
-    background:#fff;
     padding:.5em 5px .55em;
+    background:#fff;
     -webkit-box-sizing:border-box;
        -moz-box-sizing:border-box;
             box-sizing:border-box;
 }
 
 input[type="search"] {
+    vertical-align:baseline;
     width:192px;
-    padding:.5em 0 .55em 5px;
     margin-right:2px;
+    padding:.5em 0 .55em 5px;
     display:inline-block;
     zoom:1; /* zoom and *display = ie7 hack for display:inline-block */
     *display:inline;
-    vertical-align:baseline;
 }
 
 textarea {
@@ -564,24 +564,22 @@ input[type="submit"] {
     line-height:1.363636363636364em; /* 15px */
     font-family:Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
     font-weight:normal;
-    height:2.545454545454545em;      /* 28px */
-    width:auto; /* ie7 padding bug hack */
-    overflow:visible; /* ie7 padding bug hack */
-    color:#333;
+    text-align:center;
     text-shadow:1px 1px #fbd978;
+    vertical-align:baseline;
+    outline:0;
+    cursor:pointer;
+    margin:0;
+    border:solid 1px #e1a61a;
+    border-radius:5px;
+    padding:.5em .8em .5em;
+    width:auto; /* ie7 padding bug hack */
+    height:2.545454545454545em;      /* 28px */
+    overflow:visible; /* ie7 padding bug hack */
     display:inline-block;
     zoom:1; /* zoom and *display = ie7 hack for display:inline-block */
     *display:inline;
-    vertical-align:baseline;
-    margin:0;
-    outline:0;
-    cursor:pointer;
-    text-align:center;
-    padding:.5em .8em .5em;
-    border:solid 1px #e1a61a;
-    border-radius:5px;
-    -webkit-box-shadow:0 1px 2px rgba(0,0,0,.2);
-            box-shadow:0 1px 2px rgba(0,0,0,.2);
+    color:#333;
     background:#ffda44;
     background:-webkit-gradient(linear,left top,left bottom,from(#ffda44),to(#fabc2b)); /* Safari 4+, Chrome */
     background:-webkit-linear-gradient(#ffda44,#fabc2b); /* Safari 5.1+, Chrome 10+ */
@@ -589,6 +587,8 @@ input[type="submit"] {
     background:    -ms-linear-gradient(#ffda44,#fabc2b); /* IE10 */
     background:     -o-linear-gradient(#ffda44,#fabc2b); /* Opera 11.10+ */
     background:        linear-gradient(#ffda44,#fabc2b);
+    -webkit-box-shadow:0 1px 2px rgba(0,0,0,.2);
+            box-shadow:0 1px 2px rgba(0,0,0,.2);
 }
 
 button:hover,
@@ -608,6 +608,8 @@ button:active,
 .button:active,
 input[type="button"]:active,
 input[type="submit"]:active {
+    position:relative;
+    top:1px;
     color:#000;
     background:#fec94c;
     background:-webkit-gradient(linear,left top,left bottom,from(#fec94c),to(#fcdd62)); /* Safari 4+, Chrome */
@@ -616,16 +618,15 @@ input[type="submit"]:active {
     background:    -ms-linear-gradient(#fec94c,#fcdd62); /* IE10 */
     background:     -o-linear-gradient(#fec94c,#fcdd62); /* Opera 11.10+ */
     background:        linear-gradient(#fec94c,#fcdd62);
-    position:relative;
-    top:1px;
 }
 
 input[type="submit"].disabled,
 #paginator span.disabled {
-    color:#fff;
     text-shadow:-1px -1px #ccc;
+    top:0;
     cursor:default;
     border:solid 1px #d2d2d2;
+    color:#fff;
     background:#dadada;
     background:-webkit-gradient(linear,left top,left bottom,from(#e6e6e6),to(#dadada)); /* Safari 4+, Chrome */
     background:-webkit-linear-gradient(#e6e6e6,#dadada); /* Safari 5.1+, Chrome 10+ */
@@ -633,20 +634,19 @@ input[type="submit"].disabled,
     background:    -ms-linear-gradient(#e6e6e6,#dadada); /* IE10 */
     background:     -o-linear-gradient(#e6e6e6,#dadada); /* Opera 11.10+ */
     background:        linear-gradient(#e6e6e6,#dadada);
-    top:0;
 }
 
 #paginator {
     margin:1em 0;
 }
 #paginator .button {
-    height:1.5em;
     padding:.1em .66em;
+    height:1.5em;
 }
 
 #paginator a.button {
-    color:#333;
     text-decoration:none;
+    color:#333;
 }
 
 #paginator-l {
@@ -661,10 +661,10 @@ input[type="submit"].disabled,
 /* comments */
 
 .comments {
-    background:#f7f8fb;
-    padding:1em 10px 0;
     margin-bottom:20px;
     border-radius:5px;
+    padding:1em 10px 0;
+    background:#f7f8fb;
 }
 
 .comments-author {
@@ -680,10 +680,10 @@ input[type="submit"].disabled,
 }
 
 #cpreview {
-    background:#fdf8eb;
-    padding:1em 10px;
-    border-radius:5px;
     margin-bottom:2px;
+    border-radius:5px;
+    padding:1em 10px;
+    background:#fdf8eb;
 }
 
 .comments_error {
@@ -765,8 +765,8 @@ footer {
 }
 
 blockquote {
-    width:400px;
     margin-bottom:1em;
+    width:400px;
 }
 
 h1,
@@ -813,8 +813,8 @@ footer {
 }
 
 blockquote {
-    width:260px;
     margin-bottom:1em;
+    width:260px;
 }
 
 
