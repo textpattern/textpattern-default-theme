@@ -176,7 +176,7 @@ A support ticket has been raised highlighting this issue with Textile but there 
 
 #### Unnecessary div wrapper within comments input form
 
-On the comments input form, the was a workaround to prevent a XHTML Strict validation error by wrapping a `<div>` (with a class of 'comments-wrapper') inside the `<form>` tag. This is unnecessary for HTML5 validation, so if you don't need it for styling you can go ahead and remove it. Manually edit the file '/textpattern/publish/comment.php' which was part of the Textpattern installation:
+On the comments input form there was a workaround to prevent a XHTML Strict validation error by wrapping a `<div>` (with a class of 'comments-wrapper') inside the `<form>` tag. This is unnecessary for HTML5 validation, so if you don't need it for styling you can safely go ahead and remove it if you wish. Manually edit the file '/textpattern/publish/comment.php' which was part of the Textpattern installation:
 
 Find the following code at around line 144...
 
@@ -198,7 +198,7 @@ Leaving it in place will not affect HTML5 validation so it's down to your person
 
 #### input type 'email' and input type 'url'
 
-Textpattern (currently v4.4.1) does not use the HTML5 input field types 'email' and 'url', instead rendering those input fields as standard type 'text'. Whilst this is fine and indeed still valid code, some devices benefit from having an input clearly defined as such - for example the Apple iPhone displays a different layout of it's keyboard based on what the field is, so it's good practice to use those types if you can.
+Textpattern (currently v4.4.1) does not utilise the HTML5 input field types 'email' and 'url', instead rendering those input fields as standard type 'text'. Whilst this is fine and indeed still valid code, some devices benefit from having an input clearly defined as such - for example the Apple iPhone displays a different layout of it's keyboard based on what the field is for, so it's good practice to use those types if you can.
 
 To achive this you will need to install and activate the plugin [rah_replace](http://rahforum.biz/plugins/rah_replace). Then:
 
