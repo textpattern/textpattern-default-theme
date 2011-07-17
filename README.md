@@ -154,19 +154,61 @@ It is strongly recommended that you read the Modernizr documentation available a
 
 ## Known issues
 
-Here is a list of current known issues...
+Here is a list of current known issues and suggested workarounds if available, none of these issues break the theme so this is purely optional...
 
-1. Textile (currently v2.2) uses the `<acronym>` tag which is invalid HTML5, instead of the valid `<abbr>` tag. As a workaround you could edit the file '/textpattern/lib/classTextile.php' which was part of the Textpattern installation:
+#### rel="home" attribute is currently invalid HTML5
 
-Change line ~ 435 from...
+The attribute `rel="home"` generated on the navigation bar home link is currently not in the HTML5 draft specification, though it has been proposed and is likely to be accepted at some point soon.
+
+#### <acronym> tag
+
+Textile (currently v2.2) uses the `<acronym>` tag which is invalid HTML5, instead of the valid `<abbr>` tag. As a workaround, and if you do use abbreviations in articles, you could manually edit the file '/textpattern/lib/classTextile.php' which was part of the Textpattern installation:
+
+Find the following code at around line 435...
 
     '<acronym title="$2">$1</acronym>',
 
-To:
+And replace with...
 
     '<abbr title="$2">$1</abbr>',
 
-2. 
+A support ticket has been raised highlighting this issue with Textile but there is currently no ETA as to when (or if) this tag will be updated, due to maintaining backwards compatibility.
+
+#### Unnecessary <div> wrapper within comments input form
+
+On the comments input form, the was a workaround to prevent a XHTML Strict validation error by wrapping a `<div>` (with a class of 'comments-wrapper') inside the `<form>` tag. This is unnecessary for HTML5 validation, so if you don't need it for styling you can go ahead and remove it. Manually edit the file '/textpattern/publish/comment.php' which was part of the Textpattern installation:
+
+Find the following code at around line 144...
+
+    n.'<div class="comments-wrapper">'.n.n;
+
+And either delete the line or replace (comment out) with...
+
+    // n.'<div class="comments-wrapper">'.n.n;
+
+Find the following code at around line 218...
+
+    $out .= n.n.'</div>'.n.'</form>';
+
+And replace with...
+
+    $out .= n.'</form>';
+
+Leaving it in place will not affect HTML5 validation so it's down to your personal preference as to whether you leave the div in the code or not.
+
+#### input type="email" and input type="url"
+
+Textpattern (currently v4.4.1) does not use the HTML5 input field types 'email' and 'url', instead rendering those input fields as standard type 'text'. Whilst this is fine and indeed still valid code, some devices benefit from having an input clearly defined as such - for example the Apple iPhone displays a different layout of it's keyboard based on what the field is, so it's good practice to use those types if you can.
+
+To achive this you will need to install and activate the plugin [rah_replace](http://rahforum.biz/plugins/rah_replace). Then:
+
+Change line 14 of 'comment_form.comment.txp' to...
+
+    <txp:rah_replace from='type="text"' to='type="email"'><txp:comment_email_input /></txp:rah_replace></p>
+
+Change line 17 of 'comment_form.comment.txp' to...
+
+    <txp:rah_replace from='type="text"' to='type="url"'><txp:comment_email_input /></txp:rah_replace></p>
 
 ## License
 
