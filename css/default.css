@@ -457,6 +457,8 @@ textarea {
 }
 
 input[type="text"],
+input[type="email"],
+input[type="url"],
 input[type="search"],
 textarea {
     font-size:.846153846153846em;    /* 11px */
@@ -487,6 +489,10 @@ textarea {
 
 input[type="text"]:hover,
 input[type="text"]:focus,
+input[type="email"]:hover,
+input[type="email"]:focus,
+input[type="url"]:hover,
+input[type="url"]:focus,
 input[type="search"]:hover,
 input[type="search"]:focus,
 textarea:hover,
