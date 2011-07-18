@@ -482,9 +482,7 @@ input[type="search"] {
 
 textarea {
     width:100%;
-    -webkit-resize:vertical;
-       -moz-resize:vertical;
-            resize:vertical;
+    resize:vertical;
 }
 
 input[type="text"]:hover,
