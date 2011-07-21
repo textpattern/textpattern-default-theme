@@ -5,7 +5,7 @@
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;*font-size:16px;vertical-align:baseline;background:transparent;}
 body{line-height:1;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
-audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}
+audio,canvas,video{display:inline-block;*display:inline;zoom:1;}
 audio:not([controls]){display:none;}
 nav ul{list-style:none;}
 nav ul,nav li{margin:0;} 
@@ -480,8 +480,8 @@ input[type="search"] {
     margin-right:2px;
     padding:.5em 0 .55em 5px;
     display:inline-block;
-    zoom:1; /* zoom and *display = ie7 hack for display:inline-block */
-    *display:inline;
+    *display:inline; /* display and zoom IE6-IE7 fix for display:inline-block */
+    zoom:1;
 }
 
 textarea {
@@ -583,8 +583,8 @@ input[type="submit"] {
     height:2.545454545454545em;      /* 28px */
     overflow:visible; /* ie7 padding bug hack */
     display:inline-block;
-    zoom:1; /* zoom and *display = ie7 hack for display:inline-block */
-    *display:inline;
+    *display:inline; /* display and zoom IE6-IE7 fix for display:inline-block */
+    zoom:1;
     color:#333;
     background:#ffda44;
     background:-webkit-gradient(linear,left top,left bottom,from(#ffda44),to(#fabc2b)); /* Safari 4+, Chrome */
