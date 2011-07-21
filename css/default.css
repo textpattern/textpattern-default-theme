@@ -192,15 +192,7 @@ h1 {
     padding-bottom:20px;
 }
 
-h2 {
-    font-size:3em;                   /* 39px */
-    line-height:1.128205128205128em; /* 44px */
-    font-family:Helvetica, Arial, Verdana, sans-serif;
-    font-weight:bold;
-    letter-spacing:-1px;
-    padding-bottom:20px;
-}
-
+h2,
 h3 {
     font-size:2em;                   /* 26px */
     line-height:1.307692307692308em; /* 34px */

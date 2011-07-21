@@ -45,8 +45,10 @@
 
 <!-- header -->
     <header role="banner">
-        <h2><txp:link_to_home><txp:site_name /></txp:link_to_home></h2>
-        <h3><txp:site_slogan /></h3>
+        <hgroup>
+            <h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
+            <h2><txp:site_slogan /></h2>
+        <hgroup>
     </header>
 
 <!-- navigation -->
