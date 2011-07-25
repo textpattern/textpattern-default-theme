@@ -176,15 +176,15 @@ header a {
 /* typography */
 
 body {
-    font-size:.8125em;               /* 13px */
-    line-height:1.461538461538462em; /* 19px */
+    font-size:.8125em;              /* 13px / 16px */
+    line-height:1.46153846153846em; /* 19px / 13px */
     font-family:Verdana, Tahoma, Arial, sans-serif;
     color:#333;
 }
 
 h1 {
-    font-size:3em;                   /* 39px */
-    line-height:1.128205128205128em; /* 44px */
+    font-size:3em;                  /* 39px / 13px */
+    line-height:1.12820512820513em; /* 44px / 39px */
     font-family:Helvetica, Arial, Verdana, sans-serif;
     font-weight:bold;
     letter-spacing:-1px;
@@ -194,8 +194,8 @@ h1 {
 
 h2,
 h3 {
-    font-size:2em;                   /* 26px */
-    line-height:1.307692307692308em; /* 34px */
+    font-size:2em;                  /* 26px / 13px */
+    line-height:1.30769230769231em; /* 34px / 26px */
     font-family:'Droid Serif', Georgia, Times, serif;
     font-weight:normal;
     font-style:italic;
@@ -249,8 +249,8 @@ small,
 figcaption,
 tfoot,
 .footnote {
-    font-size:.846153846153846em;    /* 11px */
-    line-height:1.363636363636364em; /* 15px */
+    font-size:.84615384615385em;    /* 11px / 13px */
+    line-height:1.36363636363636em; /* 15px / 11px */
 }
 
 figcaption,
@@ -371,8 +371,8 @@ dt {
 }
 
 #monthly-list a .archive-year {
-    font-size:.769230769230769em;    /* 10px */
-    line-height:1.5em;               /* 15px */
+    font-size:.76923076923077em;    /* 10px / 13px */
+    line-height:1.5em;              /* 15px / 10px */
     font-weight:bold;
     text-shadow:1px 1px #fbd978;
     border-radius:5px 5px 0 0;
@@ -457,8 +457,8 @@ input[type="email"],
 input[type="url"],
 input[type="search"],
 textarea {
-    font-size:.846153846153846em;    /* 11px */
-    line-height:1.363636363636364em; /* 15px */
+    font-size:.84615384615385em;    /* 11px / 13px */
+    line-height:1.36363636363636em; /* 15px / 11px */
     font-family:Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
     border:solid 1px #d4d4d4;
     padding:.5em 5px .55em;
@@ -560,8 +560,8 @@ button,
 .button,
 input[type="button"],
 input[type="submit"] {
-    font-size:.846153846153846em;    /* 11px */
-    line-height:1.363636363636364em; /* 15px */
+    font-size:.84615384615385em;    /* 11px / 13px */
+    line-height:1.36363636363636em; /* 15px / 11px */
     font-family:Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
     font-weight:normal;
     text-align:center;
@@ -771,14 +771,14 @@ blockquote {
 
 h1,
 h2 {
-    font-size:2.307692307692308em;   /* 30px */
-    line-height:1.133333333333333em; /* 34px */
+    font-size:2.30769230769231em;   /* 30px / 13px */
+    line-height:1.13333333333333em; /* 34px / 30px */
     padding-top:0;
 }
 
 h3 {
-    font-size:1.384615384615385em;   /* 18px */
-    line-height:1.333333333333333em; /* 24px */
+    font-size:1.38461538461538em;   /* 18px / 13px */
+    line-height:1.33333333333333em; /* 24px / 18px */
 }
 
 .large input{
