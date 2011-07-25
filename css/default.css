@@ -264,12 +264,14 @@ figcaption {
 }
 
 
-/* images */
+/* media */
 
-article img {
-    margin:3px 0;
-    height:auto;
+article img,
+article embed,
+article object,
+article video {
     max-width:100%;
+    margin:3px 0;
 }
 
 figure {
