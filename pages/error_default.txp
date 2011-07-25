@@ -1,6 +1,5 @@
 <!doctype html>
-<!--[if IE 6 ]><html lang="<txp:lang />" class="no-js ie6"><![endif]-->
-<!--[if gt IE 6]><!--><html lang="<txp:lang />" class="no-js"><!--<![endif]-->
+<html lang="<txp:lang />" class="no-js">
 
 <head>
     <meta charset="utf-8">
