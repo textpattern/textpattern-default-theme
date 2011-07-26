@@ -14,20 +14,22 @@ blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 a{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;background:transparent;}
 a:active{outline:0;}
+b,strong{font-weight:bold;}
 ins{background:#ff9;color:#000;text-decoration:none;}
 mark{background:#ff9;color:#000;font-style:italic;font-weight:bold;}
 del{text-decoration:line-through;}
 abbr[title],dfn[title]{border-bottom:1px dotted #999;cursor:help;}
 table{border-collapse:collapse;border-spacing:0;}
 table button,table input{*overflow:auto;}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}
-input,select{vertical-align:middle;}
 img{vertical-align:middle;-ms-interpolation-mode:bicubic;}
+svg:not(:root){overflow:hidden;}
 sub,sup{font-size:75%;line-height:0;position:relative;}
 sup{top:-.5em;}
 sub{bottom:-.25em;}
 
-/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements in most situations. nicolasgallagher.com/micro-clearfix-hack/ */
+/* The Magnificent Clearfix - updated to prevent margin-collapsing on child elements in most situations: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before,.clearfix:after{content:"";display:table;}
 .clearfix:after{clear:both;}
 .clearfix{zoom:1;}
@@ -46,8 +48,8 @@ sub{bottom:-.25em;}
 /* layout */
 
 html {
-    -webkit-text-size-adjust:100%;
-        -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%; /* prevents iOS text size adjust after orientation change, without disabling user zoom: http://www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+        -ms-text-size-adjust:100%; /* as above, for Windows Phone */
 }
 
 body {
@@ -232,9 +234,18 @@ ins {
     background:#fdf8eb;
 }
 
-code,
+dfn,
+q {
+    font-family:'Droid Serif', Georgia, Times, serif;
+    font-style:italic;
+    background:#fdf8eb;
+}
+
 pre,
-kbd {
+code,
+kbd,
+samp,
+var {
     font-family:Cousine, Consolas, Monaco, monospace;
     background:#fdf8eb;
 }
@@ -439,12 +450,15 @@ input[type="search"] {
     display:none;
 }
 
-/* webkit browsers add a 2px margin outside the chrome of form elements */
+/* improves appearance and consistency in all browsers */
 button,
+.button,
 input,
 select,
 textarea {
     margin:0;
+    vertical-align:baseline;
+    *vertical-align:middle; /* improves appearance and consistency in IE6-IE7 */
 }
 
 /* colour placeholder text (Webkit and Mozilla only, so far) */
@@ -470,7 +484,6 @@ textarea {
 }
 
 input[type="search"] {
-    vertical-align:baseline;
     width:192px;
     margin-right:2px;
     padding:.5em 0 .55em 5px;
@@ -481,6 +494,8 @@ input[type="search"] {
 
 textarea {
     width:100%;
+    overflow:auto; /* removes default vertical scrollbar in IE6-IE9 */
+    vertical-align:top; /* improves readability and alignment in all browsers */
     resize:vertical;
 }
 
@@ -542,7 +557,7 @@ textarea:focus {
 
 /* buttons */
 
-/* Make buttons play nice in IE: www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
+/* Make buttons play nice in IE: http://www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 input,
 button,
 .button {
@@ -567,16 +582,14 @@ input[type="submit"] {
     font-weight:normal;
     text-align:center;
     text-shadow:1px 1px #fbd978;
-    vertical-align:baseline;
     outline:0;
     cursor:pointer;
-    margin:0;
     border:solid 1px #e1a61a;
     border-radius:5px;
     padding:.5em .8em .5em;
-    width:auto; /* ie7 padding bug hack */
+    width:auto; /* IE7 padding bug hack */
     height:2.545454545454545em;      /* 28px */
-    overflow:visible; /* ie7 padding bug hack */
+    *overflow:visible; /* corrects inner spacing displayed oddly in IE6-IE7 */
     display:inline-block;
     *display:inline; /* display and zoom IE6-IE7 fix for display:inline-block */
     zoom:1;
