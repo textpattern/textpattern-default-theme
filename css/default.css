@@ -462,7 +462,10 @@ textarea {
 }
 
 /* colour placeholder text (Webkit and Mozilla only, so far) */
-::-webkit-input-placeholder,
+::-webkit-input-placeholder {
+    color:#bbb;
+}
+
 :-moz-placeholder {
     color:#bbb;
 }
