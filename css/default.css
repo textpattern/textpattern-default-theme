@@ -783,13 +783,13 @@ blockquote {
     width:400px;
 }
 
-h1,
-h2 {
+h1 {
     font-size:2.30769230769231em;   /* 30px / 13px */
     line-height:1.13333333333333em; /* 34px / 30px */
     padding-top:0;
 }
 
+h2,
 h3 {
     font-size:1.38461538461538em;   /* 18px / 13px */
     line-height:1.33333333333333em; /* 24px / 18px */
