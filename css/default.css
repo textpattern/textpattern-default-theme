@@ -165,13 +165,13 @@ header a {
     color:#551a8b;
 }
 
-#main h1 a {
+#main h1 a,
+#main h1 a:visited {
     color:#333;
 }
 
 #main h1 a:hover,
-#main h1 a:active,
-#main h1 a:visited {
+#main h1 a:active {
     text-decoration:none;
     color:#333;
     background:#f0f2f6;
