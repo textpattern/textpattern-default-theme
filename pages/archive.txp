@@ -1,5 +1,7 @@
 <!doctype html>
-<html lang="<txp:lang />" class="no-js">
+<!--[if lt IE 8]><html class="no-js ie7" lang="<txp:lang />"><![endif]-->
+<!--[if IE 8]>   <html class="no-js ie8" lang="<txp:lang />"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="<txp:lang />"><!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
