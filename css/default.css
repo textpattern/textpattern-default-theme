@@ -573,6 +573,15 @@ button,
     overflow:visible;
 }
 
+/* fix black border bug on styled buttons in IE7 by remove borders entirely */
+.ie7 button,
+.ie7 .button,
+.ie7 input[type="button"],
+.ie7 input[type="submit"],
+.ie7 #paginator span.disabled {
+    border:0;
+}
+
 /* fix firefox button height discrepancy: http://christophzillgens.com/en/articles/equal-height-input-and-button-elements-in-firefox-and-safari */
 input::-moz-focus-inner,
 button::-moz-focus-inner{
