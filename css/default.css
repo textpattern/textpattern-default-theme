@@ -463,7 +463,7 @@ select,
 textarea {
     margin:0;
     vertical-align:baseline;
-    *vertical-align:middle; /* improves appearance and consistency in IE6-IE7 */
+    *vertical-align:middle; /* improves appearance and consistency in IE7 */
 }
 
 /* colour placeholder text (Webkit and Mozilla only, so far) */
@@ -496,13 +496,13 @@ input[type="search"] {
     margin-right:2px;
     padding:.5em 0 .55em 5px;
     display:inline-block;
-    *display:inline; /* display and zoom IE6-IE7 fix for display:inline-block */
+    *display:inline; /* display and zoom IE7 fix for display:inline-block */
     zoom:1;
 }
 
 textarea {
     width:100%;
-    overflow:auto; /* removes default vertical scrollbar in IE6-IE9 */
+    overflow:auto; /* removes default vertical scrollbar in IE7-IE9 */
     vertical-align:top; /* improves readability and alignment in all browsers */
     resize:vertical;
 }
@@ -606,7 +606,7 @@ input[type="submit"] {
     padding:.5em .8em .5em;
     height:2.545454545454545em;      /* 28px */
     display:inline-block;
-    *display:inline; /* display and zoom IE6-IE7 fix for display:inline-block */
+    *display:inline; /* display and zoom IE7 fix for display:inline-block */
     zoom:1;
     color:#333;
     background:#ffda44;
