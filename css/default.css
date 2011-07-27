@@ -595,9 +595,7 @@ input[type="submit"] {
     border:solid 1px #e1a61a;
     border-radius:5px;
     padding:.5em .8em .5em;
-    width:auto; /* IE7 padding bug hack */
     height:2.545454545454545em;      /* 28px */
-    *overflow:visible; /* corrects inner spacing displayed oddly in IE6-IE7 */
     display:inline-block;
     *display:inline; /* display and zoom IE6-IE7 fix for display:inline-block */
     zoom:1;
