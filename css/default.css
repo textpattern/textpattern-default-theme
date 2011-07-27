@@ -451,7 +451,7 @@ input[type="search"] {
     -webkit-appearance:textfield;
 }
 
-::-webkit-search-decoration{
+::-webkit-search-decoration {
     display:none;
 }
 
