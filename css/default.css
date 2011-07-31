@@ -8,7 +8,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{di
 audio,canvas,video{display:inline-block;*display:inline;zoom:1;}
 audio:not([controls]){display:none;}
 [hidden]{display:none;visibility:hidden;}
-nav ul{list-style:none;}
+nav ul{list-style:none;list-style-image:none;}
 nav ul,nav li{margin:0;} 
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
