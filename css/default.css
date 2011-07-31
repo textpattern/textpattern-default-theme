@@ -199,8 +199,8 @@ h1 {
 
 h2,
 h3 {
-    font-size:2em;                     /* 26px / 13px */
-    line-height:1.30769230769231em;    /* 34px / 26px */
+    font-size:1.84615384615385em;      /* 24px / 13px */
+    line-height:1.33333333333333em;    /* 32px / 24px */
     font-family:'Droid Serif', Georgia, Times, serif;
     font-weight:normal;
     font-style:italic;
@@ -893,20 +893,15 @@ a:visited:after{
 
 h1 {
     font-size:36pt;
+    line-height:40pt;
     font-weight:normal;
-    line-height:1.3em;
     padding-bottom:2em;
 }
 
-h2 {
-    font-size:24pt;
-    line-height:1.4em;
-    padding-bottom:1em;
-}
-
+h2,
 h3 {
     font-size:18pt;
-    line-height:1.5em;
+    line-height:24pt;
     padding-bottom:1em;
 }
 
@@ -915,7 +910,7 @@ p {
 }
 footer {
     font-size:6pt;
-    line-height:1.6em;
+    line-height:9pt;
 }
 
 ul {
