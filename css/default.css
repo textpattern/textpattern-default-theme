@@ -201,7 +201,7 @@ h2,
 h3 {
     font-size:1.84615384615385em;      /* 24px / 13px */
     line-height:1.33333333333333em;    /* 32px / 24px */
-    font-family:'Droid Serif', Georgia, Times, serif;
+    font-family:"Droid Serif", Georgia, Times, serif;
     font-weight:normal;
     font-style:italic;
     padding-bottom:.5em;               /* 13px / 26px */
@@ -222,7 +222,7 @@ acronym { /* acronym to be phased out of textile in favour of abbr */
 }
 
 blockquote {
-    font-family:'Droid Serif', Georgia, Times, serif;
+    font-family:"Droid Serif", Georgia, Times, serif;
     font-style:italic;
     float:right;
     margin:0 0 .5em 1em;
@@ -238,7 +238,7 @@ ins {
 
 dfn,
 q {
-    font-family:'Droid Serif', Georgia, Times, serif;
+    font-family:"Droid Serif", Georgia, Times, serif;
     font-style:italic;
     background:#fdf8eb;
 }
@@ -304,7 +304,7 @@ table {
 }
 
 caption {
-    font-family:'Droid Serif', Georgia, Times, serif;
+    font-family:"Droid Serif", Georgia, Times, serif;
     font-style:italic;
     text-align:left;
     margin-bottom:.5em;
@@ -351,7 +351,7 @@ th {
 }
 
 dt {
-    font-family:'Droid Serif', Georgia, Times, serif;
+    font-family:"Droid Serif", Georgia, Times, serif;
     font-style:italic;
 }
 
@@ -868,13 +868,20 @@ blockquote {
 
 
 *{
-    background:transparent !important;
-    color:black !important;
+    color:black !important; /* black prints faster: http://sanbeiji.com/archives/953 */
     text-shadow:none !important;
+    background:transparent !important;
+    filter:none !important;
+}
+
+@page {
+    margin:0.5cm;
 }
 
 body {
-    font:8pt/1.6em Helvetica,Arial,SunSans-Regular,sans-serif;
+    font-size:8pt;
+    line-height:12pt;
+    font-family:"Helvetica Neue", Helvetica, Arial, SunSans-Regular, sans-serif;
     padding:2em 6em;
 }
 
@@ -893,7 +900,7 @@ a[href]:after {
 }
 
 abbr[title]:after,
-acronym[title]:after { /* acronym to be phased out of textile in favour of abbr */ {
+acronym[title]:after { /* acronym to be phased out of textile in favour of abbr */
     content:" (" attr(title) ")";
 }
 
@@ -909,14 +916,38 @@ h3 {
     font-size:18pt;
     line-height:24pt;
     padding-bottom:1em;
+    page-break-after:avoid;
+    orphans:3;
+    widows:3;
 }
 
 p {
     padding-bottom:1em;
+    orphans:3;
+    widows:3;
 }
 footer {
     font-size:6pt;
     line-height:9pt;
+}
+
+pre,
+blockquote {
+    border:1px solid #999;
+    page-break-inside:avoid;
+}
+
+pre,
+code,
+kbd,
+samp,
+var {
+    font-family:Cousine, Consolas, Monaco, "Courier New", Courier, monospace;
+}
+
+img {
+    max-width:100% !important;
+    page-break-inside:avoid;
 }
 
 ul {
@@ -927,6 +958,14 @@ ul {
 ol {
     list-style:decimal;
     margin:0 0 1em 1.8em;
+}
+
+thead {
+    display:table-header-group; /* display table head across multi-page tables: http://css-discuss.incutio.com/wiki/Printing_Tables */
+}
+
+tr {
+    page-break-inside:avoid;
 }
 
 
