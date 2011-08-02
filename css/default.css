@@ -882,13 +882,14 @@ nav {
     display:none;
 }
 
-a {
-    text-decoration:none;
+a,
+a:visited {
+    color:black !important;
+    text-decoration:underline;
 }
 
-a:link:after,
-a:visited:after{ 
-    content:" ("attr(href)") ";
+a[href]:after {
+    content:" (" attr(href) ")";
 }
 
 h1 {
