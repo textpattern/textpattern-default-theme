@@ -868,7 +868,7 @@ blockquote {
 
 
 *{
-    color:black !important; /* black prints faster: http://sanbeiji.com/archives/953 */
+    color:#000 !important; /* black prints faster: http://sanbeiji.com/archives/953 */
     text-shadow:none !important;
     background:transparent !important;
     filter:none !important;
@@ -883,6 +883,11 @@ body {
     line-height:12pt;
     font-family:"Helvetica Neue", Helvetica, Arial, SunSans-Regular, sans-serif;
     padding:2em 6em;
+}
+
+header {
+    margin-bottom:24pt;
+    border-bottom:1pt solid #000;
 }
 
 nav {
@@ -915,42 +920,46 @@ h1 {
     font-size:32pt;
     line-height:36pt;
     font-weight:normal;
-    padding-bottom:40pt;
+    padding-bottom:16pt;
 }
 
 h2,
 h3 {
-    font-size:18pt;
-    line-height:24pt;
-    padding-bottom:1em;
+    font-size:14pt;
+    line-height:18pt;
+    padding-bottom:8pt;
     page-break-after:avoid;
     orphans:3;
     widows:3;
 }
 
 p {
-    padding-bottom:1em;
+    padding-bottom:8pt;
     orphans:3;
     widows:3;
 }
-footer {
+
+footer,
+tfoot,
+small,
+.footnote {
     font-size:6pt;
     line-height:9pt;
 }
 
 pre,
 blockquote {
-    border:1px solid #999;
+    border:1pt solid #000;
     page-break-inside:avoid;
-    margin-bottom:1em;
+    margin-bottom:8pt;
 }
 
 blockquote {
-    padding:1em 1em 0;
+    padding:8pt 8pt 0;
 }
 
 pre {
-    padding:1em;
+    padding:8pt;
 }
 
 pre,
@@ -958,7 +967,13 @@ code,
 kbd,
 samp,
 var {
-    font-family:Consolas, Monaco, "Courier New", Courier, monospace;
+    font-family:"Courier New", Courier, monospace;
+}
+
+dfn,
+q,
+dt {
+    font-style:italic;
 }
 
 img {
@@ -968,24 +983,63 @@ img {
 
 ul {
     list-style:square;
-    margin:0 0 1em 1.8em;
+    margin:0 0 8pt 1.8em;
 }
 
 ol {
     list-style:decimal;
-    margin:0 0 1em 1.8em;
+    margin:0 0 8pt 1.8em;
+}
+
+dl {
+    margin:0 0 8pt 1.8em;
 }
 
 table {
-    margin-bottom:1em;
+    margin-bottom:8pt;
+    width:100%;
+}
+
+caption {
+    font-weight:bold;
+    text-align:left;
+    margin-bottom:4pt;
 }
 
 thead {
     display:table-header-group; /* display table head across multi-page tables: http://css-discuss.incutio.com/wiki/Printing_Tables */
+    border-right:1pt solid #000;
+    border-left:1pt solid #000;
+}
+
+tfoot {
+    border-right:1pt solid #000;
+    border-left:1pt solid #000;
+}
+
+tbody {
+    border-right:1pt solid #000;
+    border-left:1pt solid #000;
 }
 
 tr {
     page-break-inside:avoid;
+}
+
+th,
+td {
+    border-bottom:1pt solid #000;
+    padding:4pt 8pt;
+}
+
+th {
+    text-align:left;
+    border-top:1pt solid #000;
+
+}
+
+form {
+    display:none;
 }
 
 
