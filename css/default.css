@@ -892,6 +892,11 @@ a[href]:after {
     content:" (" attr(href) ")";
 }
 
+abbr[title]:after,
+acronym[title]:after { /* acronym to be phased out of textile in favour of abbr */ {
+    content:" (" attr(title) ")";
+}
+
 h1 {
     font-size:36pt;
     line-height:40pt;
