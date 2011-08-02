@@ -892,11 +892,19 @@ nav {
 a,
 a:visited {
     color:black !important;
-    text-decoration:underline;
+    text-decoration:none;
 }
 
 a[href]:after {
     content:" (" attr(href) ")";
+}
+
+h1 a[href]:after,
+h2 a[href]:after,
+h3 a[href]:after,
+sup a[href]:after,
+.comment-count[href]:after {
+    content:"";
 }
 
 abbr[title]:after,
@@ -905,10 +913,10 @@ acronym[title]:after { /* acronym to be phased out of textile in favour of abbr 
 }
 
 h1 {
-    font-size:36pt;
-    line-height:40pt;
+    font-size:32pt;
+    line-height:36pt;
     font-weight:normal;
-    padding-bottom:2em;
+    padding-bottom:40pt;
 }
 
 h2,
@@ -935,6 +943,15 @@ pre,
 blockquote {
     border:1px solid #999;
     page-break-inside:avoid;
+    margin-bottom:1em;
+}
+
+blockquote {
+    padding:1em 1em 0;
+}
+
+pre {
+    padding:1em;
 }
 
 pre,
@@ -942,7 +959,7 @@ code,
 kbd,
 samp,
 var {
-    font-family:Cousine, Consolas, Monaco, "Courier New", Courier, monospace;
+    font-family:Consolas, Monaco, "Courier New", Courier, monospace;
 }
 
 img {
@@ -958,6 +975,10 @@ ul {
 ol {
     list-style:decimal;
     margin:0 0 1em 1.8em;
+}
+
+table {
+    margin-bottom:1em;
 }
 
 thead {
