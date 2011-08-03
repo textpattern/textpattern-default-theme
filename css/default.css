@@ -890,15 +890,26 @@ header {
     border-bottom:1pt solid #000;
 }
 
-nav {
+footer {
+    margin-top:12pt;
+    border-top:1pt solid #000;
+    padding-top:12pt;
+}
+
+/* hide unnecessary content from print */
+nav,
+#sidebar,
+#paginator,
+#comments-form,
+.comments h4 a:last-child {
     display:none;
 }
 
-a,
-a:visited {
+a {
     text-decoration:none;
 }
 
+/* show URLs for certain links in print */
 a[href]:after {
     content:" (" attr(href) ")";
 }
@@ -907,10 +918,12 @@ h1 a[href]:after,
 h2 a[href]:after,
 h3 a[href]:after,
 sup a[href]:after,
-.comment-count[href]:after {
+.comment-count[href]:after,
+a[rel="tag"]:after {
     content:"";
 }
 
+/* show long-form for abbreviations in print */
 abbr[title]:after,
 acronym[title]:after { /* acronym to be phased out of textile in favour of abbr */
     content:" (" attr(title) ")";
@@ -940,6 +953,7 @@ p {
 }
 
 footer,
+figcaption,
 tfoot,
 small,
 .footnote {
@@ -947,19 +961,21 @@ small,
     line-height:9pt;
 }
 
-pre,
 blockquote {
-    border:1pt solid #000;
-    page-break-inside:avoid;
     margin-bottom:8pt;
-}
-
-blockquote {
+    border:1pt solid #000;
     padding:8pt 8pt 0;
+    page-break-inside:avoid;
 }
 
 pre {
+    margin-bottom:8pt;
+    border:1pt solid #000;
     padding:8pt;
+}
+
+.comments {
+    page-break-inside:avoid;
 }
 
 pre,
@@ -979,6 +995,14 @@ dt {
 img {
     max-width:100% !important;
     page-break-inside:avoid;
+}
+
+figure {
+    margin-bottom:8pt;
+}
+
+figcaption {
+    margin-top:4pt;
 }
 
 ul {
@@ -1036,10 +1060,6 @@ th {
     text-align:left;
     border-top:1pt solid #000;
 
-}
-
-form {
-    display:none;
 }
 
 
