@@ -108,7 +108,7 @@
 
     </div>
 
-<!-- right column -->
+<!-- right (complementary) column -->
     <div role="complementary">
         <txp:search_input /> <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
 
