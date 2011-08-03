@@ -1,8 +1,7 @@
 <!-- see default.article.txp for info on HTML5 'time' tag -->
-
 <txp:if_first_article><ul id="article-list"></txp:if_first_article>
     <li>
         <h4><txp:permlink><txp:title /></txp:permlink></h4>
-        <p class="footnote"><txp:text item="posted" />: <time datetime="<txp:posted format='%Y-%m-%d' />T<txp:posted format='%H:%M' />" pubdate><txp:posted format="%d %B %Y" /></time>, <txp:text item="author" />: <txp:author /></p>
+        <p class="footnote"><txp:text item="posted" />: <time datetime="<txp:posted format='%Y-%m-%d' />T<txp:posted format='%H:%M:%S' />Z" pubdate><txp:posted format="%d %B %Y" /></time>, <txp:text item="author" />: <txp:author /></p>
     </li>
 <txp:if_last_article></ul></txp:if_last_article>
