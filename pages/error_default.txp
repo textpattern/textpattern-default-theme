@@ -55,13 +55,13 @@
     </nav>
 
 <!-- left (main) column -->
-    <div role="main" id="main">
+    <div role="main">
         <h1 class="error-status"><txp:error_status /></h1>
         <p class="error-msg"><txp:error_message /></p>
     </div>
 
 <!-- right column -->
-    <div role="complementary" id="sidebar">
+    <div role="complementary">
         <txp:search_input /> <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
 
         <!-- Feed links, default flavor is rss, so we don't need to specify a flavor on the first feed_link -->

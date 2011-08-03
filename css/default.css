@@ -113,13 +113,13 @@ nav a:active {
 		filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#fcdd62',EndColorStr='#fec94c'); /* IE7-IE9 */
 }
 
-#main {
+[role="main"] {
     float:left;
     width:640px;
     margin:20px 10px 0;
 }
 
-#sidebar {
+[role="complementary"] {
     float:left;
     margin:20px 10px;
     border:solid 1px #d4d4d4;
@@ -152,26 +152,26 @@ header a {
     color:#333;
 }
 
-#main a:hover,
-#main a:active,
-#sidebar a:hover,
-#sidebar a:active {
+[role="main"] a:hover,
+[role="main"] a:active,
+[role="complementary"] a:hover,
+[role="complementary"] a:active {
     text-decoration:underline;
     color:#1a428b;
 }
 
-#main a:visited,
-#sidebar a:visited {
+[role="main"] a:visited,
+[role="complementary"] a:visited {
     color:#551a8b;
 }
 
-#main h1 a,
-#main h1 a:visited {
+[role="main"] h1 a,
+[role="main"] h1 a:visited {
     color:#333;
 }
 
-#main h1 a:hover,
-#main h1 a:active {
+[role="main"] h1 a:hover,
+[role="main"] h1 a:active {
     text-decoration:none;
     color:#333;
     background:#f0f2f6;
@@ -341,12 +341,12 @@ th {
 
 /* lists */
 
-#main ul,
-#main ol,
-#main dl,
-#sidebar ul,
-#sidebar ol,
-#sidebar dl {
+[role="main"] ul,
+[role="main"] ol,
+[role="main"] dl,
+[role="complementary"] ul,
+[role="complementary"] ol,
+[role="complementary"] dl {
     margin:0 0 1em 20px;
 }
 
@@ -355,13 +355,13 @@ dt {
     font-style:italic;
 }
 
-#sidebar #monthly-list {
+[role="complementary"] #monthly-list {
     list-style:none;
     margin:0;
     padding:5px 0 10px;
 }
 
-#sidebar #monthly-list li {
+[role="complementary"] #monthly-list li {
     text-align:center;
     float:left;
     display:block;
@@ -374,16 +374,16 @@ dt {
             box-shadow:2px 2px 2px rgba(99,102,112,.2);
 }
 
-#sidebar #monthly-list li:hover {
+[role="complementary"] #monthly-list li:hover {
     background:#fdf8eb;
 }
 
-#sidebar #monthly-list a {
+[role="complementary"] #monthly-list a {
     text-decoration:none;
     color:#444;
 }
 
-#sidebar #monthly-list a:hover {
+[role="complementary"] #monthly-list a:hover {
     color:#000;
 }
 
@@ -418,7 +418,7 @@ dt {
 		filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#fcdd62',EndColorStr='#fec94c'); /* IE7-IE9 */
 }
 
-#main #article-list {
+[role="main"] #article-list {
     list-style:none;
     margin:0 0 2em 0;
     border-top:1px solid #f0f2f6;
@@ -432,7 +432,7 @@ dt {
 
 /* search page */
 
-#search-page #main article:last-of-type {
+#search-page [role="main"] article:last-of-type {
     margin-bottom:1em;
 }
 
@@ -767,11 +767,11 @@ body {
     width:660px;
 }
 
-#main {
+[role="main"] {
     float:none;
 }
 
-#sidebar {
+[role="complementary"] {
     float:none;
     margin:0 10px 20px;
 }
@@ -795,7 +795,7 @@ body {
     width:440px;
 }
 
-#main {
+[role="main"] {
     width:420px;
 }
 
@@ -843,7 +843,7 @@ body {
     width:300px;
 }
 
-#main {
+[role="main"] {
     width:280px;
 }
 
@@ -898,7 +898,7 @@ footer {
 
 /* hide unnecessary content from print */
 nav,
-#sidebar,
+[role="complementary"],
 #paginator,
 #comments-form,
 .comments h4 a:last-child {

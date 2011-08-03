@@ -61,7 +61,7 @@
     </nav>
 
 <!-- left (main) column -->
-    <div role="main" id="main">
+    <div role="main">
 
         <txp:if_article_list><h1><txp:section title="1" /></h1></txp:if_article_list>
 
@@ -109,7 +109,7 @@
     </div>
 
 <!-- right column -->
-    <div role="complementary" id="sidebar">
+    <div role="complementary">
         <txp:search_input /> <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
 
         <!-- Feed links, default flavor is rss, so we don't need to specify a flavor on the first feed_link -->
