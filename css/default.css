@@ -661,11 +661,11 @@ input[type="submit"]:active {
 
 input[type="submit"].disabled,
 #paginator span.disabled {
-    text-shadow:-1px -1px #ccc;
+    text-shadow:1px 1px #fff;
     top:0;
     cursor:default;
     border:solid 1px #d2d2d2;
-    color:#fff;
+    color:#999;
     background:#dadada;
     background:-webkit-gradient(linear,left top,left bottom,from(#e6e6e6),to(#dadada)); /* Safari 4+, Chrome */
     background:-webkit-linear-gradient(#e6e6e6,#dadada); /* Safari 5.1+, Chrome 10+ */
