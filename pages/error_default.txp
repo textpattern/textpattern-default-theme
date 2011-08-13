@@ -85,7 +85,7 @@
 <!-- footer -->
     <footer role="contentinfo">
         <!-- using PHP to dynamically update the copyright year -->
-        <small>&#169;<txp:php>echo date('Y');</txp:php> <txp:site_name />. Powered by <a href="http://textpattern.com" rel="external">Textpattern</a>.</small>
+        <small>&#169;<txp:php>echo date('Y');</txp:php> <txp:site_name />. Powered by <a href="http://textpattern.com" rel="external">Textpattern CMS</a>.</small>
     </footer>
 
 <!-- JavaScript at the bottom for fast page loading -->
