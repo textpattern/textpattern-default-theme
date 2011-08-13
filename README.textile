@@ -18,14 +18,14 @@ h3. Adjust Textpattern preferences
 
 h4. Essential
 
-1. Set 'Automatically append comments to articles?' to 'no'. "More info":http://textpattern.com/faq/95/comment-display-confusion.
-2. Set 'Allow PHP in pages?' to 'yes'. Leave 'Allow PHP in articles?' and 'Allow raw PHP?' set to 'no' for security reasons (you don't really want to allow authors to add their own custom PHP within their articles).
+# Set 'Automatically append comments to articles?' to 'no'. "More info":http://textpattern.com/faq/95/comment-display-confusion.
+# Set 'Allow PHP in pages?' to 'yes'. Leave 'Allow PHP in articles?' and 'Allow raw PHP?' set to 'no' for security reasons (you don't really want to allow authors to add their own custom PHP within their articles).
 
 h4. Recommended but optional
 
-1. You may decide you don't want to leave Textpattern managed images files loose in the 'images' directory - it may be tidier (and more secure) to create an additonal 'cms' directory within the 'images' directory and use that for any Textpattern managed images instead. You then set the Textpattern advance preference 'Image directory' to your new directory 'images/cms'. Make sure that PHP is able to write to 'images/cms' (usually chmod 777) - you can also set the original 'images' directory back to something more secure (such as chmod 755).
-2. Removing 'sbl.spamhaus.org' from the advanced preference 'Spam blacklists (comma-separated)' may yield a (very minor) speed increase.
-3. You might want to set 'New comment means site updated?' to 'yes' since "search engines like fresh content":http://www.seoguide.org/seo201-google-ranking.htm.
+# You may decide you don't want to leave Textpattern managed images files loose in the 'images' directory - it may be tidier (and more secure) to create an additonal 'cms' directory within the 'images' directory and use that for any Textpattern managed images instead. You then set the Textpattern advance preference 'Image directory' to your new directory 'images/cms'. Make sure that PHP is able to write to 'images/cms' (usually chmod 777) - you can also set the original 'images' directory back to something more secure (such as chmod 755).
+# Removing 'sbl.spamhaus.org' from the advanced preference 'Spam blacklists (comma-separated)' may yield a (very minor) speed increase.
+# You might want to set 'New comment means site updated?' to 'yes' since "search engines like fresh content":http://www.seoguide.org/seo201-google-ranking.htm.
 
 h3. Delete surplus forms
 
