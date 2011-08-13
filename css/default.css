@@ -661,7 +661,7 @@ input[type="submit"]:active {
 
 input[type="submit"].disabled,
 #paginator span.disabled {
-    text-shadow:1px 1px #fff;
+    text-shadow:none;
     top:0;
     cursor:default;
     border:solid 1px #d2d2d2;
