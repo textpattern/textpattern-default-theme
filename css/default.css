@@ -68,14 +68,14 @@
   }
 
   ins {
-    background: #ff9;
-    color: #000;
+    background: #fdf8eb;
+    color: #333333;
     text-decoration: none;
   }
 
   mark {
-    background: #ff9;
-    color: #000;
+    background: #fdf8eb;
+    color: #333333;
     font-style: italic;
     font-weight: bold;
   }
@@ -204,7 +204,7 @@
   }
   nav a {
     text-decoration: none;
-    text-shadow: 1px 1px #fbd978;
+    text-shadow: 1px 1px #ffe991;
     display: block;
     padding: 10px;
     color: #333333;
@@ -348,10 +348,6 @@
     background: #f0f2f6;
   }
 
-  ins {
-    background: #fdf8eb;
-  }
-
   dfn,
   q {
     font-family: "Droid Serif", Georgia, Times, serif;
@@ -397,10 +393,7 @@
   }
 
   /* media */
-  article img,
-  article embed,
-  article object,
-  article video {
+  article img, article embed, article object, article video {
     max-width: 100%;
     margin: 3px 0;
   }
@@ -453,9 +446,7 @@
   }
 
   /* lists */
-  [role="main"] ul,
-  [role="main"] ol,
-  [role="main"] dl,
+  [role="main"] ul, [role="main"] ol, [role="main"] dl,
   [role="complementary"] ul,
   [role="complementary"] ol,
   [role="complementary"] dl {
@@ -478,34 +469,30 @@
     display: block;
     margin: 0 4px 6px 0;
     min-width: 36px;
-    border: 1px solid #ccc;
+    border: 1px solid #d4d4d4;
     border-radius: 5px;
     background: #fff;
-    -webkit-box-shadow: 2px 2px 2px rgba(99, 102, 112, 0.2);
-    box-shadow: 2px 2px 2px rgba(99, 102, 112, 0.2);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   }
-  [role="complementary"] #monthly-list li:hover {
-    background: #fdf8eb;
+  [role="complementary"] #monthly-list li:active {
+    position: relative;
+    top: 1px;
   }
   [role="complementary"] #monthly-list a {
     text-decoration: none;
     color: #333333;
   }
-  [role="complementary"] #monthly-list a:hover {
-    color: #000;
+  [role="complementary"] #monthly-list a:hover, [role="complementary"] #monthly-list a:focus {
+    color: #1a1a1a;
   }
-
-  #monthly-list span {
-    display: block;
-  }
-
-  #monthly-list a .archive-year {
+  [role="complementary"] #monthly-list a .archive-year {
     /* 10px / 13px */
     font-size: .76923076923077em;
     /* 15px / 10px */
     line-height: 1.5em;
     font-weight: bold;
-    text-shadow: 1px 1px #fbd978;
+    text-shadow: 1px 1px #ffe991;
     border-radius: 5px 5px 0 0;
     background: #ffda44;
     /* Safari 4+, Chrome */
@@ -523,8 +510,7 @@
     /* IE7-IE9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
   }
-
-  #monthly-list a:hover .archive-year {
+  [role="complementary"] #monthly-list a:hover .archive-year, [role="complementary"] #monthly-list a:focus .archive-year {
     background: #ffe477;
     /* Safari 4+, Chrome */
     background: -webkit-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
@@ -540,6 +526,15 @@
     background: linear-gradient(#ffe477, #fbcc5d);
     /* IE7-IE9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
+  }
+  [role="complementary"] #monthly-list a .archive-month {
+    border-radius: 0 0 5px 5px;
+  }
+  [role="complementary"] #monthly-list a:hover .archive-month, [role="complementary"] #monthly-list a:focus .archive-month {
+    background: #fdf8eb;
+  }
+  [role="complementary"] #monthly-list span {
+    display: block;
   }
 
   [role="main"] #article-list {
@@ -619,6 +614,17 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
+  input[type="text"]:hover, input[type="text"]:focus,
+  input[type="email"]:hover,
+  input[type="email"]:focus,
+  input[type="url"]:hover,
+  input[type="url"]:focus,
+  input[type="search"]:hover,
+  input[type="search"]:focus,
+  textarea:hover,
+  textarea:focus {
+    background: #fdf8eb;
+  }
 
   input[type="search"] {
     width: 192px;
@@ -639,31 +645,16 @@
     resize: vertical;
   }
 
-  input[type="text"]:hover,
-  input[type="text"]:focus,
-  input[type="email"]:hover,
-  input[type="email"]:focus,
-  input[type="url"]:hover,
-  input[type="url"]:focus,
-  input[type="search"]:hover,
-  input[type="search"]:focus,
-  textarea:hover,
-  textarea:focus {
-    background: #fdf8eb;
-  }
-
   .large input {
     width: 320px;
+  }
+  .large textarea {
+    height: 156px;
   }
 
   .small input {
     width: 160px;
   }
-
-  .large textarea {
-    height: 156px;
-  }
-
   .small textarea {
     height: 78px;
   }
@@ -672,26 +663,19 @@
   .radiobuttons {
     padding: 0 0 7px;
   }
-
   .checkboxes span,
   .radiobuttons span {
     display: block;
   }
-
   .checkboxes input,
   .radiobuttons input {
     float: left;
     margin: 3px 8px 0 0;
   }
-
   .checkboxes label,
   .radiobuttons label {
     float: left;
     display: block;
-  }
-
-  .required {
-    color: #c00;
   }
 
   /* buttons */
@@ -730,7 +714,7 @@
     font-family: Verdana, "Lucida Grande", Tahoma, Arial, sans-serif;
     font-weight: normal;
     text-align: center;
-    text-shadow: 1px 1px #fbd978;
+    text-shadow: 1px 1px #ffe991;
     outline: 0;
     cursor: pointer;
     border: solid 1px #e1a61a;
@@ -761,7 +745,6 @@
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   }
-
   button:hover,
   .button:hover,
   input[type="button"]:hover,
@@ -782,14 +765,13 @@
     /* IE7-IE9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
   }
-
   button:active,
   .button:active,
   input[type="button"]:active,
   input[type="submit"]:active {
     position: relative;
     top: 1px;
-    color: #000;
+    color: #1a1a1a;
     background: #fabc2b;
     /* Safari 4+, Chrome */
     background: -webkit-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
@@ -834,12 +816,10 @@
   #paginator {
     margin: 1em 0;
   }
-
   #paginator .button {
     padding: .1em .66em;
     height: 1.5em;
   }
-
   #paginator a.button {
     text-decoration: none;
     color: #333333;
@@ -860,30 +840,29 @@
     padding: 1em 10px 0;
     background: #f6f8fa;
   }
-
-  .comments-author {
-    background: #f4fcf3;
-  }
-
   .comments h4 span {
     font-weight: normal;
   }
-
   .comments h4 .comment-anchor {
     float: right;
+  }
+
+  .comments-author {
+    background: #f0f2f6;
   }
 
   #cpreview {
     margin-bottom: 2px;
     border-radius: 5px;
     padding: 1em 10px;
-    background: #fdf8eb;
+    background: #f0f2f6;
   }
 
   .comments_error {
     background: #fff4f4 !important;
   }
 
+  .required,
   .error_message li {
     color: #c00;
   }
@@ -901,8 +880,8 @@
   button:focus {
     outline: 0;
     background: #fdf8eb;
-    -webkit-box-shadow: 0 0 5px #ffc010;
-    box-shadow: 0 0 5px #ffc010;
+    -webkit-box-shadow: 0 0 5px #fabc2b;
+    box-shadow: 0 0 5px #fabc2b;
   }
 }
 /* end of standard styling and layout for screen > 959px */
@@ -994,7 +973,7 @@
 @media print {
   * {
     /* black prints faster: http://sanbeiji.com/archives/953 */
-    color: #000 !important;
+    color: black !important;
     text-shadow: none !important;
     background: transparent !important;
     filter: none !important;
@@ -1013,12 +992,12 @@
 
   header {
     margin-bottom: 24pt;
-    border-bottom: 1pt solid #000;
+    border-bottom: 1pt solid black;
   }
 
   footer {
     margin-top: 12pt;
-    border-top: 1pt solid #000;
+    border-top: 1pt solid black;
     padding-top: 12pt;
   }
 
@@ -1090,14 +1069,14 @@
 
   blockquote {
     margin-bottom: 8pt;
-    border: 1pt solid #000;
+    border: 1pt solid black;
     padding: 8pt 8pt 0;
     page-break-inside: avoid;
   }
 
   pre {
     margin-bottom: 8pt;
-    border: 1pt solid #000;
+    border: 1pt solid black;
     padding: 8pt;
   }
 
@@ -1160,18 +1139,18 @@
   thead {
     /* display table head across multi-page tables: http://css-discuss.incutio.com/wiki/Printing_Tables */
     display: table-header-group;
-    border-right: 1pt solid #000;
-    border-left: 1pt solid #000;
+    border-right: 1pt solid black;
+    border-left: 1pt solid black;
   }
 
   tfoot {
-    border-right: 1pt solid #000;
-    border-left: 1pt solid #000;
+    border-right: 1pt solid black;
+    border-left: 1pt solid black;
   }
 
   tbody {
-    border-right: 1pt solid #000;
-    border-left: 1pt solid #000;
+    border-right: 1pt solid black;
+    border-left: 1pt solid black;
   }
 
   tr {
@@ -1180,13 +1159,13 @@
 
   th,
   td {
-    border-bottom: 1pt solid #000;
+    border-bottom: 1pt solid black;
     padding: 4pt 8pt;
   }
 
   th {
     text-align: left;
-    border-top: 1pt solid #000;
+    border-top: 1pt solid black;
   }
 }
 /* end of styling for print */
