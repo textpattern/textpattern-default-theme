@@ -16,6 +16,10 @@ $color-text:            #333;
 
 $color-text-footnote:   #999;
 
+$color-link:            #1a428b;
+
+$color-link-visited:    #551a8b;
+
 $color-border:          #d4d4d4;
 
 $color-background:      #fff;
@@ -117,38 +121,32 @@ header {
     background:$color-background-box;
 }
 
-nav h1 {
-    display:none;
-}
-
-nav ul,
-nav li {
-    margin:0;
-} 
-
 nav {
     border:solid 1px #e1a61a;
     border-radius:0 0 $border-radius $border-radius;
     @include gradient;
-}
 
-nav li {
-    float:left;
-    border-right:solid 1px #e1a61a;
-}
+    h1 {
+        display:none;
+    }
 
-nav a {
-    text-decoration:none;
-    text-shadow:1px 1px #fbd978;
-    display:block;
-    padding:10px;
-    color:$color-text;
-}
+    li {
+        float:left;
+        border-right:solid 1px #e1a61a;
+    }
 
-nav a:hover,
-nav a:active {
-    text-decoration:none;
-    @include gradient(#fcdd62, #fec94c);
+    a {
+        text-decoration:none;
+        text-shadow:1px 1px #fbd978;
+        display:block;
+        padding:10px;
+        color:$color-text;
+
+        &:hover, &:active {
+            text-decoration:none;
+            @include gradient(#fcdd62, #fec94c);
+        }
+    }
 }
 
 [role="main"] {
@@ -183,39 +181,40 @@ footer {
 a {
     -webkit-tap-highlight-color:rgba(255,230,153,.5);
     text-decoration:none;
-    color:#1a428b;
+    color:$color-link;
 }
 
 header a {
-    text-decoration:none;
     color:$color-text;
 }
 
-[role="main"] a:hover,
-[role="main"] a:active,
-[role="complementary"] a:hover,
-[role="complementary"] a:active {
-    text-decoration:underline;
-    color:#1a428b;
+[role="main"] a,
+[role="complementary"] a,
+footer a {
+
+    &:hover, &:active {
+        text-decoration:underline;
+        color:$color-link;
+    }
+
+    &:visited {
+        color:$color-link-visited;
+    }
 }
 
-[role="main"] a:visited,
-[role="complementary"] a:visited {
-    color:#551a8b;
-}
-
-[role="main"] h1 a,
-[role="main"] h1 a:visited {
+[role="main"] h1 a {
     color:$color-text;
-}
 
-[role="main"] h1 a:hover,
-[role="main"] h1 a:active {
-    text-decoration:none;
-    color:$color-text;
-    background:$color-background-box;
-}
+    &:visited {
+        color:$color-text;
+    }
 
+    &:hover, &:active {
+        text-decoration:none;
+        color:$color-text;
+        background:$color-background-box;
+    }
+}
 
 /* typography */
 
@@ -404,32 +403,32 @@ dt {
     list-style:none;
     margin:0;
     padding:5px 0 10px;
-}
 
-[role="complementary"] #monthly-list li {
-    text-align:center;
-    float:left;
-    display:block;
-    margin:0 4px 6px 0;
-    min-width:36px;
-    border:1px solid #ccc;
-    border-radius:$border-radius;
-    background:#fff;
-    -webkit-box-shadow:2px 2px 2px rgba(99,102,112,.2);
-            box-shadow:2px 2px 2px rgba(99,102,112,.2);
-}
+    li {
+        text-align:center;
+        float:left;
+        display:block;
+        margin:0 4px 6px 0;
+        min-width:36px;
+        border:1px solid #ccc;
+        border-radius:$border-radius;
+        background:#fff;
+        -webkit-box-shadow:2px 2px 2px rgba(99,102,112,.2);
+                box-shadow:2px 2px 2px rgba(99,102,112,.2);
 
-[role="complementary"] #monthly-list li:hover {
-    background:#fdf8eb;
-}
+        &:hover {
+            background:#fdf8eb;
+        }
+    }
 
-[role="complementary"] #monthly-list a {
-    text-decoration:none;
-    color:#444;
-}
+    a {
+        text-decoration:none;
+        color:$color-text;
 
-[role="complementary"] #monthly-list a:hover {
-    color:#000;
+        &:hover {
+            color:#000;
+        }
+    }
 }
 
 #monthly-list span {
