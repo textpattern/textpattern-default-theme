@@ -45,7 +45,7 @@ $border-radius:         5px;
     /* CSS3 Compliant */
     background:        linear-gradient($gradient1, $gradient2);
     /* IE7-IE9 */
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='$gradient1',EndColorStr='$gradient2');
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$gradient1}',EndColorStr='#{$gradient2}');
 }
 
 // end of Sass globals
