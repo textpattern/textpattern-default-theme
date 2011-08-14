@@ -64,6 +64,10 @@ Keeping style within the database by using the first method means you can make a
 
 The second method is much more traditional and flexible though it relies on you having FTP access to change the CSS files.
 
+h4. /css/default.scss
+
+"Sass":http://sass-lang.com version of the CSS file, users familiar with the Sass language can utilise this optional source file for rapid development of their own themes.
+
 h3. Forms
 
 The forms follow the cnk_versioning standard of labelling, in that 'xxxx.misc.txp' is a misc type form, 'xxxx.article.txp' is an article type form, etc. This is only for file structure, when you actually create new forms within Textpattern you should *not* include the '.xxxx.txp', just the first part of the filename. See the analytics form description below.
