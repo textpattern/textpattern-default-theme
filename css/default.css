@@ -796,7 +796,7 @@ body {
     width:440px;
 }
 
-[role="main"] {
+article, [role="main"] {
     width:420px;
 }
 
@@ -844,7 +844,7 @@ body {
     width:300px;
 }
 
-[role="main"] {
+article, [role="main"] {
     width:280px;
 }
 
