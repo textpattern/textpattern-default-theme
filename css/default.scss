@@ -26,26 +26,30 @@ $color-background:      #fff;
 
 $color-background-box:  #f0f2f6;
 
+$color-gradient-from:   #ffda44;
+
+$color-gradient-to:     #fabc2b;
+
 $border-radius:         5px;
 
 // mixins
 
-@mixin gradient($gradient1:#ffda44, $gradient2:#fabc2b) {
-    background:$gradient1;
+@mixin gradient($color-gradient-from, $color-gradient-to) {
+    background:$color-gradient-from;
     /* Safari 4+, Chrome */
-    background:-webkit-gradient(linear,left top,left bottom,from($gradient1),to($gradient2));
+    background:-webkit-gradient(linear,left top,left bottom,from($color-gradient-from),to($color-gradient-to));
     /* Safari 5.1+, Chrome 10+ */
-    background:-webkit-linear-gradient($gradient1, $gradient2);
+    background:-webkit-linear-gradient($color-gradient-from, $color-gradient-to);
     /* Firefox 3.6 */
-    background:   -moz-linear-gradient($gradient1, $gradient2);
+    background:   -moz-linear-gradient($color-gradient-from, $color-gradient-to);
     /* IE10 */
-    background:    -ms-linear-gradient($gradient1, $gradient2);
+    background:    -ms-linear-gradient($color-gradient-from, $color-gradient-to);
     /* Opera 11.10+ */
-    background:     -o-linear-gradient($gradient1, $gradient2);
+    background:     -o-linear-gradient($color-gradient-from, $color-gradient-to);
     /* CSS3 Compliant */
-    background:        linear-gradient($gradient1, $gradient2);
+    background:        linear-gradient($color-gradient-from, $color-gradient-to);
     /* IE7-IE9 */
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$gradient1}',EndColorStr='#{$gradient2}');
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$color-gradient-from}',EndColorStr='#{$color-gradient-to}');
 }
 
 // end of Sass globals
@@ -144,7 +148,7 @@ nav {
 
         &:hover, &:active {
             text-decoration:none;
-            @include gradient(#fcdd62, #fec94c);
+            @include gradient(lighten($color-gradient-from, 10%), lighten($color-gradient-to, 10%));
         }
     }
 }
@@ -447,7 +451,7 @@ dt {
 }
 
 #monthly-list a:hover .archive-year {
-    @include gradient(#fcdd62, #fec94c);
+    @include gradient(lighten($color-gradient-from, 10%), lighten($color-gradient-to, 10%));
 }
 
 [role="main"] #article-list {
@@ -666,7 +670,7 @@ button:hover,
 .button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
-    @include gradient(#fcdd62, #fec94c);
+    @include gradient(lighten($color-gradient-from, 10%), lighten($color-gradient-to, 10%));
 }
 
 button:active,
@@ -676,7 +680,7 @@ input[type="submit"]:active {
     position:relative;
     top:1px;
     color:#000;
-    @include gradient(#fec94c, #fcdd62);
+    @include gradient($color-gradient-to, $color-gradient-from);
 }
 
 input[type="submit"].disabled,
