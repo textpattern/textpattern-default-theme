@@ -7,6 +7,7 @@ h4. Features
 # The code is commented throughout with helpful information to help you learn some of the techniques and tags available within Textpattern.
 # Current best practices gathered from all over the web - in particular the "HTML5 Boilerplate":http://html5boilerplate.com/ and the "Less Framework":http://lessframework.com/.
 # Responsive CSS grid adapts to various device screen sizes.
+# Includes "Sass":http://sass-lang.com version of CSS for rapid development.
 # No images used at all.
 # Tested on a wide range of devices, browsers and operating systems.
 
