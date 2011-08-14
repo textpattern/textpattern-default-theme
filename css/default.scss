@@ -1,12 +1,50 @@
-// Note: This file is for use with Sass - http://sass-lang.com
+// note: this file is for use with Sass - http://sass-lang.com, don't use it as your live site stylesheet!
 
-// Variables
-$text-color:#333;
-$border-color:#d4d4d4;
-$background-color:#f0f2f6;
-$border-radius:5px;
+// start of Sass globals
 
-// Mixins
+// variables
+
+$font-body:             Verdana, "Lucida Grande", Tahoma, Arial, sans-serif;
+
+$font-heading:          "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+
+$font-secondary:        "Droid Serif", Georgia, Times, serif;
+
+$font-mono:             Cousine, Consolas, Monaco, monospace;
+
+$color-text:            #333;
+
+$color-text-footnote:   #999;
+
+$color-border:          #d4d4d4;
+
+$color-background:      #fff;
+
+$color-background-box:  #f0f2f6;
+
+$border-radius:         5px;
+
+// mixins
+
+@mixin gradient($gradient1:#ffda44, $gradient2:#fabc2b) {
+    background:$gradient1;
+    /* Safari 4+, Chrome */
+    background:-webkit-gradient(linear,left top,left bottom,from($gradient1),to($gradient2));
+    /* Safari 5.1+, Chrome 10+ */
+    background:-webkit-linear-gradient($gradient1, $gradient2);
+    /* Firefox 3.6 */
+    background:   -moz-linear-gradient($gradient1, $gradient2);
+    /* IE10 */
+    background:    -ms-linear-gradient($gradient1, $gradient2);
+    /* Opera 11.10+ */
+    background:     -o-linear-gradient($gradient1, $gradient2);
+    /* CSS3 Compliant */
+    background:        linear-gradient($gradient1, $gradient2);
+    /* IE7-IE9 */
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='$gradient1',EndColorStr='$gradient2');
+}
+
+// end of Sass globals
 
 
 @media all {
@@ -29,12 +67,12 @@ b,strong{font-weight:bold;}
 ins{background:#ff9;color:#000;text-decoration:none;}
 mark{background:#ff9;color:#000;font-style:italic;font-weight:bold;}
 del{text-decoration:line-through;}
-abbr[title],dfn[title]{border-bottom:1px dotted #999;cursor:help;}
+abbr[title],dfn[title],acronym[title]{border-bottom:1px dotted $color-text-footnote;cursor:help;}
 table{border-collapse:collapse;border-spacing:0;}
 table button,table input{*overflow:auto;}
 th,td{vertical-align:top;}
 input[type="checkbox"],input[type="radio"]{box-sizing:border-box;}
-hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}
+hr{display:block;height:1px;border:0;border-top:1px solid $color-border;margin:1em 0;padding:0;}
 img{vertical-align:middle;-ms-interpolation-mode:bicubic;}
 svg:not(:root){overflow:hidden;}
 sub,sup{font-size:75%;line-height:0;position:relative;}
@@ -60,21 +98,23 @@ sub{bottom:-.25em;}
 /* layout */
 
 html {
-    -webkit-text-size-adjust:100%; /* prevents iOS text size adjust after orientation change, without disabling user zoom: http://www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
-        -ms-text-size-adjust:100%; /* as above, for Windows Phone */
+    /* prevents iOS text size adjust after orientation change, without disabling user zoom: http://www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+    -webkit-text-size-adjust:100%;
+    /* as above, for Windows Phone */
+        -ms-text-size-adjust:100%;
 }
 
 body {
     width:960px;
     margin:0 auto 20px;
-    background:#fff;
+    background:$color-background;
 }
 
 header {
-    border-left:solid 1px $border-color;
-    border-right:solid 1px $border-color;
+    border-left:solid 1px $color-border;
+    border-right:solid 1px $color-border;
     padding:10px 10px 0;
-    background:$background-color;
+    background:$color-background-box;
 }
 
 nav h1 {
@@ -89,14 +129,7 @@ nav li {
 nav {
     border:solid 1px #e1a61a;
     border-radius:0 0 $border-radius $border-radius;
-    background:#ffda44;
-    background:-webkit-gradient(linear,left top,left bottom,from(#ffda44),to(#fabc2b)); /* Safari 4+, Chrome */
-    background:-webkit-linear-gradient(#ffda44,#fabc2b); /* Safari 5.1+, Chrome 10+ */
-    background:   -moz-linear-gradient(#ffda44,#fabc2b); /* Firefox 3.6 */
-    background:    -ms-linear-gradient(#ffda44,#fabc2b); /* IE10 */
-    background:     -o-linear-gradient(#ffda44,#fabc2b); /* Opera 11.10+ */
-    background:        linear-gradient(#ffda44,#fabc2b);
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b'); /* IE7-IE9 */
+    @include gradient;
 }
 
 nav li {
@@ -109,20 +142,13 @@ nav a {
     text-shadow:1px 1px #fbd978;
     display:block;
     padding:10px;
-    color:$text-color;
+    color:$color-text;
 }
 
 nav a:hover,
 nav a:active {
     text-decoration:none;
-    background:#fcdd62;
-    background:-webkit-gradient(linear,left top,left bottom,from(#fcdd62),to(#fec94c)); /* Safari 4+, Chrome */
-    background:-webkit-linear-gradient(#fcdd62,#fec94c); /* Safari 5.1+, Chrome 10+ */
-    background:   -moz-linear-gradient(#fcdd62,#fec94c); /* Firefox 3.6 */
-    background:    -ms-linear-gradient(#fcdd62,#fec94c); /* IE10 */
-    background:     -o-linear-gradient(#fcdd62,#fec94c); /* Opera 11.10+ */
-    background:        linear-gradient(#fcdd62,#fec94c);
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#fcdd62',EndColorStr='#fec94c'); /* IE7-IE9 */
+    @include gradient(#fcdd62, #fec94c);
 }
 
 [role="main"] {
@@ -134,20 +160,21 @@ nav a:active {
 [role="complementary"] {
     float:left;
     margin:20px 10px;
-    border:solid 1px $border-color;
+    border:solid 1px $color-border;
     border-radius:$border-radius;
     padding:10px 10px 0;
     width:258px;
-    background:$background-color;
+    background:$color-background-box;
 }
 
 footer {
     clear:both;
-    border:solid 1px $border-color;
+    border:solid 1px $color-border;
     border-radius:$border-radius;
     padding:10px;
-    width:938px; /* declare width to fix for IE7 double padding bug */
-    background:$background-color;
+    /* declare width to fix for IE7 double padding bug */
+    width:938px;
+    background:$color-background-box;
 }
 
 
@@ -161,7 +188,7 @@ a {
 
 header a {
     text-decoration:none;
-    color:$text-color;
+    color:$color-text;
 }
 
 [role="main"] a:hover,
@@ -179,44 +206,53 @@ header a {
 
 [role="main"] h1 a,
 [role="main"] h1 a:visited {
-    color:$text-color;
+    color:$color-text;
 }
 
 [role="main"] h1 a:hover,
 [role="main"] h1 a:active {
     text-decoration:none;
-    color:$text-color;
-    background:$background-color;
+    color:$color-text;
+    background:$color-background-box;
 }
 
 
 /* typography */
 
 body {
-    font-size:.8125em;                 /* 13px / 16px */
-    line-height:1.46153846153846em;    /* 19px / 13px */
-    font-family:Verdana, Tahoma, Arial, sans-serif;
-    color:$text-color;
+    /* 13px / 16px */
+    font-size:.8125em;
+    /* 19px / 13px */
+    line-height:1.46153846153846em;
+    font-family:$font-body;
+    color:$color-text;
 }
 
 h1 {
-    font-size:3em;                     /* 39px / 13px */
-    line-height:1.12820512820513em;    /* 44px / 39px */
-    font-family:Helvetica, Arial, Verdana, sans-serif;
+    /* 39px / 13px */
+    font-size:3em;
+    /* 44px / 39px */
+    line-height:1.12820512820513em;
+    font-family:$font-heading;
     font-weight:bold;
     letter-spacing:-1px;
-    padding-top:.256410256410256em;    /* 10px / 39px */
-    padding-bottom:.512820512820513em; /* 20px / 39px */
+    /* 10px / 39px */
+    padding-top:.256410256410256em;
+    /* 20px / 39px */
+    padding-bottom:.512820512820513em;
 }
 
 h2,
 h3 {
-    font-size:1.84615384615385em;      /* 24px / 13px */
-    line-height:1.33333333333333em;    /* 32px / 24px */
-    font-family:"Droid Serif", Georgia, Times, serif;
+    /* 24px / 13px */
+    font-size:1.84615384615385em;
+    /* 32px / 24px */
+    line-height:1.33333333333333em;
+    font-family:$font-secondary;
     font-weight:normal;
     font-style:italic;
-    padding-bottom:.5em;               /* 13px / 26px */
+    /* 13px / 26px */
+    padding-bottom:.5em;
 }
 
 h5 {
@@ -224,24 +260,19 @@ h5 {
 }
 
 p {
-    padding-bottom:1em;                /* 13px / 13px */
-}
-
-abbr,
-acronym { /* acronym to be phased out of textile in favour of abbr */
-    cursor:help;
-    border-bottom:1px dotted #999;
+    /* 13px / 13px */
+    padding-bottom:1em;
 }
 
 blockquote {
-    font-family:"Droid Serif", Georgia, Times, serif;
+    font-family:$font-secondary;
     font-style:italic;
     float:right;
     margin:0 0 .5em 1em;
     border-radius:$border-radius;
     padding:1em 10px 0;
     width:260px;
-    background:$background-color;
+    background:$color-background-box;
 }
 
 ins {
@@ -250,7 +281,7 @@ ins {
 
 dfn,
 q {
-    font-family:"Droid Serif", Georgia, Times, serif;
+    font-family:$font-secondary;
     font-style:italic;
     background:#fdf8eb;
 }
@@ -260,7 +291,7 @@ code,
 kbd,
 samp,
 var {
-    font-family:Cousine, Consolas, Monaco, monospace;
+    font-family:$font-mono;
     background:#fdf8eb;
 }
 
@@ -275,14 +306,16 @@ small,
 figcaption,
 tfoot,
 .footnote {
-    font-size:.84615384615385em;       /* 11px / 13px */
-    line-height:1.36363636363636em;    /* 15px / 11px */
+    /* 11px / 13px */
+    font-size:.84615384615385em;
+    /* 15px / 11px */
+    line-height:1.36363636363636em;
 }
 
 figcaption,
 tfoot,
 .footnote {
-    color:#888;
+    color:$color-text-footnote;
 }
 
 figcaption {
@@ -316,38 +349,38 @@ table {
 }
 
 caption {
-    font-family:"Droid Serif", Georgia, Times, serif;
+    font-family:$font-secondary;
     font-style:italic;
     text-align:left;
     margin-bottom:.5em;
 }
 
 thead {
-    border-right:1px solid $background-color;
-    border-left:1px solid $background-color6;
-    background:$background-color;
+    border-right:1px solid $color-background-box;
+    border-left:1px solid $color-background-box;
+    background:$color-background-box;
 }
 
 tfoot {
-    border-right:1px solid $background-color;
-    border-left:1px solid $background-color;
-    background:#f7f8fb;
+    border-right:1px solid $color-background-box;
+    border-left:1px solid $color-background-box;
+    background:lighten($color-background-box, 2%);
 }
 
 tbody {
-    border-right:1px solid $background-color;
-    border-left:1px solid $background-color;
+    border-right:1px solid $color-background-box;
+    border-left:1px solid $color-background-box;
 }
 
 th,
 td {
-    border-bottom:1px solid $background-color6;
+    border-bottom:1px solid $color-background-box;
     padding:.25em 9px;
 }
 
 th {
     text-align:left;
-    border-top:1px solid $background-color;
+    border-top:1px solid $color-background-box;
 }
 
 
@@ -363,7 +396,7 @@ th {
 }
 
 dt {
-    font-family:"Droid Serif", Georgia, Times, serif;
+    font-family:$font-secondary;
     font-style:italic;
 }
 
@@ -404,40 +437,28 @@ dt {
 }
 
 #monthly-list a .archive-year {
-    font-size:.76923076923077em;       /* 10px / 13px */
-    line-height:1.5em;                 /* 15px / 10px */
+    /* 10px / 13px */
+    font-size:.76923076923077em;
+    /* 15px / 10px */
+    line-height:1.5em;
     font-weight:bold;
     text-shadow:1px 1px #fbd978;
     border-radius:$border-radius $border-radius 0 0;
-    background:#ffda44;
-    background:-webkit-gradient(linear,left top,left bottom,from(#ffda44),to(#fabc2b)); /* Safari 4+, Chrome */
-    background:-webkit-linear-gradient(#ffda44,#fabc2b); /* Safari 5.1+, Chrome 10+ */
-    background:   -moz-linear-gradient(#ffda44,#fabc2b); /* Firefox 3.6 */
-    background:    -ms-linear-gradient(#ffda44,#fabc2b); /* IE10 */
-    background:     -o-linear-gradient(#ffda44,#fabc2b); /* Opera 11.10+ */
-    background:        linear-gradient(#ffda44,#fabc2b);
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b'); /* IE7-IE9 */
+    @include gradient;
 }
 
 #monthly-list a:hover .archive-year {
-    background:#fcdd62;
-    background:-webkit-gradient(linear,left top,left bottom,from(#fcdd62),to(#fec94c)); /* Safari 4+, Chrome */
-    background:-webkit-linear-gradient(#fcdd62,#fec94c); /* Safari 5.1+, Chrome 10+ */
-    background:   -moz-linear-gradient(#fcdd62,#fec94c); /* Firefox 3.6 */
-    background:    -ms-linear-gradient(#fcdd62,#fec94c); /* IE10 */
-    background:     -o-linear-gradient(#fcdd62,#fec94c); /* Opera 11.10+ */
-    background:        linear-gradient(#fcdd62,#fec94c);
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#fcdd62',EndColorStr='#fec94c'); /* IE7-IE9 */
+    @include gradient(#fcdd62, #fec94c);
 }
 
 [role="main"] #article-list {
     list-style:none;
     margin:0 0 2em 0;
-    border-top:1px solid $background-color6;
+    border-top:1px solid $color-background-box;
 }
 
 #article-list li {
-    border-bottom:1px solid $background-color;
+    border-bottom:1px solid $color-background-box;
     padding-top:1em;
 }
 
@@ -481,7 +502,8 @@ select,
 textarea {
     margin:0;
     vertical-align:baseline;
-    *vertical-align:middle; /* improves appearance and consistency in IE7 */
+    /* improves appearance and consistency in IE7 */
+    *vertical-align:middle;
 }
 
 /* colour placeholder text (Webkit and Mozilla only, so far) */
@@ -498,10 +520,12 @@ input[type="email"],
 input[type="url"],
 input[type="search"],
 textarea {
-    font-size:.84615384615385em;       /* 11px / 13px */
-    line-height:1.36363636363636em;    /* 15px / 11px */
-    font-family:Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
-    border:solid 1px $border-color;
+    /* 11px / 13px */
+    font-size:.84615384615385em;
+    /* 15px / 11px */
+    line-height:1.36363636363636em;
+    font-family:$font-body;
+    border:solid 1px $color-border;
     padding:.5em 5px .55em;
     background:#fff;
     -webkit-box-sizing:border-box;
@@ -514,14 +538,17 @@ input[type="search"] {
     margin-right:2px;
     padding:.5em 0 .55em 5px;
     display:inline-block;
-    *display:inline; /* display and zoom IE7 fix for display:inline-block */
+    /* display and zoom IE7 fix for display:inline-block */
+    *display:inline;
     zoom:1;
 }
 
 textarea {
     width:100%;
-    overflow:auto; /* removes default vertical scrollbar in IE7-IE9 */
-    vertical-align:top; /* improves readability and alignment in all browsers */
+    /* removes default vertical scrollbar in IE7-IE9 */
+    overflow:auto;
+    /* improves readability and alignment in all browsers */
+    vertical-align:top;
     resize:vertical;
 }
 
@@ -611,9 +638,11 @@ button,
 .button,
 input[type="button"],
 input[type="submit"] {
-    font-size:.84615384615385em;       /* 11px / 13px */
-    line-height:1.36363636363636em;    /* 15px / 11px */
-    font-family:Verdana, "Lucida Grande", Tahoma, Helvetica, sans-serif;
+    /* 11px / 13px */
+    font-size:.84615384615385em;
+    /* 15px / 11px */
+    line-height:1.36363636363636em;
+    font-family:$font-body;
     font-weight:normal;
     text-align:center;
     text-shadow:1px 1px #fbd978;
@@ -622,19 +651,14 @@ input[type="submit"] {
     border:solid 1px #e1a61a;
     border-radius:$border-radius;
     padding:.5em .8em .5em;
-    height:2.545454545454545em;         /* 28px */
+    /* 28px */
+    height:2.545454545454545em;
     display:inline-block;
-    *display:inline; /* display and zoom IE7 fix for display:inline-block */
+    /* display and zoom IE7 fix for display:inline-block */
+    *display:inline;
     zoom:1;
-    color:$text-color;
-    background:#ffda44;
-    background:-webkit-gradient(linear,left top,left bottom,from(#ffda44),to(#fabc2b)); /* Safari 4+, Chrome */
-    background:-webkit-linear-gradient(#ffda44,#fabc2b); /* Safari 5.1+, Chrome 10+ */
-    background:   -moz-linear-gradient(#ffda44,#fabc2b); /* Firefox 3.6 */
-    background:    -ms-linear-gradient(#ffda44,#fabc2b); /* IE10 */
-    background:     -o-linear-gradient(#ffda44,#fabc2b); /* Opera 11.10+ */
-    background:        linear-gradient(#ffda44,#fabc2b);
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b'); /* IE7-IE9 */
+    color:$color-text;
+    @include gradient;
     -webkit-box-shadow:0 1px 2px rgba(0,0,0,.2);
             box-shadow:0 1px 2px rgba(0,0,0,.2);
 }
@@ -643,14 +667,7 @@ button:hover,
 .button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
-    background:#fcdd62;
-    background:-webkit-gradient(linear,left top,left bottom,from(#fcdd62),to(#fec94c)); /* Safari 4+, Chrome */
-    background:-webkit-linear-gradient(#fcdd62,#fec94c); /* Safari 5.1+, Chrome 10+ */
-    background:   -moz-linear-gradient(#fcdd62,#fec94c); /* Firefox 3.6 */
-    background:    -ms-linear-gradient(#fcdd62,#fec94c); /* IE10 */
-    background:     -o-linear-gradient(#fcdd62,#fec94c); /* Opera 11.10+ */
-    background:        linear-gradient(#fcdd62,#fec94c);
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#fcdd62',EndColorStr='#fec94c'); /* IE7-IE9 */
+    @include gradient(#fcdd62, #fec94c);
 }
 
 button:active,
@@ -660,14 +677,7 @@ input[type="submit"]:active {
     position:relative;
     top:1px;
     color:#000;
-    background:#fec94c;
-    background:-webkit-gradient(linear,left top,left bottom,from(#fec94c),to(#fcdd62)); /* Safari 4+, Chrome */
-    background:-webkit-linear-gradient(#fec94c,#fcdd62); /* Safari 5.1+, Chrome 10+ */
-    background:   -moz-linear-gradient(#fec94c,#fcdd62); /* Firefox 3.6 */
-    background:    -ms-linear-gradient(#fec94c,#fcdd62); /* IE10 */
-    background:     -o-linear-gradient(#fec94c,#fcdd62); /* Opera 11.10+ */
-    background:        linear-gradient(#fec94c,#fcdd62);
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#fec94c',EndColorStr='#fcdd62'); /* IE7-IE9 */
+    @include gradient(#fec94c, #fcdd62);
 }
 
 input[type="submit"].disabled,
@@ -676,15 +686,8 @@ input[type="submit"].disabled,
     top:0;
     cursor:default;
     border:solid 1px #d2d2d2;
-    color:#999;
-    background:#dadada;
-    background:-webkit-gradient(linear,left top,left bottom,from(#e6e6e6),to(#dadada)); /* Safari 4+, Chrome */
-    background:-webkit-linear-gradient(#e6e6e6,#dadada); /* Safari 5.1+, Chrome 10+ */
-    background:   -moz-linear-gradient(#e6e6e6,#dadada); /* Firefox 3.6 */
-    background:    -ms-linear-gradient(#e6e6e6,#dadada); /* IE10 */
-    background:     -o-linear-gradient(#e6e6e6,#dadada); /* Opera 11.10+ */
-    background:        linear-gradient(#e6e6e6,#dadada);
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6e6e6',EndColorStr='#dadada'); /* IE7-IE9 */
+    color:$color-text-footnote;
+    @include gradient(#e6e6e6, #dadada);
 }
 
 #paginator {
@@ -697,7 +700,7 @@ input[type="submit"].disabled,
 
 #paginator a.button {
     text-decoration:none;
-    color:#333;
+    color:$color-text;
 }
 
 #paginator-l {
@@ -715,7 +718,7 @@ input[type="submit"].disabled,
     margin-bottom:20px;
     border-radius:$border-radius;
     padding:1em 10px 0;
-    background:#f7f8fb;
+    background:lighten($color-background-box, 2%);
 }
 
 .comments-author {
@@ -821,15 +824,19 @@ blockquote {
 }
 
 h1 {
-    font-size:2.30769230769231em;      /* 30px / 13px */
-    line-height:1.13333333333333em;    /* 34px / 30px */
+    /* 30px / 13px */
+    font-size:2.30769230769231em;
+    /* 34px / 30px */
+    line-height:1.13333333333333em;
     padding-top:0;
 }
 
 h2,
 h3 {
-    font-size:1.38461538461538em;      /* 18px / 13px */
-    line-height:1.33333333333333em;    /* 24px / 18px */
+    /* 18px / 13px */
+    font-size:1.38461538461538em;
+    /* 24px / 18px */
+    line-height:1.33333333333333em;
 }
 
 .large input{
@@ -880,7 +887,8 @@ blockquote {
 
 
 *{
-    color:#000 !important; /* black prints faster: http://sanbeiji.com/archives/953 */
+    /* black prints faster: http://sanbeiji.com/archives/953 */
+    color:#000 !important;
     text-shadow:none !important;
     background:transparent !important;
     filter:none !important;
@@ -935,9 +943,10 @@ a[rel="tag"]:after {
     content:"";
 }
 
-/* show long-form for abbreviations in print */
+/* show long-form for abbreviations in print
+   acronym to be phased out of textile in favour of abbr */
 abbr[title]:after,
-acronym[title]:after { /* acronym to be phased out of textile in favour of abbr */
+acronym[title]:after {
     content:" (" attr(title) ")";
 }
 
@@ -1043,7 +1052,8 @@ caption {
 }
 
 thead {
-    display:table-header-group; /* display table head across multi-page tables: http://css-discuss.incutio.com/wiki/Printing_Tables */
+    /* display table head across multi-page tables: http://css-discuss.incutio.com/wiki/Printing_Tables */
+    display:table-header-group;
     border-right:1pt solid #000;
     border-left:1pt solid #000;
 }
