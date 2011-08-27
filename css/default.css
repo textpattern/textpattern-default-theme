@@ -21,7 +21,7 @@
   audio, canvas, video {
     display: inline-block;
     *display: inline;
-    zoom: 1;
+    *zoom: 1;
   }
 
   audio:not([controls]) {
@@ -149,7 +149,7 @@
   }
 
   .clearfix {
-    zoom: 1;
+    *zoom: 1;
   }
 }
 /* end of @media all */
@@ -633,7 +633,7 @@
     display: inline-block;
     /* display and zoom IE7 fix for display:inline-block */
     *display: inline;
-    zoom: 1;
+    *zoom: 1;
   }
 
   textarea {
@@ -725,7 +725,7 @@
     display: inline-block;
     /* display and zoom IE7 fix for display:inline-block */
     *display: inline;
-    zoom: 1;
+    *zoom: 1;
     color: #333333;
     background: #ffda44;
     /* Safari 4+, Chrome */
