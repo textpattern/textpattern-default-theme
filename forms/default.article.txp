@@ -17,20 +17,16 @@
     <p><strong><txp:text item="posted" />:</strong> <time datetime="<txp:posted format='%Y-%m-%d' />T<txp:posted format='%H:%M:%S' />Z" pubdate><txp:posted format="%d %B %Y" /> at <txp:posted format='%H:%M' /></time></p>
 <!-- see http://php.net/manual/en/function.strftime.php for reference list of time/date strings -->
 
-    <p><strong>Feedback:</strong> <a class="comment-count" href="<txp:permlink />#comments-head" title="<txp:text item='view' />&#8230;">
+    <p><strong> <txp:text item="comments" />:</strong> <a class="comment-count" href="<txp:permlink />#comments-head" title="<txp:text item='view' />&#8230;">
 
-<!-- if comments then display the number, if no comments then print 'no' -->
+<!-- if comments then display the number, if no comments then print 'none' -->
 <txp:if_comments>
     <txp:comments_count />
 <txp:else />
-    no
+    <txp:text item="none" />
 </txp:if_comments>
 
-<!-- load the comment count into a variable... -->
-<txp:variable name="comments_count" value='<txp:comments_count />' />
-
-<!-- ...now use that variable to determine with to put an 's' on the end of 'comment' -->
-    comment<txp:if_variable name="comments_count" value="1"><txp:else />s</txp:if_variable></a></p>
+    </a></p>
 
     <txp:body />
 
