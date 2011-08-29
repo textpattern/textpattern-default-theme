@@ -5,56 +5,40 @@
 // variables
 
 $font-body:             Verdana, "Lucida Grande", Tahoma, Arial, sans-serif;
-
 $font-heading:          "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
-
 $font-secondary:        "Droid Serif", Georgia, Times, serif;
-
 $font-mono:             Cousine, Consolas, Monaco, monospace;
-
 $color-text:            #333;
-
 $color-text-footnote:   #999;
-
 $color-text-highlight:  #fabc2b;
-
 $color-link:            #1a428b;
-
 $color-link-visited:    #551a8b;
-
 $color-border:          #d4d4d4;
-
 $color-background:      #fff;
-
 $color-background-box:  #f0f2f6;
-
 $color-highlight-box:   #fdf8eb;
-
 $color-gradient-from:   #ffda44;
-
 $color-gradient-to:     #fabc2b;
-
 $color-gradient-border: #e1a61a;
-
 $border-radius:         5px;
 
 // mixins
 
 @mixin gradient($color-gradient-from, $color-gradient-to) {
     background:$color-gradient-from;
-    /* Safari 4+, Chrome */
+    /* Safari4+, Chrome */
     background:-webkit-gradient(linear,left top,left bottom,from($color-gradient-from),to($color-gradient-to));
-    /* Safari 5.1+, Chrome 10+ */
+    /* Safari5.1+, Chrome10+ */
     background:-webkit-linear-gradient($color-gradient-from, $color-gradient-to);
-    /* Firefox 3.6 */
+    /* Firefox3.6 */
     background:   -moz-linear-gradient($color-gradient-from, $color-gradient-to);
     /* IE10 */
     background:    -ms-linear-gradient($color-gradient-from, $color-gradient-to);
-    /* Opera 11.10+ */
+    /* Opera11.10+ */
     background:     -o-linear-gradient($color-gradient-from, $color-gradient-to);
     /* CSS3 Compliant */
     background:        linear-gradient($color-gradient-from, $color-gradient-to);
-    /* IE7-IE9 */
+    /* IE7-9 */
         filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$color-gradient-from}',EndColorStr='#{$color-gradient-to}');
 }
 
@@ -66,62 +50,152 @@ $border-radius:         5px;
 // end of Sass globals
 
 
+
+
+/* =============================================================================
+   Styling and layout for all media
+   ========================================================================== */
+
+
+
+
 @media all {
 
 
-/* HTML5 Reset Stylesheet v1.6.1 (Customised) http://html5doctor.com/html-5-reset-stylesheet/ */
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
-body{line-height:1;}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
-audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}
-audio:not([controls]){display:none;}
-[hidden]{display:none;}
-nav ul{list-style:none;list-style-image:none;}
-nav ul,nav li{margin:0;}
-blockquote,q{quotes:none;}
-blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
-a{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;background:transparent;}
-a:active{outline:0;}
-b,strong{font-weight:bold;}
-ins{background:$color-highlight-box;color:$color-text;text-decoration:none;}
-mark{background:$color-highlight-box;color:$color-text;font-style:italic;font-weight:bold;}
-del{text-decoration:line-through;}
-abbr[title],dfn[title],acronym[title]{border-bottom:1px dotted $color-text-footnote;cursor:help;}
-table{border-collapse:collapse;border-spacing:0;}
-table button,table input{*overflow:auto;}
-th,td{vertical-align:top;}
-input[type="checkbox"],input[type="radio"]{box-sizing:border-box;}
-hr{display:block;height:1px;border:0;border-top:1px solid $color-border;margin:1em 0;padding:0;}
-img{vertical-align:middle;-ms-interpolation-mode:bicubic;}
-svg:not(:root){overflow:hidden;}
-sub,sup{font-size:75%;line-height:0;position:relative;}
-sup{top:-.5em;}
-sub{bottom:-.25em;}
+/* =============================================================================
+   Abridged version of Normalize.css
+   ========================================================================== */
+/* original authors: Nicolas Gallagher and Jonathan Neal - http://necolas.github.com/normalize.css/ */
 
-/* The Magnificent Clearfix - updated to prevent margin-collapsing on child elements in most situations: http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before,.clearfix:after{content:"";display:table;}
-.clearfix:after{clear:both;}
-.clearfix{*zoom:1;}
-
-
+/* corrects block display not defined in IE6-9, Firefox3 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
 }
-/* end of @media all */
 
+/* corrects inline-block display not defined in IE6-9, Firefox3 */
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
 
+/* prevents modern browsers from displaying 'audio' without controls */
+audio:not([controls]) {
+    display: none;
+}
 
-
-/* standard styling and layout for screen > 959px */
-@media screen {
-
-
-/* layout */
+/* addresses styling for 'hidden' attribute not present in IE7-9, Firefox3, Safari4 */
+[hidden] {
+    display: none;
+}
 
 html {
-    /* prevents iOS text size adjust after orientation change, without disabling user zoom: http://www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+    font-size: 100%;
+    /* always force scrollbar padding so we don't get 'jumping' */
+    overflow-y: scroll;
+    /* prevents iOS text size adjust after orientation change, without disabling user zoom -
+        http://www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
     -webkit-text-size-adjust: 100%;
     /* as above, for Windows Phone */
         -ms-text-size-adjust: 100%;
 }
+
+/* addresses style set to 'bolder' in Firefox3-4, Safari4-5, Chrome */
+b,
+strong { 
+    font-weight: bold; 
+}
+
+/* addresses CSS quotes not supported in IE6-7, addresses quote property not supported in Safari4 */
+q {
+    quotes: none;
+    &:before, &:after {
+        content: '';
+        content: none;
+    }
+}
+
+/* prevents sub and sup affecting line-height in all browsers */
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+
+/* make table cells align top by default */
+th,
+td {
+    vertical-align: top;
+}
+
+/* reset default padding on lists */
+ul,
+ol,
+dd {
+    padding: 0;
+}
+
+/* corrects inner padding and border displayed oddly in Firefox3-4 - www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+/* =============================================================================
+   Clearfix
+   ========================================================================== */
+/* updated to prevent margin-collapsing on child elements in most situations - http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.clearfix {
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    *zoom: 1;
+}
+
+
+}
+
+
+
+
+/* =============================================================================
+   Styling and layout for screen media > 959px
+   ========================================================================== */
+
+
+
+
+@media screen {
+
+
+/* =============================================================================
+   Layout
+   ========================================================================== */
 
 body {
     width: 960px;
@@ -145,8 +219,15 @@ nav {
         display: none;
     }
 
+    ul {
+        list-style: none;
+        list-style-image: none;
+        margin: 0;
+    }
+
     li {
         float: left;
+        margin: 0;
         border-right: solid 1px $color-gradient-border;
     }
 
@@ -190,13 +271,22 @@ footer {
     background: $color-background-box;
 }
 
+#search-page [role="main"] article:last-of-type {
+    margin-bottom: 1em;
+}
 
-/* links */
+
+/* =============================================================================
+   Links
+   ========================================================================== */
 
 a {
     -webkit-tap-highlight-color: rgba(255,230,153,.5);
     text-decoration: none;
     color: $color-link;
+    &:hover, &:active { /* improves readability when focused and also mouse hovered in all browsers - people.opera.com/patrickl/experiments/keyboard/test */
+        outline: 0;
+    }
 }
 
 header a {
@@ -231,7 +321,10 @@ footer a {
     }
 }
 
-/* typography */
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
 
 body {
     /* 13px / 16px */
@@ -248,8 +341,8 @@ h1 {
     /* 44px / 39px */
     line-height: 1.12820512820513em;
     font-family: $font-heading;
-    font-weight: bold;
     letter-spacing: -1px;
+    margin: 0;
     /* 10px / 39px */
     padding-top: .256410256410256em;
     /* 20px / 39px */
@@ -265,15 +358,19 @@ h3 {
     font-family: $font-secondary;
     font-weight: normal;
     font-style: italic;
+    margin: 0;
     /* 13px / 26px */
     padding-bottom:.5em;
 }
 
-h5 {
-    font-weight: normal;
+h4 {
+    /* 13px / 13px */
+    font-size: 1em;
+    margin: 0;
 }
 
 p {
+    margin: 0;
     /* 13px / 13px */
     padding-bottom: 1em;
 }
@@ -296,6 +393,14 @@ q {
     background: $color-highlight-box;
 }
 
+/* addresses styling not present in IE7-9, Safari5, Chrome */
+abbr[title],
+acronym[title], /* note: acroymn to be phased out in Textile as it's obsolete in HTML5 */
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
 pre,
 code,
 kbd,
@@ -306,10 +411,17 @@ var {
 }
 
 pre {
-    margin-bottom: 1.3em;
+    margin: 0 0 1.3em;
     padding: 1em 10px;
     border-radius: $border-radius;
     overflow-x: auto;
+}
+
+mark {
+    background: $color-highlight-box;
+    color: $color-text;
+    font-style: italic;
+    font-weight: bold;
 }
 
 small,
@@ -330,11 +442,24 @@ tfoot,
 
 figcaption {
     font-style: italic;
-    margin-top: 8px;
 }
 
 
-/* media */
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/* removes border when inside 'a' element in IE6-9,
+    improves image quality when scaled in IE7 - code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+/* corrects overflow displayed oddly in IE9 */
+svg:not(:root) {
+    overflow: hidden;
+}
 
 article {
     img, embed, object, video {
@@ -344,11 +469,13 @@ article {
 }
 
 figure {
-    margin-bottom: 1.3em;
+    margin: 0 0 1.3em;
 }
 
 
-/* tables */
+/* =============================================================================
+   Tables
+   ========================================================================== */
 
 table {
     margin-bottom: 1.3em;
@@ -393,7 +520,9 @@ th {
 }
 
 
-/* lists */
+/* =============================================================================
+   Lists
+   ========================================================================== */
 
 [role="main"],
 [role="complementary"] {
@@ -478,14 +607,21 @@ dt {
 }
 
 
-/* search page */
+/* =============================================================================
+   Forms
+   ========================================================================== */
 
-#search-page [role="main"] article:last-of-type {
-    margin-bottom: 1em;
+/* corrects margin displayed oddly in IE6-7 */
+form {
+    margin: 0;
 }
 
-
-/* forms */
+/* remove default fieldset styling across browsers */
+fieldset {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
 
 /* hand cursor on clickable input elements (except disabled ones) */
 label,
@@ -495,7 +631,6 @@ input[type="reset"],
 button {
     cursor: pointer;
 }
-
 input[disabled] {
     cursor: default;
 }
@@ -504,7 +639,6 @@ input[disabled] {
 input[type="search"] {
     -webkit-appearance: textfield;
 }
-
 ::-webkit-search-decoration {
     display: none;
 }
@@ -515,6 +649,7 @@ button,
 input,
 select,
 textarea {
+    font-size: 100%;
     margin: 0;
     vertical-align: baseline;
     /* improves appearance and consistency in IE7 */
@@ -525,9 +660,14 @@ textarea {
 ::-webkit-input-placeholder {
     color: #bbb;
 }
-
 :-moz-placeholder {
     color: #bbb;
+}
+
+/* suppress red glow that Firefox adds to form fields by default, even when user is still typing */
+:invalid {
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 input[type="text"],
@@ -564,7 +704,7 @@ input[type="search"] {
 
 textarea {
     width: 100%;
-    /* removes default vertical scrollbar in IE7-IE9 */
+    /* removes default vertical scrollbar in IE7-9 */
     overflow: auto;
     /* improves readability and alignment in all browsers */
     vertical-align: top;
@@ -591,6 +731,13 @@ textarea {
     }
 }
 
+/* addresses box sizing set to content-box and excess padding in IE8-9 */
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
 .checkboxes,
 .radiobuttons {
     padding: 0 0 7px;
@@ -611,7 +758,9 @@ textarea {
 }
 
 
-/* buttons */
+/* =============================================================================
+   Buttons
+   ========================================================================== */
 
 /* make buttons play nice in IE: http://www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 input,
@@ -625,21 +774,16 @@ button,
 .ie7 button,
 .ie7 .button,
 .ie7 input[type="button"],
+.ie7 input[type="reset"],
 .ie7 input[type="submit"],
 .ie7 #paginator span.disabled {
     border: 0;
 }
 
-/* fix firefox button height discrepancy: http://christophzillgens.com/en/articles/equal-height-input-and-button-elements-in-firefox-and-safari */
-input::-moz-focus-inner,
-button::-moz-focus-inner{
-    border: 0;
-    padding: 0;
-}
-
 button,
 .button,
 input[type="button"],
+input[type="reset"],
 input[type="submit"] {
     /* 11px / 13px */
     font-size: .84615384615385em;
@@ -709,7 +853,9 @@ input[type="submit"].disabled,
 }
 
 
-/* comments */
+/* =============================================================================
+   Comments
+   ========================================================================== */
 
 .comments {
     margin-bottom: 20px;
@@ -749,13 +895,6 @@ input[type="submit"].disabled,
 }
 
 
-/* vanity */
-
-/* always force scrollbar padding so we don't get 'jumping' */
-html {
-    overflow-y: scroll;
-}
-
 /* get rid of proprietary focus glows and add our own */
 a,
 input,
@@ -771,12 +910,17 @@ button {
 
 
 }
-/* end of standard styling and layout for screen > 959px */
 
 
 
 
-/* layout for screen < 960px */
+/* =============================================================================
+   Additional layout for screen media < 960px
+   ========================================================================== */
+
+
+
+
 @media handheld and (max-width:480px),screen and (max-device-width:480px),screen and (max-width:960px) {
 
 
@@ -799,12 +943,17 @@ footer {
 
 
 }
-/* end of layout for screen < 960px */
 
 
 
 
-/* layout for screen < 768px */
+/* =============================================================================
+   Additional layout for screen media < 768px
+   ========================================================================== */
+
+
+
+
 @media only screen and (max-width: 767px) {
 
 
@@ -851,12 +1000,17 @@ h3 {
 
 
 }
-/* end of layout for screen < 768px */
 
 
 
 
-/* layout for screen < 480px */
+/* =============================================================================
+   Additional layout for screen media < 480px
+   ========================================================================== */
+
+
+
+
 @media only screen and (max-width: 479px) {
 
 
@@ -879,12 +1033,17 @@ blockquote {
 
 
 }
-/* end of layout for screen < 480px */
 
 
 
 
-/* styling for print */
+/* =============================================================================
+   Styling and layout for print media
+   ========================================================================== */
+
+
+
+
 @media print {
 
 
@@ -904,6 +1063,7 @@ body {
     font-size: 8pt;
     line-height: 12pt;
     font-family: "Helvetica Neue", Helvetica, Arial, SunSans-Regular, sans-serif;
+    margin: 0;
     padding: 2em 6em;
 }
 
@@ -1092,4 +1252,3 @@ th {
 
 
 }
-/* end of styling for print */
