@@ -221,8 +221,8 @@ Major components:
 
 * Modernizr: MIT/BSD license
 * jQuery: MIT/GPL license
-* HTML5Doctor CSS reset: Public Domain
+* Normalize.css: Public Domain
 
 Everything else:
 
-* "The Unlicense":http://unlicense.org (aka: public domain)
+* "The Unlicense":http://unlicense.org (aka: Public Domain)
