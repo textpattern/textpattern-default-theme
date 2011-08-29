@@ -115,7 +115,7 @@
         <!-- Feed links, default flavor is rss, so we don't need to specify a flavor on the first feed_link -->
         <p><txp:feed_link label="RSS" class="feed-rss" /> / <txp:feed_link flavor="atom" label="Atom" class="feed-atom" /></p>
 
-        <h5><txp:text item="recent_articles" /></h5>
+        <h4><txp:text item="recent_articles" /></h4>
         <ul id="monthly-list" class="clearfix">
             <txp:article_custom section="articles" limit="12">
                 <!-- using if_different tag to populate list only with months that actually contain articles -->
@@ -125,7 +125,7 @@
             </txp:article_custom>
         </ul>
 
-        <h5>External Links</h5>
+        <h4>External Links</h4>
         <txp:linklist wraptag="ul" break="li" limit="10" /> <!-- links by default to form: 'plainlinks.link.txp' unless you specify a different form -->
     </div>
 
