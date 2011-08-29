@@ -14,7 +14,7 @@
 </txp:if_individual_article>
 
 <!-- using HTML5 'time' tag, note that the correct format for datetime attribute should be Y-m-dTH:M:SZ (e.g. 2011-01-31T15:31:25Z) -->
-    <p><strong><txp:text item="posted" />:</strong> <time datetime="<txp:posted format='%Y-%m-%d' />T<txp:posted format='%H:%M:%S' />Z" pubdate><txp:posted format="%d %B %Y" /> at <txp:posted format='%H:%M' /></time></p>
+    <p><strong><txp:text item="posted" />:</strong> <time datetime="<txp:posted format='%Y-%m-%d' />T<txp:posted format='%H:%M:%S' />Z" pubdate><txp:posted format="%d %B %Y" /> <txp:posted format='%H:%M' /></time></p>
 <!-- see http://php.net/manual/en/function.strftime.php for reference list of time/date strings -->
 
     <p><strong> <txp:text item="comments" />:</strong> <a class="comment-count" href="<txp:permlink />#comments-head" title="<txp:text item='view' />&#8230;">
