@@ -1,4 +1,4 @@
-<p><strong class="form-intro">Enter you comment below.</strong> Fields marked <b class="required">*</b> are required. You must preview your comment first before finally posting.</p>
+<p><txp:text item="enter_comment_here" /></p>
 
 <!-- if there is an error, then inform user -->
 <txp:if_comments_error>

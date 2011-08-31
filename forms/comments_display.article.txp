@@ -14,7 +14,7 @@
     <!-- if this is a comment preview, display it (but only if there is no error) -->
         <txp:if_comments_preview>
             <li>
-                <p id="cpreview">The following is a preview of what your comment will look like. Please do not forget to scroll down and actually press the <strong><a href="#txpCommentSubmit" title="Go to the submit button">submit</a></strong> button!</p>
+                <p id="cpreview"><txp:text item="press_preview_then_submit" /></p>
                 <txp:comments_preview wraptag="" /> <!-- links by default to form: 'comments.comment.txp' unless you specify a different form -->
             </li>
         </txp:if_comments_preview>
@@ -27,7 +27,7 @@
     <txp:if_comments_preview>
         <ol class="comments-list">
             <li>
-                <p id="cpreview">The following is a preview of what your comment will look like. Please do not forget to scroll down and actually press the <strong><a href="#txpCommentSubmit" title="Go to the submit button">submit</a></strong> button!</p>
+                <p id="cpreview"><txp:text item="press_preview_then_submit" /></p>
                 <txp:comments_preview wraptag="" /> <!-- links by default to form: 'comments.comment.txp' unless you specify a different form -->
             </li>
         </ol>
@@ -36,7 +36,7 @@
 
 <!-- else just display that there are simply no comments whatsoever :( ...but only if comments are allowed -->
         <txp:if_comments_allowed>
-            <p>There are currently no comments on this article.</p>
+            <p><txp:text item="no_comments" /></p>
         </txp:if_comments_allowed>
 
     </txp:if_comments_preview>
@@ -57,8 +57,10 @@
     
     <!-- display either a comments expired message or a comments disabled message -->
     <txp:if_comments>
-        <p><strong>Commenting has expired for this article.</strong></p>
+        <!-- comments expired -->
+        <p><strong><txp:text item="comments_are_closed" /></strong></p>
     <txp:else />
+        <!-- comments closed -->
         <p><strong><txp:text item="comments_closed" /></strong></p>
     </txp:if_comments>
 </txp:if_comments_allowed>

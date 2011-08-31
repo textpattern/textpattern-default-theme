@@ -7,14 +7,14 @@
 
 <!-- if search result count greater than 200 then display excessive results message, otherwise show search result count -->
         <txp:if_search_results max="200">
-            <h3><txp:search_result_count /> matching your search request &#8216;<txp:search_term />&#8217;&#8230;</h3>
+            <h3><txp:search_result_count /> <txp:text item="matching_search_request" /> &#8216;<txp:search_term />&#8217;&#8230;</h3>
         <txp:else />
-            <h3>It seems like you are looking for a very common search term, maybe try a more specific phrase than &#8216;<txp:search_term />&#8217;</h3>
+            <h3><txp:text item="too_common_search_term" /> &#8216;<txp:search_term />&#8217;</h3>
         </txp:if_search_results>
 
 <!-- if no search results, then display no search results message -->
     <txp:else />
-        <h3>Sorry, no results found matching your search request &#8216;<txp:search_term />&#8217;</h3>
+        <h3><txp:text item="no_search_matches" /> &#8216;<txp:search_term />&#8217;</h3>
 
     </txp:if_search_results>
 

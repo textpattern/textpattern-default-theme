@@ -14,7 +14,7 @@
 
 <span class="footnote">
     <txp:text item="category" />: <txp:file_download_category /> &#124; 
-    File Size: <txp:file_download_size /> &#124; 
-    Last Modified: <txp:file_download_created format="%d %B %Y" /> &#124; 
-    Download Count: <txp:file_download_downloads />
+    <txp:text item="file_size" />: <txp:file_download_size /> &#124; 
+    <txp:text item="last_modified" />: <txp:file_download_created format="%d %B %Y" /> &#124; 
+    <txp:text item="download_count" />: <txp:file_download_downloads />
 </span>
