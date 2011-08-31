@@ -21,6 +21,7 @@ h4. Essential
 
 # Set 'Automatically append comments to articles?' to 'no'. "More info":http://textpattern.com/faq/95/comment-display-confusion.
 # Set 'Allow PHP in pages?' to 'yes'. Leave 'Allow PHP in articles?' and 'Allow raw PHP?' set to 'no' for security reasons (you don't really want to allow authors to add their own custom PHP within their articles).
+# Check you have the latest Textpattern language database update, new data was added to the Textpattern language server from 31/08/11 onwards specifically to support this theme. Go to the preferences, language tab - if you are not already running the latest language version there will be a prompt to update next to your installed languages. Click on 'update' and an up-to-date language table will be automatically loaded.
 
 h4. Recommended but optional
 
