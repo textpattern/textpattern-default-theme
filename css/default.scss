@@ -16,7 +16,7 @@ $color-link-visited:    #551a8b;
 $color-border:          #d4d4d4;
 $color-background:      #fff;
 $color-background-box:  #f0f2f6;
-$color-highlight-box:   #fdf8eb;
+$color-highlight-box:   #fdf5d9;
 $color-gradient-from:   #ffda44;
 $color-gradient-to:     #fabc2b;
 $color-gradient-border: #e1a61a;
@@ -408,12 +408,19 @@ samp,
 var {
     font-family: $font-mono;
     background: $color-highlight-box;
+    border-radius: $border-radius;
+}
+
+code,
+kbd,
+samp,
+var {
+    padding: 1px 3px;
 }
 
 pre {
     margin: 0 0 1.3em;
     padding: 1em 10px;
-    border-radius: $border-radius;
     overflow-x: auto;
 }
 

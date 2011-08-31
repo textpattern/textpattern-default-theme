@@ -348,7 +348,7 @@
   q {
     font-family: "Droid Serif", Georgia, Times, serif;
     font-style: italic;
-    background: #fdf8eb;
+    background: #fdf5d9;
   }
 
   /* addresses styling not present in IE7-9, Safari5, Chrome */
@@ -365,18 +365,25 @@
   samp,
   var {
     font-family: Cousine, Consolas, Monaco, monospace;
-    background: #fdf8eb;
+    background: #fdf5d9;
+    border-radius: 5px;
+  }
+
+  code,
+  kbd,
+  samp,
+  var {
+     padding: 1px 3px;
   }
 
   pre {
     margin: 0 0 1.3em;
     padding: 1em 10px;
-    border-radius: 5px;
     overflow-x: auto;
   }
 
   mark {
-    background: #fdf8eb;
+    background: #fdf5d9;
     color: #333333;
     font-style: italic;
     font-weight: bold;
@@ -562,7 +569,7 @@
     border-radius: 0 0 5px 5px;
   }
   [role="complementary"] #monthly-list a:hover .archive-month, [role="complementary"] #monthly-list a:focus .archive-month {
-    background: #fdf8eb;
+    background: #fdf5d9;
   }
   [role="complementary"] #monthly-list span {
     display: block;
@@ -671,7 +678,7 @@
   input[type="search"]:focus,
   textarea:hover,
   textarea:focus {
-    background: #fdf8eb;
+    background: #fdf5d9;
   }
 
   input[type="search"] {
@@ -931,7 +938,7 @@
   textarea:focus,
   button:focus {
     outline: 0;
-    background: #fdf8eb;
+    background: #fdf5d9;
     -webkit-box-shadow: 0 0 5px #fabc2b;
     box-shadow: 0 0 5px #fabc2b;
   }
