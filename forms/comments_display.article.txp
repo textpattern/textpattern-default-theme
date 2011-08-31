@@ -57,10 +57,8 @@
     
     <!-- display either a comments expired message or a comments disabled message -->
     <txp:if_comments>
-        <!-- comments expired -->
-        <p><strong><txp:text item="comments_are_closed" /></strong></p>
+        <p><strong><txp:text item="comments_expired" /></strong></p>
     <txp:else />
-        <!-- comments closed -->
         <p><strong><txp:text item="comments_closed" /></strong></p>
     </txp:if_comments>
 </txp:if_comments_allowed>
