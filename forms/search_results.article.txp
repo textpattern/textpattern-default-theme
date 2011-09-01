@@ -26,7 +26,7 @@
             <h1><txp:permlink><txp:title /></txp:permlink></h1>
 
 <!-- see default.article.txp for info on HTML5 'time' tag -->
-            <p><strong><txp:text item="posted" />:</strong> <time datetime="<txp:posted format='%Y-%m-%d' />T<txp:posted format='%H:%M:%S' />Z" pubdate><txp:posted /></time></p>
+            <p><strong><txp:text item="posted" />:</strong> <time datetime="<txp:posted format='iso8601' />" pubdate><txp:posted /></time></p>
 
 <!-- if the article has an excerpt, display that, otherwise show highlighted keywords in context of article -->
             <txp:if_excerpt>

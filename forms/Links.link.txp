@@ -4,7 +4,7 @@
     <span class="footnote">
         <txp:text item="category" />: <txp:link_category /> &#124; 
         <txp:text item="author" />: <txp:link_author /> &#124; 
-        <txp:text item="date_added" />: <time datetime="<txp:link_date format='%Y-%m-%d' />T<txp:link_date format='%H:%M:%S' />Z" pubdate><txp:link_date format="%d %B %Y" /></time>
+        <txp:text item="date_added" />: <time datetime="<txp:link_date format='iso8601' />" pubdate><txp:link_date format="%d %B %Y" /></time>
     </span>
     </p>
 </article>
