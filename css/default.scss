@@ -456,7 +456,7 @@ figcaption {
    Embedded content
    ========================================================================== */
 
-/* removes border when inside 'a' element in IE6-9,
+/* removes border when inside 'a' element in IE7-9, Firefox3,
     improves image quality when scaled in IE7 - code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
 img {
     border: 0;
