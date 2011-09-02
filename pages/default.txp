@@ -29,7 +29,7 @@
         <txp:if_individual_article>
             <link rel="canonical" href="<txp:permlink />">
         <txp:else />
-            <link rel="canonical" href="<txp:site_url /><txp:section />">
+            <link rel="canonical" href="<txp:section url="1" />">
         </txp:if_individual_article>
     </txp:if_section>
 
