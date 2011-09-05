@@ -105,6 +105,12 @@
     padding: 0;
   }
 
+  /* disables default appearance of form elements on iOS */
+  input,
+  textarea {
+    -webkit-appearance: none;
+  }
+
   /* =============================================================================
      Clearfix
      ========================================================================== */
