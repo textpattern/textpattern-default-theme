@@ -66,6 +66,8 @@
         <txp:if_article_list><h1><txp:section title="1" /></h1></txp:if_article_list>
 
         <txp:article listform="article_listing" limit="5" />
+        <!-- if you want to list all articles from all sections instead, then replace the above line with:
+            <txp:article_custom listform="article_listing" limit="5" /> -->
 
         <!-- add pagination links to foot of article/article listings if there are more articles available,
             this method is more flexibile than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
