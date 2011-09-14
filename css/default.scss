@@ -1059,7 +1059,8 @@ blockquote {
     color: black !important;
     text-shadow: none !important;
     background: transparent !important;
-    filter: none !important;
+    box-shadow: none !important;
+    filter:none !important;
 }
 
 @page {
