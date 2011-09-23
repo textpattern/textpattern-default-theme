@@ -25,21 +25,21 @@ $border-radius:         5px;
 // mixins
 
 @mixin gradient($color-gradient-from, $color-gradient-to) {
-    background:$color-gradient-from;
+    background-color: $color-gradient-from;
     /* Safari4+, Chrome */
-    background:-webkit-gradient(linear,left top,left bottom,from($color-gradient-from),to($color-gradient-to));
+    background-image: -webkit-gradient(linear,left top,left bottom,from($color-gradient-from),to($color-gradient-to));
     /* Safari5.1+, Chrome10+ */
-    background:-webkit-linear-gradient($color-gradient-from, $color-gradient-to);
+    background-image: -webkit-linear-gradient($color-gradient-from, $color-gradient-to);
     /* Firefox3.6 */
-    background:   -moz-linear-gradient($color-gradient-from, $color-gradient-to);
+    background-image:    -moz-linear-gradient($color-gradient-from, $color-gradient-to);
     /* IE10 */
-    background:    -ms-linear-gradient($color-gradient-from, $color-gradient-to);
+    background-image:     -ms-linear-gradient($color-gradient-from, $color-gradient-to);
     /* Opera11.10+ */
-    background:     -o-linear-gradient($color-gradient-from, $color-gradient-to);
+    background-image:      -o-linear-gradient($color-gradient-from, $color-gradient-to);
     /* CSS3 Compliant */
-    background:        linear-gradient($color-gradient-from, $color-gradient-to);
+    background-image:         linear-gradient($color-gradient-from, $color-gradient-to);
     /* IE7-9 */
-        filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$color-gradient-from}',EndColorStr='#{$color-gradient-to}');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$color-gradient-from}',EndColorStr='#{$color-gradient-to}');
 }
 
 @mixin box-shadow {
