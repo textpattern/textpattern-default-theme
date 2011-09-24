@@ -152,6 +152,8 @@
     border: solid 1px #e1a61a;
     border-radius: 0 0 5px 5px;
     background-color: #ffda44;
+    /* Konqueror */
+    background-image:  -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
     /* Safari4+, Chrome */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
     /* Safari5.1+, Chrome10+ */
@@ -190,6 +192,8 @@
   nav a:hover, nav a:active {
     text-decoration: none;
     background-color: #ffe477;
+    /* Konqueror */
+    background-image:  -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
     /* Safari4+, Chrome */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
     /* Safari5.1+, Chrome10+ */
@@ -533,6 +537,8 @@
     text-shadow: 1px 1px #ffe991;
     border-radius: 5px 5px 0 0;
     background-color: #ffda44;
+    /* Konqueror */
+    background-image:  -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
     /* Safari4+, Chrome */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
     /* Safari5.1+, Chrome10+ */
@@ -550,6 +556,8 @@
   }
   [role="complementary"] #monthly-list a:hover .archive-year, [role="complementary"] #monthly-list a:focus .archive-year {
     background-color: #ffe477;
+    /* Konqueror */
+    background-image:  -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
     /* Safari4+, Chrome */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
     /* Safari5.1+, Chrome10+ */
@@ -816,6 +824,8 @@
     *zoom: 1;
     color: #333333;
     background-color: #ffda44;
+    /* Konqueror */
+    background-image:  -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
     /* Safari4+, Chrome */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
     /* Safari5.1+, Chrome10+ */
@@ -839,6 +849,8 @@
   input[type="reset"]:hover,
   input[type="submit"]:hover {
     background-color: #ffe477;
+    /* Konqueror */
+    background-image:  -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
     /* Safari4+, Chrome */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
     /* Safari5.1+, Chrome10+ */
@@ -863,6 +875,8 @@
     top: 1px;
     color: #1a1a1a;
     background-color: #fabc2b;
+    /* Konqueror */
+    background-image:  -khtml-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
     /* Safari4+, Chrome */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
     /* Safari5.1+, Chrome10+ */
@@ -887,6 +901,8 @@
     border: solid 1px #d2d2d2;
     color: #999999;
     background-color: #e6e6e6;
+    /* Konqueror */
+    background-image:  -khtml-gradient(linear, left top, left bottom, from(#e6e6e6), to(#dadada));
     /* Safari4+, Chrome */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), to(#dadada));
     /* Safari5.1+, Chrome10+ */

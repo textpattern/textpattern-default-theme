@@ -26,8 +26,10 @@ $border-radius:         5px;
 
 @mixin gradient($color-gradient-from, $color-gradient-to) {
     background-color: $color-gradient-from;
+    /* Konqueror */
+    background-image:  -khtml-gradient(linear, left top, left bottom, from($color-gradient-from), to($color-gradient-to));
     /* Safari4+, Chrome */
-    background-image: -webkit-gradient(linear,left top,left bottom,from($color-gradient-from),to($color-gradient-to));
+    background-image: -webkit-gradient(linear, left top, left bottom, from($color-gradient-from), to($color-gradient-to));
     /* Safari5.1+, Chrome10+ */
     background-image: -webkit-linear-gradient($color-gradient-from, $color-gradient-to);
     /* Firefox3.6 */
