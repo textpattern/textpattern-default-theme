@@ -1,0 +1,33 @@
+// note: this file is for use with Sass - http://sass-lang.com, don't use it as your live site stylesheet!
+
+// fonts
+
+$font-body:             Verdana, "Lucida Grande", Tahoma, Arial, sans-serif;
+$font-heading:          "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+$font-secondary:        "Droid Serif", Georgia, Times, serif;
+$font-mono:             Cousine, Consolas, Monaco, monospace;
+
+// text colours
+
+$color-text:            #333;
+$color-text-footnote:   #999;
+$color-text-highlight:  #fabc2b;
+$color-link:            #1a428b;
+$color-link-visited:    #551a8b;
+
+// default gradients
+
+$color-gradient-from:   #ffda44;
+$color-gradient-to:     #fabc2b;
+$color-gradient-border: #e1a61a;
+
+// rounded borders
+
+$border-radius:         5px;
+
+// accent colours
+
+$color-border:          #d4d4d4;
+$color-background:      #fff;
+$color-background-box:  #f0f2f6;
+$color-highlight-box:   #fdf5d9;

@@ -1,0 +1,28 @@
+// note: this file is for use with Sass - http://sass-lang.com, don't use it as your live site stylesheet!
+
+// mixins
+
+@mixin gradient($color-gradient-from, $color-gradient-to) {
+    background-color: $color-gradient-from;
+    /* Konqueror */
+    background-image:  -khtml-gradient(linear, left top, left bottom, from($color-gradient-from), to($color-gradient-to));
+    /* Safari4+, Chrome */
+    background-image: -webkit-gradient(linear, left top, left bottom, from($color-gradient-from), to($color-gradient-to));
+    /* Safari5.1+, Chrome10+ */
+    background-image: -webkit-linear-gradient($color-gradient-from, $color-gradient-to);
+    /* Firefox3.6 */
+    background-image:    -moz-linear-gradient($color-gradient-from, $color-gradient-to);
+    /* IE10 */
+    background-image:     -ms-linear-gradient($color-gradient-from, $color-gradient-to);
+    /* Opera11.10+ */
+    background-image:      -o-linear-gradient($color-gradient-from, $color-gradient-to);
+    /* CSS3 Compliant */
+    background-image:         linear-gradient($color-gradient-from, $color-gradient-to);
+    /* IE7-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$color-gradient-from}',EndColorStr='#{$color-gradient-to}');
+}
+
+@mixin box-shadow {
+    -webkit-box-shadow:0 1px 2px rgba(0,0,0,.2);
+            box-shadow:0 1px 2px rgba(0,0,0,.2);
+}
