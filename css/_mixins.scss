@@ -3,22 +3,24 @@
 // mixins
 
 @mixin gradient($color-gradient-from, $color-gradient-to) {
-    background-color: $color-gradient-from;
-    /* Konqueror */
-    background-image:  -khtml-gradient(linear, left top, left bottom, from($color-gradient-from), to($color-gradient-to));
-    /* Safari4+, Chrome */
-    background-image: -webkit-gradient(linear, left top, left bottom, from($color-gradient-from), to($color-gradient-to));
-    /* Safari5.1+, Chrome10+ */
-    background-image: -webkit-linear-gradient($color-gradient-from, $color-gradient-to);
-    /* Firefox3.6 */
-    background-image:    -moz-linear-gradient($color-gradient-from, $color-gradient-to);
-    /* IE10 */
-    background-image:     -ms-linear-gradient($color-gradient-from, $color-gradient-to);
-    /* Opera11.10+ */
-    background-image:      -o-linear-gradient($color-gradient-from, $color-gradient-to);
-    /* CSS3 Compliant */
-    background-image:         linear-gradient($color-gradient-from, $color-gradient-to);
-    /* IE7-9 */
+    background: {
+        color: $color-gradient-from;
+        /* Konqueror */
+        image:  -khtml-gradient(linear, left top, left bottom, from($color-gradient-from), to($color-gradient-to));
+        /* Safari4+, Chrome */
+        image: -webkit-gradient(linear, left top, left bottom, from($color-gradient-from), to($color-gradient-to));
+        /* Safari5.1+, Chrome10+ */
+        image: -webkit-linear-gradient($color-gradient-from, $color-gradient-to);
+        /* Firefox3.6 */
+        image:    -moz-linear-gradient($color-gradient-from, $color-gradient-to);
+        /* IE10 */
+        image:     -ms-linear-gradient($color-gradient-from, $color-gradient-to);
+        /* Opera11.10+ */
+        image:      -o-linear-gradient($color-gradient-from, $color-gradient-to);
+        /* CSS3 Compliant */
+        image:         linear-gradient($color-gradient-from, $color-gradient-to);
+        /* IE7-9 */
+    }
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$color-gradient-from}',EndColorStr='#{$color-gradient-to}');
 }
 
