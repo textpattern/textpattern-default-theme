@@ -142,8 +142,8 @@
   }
 
   header {
-    border-left: solid 1px #d4d4d4;
-    border-right: solid 1px #d4d4d4;
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc;
     padding: 10px 10px 0;
     background: #f0f2f6;
   }
@@ -223,7 +223,7 @@
   [role="complementary"] {
     float: left;
     margin: 20px 10px;
-    border: solid 1px #d4d4d4;
+    border: solid 1px #ccc;
     border-radius: 5px;
     padding: 10px 10px 0;
     width: 258px;
@@ -232,7 +232,7 @@
 
   footer {
     clear: both;
-    border: solid 1px #d4d4d4;
+    border: solid 1px #ccc;
     border-radius: 5px;
     padding: 10px;
     /* declare width to fix for IE7 double padding bug */
@@ -515,7 +515,7 @@
     display: block;
     margin: 0 4px 6px 0;
     min-width: 36px;
-    border: 1px solid #d4d4d4;
+    border: 1px solid #ccc;
     border-radius: 5px;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -687,7 +687,7 @@
     /* 15px / 11px */
     line-height: 1.36363636363636em;
     font-family: Verdana, "Lucida Grande", Tahoma, Arial, sans-serif;
-    border: solid 1px #d4d4d4;
+    border: solid 1px #ccc;
     padding: .5em 5px .55em;
     background: #fff;
     -webkit-box-sizing: border-box;
