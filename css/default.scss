@@ -187,7 +187,7 @@ nav {
 
     a {
         text-decoration: none;
-        text-shadow: 1px 1px lighten($color-gradient-from, 15%);
+        @include text-shadow-light;
         display: block;
         padding: 10px;
         color: $color-text;
@@ -533,7 +533,7 @@ dt {
             /* 15px / 10px */
             line-height: 1.5em;
             font-weight: bold;
-            text-shadow: 1px 1px lighten($color-gradient-from, 15%);
+            @include text-shadow-light;
             border-radius: $border-radius $border-radius 0 0;
             @include gradient;
         }
@@ -762,7 +762,7 @@ input[type="submit"] {
     font-family: $font-body;
     font-weight: normal;
     text-align: center;
-    text-shadow: 1px 1px lighten($color-gradient-from, 15%);
+    @include text-shadow-light;
     outline: 0;
     cursor: pointer;
     border: solid 1px $color-gradient-border;

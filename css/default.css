@@ -184,7 +184,7 @@
   }
   nav a {
     text-decoration: none;
-    text-shadow: 1px 1px #ffe991;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, .5);
     display: block;
     padding: 10px;
     color: #333333;
@@ -534,7 +534,7 @@
     /* 15px / 10px */
     line-height: 1.5em;
     font-weight: bold;
-    text-shadow: 1px 1px #ffe991;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, .5);
     border-radius: 5px 5px 0 0;
     background-color: #ffda44;
     /* Konqueror */
@@ -810,7 +810,7 @@
     font-family: Verdana, "Lucida Grande", Tahoma, Arial, sans-serif;
     font-weight: normal;
     text-align: center;
-    text-shadow: 1px 1px #ffe991;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, .5);
     outline: 0;
     cursor: pointer;
     border: solid 1px #e1a61a;
