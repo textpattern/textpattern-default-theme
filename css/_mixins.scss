@@ -19,9 +19,11 @@
         image:      -o-linear-gradient($color-gradient-from, $color-gradient-to);
         /* CSS3 Compliant */
         image:         linear-gradient($color-gradient-from, $color-gradient-to);
-        /* IE7-9 */
     }
+    /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$color-gradient-from}',EndColorStr='#{$color-gradient-to}');
+    /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+    border-radius: 0 \0;
 }
 
 // drop shadows

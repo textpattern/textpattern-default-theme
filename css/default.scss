@@ -510,8 +510,8 @@ dt {
         min-width: 36px;
         border: 1px solid $color-border;
         border-radius: $border-radius;
-        background: #fff;
         @include box-shadow;
+        background: #fff;
 
         &:active {
             position: relative;
@@ -774,9 +774,9 @@ input[type="submit"] {
     /* display and zoom IE7 fix for display:inline-block */
     *display: inline;
     *zoom: 1;
+    @include box-shadow;
     color: $color-text;
     @include gradient;
-    @include box-shadow;
 
     &:hover {
         @include gradient(lighten($color-gradient-from, 10%), lighten($color-gradient-to, 10%));
@@ -872,9 +872,9 @@ textarea,
 button {
     &:focus {
         outline: 0;
-        background: $color-highlight-box;
         -webkit-box-shadow: 0 0 5px $color-text-highlight; 
                 box-shadow: 0 0 5px $color-text-highlight;
+        background: $color-highlight-box;
     }
 }
 

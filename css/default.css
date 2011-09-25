@@ -168,6 +168,8 @@
     background-image: linear-gradient(#ffda44, #fabc2b);
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
+    /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+    border-radius: 0 \0;
   }
   nav h1 {
     display: none;
@@ -208,6 +210,8 @@
     background-image: linear-gradient(#ffe477, #fbcc5d);
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
+    /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+    border-radius: 0 \0;
   }
 
   [role="main"] {
@@ -513,9 +517,9 @@
     min-width: 36px;
     border: 1px solid #d4d4d4;
     border-radius: 5px;
-    background: #fff;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    background: #fff;
   }
   [role="complementary"] #monthly-list li:active {
     position: relative;
@@ -553,6 +557,8 @@
     background-image: linear-gradient(#ffda44, #fabc2b);
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
+    /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+    border-radius: 0 \0;
   }
   [role="complementary"] #monthly-list a:hover .archive-year, [role="complementary"] #monthly-list a:focus .archive-year {
     background-color: #fbcc5d;
@@ -572,6 +578,8 @@
     background-image: linear-gradient(#ffe477, #fbcc5d);
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
+    /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+    border-radius: 0 \0;
   }
   [role="complementary"] #monthly-list a .archive-month {
     border-radius: 0 0 5px 5px;
@@ -822,6 +830,8 @@
     /* display and zoom IE7 fix for display:inline-block */
     *display: inline;
     *zoom: 1;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     color: #333;
     background-color: #fabc2b;
     /* Konqueror */
@@ -840,8 +850,8 @@
     background-image: linear-gradient(#ffda44, #fabc2b);
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
-    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+    border-radius: 0 \0;
   }
   button:hover,
   .button:hover,
@@ -865,6 +875,8 @@
     background-image: linear-gradient(#ffe477, #fbcc5d);
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
+    /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+    border-radius: 0 \0;
   }
   button:active,
   .button:active,
@@ -891,6 +903,8 @@
     background-image: linear-gradient(#fabc2b, #ffda44);
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fabc2b',EndColorStr='#ffda44');
+    /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+    border-radius: 0 \0;
   }
 
   input[type="submit"].disabled,
@@ -917,6 +931,8 @@
     background-image: linear-gradient(#e6e6e6, #dadada);
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6e6e6',EndColorStr='#dadada');
+    /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+    border-radius: 0 \0;
   }
 
   #paginator {
@@ -982,9 +998,9 @@
   textarea:focus,
   button:focus {
     outline: 0;
-    background: #fdf5d9;
     -webkit-box-shadow: 0 0 5px #fabc2b;
     box-shadow: 0 0 5px #fabc2b;
+    background: #fdf5d9;
   }
 
 }
