@@ -23,7 +23,7 @@
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$color-gradient-from}',EndColorStr='#{$color-gradient-to}');
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0 \0;
+    border-radius: 0\0;
 }
 
 // drop shadows

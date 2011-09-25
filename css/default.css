@@ -169,7 +169,7 @@
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0 \0;
+    border-radius: 0\0;
   }
   nav h1 {
     display: none;
@@ -211,7 +211,7 @@
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0 \0;
+    border-radius: 0\0;
   }
 
   [role="main"] {
@@ -558,7 +558,7 @@
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0 \0;
+    border-radius: 0\0;
   }
   [role="complementary"] #monthly-list a:hover .archive-year, [role="complementary"] #monthly-list a:focus .archive-year {
     background-color: #fbcc5d;
@@ -579,7 +579,7 @@
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0 \0;
+    border-radius: 0\0;
   }
   [role="complementary"] #monthly-list a .archive-month {
     border-radius: 0 0 5px 5px;
@@ -851,7 +851,7 @@
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0 \0;
+    border-radius: 0\0;
   }
   button:hover,
   .button:hover,
@@ -876,7 +876,7 @@
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0 \0;
+    border-radius: 0\0;
   }
   button:active,
   .button:active,
@@ -904,7 +904,7 @@
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fabc2b',EndColorStr='#ffda44');
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0 \0;
+    border-radius: 0\0;
   }
 
   input[type="submit"].disabled,
@@ -932,7 +932,7 @@
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6e6e6',EndColorStr='#dadada');
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0 \0;
+    border-radius: 0\0;
   }
 
   #paginator {
