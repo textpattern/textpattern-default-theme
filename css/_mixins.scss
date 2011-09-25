@@ -4,7 +4,7 @@
 
 @mixin gradient($color-gradient-from, $color-gradient-to) {
     background: {
-        color: $color-gradient-from;
+        color: $color-gradient-to;
         /* Konqueror */
         image:  -khtml-gradient(linear, left top, left bottom, from($color-gradient-from), to($color-gradient-to));
         /* Safari4+, Chrome */

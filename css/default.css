@@ -151,7 +151,7 @@
   nav {
     border: solid 1px #e1a61a;
     border-radius: 0 0 5px 5px;
-    background-color: #ffda44;
+    background-color: #fabc2b;
     /* Konqueror */
     background-image:  -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
     /* Safari4+, Chrome */
@@ -191,7 +191,7 @@
   }
   nav a:hover, nav a:active {
     text-decoration: none;
-    background-color: #ffe477;
+    background-color: #fbcc5d;
     /* Konqueror */
     background-image:  -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
     /* Safari4+, Chrome */
@@ -536,7 +536,7 @@
     font-weight: bold;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, .5);
     border-radius: 5px 5px 0 0;
-    background-color: #ffda44;
+    background-color: #fabc2b;
     /* Konqueror */
     background-image:  -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
     /* Safari4+, Chrome */
@@ -555,7 +555,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
   }
   [role="complementary"] #monthly-list a:hover .archive-year, [role="complementary"] #monthly-list a:focus .archive-year {
-    background-color: #ffe477;
+    background-color: #fbcc5d;
     /* Konqueror */
     background-image:  -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
     /* Safari4+, Chrome */
@@ -822,8 +822,8 @@
     /* display and zoom IE7 fix for display:inline-block */
     *display: inline;
     *zoom: 1;
-    color: #333333;
-    background-color: #ffda44;
+    color: #333;
+    background-color: #fabc2b;
     /* Konqueror */
     background-image:  -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
     /* Safari4+, Chrome */
@@ -848,7 +848,7 @@
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    background-color: #ffe477;
+    background-color: #fbcc5d;
     /* Konqueror */
     background-image:  -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
     /* Safari4+, Chrome */
@@ -874,7 +874,7 @@
     position: relative;
     top: 1px;
     color: #1a1a1a;
-    background-color: #fabc2b;
+    background-color: #ffda44;
     /* Konqueror */
     background-image:  -khtml-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
     /* Safari4+, Chrome */
@@ -900,7 +900,7 @@
     cursor: default;
     border: solid 1px #d2d2d2;
     color: #999999;
-    background-color: #e6e6e6;
+    background-color: #dadada;
     /* Konqueror */
     background-image:  -khtml-gradient(linear, left top, left bottom, from(#e6e6e6), to(#dadada));
     /* Safari4+, Chrome */
