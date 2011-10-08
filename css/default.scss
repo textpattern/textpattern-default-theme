@@ -653,9 +653,7 @@ textarea {
     border: solid 1px $color-border;
     padding: .5em 5px .55em;
     background: #fff;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    @include box-sizing;
 
     &:hover, &:focus {
         background: $color-highlight-box;
@@ -704,7 +702,7 @@ textarea {
 /* addresses box sizing set to content-box and excess padding in IE8-9 */
 input[type="checkbox"],
 input[type="radio"] {
-    box-sizing: border-box;
+    @include box-sizing;
     padding: 0;
 }
 
