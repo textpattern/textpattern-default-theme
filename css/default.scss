@@ -238,13 +238,14 @@ a {
     -webkit-tap-highlight-color: rgba(255,230,153,.5);
     text-decoration: none;
     color: $color-link;
+
     &:hover, &:active { /* improves readability when focused and also mouse hovered in all browsers - people.opera.com/patrickl/experiments/keyboard/test */
         outline: 0;
     }
-}
 
-header a {
-    color: $color-text;
+    header & {
+        color: $color-text;
+    }
 }
 
 [role="main"] a,

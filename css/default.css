@@ -1,15 +1,11 @@
 /* =============================================================================
    Styling and layout for all media
    ========================================================================== */
-
-
 @media all {
-
   /* =============================================================================
      Abridged version of Normalize.css
      ========================================================================== */
   /* original authors: Nicolas Gallagher and Jonathan Neal - http://necolas.github.com/normalize.css/ */
-
   /* corrects block display not defined in IE6-9, Firefox3 */
   article,
   aside,
@@ -109,7 +105,6 @@
      Clearfix
      ========================================================================== */
   /* updated to prevent margin-collapsing on child elements in most situations - http://nicolasgallagher.com/micro-clearfix-hack/ */
-
   .clearfix {
     *zoom: 1;
   }
@@ -120,21 +115,14 @@
   .clearfix:after {
     clear: both;
   }
-
 }
-
-
 /* =============================================================================
    Styling and layout for screen media > 959px
    ========================================================================== */
-
-
 @media screen {
-
   /* =============================================================================
      Layout
      ========================================================================== */
-
   body {
     width: 960px;
     margin: 0 auto 20px;
@@ -142,8 +130,8 @@
   }
 
   header {
-    border-left: solid 1px #ccc;
-    border-right: solid 1px #ccc;
+    border-left: solid 1px #cccccc;
+    border-right: solid 1px #cccccc;
     padding: 10px 10px 0;
     background: #f0f2f6;
   }
@@ -153,7 +141,7 @@
     border-radius: 0 0 5px 5px;
     background-color: #fabc2b;
     /* Konqueror */
-    background-image:  -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
     /* Safari4+, Chrome */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
     /* Safari5.1+, Chrome10+ */
@@ -186,7 +174,7 @@
   }
   nav a {
     text-decoration: none;
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, .5);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
     display: block;
     padding: 10px;
     color: #333333;
@@ -195,7 +183,7 @@
     text-decoration: none;
     background-color: #fbcc5d;
     /* Konqueror */
-    background-image:  -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
     /* Safari4+, Chrome */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
     /* Safari5.1+, Chrome10+ */
@@ -223,7 +211,7 @@
   [role="complementary"] {
     float: left;
     margin: 20px 10px;
-    border: solid 1px #ccc;
+    border: solid 1px #cccccc;
     border-radius: 5px;
     padding: 10px 10px 0;
     width: 258px;
@@ -232,7 +220,7 @@
 
   footer {
     clear: both;
-    border: solid 1px #ccc;
+    border: solid 1px #cccccc;
     border-radius: 5px;
     padding: 10px;
     /* declare width to fix for IE7 double padding bug */
@@ -247,7 +235,6 @@
   /* =============================================================================
      Links
      ========================================================================== */
-
   a {
     -webkit-tap-highlight-color: rgba(255, 230, 153, 0.5);
     text-decoration: none;
@@ -257,7 +244,6 @@
     /* improves readability when focused and also mouse hovered in all browsers - people.opera.com/patrickl/experiments/keyboard/test */
     outline: 0;
   }
-
   header a {
     color: #333333;
   }
@@ -291,7 +277,6 @@
   /* =============================================================================
      Typography
      ========================================================================== */
-
   body {
     /* 13px / 16px */
     font-size: .8125em;
@@ -381,7 +366,7 @@
   kbd,
   samp,
   var {
-     padding: 1px 3px;
+    padding: 1px 3px;
   }
 
   pre {
@@ -420,7 +405,6 @@
   /* =============================================================================
      Embedded content
      ========================================================================== */
-
   /* removes border when inside 'a' element in IE7-9, Firefox3,
       improves image quality when scaled in IE7 - code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
   img {
@@ -445,7 +429,6 @@
   /* =============================================================================
      Tables
      ========================================================================== */
-
   table {
     margin-bottom: 1.3em;
     border-collapse: collapse;
@@ -491,7 +474,6 @@
   /* =============================================================================
      Lists
      ========================================================================== */
-
   [role="main"] ul, [role="main"] ol, [role="main"] dl,
   [role="complementary"] ul,
   [role="complementary"] ol,
@@ -515,7 +497,7 @@
     display: block;
     margin: 0 4px 6px 0;
     min-width: 36px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -538,11 +520,11 @@
     /* 15px / 10px */
     line-height: 1.5em;
     font-weight: bold;
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, .5);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
     border-radius: 5px 5px 0 0;
     background-color: #fabc2b;
     /* Konqueror */
-    background-image:  -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
     /* Safari4+, Chrome */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
     /* Safari5.1+, Chrome10+ */
@@ -563,7 +545,7 @@
   [role="complementary"] #monthly-list a:hover .archive-year, [role="complementary"] #monthly-list a:focus .archive-year {
     background-color: #fbcc5d;
     /* Konqueror */
-    background-image:  -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
     /* Safari4+, Chrome */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
     /* Safari5.1+, Chrome10+ */
@@ -605,7 +587,6 @@
   /* =============================================================================
      Forms
      ========================================================================== */
-
   /* corrects margin displayed oddly in IE6-7 */
   form {
     margin: 0;
@@ -687,15 +668,14 @@
     /* 15px / 11px */
     line-height: 1.36363636363636em;
     font-family: Verdana, "Lucida Grande", Tahoma, Arial, sans-serif;
-    border: solid 1px #ccc;
+    border: solid 1px #cccccc;
     padding: .5em 5px .55em;
     background: #fff;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  input[type="date"]:hover,
-  input[type="date"]:focus,
+  input[type="date"]:hover, input[type="date"]:focus,
   input[type="datetime"]:hover,
   input[type="datetime"]:focus,
   input[type="datetime-local"]:hover,
@@ -761,6 +741,8 @@
   /* addresses box sizing set to content-box and excess padding in IE8-9 */
   input[type="checkbox"],
   input[type="radio"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
   }
@@ -787,7 +769,6 @@
   /* =============================================================================
      Buttons
      ========================================================================== */
-
   /* make buttons play nice in IE: http://www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
   input,
   button,
@@ -818,7 +799,7 @@
     font-family: Verdana, "Lucida Grande", Tahoma, Arial, sans-serif;
     font-weight: normal;
     text-align: center;
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, .5);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
     outline: 0;
     cursor: pointer;
     border: solid 1px #e1a61a;
@@ -832,10 +813,10 @@
     *zoom: 1;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    color: #333;
+    color: #333333;
     background-color: #fabc2b;
     /* Konqueror */
-    background-image:  -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
     /* Safari4+, Chrome */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
     /* Safari5.1+, Chrome10+ */
@@ -860,7 +841,7 @@
   input[type="submit"]:hover {
     background-color: #fbcc5d;
     /* Konqueror */
-    background-image:  -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
     /* Safari4+, Chrome */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
     /* Safari5.1+, Chrome10+ */
@@ -888,7 +869,7 @@
     color: #1a1a1a;
     background-color: #ffda44;
     /* Konqueror */
-    background-image:  -khtml-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
     /* Safari4+, Chrome */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
     /* Safari5.1+, Chrome10+ */
@@ -916,7 +897,7 @@
     color: #999999;
     background-color: #dadada;
     /* Konqueror */
-    background-image:  -khtml-gradient(linear, left top, left bottom, from(#e6e6e6), to(#dadada));
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#e6e6e6), to(#dadada));
     /* Safari4+, Chrome */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), to(#dadada));
     /* Safari5.1+, Chrome10+ */
@@ -958,7 +939,6 @@
   /* =============================================================================
      Comments
      ========================================================================== */
-
   .comments {
     margin-bottom: 20px;
     border-radius: 5px;
@@ -1002,17 +982,11 @@
     box-shadow: 0 0 5px #fabc2b;
     background: #fdf5d9;
   }
-
 }
-
-
 /* =============================================================================
    Additional layout for screen media < 960px
    ========================================================================== */
-
-
 @media handheld and (max-width:480px),screen and (max-device-width:480px),screen and (max-width:960px) {
-
   body {
     width: 660px;
   }
@@ -1029,17 +1003,11 @@
   footer {
     width: 638px;
   }
-
 }
-
-
 /* =============================================================================
    Additional layout for screen media < 768px
    ========================================================================== */
-
-
 @media only screen and (max-width: 767px) {
-
   body {
     width: 440px;
   }
@@ -1080,17 +1048,11 @@
   .small input {
     width: 140px;
   }
-
 }
-
-
 /* =============================================================================
    Additional layout for screen media < 480px
    ========================================================================== */
-
-
 @media only screen and (max-width: 479px) {
-
   body {
     width: 300px;
   }
@@ -1107,24 +1069,18 @@
     margin-bottom: 1em;
     width: 260px;
   }
-
 }
-
-
 /* =============================================================================
    Styling and layout for print media
    ========================================================================== */
-
-
 @media print {
-
   * {
     /* black prints faster: http://sanbeiji.com/archives/953 */
     color: black !important;
     text-shadow: none !important;
     background: transparent !important;
     box-shadow: none !important;
-    filter:none !important;
+    filter: none !important;
   }
 
   @page {
@@ -1316,5 +1272,4 @@
     text-align: left;
     border-top: 1pt solid black;
   }
-
 }
