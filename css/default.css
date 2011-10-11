@@ -3,15 +3,16 @@
    ========================================================================== */
 
 
+
+
 @media all {
 
 
   /* =============================================================================
      Abridged version of Normalize.css
      ========================================================================== */
+
   /* original authors: Nicolas Gallagher and Jonathan Neal - http://necolas.github.com/normalize.css/ */
-
-
   /* corrects block display not defined in IE6-9, Firefox3 */
   article,
   aside,
@@ -112,7 +113,6 @@
      Clearfix
      ========================================================================== */
 
-
   /* updated to prevent margin-collapsing on child elements in most situations - http://nicolasgallagher.com/micro-clearfix-hack/ */
   .clearfix, nav, #monthly-list, .checkboxes span,
   .radiobuttons span, #paginator {
@@ -140,13 +140,14 @@
    ========================================================================== */
 
 
+
+
 @media screen {
 
 
   /* =============================================================================
      Layout
      ========================================================================== */
-
 
   body {
     width: 960px;
@@ -262,7 +263,6 @@
      Links
      ========================================================================== */
 
-
   a {
     -webkit-tap-highlight-color: rgba(255, 230, 153, 0.5);
     text-decoration: none;
@@ -306,7 +306,6 @@
   /* =============================================================================
      Typography
      ========================================================================== */
-
 
   body {
     /* 13px / 16px */
@@ -438,7 +437,6 @@
      Embedded content
      ========================================================================== */
 
-
   /* removes border when inside 'a' element in IE7-9, Firefox3,
       improves image quality when scaled in IE7 - code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
   img {
@@ -465,7 +463,6 @@
      Tables
      ========================================================================== */
 
-
   table {
     margin-bottom: 1.3em;
     border-collapse: collapse;
@@ -480,21 +477,19 @@
     margin-bottom: .5em;
   }
 
-  thead {
+  thead,
+  tfoot,
+  tbody {
     border-right: 1px solid #f0f2f6;
     border-left: 1px solid #f0f2f6;
+  }
+
+  thead {
     background: #f0f2f6;
   }
 
   tfoot {
-    border-right: 1px solid #f0f2f6;
-    border-left: 1px solid #f0f2f6;
     background: #f6f8fa;
-  }
-
-  tbody {
-    border-right: 1px solid #f0f2f6;
-    border-left: 1px solid #f0f2f6;
   }
 
   th,
@@ -512,7 +507,6 @@
   /* =============================================================================
      Lists
      ========================================================================== */
-
 
   [role="main"] ul, [role="main"] ol, [role="main"] dl,
   [role="complementary"] ul,
@@ -628,7 +622,6 @@
   /* =============================================================================
      Forms
      ========================================================================== */
-
 
   /* corrects margin displayed oddly in IE6-7 */
   form {
@@ -814,7 +807,6 @@
      Buttons
      ========================================================================== */
 
-
   /* make buttons play nice in IE: http://www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
   input,
   button,
@@ -987,7 +979,6 @@
      Comments
      ========================================================================== */
 
-
   .comments {
     margin-bottom: 20px;
     border-radius: 5px;
@@ -1021,6 +1012,11 @@
     color: #c00;
   }
 
+
+  /* =============================================================================
+     Accessibility
+     ========================================================================== */
+
   /* get rid of proprietary focus glows and add our own */
   a:focus,
   input:focus,
@@ -1041,6 +1037,8 @@
 /* =============================================================================
    Additional layout for screen media < 960px
    ========================================================================== */
+
+
 
 
 @media handheld and (max-width:480px),screen and (max-device-width:480px),screen and (max-width:960px) {
@@ -1072,6 +1070,8 @@
 /* =============================================================================
    Additional layout for screen media < 768px
    ========================================================================== */
+
+
 
 
 @media only screen and (max-width: 767px) {
@@ -1129,6 +1129,8 @@
    ========================================================================== */
 
 
+
+
 @media only screen and (max-width: 479px) {
 
 
@@ -1160,6 +1162,8 @@
    ========================================================================== */
 
 
+
+
 @media print {
 
 
@@ -1168,6 +1172,7 @@
     color: black !important;
     text-shadow: none !important;
     background: transparent !important;
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     filter: none !important;
   }
@@ -1179,7 +1184,7 @@
   body {
     font-size: 8pt;
     line-height: 12pt;
-    font-family: "Helvetica Neue", Helvetica, Arial, SunSans-Regular, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
     margin: 0;
     padding: 2em 6em;
   }
@@ -1330,21 +1335,16 @@
     margin-bottom: 4pt;
   }
 
-  thead {
-    /* display table head across multi-page tables: http://css-discuss.incutio.com/wiki/Printing_Tables */
-    display: table-header-group;
-    border-right: 1pt solid black;
-    border-left: 1pt solid black;
-  }
-
-  tfoot {
-    border-right: 1pt solid black;
-    border-left: 1pt solid black;
-  }
-
+  thead,
+  tfoot,
   tbody {
     border-right: 1pt solid black;
     border-left: 1pt solid black;
+  }
+
+  /* display table head across multi-page tables: http://css-discuss.incutio.com/wiki/Printing_Tables */
+  thead {
+    display: table-header-group;
   }
 
   tr {

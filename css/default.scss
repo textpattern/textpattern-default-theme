@@ -454,21 +454,19 @@ caption {
     margin-bottom: .5em;
 }
 
-thead {
+thead,
+tfoot,
+tbody {
     border-right: 1px solid $color-background-box;
     border-left: 1px solid $color-background-box;
+}
+
+thead {
     background: $color-background-box;
 }
 
 tfoot {
-    border-right: 1px solid $color-background-box;
-    border-left: 1px solid $color-background-box;
     background: lighten($color-background-box, 2%);
-}
-
-tbody {
-    border-right: 1px solid $color-background-box;
-    border-left: 1px solid $color-background-box;
 }
 
 th,
@@ -630,8 +628,7 @@ textarea {
 
 /* suppress red glow that Firefox adds to form fields by default, even when user is still typing */
 :invalid {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    @include box-shadow(none);
 }
 
 input[type="date"],
@@ -868,6 +865,10 @@ input[type="submit"].disabled,
 }
 
 
+/* =============================================================================
+   Accessibility
+   ========================================================================== */
+
 /* get rid of proprietary focus glows and add our own */
 a,
 input,
@@ -875,8 +876,7 @@ textarea,
 button {
     &:focus {
         outline: 0;
-        -webkit-box-shadow: 0 0 5px $color-text-highlight; 
-                box-shadow: 0 0 5px $color-text-highlight;
+        @include box-shadow(0 0 5px $color-text-highlight);
         background: $color-highlight-box;
     }
 }
@@ -1025,7 +1025,7 @@ blockquote {
     color: black !important;
     text-shadow: none !important;
     background: transparent !important;
-    box-shadow: none !important;
+    @include box-shadow(none !important);
     filter:none !important;
 }
 
@@ -1036,7 +1036,7 @@ blockquote {
 body {
     font-size: 8pt;
     line-height: 12pt;
-    font-family: "Helvetica Neue", Helvetica, Arial, SunSans-Regular, sans-serif;
+    font-family: $font-print;
     margin: 0;
     padding: 2em 6em;
 }
@@ -1191,21 +1191,16 @@ caption {
     margin-bottom: 4pt;
 }
 
-thead {
-    /* display table head across multi-page tables: http://css-discuss.incutio.com/wiki/Printing_Tables */
-    display: table-header-group;
-    border-right: 1pt solid black;
-    border-left: 1pt solid black;
-}
-
-tfoot {
-    border-right: 1pt solid black;
-    border-left: 1pt solid black;
-}
-
+thead,
+tfoot,
 tbody {
     border-right: 1pt solid black;
     border-left: 1pt solid black;
+}
+
+/* display table head across multi-page tables: http://css-discuss.incutio.com/wiki/Printing_Tables */
+thead {
+    display: table-header-group;
 }
 
 tr {
