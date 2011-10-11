@@ -1,11 +1,17 @@
 /* =============================================================================
    Styling and layout for all media
    ========================================================================== */
+
+
 @media all {
+
+
   /* =============================================================================
      Abridged version of Normalize.css
      ========================================================================== */
   /* original authors: Nicolas Gallagher and Jonathan Neal - http://necolas.github.com/normalize.css/ */
+
+
   /* corrects block display not defined in IE6-9, Firefox3 */
   article,
   aside,
@@ -101,28 +107,47 @@
     padding: 0;
   }
 
+
   /* =============================================================================
      Clearfix
      ========================================================================== */
+
+
   /* updated to prevent margin-collapsing on child elements in most situations - http://nicolasgallagher.com/micro-clearfix-hack/ */
-  .clearfix {
+  .clearfix, nav, #monthly-list, .checkboxes span,
+  .radiobuttons span, #paginator {
     *zoom: 1;
   }
-  .clearfix:before, .clearfix:after {
+  .clearfix:before, nav:before, #monthly-list:before, .checkboxes span:before,
+  .radiobuttons span:before, #paginator:before, .clearfix:after, nav:after, #monthly-list:after, .checkboxes span:after,
+  .radiobuttons span:after, #paginator:after {
     content: "";
     display: table;
   }
-  .clearfix:after {
+  .clearfix:after, nav:after, #monthly-list:after, .checkboxes span:after,
+  .radiobuttons span:after, #paginator:after {
     clear: both;
   }
+
+
 }
+
+
+
+
 /* =============================================================================
    Styling and layout for screen media > 959px
    ========================================================================== */
+
+
 @media screen {
+
+
   /* =============================================================================
      Layout
      ========================================================================== */
+
+
   body {
     width: 960px;
     margin: 0 auto 20px;
@@ -232,9 +257,12 @@
     margin-bottom: 1em;
   }
 
+
   /* =============================================================================
      Links
      ========================================================================== */
+
+
   a {
     -webkit-tap-highlight-color: rgba(255, 230, 153, 0.5);
     text-decoration: none;
@@ -274,9 +302,12 @@
     background: #f0f2f6;
   }
 
+
   /* =============================================================================
      Typography
      ========================================================================== */
+
+
   body {
     /* 13px / 16px */
     font-size: .8125em;
@@ -402,9 +433,12 @@
     font-style: italic;
   }
 
+
   /* =============================================================================
      Embedded content
      ========================================================================== */
+
+
   /* removes border when inside 'a' element in IE7-9, Firefox3,
       improves image quality when scaled in IE7 - code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
   img {
@@ -426,9 +460,12 @@
     margin: 0 0 1.3em;
   }
 
+
   /* =============================================================================
      Tables
      ========================================================================== */
+
+
   table {
     margin-bottom: 1.3em;
     border-collapse: collapse;
@@ -471,9 +508,12 @@
     border-top: 1px solid #f0f2f6;
   }
 
+
   /* =============================================================================
      Lists
      ========================================================================== */
+
+
   [role="main"] ul, [role="main"] ol, [role="main"] dl,
   [role="complementary"] ul,
   [role="complementary"] ol,
@@ -584,9 +624,12 @@
     padding-top: 1em;
   }
 
+
   /* =============================================================================
      Forms
      ========================================================================== */
+
+
   /* corrects margin displayed oddly in IE6-7 */
   form {
     margin: 0;
@@ -766,9 +809,12 @@
     display: block;
   }
 
+
   /* =============================================================================
      Buttons
      ========================================================================== */
+
+
   /* make buttons play nice in IE: http://www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
   input,
   button,
@@ -936,9 +982,12 @@
     float: right;
   }
 
+
   /* =============================================================================
      Comments
      ========================================================================== */
+
+
   .comments {
     margin-bottom: 20px;
     border-radius: 5px;
@@ -982,11 +1031,21 @@
     box-shadow: 0 0 5px #fabc2b;
     background: #fdf5d9;
   }
+
+
 }
+
+
+
+
 /* =============================================================================
    Additional layout for screen media < 960px
    ========================================================================== */
+
+
 @media handheld and (max-width:480px),screen and (max-device-width:480px),screen and (max-width:960px) {
+
+
   body {
     width: 660px;
   }
@@ -1003,11 +1062,21 @@
   footer {
     width: 638px;
   }
+
+
 }
+
+
+
+
 /* =============================================================================
    Additional layout for screen media < 768px
    ========================================================================== */
+
+
 @media only screen and (max-width: 767px) {
+
+
   body {
     width: 440px;
   }
@@ -1048,11 +1117,21 @@
   .small input {
     width: 140px;
   }
+
+
 }
+
+
+
+
 /* =============================================================================
    Additional layout for screen media < 480px
    ========================================================================== */
+
+
 @media only screen and (max-width: 479px) {
+
+
   body {
     width: 300px;
   }
@@ -1069,11 +1148,21 @@
     margin-bottom: 1em;
     width: 260px;
   }
+
+
 }
+
+
+
+
 /* =============================================================================
    Styling and layout for print media
    ========================================================================== */
+
+
 @media print {
+
+
   * {
     /* black prints faster: http://sanbeiji.com/archives/953 */
     color: black !important;
@@ -1272,4 +1361,6 @@
     text-align: left;
     border-top: 1pt solid black;
   }
+
+
 }

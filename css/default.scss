@@ -168,6 +168,7 @@ nav {
     border: solid 1px $color-gradient-border;
     border-radius: 0 0 $border-radius $border-radius;
     @include gradient;
+    @extend .clearfix;
 
     h1 {
         display: none;
@@ -502,6 +503,7 @@ dt {
     list-style: none;
     margin: 0;
     padding: 5px 0 10px;
+    @extend .clearfix;
 
     li {
         text-align: center;
@@ -713,6 +715,7 @@ input[type="radio"] {
 
     span {
         display: block;
+        @extend .clearfix;
     }
 
     input {
@@ -801,6 +804,7 @@ input[type="submit"].disabled,
 
 #paginator {
     margin: 1em 0;
+    @extend .clearfix;
 
     .button {
         padding: .1em .66em;

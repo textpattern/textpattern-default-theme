@@ -16,7 +16,7 @@
     <p class="large"><label for="web"><txp:text item="comment_web" /></label><br>
     <txp:comment_web_input /></p> <!-- Textpattern currently does not currently use HTML5 input type="url" -->
 
-    <p class="checkboxes"><span class="clearfix"><txp:comment_remember /></span></p>
+    <p class="checkboxes"><span><txp:comment_remember /></span></p>
 
     <p class="small"><label for="message"><txp:text item="comment_message" /> <b class="required">*</b></label><br>
     <txp:comment_message_input /></p>

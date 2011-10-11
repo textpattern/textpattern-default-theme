@@ -53,7 +53,7 @@
     </header>
 
 <!-- navigation -->
-    <nav role="navigation" class="clearfix">
+    <nav role="navigation">
         <h1><txp:text item="navigation" /></h1>
         <txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="li">
             <txp:section link="1" title="1" />
@@ -70,7 +70,7 @@
 
         <!-- add pagination links to foot of article/article listings if there are more articles available,
             this method is more flexibile than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
-        <p id="paginator" class="clearfix">
+        <p id="paginator">
 
         <txp:if_individual_article>
 
@@ -117,7 +117,7 @@
         <p><txp:feed_link label="RSS" class="feed-rss" /> / <txp:feed_link flavor="atom" label="Atom" class="feed-atom" /></p>
 
         <h4><txp:text item="recent_articles" /></h4>
-        <ul id="monthly-list" class="clearfix">
+        <ul id="monthly-list">
             <!-- using if_different tag to populate list only with months that actually contain articles -->
             <txp:article_custom section="articles" limit="12">
                 <txp:if_different>

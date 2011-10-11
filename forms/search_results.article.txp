@@ -46,7 +46,7 @@
     this method is more flexibile than using simple txp:older/txp:newer tags -->
     <txp:if_search_results min="11">
 
-        <p id="paginator" class="clearfix">
+        <p id="paginator">
 
         <txp:variable name="prev" value='<txp:older />' />
         <txp:variable name="next" value='<txp:newer />' />
