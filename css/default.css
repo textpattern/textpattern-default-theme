@@ -61,7 +61,7 @@
     quotes: none;
   }
   q:before, q:after {
-    content: '';
+    content: "";
     content: none;
   }
 
@@ -357,7 +357,7 @@
   kbd,
   samp,
   var {
-    font-family: Cousine, Consolas, Monaco, monospace;
+    font-family: Cousine, Consolas, Monaco, "Courier New", monospace;
     background: #fdf5d9;
     border-radius: 5px;
   }
