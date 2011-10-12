@@ -11,8 +11,8 @@
   /* =============================================================================
      Abridged version of Normalize.css
      ========================================================================== */
-
   /* original authors: Nicolas Gallagher and Jonathan Neal - http://necolas.github.com/normalize.css/ */
+
   /* corrects block display not defined in IE6-9, Firefox3 */
   article,
   aside,
@@ -67,6 +67,7 @@
   q {
     quotes: none;
   }
+
   q:before, q:after {
     content: "";
     content: none;
@@ -112,18 +113,20 @@
   /* =============================================================================
      Clearfix
      ========================================================================== */
-
   /* updated to prevent margin-collapsing on child elements in most situations - http://nicolasgallagher.com/micro-clearfix-hack/ */
+
   .clearfix, nav, #monthly-list, .checkboxes span,
   .radiobuttons span, #paginator {
     *zoom: 1;
   }
+
   .clearfix:before, nav:before, #monthly-list:before, .checkboxes span:before,
   .radiobuttons span:before, #paginator:before, .clearfix:after, nav:after, #monthly-list:after, .checkboxes span:after,
   .radiobuttons span:after, #paginator:after {
     content: "";
     display: table;
   }
+
   .clearfix:after, nav:after, #monthly-list:after, .checkboxes span:after,
   .radiobuttons span:after, #paginator:after {
     clear: both;
@@ -185,19 +188,23 @@
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
     border-radius: 0\0;
   }
+
   nav h1 {
     display: none;
   }
+
   nav ul {
     list-style: none;
     list-style-image: none;
     margin: 0;
   }
+
   nav li {
     float: left;
     margin: 0;
     border-right: solid 1px #e1a61a;
   }
+
   nav a {
     text-decoration: none;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
@@ -205,7 +212,9 @@
     padding: 10px;
     color: #333333;
   }
-  nav a:hover, nav a:active {
+
+  nav a:hover,
+  nav a:active {
     text-decoration: none;
     background-color: #fbcc5d;
     /* Konqueror */
@@ -264,26 +273,31 @@
      ========================================================================== */
 
   a {
-    -webkit-tap-highlight-color: rgba(255, 230, 153, 0.5);
+    -webkit-tap-highlight-color: rgba(0, 102, 255, 0.5);
     text-decoration: none;
     color: #1a428b;
   }
-  a:hover, a:active {
+
+  a:hover,
+  a:active {
     /* improves readability when focused and also mouse hovered in all browsers - people.opera.com/patrickl/experiments/keyboard/test */
     outline: 0;
   }
+
   header a {
     color: #333333;
   }
 
-  [role="main"] a:hover, [role="main"] a:active,
+  [role="main"] a:hover,
+  [role="main"] a:active,
   [role="complementary"] a:hover,
   [role="complementary"] a:active,
   footer a:hover,
   footer a:active {
     text-decoration: underline;
-    color: #1a428b;
+    color: #0066ff;
   }
+
   [role="main"] a:visited,
   [role="complementary"] a:visited,
   footer a:visited {
@@ -293,9 +307,11 @@
   [role="main"] h1 a {
     color: #333333;
   }
+
   [role="main"] h1 a:visited {
     color: #333333;
   }
+
   [role="main"] h1 a:hover, [role="main"] h1 a:active {
     text-decoration: none;
     color: #333333;
@@ -449,7 +465,10 @@
     overflow: hidden;
   }
 
-  article img, article embed, article object, article video {
+  article img,
+  article embed,
+  article object,
+  article video {
     max-width: 100%;
     margin: 3px 0;
   }
@@ -508,7 +527,9 @@
      Lists
      ========================================================================== */
 
-  [role="main"] ul, [role="main"] ol, [role="main"] dl,
+  [role="main"] ul,
+  [role="main"] ol,
+  [role="main"] dl,
   [role="complementary"] ul,
   [role="complementary"] ol,
   [role="complementary"] dl {
@@ -525,6 +546,7 @@
     margin: 0;
     padding: 5px 0 10px;
   }
+
   [role="complementary"] #monthly-list li {
     text-align: center;
     float: left;
@@ -537,17 +559,23 @@
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     background: #fff;
   }
+
   [role="complementary"] #monthly-list li:active {
     position: relative;
     top: 1px;
   }
+
   [role="complementary"] #monthly-list a {
+    display: block;
     text-decoration: none;
     color: #333333;
   }
-  [role="complementary"] #monthly-list a:hover, [role="complementary"] #monthly-list a:focus {
+
+  [role="complementary"] #monthly-list a:hover,
+  [role="complementary"] #monthly-list a:focus {
     color: #1a1a1a;
   }
+
   [role="complementary"] #monthly-list a .archive-year {
     /* 10px / 13px */
     font-size: .76923076923077em;
@@ -576,7 +604,9 @@
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
     border-radius: 0\0;
   }
-  [role="complementary"] #monthly-list a:hover .archive-year, [role="complementary"] #monthly-list a:focus .archive-year {
+
+  [role="complementary"] #monthly-list a:hover .archive-year,
+  [role="complementary"] #monthly-list a:focus .archive-year {
     background-color: #fbcc5d;
     /* Konqueror */
     background-image: -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
@@ -597,12 +627,16 @@
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
     border-radius: 0\0;
   }
+
   [role="complementary"] #monthly-list a .archive-month {
     border-radius: 0 0 5px 5px;
   }
-  [role="complementary"] #monthly-list a:hover .archive-month, [role="complementary"] #monthly-list a:focus .archive-month {
+
+  [role="complementary"] #monthly-list a:hover .archive-month,
+  [role="complementary"] #monthly-list a:focus .archive-month {
     background: #fdf5d9;
   }
+
   [role="complementary"] #monthly-list span {
     display: block;
   }
@@ -644,7 +678,17 @@
     cursor: pointer;
   }
 
-  input[disabled] {
+  button[disabled],
+  input[disabled],
+  select[disabled],
+  select[disabled] option,
+  select[disabled] optgroup,
+  textarea[disabled] {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
     cursor: default;
   }
 
@@ -710,35 +754,6 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-  }
-  input[type="date"]:hover, input[type="date"]:focus,
-  input[type="datetime"]:hover,
-  input[type="datetime"]:focus,
-  input[type="datetime-local"]:hover,
-  input[type="datetime-local"]:focus,
-  input[type="email"]:hover,
-  input[type="email"]:focus,
-  input[type="month"]:hover,
-  input[type="month"]:focus,
-  input[type="number"]:hover,
-  input[type="number"]:focus,
-  input[type="password"]:hover,
-  input[type="password"]:focus,
-  input[type="search"]:hover,
-  input[type="search"]:focus,
-  input[type="tel"]:hover,
-  input[type="tel"]:focus,
-  input[type="text"]:hover,
-  input[type="text"]:focus,
-  input[type="time"]:hover,
-  input[type="time"]:focus,
-  input[type="url"]:hover,
-  input[type="url"]:focus,
-  input[type="week"]:hover,
-  input[type="week"]:focus,
-  textarea:hover,
-  textarea:focus {
-    background: #fdf5d9;
   }
 
   input[type="search"] {
@@ -838,7 +853,6 @@
     font-weight: normal;
     text-align: center;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
-    outline: 0;
     cursor: pointer;
     border: solid 1px #e1a61a;
     border-radius: 5px;
@@ -849,8 +863,6 @@
     /* display and zoom IE7 fix for display:inline-block */
     *display: inline;
     *zoom: 1;
-    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     color: #333333;
     background-color: #fabc2b;
     /* Konqueror */
@@ -871,7 +883,10 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
     border-radius: 0\0;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   }
+
   button:hover,
   .button:hover,
   input[type="button"]:hover,
@@ -897,6 +912,7 @@
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
     border-radius: 0\0;
   }
+
   button:active,
   .button:active,
   input[type="button"]:active,
@@ -985,9 +1001,11 @@
     padding: 1em 10px 0;
     background: #f6f8fa;
   }
+
   .comments h4 span {
     font-weight: normal;
   }
+
   .comments h4 .comment-anchor {
     float: right;
   }
@@ -1017,15 +1035,27 @@
      Accessibility
      ========================================================================== */
 
-  /* get rid of proprietary focus glows and add our own */
-  a:focus,
+  a:focus {
+    outline: thin dotted #0066ff;
+  }
+
+  .button:focus,
+  .button:active,
+  button:focus,
+  button:active,
   input:focus,
+  input:active,
+  select:focus,
+  select:active,
   textarea:focus,
-  button:focus {
+  textarea:active,
+  [role="complementary"] #monthly-list a:focus,
+  [role="complementary"] #monthly-list a:active {
     outline: 0;
-    -webkit-box-shadow: 0 0 5px #fabc2b;
-    box-shadow: 0 0 5px #fabc2b;
-    background: #fdf5d9;
+    -webkit-box-shadow: 0 0 7px #0066ff;
+    box-shadow: 0 0 7px #0066ff;
+    /* Opera */
+    z-index: 1;
   }
 
 
@@ -1179,7 +1209,7 @@
 
   @page {
     margin: 0.5cm;
-}
+  }
 
   body {
     font-size: 8pt;
