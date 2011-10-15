@@ -186,7 +186,7 @@
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0\0;
+    border-radius: 0 \0;
   }
 
   nav h1 {
@@ -234,7 +234,7 @@
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0\0;
+    border-radius: 0 \0;
   }
 
   [role="main"] {
@@ -602,7 +602,7 @@
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0\0;
+    border-radius: 0 \0;
   }
 
   [role="complementary"] #monthly-list a:hover .archive-year,
@@ -625,7 +625,7 @@
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0\0;
+    border-radius: 0 \0;
   }
 
   [role="complementary"] #monthly-list a .archive-month {
@@ -686,8 +686,9 @@
   textarea[disabled] {
     -webkit-box-shadow: none;
     box-shadow: none;
+    -khtml-user-select: none;
     -webkit-user-select: none;
-    -moz-user-select: none;
+    -moz-user-select: -moz-none;
     user-select: none;
     cursor: default;
   }
@@ -882,7 +883,7 @@
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0\0;
+    border-radius: 0 \0;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   }
@@ -910,7 +911,7 @@
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0\0;
+    border-radius: 0 \0;
   }
 
   button:active,
@@ -939,7 +940,7 @@
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fabc2b',EndColorStr='#ffda44');
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0\0;
+    border-radius: 0 \0;
   }
 
   input[type="submit"].disabled,
@@ -967,7 +968,7 @@
     /* IE7-9 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6e6e6',EndColorStr='#dadada');
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0\0;
+    border-radius: 0 \0;
   }
 
   #paginator {

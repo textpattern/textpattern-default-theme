@@ -89,10 +89,10 @@ sup {
     vertical-align: baseline;
 }
 sup {
-    top: -0.5em;
+    top: -.5em;
 }
 sub {
-    bottom: -0.25em;
+    bottom: -.25em;
 }
 
 /* make table cells align top by default */
@@ -601,8 +601,9 @@ select[disabled] option,
 select[disabled] optgroup,
 textarea[disabled] {
     @include box-shadow(none);
+     -khtml-user-select: none;
     -webkit-user-select: none;
-       -moz-user-select: none;
+       -moz-user-select: -moz-none;
             user-select: none;
     cursor: default;
 }
@@ -1045,7 +1046,7 @@ blockquote {
 }
 
 @page {
-    margin: 0.5cm;
+    margin: .5cm;
 }
 
 body {
