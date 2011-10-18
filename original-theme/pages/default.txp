@@ -81,11 +81,11 @@
 <txp:if_individual_article>
         <div class="divider"><txp:image id="1" /></div>
 
-        <p><txp:link_to_prev>&#171; <txp:prev_title /></txp:link_to_prev> 
-            <txp:link_to_next><txp:next_title /> &#187;</txp:link_to_next></p>
+        <p><txp:link_to_prev>&larr; <txp:prev_title /></txp:link_to_prev> 
+            <txp:link_to_next><txp:next_title /> &rarr;</txp:link_to_next></p>
 <txp:else />
-        <p><txp:older>&#171; <txp:text item="older" /></txp:older> 
-            <txp:newer><txp:text item="newer" /> &#187;</txp:newer></p>
+        <p><txp:older>&larr; <txp:text item="older" /></txp:older> 
+            <txp:newer><txp:text item="newer" /> &rarr;</txp:newer></p>
 </txp:if_individual_article>
     </div>
 
