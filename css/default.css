@@ -1041,17 +1041,11 @@
   }
 
   .button:focus,
-  .button:active,
   button:focus,
-  button:active,
   input:focus,
-  input:active,
   select:focus,
-  select:active,
   textarea:focus,
-  textarea:active,
-  [role="complementary"] #monthly-list a:focus,
-  [role="complementary"] #monthly-list a:active {
+  [role="complementary"] #monthly-list a:focus {
     outline: 0;
     -webkit-box-shadow: 0 0 7px #0066ff;
     box-shadow: 0 0 7px #0066ff;
