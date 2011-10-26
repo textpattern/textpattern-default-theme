@@ -283,16 +283,13 @@ footer a {
    ========================================================================== */
 
 body {
-    /* 13px / 16px */
-    font-size: .8125em;
-    /* 19px / 13px */
-    line-height: 1.46153846153846em;
+    font-size: $basefont;
+    line-height: $baseline;
     font-family: $font-body;
     color: $color-text;
 }
 
 h1 {
-    /* 39px / 13px */
     font-size: 3em;
     /* 44px / 39px */
     line-height: 1.12820512820513em;
@@ -307,27 +304,24 @@ h1 {
 
 h2,
 h3 {
-    /* 24px / 13px */
-    font-size: 1.84615384615385em;
-    /* 32px / 24px */
-    line-height: 1.33333333333333em;
+    font-size: 2em;
+    /* 32px / 26px */
+    line-height: 1.23076923076923em;
     font-family: $font-secondary;
     font-weight: normal;
     font-style: italic;
     margin: 0;
     /* 13px / 26px */
-    padding-bottom:.5em;
+    padding-bottom: .5em;
 }
 
 h4 {
-    /* 13px / 13px */
     font-size: 1em;
     margin: 0;
 }
 
 p {
     margin: 0;
-    /* 13px / 13px */
     padding-bottom: 1em;
 }
 
@@ -391,8 +385,7 @@ small,
 figcaption,
 tfoot,
 .footnote {
-    /* 11px / 13px */
-    font-size: .84615384615385em;
+    font-size: $smallfont;
     /* 15px / 11px */
     line-height: 1.36363636363636em;
 }
@@ -656,8 +649,7 @@ input[type="time"],
 input[type="url"],
 input[type="week"],
 textarea {
-    /* 11px / 13px */
-    font-size: .84615384615385em;
+    font-size: 11px;
     /* 15px / 11px */
     line-height: 1.36363636363636em;
     font-family: $font-body;
@@ -761,8 +753,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    /* 11px / 13px */
-    font-size: .84615384615385em;
+    font-size: $smallfont;
     /* 15px / 11px */
     line-height: 1.36363636363636em;
     font-family: $font-body;
