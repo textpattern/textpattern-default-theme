@@ -1,0 +1,13 @@
+<!-- yepnope alternaive version - jQuery - load from Google CDN first, load locally if CDN is unavailable -->
+<script>
+yepnope([
+    {
+        load : '//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js',
+        complete: function () {
+            if (!window.jQuery) {
+                yepnope('<txp:site_url />js/jquery.js');
+            }
+        }
+	}
+]);
+</script>
