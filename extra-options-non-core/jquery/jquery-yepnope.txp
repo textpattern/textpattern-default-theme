@@ -9,6 +9,6 @@ yepnope([
                 yepnope('<txp:site_url />js/jquery.js');
             }
         }
-	}}
+	}
 ]);
 </script>
