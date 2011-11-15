@@ -68,7 +68,8 @@
     quotes: none;
   }
 
-  q:before, q:after {
+  q:before,
+  q:after {
     content: "";
     content: none;
   }
@@ -115,20 +116,37 @@
      ========================================================================== */
   /* updated to prevent margin-collapsing on child elements in most situations - http://nicolasgallagher.com/micro-clearfix-hack/ */
 
-  .clearfix, nav, #monthly-list, .checkboxes span,
-  .radiobuttons span, #paginator {
+  .clearfix,
+  nav,
+  #monthly-list,
+  .checkboxes span,
+  .radiobuttons span,
+  #paginator {
     *zoom: 1;
   }
 
-  .clearfix:before, nav:before, #monthly-list:before, .checkboxes span:before,
-  .radiobuttons span:before, #paginator:before, .clearfix:after, nav:after, #monthly-list:after, .checkboxes span:after,
-  .radiobuttons span:after, #paginator:after {
+  .clearfix:before,
+  nav:before,
+  #monthly-list:before,
+  .checkboxes span:before,
+  .radiobuttons span:before,
+  #paginator:before,
+  .clearfix:after,
+  nav:after,
+  #monthly-list:after,
+  .checkboxes span:after,
+  .radiobuttons span:after,
+  #paginator:after {
     content: "";
     display: table;
   }
 
-  .clearfix:after, nav:after, #monthly-list:after, .checkboxes span:after,
-  .radiobuttons span:after, #paginator:after {
+  .clearfix:after,
+  nav:after,
+  #monthly-list:after,
+  .checkboxes span:after,
+  .radiobuttons span:after,
+  #paginator:after {
     clear: both;
   }
 
@@ -205,17 +223,7 @@
     border-right: solid 1px #e1a61a;
   }
 
-  nav a {
-    text-decoration: none;
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
-    display: block;
-    padding: 10px;
-    color: #333333;
-  }
-
-  nav a:hover,
-  nav a:active {
-    text-decoration: none;
+  nav li:hover {
     background-color: #fbcc5d;
     /* Konqueror */
     background-image: -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
@@ -235,6 +243,35 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
     /* hack to remove any border-radius in IE9 so we can keep filter gradients */
     border-radius: 0 \0;
+  }
+
+  nav li:active {
+    background-color: #ffda44;
+    /* Konqueror */
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
+    /* Safari4+, Chrome */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
+    /* Safari5.1+, Chrome10+ */
+    background-image: -webkit-linear-gradient(#fabc2b, #ffda44);
+    /* Firefox3.6 */
+    background-image: -moz-linear-gradient(#fabc2b, #ffda44);
+    /* IE10 */
+    background-image: -ms-linear-gradient(#fabc2b, #ffda44);
+    /* Opera11.10+ */
+    background-image: -o-linear-gradient(#fabc2b, #ffda44);
+    /* CSS3 Compliant */
+    background-image: linear-gradient(#fabc2b, #ffda44);
+    /* IE7-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fabc2b',EndColorStr='#ffda44');
+    /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+    border-radius: 0 \0;
+  }
+
+  nav a {
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+    display: block;
+    padding: 10px;
+    color: #333333;
   }
 
   [role="main"] {
@@ -273,9 +310,10 @@
      ========================================================================== */
 
   a {
-    -webkit-tap-highlight-color: rgba(0, 102, 255, 0.5);
+    position: relative;
     text-decoration: none;
     color: #1a428b;
+    -webkit-tap-highlight-color: rgba(0, 102, 255, 0.5);
   }
 
   a:hover,
@@ -284,8 +322,18 @@
     outline: 0;
   }
 
+  a:active {
+    top: 1px;
+  }
+
   header a {
     color: #333333;
+  }
+
+  [role="main"] a,
+  [role="complementary"] a,
+  footer a {
+
   }
 
   [role="main"] a:hover,
@@ -312,7 +360,8 @@
     color: #333333;
   }
 
-  [role="main"] h1 a:hover, [role="main"] h1 a:active {
+  [role="main"] h1 a:hover,
+  [role="main"] h1 a:active {
     text-decoration: none;
     color: #333333;
     background: #f0f2f6;
@@ -568,6 +617,10 @@
   [role="complementary"] #monthly-list a:hover,
   [role="complementary"] #monthly-list a:focus {
     color: #1a1a1a;
+  }
+
+  [role="complementary"] #monthly-list a:active {
+    top: 0;
   }
 
   [role="complementary"] #monthly-list a .archive-year {

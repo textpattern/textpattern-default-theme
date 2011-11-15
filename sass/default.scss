@@ -184,19 +184,21 @@ nav {
         float: left;
         margin: 0;
         border-right: solid 1px $color-gradient-border;
+
+        &:hover {
+            @include gradient(lighten($color-gradient-from, 10%), lighten($color-gradient-to, 10%));
+        }
+
+        &:active {
+            @include gradient($color-gradient-to, $color-gradient-from);
+        }
     }
 
     a {
-        text-decoration: none;
         @include text-shadow-light;
         display: block;
         padding: 10px;
         color: $color-text;
-
-        &:hover, &:active {
-            text-decoration: none;
-            @include gradient(lighten($color-gradient-from, 10%), lighten($color-gradient-to, 10%));
-        }
     }
 }
 
@@ -236,12 +238,17 @@ footer {
    ========================================================================== */
 
 a {
-    -webkit-tap-highlight-color: rgba($color-link-hover,.5);
+    position: relative;
     text-decoration: none;
     color: $color-link;
+    -webkit-tap-highlight-color: rgba($color-link-hover,.5);
 
     &:hover, &:active { /* improves readability when focused and also mouse hovered in all browsers - people.opera.com/patrickl/experiments/keyboard/test */
         outline: 0;
+    }
+
+    &:active {
+        top: 1px;
     }
 
     header & {
@@ -252,6 +259,7 @@ a {
 [role="main"] a,
 [role="complementary"] a,
 footer a {
+    
 
     &:hover, &:active {
         text-decoration: underline;
@@ -520,6 +528,10 @@ dt {
 
         &:hover, &:focus {
             color: darken($color-text, 10%);
+        }
+
+        &:active {
+            top: 0;
         }
 
         .archive-year {
