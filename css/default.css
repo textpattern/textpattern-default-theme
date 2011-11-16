@@ -795,6 +795,7 @@
     /* 15px / 11px */
     line-height: 1.36363636363636em;
     font-family: Verdana, "Lucida Grande", Tahoma, Arial, sans-serif;
+    text-align: left;
     border: solid 1px #cccccc;
     padding: .5em 5px .55em;
     background: #fff;
