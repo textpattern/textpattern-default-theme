@@ -330,12 +330,6 @@
     color: #333333;
   }
 
-  [role="main"] a,
-  [role="complementary"] a,
-  footer a {
-
-  }
-
   [role="main"] a:hover,
   [role="main"] a:active,
   [role="complementary"] a:hover,
@@ -454,7 +448,8 @@
   code,
   kbd,
   samp,
-  var {
+  var,
+  mark {
     padding: 1px 3px;
   }
 
@@ -475,8 +470,7 @@
   figcaption,
   tfoot,
   .footnote {
-    /* 11px / 13px */
-    font-size: .84615384615385em;
+    font-size: 11px;
     /* 15px / 11px */
     line-height: 1.36363636363636em;
   }
@@ -716,15 +710,7 @@
     padding: 0;
   }
 
-  /* hand cursor on clickable input elements (except disabled ones) */
-  label,
-  input[type="button"],
-  input[type="submit"],
-  input[type="reset"],
-  button {
-    cursor: pointer;
-  }
-
+  /* make sure disable elements really are disabled */
   button[disabled],
   input[disabled],
   select[disabled],
@@ -1249,7 +1235,7 @@
   }
 
   @page {
-    margin: 0.5cm;
+    margin: .5cm;
   }
 
   body {

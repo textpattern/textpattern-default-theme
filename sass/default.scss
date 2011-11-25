@@ -372,7 +372,8 @@ var {
 code,
 kbd,
 samp,
-var {
+var,
+mark {
     padding: 1px 3px;
 }
 
@@ -477,7 +478,7 @@ td {
 }
 
 th {
-    text-align:left;
+    text-align: left;
     border-top: 1px solid $color-background-box;
 }
 
@@ -591,14 +592,7 @@ fieldset {
     padding: 0;
 }
 
-/* hand cursor on clickable input elements (except disabled ones) */
-label,
-input[type="button"],
-input[type="submit"],
-input[type="reset"],
-button {
-    cursor: pointer;
-}
+/* make sure disable elements really are disabled */
 button[disabled],
 input[disabled],
 select[disabled],
