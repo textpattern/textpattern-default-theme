@@ -427,7 +427,7 @@ q {
     background: #fdf5d9;
 }
 
-/* addresses styling not present in IE7-9, Safari5, Chrome */
+/* addresses styling not present in IE7-9, Safari5, Chrome (note: acroymn to be phased out in Textile as it's obsolete in HTML5) */
 abbr[title],
 acronym[title],
 dfn[title] {
@@ -1281,7 +1281,7 @@ a[rel="tag"]:after {
     content: "";
 }
 
-/* show long-form for abbreviations in print (acronym to be phased out of textile in favour of abbr) */
+/* show long-form for abbreviations in print (note: acroymn to be phased out in Textile as it's obsolete in HTML5) */
 abbr[title]:after,
 acronym[title]:after {
     content: " (" attr(title) ")";

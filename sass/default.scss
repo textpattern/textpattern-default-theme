@@ -351,9 +351,9 @@ q {
     background: $color-highlight-box;
 }
 
-/* addresses styling not present in IE7-9, Safari5, Chrome */
+/* addresses styling not present in IE7-9, Safari5, Chrome (note: acroymn to be phased out in Textile as it's obsolete in HTML5) */
 abbr[title],
-acronym[title], /* note: acroymn to be phased out in Textile as it's obsolete in HTML5 */
+acronym[title],
 dfn[title] {
     border-bottom: 1px dotted;
     cursor: help;
@@ -1079,7 +1079,7 @@ a[rel="tag"] {
     }
 }
 
-/* show long-form for abbreviations in print (acronym to be phased out of textile in favour of abbr) */
+/* show long-form for abbreviations in print (note: acroymn to be phased out in Textile as it's obsolete in HTML5) */
 abbr[title],
 acronym[title] {
     &:after {
