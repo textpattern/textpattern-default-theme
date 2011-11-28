@@ -737,22 +737,12 @@ input[type="radio"] {
    Buttons
    ========================================================================== */
 
-/* make buttons play nice in IE: http://www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
+/* make buttons play nice in IE - http://www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 input,
 button,
 .button {
     width: auto;
     overflow: visible;
-}
-
-/* fix black border bug on styled buttons in IE7 by remove borders entirely */
-.ie7 button,
-.ie7 .button,
-.ie7 input[type="button"],
-.ie7 input[type="reset"],
-.ie7 input[type="submit"],
-.ie7 #paginator span.disabled {
-    border: 0;
 }
 
 button,
@@ -1029,7 +1019,7 @@ blockquote {
 
 
 *{
-    /* black prints faster: http://sanbeiji.com/archives/953 */
+    /* black prints faster - http://sanbeiji.com/archives/953 */
     color: black !important;
     text-shadow: none !important;
     background: transparent !important;
@@ -1089,8 +1079,7 @@ a[rel="tag"] {
     }
 }
 
-/* show long-form for abbreviations in print
-   acronym to be phased out of textile in favour of abbr */
+/* show long-form for abbreviations in print (acronym to be phased out of textile in favour of abbr) */
 abbr[title],
 acronym[title] {
     &:after {
@@ -1206,7 +1195,7 @@ tbody {
     border-left: 1pt solid black;
 }
 
-/* display table head across multi-page tables: http://css-discuss.incutio.com/wiki/Printing_Tables */
+/* display table head across multi-page tables - http://css-discuss.incutio.com/wiki/Printing_Tables */
 thead {
     display: table-header-group;
 }
