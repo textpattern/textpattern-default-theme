@@ -315,7 +315,6 @@ h3 {
     font-size: 2em;
     /* 32px / 26px */
     line-height: 1.23076923076923em;
-    font-family: $font-secondary;
     font-weight: normal;
     font-style: italic;
     margin: 0;
@@ -334,7 +333,6 @@ p {
 }
 
 blockquote {
-    font-family: $font-secondary;
     font-style: italic;
     float: right;
     margin: 0 0 .5em 1em;
@@ -346,7 +344,6 @@ blockquote {
 
 dfn,
 q {
-    font-family: $font-secondary;
     font-style: italic;
     background: $color-highlight-box;
 }
@@ -450,7 +447,6 @@ table {
 }
 
 caption {
-    font-family: $font-secondary;
     font-style: italic;
     text-align: left;
     margin-bottom: .5em;
@@ -495,7 +491,6 @@ th {
 }
 
 dt {
-    font-family: $font-secondary;
     font-style: italic;
 }
 

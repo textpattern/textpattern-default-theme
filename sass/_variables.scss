@@ -2,17 +2,16 @@
 
 // font families
 
-$font-body:             Verdana, "Lucida Grande", Tahoma, Arial, sans-serif;
-$font-heading:          "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
-$font-secondary:        "Droid Serif", Georgia, Times, serif;
+$font-body:             "PT Serif", Georgia, Times, serif;
+$font-heading:          Helvetica, Arial, Verdana, sans-serif;
 $font-mono:             Cousine, Consolas, Monaco, "Courier New", monospace;
 $font-print:            "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
 
 // typography grid
 
-$basefont:              13px;
-$baseline:              19px;
-$smallfont:             11px;
+$basefont:              .875em;            // 14px / 16px
+$baseline:              1.5;               // 21px / 14px
+$smallfont:             .85714285714286em; // 12px / 14px
 
 // text colours
 
