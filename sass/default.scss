@@ -83,7 +83,7 @@ q {
 /* prevents sub and sup affecting line-height in all browsers */
 sub,
 sup {
-    font-size: 75%;
+    font-size: $smallfont;
     line-height: 0;
     position: relative;
     vertical-align: baseline;
