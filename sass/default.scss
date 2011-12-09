@@ -55,6 +55,7 @@ audio:not([controls]) {
 }
 
 html {
+    /* 16px */
     font-size: 100%;
     /* always force scrollbar padding so we don't get 'jumping' */
     overflow-y: scroll;
@@ -291,6 +292,7 @@ footer a {
    ========================================================================== */
 
 body {
+    /* 14px / 16px */
     font-size: $basefont;
     line-height: $baseline;
     font-family: $font-body;
@@ -298,23 +300,25 @@ body {
 }
 
 h1 {
+    /* 42px */
     font-size: 3em;
-    /* 44px / 39px */
-    line-height: 1.12820512820513em;
+    /* 46px / 42px */
+    line-height: 1.0952380952381em;
     font-family: $font-heading;
     letter-spacing: -1px;
     margin: 0;
-    /* 10px / 39px */
-    padding-top: .256410256410256em;
-    /* 20px / 39px */
-    padding-bottom: .512820512820513em;
+    /* 14px / 42px */
+    padding-top: .33333333333333em;
+    /* 28px / 42px */
+    padding-bottom: .66666666666667em;
 }
 
 h2,
 h3 {
+    /* 28px */
     font-size: 2em;
-    /* 32px / 26px */
-    line-height: 1.23076923076923em;
+    /* 34px / 28px */
+    line-height: 1.21428571428571em;
     font-weight: normal;
     font-style: italic;
     margin: 0;
@@ -323,6 +327,7 @@ h3 {
 }
 
 h4 {
+    /* 14px */
     font-size: 1em;
     margin: 0;
 }
