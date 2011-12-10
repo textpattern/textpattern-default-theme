@@ -2,21 +2,20 @@
 
 // font families
 
-$font-body:             "PT Serif", Georgia, Times, serif;
-$font-heading:          Helvetica, Arial, Verdana, sans-serif;
-$font-mono:             Cousine, Consolas, Monaco, "Courier New", monospace;
-$font-print:            "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+$font-serif:            "PT Serif", Georgia, serif;
+$font-sans-serif:       Arial, Helvetica, sans-serif;
+$font-mono:             Cousine, Consolas, "Lucida Console", Monaco, monospace;
+$font-print:            "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // typography grid
 
 $basefont:              .875em;            // 14px / 16px
 $baseline:              1.5;               // 21px / 14px
-$smallfont:             .85714285714286em; // 12px / 14px
 
 // text colours
 
 $color-text:            #333;
-$color-text-footnote:   #999;
+$color-text-footnote:   #888;
 $color-text-highlight:  #fabc2b;
 $color-link:            #1a428b;
 $color-link-hover:      #06f;
