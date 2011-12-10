@@ -13,15 +13,12 @@
 
 
 
-@media all {
-
-
 /* =============================================================================
    Abridged version of Normalize.css
    ========================================================================== */
 /* original authors: Nicolas Gallagher and Jonathan Neal - http://necolas.github.com/normalize.css/ */
 
-/* corrects block display not defined in IE6-9, Firefox3 */
+/* corrects block display not defined in IE7-9, Firefox3 */
 article,
 aside,
 details,
@@ -35,11 +32,12 @@ section {
     display: block;
 }
 
-/* corrects inline-block display not defined in IE6-9, Firefox3 */
+/* corrects inline-block display not defined in IE7-9, Firefox3 */
 audio,
 canvas,
 video {
     display: inline-block;
+    /* display and zoom IE7 fix for display:inline-block */
     *display: inline;
     *zoom: 1;
 }
@@ -72,7 +70,7 @@ strong {
     font-weight: bold; 
 }
 
-/* addresses CSS quotes not supported in IE6-7, addresses quote property not supported in Safari4 */
+/* addresses CSS quotes not supported in IE7, addresses quote property not supported in Safari4 */
 q {
     quotes: none;
     &:before, &:after {
@@ -84,7 +82,8 @@ q {
 /* prevents sub and sup affecting line-height in all browsers */
 sub,
 sup {
-    font-size: $smallfont;
+    /* 12px */
+    font-size: .85714285714286em;
     line-height: 0;
     position: relative;
     vertical-align: baseline;
@@ -129,10 +128,8 @@ dd {
     &:after {
         clear: both;
     }
+    /* zoom IE7 fix */
     *zoom: 1;
-}
-
-
 }
 
 
@@ -153,38 +150,44 @@ dd {
    ========================================================================== */
 
 body {
-    width: 960px;
-    margin: 0 auto 20px;
+    margin: 0;
     background: $color-background;
 }
 
+.container {
+    margin: 0 auto;
+    width: 960px;
+    @extend .clearfix;
+}
+
 header {
-    border-left: solid 1px $color-border;
-    border-right: solid 1px $color-border;
-    padding: 10px 10px 0;
     background: $color-background-box;
 }
 
 nav {
-    border: solid 1px $color-gradient-border;
-    border-radius: 0 0 $border-radius $border-radius;
+    border-top: solid 1px $color-gradient-border;
+    border-bottom: solid 1px $color-gradient-border;
     @include gradient;
-    @extend .clearfix;
 
     h1 {
         display: none;
     }
 
     ul {
+        margin: 0 auto;
+        width: 960px;
         list-style: none;
         list-style-image: none;
-        margin: 0;
     }
 
     li {
         float: left;
         margin: 0;
         border-right: solid 1px $color-gradient-border;
+
+        &:first-child {
+            border-left: solid 1px $color-gradient-border;
+        }
 
         &:hover {
             @include gradient(lighten($color-gradient-from, 10%), lighten($color-gradient-to, 10%));
@@ -195,10 +198,11 @@ nav {
         }
     }
 
+
     a {
         @include text-shadow-light;
         display: block;
-        padding: 10px;
+        padding: 1em;
         color: $color-text;
     }
 }
@@ -221,11 +225,8 @@ nav {
 
 footer {
     clear: both;
-    border: solid 1px $color-border;
-    border-radius: $border-radius;
-    padding: 10px;
-    /* declare width to fix for IE7 double padding bug */
-    width: 938px;
+    border-top: solid 1px $color-border;
+    padding-bottom: 1em;
     background: $color-background-box;
 }
 
@@ -292,19 +293,24 @@ footer a {
    ========================================================================== */
 
 body {
+    font-family: $font-serif;
     /* 14px / 16px */
     font-size: $basefont;
     line-height: $baseline;
-    font-family: $font-body;
     color: $color-text;
 }
 
+nav {
+    font-family: $font-sans-serif;
+    line-height: 1em;
+}
+
 h1 {
+    font-family: $font-sans-serif;
     /* 42px */
     font-size: 3em;
     /* 46px / 42px */
     line-height: 1.0952380952381em;
-    font-family: $font-heading;
     letter-spacing: -1px;
     margin: 0;
     /* 14px / 42px */
@@ -327,22 +333,20 @@ h3 {
 }
 
 h4 {
+    font-family: $font-sans-serif;
     /* 14px */
     font-size: 1em;
     margin: 0;
 }
 
-p {
-    margin: 0;
-    padding-bottom: 1em;
-}
-
 blockquote {
+    /* 16px */
+    font-size: 1.14285714285714em;
     font-style: italic;
     float: right;
-    margin: 0 0 .5em 1em;
+    margin: 0 0 .875em .875em;
     border-radius: $border-radius;
-    padding: 1em 10px 0;
+    padding: 0 1em;
     width: 260px;
     background: $color-background-box;
 }
@@ -369,6 +373,7 @@ var {
     font-family: $font-mono;
     background: $color-highlight-box;
     border-radius: $border-radius;
+    
 }
 
 code,
@@ -376,12 +381,13 @@ kbd,
 samp,
 var,
 mark {
+    /* 12px */
+    font-size: .85714285714286em;
     padding: 1px 3px;
 }
 
 pre {
-    margin: 0 0 1.3em;
-    padding: 1em 10px;
+    padding: 1em;
     overflow-x: auto;
 }
 
@@ -396,9 +402,8 @@ small,
 figcaption,
 tfoot,
 .footnote {
-    font-size: $smallfont;
-    /* 15px / 11px */
-    line-height: 1.36363636363636em;
+    /* 12px */
+    font-size: .85714285714286em;
 }
 
 figcaption,
@@ -630,10 +635,10 @@ textarea {
 
 /* colour placeholder text (Webkit and Mozilla only, so far) */
 ::-webkit-input-placeholder {
-    color: #bbb;
+    color: $color-text-footnote;
 }
 :-moz-placeholder {
-    color: #bbb;
+    color: $color-text-footnote;
 }
 
 /* suppress red glow that Firefox adds to form fields by default, even when user is still typing */
@@ -655,13 +660,12 @@ input[type="time"],
 input[type="url"],
 input[type="week"],
 textarea {
-    font-size: 11px;
-    /* 15px / 11px */
-    line-height: 1.36363636363636em;
-    font-family: $font-body;
+    font-family: $font-sans-serif;
+    /* 12px */
+    font-size: .85714285714286em;
     text-align: left;
     border: solid 1px $color-border;
-    padding: .5em 5px .55em;
+    padding: .5em;
     background: #fff;
     @include box-sizing;
 }
@@ -669,7 +673,7 @@ textarea {
 input[type="search"] {
     width: 192px;
     margin-right: 2px;
-    padding: .5em 0 .55em 5px;
+    padding: .5em 0 .5em .5em;
     display: inline-block;
     /* display and zoom IE7 fix for display:inline-block */
     *display: inline;
@@ -750,19 +754,21 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    font-size: $smallfont;
-    /* 15px / 11px */
-    line-height: 1.36363636363636em;
-    font-family: $font-body;
+    -webkit-background-clip: padding;
+       -moz-background-clip: padding;
+        -ms-background-clip: padding-box;
+         -o-background-clip: padding-box;
+            background-clip: padding-box;
+    font-family: $font-sans-serif;
+    /* 12px */
+    font-size: .85714285714286em;
     font-weight: normal;
     text-align: center;
     @include text-shadow-light;
     cursor: pointer;
     border: solid 1px $color-gradient-border;
     border-radius: $border-radius;
-    padding: .5em .8em .5em;
-    /* 28px */
-    height: 2.545454545454545em;
+    padding: .5em 1em .5em;
     display: inline-block;
     /* display and zoom IE7 fix for display:inline-block */
     *display: inline;
@@ -798,8 +804,7 @@ input[type="submit"].disabled,
     @extend .clearfix;
 
     .button {
-        padding: .1em .66em;
-        height: 1.5em;
+        padding: .1em 1em;
     }
 
     a.button {
@@ -1032,9 +1037,9 @@ blockquote {
 }
 
 body {
+    font-family: $font-print;
     font-size: 8pt;
     line-height: 12pt;
-    font-family: $font-print;
     margin: 0;
     padding: 2em 6em;
 }
