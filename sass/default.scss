@@ -156,7 +156,8 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 960px;
+    width: 90%;
+    max-width: 1040px;
     @extend .clearfix;
 }
 
@@ -182,8 +183,7 @@ nav {
     }
 
     ul {
-        margin: 0 auto;
-        width: 960px;
+        margin: 0;
         list-style: none;
         list-style-image: none;
     }
@@ -217,18 +217,21 @@ nav {
 
 [role="main"] {
     float: left;
-    width: 640px;
-    margin: 2em 10px 1em;
+    margin: 2em 328px 0 0;
 }
 
 [role="complementary"] {
     float: left;
-    margin: 2em 10px;
+    margin: 2em 0 0 -300px;
     border: solid 1px $color-border;
     border-radius: $border-radius;
     padding: 10px 10px 0;
-    width: 258px;
+    width: 278px;
     background: $color-background-box;
+}
+
+[role="article"] {
+    margin-bottom: 2em;
 }
 
 footer {
@@ -236,10 +239,6 @@ footer {
     border-top: solid 1px $color-border;
     padding-bottom: 1em;
     background: $color-background-box;
-}
-
-#search-page [role="main"] article:last-of-type {
-    margin-bottom: 1em;
 }
 
 
@@ -263,6 +262,10 @@ a {
 
     header & {
         color: $color-text;
+        border-radius: $border-radius;
+        &:hover, &:active {
+            background: darken($color-background-box, 5%);
+        }
     }
 }
 
@@ -283,6 +286,7 @@ footer a {
 
 [role="main"] h1 a {
     color: $color-text;
+    border-radius: $border-radius;
 
     &:visited {
         color: $color-text;
@@ -510,7 +514,11 @@ th {
 [role="main"],
 [role="complementary"] {
     ul, ol, dl {
-        margin: 0 0 1em 20px;
+        margin: 0 0 1em 2em;
+    }
+
+    dd {
+        margin: 0 0 0 2em;
     }
 }
 
@@ -814,7 +822,7 @@ input[type="submit"].disabled,
 }
 
 #paginator {
-    margin: 1em 0;
+    margin-bottom: 2em;
     @extend .clearfix;
 
     .button {

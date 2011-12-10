@@ -137,7 +137,8 @@ dd {
 
   .container {
     margin: 0 auto;
-    width: 960px;
+    width: 90%;
+    max-width: 1040px;
   }
 
   header {
@@ -179,8 +180,7 @@ dd {
     display: none;
   }
   nav ul {
-    margin: 0 auto;
-    width: 960px;
+    margin: 0;
     list-style: none;
     list-style-image: none;
   }
@@ -243,18 +243,21 @@ dd {
 
   [role="main"] {
     float: left;
-    width: 640px;
-    margin: 2em 10px 1em;
+    margin: 2em 328px 0 0;
   }
 
   [role="complementary"] {
     float: left;
-    margin: 2em 10px;
+    margin: 2em 0 0 -300px;
     border: solid 1px #cccccc;
     border-radius: 5px;
     padding: 10px 10px 0;
-    width: 258px;
+    width: 278px;
     background: #f0f2f6;
+  }
+
+  [role="article"] {
+    margin-bottom: 2em;
   }
 
   footer {
@@ -262,10 +265,6 @@ dd {
     border-top: solid 1px #cccccc;
     padding-bottom: 1em;
     background: #f0f2f6;
-  }
-
-  #search-page [role="main"] article:last-of-type {
-    margin-bottom: 1em;
   }
 
   /* =============================================================================
@@ -286,6 +285,10 @@ dd {
   }
   header a {
     color: #333333;
+    border-radius: 5px;
+  }
+  header a:hover, header a:active {
+    background: #e0e4ec;
   }
 
   [role="main"] a:hover, [role="main"] a:active,
@@ -304,6 +307,7 @@ dd {
 
   [role="main"] h1 a {
     color: #333333;
+    border-radius: 5px;
   }
   [role="main"] h1 a:visited {
     color: #333333;
@@ -519,7 +523,11 @@ dd {
   [role="complementary"] ul,
   [role="complementary"] ol,
   [role="complementary"] dl {
-    margin: 0 0 1em 20px;
+    margin: 0 0 1em 2em;
+  }
+  [role="main"] dd,
+  [role="complementary"] dd {
+    margin: 0 0 0 2em;
   }
 
   dt {
@@ -924,7 +932,7 @@ dd {
   }
 
   #paginator {
-    margin: 1em 0;
+    margin-bottom: 2em;
   }
   #paginator .button {
     padding: .1em 1em;
