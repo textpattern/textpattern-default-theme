@@ -142,7 +142,7 @@
     <footer role="contentinfo">
         <div class="container">
             <!-- using PHP to dynamically update the copyright year -->
-            <small>&#169;<txp:php>echo date('Y');</txp:php> <txp:site_name />. <txp:text item="published_with" /> <a href="http://textpattern.com" rel="external">Textpattern CMS</a>.</small>
+            <p><small>&#169;<txp:php>echo date('Y');</txp:php> <txp:site_name />. <txp:text item="published_with" /> <a href="http://textpattern.com" rel="external">Textpattern CMS</a>.</small></p>
         </div> <!-- /.container (footer) -->
     </footer>
 
