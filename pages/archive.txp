@@ -49,7 +49,7 @@
         <div class="container">
             <hgroup>
                 <h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
-                <h2><txp:site_slogan /></h2>
+                <h3><txp:site_slogan /></h3>
             </hgroup>
         </div> <!-- /.container (header) -->
     </header>
