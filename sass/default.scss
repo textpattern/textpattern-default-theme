@@ -161,7 +161,15 @@ body {
 }
 
 header {
+    padding-top: 1em;
     background: $color-background-box;
+    h1 {
+        margin: 0;
+    }
+    h3 {
+        /* 14px margin top/bottom */
+        margin: .66666666666667em 0;
+    }
 }
 
 nav {
@@ -210,12 +218,12 @@ nav {
 [role="main"] {
     float: left;
     width: 640px;
-    margin: 20px 10px 0;
+    margin: 2em 10px 1em;
 }
 
 [role="complementary"] {
     float: left;
-    margin: 20px 10px;
+    margin: 2em 10px;
     border: solid 1px $color-border;
     border-radius: $border-radius;
     padding: 10px 10px 0;
@@ -309,33 +317,39 @@ h1 {
     font-family: $font-sans-serif;
     /* 42px */
     font-size: 3em;
-    /* 46px / 42px */
-    line-height: 1.0952380952381em;
+    /* 54px / 42px */
+    line-height: 1.28571428571429;
     letter-spacing: -1px;
-    margin: 0;
-    /* 14px / 42px */
-    padding-top: .33333333333333em;
-    /* 28px / 42px */
-    padding-bottom: .66666666666667em;
+    /* 28px margin top/bottom */
+    margin: .66666666666667em 0;
+    &:first-child {
+        margin-top: 0;
+    }
 }
 
-h2,
-h3 {
+h2 {
+    font-family: $font-sans-serif;
     /* 28px */
     font-size: 2em;
-    /* 34px / 28px */
-    line-height: 1.21428571428571em;
+    /* 40px / 28px */
+    line-height: 1.42857142857143;
+    /* 21px margin top/bottom */
+    margin: .75em 0;
+}
+
+h3 {
+    /* 21px */
+    font-size: 1.5em;
     font-weight: normal;
     font-style: italic;
-    margin: 0;
-    /* 13px / 26px */
-    padding-bottom: .5em;
+    /* 16px margin top/bottom */
+    margin: .76190476190476em 0;
 }
 
 h4 {
     font-family: $font-sans-serif;
-    /* 14px */
-    font-size: 1em;
+    /* 16px */
+    font-size: 1.14285714285714em;
     margin: 0;
 }
 
@@ -379,8 +393,7 @@ var {
 code,
 kbd,
 samp,
-var,
-mark {
+var {
     /* 12px */
     font-size: .85714285714286em;
     padding: 1px 3px;
@@ -392,9 +405,10 @@ pre {
 }
 
 mark {
+    padding: 0 3px;
     background: $color-highlight-box;
+    border-radius: $border-radius;
     color: $color-text;
-    font-style: italic;
     font-weight: bold;
 }
 
