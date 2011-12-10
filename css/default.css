@@ -651,31 +651,6 @@ dd {
     padding: 0;
   }
 
-  /* make sure disable elements really are disabled */
-  button[disabled],
-  input[disabled],
-  select[disabled],
-  select[disabled] option,
-  select[disabled] optgroup,
-  textarea[disabled] {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: -moz-none;
-    user-select: none;
-    cursor: default;
-  }
-
-  /* make Safari render search inputs as text inputs (and unstyled) */
-  input[type="search"] {
-    -webkit-appearance: textfield;
-  }
-
-  ::-webkit-search-decoration {
-    display: none;
-  }
-
   /* improves appearance and consistency in all browsers */
   button,
   .button,
@@ -704,6 +679,7 @@ dd {
     box-shadow: none;
   }
 
+  textarea,
   input[type="date"],
   input[type="datetime"],
   input[type="datetime-local"],
@@ -716,8 +692,8 @@ dd {
   input[type="text"],
   input[type="time"],
   input[type="url"],
-  input[type="week"],
-  textarea {
+  input[type="week"] {
+    -webkit-appearance: none;
     font-family: Arial, Helvetica, sans-serif;
     /* 12px */
     font-size: .85714285714286em;
@@ -740,13 +716,83 @@ dd {
     *zoom: 1;
   }
 
+  /* make Safari render search inputs as text inputs (and unstyled) */
+  input[type="search"] {
+    -webkit-appearance: textfield;
+  }
+
+  ::-webkit-search-decoration {
+    display: none;
+  }
+
+  textarea[disabled],
+  select[disabled],
+  input[type="date"][disabled],
+  input[type="datetime"][disabled],
+  input[type="datetime-local"][disabled],
+  input[type="email"][disabled],
+  input[type="month"][disabled],
+  input[type="number"][disabled],
+  input[type="password"][disabled],
+  input[type="search"][disabled],
+  input[type="tel"][disabled],
+  input[type="text"][disabled],
+  input[type="time"][disabled],
+  input[type="url"][disabled],
+  input[type="week"][disabled] {
+    background-color: #eeeeee;
+  }
+
+  /* make sure disable elements really are disabled */
+  button[disabled],
+  input[disabled],
+  select[disabled],
+  select[disabled] option,
+  select[disabled] optgroup,
+  textarea[disabled] {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    user-select: none;
+    color: #888888;
+    cursor: default;
+  }
+
+  textarea,
+  select[size],
+  select[multiple] {
+    height: auto;
+  }
+
   textarea {
-    width: 100%;
+    min-height: 40px;
     /* removes default vertical scrollbar in IE7-9 */
     overflow: auto;
     /* improves readability and alignment in all browsers */
     vertical-align: top;
     resize: vertical;
+    width: 100%;
+  }
+
+  select {
+    font-family: Arial, Helvetica, sans-serif;
+    /* 12px */
+    font-size: .85714285714286em;
+    text-align: left;
+    border: solid 1px #cccccc;
+    padding: .5em;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  optgroup {
+    color: #333333;
+    font-style: normal;
+    font-weight: normal;
   }
 
   .large input {
