@@ -495,30 +495,23 @@ dd {
     margin-bottom: .5em;
   }
 
-  thead,
-  tfoot,
-  tbody {
-    border-right: solid 1px #f0f2f6;
-    border-left: solid 1px #f0f2f6;
-  }
-
-  thead {
-    background: #f0f2f6;
-  }
-
-  tfoot {
-    background: #f6f8fa;
-  }
-
   th,
   td {
-    border-bottom: solid 1px #f0f2f6;
-    padding: .25em .5em;
+    border-bottom: solid 1px #cccccc;
+    padding: .28571428571429em .5em .28571428571429em 0;
   }
 
   th {
     text-align: left;
-    border-top: solid 1px #f0f2f6;
+  }
+
+  thead th, thead td {
+    border-bottom: solid 2px #cccccc;
+  }
+
+  tfoot th, tfoot td {
+    border-bottom: 0;
+    padding: .33333333333333em .58333333333333em .33333333333333em 0;
   }
 
   /* =============================================================================

@@ -487,30 +487,27 @@ caption {
     margin-bottom: .5em;
 }
 
-thead,
-tfoot,
-tbody {
-    border-right: solid 1px $color-background-box;
-    border-left: solid 1px $color-background-box;
-}
-
-thead {
-    background: $color-background-box;
-}
-
-tfoot {
-    background: lighten($color-background-box, 2%);
-}
-
 th,
 td {
-    border-bottom: solid 1px $color-background-box;
-    padding: .25em .5em;
+    border-bottom: solid 1px $color-border;
+    padding: .28571428571429em .5em .28571428571429em 0;
 }
 
 th {
     text-align: left;
-    border-top: solid 1px $color-background-box;
+}
+
+thead {
+    th, td {
+        border-bottom: solid 2px $color-border;
+    }
+}
+
+tfoot {
+    th, td {
+        border-bottom: 0;
+        padding: .33333333333333em .58333333333333em .33333333333333em 0;
+    }
 }
 
 
