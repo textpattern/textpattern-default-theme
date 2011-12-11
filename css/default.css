@@ -500,6 +500,10 @@ dd {
     border-bottom: solid 1px #cccccc;
     padding: .28571428571429em .5em .28571428571429em 0;
   }
+  th:last-child,
+  td:last-child {
+    padding-right: 0;
+  }
 
   th {
     text-align: left;
@@ -512,6 +516,9 @@ dd {
   tfoot th, tfoot td {
     border-bottom: 0;
     padding: .33333333333333em .58333333333333em .33333333333333em 0;
+  }
+  tfoot:last-child {
+    padding-right: 0;
   }
 
   /* =============================================================================

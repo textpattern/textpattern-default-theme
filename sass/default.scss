@@ -491,6 +491,10 @@ th,
 td {
     border-bottom: solid 1px $color-border;
     padding: .28571428571429em .5em .28571428571429em 0;
+
+    &:last-child {
+        padding-right: 0;
+    }
 }
 
 th {
@@ -507,6 +511,10 @@ tfoot {
     th, td {
         border-bottom: 0;
         padding: .33333333333333em .58333333333333em .33333333333333em 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
     }
 }
 
