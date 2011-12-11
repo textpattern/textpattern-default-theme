@@ -272,7 +272,7 @@ dd {
   footer {
     clear: both;
     border-top: solid 1px #cccccc;
-    padding-bottom: 1em;
+    padding: .5em 0;
     background: #f0f2f6;
   }
 
@@ -560,7 +560,7 @@ dd {
     text-align: center;
     float: left;
     display: block;
-    margin: 0 .28571428571429em .5em 0;
+    margin: 0 .5em .5em 0;
     min-width: 36px;
     border: 1px solid #cccccc;
     border-radius: 5px;
@@ -643,6 +643,9 @@ dd {
   }
   [role="complementary"] #monthly-list span {
     display: block;
+    /* IE7 padding fix */
+    *position: relative;
+    *top: -2px;
   }
 
   [role="main"] #article-list {
@@ -858,13 +861,15 @@ dd {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 0;
+    position: relative;
+    vertical-align: top;
+    top: .35714285714286em;
+    /* IE8-9 vertical alignment fix */
+    top: 0 \0;
+    /* IE7 vertical alignment fix */
+    *top: 0;
   }
 
-  .checkboxes,
-  .radiobuttons {
-    padding: 0 0 7px;
-  }
   .checkboxes span,
   .radiobuttons span {
     display: block;
@@ -872,7 +877,7 @@ dd {
   .checkboxes input,
   .radiobuttons input {
     float: left;
-    margin: 3px 8px 0 0;
+    margin-right: .5em;
   }
   .checkboxes label,
   .radiobuttons label {
@@ -1063,7 +1068,7 @@ dd {
     margin-bottom: 2px;
     border-radius: 5px;
     padding: 1em 10px;
-    background: #f0f2f6;
+    background: #fff3d6;
   }
 
   .comments_error {
