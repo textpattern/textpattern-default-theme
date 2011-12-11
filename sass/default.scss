@@ -813,7 +813,8 @@ optgroup {
 
 .large {
     input {
-        width: 320px;
+        width: 50%;
+        min-width: 302px;
     }
 
     textarea {
@@ -823,7 +824,8 @@ optgroup {
 
 .small {
     input {
-        width: 160px;
+        width: 25%;
+        min-width: 151px;
     }
 
     textarea {
@@ -949,9 +951,9 @@ input[type="submit"].disabled,
    ========================================================================== */
 
 .comments {
-    margin-bottom: 20px;
+    margin-bottom: 1em;
     border-radius: $border-radius;
-    padding: 1em 10px 0;
+    padding: 1em 1em 1px;
     background: lighten($color-background-box, 2%);
 
     h4 {
@@ -1059,14 +1061,6 @@ h2 {
 h3 {
     /* 21px */
     font-size: 1.28571428571429em;
-}
-
-.large input {
-    width: 66%;
-}
-
-.small input {
-    width: 33%;
 }
 
 

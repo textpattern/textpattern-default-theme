@@ -837,14 +837,16 @@ dd {
   }
 
   .large input {
-    width: 320px;
+    width: 50%;
+    min-width: 302px;
   }
   .large textarea {
     height: 156px;
   }
 
   .small input {
-    width: 160px;
+    width: 25%;
+    min-width: 151px;
   }
   .small textarea {
     height: 78px;
@@ -1041,9 +1043,9 @@ dd {
      Comments
      ========================================================================== */
   .comments {
-    margin-bottom: 20px;
+    margin-bottom: 1em;
     border-radius: 5px;
-    padding: 1em 10px 0;
+    padding: 1em 1em 1px;
     background: #f6f8fa;
   }
   .comments h4 span {
@@ -1135,14 +1137,6 @@ dd {
   h3 {
     /* 21px */
     font-size: 1.28571428571429em;
-  }
-
-  .large input {
-    width: 66%;
-  }
-
-  .small input {
-    width: 33%;
   }
 }
 /* =============================================================================
