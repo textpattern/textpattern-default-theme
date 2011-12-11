@@ -109,7 +109,8 @@ dd {
     padding: 0;
 }
 
-/* corrects inner padding and border displayed oddly in Firefox3-4 - www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+/* corrects inner padding and border displayed oddly in Firefox3-4 -
+    www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
 ::-moz-focus-inner {
     border: 0;
     padding: 0;
@@ -119,7 +120,8 @@ dd {
 /* =============================================================================
    Clearfix
    ========================================================================== */
-/* updated to prevent margin-collapsing on child elements in most situations - http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* updated to prevent margin-collapsing on child elements in most situations -
+    http://nicolasgallagher.com/micro-clearfix-hack/ */
 
 .clearfix {
     &:before, &:after {
@@ -212,7 +214,6 @@ nav {
         }
     }
 
-
     a {
         @include text-shadow-light;
         display: block;
@@ -253,7 +254,7 @@ a {
     color: $color-link;
     -webkit-tap-highlight-color: rgba($color-link-hover,.5);
 
-    &:hover, &:active { /* improves readability when focused and also mouse hovered in all browsers - people.opera.com/patrickl/experiments/keyboard/test */
+    &:hover, &:active { /* improves readability when focused and also mouse hovered in all browsers */
         outline: 0;
     }
 
@@ -277,8 +278,6 @@ a {
 [role="main"] a,
 [role="complementary"] a,
 footer a {
-    
-
     &:hover, &:active {
         text-decoration: underline;
         color: $color-link-hover;
@@ -447,8 +446,8 @@ figcaption {
    Embedded content
    ========================================================================== */
 
-/* removes border when inside 'a' element in IE7-9, Firefox3,
-    improves image quality when scaled in IE7 - code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+/* removes border when inside 'a' element in IE7-9, Firefox3, improves image quality when scaled in IE7 -
+    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
 img {
     border: 0;
     -ms-interpolation-mode: bicubic;
@@ -788,20 +787,6 @@ select[multiple] {
     height: auto;
 }
 
-/* addresses select alignment in Safari/Chrome */
-@media (-webkit-min-device-pixel-ratio: 0) {
-    select,
-    select[size="0"],
-    select[size="1"] {
-        height: 2.33333333333333em;
-    }
-    select:not([size]),
-    select:not([multiple]) {
-        position: relative;
-        top: -1px;
-    }
-}
-
 optgroup {
     color: $color-text;
     font-style: normal;
@@ -992,6 +977,25 @@ input[type="submit"].disabled,
 }
 
 
+/* addresses select alignment in Safari/Chrome */
+@media (-webkit-min-device-pixel-ratio: 0) {
+
+
+select,
+select[size="0"],
+select[size="1"] {
+    height: 2.33333333333333em;
+}
+select:not([size]),
+select:not([multiple]) {
+    position: relative;
+    top: -1px;
+}
+
+
+}
+
+
 
 
 /* =============================================================================
@@ -1127,18 +1131,14 @@ nav .container {
     text-shadow: none !important;
     background: transparent !important;
     @include box-shadow(none !important);
-    filter:none !important;
-}
-
-@page {
-    margin: .5cm;
+    filter: none !important;
 }
 
 body {
     font-family: $font-print;
     font-size: 8pt;
     line-height: 12pt;
-    margin: 0;
+    margin: .5cm;
     padding: 2em 6em;
 }
 
