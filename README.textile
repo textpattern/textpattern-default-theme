@@ -7,8 +7,9 @@ This project is designed as a proposed replacement (TXP5) for the default theme 
 h4. Features
 
 # The code is commented throughout with helpful information to help you learn some of the techniques and tags available within Textpattern.
-# Current best practices gathered from all over the web - in particular the "HTML5 Boilerplate":http://html5boilerplate.com/ and the "Less Framework":http://lessframework.com/.
-# Responsive CSS grid adapts to various device screen sizes.
+# Current best practices gathered from all over the web - in particular the "HTML5 Boilerplate":http://html5boilerplate.com/.
+# Mobile first structure.
+# Responsive CSS layout adapts to various device screen sizes, from 320px to over 1280px.
 # Includes "Sass":http://sass-lang.com version of CSS for rapid development.
 # No images used at all.
 # Tested on a wide range of devices, browsers and operating systems.
