@@ -53,7 +53,8 @@ audio:not([controls]) {
 }
 
 html {
-    /* 16px */
+    /* corrects text resizing oddly in IE7 when body font-size is set using em units -
+        http://clagnut.com/blog/348/#c790 */
     font-size: 100%;
     /* always force scrollbar padding so we don't get 'jumping' */
     overflow-y: scroll;
@@ -136,7 +137,7 @@ dd {
 
 
 /* =============================================================================
-   Styling and layout for screen media > 959px
+   Styling and layout for screen media
    ========================================================================== */
 
 
@@ -156,8 +157,9 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 90%;
-    max-width: 1040px;
+    /* 960px / 1024px */
+    width: 93.75%;
+    max-width: 1280px;
     @extend .clearfix;
 }
 
@@ -174,6 +176,7 @@ header {
 }
 
 nav {
+    margin-bottom: 2em;
     border-top: solid 1px $color-gradient-border;
     border-bottom: solid 1px $color-gradient-border;
     @include gradient;
@@ -210,28 +213,34 @@ nav {
     a {
         @include text-shadow-light;
         display: block;
-        padding: 1em;
+        padding: .5em 1em;
         color: $color-text;
     }
 }
 
 [role="main"] {
     float: left;
-    margin: 2em 328px 0 0;
+    /* 592px / 960px */
+    width: 61.666666666667%;
 }
 
 [role="complementary"] {
-    float: left;
-    margin: 2em 0 0 -300px;
+    float: right;
+    margin-bottom: 2em;
     border: solid 1px $color-border;
     border-radius: $border-radius;
-    padding: 10px 10px 0;
-    width: 278px;
+    padding: 1em 1em 0;
+    /* 290px / 960px */
+    width: 30.208333333333%;
     background: $color-background-box;
 }
 
 [role="article"] {
     margin-bottom: 2em;
+}
+
+[role="search"] p {
+    margin-top: 0;
 }
 
 footer {
@@ -258,6 +267,10 @@ a {
 
     &:active {
         top: 1px;
+    }
+
+    &:focus {
+        outline: thin dotted $color-link-hover;
     }
 
     header & {
@@ -314,7 +327,7 @@ body {
 
 nav {
     font-family: $font-sans-serif;
-    line-height: 1em;
+    font-weight: bold;
 }
 
 h1 {
@@ -364,8 +377,9 @@ blockquote {
     float: right;
     margin: 0 0 .875em .875em;
     border-radius: $border-radius;
-    padding: 0 1em;
-    width: 260px;
+    padding: 0 .875em;
+    /* 254px / 592px */
+    width: 42.905405405405%;
     background: $color-background-box;
 }
 
@@ -373,6 +387,10 @@ dfn,
 q {
     font-style: italic;
     background: $color-highlight-box;
+}
+
+address {
+    margin: 1em 0;
 }
 
 /* addresses styling not present in IE7-9, Safari5, Chrome (note: acroymn to be phased out in Textile as it's obsolete in HTML5) */
@@ -431,6 +449,7 @@ tfoot,
 }
 
 figcaption {
+    margin-top: .33333333333333em;
     font-style: italic;
 }
 
@@ -454,12 +473,11 @@ svg:not(:root) {
 article {
     img, embed, object, video {
         max-width: 100%;
-        margin: 3px 0;
     }
 }
 
 figure {
-    margin: 0 0 1.3em;
+    margin: 0;
 }
 
 
@@ -528,15 +546,15 @@ dt {
 
 [role="complementary"] #monthly-list {
     list-style: none;
-    margin: 0;
-    padding: 5px 0 10px;
+    margin-left: 0;
     @extend .clearfix;
 
     li {
+        font-family: $font-sans-serif;
         text-align: center;
         float: left;
         display: block;
-        margin: 0 4px 6px 0;
+        margin: 0 .28571428571429em .5em 0;
         min-width: 36px;
         border: 1px solid $color-border;
         border-radius: $border-radius;
@@ -558,18 +576,21 @@ dt {
             color: darken($color-text, 10%);
         }
 
+        &:focus {
+            outline: 0;
+        }
+
         &:active {
             top: 0;
         }
 
         .archive-year {
-            /* 10px / 13px */
-            font-size: .76923076923077em;
-            /* 15px / 10px */
-            line-height: 1.5em;
+            /* 12px */
+            font-size: .85714285714286em;
             font-weight: bold;
             @include text-shadow-light;
             border-radius: $border-radius $border-radius 0 0;
+            padding: 0 .33333333333333em;
             @include gradient;
         }
 
@@ -579,6 +600,7 @@ dt {
 
         .archive-month {
             border-radius: 0 0 $border-radius $border-radius;
+            padding: 0 .28571428571429em;
         }
 
         &:hover .archive-month, &:focus .archive-month{
@@ -645,6 +667,30 @@ textarea {
     @include box-shadow(none);
 }
 
+/* make Safari render search inputs as text inputs (and unstyled) */
+::-webkit-search-decoration {
+    display: none;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    @include box-shadow(0 0 7px $color-link-hover);
+    /* Opera */
+    z-index: 1;
+}
+
+input[type="file"]:focus,
+input[type="file"]:active,
+input[type="radio"]:focus,
+input[type="radio"]:active,
+input[type="checkbox"]:focus,
+input[type="checkbox"]:active {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
 textarea,
 input[type="date"],
 input[type="datetime"],
@@ -659,7 +705,6 @@ input[type="text"],
 input[type="time"],
 input[type="url"],
 input[type="week"] {
-    -webkit-appearance: none;
     font-family: $font-sans-serif;
     /* 12px */
     font-size: .85714285714286em;
@@ -667,25 +712,21 @@ input[type="week"] {
     border: solid 1px $color-border;
     padding: .5em;
     background: #fff;
+    outline: 0;
     @include box-sizing;
+    /* remove iOS Safari default styling */
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
-input[type="search"] {
-    width: 192px;
+[role="complementary"] input[type="search"] {
     margin-right: 2px;
     padding: .5em 0 .5em .5em;
+    width: 66.666666666667%;
     display: inline-block;
     /* display and zoom IE7 fix for display:inline-block */
     *display: inline;
     *zoom: 1;
-}
-
-/* make Safari render search inputs as text inputs (and unstyled) */
-input[type="search"] {
-    -webkit-appearance: textfield;
-}
-::-webkit-search-decoration {
-    display: none;
 }
 
 textarea[disabled],
@@ -722,12 +763,6 @@ textarea[disabled] {
     cursor: default;
 }
 
-textarea,
-select[size],
-select[multiple] {
-    height: auto;
-}
-
 textarea {
     min-height: 40px;
     /* removes default vertical scrollbar in IE7-9 */
@@ -746,7 +781,28 @@ select {
     border: solid 1px $color-border;
     padding: .5em;
     background: #fff;
+    outline: 0;
     @include box-sizing;
+}
+
+textarea,
+select[size],
+select[multiple] {
+    height: auto;
+}
+
+/* addresses select alignment in Safari/Chrome */
+@media (-webkit-min-device-pixel-ratio: 0) {
+    select,
+    select[size="0"],
+    select[size="1"] {
+        height: 2.33333333333333em;
+    }
+    select:not([size]),
+    select:not([multiple]) {
+        position: relative;
+        top: -1px;
+    }
 }
 
 optgroup {
@@ -930,57 +986,31 @@ input[type="submit"].disabled,
 }
 
 
-/* =============================================================================
-   Accessibility
-   ========================================================================== */
-
-a:focus {
-    outline: thin dotted $color-link-hover;
-}
-
-.button:focus,
-button:focus,
-input:focus,
-select:focus,
-textarea:focus,
-[role="complementary"] #monthly-list a:focus {
-    outline: 0;
-    @include box-shadow(0 0 7px $color-link-hover);
-    /* Opera */
-    z-index: 1;
-}
-
-
 }
 
 
 
 
 /* =============================================================================
-   Additional layout for screen media < 960px
+   Additional layout for screen media > 1280px
    ========================================================================== */
 
 
 
 
-@media handheld and (max-width:480px),screen and (max-device-width:480px),screen and (max-width:960px) {
+@media only screen and (min-width: 1280px) {
 
 
 body {
-    width: 660px;
+    /* 16px */
+    font-size: 100%;
 }
 
-[role="main"] {
-    float: none;
-}
-
-[role="complementary"] {
-    float: none;
-    margin: 0 10px 20px;
-}
-
-footer {
-    width: 638px;
+.container {
+    /* 1152px / 1280px */
+    width: 90%;
+    max-width: 1280px;
+    @extend .clearfix;
 }
 
 
@@ -999,78 +1029,44 @@ footer {
 @media only screen and (max-width: 767px) {
 
 
-body {
-    width: 440px;
-}
-
 [role="main"] {
-    width: 420px;
+    float: none;
+    width: 100%;
 }
 
-footer {
-    width: 418px;
+[role="complementary"] {
+    float: none;
+    width: 90%;
 }
 
 blockquote {
-    margin-bottom: 1em;
-    width: 400px;
+    float: none;
+    margin: .875em 0 .875em 0;
+    padding: 1px 0;
+    width: auto;
 }
 
 h1 {
-    /* 30px / 13px */
-    font-size: 2.30769230769231em;
-    /* 34px / 30px */
-    line-height: 1.13333333333333em;
-    padding-top: 0;
+    /* 28px */
+    font-size: 2em;
 }
 
-h2,
+h2 {
+    /* 21px */
+    font-size: 1.5em;
+}
+
 h3 {
-    /* 18px / 13px */
-    font-size: 1.38461538461538em;
-    /* 24px / 18px */
-    line-height: 1.33333333333333em;
+    /* 21px */
+    font-size: 1.28571428571429em;
 }
 
-.large input{
-    width: 280px;
+.large input {
+    width: 66%;
 }
 
-.small input{
-    width: 140px;
-}
-
-
-}
-
-
-
-
-/* =============================================================================
-   Additional layout for screen media < 480px
-   ========================================================================== */
-
-
-
-
-@media only screen and (max-width: 479px) {
-
-
-body {
-    width: 300px;
-}
-
-[role="main"] {
-    width: 280px;
-}
-
-footer {
-    width: 278px;
-}
-
-blockquote {
-    margin-bottom: 1em;
-    width: 260px;
+.small input {
+    width: 33%;
 }
 
 
