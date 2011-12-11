@@ -1,0 +1,48 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  <your title>: <your name>
+  Site: 
+  Twitter: 
+  Location: 
+
+/* THANKS */
+  Names (& URL): 
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Textpattern CMS, Modernizr, <your components>
+  Software: <your software>
+
+
+
+                    .ttTTttx
+                   xPXTTTTTtt-                     xppx
+                 pPPTTTTTTTTXxx                  px    xp
+               .tPTTTTTTTTTTTTt-               .t-      .t-
+              xPXTTTTTTTTTTTTTp               px          xx
+            -tPTTTTTTTTTTTTTt                -x          -t
+          .tPTTTTTTTTTTTTTT.                -x         .t-
+         xtXTTTTTTTTTTTTTTTt-              xx         xx
+        PxTTTTTTTTTTTTTTTt..-t.          -t.     .pttx.
+        xxXTTTTTTTTTTTTTPpp.- px        xp     xXTt-
+         -tPTTTTTTTTxTTTXppp... xx    px     pTTx
+           xtPTTTTf   tTTTxp-... .t-.t.    .XTt.
+            .xxXX-     -XTTPxp.- ..Pp     tTX-
+                         tTTTtp--xt     pTTx
+                          -XTTXtt-    .PTP.
+                            xTTp     xTTTx
+                            pt     pTTTP-.t.
+                          .t-    .PTTTP-   xx
+                         xx     xTTTTTXp-.  .t.
+                       -t.    -XTx xTTTTt--.  px
+                     .t-    .PTP.   .tTTTTx--.. xp
+                    xx     xTTp       .PTTTP--.  -t.
+                  -t.    -XTt           pTTTTt.-.  px
+                .t-   ..PTX.              xTTTTp--.. xp
+               px    .xTTp                 .PTTTP----..t-
+             px.   .-XTt                     pTTTTx.p.. -t.
+            -p.    tTX-                        tTTTXp-p.. px
+             -xxppTT.                            -xTTP--.-p
