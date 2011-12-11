@@ -1146,6 +1146,19 @@ dd {
   }
 }
 /* =============================================================================
+   Additional layout for screen media < 480px
+   ========================================================================== */
+@media only screen and (max-width: 479px) {
+  nav li {
+    float: none;
+    border-left: solid 1px #e1a61a;
+    border-bottom: solid 1px #e1a61a;
+  }
+  nav li:last-child {
+    border-bottom: 0;
+  }
+}
+/* =============================================================================
    Styling and layout for print media
    ========================================================================== */
 @media print {
