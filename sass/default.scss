@@ -137,7 +137,7 @@ dd {
 
 
 /* =============================================================================
-   Styling and layout for screen media
+   Styling and layout for screen media (mobile first)
    ========================================================================== */
 
 
@@ -181,6 +181,10 @@ nav {
     border-bottom: solid 1px $color-gradient-border;
     @include gradient;
 
+    .container {
+        width: 100%;
+    }
+
     h1 {
         display: none;
     }
@@ -192,12 +196,11 @@ nav {
     }
 
     li {
-        float: left;
         margin: 0;
-        border-right: solid 1px $color-gradient-border;
+        border-bottom: solid 1px $color-gradient-border;
 
-        &:first-child {
-            border-left: solid 1px $color-gradient-border;
+        &:last-child {
+            border-bottom: 0;
         }
 
         &:hover {
@@ -213,30 +216,19 @@ nav {
     a {
         @include text-shadow-light;
         display: block;
-        padding: .5em 1em;
+        padding: .5em 3.125%;
         color: $color-text;
     }
 }
 
-[role="main"] {
-    float: left;
-    /* 592px / 960px */
-    width: 61.666666666667%;
+[role="article"] {
+    margin-bottom: 2em;
 }
 
 [role="complementary"] {
-    float: right;
     margin-bottom: 2em;
-    border: solid 1px $color-border;
-    border-radius: $border-radius;
-    padding: 1em 1em 0;
-    /* 290px / 960px */
-    width: 30.208333333333%;
-    background: $color-background-box;
-}
-
-[role="article"] {
-    margin-bottom: 2em;
+    padding-top: 2em;
+    border-top: dashed 2px $color-border;
 }
 
 [role="search"] p {
@@ -332,8 +324,8 @@ nav {
 
 h1 {
     font-family: $font-sans-serif;
-    /* 42px */
-    font-size: 3em;
+    /* 28px */
+    font-size: 2em;
     /* 52px / 42px */
     line-height: 1.23809523809524;
     letter-spacing: -1px;
@@ -346,8 +338,8 @@ h1 {
 
 h2 {
     font-family: $font-sans-serif;
-    /* 28px */
-    font-size: 2em;
+    /* 21px */
+    font-size: 1.5em;
     /* 40px / 28px */
     line-height: 1.42857142857143;
     /* 21px margin top/bottom */
@@ -355,8 +347,8 @@ h2 {
 }
 
 h3 {
-    /* 21px */
-    font-size: 1.5em;
+    /* 18px */
+    font-size: 1.28571428571429em;
     font-weight: normal;
     font-style: italic;
     /* 16px margin top/bottom */
@@ -374,12 +366,9 @@ blockquote {
     /* 16px */
     font-size: 1.14285714285714em;
     font-style: italic;
-    float: right;
-    margin: 0 0 .875em .875em;
+    margin: .875em 0 .875em 0;
     border-radius: $border-radius;
-    padding: 0 .875em;
-    /* 254px / 592px */
-    width: 42.905405405405%;
+    padding: 1px .875em;
     background: $color-background-box;
 }
 
@@ -397,7 +386,7 @@ address {
 abbr[title],
 acronym[title],
 dfn[title] {
-    border-bottom: 1px dotted;
+    border-bottom: dotted 1px;
     cursor: help;
 }
 
@@ -418,7 +407,7 @@ samp,
 var {
     /* 12px */
     font-size: .85714285714286em;
-    padding: 1px 3px;
+    padding: 1px .25em;
 }
 
 pre {
@@ -427,7 +416,7 @@ pre {
 }
 
 mark {
-    padding: 0 3px;
+    padding: 0 .25em;
     background: $color-highlight-box;
     border-radius: $border-radius;
     color: $color-text;
@@ -486,7 +475,7 @@ figure {
    ========================================================================== */
 
 table {
-    margin-bottom: 1.3em;
+    margin-bottom: 1em;
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
@@ -501,8 +490,8 @@ caption {
 thead,
 tfoot,
 tbody {
-    border-right: 1px solid $color-background-box;
-    border-left: 1px solid $color-background-box;
+    border-right: solid 1px $color-background-box;
+    border-left: solid 1px $color-background-box;
 }
 
 thead {
@@ -515,13 +504,13 @@ tfoot {
 
 th,
 td {
-    border-bottom: 1px solid $color-background-box;
-    padding: .25em 9px;
+    border-bottom: solid 1px $color-background-box;
+    padding: .25em .5em;
 }
 
 th {
     text-align: left;
-    border-top: 1px solid $color-background-box;
+    border-top: solid 1px $color-background-box;
 }
 
 
@@ -556,7 +545,7 @@ dt {
         display: block;
         margin: 0 .5em .5em 0;
         min-width: 36px;
-        border: 1px solid $color-border;
+        border: solid 1px $color-border;
         border-radius: $border-radius;
         @include box-shadow;
         background: #fff;
@@ -619,11 +608,11 @@ dt {
 [role="main"] #article-list {
     list-style: none;
     margin: 0 0 2em 0;
-    border-top: 1px solid $color-background-box;
+    border-top: solid 1px $color-background-box;
 }
 
 #article-list li {
-    border-bottom: 1px solid $color-background-box;
+    border-bottom: solid 1px $color-background-box;
     padding-top: 1em;
 }
 
@@ -981,7 +970,7 @@ input[type="submit"].disabled,
 #cpreview {
     margin-bottom: 2px;
     border-radius: $border-radius;
-    padding: 1em 10px;
+    padding: 1em;
     background: #fff3d6;
 }
 
@@ -1001,7 +990,97 @@ input[type="submit"].disabled,
 
 
 /* =============================================================================
-   Additional layout for screen media > 1280px
+   Additional layout for screen media 480px and up
+   ========================================================================== */
+
+
+
+
+@media only screen and (min-width: 480px) {
+
+
+nav {
+    .container {
+        width: 93.75%;
+    }
+
+    li {
+        float: left;
+        border-right: solid 1px $color-gradient-border;
+        border-bottom: 0;
+
+        &:first-child {
+            border-left: solid 1px $color-gradient-border;
+        }
+    }
+
+    a {
+        padding: .5em 1em;
+    }
+}
+
+
+}
+
+
+
+
+/* =============================================================================
+   Additional layout for screen media 768px and up
+   ========================================================================== */
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+
+[role="main"] {
+    float: left;
+    /* 592px / 960px */
+    width: 61.666666666667%;
+}
+
+[role="complementary"] {
+    float: right;
+    border: solid 1px $color-border;
+    border-radius: $border-radius;
+    padding: 1em 1em 0;
+    /* 290px / 960px */
+    width: 30.208333333333%;
+    background: $color-background-box;
+}
+
+h1 {
+    /* 42px */
+    font-size: 3em;
+}
+
+h2 {
+    /* 28px */
+    font-size: 2em;
+}
+
+h3 {
+    /* 21px */
+    font-size: 1.5em;
+}
+
+blockquote {
+    float: right;
+    margin: 0 0 .875em .875em;
+    /* 254px / 592px */
+    width: 42.905405405405%;
+}
+
+
+}
+
+
+
+
+/* =============================================================================
+   Additional layout for screen media 1280px and up
    ========================================================================== */
 
 
@@ -1015,96 +1094,10 @@ body {
     font-size: 100%;
 }
 
-.container {
+.container,
+nav .container {
     /* 1152px / 1280px */
     width: 90%;
-    max-width: 1280px;
-    @extend .clearfix;
-}
-
-
-}
-
-
-
-
-/* =============================================================================
-   Additional layout for screen media < 768px
-   ========================================================================== */
-
-
-
-
-@media only screen and (max-width: 767px) {
-
-
-[role="main"] {
-    float: none;
-    width: 100%;
-}
-
-[role="complementary"] {
-    float: none;
-    width: 90%;
-}
-
-blockquote {
-    float: none;
-    margin: .875em 0 .875em 0;
-    padding: 1px 0;
-    width: auto;
-}
-
-h1 {
-    /* 28px */
-    font-size: 2em;
-}
-
-h2 {
-    /* 21px */
-    font-size: 1.5em;
-}
-
-h3 {
-    /* 21px */
-    font-size: 1.28571428571429em;
-}
-
-
-}
-
-
-
-
-/* =============================================================================
-   Additional layout for screen media < 480px
-   ========================================================================== */
-
-
-
-
-@media only screen and (max-width: 479px) {
-
-
-nav {
-    .container {
-        width: 100%;
-    }
-
-    li {
-        float: none;
-        border-right: 0;
-        border-left: 0;
-        border-bottom: solid 1px $color-gradient-border;
-
-        &:last-child {
-            border-bottom: 0;
-        }
-    }
-
-    a {
-        padding: .5em 3.125%;
-    }
 }
 
 
@@ -1146,12 +1139,12 @@ body {
 
 header {
     margin-bottom: 24pt;
-    border-bottom: 1pt solid black;
+    border-bottom: solid 1pt black;
 }
 
 footer {
     margin-top: 12pt;
-    border-top: 1pt solid black;
+    border-top: solid 1pt black;
     padding-top: 12pt;
 }
 
@@ -1226,14 +1219,14 @@ small,
 
 blockquote {
     margin-bottom: 8pt;
-    border: 1pt solid black;
+    border: solid 1pt black;
     padding: 8pt 8pt 0;
     page-break-inside: avoid;
 }
 
 pre {
     margin-bottom: 8pt;
-    border: 1pt solid black;
+    border: solid 1pt black;
     padding: 8pt;
 }
 
@@ -1296,8 +1289,8 @@ caption {
 thead,
 tfoot,
 tbody {
-    border-right: 1pt solid black;
-    border-left: 1pt solid black;
+    border-right: solid 1pt black;
+    border-left: solid 1pt black;
 }
 
 /* display table head across multi-page tables - http://css-discuss.incutio.com/wiki/Printing_Tables */
@@ -1311,13 +1304,13 @@ tr {
 
 th,
 td {
-    border-bottom: 1pt solid black;
+    border-bottom: solid 1pt black;
     padding: 4pt 8pt;
 }
 
 th {
     text-align: left;
-    border-top: 1pt solid black;
+    border-top: solid 1pt black;
 
 }
 
