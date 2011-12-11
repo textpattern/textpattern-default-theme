@@ -1085,12 +1085,24 @@ h3 {
 @media only screen and (max-width: 479px) {
 
 
-nav li {
-    float: none;
-    border-left: solid 1px $color-gradient-border;
-    border-bottom: solid 1px $color-gradient-border;
-    &:last-child {
-        border-bottom: 0;
+nav {
+    .container {
+        width: 100%;
+    }
+
+    li {
+        float: none;
+        border-right: 0;
+        border-left: 0;
+        border-bottom: solid 1px $color-gradient-border;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    a {
+        padding: .5em 3.125%;
     }
 }
 
