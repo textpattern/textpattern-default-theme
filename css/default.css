@@ -296,11 +296,16 @@ nav a {
     color: #333333;
 }
 
+[role="main"] {
+    max-width: 790px;
+}
+
 [role="article"] {
     margin-bottom: 2em;
 }
 
 [role="complementary"] {
+    max-width: 790px;
     margin-bottom: 2em;
     padding-top: 2em;
     border-top: dashed 2px #cccccc;
