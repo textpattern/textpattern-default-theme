@@ -41,7 +41,7 @@
     <!-- Google font API -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:n4,i4,n7,i7|Cousine">
 
-    <txp:css format="link" />
+    <txp:css format="link" media="" />
     <!-- or you can use external CSS files eg. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
 
 <!-- all JavaScript should go at the bottom, except for Modernizr which enables HTML5 elements & feature detects.
