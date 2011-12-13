@@ -189,9 +189,9 @@ body {
 }
 
 .wrapper {
-    border-bottom: solid 1px #cccccc;
+    border-bottom: solid 1px #ccc;
     padding-top: 2em;
-    background: #ffffff;
+    background: #fff;
 }
 
 header,
@@ -308,7 +308,7 @@ nav a {
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
     display: block;
     padding: .5em 3.125%;
-    color: #333333;
+    color: #333;
 }
 
 [role="article"] {
@@ -318,7 +318,7 @@ nav a {
 [role="complementary"] {
     margin-bottom: 2em;
     padding-top: 2em;
-    border-top: dashed 2px #cccccc;
+    border-top: dashed 2px #ccc;
 }
 
 [role="search"] p {
@@ -351,11 +351,11 @@ a:active {
 }
 
 a:focus {
-    outline: thin dotted #0066ff;
+    outline: thin dotted #06f;
 }
 
 header a {
-    color: #333333;
+    color: #333;
     border-radius: 5px;
 }
 
@@ -370,7 +370,7 @@ header a:hover, header a:active {
 footer a:hover,
 footer a:active {
     text-decoration: underline;
-    color: #0066ff;
+    color: #06f;
 }
 
 [role="main"] a:visited,
@@ -380,18 +380,18 @@ footer a:visited {
 }
 
 [role="main"] h1 a {
-    color: #333333;
+    color: #333;
     border-radius: 5px;
 }
 
 [role="main"] h1 a:visited {
-    color: #333333;
+    color: #333;
 }
 
 [role="main"] h1 a:hover,
 [role="main"] h1 a:active {
     text-decoration: none;
-    color: #333333;
+    color: #333;
     background: #f0f2f6;
 }
 
@@ -405,7 +405,7 @@ body {
     /* 14px / 16px */
     font-size: 0.875em;
     line-height: 1.5;
-    color: #333333;
+    color: #333;
 }
 
 nav {
@@ -510,7 +510,7 @@ mark {
     padding: 0 .25em;
     background: #fdf5d9;
     border-radius: 5px;
-    color: #333333;
+    color: #333;
     font-weight: bold;
 }
 
@@ -525,7 +525,7 @@ tfoot,
 figcaption,
 tfoot,
 .footnote {
-    color: #888888;
+    color: #888;
 }
 
 figcaption {
@@ -581,7 +581,7 @@ caption {
 
 th,
 td {
-    border-bottom: solid 1px #cccccc;
+    border-bottom: solid 1px #ccc;
     padding: .28571428571429em .5em .28571428571429em 0;
 }
 
@@ -596,7 +596,7 @@ th {
 
 thead th,
 thead td {
-    border-bottom: solid 2px #cccccc;
+    border-bottom: solid 2px #ccc;
 }
 
 tfoot th,
@@ -644,7 +644,7 @@ dt {
     display: block;
     margin: 0 .5em .5em 0;
     min-width: 36px;
-    border: solid 1px #cccccc;
+    border: solid 1px #ccc;
     border-radius: 5px;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -659,7 +659,7 @@ dt {
 #monthly-list a {
     display: block;
     text-decoration: none;
-    color: #333333;
+    color: #333;
 }
 
 #monthly-list a:hover,
@@ -746,11 +746,11 @@ dt {
 [role="main"] #article-list {
     list-style: none;
     margin: 0 0 2em 0;
-    border-top: solid 1px #cccccc;
+    border-top: solid 1px #ccc;
 }
 
 #article-list li {
-    border-bottom: solid 1px #cccccc;
+    border-bottom: solid 1px #ccc;
     padding-top: 1em;
 }
 
@@ -786,11 +786,11 @@ textarea {
 
 /* colour placeholder text (Webkit and Mozilla only, so far) */
 ::-webkit-input-placeholder {
-    color: #888888;
+    color: #888;
 }
 
 :-moz-placeholder {
-    color: #888888;
+    color: #888;
 }
 
 /* suppress red glow that Firefox adds to form fields by default, even when user is still typing */
@@ -808,8 +808,8 @@ button:focus,
 input:focus,
 select:focus,
 textarea:focus {
-    -webkit-box-shadow: 0 0 7px #0066ff;
-    box-shadow: 0 0 7px #0066ff;
+    -webkit-box-shadow: 0 0 7px #06f;
+    box-shadow: 0 0 7px #06f;
     /* Opera */
     z-index: 1;
 }
@@ -842,7 +842,7 @@ input[type="week"] {
     /* 12px */
     font-size: .85714285714286em;
     text-align: left;
-    border: solid 1px #cccccc;
+    border: solid 1px #ccc;
     padding: .5em;
     background: #fff;
     outline: 0;
@@ -879,7 +879,7 @@ input[type="text"][disabled],
 input[type="time"][disabled],
 input[type="url"][disabled],
 input[type="week"][disabled] {
-    background-color: #eeeeee;
+    background-color: #eee;
 }
 
 /* make sure disable elements really are disabled */
@@ -895,7 +895,7 @@ textarea[disabled] {
     -webkit-user-select: none;
     -moz-user-select: -moz-none;
     user-select: none;
-    color: #888888;
+    color: #888;
     cursor: default;
 }
 
@@ -914,7 +914,7 @@ select {
     /* 12px */
     font-size: .85714285714286em;
     text-align: left;
-    border: solid 1px #cccccc;
+    border: solid 1px #ccc;
     padding: .5em;
     background: #fff;
     outline: 0;
@@ -930,7 +930,7 @@ select[multiple] {
 }
 
 optgroup {
-    color: #333333;
+    color: #333;
     font-style: normal;
     font-weight: normal;
 }
@@ -1022,7 +1022,7 @@ input[type="submit"] {
     /* display and zoom IE7 fix for display:inline-block */
     *display: inline;
     *zoom: 1;
-    color: #333333;
+    color: #333;
     background-color: #fabc2b;
     /* Konqueror */
     background-image: -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
@@ -1107,7 +1107,7 @@ input[type="submit"].disabled,
     top: 0;
     cursor: default;
     border: solid 1px #d2d2d2;
-    color: #888888;
+    color: #888;
     background-color: #dadada;
     /* Konqueror */
     background-image: -khtml-gradient(linear, left top, left bottom, from(#e6e6e6), to(#dadada));
@@ -1139,7 +1139,7 @@ input[type="submit"].disabled,
 
 #paginator a.button {
     text-decoration: none;
-    color: #333333;
+    color: #333;
 }
 
 #paginator-l {
@@ -1268,7 +1268,7 @@ nav a {
 
 [role="complementary"] {
     float: right;
-    border: solid 1px #cccccc;
+    border: solid 1px #ccc;
     border-radius: 5px;
     padding: 1em 1em 0;
     /* 290px / 960px */
