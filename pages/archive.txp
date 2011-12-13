@@ -46,104 +46,100 @@
 
 <!-- header -->
     <header role="banner">
-        <div class="container">
-            <hgroup>
-                <h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
-                <h3><txp:site_slogan /></h3>
-            </hgroup>
-        </div> <!-- /.container (header) -->
+        <hgroup>
+            <h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
+            <h3><txp:site_slogan /></h3>
+        </hgroup>
     </header>
 
 <!-- navigation -->
     <nav role="navigation">
-        <div class="container">
-            <h1><txp:text item="navigation" /></h1>
-            <txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="li">
-                <txp:section link="1" title="1" />
-            </txp:section_list>
-        </div> <!-- /.container (nav) -->
+        <h1><txp:text item="navigation" /></h1>
+        <txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="li">
+            <txp:section link="1" title="1" />
+        </txp:section_list>
     </nav>
 
-    <div class="container">
+    <div class="wrapper">
+        <div class="container">
 
 <!-- left (main) column -->
-        <div role="main">
+            <div role="main">
 
-            <txp:if_article_list><h1><txp:section title="1" /></h1></txp:if_article_list>
+                <txp:if_article_list><h1><txp:section title="1" /></h1></txp:if_article_list>
 
-            <txp:article listform="article_listing" limit="5" />
-            <!-- or if you want to list all articles from all sections instead, then replace txp:article with txp:article_custom -->
+                <txp:article listform="article_listing" limit="5" />
+                <!-- or if you want to list all articles from all sections instead, then replace txp:article with txp:article_custom -->
 
-            <!-- add pagination links to foot of article/article listings if there are more articles available,
-                this method is more flexibile than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
-            <p id="paginator">
+                <!-- add pagination links to foot of article/article listings if there are more articles available,
+                    this method is more flexibile than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
+                <p id="paginator">
 
-            <txp:if_individual_article>
+                <txp:if_individual_article>
 
-                <txp:variable name="prev" value='<txp:link_to_prev />' />
-                <txp:variable name="next" value='<txp:link_to_next />' />
+                    <txp:variable name="prev" value='<txp:link_to_prev />' />
+                    <txp:variable name="next" value='<txp:link_to_next />' />
 
-                <txp:if_variable name="prev" value="">
-                    <span id="paginator-l" class="button disabled">&#8592; <txp:text item="older" /></span>
+                    <txp:if_variable name="prev" value="">
+                        <span id="paginator-l" class="button disabled">&#8592; <txp:text item="older" /></span>
+                    <txp:else />
+                        <a id="paginator-l" href="<txp:link_to_prev />" title="<txp:prev_title />" class="button">&#8592; <txp:text item="older" /></a>
+                    </txp:if_variable>
+                    <txp:if_variable name="next" value="">
+                        <span id="paginator-r" class="button disabled"><txp:text item="newer" /> &#8594;</span>
+                    <txp:else />
+                        <a id="paginator-r" href="<txp:link_to_next />" title="<txp:next_title />" class="button"><txp:text item="newer" /> &#8594;</a>
+                    </txp:if_variable>
+
                 <txp:else />
-                    <a id="paginator-l" href="<txp:link_to_prev />" title="<txp:prev_title />" class="button">&#8592; <txp:text item="older" /></a>
-                </txp:if_variable>
-                <txp:if_variable name="next" value="">
-                    <span id="paginator-r" class="button disabled"><txp:text item="newer" /> &#8594;</span>
-                <txp:else />
-                    <a id="paginator-r" href="<txp:link_to_next />" title="<txp:next_title />" class="button"><txp:text item="newer" /> &#8594;</a>
-                </txp:if_variable>
 
-            <txp:else />
+                    <txp:variable name="prev" value='<txp:older />' />
+                    <txp:variable name="next" value='<txp:newer />' />
+                    <txp:if_variable name="prev" value="">
+                        <span id="paginator-l" class="button disabled">&#8592; <txp:text item="older" /></span>
+                    <txp:else />
+                        <a id="paginator-l" href="<txp:older />" title="<txp:text item='older' />" class="button">&#8592; <txp:text item="older" /></a>
+                    </txp:if_variable>
+                    <txp:if_variable name="next" value="">
+                        <span id="paginator-r" class="button disabled"><txp:text item="newer" /> &#8594;</span>
+                    <txp:else />
+                        <a id="paginator-r" href="<txp:newer />" title="<txp:text item='newer' />" class="button"><txp:text item="newer" /> &#8594;</a>
+                    </txp:if_variable>
 
-                <txp:variable name="prev" value='<txp:older />' />
-                <txp:variable name="next" value='<txp:newer />' />
-                <txp:if_variable name="prev" value="">
-                    <span id="paginator-l" class="button disabled">&#8592; <txp:text item="older" /></span>
-                <txp:else />
-                    <a id="paginator-l" href="<txp:older />" title="<txp:text item='older' />" class="button">&#8592; <txp:text item="older" /></a>
-                </txp:if_variable>
-                <txp:if_variable name="next" value="">
-                    <span id="paginator-r" class="button disabled"><txp:text item="newer" /> &#8594;</span>
-                <txp:else />
-                    <a id="paginator-r" href="<txp:newer />" title="<txp:text item='newer' />" class="button"><txp:text item="newer" /> &#8594;</a>
-                </txp:if_variable>
+                </txp:if_individual_article>
 
-            </txp:if_individual_article>
+                </p>
 
-            </p>
+            </div> <!-- /main -->
 
-        </div> <!-- /main -->
+    <!-- right (complementary) column -->
+            <div role="complementary">
+                <txp:search_input /> <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
+    
+                <!-- Feed links, default flavor is rss, so we don't need to specify a flavor on the first feed_link -->
+                <p><txp:feed_link label="RSS" class="feed-rss" /> / <txp:feed_link flavor="atom" label="Atom" class="feed-atom" /></p>
+    
+                <h4><txp:text item="recent_articles" /></h4>
+                <ul id="monthly-list">
+                    <!-- using if_different tag to populate list only with months that actually contain articles -->
+                    <txp:article_custom section="articles" limit="12">
+                        <txp:if_different>
+                            <li><a href="<txp:site_url />articles/?month=<txp:posted format="%Y-%m"/>"><span class="archive-year"><txp:posted format="%Y" /></span> <span class="archive-month"><txp:posted format="%b"/></span></a></li>
+                        </txp:if_different>
+                    </txp:article_custom>
+                </ul>
 
-<!-- right (complementary) column -->
-        <div role="complementary">
-            <txp:search_input /> <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
+                <h4><txp:text item="external_links" /></h4>
+                <txp:linklist wraptag="ul" break="li" limit="10" /> <!-- links by default to form: 'plainlinks.link.txp' unless you specify a different form -->
+            </div> <!-- /complementary -->
 
-            <!-- Feed links, default flavor is rss, so we don't need to specify a flavor on the first feed_link -->
-            <p><txp:feed_link label="RSS" class="feed-rss" /> / <txp:feed_link flavor="atom" label="Atom" class="feed-atom" /></p>
-
-            <h4><txp:text item="recent_articles" /></h4>
-            <ul id="monthly-list">
-                <!-- using if_different tag to populate list only with months that actually contain articles -->
-                <txp:article_custom section="articles" limit="12">
-                    <txp:if_different>
-                        <li><a href="<txp:site_url />articles/?month=<txp:posted format="%Y-%m"/>"><span class="archive-year"><txp:posted format="%Y" /></span> <span class="archive-month"><txp:posted format="%b"/></span></a></li>
-                    </txp:if_different>
-                </txp:article_custom>
-            </ul>
-
-            <h4><txp:text item="external_links" /></h4>
-            <txp:linklist wraptag="ul" break="li" limit="10" /> <!-- links by default to form: 'plainlinks.link.txp' unless you specify a different form -->
-        </div> <!-- /complementary -->
-
-    </div> <!-- /.container (main and complementary) -->
+        </div> <!-- /.container -->
+    </div> <!-- /.wrapper -->
 
 <!-- footer -->
     <footer role="contentinfo">
-        <div class="container">
-            <!-- using PHP to dynamically update the copyright year -->
-            <p><small>&#169;<txp:php>echo date('Y');</txp:php> <txp:site_name />. <txp:text item="published_with" /> <a href="http://textpattern.com" rel="external">Textpattern CMS</a>.</small></p>
-        </div> <!-- /.container (footer) -->
+        <!-- using PHP to dynamically update the copyright year -->
+        <p><small>&#169;<txp:php>echo date('Y');</txp:php> <txp:site_name />. <txp:text item="published_with" /> <a href="http://textpattern.com" rel="external">Textpattern CMS</a>.</small></p>
     </footer>
 
 <!-- JavaScript at the bottom for fast page loading -->

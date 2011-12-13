@@ -120,7 +120,10 @@ dd {
     http://nicolasgallagher.com/micro-clearfix-hack/ */
 
 .clearfix,
+header,
+nav ul,
 .container,
+footer,
 .checkboxes span,
 .radiobuttons span,
 #paginator,
@@ -131,8 +134,14 @@ dd {
 
 .clearfix:before,
 .clearfix:after,
+header:before,
+header:after,
+nav ul:before,
+nav ul:after,
 .container:before,
 .container:after,
+footer:before,
+footer:after,
 .checkboxes span:before,
 .checkboxes span:after,
 .radiobuttons span:before,
@@ -146,7 +155,10 @@ dd {
 }
 
 .clearfix:after,
+header:after,
+nav ul:after,
 .container:after,
+footer:after,
 .checkboxes span:after,
 .radiobuttons span:after,
 #paginator:after,
@@ -173,10 +185,18 @@ dd {
 
 body {
     margin: 0;
-    background: white;
+    background: #f0f2f6;
 }
 
-.container {
+.wrapper {
+    border-bottom: solid 1px #cccccc;
+    padding-top: 2em;
+    background: #ffffff;
+}
+
+header,
+.container,
+footer {
     margin: 0 auto;
     /* 960px / 1024px */
     width: 93.75%;
@@ -185,7 +205,6 @@ body {
 
 header {
     padding-top: 1em;
-    background: #f0f2f6;
 }
 
 header h1 {
@@ -198,7 +217,6 @@ header h3 {
   }
 
 nav {
-    margin-bottom: 2em;
     border-top: solid 1px #e1a61a;
     border-bottom: solid 1px #e1a61a;
     background-color: #fabc2b;
@@ -222,16 +240,13 @@ nav {
     border-radius: 0 \0;
 }
 
-nav .container {
-    width: 100%;
-}
-
 nav h1 {
     display: none;
 }
 
 nav ul {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1280px;
     list-style: none;
     list-style-image: none;
 }
@@ -311,10 +326,7 @@ nav a {
 }
 
 footer {
-    clear: both;
-    border-top: solid 1px #cccccc;
     padding: .5em 0;
-    background: #f0f2f6;
 }
 
 
@@ -1214,7 +1226,7 @@ select:not([multiple]) {
 @media only screen and (min-width: 480px) {
 
 
-nav .container {
+nav ul {
     width: 93.75%;
 }
 
@@ -1307,8 +1319,10 @@ body {
     font-size: 100%;
 }
 
+header,
+nav ul,
 .container,
-nav .container {
+footer {
     /* 1152px / 1280px */
     width: 90%;
 }

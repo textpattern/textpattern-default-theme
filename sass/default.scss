@@ -154,10 +154,18 @@ dd {
 
 body {
     margin: 0;
+    background: $color-background-box;
+}
+
+.wrapper {
+    border-bottom: solid 1px #cccccc;
+    padding-top: 2em;
     background: $color-background;
 }
 
-.container {
+header,
+.container,
+footer {
     margin: 0 auto;
     /* 960px / 1024px */
     width: 93.75%;
@@ -167,7 +175,6 @@ body {
 
 header {
     padding-top: 1em;
-    background: $color-background-box;
     h1 {
         margin: 0;
     }
@@ -178,23 +185,19 @@ header {
 }
 
 nav {
-    margin-bottom: 2em;
     border-top: solid 1px $color-gradient-border;
     border-bottom: solid 1px $color-gradient-border;
     @include gradient;
-
-    .container {
-        width: 100%;
-    }
 
     h1 {
         display: none;
     }
 
     ul {
-        margin: 0;
+        margin: 0 auto;
         list-style: none;
         list-style-image: none;
+        @extend .clearfix;
     }
 
     li {
@@ -237,10 +240,7 @@ nav {
 }
 
 footer {
-    clear: both;
-    border-top: solid 1px $color-border;
     padding: .5em 0;
-    background: $color-background-box;
 }
 
 
@@ -1009,7 +1009,7 @@ select:not([multiple]) {
 
 
 nav {
-    .container {
+    ul {
         width: 93.75%;
     }
 
@@ -1103,8 +1103,10 @@ body {
     font-size: 100%;
 }
 
+header,
 .container,
-nav .container {
+nav ul,
+footer {
     /* 1152px / 1280px */
     width: 90%;
 }
