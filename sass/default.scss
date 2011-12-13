@@ -612,11 +612,11 @@ dt {
 [role="main"] #article-list {
     list-style: none;
     margin: 0 0 2em 0;
-    border-top: solid 1px $color-background-box;
+    border-top: solid 1px $color-border;
 }
 
 #article-list li {
-    border-bottom: solid 1px $color-background-box;
+    border-bottom: solid 1px $color-border;
     padding-top: 1em;
 }
 
