@@ -13,10 +13,6 @@
 <!-- mobile viewport optimized: j.mp/bplateviewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references: mathiasbynens.be/notes/touch-icons -->
-    <link rel="shortcut icon" href="<txp:site_url />favicon.ico">
-    <link rel="apple-touch-icon" href="<txp:site_url />apple-touch-icon.png">
-
 <!-- content feeds -->
     <txp:feed_link flavor="atom" format="link" label="Atom" />
     <txp:feed_link flavor="rss" format="link" label="RSS" />
