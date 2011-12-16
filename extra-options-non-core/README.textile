@@ -18,6 +18,14 @@ h4. /extra-options-non-core/chrome_frame/chrome_frame.misc.txp
 
 You could also target IE 7 (or newer) if you so desired by amending the code @<!--[if lt IE 7]>@ to @<!--[if lt IE 8]>@ for example for IE 7 (the code @lt IE 8@ means lower than IE 8).
 
+h3. Extra code option: footer-copyright
+
+Add dynamically updated copyright statement to your page footers.
+
+h4. /extra-options-non-core/footer-copyright/footer.txp
+
+Paste the code into your current page templates, replacing the previous footer code. Note this code requires that you have 'Allow PHP in pages?' set to 'yes' in the Textpattern advanced preferences.
+
 h3. Extra code option: google_plus1
 
 Add a Google +1 button to each of your articles.
