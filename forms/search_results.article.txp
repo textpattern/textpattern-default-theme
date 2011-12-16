@@ -14,7 +14,7 @@
 
 <!-- if no search results, then display no search results message -->
     <txp:else />
-        <h3><txp:text item="no_search_matches" /> &#8216;<txp:search_term />&#8217;</h3>
+        <h3><txp:text item="no_search_matches" /></h3>
 
     </txp:if_search_results>
 

@@ -8,11 +8,15 @@
     <title><txp:page_title /></title>
     <meta name="description" content="">
     <meta name="generator" content="Textpattern CMS">
-    <txp:if_category>
-        <meta name="robots" content="noindex, follow, noodp, noydir" />
+    <txp:if_search>
+        <meta name="robots" content="none">
     <txp:else />
-        <meta name="robots" content="index, follow, noodp, noydir" />
+    <txp:if_category>
+        <meta name="robots" content="noindex, follow, noodp, noydir">
+    <txp:else />
+        <meta name="robots" content="index, follow, noodp, noydir">
     </txp:if_category>
+    </txp:if_search>
 
 <!-- mobile viewport optimized: j.mp/bplateviewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
