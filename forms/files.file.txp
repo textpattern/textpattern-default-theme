@@ -1,10 +1,10 @@
 <!-- set up a variable to check whether a file also has a description associated with it... -->
-<txp:variable name="file_download_description" value="<txp:file_download_description />" />
+<txp:variable name="file_download_description" value='<txp:file_download_description />' />
 
 <strong><a href="<txp:file_download_link />" title="<txp:file_download_name title='1' />"><txp:file_download_name title="1" /></a></strong><br>
 
 <!-- ...now use that description, otherwise omit that line -->
-<txp:if_variable name="file_download_description" value="">
+<txp:if_variable name="file_download_description" value=''>
 
 <txp:else />
 
