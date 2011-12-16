@@ -28,7 +28,7 @@
 
 <!-- only display categories if they are actually set for an article, otherwise omit -->
     <txp:if_article_category>
-        <p><strong><txp:text item="categories" />:</strong> <txp:category1 title="1" link="1" /><txp:if_article_category number="2">, <txp:category2 title="1" link="1" /></txp:if_article_category></p>
+        <p><strong><txp:text item="categories" />:</strong> <txp:category1 title="1" link="1" /><txp:if_article_category number="1"><txp:if_article_category number="2">, </txp:if_article_category></txp:if_article_category><txp:category2 title="1" link="1" /></p>
     </txp:if_article_category>
 
 <!-- if this is an individual article then add the comments section via form: comments_display.article.txp -->
