@@ -19,11 +19,11 @@
     <txp:rsd />
 
 <!-- css -->
-    <!-- Google font API -->
+    <!-- Google font API (remove this if you intend to use the theme in a project without internet access -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:n4,i4,n7,i7|Cousine">
 
     <txp:css format="link" media="" />
-    <!-- or you can use external CSS files eg. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
+    <!-- or you can use (faster) external CSS files eg. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
 
 <!-- all JavaScript should go at the bottom, except for Modernizr which enables HTML5 elements & feature detects.
     you should replace this with your own build containing only the tests you actually need via: www.modernizr.com/download/ -->
