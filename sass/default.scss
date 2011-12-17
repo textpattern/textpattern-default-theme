@@ -268,7 +268,7 @@ a {
 
     header & {
         color: $color-text;
-        border-radius: $border-radius;
+        @include border-radius;
         &:hover, &:active {
             background: darken($color-background-box, 5%);
         }
@@ -290,7 +290,7 @@ footer a {
 
 [role="main"] h1 a {
     color: $color-text;
-    border-radius: $border-radius;
+    @include border-radius;
 
     &:visited {
         color: $color-text;
@@ -366,7 +366,7 @@ blockquote {
     font-size: 1.14285714285714em;
     font-style: italic;
     margin: .875em 0 .875em 0;
-    border-radius: $border-radius;
+    @include border-radius;
     padding: 1px .875em;
     background: $color-background-box;
 }
@@ -396,7 +396,7 @@ samp,
 var {
     font-family: $font-mono;
     background: $color-highlight-box;
-    border-radius: $border-radius;
+    @include border-radius;
     
 }
 
@@ -417,7 +417,7 @@ pre {
 mark {
     padding: 0 .25em;
     background: $color-highlight-box;
-    border-radius: $border-radius;
+    @include border-radius;
     color: $color-text;
     font-weight: bold;
 }
@@ -550,7 +550,7 @@ dt {
         margin: 0 .5em .5em 0;
         min-width: 36px;
         border: solid 1px $color-border;
-        border-radius: $border-radius;
+        @include border-radius;
         @include box-shadow;
         background: #fff;
 
@@ -582,7 +582,7 @@ dt {
             font-size: .85714285714286em;
             font-weight: bold;
             @include text-shadow-light;
-            border-radius: $border-radius $border-radius 0 0;
+            @include border-radius($border-radius $border-radius 0 0);
             padding: 0 .33333333333333em;
             @include gradient;
         }
@@ -592,7 +592,7 @@ dt {
         }
 
         .archive-month {
-            border-radius: 0 0 $border-radius $border-radius;
+            @include border-radius(0 0 $border-radius $border-radius);
             padding: 0 .28571428571429em;
         }
 
@@ -683,8 +683,7 @@ input[type="radio"]:focus,
 input[type="radio"]:active,
 input[type="checkbox"]:focus,
 input[type="checkbox"]:active {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    @include box-shadow(none);
 }
 
 textarea,
@@ -712,7 +711,7 @@ input[type="week"] {
     @include box-sizing;
     /* remove iOS Safari default styling */
     -webkit-appearance: none;
-    border-radius: 0;
+    @include border-radius(0);
 }
 
 [role="complementary"] input[type="search"] {
@@ -877,7 +876,7 @@ input[type="submit"] {
     @include text-shadow-light;
     cursor: pointer;
     border: solid 1px $color-gradient-border;
-    border-radius: $border-radius;
+    @include border-radius;
     padding: .5em 1em .5em;
     display: inline-block;
     /* display and zoom IE7 fix for display:inline-block */
@@ -938,7 +937,7 @@ input[type="submit"].disabled,
 
 .comments {
     margin-bottom: 1em;
-    border-radius: $border-radius;
+    @include border-radius;
     padding: 1em 1em 1px;
     background: lighten($color-background-box, 2%);
 
@@ -959,7 +958,7 @@ input[type="submit"].disabled,
 
 #cpreview {
     margin-bottom: 2px;
-    border-radius: $border-radius;
+    @include border-radius;
     padding: 1em;
     background: #fff3d6;
 }
@@ -1053,7 +1052,7 @@ nav {
 [role="complementary"] {
     float: right;
     border: solid 1px $color-border;
-    border-radius: $border-radius;
+    @include border-radius;
     padding: 1em 1em 0;
     /* 290px / 960px */
     width: 30.208333333333%;
