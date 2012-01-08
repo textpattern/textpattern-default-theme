@@ -1,7 +1,7 @@
 <!-- see default.article.txp for info on HTML5 'time' tag -->
 <txp:if_first_article><ul id="article-list"></txp:if_first_article>
-    <li>
-        <h4><txp:permlink><txp:title /></txp:permlink></h4>
-        <p class="footnote"><txp:text item="posted" />: <time datetime="<txp:posted format='iso8601' />" pubdate><txp:posted /></time>, <txp:text item="author" />: <txp:author /></p>
+    <li class="hentry">
+        <h4 class="entry-title"><txp:permlink><txp:title /></txp:permlink></h4>
+        <p class="footnote"><txp:text item="posted" />: <time class="updated" datetime="<txp:posted format='iso8601' />" pubdate><txp:posted /></time>, <span class="byline author vcard"><txp:text item="author" />: <span class="fn"><txp:author /></span></span></p>
     </li>
 <txp:if_last_article></ul></txp:if_last_article>
