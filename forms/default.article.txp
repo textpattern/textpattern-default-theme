@@ -8,10 +8,10 @@
 </txp:if_individual_article>
 
 <!-- using HTML5 'time' tag, note that the correct format for datetime attribute should be Y-m-dTH:M:SZ (e.g. 2011-01-31T15:31:25Z) -->
-    <p><strong><txp:text item="posted" />:</strong> <time class="updated" datetime="<txp:posted format='iso8601' />" pubdate><txp:posted /></time></p>
+    <p><strong><txp:text item="posted" /></strong> <time class="updated" datetime="<txp:posted format='iso8601' />" pubdate><txp:posted /></time></p>
 <!-- see http://php.net/manual/en/function.strftime.php for reference list of time/date strings -->
 
-    <p><strong><txp:text item="comments" />:</strong> <a class="comment-count" href="<txp:permlink />#comments-head" title="<txp:text item='view' />&#8230;">
+    <p><strong><txp:text item="comments" /></strong> <a class="comment-count" href="<txp:permlink />#comments-head" title="<txp:text item='view' />&#8230;">
 
 <!-- if comments then display the number, if no comments then print 'none' -->
 <txp:if_comments>
@@ -26,11 +26,11 @@
         <txp:body />
     </div>
 
-    <p class="byline author vcard"><strong><txp:text item="author" />:</strong> <span class="fn"><txp:author /></span></p>
+    <p class="byline author vcard"><strong><txp:text item="author" /></strong> <span class="fn"><txp:author /></span></p>
 
 <!-- only display categories if they are actually set for an article, otherwise omit -->
     <txp:if_article_category>
-        <p><strong><txp:text item="categories" />:</strong> <txp:category1 title="1" link="1" /><txp:if_article_category number="1"><txp:if_article_category number="2">, </txp:if_article_category></txp:if_article_category><txp:category2 title="1" link="1" /></p>
+        <p><strong><txp:text item="categories" /></strong> <txp:category1 title="1" link="1" /><txp:if_article_category number="1"><txp:if_article_category number="2">, </txp:if_article_category></txp:if_article_category><txp:category2 title="1" link="1" /></p>
     </txp:if_article_category>
 
 <!-- if this is an individual article then add the comments section via form: comments_display.article.txp -->
