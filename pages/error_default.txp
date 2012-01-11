@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 
 <!-- page title and metas, no meta keywords as they are now obsolete -->
-    <title><txp:site_name />: <txp:error_status /></title>
+    <title><txp:error_status /></title>
     <meta name="description" content="<txp:error_message />">
     <meta name="generator" content="Textpattern CMS">
     <meta name="robots" content="none">

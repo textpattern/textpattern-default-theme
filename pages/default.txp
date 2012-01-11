@@ -85,7 +85,7 @@
                 <!-- else is this an article category list? -->
                 <txp:if_category>
 
-                    <h1><txp:text item="category" />: <txp:category title="1" /></h1>
+                    <h1><txp:text item="category" /> <txp:category title="1" /></h1>
                     <div class="hfeed">
                         <txp:article form="article_listing" limit="5" />
                     </div>
