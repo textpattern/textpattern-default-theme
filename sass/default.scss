@@ -787,9 +787,10 @@ select[multiple] {
 }
 
 optgroup {
-    color: $color-text;
+    font-family: $font-sans-serif; // Font family repeated, for Firefox
     font-style: normal;
     font-weight: normal;
+    color: $color-text;
 }
 
 .large {
