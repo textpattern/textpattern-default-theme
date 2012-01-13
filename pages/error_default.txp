@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="<txp:lang />">
+<html lang="<txp:lang />">
 
 <head>
     <meta charset="utf-8">
@@ -25,9 +25,11 @@
     <txp:css format="link" media="" />
     <!-- or you can use (faster) external CSS files eg. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
 
-<!-- all JavaScript should go at the bottom, except for Modernizr which enables HTML5 elements & feature detects.
-    you should replace this with your own build containing only the tests you actually need via: www.modernizr.com/download/ -->
-    <script src="<txp:site_url />js/modernizr.js"></script>
+<!-- HTML5 and Media Queries support for IE < 9 -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
 
 </head>
 
