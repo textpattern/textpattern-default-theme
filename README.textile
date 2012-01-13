@@ -158,10 +158,6 @@ h2. Known issues
 
 Here is a list of current known issues and suggested workarounds if available, none of these issues break the theme so this is purely optional...
 
-h4. rel="home" attribute is currently invalid HTML5
-
-The attribute @rel="home"@ generated on the navigation bar home link is currently not in the HTML5 draft specification, though it has been proposed and is likely to be accepted at some point soon.
-
 h4. acronym tag
 
 Textile (currently v2.2) uses the @<acronym>@ tag which is invalid HTML5, instead of the valid @<abbr>@ tag. As a workaround, and if you do use abbreviations in articles, you could manually edit the file '/textpattern/lib/classTextile.php' which was part of the Textpattern installation:
