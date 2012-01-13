@@ -1127,7 +1127,7 @@ footer {
 @media print {
 
 
-*{
+* {
     /* black prints faster - http://sanbeiji.com/archives/953 */
     color: black !important;
     text-shadow: none !important;
