@@ -26,13 +26,13 @@
     </txp:if_individual_article>
 
 <!-- css -->
-    <!-- Google font API (remove this if you intend to use the theme in a project without internet access -->
+    <!-- Google font API (remove this if you intend to use the theme in a project without internet access) -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:n4,i4,n7,i7|Cousine">
 
     <txp:css format="link" media="" />
     <!-- or you can use (faster) external CSS files eg. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
 
-<!-- HTML5 and Media Queries support for IE < 9 -->
+<!-- HTML5/Media Queries support for IE < 9 (remove this if you intend to use the theme in a project without internet access) -->
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
