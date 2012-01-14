@@ -66,9 +66,9 @@ bc. <link rel="stylesheet" href="/css/default.css">
 
 There are advantages/disadvanatges to both methods...
 
-Keeping style within the database by using the first method means you can make adjustments to the code without the need for FTP or a text editor, but is less flexible because you either lose the tools available in a dedicated IDE (integrated development environment) or have to paste your new code from the IDE which is time consuming. You can however make use of versioning tools such as 'cnk_versioning' Textpattern plugin to streamline this process somewhat (see above).
+Keeping style within the database by using the first method means you can make adjustments to the code without the need for FTP or a text editor, but is less flexible because you either lose the tools available in a dedicated IDE (integrated development environment) or have to paste your new code from the IDE which is time consuming. You can however make use of versioning tools such as 'cnk_versioning' Textpattern plugin to streamline this process somewhat (see above). Serving CSS from a mySQL database is also significantly slower than serving as a static file.
 
-The second method is much more traditional and flexible though it relies on you having FTP access to change the CSS files.
+The second (any preferred) method is much more traditional and flexible though it relies on you having FTP access to change the CSS files. This static fileis  quicker for a browser to load, so your page will render slightly faster.
 
 h4. /css/default.scss
 
