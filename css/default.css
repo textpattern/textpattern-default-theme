@@ -105,13 +105,6 @@ dd {
     padding: 0;
 }
 
-/* corrects inner padding and border displayed oddly in Firefox3-4 -
-    www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
-::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
-
 
 /* =============================================================================
    Clearfix
@@ -794,19 +787,32 @@ textarea {
 }
 
 /* colour placeholder text (Webkit and Mozilla only, so far) */
-::-webkit-input-placeholder {
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
     color: #888;
 }
 
-:-moz-placeholder {
+input:-moz-placeholder,
+textarea:-moz-placeholder {
     color: #888;
 }
 
-/* suppress red glow that Firefox adds to form fields by default, even when user is still typing */
-:invalid {
+/* suppress red glow that Firefox adds to form fields by default, even when user is still typing
+    and kill phantom spacing and dotted border that appears in Firefox */
+input:invalid,
+button:invalid,
+select:invalid,
+textarea:invalid {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner,
+select::-moz-focus-inner,
+textarea::-moz-focus-inner {
+    border: 0;
+    padding: 0;
 }
 
 /* make Safari render search inputs as text inputs (and unstyled) */
