@@ -974,19 +974,15 @@ optgroup {
     height: 78px;
 }
 
-/* addresses box sizing set to content-box and excess padding in IE8-9 */
+/* addresses box sizing set to content-box and excess padding in IE7-9 */
 input[type="checkbox"],
 input[type="radio"] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    position: relative;
-    vertical-align: top;
-    top: .35714285714286em;
-    /* IE8-9 vertical alignment fix */
-    top: 0 \0;
-    /* IE7 vertical alignment fix */
-    *top: 0;
+    padding: 0;
+    *height: 13px;
+    *width: 13px;
 }
 
 .checkboxes span,
