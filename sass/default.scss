@@ -630,6 +630,14 @@ fieldset {
     padding: 0;
 }
 
+/* Corrects color not being inherited in IE7-9, corrects text not wrapping in FF3, corrects alignment displayed oddly in IE7 */
+legend {
+    border: 0;
+    padding: 0;
+    white-space: normal;
+    *margin-left: -7px;
+}
+
 /* improves appearance and consistency in all browsers */
 button,
 .button,
