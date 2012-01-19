@@ -1,0 +1,8 @@
+<!-- add this within div role="complementary" -->
+<aside id="flickr">
+<h4>Flickr</h4>
+<div>
+<!-- replace %flickr_badge_id% with your own Flickr ID -->
+<script src="http://www.flickr.com/badge_code_v2.gne?count=9&amp;display=random&amp;size=t&amp;layout=x&amp;source=user&amp;user=%flickr_badge_id%"></script>
+</div>
+</aside>
