@@ -26,11 +26,11 @@ h4. /extra-options-non-core/footer-copyright/footer.txp
 
 Paste the code into your current page templates, replacing the previous footer code. Note this code requires that you have 'Allow PHP in pages?' set to 'yes' in the Textpattern advanced preferences.
 
-h3. Extra code option: google_plus1
+h3. Extra code option: google_plus
 
 Add a Google +1 button to each of your articles.
 
-h4. /extra-options-non-core/jquery/jquery.txp
+h4. /extra-options-non-core/google_plus/google_plus1.txp
 
 Paste the code from that form your default.article.txp form (around line 15 is recommended). Note that we are loading this as asynchronous JavaScript so it does not delay page rendering.
 
@@ -58,3 +58,11 @@ Use this form in your site to provide more context focused page titles, it sets 
 h4. /extra-options-non-core/page_title/page_title.misc.txp
 
 Create a new form in the system with name of 'page_title' and type of 'misc', then copy/paste the code from this file into it. This form can then be called from your page/form templates by inserting @<txp:output_form form="page_title" />@ into the @<head>@ section.
+
+h3. Extra code option: twitter
+
+Add a Twitter tweet button to each of your articles.
+
+h4. /extra-options-non-core/twitter/twitter_tweet.txp
+
+Paste the code from that form your default.article.txp form (around line 15 is recommended).
