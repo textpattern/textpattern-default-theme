@@ -1,12 +1,12 @@
 /* add this to your default.scss, at the end of the @media screen section */
 
 #flickr_badge_wrapper {
-    margin: 0 -.75em .75em 0;
+    margin: 0 -10px 0 0;
 }
 
 .flickr_badge_image {
     float: left;
-    margin: 0 .75em .75em 0;
+    margin: 5px 10px 5px 0;
 }
 
 .flickr_badge_image a {
@@ -27,4 +27,8 @@
 
 .flickr_badge_image a:visited {
     border: solid 1px $color-link-visited;
+}
+
+#flickr p {
+    margin-top: 0;
 }

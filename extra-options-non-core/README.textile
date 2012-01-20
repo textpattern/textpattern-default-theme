@@ -28,7 +28,7 @@ h4. /extra-options-non-core/flickr/flickr.txp
 
 Either paste this file into page templates before the end of the @role="complementary"@ sidebar. Or put a @<txp:output_form form="flickr" />@ tag in your page templates @role="complementary"@ sidebar instead, create a new form in the system with name of 'flickr' and type of 'misc', then copy/paste the code from this form into it.
 
-Remember to change the text @your_flickr_badge_id@ to your actual "Flickr ID":http://idgettr.com/.
+Remember to change the text @your_flickr_badge_id@ to your actual "Flickr ID":http://www.adamwlewis.com/articles/what-is-my-flickr-id and @your_flickr_url@ to your actual Flickr URL.
 
 h2. Extra code option: footer-copyright
 

@@ -1,12 +1,12 @@
 /* add this to your default.css, at the end of the @media screen section */
 
 #flickr_badge_wrapper {
-    margin: 0 -.75em .75em 0;
+    margin: 0 -10px 0 0;
 }
 
 .flickr_badge_image {
     float: left;
-    margin: 0 .75em .75em 0;
+    margin: 5px 10px 5px 0;
 }
 
 .flickr_badge_image a {
@@ -16,7 +16,7 @@
     border: solid 1px #ccc;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    padding: 4px;
+    padding: 6px;
     background: #fff;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -32,4 +32,12 @@
 
 .flickr_badge_image a:visited {
     border: solid 1px #551a8b;
+}
+
+.flickr_badge_image img {
+    background: #f0f2f6;
+}
+
+#flickr p {
+    margin-top: 0;
 }
