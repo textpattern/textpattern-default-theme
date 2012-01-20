@@ -3,7 +3,7 @@
 <aside id="flickr">
 <h4>Flickr</h4>
 <div id="flickr_badge_wrapper" class="clearfix">
-<!-- replace %flickr_badge_id% with your own Flickr ID -->
-<script src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=%flickr_badge_id%"></script>
+<!-- replace 'your_flickr_badge_id' with your own Flickr ID -->
+<script src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=your_flickr_badge_id"></script>
 </div>
 </aside>
