@@ -2,31 +2,45 @@ h1. Extra code options
 
 This snippets of code are purely optional and allow you to extend the functionality of the original theme.
 
-h3. Extra code option: analytics
+h2. Extra code option: analytics
 
 h4. /extra-options-non-core/analytics/analytics.misc.txp
 
 Add "Google Analytics":http://www.google.com/analytics/ tracking to your pages. You can either paste the contents of this form directly into the bottom your page templates (just before the @</body>@ tag) or put a @<txp:output_form form="analytics" />@ tag in the bottom of the your page templates instead, create a new form in the system with name of 'analytics' and type of 'misc', then copy/paste the code from this form into it. Add your unique Google Analytics ID into the code where indicated.
 
-h3. Extra code option: chrome_frame
+h2. Extra code option: chrome_frame
 
 h4. /extra-options-non-core/chrome_frame/chrome_frame.misc.txp
 
 Add the option for politely informing any users of Internet Explorer 6 that they could install "Chrome Frame":http://code.google.com/chrome/chromeframe/ on their browser to support modern web page layouts. You could also target IE 7 (or newer) if you so desired by amending the code @<!--[if lt IE 7]>@ to @<!--[if lt IE 8]>@ for example for IE 7 (the code @lt IE 8@ means lower than IE 8).
 
-h3. Extra code option: footer-copyright
+h2. Extra code option: flickr
+
+h4. /extra-options-non-core/flickr/flickr.css
+
+CSS code specific to the Flickr feed. If you using Sass then refer to the file below instead. Paste this in just before the end of the @media screen section of the stylesheet (i.e. the section before the size specific media queries begin).
+
+h4. /extra-options-non-core/flickr/flickr.scss
+
+Sass version of the above CSS file - if you are using Sass to author your CSS then paste this code into the @default.scss@ instead of into the standard CSS file. Paste this in just before the end of the @media screen section of the stylesheet (i.e. the section before the size specific media queries begin).
+
+h4. /extra-options-non-core/flickr/flickr.txp
+
+Either paste this file into page templates before the end of the @role="complementary"@ sidebar. Or put a @<txp:output_form form="flickr" />@ tag in your page templates @role="complementary"@ sidebar instead, create a new form in the system with name of 'flickr' and type of 'misc', then copy/paste the code from this form into it.
+
+h2. Extra code option: footer-copyright
 
 h4. /extra-options-non-core/footer-copyright/footer.txp
 
 Add dynamically updated copyright statement to your page footers. Paste the code into your current page templates, replacing the previous footer code. Note this code requires that you have 'Allow PHP in pages?' set to 'yes' in the Textpattern advanced preferences.
 
-h3. Extra code option: google_plus
+h2. Extra code option: google_plus
 
 h4. /extra-options-non-core/google_plus/google_plus1.txp
 
-Add a Google +1 button to each of your articles. Paste the code from that form your default.article.txp form (around line 15 is recommended). Note that we are loading this as asynchronous JavaScript so it does not delay page rendering.
+Add a Google +1 button to each of your articles. Paste the code from that form your default.article.txp form (around line 24 is recommended). Note that we are loading this as asynchronous JavaScript so it does not delay page rendering.
 
-h3. Extra code option: jquery
+h2. Extra code option: jquery
 
 h4. /extra-options-non-core/jquery/jquery.txp
 
@@ -41,14 +55,14 @@ h4. /extra-options-non-core/jquery/js/jquery.js
 
 The ubiquitous "jQuery":http://jquery.com/ JavaScript library is used on thousands of sites worldwide. Place this file into your root /js/ directory.
 
-h3. Extra code option: page_title
+h2. Extra code option: page_title
 
 h4. /extra-options-non-core/page_title/page_title.misc.txp
 
 Use this form in your site to provide more context focused page titles, it sets up a variable to check what section you are in and provide specific title content. Based on an example by Els Lepelaars. Create a new form in the system with name of 'page_title' and type of 'misc', then copy/paste the code from this file into it. This form can then be called from your page/form templates by inserting @<txp:output_form form="page_title" />@ into the @<head>@ section.
 
-h3. Extra code option: twitter
+h2. Extra code option: twitter
 
 h4. /extra-options-non-core/twitter/twitter_tweet.txp
 
-Add a Twitter tweet button to each of your articles. Paste the code from that form your default.article.txp form (around line 15 is recommended).
+Add a Twitter tweet button to each of your articles. Paste the code from that form your default.article.txp form (around line 24 is recommended).
