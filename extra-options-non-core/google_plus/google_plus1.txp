@@ -1,7 +1,7 @@
 <!-- Google '+1' button support - more info/extra options at: http://www.google.com/webmasters/+1/button -->
 
-<!-- add code below into your default.article.txp form (around line 15 is recommended) -->
-<p class="g-plusone" data-size="medium" data-href="<txp:permlink />"></p>
+<!-- add code below into your default.article.txp form (around line 24 is recommended) -->
+<div class="g-plusone" data-size="medium" data-href="<txp:permlink />"></div>
 
 <!-- place this render call where appropriate - note: this example is set to international English (en-GB), you may want to change that -->
 <script>window.___gcfg = {lang:'en-GB'};(function(){var po = document.createElement('script');po.type = 'text/javascript';po.async = true;po.src = 'https://apis.google.com/js/plusone.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(po, s);})();</script>
