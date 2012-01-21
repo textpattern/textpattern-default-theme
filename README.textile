@@ -213,8 +213,8 @@ h2. License
 Major components:
 
 * jQuery: MIT/GPL license
-* Normalize.css: Public Domain
 * carouFredSel: MIT/GPL license
+* FlexSlider: MIT license
 
 Everything else:
 
