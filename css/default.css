@@ -933,6 +933,7 @@ textarea {
     overflow: auto;
     /* improves readability and alignment in all browsers */
     vertical-align: top;
+    -moz-resize: vertical;
     resize: vertical;
     width: 100%;
 }
