@@ -541,7 +541,7 @@ dt {
         float: left;
         display: block;
         margin: 0 .5em .5em 0;
-        min-width: 36px;
+        min-width: 2.5em;
         border: solid 1px $color-border;
         @include border-radius;
         @include box-shadow;
@@ -834,8 +834,8 @@ input[type="checkbox"],
 input[type="radio"] {
     @include box-sizing;
     padding: 0;
-    *height: 13px;
-    *width: 13px;
+    *height: 1em;
+    *width: 1em;
 }
 
 .checkboxes,
