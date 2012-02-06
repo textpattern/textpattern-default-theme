@@ -261,9 +261,9 @@ a {
 
     header & {
         color: $color-text;
-        @include border-radius;
+        @include border-radius(.11904761904762em);
         &:hover, &:active {
-            background: darken($color-background-box, 5%);
+            background: darken($color-background-box, 6%);
         }
     }
 }
@@ -283,7 +283,7 @@ footer a {
 
 [role="main"] h1 a {
     color: $color-text;
-    @include border-radius;
+    @include border-radius(.11904761904762em);
 
     &:visited {
         color: $color-text;
@@ -292,7 +292,7 @@ footer a {
     &:hover, &:active {
         text-decoration: none;
         color: $color-text;
-        background: $color-background-box;
+        background: darken($color-background-box, 3%);
     }
 }
 
@@ -950,7 +950,7 @@ input[type="submit"].disabled,
     margin-bottom: 1em;
     @include border-radius;
     padding: 1em 1em 1px;
-    background: lighten($color-background-box, 2%);
+    background: $color-background-box;
 
     h4 {
         span {
@@ -964,7 +964,7 @@ input[type="submit"].disabled,
 }
 
 .comments-author {
-    background: $color-background-box;
+    background: darken($color-background-box, 3%);
 }
 
 #cpreview {

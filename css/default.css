@@ -178,7 +178,7 @@ footer:after,
 
 body {
     margin: 0;
-    background: #f0f2f6;
+    background: #f7f7f7;
 }
 
 .wrapper {
@@ -349,12 +349,12 @@ a:focus {
 
 header a {
     color: #333;
-    -moz-border-radius: .35714285714286em;
-    border-radius: .35714285714286em;
+    -moz-border-radius: .11904761904762em;
+    border-radius: .11904761904762em;
 }
 
 header a:hover, header a:active {
-    background: #e0e4ec;
+    background: #e8e8e8;
 }
 
 [role="main"] a:hover,
@@ -375,8 +375,8 @@ footer a:visited {
 
 [role="main"] h1 a {
     color: #333;
-    -moz-border-radius: .35714285714286em;
-    border-radius: .35714285714286em;
+    -moz-border-radius: .11904761904762em;
+    border-radius: .11904761904762em;
 }
 
 [role="main"] h1 a:visited {
@@ -387,7 +387,7 @@ footer a:visited {
 [role="main"] h1 a:active {
     text-decoration: none;
     color: #333;
-    background: #f0f2f6;
+    background: #efefef;
 }
 
 
@@ -457,7 +457,7 @@ blockquote {
     -moz-border-radius: .35714285714286em;
     border-radius: .35714285714286em;
     padding: 1px .875em;
-    background: #f0f2f6;
+    background: #f7f7f7;
 }
 
 dfn,
@@ -1188,7 +1188,7 @@ input[type="submit"].disabled,
     -moz-border-radius: .35714285714286em;
     border-radius: .35714285714286em;
     padding: 1em 1em 1px;
-    background: #f6f8fa;
+    background: #f7f7f7;
 }
 
 .comments h4 span {
@@ -1200,7 +1200,7 @@ input[type="submit"].disabled,
  }
 
 .comments-author {
-    background: #f0f2f6;
+    background: #efefef;
 }
 
 #cpreview {
@@ -1304,7 +1304,7 @@ nav a {
     padding: 1em 1em 0;
     /* 290px / 960px */
     width: 30.208333333333%;
-    background: #f0f2f6;
+    background: #f7f7f7;
 }
 
 h1 {
