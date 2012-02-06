@@ -928,7 +928,7 @@ textarea[disabled] {
 }
 
 textarea {
-    min-height: 40px;
+    min-height: 3em;
     /* removes default vertical scrollbar in IE7-9 */
     overflow: auto;
     /* improves readability and alignment in all browsers */
@@ -980,7 +980,7 @@ optgroup {
 }
 
 .small textarea {
-    height: 78px;
+    height: 5.5em;
 }
 
 /* addresses box sizing set to content-box and excess padding in IE7-9 */
