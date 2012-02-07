@@ -28,7 +28,8 @@ footer,
 header,
 hgroup,
 nav,
-section {
+section,
+summary {
     display: block;
 }
 
@@ -63,6 +64,12 @@ html {
     -webkit-text-size-adjust: 100%;
     /* as above, for Windows Phone */
         -ms-text-size-adjust: 100%;
+}
+
+/* Addresses margins set differently in IE7 */
+p,
+pre {
+    margin: 1em 0;
 }
 
 /* addresses style set to 'bolder' in Firefox3-4, Safari4-5, Chrome */
