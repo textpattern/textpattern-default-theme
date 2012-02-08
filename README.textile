@@ -214,7 +214,6 @@ Major components:
 
 * jQuery: MIT/GPL license
 * carouFredSel: MIT/GPL license
-* FlexSlider: MIT license
 
 Everything else:
 
