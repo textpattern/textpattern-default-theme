@@ -11,10 +11,10 @@
     <txp:comment_name_input /></p>
 
     <p class="large"><label for="email"><txp:text item="comment_email" /> <b class="required">*</b></label><br>
-    <txp:comment_email_input /></p> <!-- Textpattern currently does not currently use HTML5 input type="email" -->
+    <txp:comment_email_input /></p>
 
     <p class="large"><label for="web"><txp:text item="comment_web" /></label><br>
-    <txp:comment_web_input /></p> <!-- Textpattern currently does not currently use HTML5 input type="url" -->
+    <txp:comment_web_input /></p>
 
     <p class="checkboxes"><span><txp:comment_remember /></span></p>
 

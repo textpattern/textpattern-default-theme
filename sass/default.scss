@@ -383,7 +383,6 @@ address {
 
 /* addresses styling not present in IE7-9, Safari5, Chrome (note: acroymn to be phased out in Textile as it's obsolete in HTML5) */
 abbr[title],
-acronym[title],
 dfn[title] {
     border-bottom: dotted 1px;
     cursor: help;
@@ -1202,8 +1201,7 @@ a[rel="tag"] {
 }
 
 /* show long-form for abbreviations in print (note: acroymn to be phased out in Textile as it's obsolete in HTML5) */
-abbr[title],
-acronym[title] {
+abbr[title] {
     &:after {
         content: " (" attr(title) ")";
     }
