@@ -829,9 +829,10 @@ textarea::-moz-focus-inner {
     padding: 0;
 }
 
-/* make Safari render search inputs as text inputs (and unstyled) */
-::-webkit-search-decoration {
-    display: none;
+/* remove inner padding and search cancel button in Safari, Chrome on OS X */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
 }
 
 button:focus,
@@ -889,7 +890,6 @@ input[type="week"] {
 
 [role="complementary"] input[type="search"] {
     margin-right: 2px;
-    padding: .5em 0 .5em .5em;
     width: 66.666666666667%;
     display: inline-block;
     /* display and zoom IE7 fix for display:inline-block */
