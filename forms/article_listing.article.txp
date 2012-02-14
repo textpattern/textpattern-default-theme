@@ -1,4 +1,3 @@
-<!-- see default.article.txp for info on HTML5 'time' tag -->
 <txp:if_first_article><ul id="article-list"></txp:if_first_article>
     <li class="hentry">
         <h4 class="entry-title"><txp:permlink><txp:title /></txp:permlink></h4>
