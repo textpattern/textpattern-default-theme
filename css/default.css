@@ -971,6 +971,12 @@ optgroup {
     color: #333;
 }
 
+/* kill phantom spacing and dotted border that appears in Firefox */
+optgroup::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
 .large input {
     width: 50%;
     min-width: 302px;
