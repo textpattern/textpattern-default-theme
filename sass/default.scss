@@ -1019,13 +1019,13 @@ select:not([multiple]) {
 
 
 /* =============================================================================
-   Additional layout for screen media 480px and up
+   Additional layout for screen media 490px and up
    ========================================================================== */
 
 
 
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 35em) {
 
 
 nav {
@@ -1055,13 +1055,13 @@ nav {
 
 
 /* =============================================================================
-   Additional layout for screen media 768px and up
+   Additional layout for screen media 770px and up
    ========================================================================== */
 
 
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 55em) {
 
 
 [role="main"] {
@@ -1109,13 +1109,13 @@ blockquote {
 
 
 /* =============================================================================
-   Additional layout for screen media 1280px and up
+   Additional layout for screen media 1260px and up
    ========================================================================== */
 
 
 
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 90em) {
 
 
 body {
