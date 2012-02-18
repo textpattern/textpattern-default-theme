@@ -385,9 +385,9 @@ blockquote {
     font-size: 1.14285714285714em;
     font-style: italic;
     margin: .875em 0 .875em 0;
-    @include border-radius;
     padding: 1px .875em;
-    background: $color-background-box;
+    @include border-radius;
+    background: $color-highlight-box;
 }
 
 dfn,
@@ -407,37 +407,39 @@ dfn[title] {
     cursor: help;
 }
 
-pre,
-code,
-kbd,
-samp,
+mark,
 var {
-    font-family: $font-mono;
+    padding: 0 .21428571428571em; // 0 3px
+    @include border-radius(.21428571428571em); // 3px / 13px
+    color: $color-text;
     background: $color-highlight-box;
-    @include border-radius;
-    
+}
+
+var {
+    font-weight: bold;
 }
 
 code,
 kbd,
-samp,
-var {
-    /* 12px */
-    font-size: .85714285714286em;
-    padding: 1px .25em;
+samp {
+    font-family: $font-mono; 
+    /* 13px */
+    font-size: .92857142857143em;  
+    border: 1px solid lighten($color-border, 9%); 
+    padding: 0 .23076923076923em;
+    @include border-radius(.23076923076923em); // 3px / 13px
+    background: $color-background-box;
 }
 
 pre {
-    padding: 1em;
     overflow-x: auto;
-}
-
-mark {
-    padding: 0 .25em;
-    background: $color-highlight-box;
+    border: 1px solid lighten($color-border, 9%);
+    padding: 1em;
     @include border-radius;
-    color: $color-text;
-    font-weight: bold;
+    background: $color-background-box;
+    code {
+        border: 0; 
+    }
 }
 
 small,
@@ -1081,7 +1083,7 @@ nav {
 
 [role="complementary"] {
     float: right;
-    border: solid 1px $color-border;
+    border: solid 1px lighten($color-border, 9%);
     @include border-radius;
     padding: 1em 1em 0;
     /* 290px / 960px */
