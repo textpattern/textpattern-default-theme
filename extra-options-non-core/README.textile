@@ -34,7 +34,7 @@ Place this entire directory into your root /js/ directory.
 
 h4. /extra-options-non-core/code_prettify/prettify.txp
 
-Add the link to the external JavaScript file, as in this example above. Once the CSS and JavaScript files are in place, the code markup styling can be invoked via HTML or Textile.
+Add the link to the external JavaScript file, as in this example above. Once the CSS and JavaScript files are in place, the code markup styling can be invoked via HTML or Textile (as of Textile v2.3 onwards).
 
 To invoke via HTML without line numbers:
 
