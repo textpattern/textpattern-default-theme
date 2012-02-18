@@ -34,9 +34,9 @@ Either paste this file into page templates before the end of the @role="compleme
 
 Remember to change the text @your_flickr_badge_id@ to your actual "Flickr ID":http://www.adamwlewis.com/articles/what-is-my-flickr-id and @your_flickr_url@ to your actual Flickr URL.
 
-h2. Extra code option: footer-copyright
+h2. Extra code option: footer_copyright
 
-h4. /extra-options-non-core/footer-copyright/footer.txp
+h4. /extra-options-non-core/footer_copyright/footer.txp
 
 Add dynamically updated copyright statement to your page footers. Paste the code into your current page templates, replacing the previous footer code. Note this code requires that you have 'Allow PHP in pages?' set to 'yes' in the Textpattern advanced preferences.
 
