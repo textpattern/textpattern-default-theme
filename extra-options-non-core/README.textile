@@ -18,6 +18,40 @@ h4. /extra-options-non-core/chrome_frame/chrome_frame.misc.txp
 
 Add the option for politely informing any users of Internet Explorer 6 that they could install "Chrome Frame":http://code.google.com/chrome/chromeframe/ on their browser to support modern web page layouts. You could also target IE 7 (or newer) if you so desired by amending the code @<!--[if lt IE 7]>@ to @<!--[if lt IE 8]>@ for example for IE 7 (the code @lt IE 8@ means lower than IE 8).
 
+h2. Extra code option: code_prettify
+
+h4. /extra-options-non-core/code_prettify/code-prettify.css
+
+CSS code specific to the Prettify script. If you using Sass then refer to the file below instead. Paste this in just before the end of the @media screen section of the stylesheet (i.e. the section before the size specific media queries begin).
+
+h4. /extra-options-non-core/code_prettify/code-prettify.scss
+
+Sass version of the above CSS file - if you are using Sass to author your CSS then paste this code into the @default.scss@ instead of into the standard CSS file. Paste this in just before the end of the @media screen section of the stylesheet (i.e. the section before the size specific media queries begin).
+
+h4. /extra-options-non-core/code_prettify/js/google-code-prettify
+
+Place this entire directory into your root /js/ directory.
+
+h4. /extra-options-non-core/code_prettify/prettify.txp
+
+Add the link to the external JavaScript file, as in this example above. Once the CSS and JavaScript files are in place, the code markup styling can be invoked via HTML or Textile.
+
+To invoke via HTML without line numbers:
+
+bc. <pre class="prettyprint">...</pre>
+
+To invoke via HTML without line numbers:
+
+bc. <pre class="prettyprint linenums">...</pre>
+
+To invoke via Textile without line numbers:
+
+bc. bc(prettyprint).
+
+To invoke via Textile with line numbers:
+
+bc. bc(prettyprint linenums).
+
 h2. Extra code option: flickr
 
 h4. /extra-options-non-core/flickr/flickr.css

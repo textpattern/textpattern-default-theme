@@ -1,0 +1,65 @@
+/* add this to your default.css, at the end of the @media screen section */
+
+/* Google Code Prettify - markup colouring */
+
+.atn,
+.dec,
+.typ,
+.var {
+    color: teal;
+}
+
+.atv,
+.str {
+    color: #d14;
+}
+
+.clo,
+.opn,
+.pun {
+    color: #93a1a1;
+}
+
+.com {
+    color: #93a1a1;
+}
+
+.fun {
+    color: #dc322f;
+}
+
+.kwd {
+    color: #1e347b;
+}
+
+.lit {
+    color: #195f91;
+}
+
+.pln {
+    color: #48484c;
+}
+
+.tag {
+    color: #1e347b;
+}
+
+/* Google Code Prettify - line number colouring */
+
+.prettyprint.linenums {
+    -webkit-box-shadow: inset 3.385em 0 0 #fcfcfc, inset 3.462em 0 0 #e3e3e3;
+            box-shadow: inset 3.385em 0 0 #fcfcfc, inset 3.462em 0 0 #e3e3e3;
+}
+
+.linenums {
+    padding-left: 2em;
+}
+
+.linenums ol {
+    margin: 0;
+}
+
+.linenums li {
+    padding-left: 1em;
+    color: #b8b8b8;
+}
