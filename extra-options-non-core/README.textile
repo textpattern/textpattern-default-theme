@@ -38,11 +38,11 @@ Add the link to the external JavaScript file, as in this example above. Once the
 
 To invoke via HTML without line numbers:
 
-bc. <pre class="prettyprint">...</pre>
+bc. <pre class="prettyprint"><code> ... </code></pre>
 
 To invoke via HTML without line numbers:
 
-bc. <pre class="prettyprint linenums">...</pre>
+bc. <pre class="prettyprint linenums"><code> ... </code></pre>
 
 To invoke via Textile without line numbers:
 
