@@ -109,11 +109,22 @@ td {
     vertical-align: top;
 }
 
-/* reset default padding on lists */
-ul,
+/* addresses margins set differently in IE7 */
+dl,
+menu,
 ol,
+ul {
+    margin: 0 0 1em 0;
+}
 dd {
-    padding: 0;
+    margin: 0 0 0 2em;
+}
+
+/* addresses paddings set differently in IE7 */
+menu,
+ol,
+ul {
+    padding: 0 0 0 2em;
 }
 
 
@@ -195,6 +206,7 @@ nav {
 
     ul {
         margin: 0 auto;
+        padding: 0;
         list-style: none;
         list-style-image: none;
         @extend .clearfix;
@@ -521,24 +533,13 @@ tfoot {
    Lists
    ========================================================================== */
 
-[role="main"],
-[role="complementary"] {
-    ul, ol, dl {
-        margin-left: 2em;
-    }
-
-    dd {
-        margin-left: 2em;
-    }
-}
-
 dt {
     font-style: italic;
 }
 
 [role="complementary"] #monthly-list {
     list-style: none;
-    margin-left: 0;
+    padding: 0;
     @extend .clearfix;
 
     li {
@@ -611,6 +612,7 @@ dt {
 [role="main"] #article-list {
     list-style: none;
     margin: 0 0 2em 0;
+    padding: 0;
     border-top: solid 1px $color-border;
 }
 
