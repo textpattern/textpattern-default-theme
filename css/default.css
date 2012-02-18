@@ -624,12 +624,12 @@ tfoot:last-child {
 [role="complementary"] ul,
 [role="complementary"] ol,
 [role="complementary"] dl {
-    margin: 0 0 1em 2em;
+    margin-left: 2em;
 }
 
 [role="main"] dd,
 [role="complementary"] dd {
-    margin: 0 0 0 2em;
+    margin-left: 2em;
 }
 
 dt {
