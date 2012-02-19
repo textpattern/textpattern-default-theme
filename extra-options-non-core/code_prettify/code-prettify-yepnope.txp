@@ -1,0 +1,36 @@
+<!-- yepnope version - jQuery - load from Google CDN first, load locally if CDN is unavailable
+    then load Google Code Prettify and activate at DOM ready -->
+<script>
+yepnope([
+    {
+
+        // Load jQuery - try CDN first, fallback to local file
+
+        load : '//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',
+        callback: function () {
+            if (!window.jQuery) {
+                yepnope('<txp:site_url />js/jquery.js');
+            }
+        }
+
+	}, {
+
+        // Load other essential JavaScript files and execute
+
+        load: [
+                '<txp:site_url />js/google-code-prettify/prettify.js'
+        ],
+        complete: function () { // start DOM ready
+            jQuery(function () {
+
+
+                // Make code pretty
+                window.prettyPrint && prettyPrint();
+
+
+            });
+        } // end DOM ready
+
+    }
+]);
+</script>

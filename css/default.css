@@ -516,10 +516,16 @@ var {
     font-weight: bold;
 }
 
+pre,
 code,
 kbd,
 samp {
     font-family: Cousine, Consolas, "Lucida Console", Monaco, monospace;
+}
+
+code,
+kbd,
+samp {
     /* 13px */
     font-size: .92857142857143em;
     border: 1px solid #e3e3e3;
@@ -530,6 +536,8 @@ samp {
 }
 
 pre {
+    /* 13px */
+    font-size: .92857142857143em;
     overflow-x: auto;
     border: 1px solid #e3e3e3;
     padding: 1em;
@@ -539,7 +547,10 @@ pre {
 }
 
 pre code {
+    /* 13px */
+    font-size: 1em;
     border: 0;
+    background: none;
 }
 
 small,

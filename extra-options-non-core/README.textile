@@ -20,6 +20,8 @@ Add the option for politely informing any users of Internet Explorer 6 that they
 
 h2. Extra code option: code_prettify
 
+Google provides scripting to turn code within @<pre>@ tags into colour coded markup. It is recommended that you read the documentation before installation, which is available on the "Google Code Prettify project page":http://google-code-prettify.googlecode.com/svn/trunk/README.html.
+
 h4. /extra-options-non-core/code_prettify/code-prettify.css
 
 CSS code specific to the Prettify script. If you using Sass then refer to the file below instead. Paste this in just before the end of the @media screen section of the stylesheet (i.e. the section before the size specific media queries begin).
@@ -30,11 +32,23 @@ Sass version of the above CSS file - if you are using Sass to author your CSS th
 
 h4. /extra-options-non-core/code_prettify/js/google-code-prettify
 
-Place this entire directory into your root /js/ directory.
+Place this entire directory into your root /js/ directory. Add a link to the external JavaScript file, as in this example (not necessary if you use yepnope):
 
-h4. /extra-options-non-core/code_prettify/prettify.txp
+bc. <script src="<txp:site_url />js/google-code-prettify/prettify.js"></script>
 
-Add the link to the external JavaScript file, as in this example above. Once the CSS and JavaScript files are in place, the code markup styling can be invoked via HTML or Textile (as of Textile v2.3 onwards).
+Here are three ways of activating the script... either via an @onload@ in the @<body>@ tag, for example:
+
+bc. <body onload="prettyPrint()">
+
+Via jQuery (if available), for example:
+
+bc. jQuery(function () {
+    window.prettyPrint && prettyPrint();
+});
+
+Or for advanced users, loaded via "yepnope:http://yepnopejs.com/, there is an example provided within the directory (code-prettify-yepnope.txp).
+
+Once all required CSS and JavaScript files are in place, the code markup styling can be invoked via HTML or Textile (as of Textile v2.3 onwards).
 
 To invoke via HTML without line numbers:
 

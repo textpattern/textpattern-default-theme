@@ -159,6 +159,7 @@ Major components:
 
 * jQuery: MIT/GPL license
 * carouFredSel: MIT/GPL license
+* Google Code Prettify: Apache license, version 2.0
 
 Everything else:
 
