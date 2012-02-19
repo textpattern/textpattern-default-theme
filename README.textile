@@ -155,11 +155,11 @@ Copy/paste over the existing page of the same name that was part of the standard
 
 h2. License
 
-Major components:
+Non-core components:
 
-* jQuery: MIT/GPL license
-* carouFredSel: MIT/GPL license
-* Google Code Prettify: Apache license, version 2.0
+* jQuery: MIT/GPL
+* carouFredSel: MIT/GPL
+* Google Code Prettify: Apache License v2.0
 
 Everything else:
 
