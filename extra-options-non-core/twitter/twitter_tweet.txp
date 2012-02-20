@@ -1,6 +1,6 @@
 <!-- Twitter 'tweet' button support - more info/extra options at: https://twitter.com/about/resources/buttons#tweet -->
 
-<!-- add code below into your default.article.txp form (around line 24 is recommended) -->
+<!-- add code below into your default.article.txp form (around line 23 is recommended) -->
 <div><a href="https://twitter.com/share" class="twitter-share-button" data-url="<txp:permlink />" data-text="<txp:title /">Tweet</a></div>
 
 <!-- place this render call where appropriate -->
