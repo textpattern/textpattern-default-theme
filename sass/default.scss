@@ -38,9 +38,7 @@ audio,
 canvas,
 video {
     display: inline-block;
-    /* display and zoom IE7 fix for display:inline-block */
-    *display: inline;
-    *zoom: 1;
+    @include ie7-inline-block;
 }
 
 /* prevents modern browsers from displaying 'audio' without controls */
@@ -760,9 +758,7 @@ input[type="week"] {
     margin-right: 2px;
     width: 66.666666666667%;
     display: inline-block;
-    /* display and zoom IE7 fix for display:inline-block */
-    *display: inline;
-    *zoom: 1;
+    @include ie7-inline-block;
 }
 
 textarea[disabled],
@@ -922,9 +918,7 @@ input[type="submit"] {
     @include border-radius;
     padding: .5em 1em .5em;
     display: inline-block;
-    /* display and zoom IE7 fix for display:inline-block */
-    *display: inline;
-    *zoom: 1;
+    @include ie7-inline-block;
     color: $color-text;
     @include gradient;
     @include box-shadow;
