@@ -482,6 +482,23 @@ img {
     -ms-interpolation-mode: bicubic;
 }
 
+/* image alignemnts */
+img {
+    &.align-left {
+        float: left;
+        margin: 1em 1em 1em 0;
+    }
+
+    &.align-right {
+        float: right;
+        margin: 1em 0 1em 1em;
+    }
+    &.align-center {
+        display: block;
+        margin: 1em auto;
+    }
+}
+
 /* corrects overflow displayed oddly in IE9 */
 svg:not(:root) {
     overflow: hidden;
