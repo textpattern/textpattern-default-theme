@@ -10,7 +10,7 @@
 
 <txp:file_download_description /><br>
 
-<txp:if_variable>
+</txp:if_variable>
 
 <span class="footnote">
     <strong><txp:text item="category" /></strong> <txp:file_download_category /> &#124; 
