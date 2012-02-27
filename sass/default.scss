@@ -997,7 +997,7 @@ input[type="submit"].disabled,
     background: $color-background-box;
 
     h4 {
-        span {
+        .is-author {
             font-weight: normal;
         }
 

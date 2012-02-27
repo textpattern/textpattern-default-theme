@@ -1240,7 +1240,7 @@ input[type="submit"].disabled,
     background: #f7f7f7;
 }
 
-.comments h4 span {
+.comments h4 .is-author {
     font-weight: normal;
 }
 

@@ -21,20 +21,22 @@
 <!-- display resulting articles (10 per page) -->
     <txp:article limit="10">
 
-        <article>
+        <article role="article" itemscope itemtype="http://schema.org/Article">
 
-            <h1><txp:permlink><txp:title /></txp:permlink></h1>
-            <p><strong><txp:text item="posted" /></strong> <time datetime="<txp:posted format='iso8601' />" itemprop="published"><txp:posted /></time></p>
+            <h1 itemprop="name"><txp:permlink><txp:title /></txp:permlink></h1>
+            <p><strong><txp:text item="posted" /></strong> <time datetime="<txp:posted format='iso8601' />" itemprop="datePublished"><txp:posted /></time></p>
 
 <!-- if the article has an excerpt, display that, otherwise show highlighted keywords in context of article -->
             <txp:if_excerpt>
-                <txp:excerpt />
+                <div itemprop="description">
+                    <txp:excerpt />
+                </div>
             <txp:else />
                 <p><txp:search_result_excerpt /></p>
             </txp:if_excerpt>
 
 <!-- display the URL of the article as text (and link) -->
-            <p class="footnote"><txp:permlink><txp:permlink /></txp:permlink></p>
+            <p class="footnote"><a href="<txp:permlink />" itemprop="url"><txp:permlink /></a></p>
 
         </article>
 

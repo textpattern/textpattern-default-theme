@@ -9,13 +9,13 @@
 
 <txp:else />
 
-    <figure>
+    <figure itemscope itemtype="http://schema.org/ImageObject">
 
 <!-- image - overriding the width and height to let the image scale to fit parent container -->
         <txp:image width="0" height="0" />
 
 <!-- you do not need to specify the attribute type="caption" as that is the default setting for <txp:image_info /> tag -->
-        <figcaption><txp:image_info type="caption" /></figcaption>
+        <figcaption itemprop="caption"><txp:image_info type="caption" /></figcaption>
 
     </figure>
 
