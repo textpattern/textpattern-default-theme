@@ -654,6 +654,7 @@ dt {
 #article-list li {
     border-bottom: solid 1px $color-border;
     padding-top: 1em;
+    margin-bottom: 0;
 }
 
 
@@ -1230,7 +1231,7 @@ h1 a[href],
 h2 a[href],
 h3 a[href],
 sup a[href],
-.comment-count[href],
+a[itemprop="discussionUrl"],
 a[rel="tag"] {
     &:after {
         content: "";

@@ -796,6 +796,7 @@ dt {
 #article-list li {
     border-bottom: solid 1px #ccc;
     padding-top: 1em;
+    margin-bottom: 0;
 }
 
 
@@ -1474,7 +1475,7 @@ h1 a[href]:after,
 h2 a[href]:after,
 h3 a[href]:after,
 sup a[href]:after,
-.comment-count[href]:after,
+a[itemprop="discussionUrl"]:after,
 a[rel="tag"]:after {
     content: "";
 }
