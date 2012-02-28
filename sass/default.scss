@@ -342,8 +342,8 @@ h1 {
     font-family: $font-sans-serif;
     /* 28px */
     font-size: 2em;
-    /* 52px / 42px */
-    line-height: 1.23809523809524;
+    /* 34px / 28px */
+    line-height: 1.21428571428571;
     letter-spacing: -1px;
     /* 28px margin top/bottom */
     margin: .66666666666667em 0;
@@ -356,8 +356,8 @@ h2 {
     font-family: $font-sans-serif;
     /* 21px */
     font-size: 1.5em;
-    /* 40px / 28px */
-    line-height: 1.42857142857143;
+    /* 28px / 21px */
+    line-height: 1.33333333333333;
     /* 21px margin top/bottom */
     margin: .75em 0;
 }
@@ -365,6 +365,8 @@ h2 {
 h3 {
     /* 18px */
     font-size: 1.28571428571429em;
+    /* 26px / 18px */
+    line-height: 1.44444444444444;
     font-weight: normal;
     font-style: italic;
     /* 16px margin top/bottom */
@@ -1089,13 +1091,13 @@ nav {
 
 
 /* =============================================================================
-   Additional layout for screen media 770px and up
+   Additional layout for screen media 672px and up
    ========================================================================== */
 
 
 
 
-@media only screen and (min-width: 55em) {
+@media only screen and (min-width: 48em) {
 
 
 [role="main"] {
@@ -1165,6 +1167,25 @@ footer {
     width: 90%;
 }
 
+
+}
+
+
+
+
+/* =============================================================================
+   Additional layout for screen media 1800px and up
+   ========================================================================== */
+
+
+
+
+@media only screen and (min-width: 112.5em) {
+
+body {
+    /* 18px */
+    font-size: 112.5%;
+}
 
 }
 
