@@ -88,16 +88,12 @@
                 <txp:if_category>
 
                     <h1><txp:text item="category" /> <txp:category title="1" /></h1>
-                    <div class="hfeed">
-                        <txp:article form="article_listing" limit="5" />
-                    </div>
+                    <txp:article form="article_listing" limit="5" />
 
                 <!-- else display articles normally -->
                 <txp:else />
 
-                    <div class="hfeed">
-                        <txp:article limit="5" /> <!-- links by default to form: 'default.article.txp' unless you specify a different form -->
-                    </div>
+                    <txp:article limit="5" /> <!-- links by default to form: 'default.article.txp' unless you specify a different form -->
 
                 </txp:if_category>
 
