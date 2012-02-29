@@ -101,6 +101,14 @@ sub {
     bottom: -.25em;
 }
 
+/* consistent tables */
+table {
+    margin-bottom: 1em;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
 /* make table cells align top by default */
 th,
 td {
@@ -521,13 +529,6 @@ figure {
    Tables
    ========================================================================== */
 
-table {
-    margin-bottom: 1em;
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-}
-
 caption {
     font-style: italic;
     text-align: left;
@@ -542,10 +543,6 @@ td {
     &:last-child {
         padding-right: 0;
     }
-}
-
-th {
-    text-align: left;
 }
 
 thead {
@@ -1214,24 +1211,25 @@ body {
 body {
     font-family: $font-print;
     font-size: 8pt;
-    line-height: 12pt;
+    line-height: 1.5;
     margin: .5cm;
-    padding: 2em 6em;
+    padding: 2em 5em;
 }
 
 header {
-    margin-bottom: 24pt;
     border-bottom: solid 1pt black;
 }
 
 footer {
     margin-top: 12pt;
     border-top: solid 1pt black;
-    padding-top: 12pt;
 }
 
 /* hide unnecessary content from print */
 nav,
+audio,
+video,
+form,
 [role="complementary"],
 #paginator,
 #comments-form,
@@ -1270,21 +1268,28 @@ h1 {
     font-size: 32pt;
     line-height: 36pt;
     font-weight: normal;
-    padding-bottom: 16pt;
+    margin: .5em 0;
 }
 
-h2,
-h3 {
-    font-size: 14pt;
-    line-height: 18pt;
-    padding-bottom: 8pt;
+h2 {
+    font-size: 18pt;
+    line-height: 23pt;
     page-break-after: avoid;
     orphans: 3;
     widows: 3;
+    margin: .66666666666667em 0;
+}
+
+h3 {
+    font-size: 12pt;
+    line-height: 17pt;
+    page-break-after: avoid;
+    orphans: 3;
+    widows: 3;
+    margin: .66666666666667em 0;
 }
 
 p {
-    padding-bottom: 8pt;
     orphans: 3;
     widows: 3;
 }
@@ -1295,13 +1300,11 @@ tfoot,
 small,
 .footnote {
     font-size: 6pt;
-    line-height: 9pt;
 }
 
 blockquote {
-    margin-bottom: 8pt;
     border: solid 1pt black;
-    padding: 8pt 8pt 0;
+    padding: 0 8pt;
     page-break-inside: avoid;
 }
 
@@ -1332,6 +1335,23 @@ dt {
 img {
     max-width: 100% !important;
     page-break-inside: avoid;
+}
+
+/* image alignemnts */
+img {
+    &.align-left {
+        float: left;
+        margin: 1em 1em 1em 0;
+    }
+
+    &.align-right {
+        float: right;
+        margin: 1em 0 1em 1em;
+    }
+    &.align-center {
+        display: block;
+        margin: 1em auto;
+    }
 }
 
 figure {
@@ -1367,16 +1387,12 @@ caption {
     margin-bottom: 4pt;
 }
 
-thead,
-tfoot,
-tbody {
-    border-right: solid 1pt black;
-    border-left: solid 1pt black;
-}
-
 /* display table head across multi-page tables - http://css-discuss.incutio.com/wiki/Printing_Tables */
 thead {
     display: table-header-group;
+    th {
+        border-top: solid 1pt black;
+    }
 }
 
 tr {
@@ -1387,12 +1403,6 @@ th,
 td {
     border-bottom: solid 1pt black;
     padding: 4pt 8pt;
-}
-
-th {
-    text-align: left;
-    border-top: solid 1pt black;
-
 }
 
 
