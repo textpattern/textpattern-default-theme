@@ -20,7 +20,7 @@ Add the option for politely informing any users of Internet Explorer 6 that they
 
 h2. Extra code option: code_prettify
 
-Google provides scripting to turn code within @<pre>@ tags into colour coded markup. It is recommended that you read the documentation before installation, which is available on the "Google Code Prettify project page":http://google-code-prettify.googlecode.com/svn/trunk/README.html.
+Google provides scripting to turn code within @<pre>@ tags into colour coded markup. It is recommended that you read the documentation before installation, which is available on the "Google Code Prettify project page":http://google-code-prettify.googlecode.com/svn/trunk/README.html. *Note:* requires Textile v2.4 or later.
 
 h4. /extra-options-non-core/code_prettify/code-prettify.css
 
