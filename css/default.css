@@ -35,9 +35,10 @@ video {
     *zoom: 1;
 }
 
-/* prevents modern browsers from displaying 'audio' without controls */
+/* prevents modern browsers from displaying 'audio' without controls, remove excess height in iOS5 devices */
 audio:not([controls]) {
     display: none;
+    height: 0;
 }
 
 /* addresses styling for 'hidden' attribute not present in IE7-9, Firefox3, Safari4 */
