@@ -13,6 +13,11 @@
 <!-- mobile viewport optimised, more info: http://h5bp.com/viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <txp:if_individual_article>
+<!-- add meta author for individual articles -->
+        <txp:meta_author title="1" />
+    </txp:if_individual_article>
+
 <!-- content feeds -->
     <txp:feed_link flavor="atom" format="link" label="Atom" />
     <txp:feed_link flavor="rss" format="link" label="RSS" />

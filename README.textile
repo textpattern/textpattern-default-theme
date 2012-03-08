@@ -153,6 +153,10 @@ This page template is utilised when viewing a page error (such as a 404 page not
 
 Copy/paste over the existing page of the same name that was part of the standard Textpattern install
 
+h2. Known issues
+
+The @<txp:author />@ tag currently can't be used in an article list context. "This should be fixed by an upcoming Textpattern patch":http://forum.textpattern.com/viewtopic.php?pid=258863#p258863. For now tag error message will display when filtering articles by author. 
+
 h2. License
 
 Non-core components:
