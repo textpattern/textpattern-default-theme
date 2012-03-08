@@ -18,7 +18,7 @@
     </txp:if_category>
     </txp:if_search>
 
-<!-- mobile viewport optimized: j.mp/bplateviewport -->
+<!-- mobile viewport optimised, more info: http://h5bp.com/viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- content feeds -->
