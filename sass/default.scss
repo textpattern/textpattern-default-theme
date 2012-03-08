@@ -241,7 +241,7 @@ nav {
             border-bottom: 0;
         }
 
-        &:hover {
+        &:hover, .active {
             @include gradient(lighten($color-gradient-from, 10%), lighten($color-gradient-to, 10%));
         }
 

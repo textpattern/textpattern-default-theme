@@ -47,7 +47,7 @@
     <nav role="navigation">
         <h1><txp:text item="navigation" /></h1>
         <txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="li">
-            <txp:section link="1" title="1" />
+            <txp:section title="1" link="1" />
         </txp:section_list>
     </nav>
 

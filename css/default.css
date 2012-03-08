@@ -296,7 +296,8 @@ nav li:last-child {
     border-bottom: 0;
 }
 
-nav li:hover {
+nav li:hover,
+nav li.active {
     background-color: #ffe477;
     /* Konqueror */
     background-image: -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
