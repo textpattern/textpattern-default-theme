@@ -1,19 +1,19 @@
 <!-- is this the default section? -->
 <txp:if_section name=",">
     <txp:if_article_list>
+        <txp:if_search>
+            <txp:variable name="page-title" value='<txp:text item="search_results" /> <txp:search_term /> &#124; <txp:site_name />' />
+        <txp:else />
         <txp:if_category>
             <txp:variable name="page-title" value='<txp:text item="category" /> <txp:category title="1" /> &#124; <txp:site_name />' />
         <txp:else />
         <txp:if_author>
             <txp:variable name="page-title" value='<txp:text item="author" /> <txp:author /> &#124; <txp:site_name />' />
         <txp:else />
-        <txp:if_search>
-            <txp:variable name="page-title" value='<txp:text item="search_results" /> <txp:search_term /> &#124; <txp:site_name />' />
-        <txp:else />
             <txp:variable name="page-title" value='<txp:site_slogan /> &#124; <txp:site_name />' />
-        </txp:if_search>
         </txp:if_author>
         </txp:if_category>
+        </txp:if_search>
     <txp:else />
         <txp:variable name="page-title" value='<txp:title /> &#124; <txp:site_name />' />
     </txp:if_article_list>
