@@ -32,11 +32,9 @@ video {
     display: -moz-inline-box;
     -moz-box-orient: vertical;
     display: inline-block;
-    vertical-align: middle;
     /* display and zoom IE7 fix for display:inline-block */
     *display: inline;
     *zoom: 1;
-    *vertical-align: auto;
 }
 
 /* prevents modern browsers from displaying 'audio' without controls, remove excess height in iOS5 devices */
@@ -936,11 +934,9 @@ input[type="week"] {
     display: -moz-inline-box;
     -moz-box-orient: vertical;
     display: inline-block;
-    vertical-align: middle;
     /* display and zoom IE7 fix for display:inline-block */
     *display: inline;
     *zoom: 1;
-    *vertical-align: auto;
 }
 
 textarea[disabled],
@@ -1106,11 +1102,9 @@ input[type="submit"] {
     display: -moz-inline-box;
     -moz-box-orient: vertical;
     display: inline-block;
-    vertical-align: middle;
     /* display and zoom IE7 fix for display:inline-block */
     *display: inline;
     *zoom: 1;
-    *vertical-align: auto;
     color: #333;
     background-color: #ffda44;
     /* Konqueror */
