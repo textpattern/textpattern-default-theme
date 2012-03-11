@@ -853,12 +853,6 @@ textarea:-moz-placeholder {
     color: #888;
 }
 
-/* addresses placeholder text remaining visible on focus in Chrome */
-input:focus::-webkit-input-placeholder,
-textarea:focus::-webkit-input-placeholder {
-    color: transparent;
-}
-
 /* suppress red glow that Firefox adds to form fields by default, even when user is still typing
     and kill phantom spacing and dotted border that appears in Firefox */
 input:invalid,
