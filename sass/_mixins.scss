@@ -58,10 +58,15 @@
 			box-sizing: $box-sizing;
 }
 
-// IE7 inline-block
+// Cross-platform inline-block
 
-@mixin ie7-inline-block {
+@mixin inline-block {
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
     /* display and zoom IE7 fix for display:inline-block */
     *display: inline;
     *zoom: 1;
+    *vertical-align: auto;
 }

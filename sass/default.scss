@@ -37,8 +37,7 @@ summary {
 audio,
 canvas,
 video {
-    display: inline-block;
-    @include ie7-inline-block;
+    @include inline-block;
 }
 
 /* prevents modern browsers from displaying 'audio' without controls, remove excess height in iOS5 devices */
@@ -781,8 +780,7 @@ input[type="week"] {
 [role="complementary"] input[type="search"] {
     margin-right: 2px;
     width: 66.666666666667%;
-    display: inline-block;
-    @include ie7-inline-block;
+    @include inline-block;
 }
 
 textarea[disabled],
@@ -941,8 +939,7 @@ input[type="submit"] {
     border: solid 1px $color-gradient-border;
     @include border-radius;
     padding: .5em 1em .5em;
-    display: inline-block;
-    @include ie7-inline-block;
+    @include inline-block;
     color: $color-text;
     @include gradient;
     @include box-shadow;
