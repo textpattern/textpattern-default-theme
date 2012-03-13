@@ -17,7 +17,7 @@
     </txp:if_variable>
 
     <!-- add a permlink so people can link direct to this comment -->
-    <a href="<txp:comment_permlink />" itemprop="url">#</a>
+        <span class="comment-anchor" itemprop="url"><txp:comment_permlink>#</txp:comment_permlink></span>
 
     </h4>
 
