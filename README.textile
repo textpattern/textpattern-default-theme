@@ -38,6 +38,7 @@ There were a number of forms and pages that formed part of the original default 
 
 h4. You can safely delete the following forms from your fresh install:
 
+* link (link type form)
 * lofi (article type form)
 * noted (link type form)
 * popup_comments (comment type form)
@@ -109,13 +110,9 @@ bc. notextile. <txp:images form="images" />
 
 ...you should use the @notextile.@ prefix in this instance because the HTML @<figure>@ tag cannot be wrapped inside a @<p>@ tag.
 
-h4. /forms/links.link.txp
-
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. You can call this form from within a form, page or article by using @<txp:linklist form="links" />@.
-
 h4. /forms/plainlinks.link.txp
 
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. You could for example use this form to display a list of the 10 most recently added links in the admin-side links page by using @<txp:linklist wraptag="ul" break="li" limit="10" />@ within a form, page or article (you don't need to specify a form name as 'plainlinks' is the default form for links). Note we are using 'wraptag' and 'break' attributes to add the @<ul>@ and @<li>@ respectively. We've also limited the list to 10 items - the default is unlimited (no limit).
+Copy/paste over the existing form of the same name that was part of the standard Textpattern install. You can call this form from within a form, page or article by using @<txp:linklist />@ (you don't need to specify a form name as 'plainlinks' is the default form for links).
 
 h4. /forms/search_input.misc.txp
 
