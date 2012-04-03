@@ -1,6 +1,6 @@
 <!-- Google '+1' button support - more info/extra options at: http://www.google.com/webmasters/+1/button -->
 
-<!-- add code below into your default.article.txp form (around line 23 is recommended) -->
+<!-- add code below into your default.article.txp form (around line 25 is recommended) -->
 <div class="g-plusone" data-size="medium" data-href="<txp:permlink />"></div>
 
 <!-- place this render call where appropriate - note: this example is set to international English (en-GB), you may want to change that -->
