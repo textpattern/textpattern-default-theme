@@ -86,7 +86,7 @@
 
 <!-- footer -->
     <footer role="contentinfo">
-        <p><small><txp:text item="published_with" /> <a href="http://textpattern.com" rel="external">Textpattern CMS</a>.</small></p>
+        <p><small><txp:text item="published_with" /> <a href="http://textpattern.com" rel="external" title="<txp:text item='go_txp_com' />">Textpattern CMS</a>.</small></p>
     </footer>
 
 <!-- JavaScript at the bottom for fast page loading -->

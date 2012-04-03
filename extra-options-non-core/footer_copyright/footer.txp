@@ -1,5 +1,5 @@
 <!-- footer -->
     <footer role="contentinfo">
         <!-- using PHP to dynamically update the copyright year (note: requires the Textpattern advanced preference 'Allow PHP in pages?' set to 'Yes' -->
-        <p><small><span class="copyright">&#169;<txp:php>echo date('Y');</txp:php> <txp:site_name /></span>. <txp:text item="published_with" /> <a href="http://textpattern.com" rel="external">Textpattern CMS</a>.</small></p>
+        <p><small><span class="copyright">&#169;<txp:php>echo date('Y');</txp:php> <txp:site_name /></span>. <txp:text item="published_with" /> <a href="http://textpattern.com" rel="external" title="<txp:text item='go_txp_com' />">Textpattern CMS</a>.</small></p>
     </footer>
