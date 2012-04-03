@@ -74,6 +74,12 @@ To invoke via Textile with line numbers:
 
 bc. bc(prettyprint linenums).
 
+h2. Extra code option: facebook
+
+h4. /extra-options-non-core/google_plus/facebook_like.txp
+
+Add a Facebook 'Like' button to each of your articles. Paste the code from that form into your default.article.txp form (around line 25 is recommended).
+
 h2. Extra code option: flickr
 
 h4. /extra-options-non-core/flickr/flickr.css
@@ -100,7 +106,7 @@ h2. Extra code option: google_plus
 
 h4. /extra-options-non-core/google_plus/google_plus1.txp
 
-Add a Google +1 button to each of your articles. Paste the code from that form your default.article.txp form (around line 24 is recommended). Note that we are loading this as asynchronous JavaScript so it does not delay page rendering.
+Add a Google '+1' button to each of your articles. Paste the code from that form into your default.article.txp form (around line 25 is recommended).
 
 h2. Extra code option: jquery
 
@@ -131,4 +137,4 @@ h2. Extra code option: twitter
 
 h4. /extra-options-non-core/twitter/twitter_tweet.txp
 
-Add a Twitter tweet button to each of your articles. Paste the code from that form your default.article.txp form (around line 24 is recommended).
+Add a Twitter 'Tweet' button to each of your articles. Paste the code from that form into your default.article.txp form (around line 25 is recommended).
