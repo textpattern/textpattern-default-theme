@@ -146,7 +146,7 @@
         <p><small><txp:text item="published_with" /> <a href="http://textpattern.com" rel="external" title="<txp:text item='go_txp_com' />">Textpattern CMS</a>.</small></p>
     </footer>
 
-<!-- JavaScript at the bottom for fast page loading -->
+<!-- JavaScript at the bottom for fast page loading, more info: http://developer.yahoo.com/performance/rules.html#js_bottom -->
 
     <!-- add your own JavaScript here -->
 
