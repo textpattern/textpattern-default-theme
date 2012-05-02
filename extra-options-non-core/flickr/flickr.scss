@@ -1,34 +1,34 @@
 /* add this to your default.scss, at the end of the @media screen section */
 
 #flickr_badge_wrapper {
-    margin: 0 -10px 0 0;
+  margin: 0 -10px 0 0;
 }
 
 .flickr_badge_image {
-    float: left;
-    margin: 5px 10px 5px 0;
+  float: left;
+  margin: 5px 10px 5px 0;
 }
 
 .flickr_badge_image a {
-    display: block;
-    width: 75px;
-    height: 75px;
-    border: solid 1px $color-border;
-    @include border-radius;
-    padding: 4px;
-    background: #fff;
-    @include box-shadow;
+  display: block;
+  width: 75px;
+  height: 75px;
+  border: solid 1px $color-border;
+  @include border-radius;
+  padding: 4px;
+  background: #fff;
+  @include box-shadow;
 }
 
 .flickr_badge_image a:hover {
-    border: solid 1px $color-link-hover;
-    @include box-shadow(0 1px 2px rgba($color-link-hover, .4));
+  border: solid 1px $color-link-hover;
+  @include box-shadow(0 1px 2px rgba($color-link-hover, .4));
 }
 
 .flickr_badge_image a:visited {
-    border: solid 1px $color-link-visited;
+  border: solid 1px $color-link-visited;
 }
 
 #flickr p {
-    margin-top: 0;
+  margin-top: 0;
 }

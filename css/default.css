@@ -1,13 +1,11 @@
-/* =============================================================================
-   Styling and layout for all media
-   ========================================================================== */
+/* Styling and layout for all media
+========================================================================== */
 
 
 
 
-/* =============================================================================
-   Abridged version of Normalize.css
-   ========================================================================== */
+/* Abridged version of Normalize.css
+========================================================================== */
 /* original authors: Nicolas Gallagher and Jonathan Neal - http://necolas.github.com/normalize.css/ */
 
 /* corrects block display not defined in IE7-9, Firefox3 */
@@ -22,106 +20,106 @@ hgroup,
 nav,
 section,
 summary {
-    display: block;
+  display: block;
 }
 
 /* corrects inline-block display not defined in IE7-9, Firefox3 */
 audio,
 canvas,
 video {
-    display: -moz-inline-box;
-    -moz-box-orient: vertical;
-    display: inline-block;
-    /* display and zoom IE7 fix for display:inline-block */
-    *display: inline;
-    *zoom: 1;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  /* display and zoom IE7 fix for display:inline-block */
+  *display: inline;
+  *zoom: 1;
 }
 
 /* prevents modern browsers from displaying 'audio' without controls, remove excess height in iOS5 devices */
 audio:not([controls]) {
-    display: none;
-    height: 0;
+  display: none;
+  height: 0;
 }
 
 /* addresses styling for 'hidden' attribute not present in IE7-9, Firefox3, Safari4 */
 [hidden] {
-    display: none;
+  display: none;
 }
 
 html {
-    /* corrects text resizing oddly in IE7 when body font-size is set using em units -
-      http://clagnut.com/blog/348/#c790 */
-    font-size: 100%;
-    /* always force scrollbar padding so we don't get 'jumping' */
-    overflow-y: scroll;
-    /* prevents iOS text size adjust after orientation change, without disabling user zoom -
-      http://www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
-    -webkit-text-size-adjust: 100%;
-    /* as above, for Windows Phone */
-    -ms-text-size-adjust: 100%;
+  /* corrects text resizing oddly in IE7 when body font-size is set using em units -
+  http://clagnut.com/blog/348/#c790 */
+  font-size: 100%;
+  /* always force scrollbar padding so we don't get 'jumping' */
+  overflow-y: scroll;
+  /* prevents iOS text size adjust after orientation change, without disabling user zoom -
+  http://www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+  -webkit-text-size-adjust: 100%;
+  /* as above, for Windows Phone */
+  -ms-text-size-adjust: 100%;
 }
 
 /* Addresses margins set differently in IE7 */
 p,
 pre {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 
 /* addresses style set to 'bolder' in Firefox3-4, Safari4-5, Chrome */
 b,
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* addresses CSS quotes not supported in IE7, addresses quote property not supported in Safari4 */
 q {
-    quotes: none;
+  quotes: none;
 }
 
 q:before,
 q:after {
-    content: "";
-    content: none;
+  content: "";
+  content: none;
 }
 
 /* prevents sub and sup affecting line-height in all browsers */
 sub,
 sup {
-    /* 12px */
-    font-size: .85714285714286em;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
+  /* 12px */
+  font-size: .85714285714286em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
 
 sup {
-    top: -0.5em;
+  top: -0.5em;
 }
 
 sub {
-    bottom: -0.25em;
+  bottom: -0.25em;
 }
 
 /* removes border when inside 'a' element in IE7-9, Firefox3, improves image quality when scaled in IE7 -
-    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
 img {
-    border: 0;
-    -ms-interpolation-mode: bicubic;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
 }
 
 /* consistent tables */
 table {
-    margin-bottom: 1em;
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
+  margin-bottom: 1em;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
 }
 
 /* make table cells align top by default */
 th,
 td {
-    text-align: left;
-    vertical-align: top;
+  text-align: left;
+  vertical-align: top;
 }
 
 /* addresses margins set differently in IE7 */
@@ -129,32 +127,31 @@ dl,
 menu,
 ol,
 ul {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 dd {
-    margin: 0 0 0 2em;
+  margin: 0 0 0 2em;
 }
 
 /* remove margins from nested lists */
 dl dl,
 ul ul,
 ol ol {
-    margin: 0;
+  margin: 0;
 }
 
 /* addresses paddings set differently in IE7 */
 menu,
 ol,
 ul {
-    padding: 0 0 0 2em;
+  padding: 0 0 0 2em;
 }
 
 
-/* =============================================================================
-   Clearfix
-   ========================================================================== */
+/* Clearfix
+========================================================================== */
 /* updated to prevent margin-collapsing on child elements in most situations -
-    http://nicolasgallagher.com/micro-clearfix-hack/ */
+http://nicolasgallagher.com/micro-clearfix-hack/ */
 
 .clearfix,
 header,
@@ -165,8 +162,8 @@ footer,
 .radiobuttons span,
 #paginator,
 #monthly-list {
-    /* zoom IE7 fix */
-    *zoom: 1;
+  /* zoom IE7 fix */
+  *zoom: 1;
 }
 
 .clearfix:before,
@@ -187,8 +184,8 @@ footer:after,
 #paginator:after,
 #monthly-list:before,
 #monthly-list:after {
-    content: "";
-    display: table;
+  content: "";
+  display: table;
 }
 
 .clearfix:after,
@@ -200,15 +197,14 @@ footer:after,
 .radiobuttons span:after,
 #paginator:after,
 #monthly-list:after {
-    clear: both;
+  clear: both;
 }
 
 
 
 
-/* =============================================================================
-   Styling and layout for screen media (mobile first)
-   ========================================================================== */
+/* Styling and layout for screen media (mobile first)
+========================================================================== */
 
 
 
@@ -216,191 +212,189 @@ footer:after,
 @media screen {
 
 
-/* =============================================================================
-   Layout
-   ========================================================================== */
+/* Layout
+========================================================================== */
 
 body {
-    margin: 0;
-    background: #f7f7f7;
+  margin: 0;
+  background: #f7f7f7;
 }
 
 .wrapper {
-    border-bottom: solid 1px #ccc;
-    padding-top: 2em;
-    background: #fff;
+  border-bottom: solid 1px #ccc;
+  padding-top: 2em;
+  background: #fff;
 }
 
 header,
 .container,
 footer {
-    margin: 0 auto;
-    /* 960px / 1024px */
-    width: 93.75%;
-    max-width: 1280px;
+  margin: 0 auto;
+  /* 960px / 1024px */
+  width: 93.75%;
+  max-width: 1280px;
 }
 
 header {
-    padding-top: 1em;
+  padding-top: 1em;
 }
 
 header h1 {
-    margin: 0;
+  margin: 0;
 }
 
 header h3 {
-    /* 14px margin top/bottom */
-    margin: .66666666666667em 0;
-  }
+  /* 14px margin top/bottom */
+  margin: .66666666666667em 0;
+}
 
 nav {
-    border-top: solid 1px #e1a61a;
-    border-bottom: solid 1px #e1a61a;
-    background-color: #ffda44;
-    /* Konqueror */
-    background-image: -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
-    /* Safari4+, Chrome */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
-    /* Safari5.1+, Chrome10+ */
-    background-image: -webkit-linear-gradient(#ffda44, #fabc2b);
-    /* Firefox3.6 */
-    background-image: -moz-linear-gradient(#ffda44, #fabc2b);
-    /* IE10 */
-    background-image: -ms-linear-gradient(#ffda44, #fabc2b);
-    /* Opera11.10+ */
-    background-image: -o-linear-gradient(#ffda44, #fabc2b);
-    /* CSS3 Compliant */
-    background-image: linear-gradient(#ffda44, #fabc2b);
-    /* IE7-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
-    /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0 \0;
+  border-top: solid 1px #e1a61a;
+  border-bottom: solid 1px #e1a61a;
+  background-color: #ffda44;
+  /* Konqueror */
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
+  /* Safari4+, Chrome */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
+  /* Safari5.1+, Chrome10+ */
+  background-image: -webkit-linear-gradient(#ffda44, #fabc2b);
+  /* Firefox3.6 */
+  background-image: -moz-linear-gradient(#ffda44, #fabc2b);
+  /* IE10 */
+  background-image: -ms-linear-gradient(#ffda44, #fabc2b);
+  /* Opera11.10+ */
+  background-image: -o-linear-gradient(#ffda44, #fabc2b);
+  /* CSS3 Compliant */
+  background-image: linear-gradient(#ffda44, #fabc2b);
+  /* IE7-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
+  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+  border-radius: 0 \0;
 }
 
 nav h1 {
-    display: none;
+  display: none;
 }
 
 nav ul {
-    margin: 0 auto;
-    padding: 0;
-    max-width: 1280px;
-    list-style: none;
-    list-style-image: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1280px;
+  list-style: none;
+  list-style-image: none;
 }
 
 nav li {
-    margin: 0;
-    border-bottom: solid 1px #e1a61a;
+  margin: 0;
+  border-bottom: solid 1px #e1a61a;
 }
 
 nav li:last-child {
-    border-bottom: 0;
+  border-bottom: 0;
 }
 
 nav li:hover,
 nav li.active {
-    background-color: #ffe477;
-    /* Konqueror */
-    background-image: -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
-    /* Safari4+, Chrome */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
-    /* Safari5.1+, Chrome10+ */
-    background-image: -webkit-linear-gradient(#ffe477, #fbcc5d);
-    /* Firefox3.6 */
-    background-image: -moz-linear-gradient(#ffe477, #fbcc5d);
-    /* IE10 */
-    background-image: -ms-linear-gradient(#ffe477, #fbcc5d);
-    /* Opera11.10+ */
-    background-image: -o-linear-gradient(#ffe477, #fbcc5d);
-    /* CSS3 Compliant */
-    background-image: linear-gradient(#ffe477, #fbcc5d);
-    /* IE7-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
-    /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0 \0;
+  background-color: #ffe477;
+  /* Konqueror */
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
+  /* Safari4+, Chrome */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
+  /* Safari5.1+, Chrome10+ */
+  background-image: -webkit-linear-gradient(#ffe477, #fbcc5d);
+  /* Firefox3.6 */
+  background-image: -moz-linear-gradient(#ffe477, #fbcc5d);
+  /* IE10 */
+  background-image: -ms-linear-gradient(#ffe477, #fbcc5d);
+  /* Opera11.10+ */
+  background-image: -o-linear-gradient(#ffe477, #fbcc5d);
+  /* CSS3 Compliant */
+  background-image: linear-gradient(#ffe477, #fbcc5d);
+  /* IE7-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
+  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+  border-radius: 0 \0;
 }
 
 nav li:active {
-    background-color: #fabc2b;
-    /* Konqueror */
-    background-image: -khtml-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
-    /* Safari4+, Chrome */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
-    /* Safari5.1+, Chrome10+ */
-    background-image: -webkit-linear-gradient(#fabc2b, #ffda44);
-    /* Firefox3.6 */
-    background-image: -moz-linear-gradient(#fabc2b, #ffda44);
-    /* IE10 */
-    background-image: -ms-linear-gradient(#fabc2b, #ffda44);
-    /* Opera11.10+ */
-    background-image: -o-linear-gradient(#fabc2b, #ffda44);
-    /* CSS3 Compliant */
-    background-image: linear-gradient(#fabc2b, #ffda44);
-    /* IE7-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fabc2b',EndColorStr='#ffda44');
-    /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0 \0;
+  background-color: #fabc2b;
+  /* Konqueror */
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
+  /* Safari4+, Chrome */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
+  /* Safari5.1+, Chrome10+ */
+  background-image: -webkit-linear-gradient(#fabc2b, #ffda44);
+  /* Firefox3.6 */
+  background-image: -moz-linear-gradient(#fabc2b, #ffda44);
+  /* IE10 */
+  background-image: -ms-linear-gradient(#fabc2b, #ffda44);
+  /* Opera11.10+ */
+  background-image: -o-linear-gradient(#fabc2b, #ffda44);
+  /* CSS3 Compliant */
+  background-image: linear-gradient(#fabc2b, #ffda44);
+  /* IE7-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fabc2b',EndColorStr='#ffda44');
+  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+  border-radius: 0 \0;
 }
 
 nav a {
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
-    display: block;
-    padding: .5em 3.125%;
-    color: #333;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+  display: block;
+  padding: .5em 3.125%;
+  color: #333;
 }
 
 [role="article"] {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 [role="complementary"] {
-    margin-bottom: 2em;
-    padding-top: 2em;
-    border-top: dashed 2px #ccc;
+  margin-bottom: 2em;
+  padding-top: 2em;
+  border-top: dashed 2px #ccc;
 }
 
 [role="search"] p {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 footer {
-    padding: .5em 0;
+  padding: .5em 0;
 }
 
 
-/* =============================================================================
-   Links
-   ========================================================================== */
+/* Links
+========================================================================== */
 
 a {
-    position: relative;
-    text-decoration: none;
-    color: #114eb1;
-    -webkit-tap-highlight-color: rgba(0, 102, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+  color: #114eb1;
+  -webkit-tap-highlight-color: rgba(0, 102, 255, 0.5);
 }
 
 a:hover, a:active {
-    /* improves readability when focused and also mouse hovered in all browsers */
-    outline: 0;
+  /* improves readability when focused and also mouse hovered in all browsers */
+  outline: 0;
 }
 
 a:active {
-    top: 1px;
+  top: 1px;
 }
 
 a:focus {
-    outline: thin dotted #06f;
+  outline: thin dotted #06f;
 }
 
 header a {
-    color: #333;
-    -moz-border-radius: .11904761904762em;
-    border-radius: .11904761904762em;
+  color: #333;
+  -moz-border-radius: .11904761904762em;
+  border-radius: .11904761904762em;
 }
 
 header a:hover, header a:active {
-    background: #e8e8e8;
+  background: #e8e8e8;
 }
 
 [role="main"] a:hover,
@@ -409,423 +403,418 @@ header a:hover, header a:active {
 [role="complementary"] a:active,
 footer a:hover,
 footer a:active {
-    text-decoration: underline;
-    color: #06f;
+  text-decoration: underline;
+  color: #06f;
 }
 
 [role="main"] a:visited,
 [role="complementary"] a:visited,
 footer a:visited {
-    color: #183082;
+  color: #183082;
 }
 
 [role="main"] h1 a {
-    color: #333;
-    -moz-border-radius: .11904761904762em;
-    border-radius: .11904761904762em;
+  color: #333;
+  -moz-border-radius: .11904761904762em;
+  border-radius: .11904761904762em;
 }
 
 [role="main"] h1 a:visited {
-    color: #333;
+  color: #333;
 }
 
 [role="main"] h1 a:hover,
 [role="main"] h1 a:active {
-    text-decoration: none;
-    color: #333;
-    background: #efefef;
+  text-decoration: none;
+  color: #333;
+  background: #efefef;
 }
 
 
-/* =============================================================================
-   Typography
-   ========================================================================== */
+/* Typography
+========================================================================== */
 
 body {
-    font-family: "PT Serif", Georgia, serif;
-    /* 14px / 16px */
-    font-size: 0.875em;
-    line-height: 1.5;
-    color: #333;
+  font-family: "PT Serif", Georgia, serif;
+  /* 14px / 16px */
+  font-size: 0.875em;
+  line-height: 1.5;
+  color: #333;
 }
 
 nav {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    /* 28px */
-    font-size: 2em;
-    /* 34px / 28px */
-    line-height: 1.21428571428571;
-    letter-spacing: -1px;
-    /* 28px margin top/bottom */
-    margin: .66666666666667em 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /* 28px */
+  font-size: 2em;
+  /* 34px / 28px */
+  line-height: 1.21428571428571;
+  letter-spacing: -1px;
+  /* 28px margin top/bottom */
+  margin: .66666666666667em 0;
 }
 
 h1:first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    /* 21px */
-    font-size: 1.5em;
-    /* 28px / 21px */
-    line-height: 1.33333333333333;
-    /* 21px margin top/bottom */
-    margin: .75em 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /* 21px */
+  font-size: 1.5em;
+  /* 28px / 21px */
+  line-height: 1.33333333333333;
+  /* 21px margin top/bottom */
+  margin: .75em 0;
 }
 
 h3 {
-    /* 18px */
-    font-size: 1.28571428571429em;
-    /* 26px / 18px */
-    line-height: 1.44444444444444;
-    font-weight: normal;
-    font-style: italic;
-    /* 16px margin top/bottom */
-    margin: .76190476190476em 0;
+  /* 18px */
+  font-size: 1.28571428571429em;
+  /* 26px / 18px */
+  line-height: 1.44444444444444;
+  font-weight: normal;
+  font-style: italic;
+  /* 16px margin top/bottom */
+  margin: .76190476190476em 0;
 }
 
 h4 {
-    font-family: Arial, Helvetica, sans-serif;
-    /* 16px */
-    font-size: 1.14285714285714em;
-    margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /* 16px */
+  font-size: 1.14285714285714em;
+  margin: 0;
 }
 
 blockquote {
-    /* 16px */
-    font-size: 1.14285714285714em;
-    font-style: italic;
-    margin: .875em 0 .875em 0;
-    padding: 1px .875em;
-    -moz-border-radius: .35714285714286em;
-    border-radius: .35714285714286em;
-    background: #fff6d3;
+  /* 16px */
+  font-size: 1.14285714285714em;
+  font-style: italic;
+  margin: .875em 0 .875em 0;
+  padding: 1px .875em;
+  -moz-border-radius: .35714285714286em;
+  border-radius: .35714285714286em;
+  background: #fff6d3;
 }
 
 dfn,
 q {
-    font-style: italic;
-    background: #fff6d3;
+  font-style: italic;
+  background: #fff6d3;
 }
 
 address {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 
 /* addresses styling not present in IE7-9, Safari5, Chrome */
 abbr[title],
 dfn[title] {
-    border-bottom: dotted 1px;
-    cursor: help;
+  border-bottom: dotted 1px;
+  cursor: help;
 }
 
 mark,
 var {
-    padding: 0 .21428571428571em;
-    -moz-border-radius: .21428571428571em;
-    border-radius: .21428571428571em;
-    color: #333;
-    background: #fff6d3;
+  padding: 0 .21428571428571em;
+  -moz-border-radius: .21428571428571em;
+  border-radius: .21428571428571em;
+  color: #333;
+  background: #fff6d3;
 }
 
 var {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 pre,
 code,
 kbd,
 samp {
-    font-family: Cousine, Consolas, "Lucida Console", Monaco, monospace;
+  font-family: Cousine, Consolas, "Lucida Console", Monaco, monospace;
 }
 
 code,
 kbd,
 samp {
-    /* 13px */
-    font-size: .92857142857143em;
-    border: 1px solid #e3e3e3;
-    padding: 0 .23076923076923em;
-    -moz-border-radius: .23076923076923em;
-    border-radius: .23076923076923em;
-    background: #f7f7f7;
+  /* 13px */
+  font-size: .92857142857143em;
+  border: 1px solid #e3e3e3;
+  padding: 0 .23076923076923em;
+  -moz-border-radius: .23076923076923em;
+  border-radius: .23076923076923em;
+  background: #f7f7f7;
 }
 
 pre {
-    /* 13px */
-    font-size: .92857142857143em;
-    overflow-x: auto;
-    border: 1px solid #e3e3e3;
-    padding: 1em;
-    -moz-border-radius: .35714285714286em;
-    border-radius: .35714285714286em;
-    background: #f7f7f7;
+  /* 13px */
+  font-size: .92857142857143em;
+  overflow-x: auto;
+  border: 1px solid #e3e3e3;
+  padding: 1em;
+  -moz-border-radius: .35714285714286em;
+  border-radius: .35714285714286em;
+  background: #f7f7f7;
 }
 
 pre code {
-    /* 13px */
-    font-size: 1em;
-    border: 0;
-    background: none;
+  /* 13px */
+  font-size: 1em;
+  border: 0;
+  background: none;
 }
 
 small,
 figcaption,
 tfoot,
 .footnote {
-    /* 12px */
-    font-size: .85714285714286em;
+  /* 12px */
+  font-size: .85714285714286em;
 }
 
 figcaption,
 tfoot,
 .footnote {
-    color: #888;
+  color: #888;
 }
 
 figcaption {
-    margin-top: .33333333333333em;
-    font-style: italic;
+  margin-top: .33333333333333em;
+  font-style: italic;
 }
 
 
-/* =============================================================================
-   Embedded content
-   ========================================================================== */
+/* Embedded content
+========================================================================== */
 
 /* image alignemnts */
 img.align-left {
-    float: left;
-    margin: 1em 1em 1em 0;
+  float: left;
+  margin: 1em 1em 1em 0;
 }
 img.align-right {
-    float: right;
-    margin: 1em 0 1em 1em;
+  float: right;
+  margin: 1em 0 1em 1em;
 }
 img.align-center {
-    display: block;
-    margin: 1em auto;
+  display: block;
+  margin: 1em auto;
 }
 
 /* corrects overflow displayed oddly in IE9 */
   svg:not(:root) {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 article img,
 article embed,
 article object,
 article video {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 figure {
-    margin: 0;
+  margin: 0;
 }
 
 
-/* =============================================================================
-   Tables
-   ========================================================================== */
+/* Tables
+========================================================================== */
 
 caption {
-    font-style: italic;
-    text-align: left;
-    margin-bottom: .5em;
+  font-style: italic;
+  text-align: left;
+  margin-bottom: .5em;
 }
 
 th,
 td {
-    border-bottom: solid 1px #ccc;
-    padding: .28571428571429em .5em .28571428571429em 0;
+  border-bottom: solid 1px #ccc;
+  padding: .28571428571429em .5em .28571428571429em 0;
 }
 
 th:last-child,
 td:last-child {
-    padding-right: 0;
+  padding-right: 0;
 }
 
 thead th,
 thead td {
-    border-bottom: solid 2px #ccc;
+  border-bottom: solid 2px #ccc;
 }
 
 tfoot th,
 tfoot td {
-    border-bottom: 0;
-    padding: .33333333333333em .58333333333333em .33333333333333em 0;
+  border-bottom: 0;
+  padding: .33333333333333em .58333333333333em .33333333333333em 0;
 }
 
 tfoot:last-child {
-    padding-right: 0;
+  padding-right: 0;
 }
 
 
-/* =============================================================================
-   Lists
-   ========================================================================== */
+/* Lists
+========================================================================== */
 
 dt {
-    font-style: italic;
+  font-style: italic;
 }
 
 #monthly-list {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 #monthly-list li {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    float: left;
-    display: block;
-    margin: 0 .5em .5em 0;
-    min-width: 2.5em;
-    border: solid 1px #ccc;
-    -moz-border-radius: .35714285714286em;
-    border-radius: .35714285714286em;
-    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  float: left;
+  display: block;
+  margin: 0 .5em .5em 0;
+  min-width: 2.5em;
+  border: solid 1px #ccc;
+  -moz-border-radius: .35714285714286em;
+  border-radius: .35714285714286em;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background: #fff;
 }
 
 #monthly-list li:active {
-    position: relative;
-    top: 1px;
+  position: relative;
+  top: 1px;
 }
 
 #monthly-list a {
-    display: block;
-    text-decoration: none;
-    color: #333;
+  display: block;
+  text-decoration: none;
+  color: #333;
 }
 
 #monthly-list a:hover,
 #monthly-list a:focus {
-    color: #1a1a1a;
+  color: #1a1a1a;
 }
 
 #monthly-list a:focus {
-    outline: 0;
+  outline: 0;
 }
 
 #monthly-list a:active {
-    top: 0;
+  top: 0;
 }
 
 #monthly-list a .archive-year {
-    /* 12px */
-    font-size: .85714285714286em;
-    font-weight: bold;
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
-    -moz-border-radius: .35714285714286em .35714285714286em 0 0;
-    border-radius: .35714285714286em .35714285714286em 0 0;
-    padding: 0 .33333333333333em;
-    background-color: #ffda44;
-    /* Konqueror */
-    background-image: -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
-    /* Safari4+, Chrome */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
-    /* Safari5.1+, Chrome10+ */
-    background-image: -webkit-linear-gradient(#ffda44, #fabc2b);
-    /* Firefox3.6 */
-    background-image: -moz-linear-gradient(#ffda44, #fabc2b);
-    /* IE10 */
-    background-image: -ms-linear-gradient(#ffda44, #fabc2b);
-    /* Opera11.10+ */
-    background-image: -o-linear-gradient(#ffda44, #fabc2b);
-    /* CSS3 Compliant */
-    background-image: linear-gradient(#ffda44, #fabc2b);
-    /* IE7-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
-    /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0 \0;
+  /* 12px */
+  font-size: .85714285714286em;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+  -moz-border-radius: .35714285714286em .35714285714286em 0 0;
+  border-radius: .35714285714286em .35714285714286em 0 0;
+  padding: 0 .33333333333333em;
+  background-color: #ffda44;
+  /* Konqueror */
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
+  /* Safari4+, Chrome */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
+  /* Safari5.1+, Chrome10+ */
+  background-image: -webkit-linear-gradient(#ffda44, #fabc2b);
+  /* Firefox3.6 */
+  background-image: -moz-linear-gradient(#ffda44, #fabc2b);
+  /* IE10 */
+  background-image: -ms-linear-gradient(#ffda44, #fabc2b);
+  /* Opera11.10+ */
+  background-image: -o-linear-gradient(#ffda44, #fabc2b);
+  /* CSS3 Compliant */
+  background-image: linear-gradient(#ffda44, #fabc2b);
+  /* IE7-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
+  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+  border-radius: 0 \0;
 }
 
 #monthly-list a:hover .archive-year,
 #monthly-list a:focus .archive-year {
-    background-color: #ffe477;
-    /* Konqueror */
-    background-image: -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
-    /* Safari4+, Chrome */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
-    /* Safari5.1+, Chrome10+ */
-    background-image: -webkit-linear-gradient(#ffe477, #fbcc5d);
-    /* Firefox3.6 */
-    background-image: -moz-linear-gradient(#ffe477, #fbcc5d);
-    /* IE10 */
-    background-image: -ms-linear-gradient(#ffe477, #fbcc5d);
-    /* Opera11.10+ */
-    background-image: -o-linear-gradient(#ffe477, #fbcc5d);
-    /* CSS3 Compliant */
-    background-image: linear-gradient(#ffe477, #fbcc5d);
-    /* IE7-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
-    /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0 \0;
+  background-color: #ffe477;
+  /* Konqueror */
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
+  /* Safari4+, Chrome */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
+  /* Safari5.1+, Chrome10+ */
+  background-image: -webkit-linear-gradient(#ffe477, #fbcc5d);
+  /* Firefox3.6 */
+  background-image: -moz-linear-gradient(#ffe477, #fbcc5d);
+  /* IE10 */
+  background-image: -ms-linear-gradient(#ffe477, #fbcc5d);
+  /* Opera11.10+ */
+  background-image: -o-linear-gradient(#ffe477, #fbcc5d);
+  /* CSS3 Compliant */
+  background-image: linear-gradient(#ffe477, #fbcc5d);
+  /* IE7-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
+  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+  border-radius: 0 \0;
 }
 
 #monthly-list a .archive-month {
-    -moz-border-radius: 0 0 .35714285714286em .35714285714286em;
-    border-radius: 0 0 .35714285714286em .35714285714286em;
-    padding: 0 .28571428571429em;
+  -moz-border-radius: 0 0 .35714285714286em .35714285714286em;
+  border-radius: 0 0 .35714285714286em .35714285714286em;
+  padding: 0 .28571428571429em;
 }
 
 #monthly-list a:hover .archive-month,
 #monthly-list a:focus .archive-month {
-    background: #fff6d3;
+  background: #fff6d3;
 }
 
 #monthly-list span {
-    display: block;
-    /* IE7 padding fix */
-    *position: relative;
-    *top: -2px;
+  display: block;
+  /* IE7 padding fix */
+  *position: relative;
+  *top: -2px;
 }
 
 [role="main"] #article-list {
-    list-style: none;
-    margin: 0 0 2em 0;
-    padding: 0;
-    border-top: solid 1px #ccc;
+  list-style: none;
+  margin: 0 0 2em 0;
+  padding: 0;
+  border-top: solid 1px #ccc;
 }
 
 #article-list li {
-    border-bottom: solid 1px #ccc;
-    padding-top: 1em;
-    margin-bottom: 0;
+  border-bottom: solid 1px #ccc;
+  padding-top: 1em;
+  margin-bottom: 0;
 }
 
 
-/* =============================================================================
-   Forms
-   ========================================================================== */
+/* Forms
+========================================================================== */
 
 /* corrects margin displayed oddly in IE6-7 */
 form {
-    margin: 0;
+  margin: 0;
 }
 
 /* remove default fieldset styling across browsers */
 fieldset {
-    margin: 0;
-    border: 0;
-    padding: 0;
+  margin: 0;
+  border: 0;
+  padding: 0;
 }
 
 /* Corrects color not being inherited in IE7-9, corrects text not wrapping in FF3, corrects alignment displayed oddly in IE7 */
 legend {
-    border: 0;
-    padding: 0;
-    white-space: normal;
-    *margin-left: -7px;
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
 }
 
 /* improves appearance and consistency in all browsers */
@@ -834,56 +823,56 @@ button,
 input,
 select,
 textarea {
-    font-size: 100%;
-    margin: 0;
-    vertical-align: baseline;
-    /* improves appearance and consistency in IE7 */
-    *vertical-align: middle;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  /* improves appearance and consistency in IE7 */
+  *vertical-align: middle;
 }
 
 /* colour placeholder text (Webkit and Mozilla only, so far) */
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-    color: #888;
+  color: #888;
 }
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-    color: #888;
+  color: #888;
 }
 
 /* suppress red glow that Firefox adds to form fields by default, even when user is still typing
-    and kill phantom spacing and dotted border that appears in Firefox */
+and kill phantom spacing and dotted border that appears in Firefox */
 input:invalid,
 button:invalid,
 select:invalid,
 textarea:invalid {
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 input::-moz-focus-inner,
 button::-moz-focus-inner,
 select::-moz-focus-inner,
 textarea::-moz-focus-inner {
-    border: 0;
-    padding: 0;
+  border: 0;
+  padding: 0;
 }
 
 /* remove inner padding and search cancel button in Safari, Chrome on OS X */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 button:focus,
 input:focus,
 select:focus,
 textarea:focus {
-    -webkit-box-shadow: 0 0 7px #06f;
-    -moz-box-shadow: 0 0 7px #06f;
-    box-shadow: 0 0 7px #06f;
-    /* Opera */
-    z-index: 1;
+  -webkit-box-shadow: 0 0 7px #06f;
+  -moz-box-shadow: 0 0 7px #06f;
+  box-shadow: 0 0 7px #06f;
+  /* Opera */
+  z-index: 1;
 }
 
 input[type="file"]:focus,
@@ -892,9 +881,9 @@ input[type="radio"]:focus,
 input[type="radio"]:active,
 input[type="checkbox"]:focus,
 input[type="checkbox"]:active {
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 textarea,
@@ -911,32 +900,32 @@ input[type="text"],
 input[type="time"],
 input[type="url"],
 input[type="week"] {
-    font-family: Arial, Helvetica, sans-serif;
-    /* 12px */
-    font-size: .85714285714286em;
-    text-align: left;
-    border: solid 1px #ccc;
-    padding: .5em;
-    background: #fff;
-    outline: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    /* remove iOS Safari default styling */
-    -webkit-appearance: none;
-    -moz-border-radius: 0;
-    border-radius: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /* 12px */
+  font-size: .85714285714286em;
+  text-align: left;
+  border: solid 1px #ccc;
+  padding: .5em;
+  background: #fff;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* remove iOS Safari default styling */
+  -webkit-appearance: none;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 
 [role="complementary"] input[type="search"] {
-    margin-right: 2px;
-    width: 66.666666666667%;
-    display: -moz-inline-box;
-    -moz-box-orient: vertical;
-    display: inline-block;
-    /* display and zoom IE7 fix for display:inline-block */
-    *display: inline;
-    *zoom: 1;
+  margin-right: 2px;
+  width: 66.666666666667%;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  /* display and zoom IE7 fix for display:inline-block */
+  *display: inline;
+  *zoom: 1;
 }
 
 textarea[disabled],
@@ -954,7 +943,7 @@ input[type="text"][disabled],
 input[type="time"][disabled],
 input[type="url"][disabled],
 input[type="week"][disabled] {
-    background-color: #eee;
+  background-color: #eee;
 }
 
 /* make sure disable elements really are disabled */
@@ -964,118 +953,117 @@ select[disabled],
 select[disabled] option,
 select[disabled] optgroup,
 textarea[disabled] {
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: -moz-none;
-    user-select: none;
-    color: #888;
-    cursor: default;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  user-select: none;
+  color: #888;
+  cursor: default;
 }
 
 textarea {
-    min-height: 3em;
-    /* removes default vertical scrollbar in IE7-9 */
-    overflow: auto;
-    /* improves readability and alignment in all browsers */
-    vertical-align: top;
-    -moz-resize: vertical;
-    resize: vertical;
-    width: 100%;
+  min-height: 3em;
+  /* removes default vertical scrollbar in IE7-9 */
+  overflow: auto;
+  /* improves readability and alignment in all browsers */
+  vertical-align: top;
+  -moz-resize: vertical;
+  resize: vertical;
+  width: 100%;
 }
 
 select {
-    font-family: Arial, Helvetica, sans-serif;
-    /* 12px */
-    font-size: .85714285714286em;
-    text-align: left;
-    border: solid 1px #ccc;
-    padding: .5em;
-    background: #fff;
-    outline: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  /* 12px */
+  font-size: .85714285714286em;
+  text-align: left;
+  border: solid 1px #ccc;
+  padding: .5em;
+  background: #fff;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 textarea,
 select[size],
 select[multiple] {
-    height: auto;
+  height: auto;
 }
 
 optgroup {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #333;
 }
 
 /* kill phantom spacing and dotted border that appears in Firefox */
 optgroup::-moz-focus-inner {
-    border: 0;
-    padding: 0;
+  border: 0;
+  padding: 0;
 }
 
 .large input {
-    width: 50%;
-    min-width: 302px;
+  width: 50%;
+  min-width: 302px;
 }
 
 .large textarea {
-    height: 156px;
+  height: 156px;
 }
 
 .small input {
-    width: 25%;
-    min-width: 151px;
+  width: 25%;
+  min-width: 151px;
 }
 
 .small textarea {
-    height: 5.5em;
+  height: 5.5em;
 }
 
 /* addresses box sizing set to content-box and excess padding in IE7-9 */
 input[type="checkbox"],
 input[type="radio"] {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 0;
-    *height: 1em;
-    *width: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  *height: 1em;
+  *width: 1em;
 }
 
 .checkboxes span,
 .radiobuttons span {
-    display: block;
+  display: block;
 }
 
 .checkboxes input,
 .radiobuttons input {
-    float: left;
-    margin-right: .5em;
+  float: left;
+  margin-right: .5em;
 }
 
 .checkboxes label,
 .radiobuttons label {
-    float: left;
-    display: block;
+  float: left;
+  display: block;
 }
 
 
-/* =============================================================================
-   Buttons
-   ========================================================================== */
+/* Buttons
+========================================================================== */
 
 /* make buttons play nice in IE - http://www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 input,
 button,
 .button {
-    width: auto;
-    overflow: visible;
+  width: auto;
+  overflow: visible;
 }
 
 button,
@@ -1083,51 +1071,51 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    -webkit-background-clip: padding;
-    -moz-background-clip: padding;
-    -ms-background-clip: padding-box;
-    -o-background-clip: padding-box;
-    background-clip: padding-box;
-    font-family: Arial, Helvetica, sans-serif;
-    /* 12px */
-    font-size: .85714285714286em;
-    font-weight: normal;
-    text-align: center;
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    border: solid 1px #e1a61a;
-    -moz-border-radius: .35714285714286em;
-    border-radius: .35714285714286em;
-    padding: .5em 1em .5em;
-    display: -moz-inline-box;
-    -moz-box-orient: vertical;
-    display: inline-block;
-    /* display and zoom IE7 fix for display:inline-block */
-    *display: inline;
-    *zoom: 1;
-    color: #333;
-    background-color: #ffda44;
-    /* Konqueror */
-    background-image: -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
-    /* Safari4+, Chrome */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
-    /* Safari5.1+, Chrome10+ */
-    background-image: -webkit-linear-gradient(#ffda44, #fabc2b);
-    /* Firefox3.6 */
-    background-image: -moz-linear-gradient(#ffda44, #fabc2b);
-    /* IE10 */
-    background-image: -ms-linear-gradient(#ffda44, #fabc2b);
-    /* Opera11.10+ */
-    background-image: -o-linear-gradient(#ffda44, #fabc2b);
-    /* CSS3 Compliant */
-    background-image: linear-gradient(#ffda44, #fabc2b);
-    /* IE7-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
-    /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0 \0;
-    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  -ms-background-clip: padding-box;
+  -o-background-clip: padding-box;
+  background-clip: padding-box;
+  font-family: Arial, Helvetica, sans-serif;
+  /* 12px */
+  font-size: .85714285714286em;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border: solid 1px #e1a61a;
+  -moz-border-radius: .35714285714286em;
+  border-radius: .35714285714286em;
+  padding: .5em 1em .5em;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  /* display and zoom IE7 fix for display:inline-block */
+  *display: inline;
+  *zoom: 1;
+  color: #333;
+  background-color: #ffda44;
+  /* Konqueror */
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
+  /* Safari4+, Chrome */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
+  /* Safari5.1+, Chrome10+ */
+  background-image: -webkit-linear-gradient(#ffda44, #fabc2b);
+  /* Firefox3.6 */
+  background-image: -moz-linear-gradient(#ffda44, #fabc2b);
+  /* IE10 */
+  background-image: -ms-linear-gradient(#ffda44, #fabc2b);
+  /* Opera11.10+ */
+  background-image: -o-linear-gradient(#ffda44, #fabc2b);
+  /* CSS3 Compliant */
+  background-image: linear-gradient(#ffda44, #fabc2b);
+  /* IE7-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
+  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+  border-radius: 0 \0;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 button:hover,
@@ -1135,25 +1123,25 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-    background-color: #ffe477;
-    /* Konqueror */
-    background-image: -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
-    /* Safari4+, Chrome */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
-    /* Safari5.1+, Chrome10+ */
-    background-image: -webkit-linear-gradient(#ffe477, #fbcc5d);
-    /* Firefox3.6 */
-    background-image: -moz-linear-gradient(#ffe477, #fbcc5d);
-    /* IE10 */
-    background-image: -ms-linear-gradient(#ffe477, #fbcc5d);
-    /* Opera11.10+ */
-    background-image: -o-linear-gradient(#ffe477, #fbcc5d);
-    /* CSS3 Compliant */
-    background-image: linear-gradient(#ffe477, #fbcc5d);
-    /* IE7-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
-    /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0 \0;
+  background-color: #ffe477;
+  /* Konqueror */
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
+  /* Safari4+, Chrome */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
+  /* Safari5.1+, Chrome10+ */
+  background-image: -webkit-linear-gradient(#ffe477, #fbcc5d);
+  /* Firefox3.6 */
+  background-image: -moz-linear-gradient(#ffe477, #fbcc5d);
+  /* IE10 */
+  background-image: -ms-linear-gradient(#ffe477, #fbcc5d);
+  /* Opera11.10+ */
+  background-image: -o-linear-gradient(#ffe477, #fbcc5d);
+  /* CSS3 Compliant */
+  background-image: linear-gradient(#ffe477, #fbcc5d);
+  /* IE7-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
+  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+  border-radius: 0 \0;
 }
 
 button:active,
@@ -1161,120 +1149,119 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-    position: relative;
-    top: 1px;
-    color: #1a1a1a;
-    background-color: #fabc2b;
-    /* Konqueror */
-    background-image: -khtml-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
-    /* Safari4+, Chrome */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
-    /* Safari5.1+, Chrome10+ */
-    background-image: -webkit-linear-gradient(#fabc2b, #ffda44);
-    /* Firefox3.6 */
-    background-image: -moz-linear-gradient(#fabc2b, #ffda44);
-    /* IE10 */
-    background-image: -ms-linear-gradient(#fabc2b, #ffda44);
-    /* Opera11.10+ */
-    background-image: -o-linear-gradient(#fabc2b, #ffda44);
-    /* CSS3 Compliant */
-    background-image: linear-gradient(#fabc2b, #ffda44);
-    /* IE7-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fabc2b',EndColorStr='#ffda44');
-    /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0 \0;
+  position: relative;
+  top: 1px;
+  color: #1a1a1a;
+  background-color: #fabc2b;
+  /* Konqueror */
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
+  /* Safari4+, Chrome */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
+  /* Safari5.1+, Chrome10+ */
+  background-image: -webkit-linear-gradient(#fabc2b, #ffda44);
+  /* Firefox3.6 */
+  background-image: -moz-linear-gradient(#fabc2b, #ffda44);
+  /* IE10 */
+  background-image: -ms-linear-gradient(#fabc2b, #ffda44);
+  /* Opera11.10+ */
+  background-image: -o-linear-gradient(#fabc2b, #ffda44);
+  /* CSS3 Compliant */
+  background-image: linear-gradient(#fabc2b, #ffda44);
+  /* IE7-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fabc2b',EndColorStr='#ffda44');
+  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+  border-radius: 0 \0;
 }
 
 input[type="submit"].disabled,
 #paginator span.disabled {
-    text-shadow: none;
-    top: 0;
-    cursor: default;
-    border: solid 1px #d2d2d2;
-    color: #888;
-    background-color: #e6e6e6;
-    /* Konqueror */
-    background-image: -khtml-gradient(linear, left top, left bottom, from(#e6e6e6), to(#dadada));
-    /* Safari4+, Chrome */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), to(#dadada));
-    /* Safari5.1+, Chrome10+ */
-    background-image: -webkit-linear-gradient(#e6e6e6, #dadada);
-    /* Firefox3.6 */
-    background-image: -moz-linear-gradient(#e6e6e6, #dadada);
-    /* IE10 */
-    background-image: -ms-linear-gradient(#e6e6e6, #dadada);
-    /* Opera11.10+ */
-    background-image: -o-linear-gradient(#e6e6e6, #dadada);
-    /* CSS3 Compliant */
-    background-image: linear-gradient(#e6e6e6, #dadada);
-    /* IE7-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6e6e6',EndColorStr='#dadada');
-    /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-    border-radius: 0 \0;
+  text-shadow: none;
+  top: 0;
+  cursor: default;
+  border: solid 1px #d2d2d2;
+  color: #888;
+  background-color: #e6e6e6;
+  /* Konqueror */
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#e6e6e6), to(#dadada));
+  /* Safari4+, Chrome */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), to(#dadada));
+  /* Safari5.1+, Chrome10+ */
+  background-image: -webkit-linear-gradient(#e6e6e6, #dadada);
+  /* Firefox3.6 */
+  background-image: -moz-linear-gradient(#e6e6e6, #dadada);
+  /* IE10 */
+  background-image: -ms-linear-gradient(#e6e6e6, #dadada);
+  /* Opera11.10+ */
+  background-image: -o-linear-gradient(#e6e6e6, #dadada);
+  /* CSS3 Compliant */
+  background-image: linear-gradient(#e6e6e6, #dadada);
+  /* IE7-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6e6e6',EndColorStr='#dadada');
+  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+  border-radius: 0 \0;
 }
 
 #paginator {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 #paginator .button {
-    padding: .1em 1em;
+  padding: .1em 1em;
 }
 
 #paginator a.button {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #333;
 }
 
 #paginator-l {
-    float: left;
+  float: left;
 }
 
 #paginator-r {
-    float: right;
+  float: right;
 }
 
 
-/* =============================================================================
-   Comments
-   ========================================================================== */
+/* Comments
+========================================================================== */
 
 .comments {
-    margin-bottom: 1em;
-    -moz-border-radius: .35714285714286em;
-    border-radius: .35714285714286em;
-    padding: 1em 1em 1px;
-    background: #f7f7f7;
+  margin-bottom: 1em;
+  -moz-border-radius: .35714285714286em;
+  border-radius: .35714285714286em;
+  padding: 1em 1em 1px;
+  background: #f7f7f7;
 }
 
 .comments h4 .is-author {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .comments h4 .comment-anchor {
-    float: right;
-    font-weight: normal;
+  float: right;
+  font-weight: normal;
  }
 
 .comments-author {
-    background: #efefef;
+  background: #efefef;
 }
 
 #cpreview {
-    margin-bottom: 2px;
-    -moz-border-radius: .35714285714286em;
-    border-radius: .35714285714286em;
-    padding: 1em;
-    background: #fff3d6;
+  margin-bottom: 2px;
+  -moz-border-radius: .35714285714286em;
+  border-radius: .35714285714286em;
+  padding: 1em;
+  background: #fff3d6;
 }
 
 .comments_error {
-    background: #fff4f4 !important;
+  background: #fff4f4 !important;
 }
 
 .required,
 .error_message li {
-    color: #c00;
+  color: #c00;
 }
 
 
@@ -1288,13 +1275,13 @@ input[type="submit"].disabled,
 select,
 select[size="0"],
 select[size="1"] {
-    height: 2.33333333333333em;
+  height: 2.33333333333333em;
 }
 
 select:not([size]),
 select:not([multiple]) {
-    position: relative;
-    top: -1px;
+  position: relative;
+  top: -1px;
 }
 
 
@@ -1303,9 +1290,8 @@ select:not([multiple]) {
 
 
 
-/* =============================================================================
-   Additional layout for screen media 490px and up
-   ========================================================================== */
+/* Additional layout for screen media 490px and up
+========================================================================== */
 
 
 
@@ -1314,21 +1300,21 @@ select:not([multiple]) {
 
 
 nav ul {
-    width: 93.75%;
+  width: 93.75%;
 }
 
 nav li {
-    float: left;
-    border-right: solid 1px #e1a61a;
-    border-bottom: 0;
+  float: left;
+  border-right: solid 1px #e1a61a;
+  border-bottom: 0;
 }
 
 nav li:first-child {
-    border-left: solid 1px #e1a61a;
+  border-left: solid 1px #e1a61a;
 }
 
 nav a {
-    padding: .5em 1em;
+  padding: .5em 1em;
 }
 
 
@@ -1337,9 +1323,8 @@ nav a {
 
 
 
-/* =============================================================================
-   Additional layout for screen media 672px and up
-   ========================================================================== */
+/* Additional layout for screen media 672px and up
+========================================================================== */
 
 
 
@@ -1348,42 +1333,42 @@ nav a {
 
 
 [role="main"] {
-    float: left;
-    /* 592px / 960px */
-    width: 61.666666666667%;
+  float: left;
+  /* 592px / 960px */
+  width: 61.666666666667%;
 }
 
 [role="complementary"] {
-    float: right;
-    border: 1px solid #e3e3e3;
-    -moz-border-radius: .35714285714286em;
-    border-radius: .35714285714286em;
-    padding: 1em 1em 0;
-    /* 290px / 960px */
-    width: 30.208333333333%;
-    background: #f7f7f7;
+  float: right;
+  border: 1px solid #e3e3e3;
+  -moz-border-radius: .35714285714286em;
+  border-radius: .35714285714286em;
+  padding: 1em 1em 0;
+  /* 290px / 960px */
+  width: 30.208333333333%;
+  background: #f7f7f7;
 }
 
 h1 {
-    /* 42px */
-    font-size: 3em;
+  /* 42px */
+  font-size: 3em;
 }
 
 h2 {
-    /* 28px */
-    font-size: 2em;
+  /* 28px */
+  font-size: 2em;
 }
 
 h3 {
-    /* 21px */
-    font-size: 1.5em;
+  /* 21px */
+  font-size: 1.5em;
 }
 
 blockquote {
-    float: right;
-    margin: 0 0 .875em .875em;
-    /* 254px / 592px */
-    width: 42.905405405405%;
+  float: right;
+  margin: 0 0 .875em .875em;
+  /* 254px / 592px */
+  width: 42.905405405405%;
 }
 
 
@@ -1392,9 +1377,8 @@ blockquote {
 
 
 
-/* =============================================================================
-   Additional layout for screen media 1260px and up
-   ========================================================================== */
+/* Additional layout for screen media 1260px and up
+========================================================================== */
 
 
 
@@ -1403,16 +1387,16 @@ blockquote {
 
 
 body {
-    /* 16px */
-    font-size: 100%;
+  /* 16px */
+  font-size: 100%;
 }
 
 header,
 nav ul,
 .container,
 footer {
-    /* 1152px / 1280px */
-    width: 90%;
+  /* 1152px / 1280px */
+  width: 90%;
 }
 
 
@@ -1421,9 +1405,8 @@ footer {
 
 
 
-/* =============================================================================
-   Additional layout for screen media 1800px and up
-   ========================================================================== */
+/* Additional layout for screen media 1800px and up
+========================================================================== */
 
 
 
@@ -1431,8 +1414,8 @@ footer {
 @media only screen and (min-width: 112.5em) {
 
 body {
-    /* 18px */
-    font-size: 112.5%;
+  /* 18px */
+  font-size: 112.5%;
 }
 
 }
@@ -1440,9 +1423,8 @@ body {
 
 
 
-/* =============================================================================
-   Styling and layout for print media
-   ========================================================================== */
+/* Styling and layout for print media
+========================================================================== */
 
 
 
@@ -1451,30 +1433,30 @@ body {
 
 
 * {
-    /* black prints faster - http://sanbeiji.com/archives/953 */
-    color: black !important;
-    text-shadow: none !important;
-    background: transparent !important;
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important;
+  /* black prints faster - http://sanbeiji.com/archives/953 */
+  color: black !important;
+  text-shadow: none !important;
+  background: transparent !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 8pt;
-    line-height: 1.5;
-    margin: .5cm;
-    padding: 2em 5em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  line-height: 1.5;
+  margin: .5cm;
+  padding: 2em 5em;
 }
 
 header {
-    border-bottom: solid 1pt black;
+  border-bottom: solid 1pt black;
 }
 
 footer {
-    margin-top: 12pt;
-    border-top: solid 1pt black;
+  margin-top: 12pt;
+  border-top: solid 1pt black;
 }
 
 /* hide unnecessary content from print */
@@ -1486,16 +1468,16 @@ form,
 #paginator,
 #comments-form,
 .comments h4 a:last-child {
-    display: none;
+  display: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* show URLs for certain links in print */
 a[href]:after {
-    content: " (" attr(href) ")";
+  content: " (" attr(href) ")";
 }
 
 h1 a[href]:after,
@@ -1504,42 +1486,42 @@ h3 a[href]:after,
 sup a[href]:after,
 a[itemprop="discussionUrl"]:after,
 a[rel="tag"]:after {
-    content: "";
+  content: "";
 }
 
 /* show long-form for abbreviations in print */
 abbr[title]:after {
-    content: " (" attr(title) ")";
+  content: " (" attr(title) ")";
 }
 
 h1 {
-    font-size: 32pt;
-    line-height: 36pt;
-    font-weight: normal;
-    margin: .5em 0;
+  font-size: 32pt;
+  line-height: 36pt;
+  font-weight: normal;
+  margin: .5em 0;
 }
 
 h2 {
-    font-size: 18pt;
-    line-height: 23pt;
-    page-break-after: avoid;
-    orphans: 3;
-    widows: 3;
-    margin: .66666666666667em 0;
+  font-size: 18pt;
+  line-height: 23pt;
+  page-break-after: avoid;
+  orphans: 3;
+  widows: 3;
+  margin: .66666666666667em 0;
 }
 
 h3 {
-    font-size: 12pt;
-    line-height: 17pt;
-    page-break-after: avoid;
-    orphans: 3;
-    widows: 3;
-    margin: .66666666666667em 0;
+  font-size: 12pt;
+  line-height: 17pt;
+  page-break-after: avoid;
+  orphans: 3;
+  widows: 3;
+  margin: .66666666666667em 0;
 }
 
 p {
-    orphans: 3;
-    widows: 3;
+  orphans: 3;
+  widows: 3;
 }
 
 footer,
@@ -1547,23 +1529,23 @@ figcaption,
 tfoot,
 small,
 .footnote {
-    font-size: 6pt;
+  font-size: 6pt;
 }
 
 blockquote {
-    border: solid 1pt black;
-    padding: 0 8pt;
-    page-break-inside: avoid;
+  border: solid 1pt black;
+  padding: 0 8pt;
+  page-break-inside: avoid;
 }
 
 pre {
-    margin-bottom: 8pt;
-    border: solid 1pt black;
-    padding: 8pt;
+  margin-bottom: 8pt;
+  border: solid 1pt black;
+  padding: 8pt;
 }
 
 .comments {
-    page-break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 pre,
@@ -1571,88 +1553,88 @@ code,
 kbd,
 samp,
 var {
-    font-family: "Courier New", Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 dfn,
 q,
 dt {
-    font-style: italic;
+  font-style: italic;
 }
 
 img {
-    max-width: 100% !important;
-    page-break-inside: avoid;
+  max-width: 100% !important;
+  page-break-inside: avoid;
 }
 
 /* image alignemnts */
 img.align-left {
-    float: left;
-    margin: 1em 1em 1em 0;
+  float: left;
+  margin: 1em 1em 1em 0;
 }
 img.align-right {
-    float: right;
-    margin: 1em 0 1em 1em;
+  float: right;
+  margin: 1em 0 1em 1em;
 }
 img.align-center {
-    display: block;
-    margin: 1em auto;
+  display: block;
+  margin: 1em auto;
 }
 
 audio {
-    display: none;
+  display: none;
 }
 
 figure {
-    margin-bottom: 8pt;
+  margin-bottom: 8pt;
 }
 
 figcaption {
-    margin-top: 4pt;
+  margin-top: 4pt;
 }
 
 ul {
-    list-style: square;
-    margin: 0 0 8pt 1.8em;
+  list-style: square;
+  margin: 0 0 8pt 1.8em;
 }
 
 ol {
-    list-style: decimal;
-    margin: 0 0 8pt 1.8em;
+  list-style: decimal;
+  margin: 0 0 8pt 1.8em;
 }
 
 dl {
-    margin: 0 0 8pt 1.8em;
+  margin: 0 0 8pt 1.8em;
 }
 
 table {
-    margin-bottom: 8pt;
-    width: 100%;
+  margin-bottom: 8pt;
+  width: 100%;
 }
 
 caption {
-    font-weight: bold;
-    text-align: left;
-    margin-bottom: 4pt;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 4pt;
 }
 
 /* display table head across multi-page tables - http://css-discuss.incutio.com/wiki/Printing_Tables */
 thead {
-    display: table-header-group;
+  display: table-header-group;
 }
 
 thead th {
-    border-top: solid 1pt black;
+  border-top: solid 1pt black;
 }
 
 tr {
-    page-break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 th,
 td {
-    border-bottom: solid 1pt black;
-    padding: 4pt 8pt;
+  border-bottom: solid 1pt black;
+  padding: 4pt 8pt;
 }
 
 

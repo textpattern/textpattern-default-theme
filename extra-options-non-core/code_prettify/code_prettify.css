@@ -6,57 +6,57 @@
 .dec,
 .typ,
 .var {
-    color: teal;
+  color: teal;
 }
 
 .atv,
 .str {
-    color: #d14;
+  color: #d14;
 }
 
 .clo,
 .opn,
 .pun {
-    color: #93a1a1;
+  color: #93a1a1;
 }
 
 .com {
-    color: #93a1a1;
+  color: #93a1a1;
 }
 
 .fun {
-    color: #dc322f;
+  color: #dc322f;
 }
 
 .kwd {
-    color: #1e347b;
+  color: #1e347b;
 }
 
 .lit {
-    color: #195f91;
+  color: #195f91;
 }
 
 .pln {
-    color: #48484c;
+  color: #48484c;
 }
 
 .tag {
-    color: #1e347b;
+  color: #1e347b;
 }
 
 /* Google Code Prettify - line number colouring */
 
 .linenums {
-    padding-left: 2em;
+  padding-left: 2em;
 }
 
 .linenums ol {
-    margin: 0;
-    -webkit-box-shadow: inset 2em 0 0 #f7f7f7, inset 2.07692307692308em 0 0 #e3e3e3;
-            box-shadow: inset 2em 0 0 #f7f7f7, inset 2.07692307692308em 0 0 #e3e3e3;
+  margin: 0;
+  -webkit-box-shadow: inset 2em 0 0 #f7f7f7, inset 2.07692307692308em 0 0 #e3e3e3;
+  box-shadow: inset 2em 0 0 #f7f7f7, inset 2.07692307692308em 0 0 #e3e3e3;
 }
 
 .linenums li {
-    padding-left: 1em;
-    color: #b8b8b8;
+  padding-left: 1em;
+  color: #b8b8b8;
 }

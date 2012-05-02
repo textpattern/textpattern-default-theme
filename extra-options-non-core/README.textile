@@ -51,7 +51,7 @@ bc. <body onload="prettyPrint()">
 Via jQuery (if available), for example:
 
 bc. jQuery(function () {
-    window.prettyPrint && prettyPrint();
+  window.prettyPrint && prettyPrint();
 });
 
 Or for advanced users, loaded via "yepnope:http://yepnopejs.com/, there is an example provided within the directory (code-prettify-yepnope.txp).

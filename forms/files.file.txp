@@ -3,23 +3,23 @@
 
 <div itemscope itemtype="http://schema.org/userDownloads">
 
-    <strong itemprop="name"><a href="<txp:file_download_link />" title="<txp:file_download_name title='1' />" itemprop="url"><txp:file_download_name title="1" /></a></strong><br>
+  <strong itemprop="name"><a href="<txp:file_download_link />" title="<txp:file_download_name title='1' />" itemprop="url"><txp:file_download_name title="1" /></a></strong><br>
 
-    <!-- ...now use that description, otherwise omit that line -->
-    <txp:if_variable name="file_download_description" value="">
+  <!-- ...now use that description, otherwise omit that line -->
+  <txp:if_variable name="file_download_description" value="">
 
-    <txp:else />
+  <txp:else />
 
-    <span itemprop="description"><txp:file_download_description /></span><br>
+  <span itemprop="description"><txp:file_download_description /></span><br>
 
-    </txp:if_variable>
+  </txp:if_variable>
 
-    <span class="footnote">
-        <strong><txp:text item="category" /></strong> <txp:file_download_category /> &#124; 
-        <strong><txp:text item="author" /></strong> <txp:file_download_author link="1" /> &#124; 
-        <strong><txp:text item="file_size" /></strong> <txp:file_download_size /> &#124; 
-        <strong><txp:text item="last_modified" /></strong> <span itemprop="dateModified"><txp:file_download_created /></span> &#124; 
-        <strong><txp:text item="download_count" /></strong> <span itemprop="interactionCount"><txp:file_download_downloads /></span>
-    </span>
+  <span class="footnote">
+    <strong><txp:text item="category" /></strong> <txp:file_download_category /> &#124; 
+    <strong><txp:text item="author" /></strong> <txp:file_download_author link="1" /> &#124; 
+    <strong><txp:text item="file_size" /></strong> <txp:file_download_size /> &#124; 
+    <strong><txp:text item="last_modified" /></strong> <span itemprop="dateModified"><txp:file_download_created /></span> &#124; 
+    <strong><txp:text item="download_count" /></strong> <span itemprop="interactionCount"><txp:file_download_downloads /></span>
+  </span>
 
 </div>
