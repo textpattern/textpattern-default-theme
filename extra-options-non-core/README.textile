@@ -102,6 +102,10 @@ h4. /extra-options-non-core/footer_copyright/footer.txp
 
 Add dynamically updated copyright statement to your page footers. Paste the code into your current page templates, replacing the previous footer code. Note this code requires that you have 'Allow PHP in pages?' set to 'yes' in the Textpattern advanced preferences.
 
+h4. /extra-options-non-core/footer_copyright/footer-roman.txp
+
+Same as @footer.txp@ above, but displaying roman numerals for the year instead - BBC style. Otherwise, installation instructions apply as for above.
+
 h2. Extra code option: google_plus
 
 h4. /extra-options-non-core/google_plus/google_plus1.txp
