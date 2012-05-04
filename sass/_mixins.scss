@@ -16,7 +16,7 @@
     /* IE10 */
     image:     -ms-linear-gradient($color-gradient-from, $color-gradient-to);
     /* Opera11.10+ */
-    image       -o-linear-gradient($color-gradient-from, $color-gradient-to);
+    image:      -o-linear-gradient($color-gradient-from, $color-gradient-to);
     /* CSS3 Compliant */
     image:         linear-gradient($color-gradient-from, $color-gradient-to);
   }
