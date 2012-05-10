@@ -1377,13 +1377,13 @@ blockquote {
 
 
 
-/* Additional layout for screen media 1260px and up
+/* Additional layout for screen media 1280px and up
 ========================================================================== */
 
 
 
 
-@media only screen and (min-width: 90em) {
+@media only screen and (min-width: 80em) {
 
 
 body {
