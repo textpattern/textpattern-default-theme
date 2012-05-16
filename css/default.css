@@ -48,12 +48,12 @@ audio:not([controls]) {
 
 html {
   /* corrects text resizing oddly in IE7 when body font-size is set using em units -
-  http://clagnut.com/blog/348/#c790 */
+     http://clagnut.com/blog/348/#c790 */
   font-size: 100%;
   /* always force scrollbar padding so we don't get 'jumping' */
   overflow-y: scroll;
   /* prevents iOS text size adjust after orientation change, without disabling user zoom -
-  http://www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+     http://www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
   -webkit-text-size-adjust: 100%;
   /* as above, for Windows Phone */
   -ms-text-size-adjust: 100%;
@@ -101,7 +101,7 @@ sub {
 }
 
 /* removes border when inside 'a' element in IE7-9, Firefox3, improves image quality when scaled in IE7 -
-code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+   code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
@@ -151,7 +151,7 @@ ul {
 /* Clearfix
 ========================================================================== */
 /* updated to prevent margin-collapsing on child elements in most situations -
-http://nicolasgallagher.com/micro-clearfix-hack/ */
+   http://nicolasgallagher.com/micro-clearfix-hack/ */
 
 .clearfix,
 header,
@@ -842,7 +842,7 @@ textarea:-moz-placeholder {
 }
 
 /* suppress red glow that Firefox adds to form fields by default, even when user is still typing
-and kill phantom spacing and dotted border that appears in Firefox */
+   and kill phantom spacing and dotted border that appears in Firefox */
 input:invalid,
 button:invalid,
 select:invalid,
@@ -1073,9 +1073,8 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   -webkit-background-clip: padding;
+  -khtml-background-clip: padding-box;
   -moz-background-clip: padding;
-  -ms-background-clip: padding-box;
-  -o-background-clip: padding-box;
   background-clip: padding-box;
   font-family: Arial, Helvetica, sans-serif;
   /* 12px */
