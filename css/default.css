@@ -559,6 +559,7 @@ pre {
   -moz-border-radius: .35714285714286em;
   border-radius: .35714285714286em;
   background: #f7f7f7;
+  tab-size: 4;
 }
 
 pre code {

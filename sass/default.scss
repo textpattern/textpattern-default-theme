@@ -453,6 +453,7 @@ pre {
   padding: 1em;
   @include border-radius;
   background: $color-background-box;
+  tab-size: 4;
   code {
     /* 13px */
     font-size: 1em;
