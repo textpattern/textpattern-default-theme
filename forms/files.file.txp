@@ -1,25 +1,36 @@
-<!-- set up a variable to check whether a file also has a description associated with it... -->
+<!-- set up a variables to check whether a file also has a title, description, category associated with it... -->
+<txp:variable name="file_download_title" value='<txp:file_download_name title="1" />' />
 <txp:variable name="file_download_description" value='<txp:file_download_description />' />
+<txp:variable name="file_download_category" value='<txp:file_download_category />' />
 
 <div itemscope itemtype="http://schema.org/userDownloads">
 
-  <strong itemprop="name"><a href="<txp:file_download_link />" title="<txp:file_download_name title='1' />" itemprop="url"><txp:file_download_name title="1" /></a></strong><br>
-
-  <!-- ...now use that description, otherwise omit that line -->
-  <txp:if_variable name="file_download_description" value="">
-
+  <!-- ...if exists, use the file title, otherwise use file name -->
+  <txp:if_variable name="file_download_title" value="">
+    <strong itemprop="name"><a href="<txp:file_download_link />" title="<txp:file_download_name />" itemprop="url"><txp:file_download_name /></a></strong><br>
   <txp:else />
+    <strong itemprop="name"><a href="<txp:file_download_link />" title="<txp:file_download_name title='1' />" itemprop="url"><txp:file_download_name title="1" /></a></strong><br>
+  </txp:if_variable>
 
+  <!-- ...if exists, use the file description, otherwise omit that line -->
+  <txp:if_variable name="file_download_description" value="">
+  <txp:else />
   <span itemprop="description"><txp:file_download_description /></span><br>
-
   </txp:if_variable>
 
   <span class="footnote">
+
+  <!-- ...if exists, use the file category, otherwise omit that line -->
+  <txp:if_variable name="file_download_category" value="">
+  <txp:else />
     <strong><txp:text item="category" /></strong> <txp:file_download_category /> &#124; 
+  </txp:if_variable>
+
     <strong><txp:text item="author" /></strong> <txp:file_download_author link="1" /> &#124; 
     <strong><txp:text item="file_size" /></strong> <txp:file_download_size /> &#124; 
     <strong><txp:text item="last_modified" /></strong> <span itemprop="dateModified"><txp:file_download_created /></span> &#124; 
     <strong><txp:text item="download_count" /></strong> <span itemprop="interactionCount"><txp:file_download_downloads /></span>
+
   </span>
 
 </div>
