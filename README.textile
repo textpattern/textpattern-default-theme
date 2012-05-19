@@ -150,7 +150,7 @@ This page template is utilised when viewing a page error (such as a 404 page not
 
 Copy/paste over the existing page of the same name that was part of the standard Textpattern install
 
-h3. Design patterns Textile demo page
+h3. Design patterns Textile/HTML reference page
 
 h4. /design-patterns-page.textile
 
