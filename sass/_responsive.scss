@@ -1,0 +1,138 @@
+// note: this file is for use with Sass - http://sass-lang.com, don't use it as your live site stylesheet!
+
+// import Sass partials
+@import "variables", "mixins";
+
+
+
+
+/* Additional layout for screen media 490px and up
+========================================================================== */
+
+
+
+
+@media only screen and (min-width: 35em) {
+
+
+nav {
+	ul {
+		width: 93.75%;
+	}
+
+	li {
+		float: left;
+		border-right: solid 1px $color-gradient-border;
+		border-bottom: 0;
+
+		&:first-child {
+			border-left: solid 1px $color-gradient-border;
+		}
+	}
+
+	a {
+		padding: .5em 1em;
+	}
+}
+
+
+}
+
+
+
+
+/* Additional layout for screen media 672px and up
+========================================================================== */
+
+
+
+
+@media only screen and (min-width: 48em) {
+
+
+[role="main"] {
+	float: left;
+	/* 592px / 960px */
+	width: 61.666666666667%;
+}
+
+[role="complementary"] {
+	float: right;
+	border: solid 1px lighten($color-border, 9%);
+	@include border-radius;
+	padding: 1em 1em 0;
+	/* 290px / 960px */
+	width: 30.208333333333%;
+	background: $color-background-box;
+}
+
+h1 {
+	/* 42px */
+	font-size: 3em;
+}
+
+h2 {
+	/* 28px */
+	font-size: 2em;
+}
+
+h3 {
+	/* 21px */
+	font-size: 1.5em;
+}
+
+blockquote {
+	float: right;
+	margin: 0 0 .875em .875em;
+	/* 254px / 592px */
+	width: 42.905405405405%;
+}
+
+
+}
+
+
+
+
+/* Additional layout for screen media 1280px and up
+========================================================================== */
+
+
+
+
+@media only screen and (min-width: 80em) {
+
+
+body {
+	/* 16px */
+	font-size: 100%;
+}
+
+header,
+.container,
+nav ul,
+footer {
+	/* 1152px / 1280px */
+	width: 90%;
+}
+
+
+}
+
+
+
+
+/* Additional layout for screen media 1800px and up
+========================================================================== */
+
+
+
+
+@media only screen and (min-width: 112.5em) {
+
+body {
+	/* 18px */
+	font-size: 112.5%;
+}
+
+}

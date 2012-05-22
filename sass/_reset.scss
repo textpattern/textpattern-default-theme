@@ -1,0 +1,140 @@
+// note: this file is for use with Sass - http://sass-lang.com, don't use it as your live site stylesheet!
+
+// import Sass partials
+@import "variables", "mixins";
+
+
+
+
+/* Abridged version of Normalize.css
+========================================================================== */
+/* original authors: Nicolas Gallagher and Jonathan Neal - http://necolas.github.com/normalize.css/ */
+
+/* corrects block display not defined in IE7-9, Firefox3 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+	display: block;
+}
+
+/* corrects inline-block display not defined in IE7-9, Firefox3 */
+audio,
+canvas,
+video {
+	@include inline-block;
+}
+
+/* prevents modern browsers from displaying 'audio' without controls, remove excess height in iOS5 devices */
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+/* addresses styling for 'hidden' attribute not present in IE7-9, Firefox3, Safari4 */
+[hidden] {
+	display: none;
+}
+
+html {
+	/* corrects text resizing oddly in IE7 when body font-size is set using em units -
+	   http://clagnut.com/blog/348/#c790 */
+	font-size: 100%;
+	/* always force scrollbar padding so we don't get 'jumping' */
+	overflow-y: scroll;
+	/* prevents iOS text size adjust after orientation change, without disabling user zoom -
+	   http://www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+	-webkit-text-size-adjust: 100%;
+	/* as above, for Windows Phone */
+	    -ms-text-size-adjust: 100%;
+}
+
+/* Addresses margins set differently in IE7 */
+p,
+pre {
+	margin: 1em 0;
+}
+
+/* addresses style set to 'bolder' in Firefox3-4, Safari4-5, Chrome */
+b,
+strong { 
+	font-weight: bold; 
+}
+
+/* addresses CSS quotes not supported in IE7, addresses quote property not supported in Safari4 */
+q {
+	quotes: none;
+	&:before, &:after {
+		content: "";
+		content: none;
+	}
+}
+
+/* prevents sub and sup affecting line-height in all browsers */
+sub,
+sup {
+	/* 12px */
+	font-size: .85714285714286em;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -.5em;
+}
+sub {
+	bottom: -.25em;
+}
+
+/* removes border when inside 'a' element in IE7-9, Firefox3, improves image quality when scaled in IE7 -
+   code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+
+/* consistent tables */
+table {
+	margin-bottom: 1em;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+/* make table cells align top by default */
+th,
+td {
+	vertical-align: top;
+}
+
+/* addresses margins set differently in IE7 */
+dl,
+menu,
+ol,
+ul {
+	margin: 1em 0;
+}
+dd {
+	margin: 0 0 0 2em;
+}
+
+/* remove margins from nested lists */
+dl dl,
+ul ul,
+ol ol {
+	margin: 0;
+}
+
+/* addresses paddings set differently in IE7 */
+menu,
+ol,
+ul {
+	padding: 0 0 0 2em;
+}

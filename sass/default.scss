@@ -12,156 +12,7 @@
 
 
 
-/* Abridged version of Normalize.css
-========================================================================== */
-/* original authors: Nicolas Gallagher and Jonathan Neal - http://necolas.github.com/normalize.css/ */
-
-/* corrects block display not defined in IE7-9, Firefox3 */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section,
-summary {
-	display: block;
-}
-
-/* corrects inline-block display not defined in IE7-9, Firefox3 */
-audio,
-canvas,
-video {
-	@include inline-block;
-}
-
-/* prevents modern browsers from displaying 'audio' without controls, remove excess height in iOS5 devices */
-audio:not([controls]) {
-	display: none;
-	height: 0;
-}
-
-/* addresses styling for 'hidden' attribute not present in IE7-9, Firefox3, Safari4 */
-[hidden] {
-	display: none;
-}
-
-html {
-	/* corrects text resizing oddly in IE7 when body font-size is set using em units -
-	   http://clagnut.com/blog/348/#c790 */
-	font-size: 100%;
-	/* always force scrollbar padding so we don't get 'jumping' */
-	overflow-y: scroll;
-	/* prevents iOS text size adjust after orientation change, without disabling user zoom -
-	   http://www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
-	-webkit-text-size-adjust: 100%;
-	/* as above, for Windows Phone */
-	    -ms-text-size-adjust: 100%;
-}
-
-/* Addresses margins set differently in IE7 */
-p,
-pre {
-	margin: 1em 0;
-}
-
-/* addresses style set to 'bolder' in Firefox3-4, Safari4-5, Chrome */
-b,
-strong { 
-	font-weight: bold; 
-}
-
-/* addresses CSS quotes not supported in IE7, addresses quote property not supported in Safari4 */
-q {
-	quotes: none;
-	&:before, &:after {
-		content: "";
-		content: none;
-	}
-}
-
-/* prevents sub and sup affecting line-height in all browsers */
-sub,
-sup {
-	/* 12px */
-	font-size: .85714285714286em;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
-}
-sup {
-	top: -.5em;
-}
-sub {
-	bottom: -.25em;
-}
-
-/* removes border when inside 'a' element in IE7-9, Firefox3, improves image quality when scaled in IE7 -
-   code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
-img {
-	border: 0;
-	-ms-interpolation-mode: bicubic;
-}
-
-/* consistent tables */
-table {
-	margin-bottom: 1em;
-	border-collapse: collapse;
-	border-spacing: 0;
-	width: 100%;
-}
-
-/* make table cells align top by default */
-th,
-td {
-	vertical-align: top;
-}
-
-/* addresses margins set differently in IE7 */
-dl,
-menu,
-ol,
-ul {
-	margin: 1em 0;
-}
-dd {
-	margin: 0 0 0 2em;
-}
-
-/* remove margins from nested lists */
-dl dl,
-ul ul,
-ol ol {
-	margin: 0;
-}
-
-/* addresses paddings set differently in IE7 */
-menu,
-ol,
-ul {
-	padding: 0 0 0 2em;
-}
-
-
-/* Clearfix
-========================================================================== */
-/* updated to prevent margin-collapsing on child elements in most situations -
-   http://nicolasgallagher.com/micro-clearfix-hack/ */
-
-.clearfix {
-	&:before, &:after {
-		content: "";
-		display: table;
-	}
-	&:after {
-		clear: both;
-	}
-	/* zoom IE7 fix */
-	*zoom: 1;
-}
+@import "reset";
 
 
 
@@ -196,7 +47,7 @@ footer {
 	/* 960px / 1024px */
 	width: 93.75%;
 	max-width: 1280px;
-	@extend .clearfix;
+	@include clearfix;
 }
 
 header {
@@ -224,7 +75,7 @@ nav {
 		padding: 0;
 		list-style: none;
 		list-style-image: none;
-		@extend .clearfix;
+		@include clearfix;
 	}
 
 	li {
@@ -565,7 +416,7 @@ dt {
 [role="complementary"] #monthly-list {
 	list-style: none;
 	padding: 0;
-	@extend .clearfix;
+	@include clearfix;
 
 	li {
 		font-family: $font-sans-serif;
@@ -876,7 +727,7 @@ input[type="radio"] {
 .radiobuttons {
 	span {
 		display: block;
-		@extend .clearfix;
+		@include clearfix;
 	}
 
 	input {
@@ -947,7 +798,7 @@ input[type="submit"].disabled,
 
 #paginator {
 	margin-bottom: 2em;
-	@extend .clearfix;
+	@include clearfix;
 
 	.button {
 		padding: .1em 1em;
@@ -1034,138 +885,5 @@ select:not([multiple]) {
 
 
 
-/* Additional layout for screen media 490px and up
-========================================================================== */
-
-
-
-
-@media only screen and (min-width: 35em) {
-
-
-nav {
-	ul {
-		width: 93.75%;
-	}
-
-	li {
-		float: left;
-		border-right: solid 1px $color-gradient-border;
-		border-bottom: 0;
-
-		&:first-child {
-			border-left: solid 1px $color-gradient-border;
-		}
-	}
-
-	a {
-		padding: .5em 1em;
-	}
-}
-
-
-}
-
-
-
-
-/* Additional layout for screen media 672px and up
-========================================================================== */
-
-
-
-
-@media only screen and (min-width: 48em) {
-
-
-[role="main"] {
-	float: left;
-	/* 592px / 960px */
-	width: 61.666666666667%;
-}
-
-[role="complementary"] {
-	float: right;
-	border: solid 1px lighten($color-border, 9%);
-	@include border-radius;
-	padding: 1em 1em 0;
-	/* 290px / 960px */
-	width: 30.208333333333%;
-	background: $color-background-box;
-}
-
-h1 {
-	/* 42px */
-	font-size: 3em;
-}
-
-h2 {
-	/* 28px */
-	font-size: 2em;
-}
-
-h3 {
-	/* 21px */
-	font-size: 1.5em;
-}
-
-blockquote {
-	float: right;
-	margin: 0 0 .875em .875em;
-	/* 254px / 592px */
-	width: 42.905405405405%;
-}
-
-
-}
-
-
-
-
-/* Additional layout for screen media 1280px and up
-========================================================================== */
-
-
-
-
-@media only screen and (min-width: 80em) {
-
-
-body {
-	/* 16px */
-	font-size: 100%;
-}
-
-header,
-.container,
-nav ul,
-footer {
-	/* 1152px / 1280px */
-	width: 90%;
-}
-
-
-}
-
-
-
-
-/* Additional layout for screen media 1800px and up
-========================================================================== */
-
-
-
-
-@media only screen and (min-width: 112.5em) {
-
-body {
-	/* 18px */
-	font-size: 112.5%;
-}
-
-}
-
-
-
-
+@import "responsive";
 @import "print";

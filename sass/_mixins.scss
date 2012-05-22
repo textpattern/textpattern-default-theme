@@ -1,5 +1,20 @@
 // note: this file is for use with Sass - http://sass-lang.com, don't use it as your live site stylesheet!
 
+// clearfix
+// updated to prevent margin-collapsing on child elements in most situations - http://nicolasgallagher.com/micro-clearfix-hack/
+
+@mixin clearfix {
+	&:before, &:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+	/* zoom IE7 fix */
+	*zoom: 1;
+}
+
 // standard gradients
 
 @mixin gradient($color-gradient-from, $color-gradient-to) {
