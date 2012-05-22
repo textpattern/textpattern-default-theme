@@ -585,6 +585,7 @@ input[type="checkbox"]:active {
 }
 
 textarea,
+input[type="color"],
 input[type="date"],
 input[type="datetime"],
 input[type="datetime-local"],
@@ -612,6 +613,11 @@ input[type="week"] {
 	@include border-radius(0);
 }
 
+input[type="color"] {
+	padding: 0;
+	height: 2.33333333333333em;
+}
+
 [role="complementary"] input[type="search"] {
 	margin-right: 2px;
 	width: 66.666666666667%;
@@ -620,6 +626,7 @@ input[type="week"] {
 
 textarea[disabled],
 select[disabled],
+input[type="color"][disabled],
 input[type="date"][disabled],
 input[type="datetime"][disabled],
 input[type="datetime-local"][disabled],
@@ -745,20 +752,14 @@ input[type="radio"] {
 /* Buttons
 ========================================================================== */
 
-/* make buttons play nice in IE - http://www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
-input,
-button,
-.button {
-	width: auto;
-	overflow: visible;
-}
-
 button,
 .button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	@include background-clip;
+	width: auto;
+	overflow: visible;
 	font-family: $font-sans-serif;
 	/* 12px */
 	font-size: .85714285714286em;

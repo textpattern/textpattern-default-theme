@@ -388,7 +388,7 @@ Range
 Colour
 </label>
 <br>
-<input type="color" id="color" name="color">
+<input type="color" id="color" name="color" value="#cc0000">
 </p>
 <p>
 <input type="submit" value="Input - Submit">
