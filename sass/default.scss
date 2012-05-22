@@ -730,24 +730,6 @@ input[type="radio"] {
 	*width: 1em;
 }
 
-.checkboxes,
-.radiobuttons {
-	span {
-		display: block;
-		@include clearfix;
-	}
-
-	input {
-		float: left;
-		margin-right: .5em;
-	}
-
-	label {
-		float: left;
-		display: block;
-	}
-}
-
 
 /* Buttons
 ========================================================================== */
