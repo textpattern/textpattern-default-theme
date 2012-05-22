@@ -48,10 +48,10 @@
   <txp:css format="link" media="" />
   <!-- or you can use (faster) external CSS files eg. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
 
-<!-- HTML5/Media Queries support for IE < 9 (remove this if you intend to use the theme in a project without internet access) -->
+<!-- HTML5/Media Queries support for IE < 9 (you can remove this section and the corresponding 'js' directory files if you don't intend to support IE < 9) -->
   <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="<txp:site_url />js/html5shiv.js"></script>
+    <script src="<txp:site_url />js/css3-mediaqueries.js"></script>
   <![endif]-->
 
 </head>
