@@ -1,0 +1,59 @@
+// note: this file is for use with Sass - http://sass-lang.com, don't use it as your live site stylesheet!
+
+/* Links
+========================================================================== */
+
+a {
+	position: relative;
+	text-decoration: none;
+	color: $color-link;
+	-webkit-tap-highlight-color: rgba($color-link-hover, .5);
+
+	&:hover, &:active { /* improves readability when focused and also mouse hovered in all browsers */
+		outline: 0;
+	}
+
+	&:active {
+		top: 1px;
+	}
+
+	&:focus {
+		outline: thin dotted $color-link-hover;
+	}
+
+	header & {
+		color: $color-text;
+		@include border-radius(.11904761904762em);
+		&:hover, &:active {
+			background: darken($color-background-box, 6%);
+		}
+	}
+}
+
+[role="main"] a,
+[role="complementary"] a,
+footer a {
+	&:hover, &:active {
+		text-decoration: underline;
+		color: $color-link-hover;
+	}
+
+	&:visited {
+		color: $color-link-visited;
+	}
+}
+
+[role="main"] h1 a {
+	color: $color-text;
+	@include border-radius(.11904761904762em);
+
+	&:visited {
+		color: $color-text;
+	}
+
+	&:hover, &:active {
+		text-decoration: none;
+		color: $color-text;
+		background: darken($color-background-box, 3%);
+	}
+}

@@ -1,0 +1,37 @@
+// note: this file is for use with Sass - http://sass-lang.com, don't use it as your live site stylesheet!
+
+/* Tables
+========================================================================== */
+
+caption {
+	font-style: italic;
+	text-align: left;
+	margin-bottom: .5em;
+}
+
+th,
+td {
+	border-bottom: solid 1px $color-border;
+	padding: .28571428571429em .5em .28571428571429em 0;
+
+	&:last-child {
+		padding-right: 0;
+	}
+}
+
+thead {
+	th, td {
+		border-bottom: solid 2px $color-border;
+	}
+}
+
+tfoot {
+	th, td {
+		border-bottom: 0;
+		padding: .33333333333333em .58333333333333em .33333333333333em 0;
+	}
+
+	&:last-child {
+		padding-right: 0;
+	}
+}

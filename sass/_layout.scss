@@ -1,0 +1,96 @@
+// note: this file is for use with Sass - http://sass-lang.com, don't use it as your live site stylesheet!
+
+/* Layout
+========================================================================== */
+
+body {
+	margin: 0;
+	background: $color-background-box;
+}
+
+.wrapper {
+	border-bottom: solid 1px $color-border;
+	padding-top: 2em;
+	background: $color-background;
+}
+
+header,
+.container,
+footer {
+	margin: 0 auto;
+	/* 960px / 1024px */
+	width: 93.75%;
+	max-width: 1280px;
+	@include clearfix;
+}
+
+header {
+	padding-top: 1em;
+	h1 {
+		margin: 0;
+	}
+	h3 {
+		/* 14px margin top/bottom */
+		margin: .66666666666667em 0;
+	}
+}
+
+nav {
+	border-top: solid 1px $color-gradient-border;
+	border-bottom: solid 1px $color-gradient-border;
+	@include gradient;
+
+	h1 {
+		display: none;
+	}
+
+	ul {
+		margin: 0 auto;
+		padding: 0;
+		list-style: none;
+		list-style-image: none;
+		@include clearfix;
+	}
+
+	li {
+		margin: 0;
+		border-bottom: solid 1px $color-gradient-border;
+
+		&:last-child {
+			border-bottom: 0;
+		}
+
+		&:hover, .active {
+			@include gradient(lighten($color-gradient-from, 10%), lighten($color-gradient-to, 10%));
+		}
+
+		&:active {
+			@include gradient($color-gradient-to, $color-gradient-from);
+		}
+	}
+
+	a {
+		@include text-shadow-light;
+		display: block;
+		padding: .5em 3.125%;
+		color: $color-text;
+	}
+}
+
+[role="article"] {
+	margin-bottom: 2em;
+}
+
+[role="complementary"] {
+	margin-bottom: 2em;
+	padding-top: 2em;
+	border-top: dashed 2px $color-border;
+}
+
+[role="search"] p {
+	margin-top: 0;
+}
+
+footer {
+	padding: .5em 0;
+}

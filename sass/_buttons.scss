@@ -1,0 +1,71 @@
+// note: this file is for use with Sass - http://sass-lang.com, don't use it as your live site stylesheet!
+
+/* Buttons
+========================================================================== */
+
+button,
+.button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	@include background-clip;
+	width: auto;
+	overflow: visible;
+	font-family: $font-sans-serif;
+	/* 12px */
+	font-size: .85714285714286em;
+	font-weight: normal;
+	text-align: center;
+	@include text-shadow-light;
+	cursor: pointer;
+	border: solid 1px $color-gradient-border;
+	@include border-radius;
+	padding: .5em 1em .5em;
+	@include inline-block;
+	color: $color-text;
+	@include gradient;
+	@include box-shadow;
+
+	&:hover {
+		@include gradient(lighten($color-gradient-from, 10%), lighten($color-gradient-to, 10%));
+	}
+
+	&:active {
+		position: relative;
+		top: 1px;
+		color: darken($color-text, 10%);
+		@include gradient($color-gradient-to, $color-gradient-from);
+	}
+}
+
+input[type="submit"].disabled,
+#paginator span.disabled {
+	text-shadow: none;
+	top: 0;
+	cursor: default;
+	border: solid 1px #d2d2d2;
+	color: $color-text-footnote;
+	@include gradient(#e6e6e6, #dadada);
+}
+
+#paginator {
+	margin-bottom: 2em;
+	@include clearfix;
+
+	.button {
+		padding: .1em 1em;
+	}
+
+	a.button {
+		text-decoration: none;
+		color: $color-text;
+	}
+}
+
+#paginator-l {
+	float: left;
+}
+
+#paginator-r {
+	float: right;
+}

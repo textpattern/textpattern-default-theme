@@ -1,0 +1,152 @@
+// note: this file is for use with Sass - http://sass-lang.com, don't use it as your live site stylesheet!
+
+/* Typography
+========================================================================== */
+
+body {
+	font-family: $font-serif;
+	/* 14px / 16px */
+	font-size: $basefont;
+	line-height: $baseline;
+	color: $color-text;
+}
+
+nav {
+	font-family: $font-sans-serif;
+	font-weight: bold;
+}
+
+h1 {
+	font-family: $font-sans-serif;
+	/* 28px */
+	font-size: 2em;
+	/* 34px / 28px */
+	line-height: 1.21428571428571;
+	letter-spacing: -1px;
+	/* 28px margin top/bottom */
+	margin: .66666666666667em 0;
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+h2 {
+	font-family: $font-sans-serif;
+	/* 21px */
+	font-size: 1.5em;
+	/* 28px / 21px */
+	line-height: 1.33333333333333;
+	/* 21px margin top/bottom */
+	margin: .75em 0;
+}
+
+h3 {
+	/* 18px */
+	font-size: 1.28571428571429em;
+	/* 26px / 18px */
+	line-height: 1.44444444444444;
+	font-weight: normal;
+	font-style: italic;
+	/* 16px margin top/bottom */
+	margin: .76190476190476em 0;
+}
+
+h4 {
+	font-family: $font-sans-serif;
+	/* 16px */
+	font-size: 1.14285714285714em;
+	margin: 0;
+}
+
+blockquote {
+	/* 16px */
+	font-size: 1.14285714285714em;
+	font-style: italic;
+	margin: .875em 0 .875em 0;
+	padding: 1px .875em;
+	@include border-radius;
+	background: $color-highlight-box;
+}
+
+dfn,
+q {
+	font-style: italic;
+	background: $color-highlight-box;
+}
+
+address {
+	margin: 1em 0;
+}
+
+/* addresses styling not present in IE7-9, Safari5, Chrome */
+abbr[title],
+dfn[title] {
+	border-bottom: dotted 1px;
+	cursor: help;
+}
+
+mark,
+var {
+	padding: 0 .21428571428571em; // 0 3px
+	@include border-radius(.21428571428571em); // 3px / 13px
+	color: $color-text;
+	background: $color-highlight-box;
+}
+
+var {
+	font-weight: bold;
+}
+
+pre,
+code,
+kbd,
+samp {
+	font-family: $font-mono;
+}
+
+code,
+kbd,
+samp {
+	/* 13px */
+	font-size: .92857142857143em;
+	border: 1px solid lighten($color-border, 9%); 
+	padding: 0 .23076923076923em;
+	@include border-radius(.23076923076923em); // 3px / 13px
+	background: $color-background-box;
+}
+
+pre {
+	/* 13px */
+	font-size: .92857142857143em;
+	overflow-x: auto;
+	border: 1px solid lighten($color-border, 9%);
+	padding: 1em;
+	@include border-radius;
+	background: $color-background-box;
+	tab-size: 4;
+	code {
+	/* 13px */
+	font-size: 1em;
+	border: 0;
+	background: none;
+	}
+}
+
+small,
+figcaption,
+tfoot,
+.footnote {
+	/* 12px */
+	font-size: .85714285714286em;
+}
+
+figcaption,
+tfoot,
+.footnote {
+	color: $color-text-footnote;
+}
+
+figcaption {
+	margin-top: .33333333333333em;
+	font-style: italic;
+}

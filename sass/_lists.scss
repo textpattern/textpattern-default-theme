@@ -1,0 +1,93 @@
+// note: this file is for use with Sass - http://sass-lang.com, don't use it as your live site stylesheet!
+
+/* Lists
+========================================================================== */
+
+dt {
+	font-style: italic;
+}
+
+[role="complementary"] #monthly-list {
+	list-style: none;
+	padding: 0;
+	@include clearfix;
+
+	li {
+		font-family: $font-sans-serif;
+		text-align: center;
+		float: left;
+		display: block;
+		margin: 0 .5em .5em 0;
+		min-width: 2.5em;
+		border: solid 1px $color-border;
+		@include border-radius;
+		@include box-shadow;
+		background: #fff;
+
+		&:active {
+			position: relative;
+			top: 1px;
+		}
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+		color: $color-text;
+
+		&:hover, &:focus {
+			color: darken($color-text, 10%);
+		}
+
+		&:focus {
+			outline: 0;
+		}
+
+		&:active {
+			top: 0;
+		}
+
+		.archive-year {
+			/* 12px */
+			font-size: .85714285714286em;
+			font-weight: bold;
+			@include text-shadow-light;
+			@include border-radius($border-radius $border-radius 0 0);
+			padding: 0 .33333333333333em;
+			@include gradient;
+		}
+
+		&:hover .archive-year, &:focus .archive-year{
+			@include gradient(lighten($color-gradient-from, 10%), lighten($color-gradient-to, 10%));
+		}
+
+		.archive-month {
+			@include border-radius(0 0 $border-radius $border-radius);
+			padding: 0 .28571428571429em;
+		}
+
+		&:hover .archive-month, &:focus .archive-month{
+			background: $color-highlight-box;
+		}
+	}
+
+	span {
+		display: block;
+		/* IE7 padding fix */
+		*position: relative;
+		*top: -2px;
+	}
+}
+
+[role="main"] #article-list {
+	list-style: none;
+	margin: 0 0 2em 0;
+	padding: 0;
+	border-top: solid 1px $color-border;
+}
+
+#article-list li {
+	border-bottom: solid 1px $color-border;
+	padding-top: 1em;
+	margin-bottom: 0;
+}
