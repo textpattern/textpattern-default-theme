@@ -20,7 +20,7 @@ footer {
 	margin: 0 auto;
 	/* 960px / 1024px */
 	width: 93.75%;
-	max-width: 1280px;
+	max-width: 86em;
 	@include clearfix;
 }
 
@@ -47,6 +47,7 @@ nav {
 	ul {
 		margin: 0 auto;
 		padding: 0;
+		max-width: 86em;
 		list-style: none;
 		list-style-image: none;
 		@include clearfix;
