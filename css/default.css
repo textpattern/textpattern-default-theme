@@ -606,8 +606,13 @@ img.align-center {
 article img,
 article embed,
 article object,
-article video {
+article video,
+article iframe {
   max-width: 100%;
+}
+
+article img {
+  height: auto;
 }
 
 figure {
