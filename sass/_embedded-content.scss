@@ -26,8 +26,11 @@ svg:not(:root) {
 }
 
 article {
-	img, embed, object, video {
+	img, embed, object, video, iframe {
 		max-width: 100%;
+	}
+	img {
+		height: auto;
 	}
 }
 
