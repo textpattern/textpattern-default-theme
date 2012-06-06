@@ -27,8 +27,6 @@ summary {
 audio,
 canvas,
 video {
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
   display: inline-block;
   /* display and zoom IE7 fix for display:inline-block */
   *display: inline;
@@ -924,8 +922,6 @@ input[type="color"] {
 [role="complementary"] input[type="search"] {
   margin-right: 2px;
   width: 66.666666666667%;
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
   display: inline-block;
   /* display and zoom IE7 fix for display:inline-block */
   *display: inline;
@@ -1068,8 +1064,6 @@ input[type="submit"] {
   -moz-border-radius: .35714285714286em;
   border-radius: .35714285714286em;
   padding: .5em 1em .5em;
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
   display: inline-block;
   /* display and zoom IE7 fix for display:inline-block */
   *display: inline;
