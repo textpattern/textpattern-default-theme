@@ -25,13 +25,10 @@ svg:not(:root) {
 	overflow: hidden;
 }
 
-article {
-	img, embed, object, video, iframe {
-		max-width: 100%;
-	}
-	img {
-		height: auto;
-	}
+article img,
+article video {
+	max-width: 100%;
+	height: auto;
 }
 
 figure {

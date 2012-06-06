@@ -112,3 +112,16 @@ body {
 }
 
 }
+
+
+/* Fix for reponsive embedded content in IE8
+========================================================================== */
+
+@media \0screen {
+
+article img,
+article video {
+	width: auto; /* for ie 8 */
+}
+
+}
