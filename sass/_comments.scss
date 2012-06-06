@@ -8,6 +8,7 @@
 	@include border-radius;
 	padding: 1em 1em 1px;
 	background: $color-background-box;
+	word-wrap: break-word;
 
 	h4 {
 		.is-author {
