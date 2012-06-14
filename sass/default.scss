@@ -1,17 +1,23 @@
-// note: this file is for use with Sass - http://sass-lang.com, don't use it as your live site stylesheet!
+//
+// note: this file is for use with Sass- http://sass-lang.com,
+// don't use it as your live site stylesheet!
+//
+
 
 // import Sass partials
 @import "variables", "mixins";
 
 
-/* Styling and layout for all media
-========================================================================== */
+/* ==========================================================================
+   Styling and layout for all media
+   ========================================================================== */
 
 @import "reset";
 
 
-/* Styling and layout for screen media (mobile first)
-========================================================================== */
+/* ==========================================================================
+   Styling and layout for screen media (mobile first)
+   ========================================================================== */
 
 @media screen {
 

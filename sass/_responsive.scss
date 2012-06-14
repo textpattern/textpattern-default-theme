@@ -1,10 +1,14 @@
-// note: this file is for use with Sass - http://sass-lang.com, don't use it as your live site stylesheet!
+//
+// note: this file is for use with Sass- http://sass-lang.com,
+// don't use it as your live site stylesheet!
+//
 
-/* Additional layout for screen media 490px and up
-========================================================================== */
+
+/* ==========================================================================
+   Additional layout for screen media 490px and up
+   ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-
 
 nav {
 	ul {
@@ -26,15 +30,14 @@ nav {
 	}
 }
 
-
 }
 
 
-/* Additional layout for screen media 672px and up
-========================================================================== */
+/* ==========================================================================
+   Additional layout for screen media 672px and up
+   ========================================================================== */
 
 @media only screen and (min-width: 48em) {
-
 
 [role="main"] {
 	float: left;
@@ -74,15 +77,14 @@ blockquote {
 	width: 42.905405405405%;
 }
 
-
 }
 
 
-/* Additional layout for screen media 1280px and up
-========================================================================== */
+/* ==========================================================================
+   Additional layout for screen media 1280px and up
+   ========================================================================== */
 
 @media only screen and (min-width: 80em) {
-
 
 body {
 	/* 16px */
@@ -97,12 +99,12 @@ footer {
 	width: 90%;
 }
 
-
 }
 
 
-/* Additional layout for screen media 1800px and up
-========================================================================== */
+/* ==========================================================================
+   Additional layout for screen media 1800px and up
+   ========================================================================== */
 
 @media only screen and (min-width: 112.5em) {
 
@@ -114,14 +116,15 @@ body {
 }
 
 
-/* Fix for reponsive embedded content in IE8
-========================================================================== */
+/* ==========================================================================
+   Fix for reponsive embedded content in IE8
+   ========================================================================== */
 
 @media \0screen {
 
 article img,
 article video {
-	width: auto; /* for ie 8 */
+	width: auto;
 }
 
 }

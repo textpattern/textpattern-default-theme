@@ -1,10 +1,14 @@
-// note: this file is for use with Sass - http://sass-lang.com, don't use it as your live site stylesheet!
+//
+// note: this file is for use with Sass- http://sass-lang.com,
+// don't use it as your live site stylesheet!
+//
 
-/* Styling and layout for print media
-========================================================================== */
+
+/* ==========================================================================
+   Styling and layout for print media
+   ========================================================================== */
 
 @media print {
-
 
 * {
 	/* black prints faster - http://sanbeiji.com/archives/953 */
@@ -210,6 +214,5 @@ td {
 	border-bottom: solid 1pt black;
 	padding: 4pt 8pt;
 }
-
 
 }
