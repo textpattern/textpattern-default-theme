@@ -845,12 +845,6 @@ textarea::-moz-focus-inner {
   padding: 0;
 }
 
-/* remove inner padding and search cancel button in Safari, Chrome on OS X */
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-}
-
 button:focus,
 input:focus,
 select:focus,
@@ -860,6 +854,12 @@ textarea:focus {
   box-shadow: 0 0 7px #06f;
   /* Opera */
   z-index: 1;
+}
+
+/* remove inner padding and search cancel button in Safari, Chrome on OS X */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
 }
 
 input[type="file"]:focus,

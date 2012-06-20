@@ -63,21 +63,17 @@ textarea {
 		border: 0;
 		padding: 0;
 	}
+	&:focus {
+		@include box-shadow(0 0 7px $color-link-hover);
+		/* Opera */
+		z-index: 1;
+	}
 }
 
 /* remove inner padding and search cancel button in webkit on OS X */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
 	-webkit-appearance: none;
-}
-
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
-	@include box-shadow(0 0 7px $color-link-hover);
-	/* Opera */
-	z-index: 1;
 }
 
 input[type="file"]:focus,
