@@ -1,0 +1,20 @@
+//
+// note: this file is for use with Sass - http://sass-lang.com,
+// don't use it as your live site stylesheet!
+//
+
+
+/* Clearfix
+   ========================================================================== */
+/* updated to prevent margin-collapsing on child elements in most situations -
+   http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.clearfix,
+header,
+nav ul,
+.container,
+footer,
+#paginator,
+#monthly-list {
+	@include clearfix;
+}

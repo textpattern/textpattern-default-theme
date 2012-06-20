@@ -25,7 +25,6 @@ footer {
 	/* 960px / 1024px */
 	width: 93.75%;
 	max-width: 86em;
-	@include clearfix;
 }
 
 header {
@@ -56,7 +55,6 @@ nav {
 		max-width: 86em;
 		list-style: none;
 		list-style-image: none;
-		@include clearfix;
 	}
 
 	li {

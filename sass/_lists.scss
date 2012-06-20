@@ -14,7 +14,6 @@ dt {
 [role="complementary"] #monthly-list {
 	list-style: none;
 	padding: 0;
-	@include clearfix;
 
 	li {
 		font-family: $font-sans-serif;
