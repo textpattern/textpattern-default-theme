@@ -1,5 +1,5 @@
 //
-// note: this file is for use with Sass- http://sass-lang.com,
+// note: this file is for use with Sass - http://sass-lang.com,
 // don't use it as your live site stylesheet!
 //
 
@@ -13,7 +13,8 @@ a {
 	color: $color-link;
 	-webkit-tap-highlight-color: rgba($color-link-hover, .5);
 
-	&:hover, &:active { /* improves readability when focused and also mouse hovered in all browsers */
+	&:hover,
+	&:active { /* improves readability when focused and also mouse hovered in all browsers */
 		outline: 0;
 	}
 
@@ -28,7 +29,8 @@ a {
 	header & {
 		color: $color-text;
 		@include border-radius(.11904761904762em);
-		&:hover, &:active {
+		&:hover,
+		&:active {
 			background: darken($color-background-box, 6%);
 		}
 	}
@@ -37,7 +39,8 @@ a {
 [role="main"] a,
 [role="complementary"] a,
 footer a {
-	&:hover, &:active {
+	&:hover,
+	&:active {
 		text-decoration: underline;
 		color: $color-link-hover;
 	}
@@ -55,7 +58,8 @@ footer a {
 		color: $color-text;
 	}
 
-	&:hover, &:active {
+	&:hover,
+	&:active {
 		text-decoration: none;
 		color: $color-text;
 		background: darken($color-background-box, 3%);

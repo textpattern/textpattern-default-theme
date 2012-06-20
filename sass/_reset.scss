@@ -1,5 +1,5 @@
 //
-// note: this file is for use with Sass- http://sass-lang.com,
+// note: this file is for use with Sass - http://sass-lang.com,
 // don't use it as your live site stylesheet!
 //
 
@@ -135,4 +135,14 @@ menu,
 ol,
 ul {
 	padding: 0 0 0 2em;
+}
+
+
+/* Clearfix
+   ========================================================================== */
+/* updated to prevent margin-collapsing on child elements in most situations -
+   http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.clearfix {
+	@include clearfix;
 }

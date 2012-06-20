@@ -1,5 +1,5 @@
 //
-// note: this file is for use with Sass- http://sass-lang.com,
+// note: this file is for use with Sass - http://sass-lang.com,
 // don't use it as your live site stylesheet!
 //
 
@@ -59,10 +59,12 @@ textarea {
 	&:invalid {
 		@include box-shadow(none);
 	}
+
 	&::-moz-focus-inner {
 		border: 0;
 		padding: 0;
 	}
+
 	&:focus {
 		@include box-shadow(0 0 7px $color-link-hover);
 		/* Opera */
@@ -76,13 +78,13 @@ input[type="search"]::-webkit-search-cancel-button {
 	-webkit-appearance: none;
 }
 
-input[type="file"]:focus,
-input[type="file"]:active,
-input[type="radio"]:focus,
-input[type="radio"]:active,
-input[type="checkbox"]:focus,
-input[type="checkbox"]:active {
-	@include box-shadow(none);
+input[type="file"],
+input[type="radio"],
+input[type="checkbox"] {
+	&:focus,
+	&:active {
+		@include box-shadow(none);
+	}
 }
 
 textarea,
@@ -194,6 +196,7 @@ optgroup {
 	font-style: normal;
 	font-weight: normal;
 	color: $color-text;
+
 	&::-moz-focus-inner { // kill phantom spacing and dotted border that appears in Firefox
 		border: 0;
 		padding: 0;
@@ -239,6 +242,7 @@ select[size="0"],
 select[size="1"] {
 	height: 2.33333333333333em;
 }
+
 select:not([size]),
 select:not([multiple]) {
 	position: relative;

@@ -1,5 +1,5 @@
 //
-// note: this file is for use with Sass- http://sass-lang.com,
+// note: this file is for use with Sass - http://sass-lang.com,
 // don't use it as your live site stylesheet!
 //
 
@@ -30,9 +30,11 @@ footer {
 
 header {
 	padding-top: 1em;
+
 	h1 {
 		margin: 0;
 	}
+
 	h3 {
 		/* 14px margin top/bottom */
 		margin: .66666666666667em 0;
@@ -65,7 +67,8 @@ nav {
 			border-bottom: 0;
 		}
 
-		&:hover, .active {
+		&:hover,
+		.active {
 			@include gradient(lighten($color-gradient-from, 10%), lighten($color-gradient-to, 10%));
 		}
 

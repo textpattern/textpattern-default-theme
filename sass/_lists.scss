@@ -1,5 +1,5 @@
 //
-// note: this file is for use with Sass- http://sass-lang.com,
+// note: this file is for use with Sass - http://sass-lang.com,
 // don't use it as your live site stylesheet!
 //
 
@@ -39,7 +39,8 @@ dt {
 		text-decoration: none;
 		color: $color-text;
 
-		&:hover, &:focus {
+		&:hover,
+		&:focus {
 			color: darken($color-text, 10%);
 		}
 
@@ -61,7 +62,8 @@ dt {
 			@include gradient;
 		}
 
-		&:hover .archive-year, &:focus .archive-year{
+		&:hover .archive-year,
+		&:focus .archive-year {
 			@include gradient(lighten($color-gradient-from, 10%), lighten($color-gradient-to, 10%));
 		}
 
@@ -70,7 +72,8 @@ dt {
 			padding: 0 .28571428571429em;
 		}
 
-		&:hover .archive-month, &:focus .archive-month {
+		&:hover .archive-month,
+		&:focus .archive-month {
 			background: $color-highlight-box;
 		}
 	}
