@@ -1230,6 +1230,18 @@ input[type="submit"].disabled,
   color: #c00;
 }
 
+
+/* Popup comments (can be removed if you don't use popups)
+   ========================================================================== */
+
+#popup-page .wrapper {
+  padding-top: 0;
+}
+
+#popup-page .container {
+  max-width: 52em;
+}
+
 }
 
 

@@ -45,3 +45,17 @@
 .error_message li {
 	color: #c00;
 }
+
+
+/* Popup comments (can be removed if you don't use popups)
+   ========================================================================== */
+
+#popup-page {
+	.wrapper {
+		padding-top: 0;
+	}
+
+	.container {
+		max-width: 52em;
+	}
+}

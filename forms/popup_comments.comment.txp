@@ -26,9 +26,16 @@
 
 </head>
 
-<body>
+<body id="popup-page">
 
-<txp:popup_comments />
+  <div class="wrapper">
+    <div class="container">
+
+      <!-- this form is only used if you set 'Comments mode' to 'popup' format in preferences -->
+      <txp:popup_comments />
+
+    </div> <!-- /.container -->
+  </div> <!-- /.wrapper -->
 
 </body>
 </html>
