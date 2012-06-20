@@ -16,6 +16,13 @@ $font-print:			"Helvetica Neue", Helvetica, Arial, sans-serif;
 $basefont:				.875em; // 14px / 16px
 $baseline:				1.5; // 21px / 14px
 
+// breakpoints (requires Sass v3.2 or greater) !NOT USED YET!
+
+$break-small:			35em; // 490px / 14px
+$break-medium:			48em; // 672px / 14px
+$break-large:			80em; // 1280px / 16px
+$break-massive:			112.5em; // 1800px / 16px
+
 // text colours
 
 $color-text:			#333;
