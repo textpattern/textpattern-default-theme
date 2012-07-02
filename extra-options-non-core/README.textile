@@ -133,6 +133,20 @@ h4. /extra-options-non-core/page_title/page_title.misc.txp
 
 Use this form in your site to provide more context focused page titles, it sets up a variable to check what section you are in and provide specific title content. Based on an example by Els Lepelaars. Create a new form in the system with name of 'page_title' and type of 'misc', then copy/paste the code from this file into it. This form can then be called from your page/form templates by inserting @<txp:output_form form="page_title" />@ into the @<head>@ section.
 
+h2. Extra code option: recent_articles
+
+h4. /extra-options-non-core/recent_articles/recent_articles.css
+
+CSS code specific to the recent articles section. If you using Sass then refer to the file below instead. Paste this in just before the end of the @media screen section of the stylesheet (i.e. the section before the size specific media queries begin).
+
+h4. /extra-options-non-core/recent_articles/recent_articles.scss
+
+Sass version of the above CSS file - if you are using Sass to author your CSS then paste this code into the @default.scss@ instead of into the standard CSS file. Paste this in just before the end of the @media screen section of the stylesheet (i.e. the section before the size specific media queries begin).
+
+h4. /extra-options-non-core/recent_articles/recent_articles.txp
+
+Either paste this file into page templates before the end of the @role="complementary"@ sidebar. Or put a @<txp:output_form form="recent_articles" />@ tag in your page templates @role="complementary"@ sidebar instead, create a new form in the system with name of 'recent_articles' and type of 'misc', then copy/paste the code from this form into it.
+
 h2. Extra code option: slider UNFINISHED
 
 h4. CURRENTLY AWAITING VERSION2 OF "SWIPE":http://swipejs.com/
