@@ -31,8 +31,6 @@
 		image: -webkit-linear-gradient($color-gradient-from, $color-gradient-to);
 		/* Firefox3.6 */
 		image:    -moz-linear-gradient($color-gradient-from, $color-gradient-to);
-		/* IE10 */
-		image:     -ms-linear-gradient($color-gradient-from, $color-gradient-to);
 		/* Opera11.10+ */
 		image:      -o-linear-gradient($color-gradient-from, $color-gradient-to);
 		/* CSS3 Compliant */

@@ -247,8 +247,6 @@ nav {
   background-image: -webkit-linear-gradient(#ffda44, #fabc2b);
   /* Firefox3.6 */
   background-image: -moz-linear-gradient(#ffda44, #fabc2b);
-  /* IE10 */
-  background-image: -ms-linear-gradient(#ffda44, #fabc2b);
   /* Opera11.10+ */
   background-image: -o-linear-gradient(#ffda44, #fabc2b);
   /* CSS3 Compliant */
@@ -291,8 +289,6 @@ nav li.active {
   background-image: -webkit-linear-gradient(#ffe477, #fbcc5d);
   /* Firefox3.6 */
   background-image: -moz-linear-gradient(#ffe477, #fbcc5d);
-  /* IE10 */
-  background-image: -ms-linear-gradient(#ffe477, #fbcc5d);
   /* Opera11.10+ */
   background-image: -o-linear-gradient(#ffe477, #fbcc5d);
   /* CSS3 Compliant */
@@ -313,8 +309,6 @@ nav li:active {
   background-image: -webkit-linear-gradient(#fabc2b, #ffda44);
   /* Firefox3.6 */
   background-image: -moz-linear-gradient(#fabc2b, #ffda44);
-  /* IE10 */
-  background-image: -ms-linear-gradient(#fabc2b, #ffda44);
   /* Opera11.10+ */
   background-image: -o-linear-gradient(#fabc2b, #ffda44);
   /* CSS3 Compliant */
@@ -714,8 +708,6 @@ dt {
   background-image: -webkit-linear-gradient(#ffda44, #fabc2b);
   /* Firefox3.6 */
   background-image: -moz-linear-gradient(#ffda44, #fabc2b);
-  /* IE10 */
-  background-image: -ms-linear-gradient(#ffda44, #fabc2b);
   /* Opera11.10+ */
   background-image: -o-linear-gradient(#ffda44, #fabc2b);
   /* CSS3 Compliant */
@@ -737,8 +729,6 @@ dt {
   background-image: -webkit-linear-gradient(#ffe477, #fbcc5d);
   /* Firefox3.6 */
   background-image: -moz-linear-gradient(#ffe477, #fbcc5d);
-  /* IE10 */
-  background-image: -ms-linear-gradient(#ffe477, #fbcc5d);
   /* Opera11.10+ */
   background-image: -o-linear-gradient(#ffe477, #fbcc5d);
   /* CSS3 Compliant */
@@ -1068,8 +1058,6 @@ input[type="submit"] {
   background-image: -webkit-linear-gradient(#ffda44, #fabc2b);
   /* Firefox3.6 */
   background-image: -moz-linear-gradient(#ffda44, #fabc2b);
-  /* IE10 */
-  background-image: -ms-linear-gradient(#ffda44, #fabc2b);
   /* Opera11.10+ */
   background-image: -o-linear-gradient(#ffda44, #fabc2b);
   /* CSS3 Compliant */
@@ -1097,8 +1085,6 @@ input[type="submit"]:hover {
   background-image: -webkit-linear-gradient(#ffe477, #fbcc5d);
   /* Firefox3.6 */
   background-image: -moz-linear-gradient(#ffe477, #fbcc5d);
-  /* IE10 */
-  background-image: -ms-linear-gradient(#ffe477, #fbcc5d);
   /* Opera11.10+ */
   background-image: -o-linear-gradient(#ffe477, #fbcc5d);
   /* CSS3 Compliant */
@@ -1126,8 +1112,6 @@ input[type="submit"]:active {
   background-image: -webkit-linear-gradient(#fabc2b, #ffda44);
   /* Firefox3.6 */
   background-image: -moz-linear-gradient(#fabc2b, #ffda44);
-  /* IE10 */
-  background-image: -ms-linear-gradient(#fabc2b, #ffda44);
   /* Opera11.10+ */
   background-image: -o-linear-gradient(#fabc2b, #ffda44);
   /* CSS3 Compliant */
@@ -1154,8 +1138,6 @@ input[type="submit"].disabled,
   background-image: -webkit-linear-gradient(#e6e6e6, #dadada);
   /* Firefox3.6 */
   background-image: -moz-linear-gradient(#e6e6e6, #dadada);
-  /* IE10 */
-  background-image: -ms-linear-gradient(#e6e6e6, #dadada);
   /* Opera11.10+ */
   background-image: -o-linear-gradient(#e6e6e6, #dadada);
   /* CSS3 Compliant */
