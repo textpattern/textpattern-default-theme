@@ -251,10 +251,6 @@ nav {
   background-image: -o-linear-gradient(#ffda44, #fabc2b);
   /* CSS3 Compliant */
   background-image: linear-gradient(#ffda44, #fabc2b);
-  /* IE7-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
-  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-  border-radius: 0 \0;
 }
 
 nav h1 {
@@ -293,10 +289,6 @@ nav li.active {
   background-image: -o-linear-gradient(#ffe477, #fbcc5d);
   /* CSS3 Compliant */
   background-image: linear-gradient(#ffe477, #fbcc5d);
-  /* IE7-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
-  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-  border-radius: 0 \0;
 }
 
 nav li:active {
@@ -313,10 +305,6 @@ nav li:active {
   background-image: -o-linear-gradient(#fabc2b, #ffda44);
   /* CSS3 Compliant */
   background-image: linear-gradient(#fabc2b, #ffda44);
-  /* IE7-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fabc2b',EndColorStr='#ffda44');
-  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-  border-radius: 0 \0;
 }
 
 nav a {
@@ -712,10 +700,6 @@ dt {
   background-image: -o-linear-gradient(#ffda44, #fabc2b);
   /* CSS3 Compliant */
   background-image: linear-gradient(#ffda44, #fabc2b);
-  /* IE7-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
-  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-  border-radius: 0 \0;
 }
 
 #monthly-list a:hover .archive-year,
@@ -733,10 +717,6 @@ dt {
   background-image: -o-linear-gradient(#ffe477, #fbcc5d);
   /* CSS3 Compliant */
   background-image: linear-gradient(#ffe477, #fbcc5d);
-  /* IE7-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
-  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-  border-radius: 0 \0;
 }
 
 #monthly-list a .archive-month {
@@ -1062,9 +1042,6 @@ input[type="submit"] {
   background-image: -o-linear-gradient(#ffda44, #fabc2b);
   /* CSS3 Compliant */
   background-image: linear-gradient(#ffda44, #fabc2b);
-  /* IE7-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffda44',EndColorStr='#fabc2b');
-  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
   border-radius: 0 \0;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -1089,10 +1066,6 @@ input[type="submit"]:hover {
   background-image: -o-linear-gradient(#ffe477, #fbcc5d);
   /* CSS3 Compliant */
   background-image: linear-gradient(#ffe477, #fbcc5d);
-  /* IE7-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffe477',EndColorStr='#fbcc5d');
-  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-  border-radius: 0 \0;
 }
 
 button:active,
@@ -1116,10 +1089,6 @@ input[type="submit"]:active {
   background-image: -o-linear-gradient(#fabc2b, #ffda44);
   /* CSS3 Compliant */
   background-image: linear-gradient(#fabc2b, #ffda44);
-  /* IE7-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fabc2b',EndColorStr='#ffda44');
-  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-  border-radius: 0 \0;
 }
 
 input[type="submit"].disabled,
@@ -1142,10 +1111,6 @@ input[type="submit"].disabled,
   background-image: -o-linear-gradient(#e6e6e6, #dadada);
   /* CSS3 Compliant */
   background-image: linear-gradient(#e6e6e6, #dadada);
-  /* IE7-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6e6e6',EndColorStr='#dadada');
-  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
-  border-radius: 0 \0;
 }
 
 #paginator {
