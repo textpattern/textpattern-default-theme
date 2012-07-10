@@ -53,6 +53,7 @@
 .linenums ol {
   margin: 0;
   -webkit-box-shadow: inset 2em 0 0 #f7f7f7, inset 2.07692307692308em 0 0 #e3e3e3;
+  -moz-box-shadow: inset 2em 0 0 #f7f7f7, inset 2.07692307692308em 0 0 #e3e3e3;
   box-shadow: inset 2em 0 0 #f7f7f7, inset 2.07692307692308em 0 0 #e3e3e3;
 }
 
