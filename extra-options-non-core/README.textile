@@ -54,7 +54,7 @@ bc. jQuery(function () {
   window.prettyPrint && prettyPrint();
 });
 
-Or for advanced users, loaded via "yepnope:http://yepnopejs.com/, there is an example provided within the directory (code-prettify-yepnope.txp).
+Or for advanced users, loaded via "yepnope:http://yepnopejs.com/, there is an example provided within the directory (code_prettify-yepnope.txp).
 
 Once all required CSS and JavaScript files are in place, the code markup styling can be invoked via HTML or Textile (as of Textile v2.3.2 onwards).
 
@@ -73,6 +73,30 @@ bc. bc(prettyprint).
 To invoke via Textile with line numbers:
 
 bc. bc(prettyprint linenums).
+
+h2. Extra code option: cookie_disclaimer
+
+The "EU cookie law":http://www.cookielaw.org/the-cookie-law-explained.aspx came into effect in Europe (excluding UK) on May 26th 2011 and was adopted in the UK a year later on May 26th 2012. The law requires website owners to make their users aware of cookie use on a website, this takes the form of a disclaimer clearly displayed upon a users first visit to the website. If you use cookies (including use of Google Analytics software) within your site then you must comply with the law and show a clear disclaimer - the module provided here gives that functionality.
+
+h4. /extra-options-non-core/cookie_disclaimer/cookie_disclaimer.css
+
+CSS code specific to the cookie disclaimer. If you using Sass then refer to the file below instead. Paste this in just before the end of the @media screen section of the stylesheet (i.e. the section before the size specific media queries begin).
+
+h4. /extra-options-non-core/cookie_disclaimer/cookie_disclaimer.scss
+
+Sass version of the above CSS file - if you are using Sass to author your CSS then paste this code into the @default.scss@ instead of into the standard CSS file. Paste this in just before the end of the @media screen section of the stylesheet (i.e. the section before the size specific media queries begin).
+
+h4. /extra-options-non-core/cookie_disclaimer/cookie_disclaimer.txp
+
+You can either paste the contents of this form directly into the bottom your page templates (just before the @</body>@ tag) or put a @<txp:output_form form="cookie_disclaimer" />@ tag in the bottom of the your page templates instead, create a new form in the system with name of 'analytics' and type of 'misc', then copy/paste the code from this form into it. You must also have "jQuery":https://github.com/philwareham/txp-h5bp-theme/tree/master/extra-options-non-core#extra-code-option-jquery available and linked. Add a link to the external JavaScript file after the jQuery link (not necessary if you use yepnope).
+
+h4. /extra-options-non-core/cookie_disclaimer/cookie_disclaimer-yepnope.txp
+
+For advanced users, you can alternatively load the disclaimer JavaScript via "yepnope":http://yepnopejs.com/.
+
+h4. /extra-options-non-core/cookie_disclaimer/js/jquery.cookie.js
+
+Place this file into your root /js/ directory (you may wish to "minify":http://en.wikipedia.org/wiki/Minification_(programming) it first).
 
 h2. Extra code option: facebook
 
@@ -122,6 +146,10 @@ bc. <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></s
 <script>window.jQuery || document.write('<script src="<txp:site_url />js/libs/jquery.js"><\/script>')</script>
 
 The advantages of using the CDN version over your own hosted copy is threefold - one, it saves bandwidth on your own server; two, Google's servers are extremely low latency and high bandwidth; three, there is a fair chance an end user will already have a copy of Google's CDN jQuery already cached in their browser if they have been to another site that has also used this method to provide jQuery, that means they will not have to reload it and ultimately makes your site render quicker - bonus points!
+
+h4. /extra-options-non-core/jquery/jquery-yepnope.txp
+
+For advanced users, you can alternative load jQuery via "yepnope":http://yepnopejs.com/.
 
 h4. /extra-options-non-core/jquery/js/jquery.js
 
