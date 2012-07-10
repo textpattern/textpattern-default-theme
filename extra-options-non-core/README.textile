@@ -72,7 +72,7 @@ bc. bc(prettyprint linenums).
 
 h2. Extra code option: cookie_disclaimer
 
-The "EU cookie law":http://www.cookielaw.org/the-cookie-law-explained.aspx came into effect in Europe (excluding UK) on May 26th 2011 and was adopted in the UK a year later on May 26th 2012. The law requires website owners to make their users aware of cookie use on a website, this takes the form of a disclaimer clearly displayed upon a users first visit to the website. If you use cookies (including use of Google Analytics software) within your site then you must comply with the law and show a clear disclaimer - the module provided here gives that functionality.
+The "EU cookie law":http://www.cookielaw.org/the-cookie-law-explained.aspx came into effect in Europe (excluding UK) on May 26th 2011 and was adopted in the UK a year later on May 26th 2012. The law requires website owners to make their users aware of cookie use on a website, this takes the form of a disclaimer clearly displayed upon the first visit to your website. If you implement cookies within your site (including use of Google Analytics software) then you must comply with the law and show a clear disclaimer - the module provided here gives that functionality.
 
 h4. /extra-options-non-core/cookie_disclaimer/cookie_disclaimer.css
 
@@ -84,7 +84,7 @@ Sass version of the above CSS file - if you are using Sass to author your CSS th
 
 h4. /extra-options-non-core/cookie_disclaimer/cookie_disclaimer.txp
 
-You can either paste the contents of this form directly into the bottom your page templates (just before the @</body>@ tag) or put a @<txp:output_form form="cookie_disclaimer" />@ tag in the bottom of the your page templates instead, create a new form in the system with name of 'analytics' and type of 'misc', then copy/paste the code from this form into it. You must also have "jQuery":https://github.com/philwareham/txp-h5bp-theme/tree/master/extra-options-non-core#extra-code-option-jquery available and linked. Add a link to the external JavaScript file after the jQuery link (not necessary if you use yepnope).
+You can either paste the contents of this form directly into the bottom your page templates (just before the @</body>@ tag) or put a @<txp:output_form form="cookie_disclaimer" />@ tag in the bottom of the your page templates instead, create a new form in the system with name of 'cookie_disclaimer' and type of 'misc', then copy/paste the code from this form into it. You must also have "jQuery":https://github.com/philwareham/txp-h5bp-theme/tree/master/extra-options-non-core#extra-code-option-jquery available and linked. Add this code *after* the jQuery link in your page (not necessary if you use yepnope).
 
 h4. /extra-options-non-core/cookie_disclaimer/cookie_disclaimer-yepnope.txp
 
@@ -92,7 +92,7 @@ For advanced users, you can alternatively load the disclaimer JavaScript via "ye
 
 h4. /extra-options-non-core/cookie_disclaimer/js/jquery.cookie.js
 
-Place this file into your root /js/ directory (you may wish to "minify":http://en.wikipedia.org/wiki/Minification_(programming) it first).
+Place this file into your root /js/ directory (you may wish to "minify":http://en.wikipedia.org/wiki/Minification_(programming) it first to reduce the file size).
 
 h2. Extra code option: facebook
 
