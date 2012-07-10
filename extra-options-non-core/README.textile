@@ -8,10 +8,6 @@ h4. /extra-options-non-core/analytics/analytics.misc.txp
 
 Add "Google Analytics":http://www.google.com/analytics/ tracking to your pages. You can either paste the contents of this form directly into the bottom your page templates (just before the @</body>@ tag) or put a @<txp:output_form form="analytics" />@ tag in the bottom of the your page templates instead, create a new form in the system with name of 'analytics' and type of 'misc', then copy/paste the code from this form into it. Add your unique Google Analytics ID into the code where indicated.
 
-h2. Extra code option: carousel (carouFredSel via jQuery)
-
-h4. CURRENTLY UNFINISHED
-
 h2. Extra code option: chrome_frame
 
 h4. /extra-options-non-core/chrome_frame/chrome_frame.misc.txp
