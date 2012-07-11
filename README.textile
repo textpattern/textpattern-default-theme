@@ -41,7 +41,6 @@ h4. You can safely delete the following forms from your fresh install:
 * link (link type form)
 * lofi (article type form)
 * noted (link type form)
-* popup_comments (comment type form)
 * single (article type form)
 
 h2. How to use these files
@@ -123,6 +122,10 @@ bc. notextile. <txp:images form="images" />
 h4. /forms/plainlinks.link.txp
 
 Copy/paste over the existing form of the same name that was part of the standard Textpattern install. You can call this form from within a form, page or article by using @<txp:linklist />@ (you don't need to specify a form name as 'plainlinks' is the default form for links).
+
+h4. /forms/popup_comments.comment.txp
+
+Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to display the comment system in a new window if you set 'Comments mode' to 'popup' in the Textapttern preferences.
 
 h4. /forms/search_input.misc.txp
 
