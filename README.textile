@@ -74,6 +74,16 @@ h4. /css/default.scss
 
 "Sass":http://sass-lang.com version of the CSS file, users familiar with the Sass language can utilise this optional source file for rapid development of their own themes.
 
+h3. JavaScript
+
+h4. /js/css3-mediaqueries.js
+
+Makes Internet Explorer 6-8 test and apply CSS3 media queries. This script can be removed if you don't intend to support IE less than version 9 (remember to also remove the corresponding link in the page @<head>@ section of page templates).
+
+h4. /js/html5shiv.js
+
+Provides "basic HTML5 support for Internet Explorer versions 6-8":http://paulirish.com/2011/the-history-of-the-html5-shiv/. This script can be removed if you don't intend to support IE less than version 9 (remember to also remove the corresponding link in the page @<head>@ section of page templates).
+
 h3. Forms
 
 The forms follow the cnk_versioning standard of labelling, in that 'xxxx.misc.txp' is a misc type form, 'xxxx.article.txp' is an article type form, etc. This is only for file structure, when you actually create new forms within Textpattern you should *not* include the '.xxxx.txp', just the first part of the filename. See the analytics form description below.
