@@ -161,7 +161,7 @@ h2. License
 Non-core components:
 
 * jQuery: MIT/GPL
-* carouFredSel: MIT/GPL
+* jQuery Cookie: MIT/GPL
 * Google Code Prettify: Apache License v2.0
 
 Everything else:
