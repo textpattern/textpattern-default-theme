@@ -125,7 +125,7 @@ Copy/paste over the existing form of the same name that was part of the standard
 
 h4. /forms/popup_comments.comment.txp
 
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to display the comment system in a new window if you set 'Comments mode' to 'popup' in the Textapttern preferences.
+Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to display the comment system in a new window if you set 'Comments mode' to 'popup' in the Textapttern preferences. If you don't need the popup comments feature (quite likely) then you can safely remove this form from the system.
 
 h4. /forms/search_input.misc.txp
 
