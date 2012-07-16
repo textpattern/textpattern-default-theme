@@ -171,10 +171,6 @@ h4. /extra-options-non-core/recent_articles/recent_articles.txp
 
 Either paste this file into page templates before the end of the @role="complementary"@ sidebar. Or put a @<txp:output_form form="recent_articles" />@ tag in your page templates @role="complementary"@ sidebar instead, create a new form in the system with name of 'recent_articles' and type of 'misc', then copy/paste the code from this form into it.
 
-h2. Extra code option: slider UNFINISHED
-
-h4. CURRENTLY AWAITING VERSION2 OF "SWIPE":http://swipejs.com/
-
 h2. Extra code option: twitter
 
 h4. /extra-options-non-core/twitter/twitter_tweet.txp
