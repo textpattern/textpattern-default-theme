@@ -24,7 +24,7 @@ footer {
 	margin: 0 auto;
 	/* 960px / 1024px */
 	width: 93.75%;
-	max-width: 86em;
+	max-width: $container-max-width;
 }
 
 header {
@@ -52,7 +52,7 @@ nav {
 	ul {
 		margin: 0 auto;
 		padding: 0;
-		max-width: 86em;
+		max-width: $container-max-width;
 		list-style: none;
 		list-style-image: none;
 	}

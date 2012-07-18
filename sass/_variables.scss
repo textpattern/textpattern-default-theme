@@ -16,6 +16,10 @@ $font-print:			"Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:		.875em; // 14px / 16px
 $base-line-height:		1.5; // 21px / 14px
 
+// layout grid
+
+$container-max-width:	86em; // 1376px / 16px
+
 // breakpoints (requires Sass v3.2 or greater) !NOT USED YET!
 
 $break-small:			35em; // 490px / 14px
