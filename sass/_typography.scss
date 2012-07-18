@@ -10,8 +10,8 @@
 body {
 	font-family: $font-serif;
 	/* 14px / 16px */
-	font-size: $basefont;
-	line-height: $baseline;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
 	color: $color-text;
 }
 
