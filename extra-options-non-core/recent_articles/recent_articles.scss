@@ -43,7 +43,7 @@
 			font-size: .85714285714286em;
 			font-weight: bold;
 			@include text-shadow-light;
-			@include border-radius($border-radius $border-radius 0 0);
+			@include border-radius($default-border-radius $default-border-radius 0 0);
 			padding: 0 .33333333333333em;
 			@include gradient;
 		}
@@ -54,7 +54,7 @@
 		}
 
 		.archive-month {
-			@include border-radius(0 0 $border-radius $border-radius);
+			@include border-radius(0 0 $default-border-radius $default-border-radius);
 			padding: 0 .28571428571429em;
 		}
 

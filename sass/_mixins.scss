@@ -40,9 +40,9 @@
 
 // rounded corners
 
-@mixin border-radius($border-radius) {
-	-moz-border-radius: $border-radius; // Firefox3.6, Camino2.1
-	     border-radius: $border-radius;
+@mixin border-radius($default-border-radius) {
+	-moz-border-radius: $default-border-radius; // Firefox3.6, Camino2.1
+	     border-radius: $default-border-radius;
 }
 
 // drop shadows
