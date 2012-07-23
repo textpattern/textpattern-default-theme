@@ -1,5 +1,7 @@
 /* add this to your default.css, at the end of the @media screen section */
 
+/* browser upgrade message (chromeframe) */
+
 #chromeframe {
   /* 16px */
   font-size: 1.14285714285714em;
