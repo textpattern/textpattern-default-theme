@@ -1,6 +1,16 @@
-/* add this to your default.scss, at the end of the @media screen section */
+//
+// note: this file is for use with Sass - http://sass-lang.com,
+// don't use it as your live site stylesheet!
+//
 
-/* Google Code Prettify - markup colouring */
+
+// add this to your default.scss, at the end of the @media screen section
+
+/* Google Code Prettify
+   ========================================================================== */
+
+/* markup colouring */
+
 .atn,
 .dec,
 .typ,
@@ -37,6 +47,7 @@
 }
 
 /* Google Code Prettify - line number colouring */
+
 .linenums {
   padding-left: 2em;
   ol {

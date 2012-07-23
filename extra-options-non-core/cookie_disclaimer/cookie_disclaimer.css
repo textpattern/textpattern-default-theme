@@ -1,3 +1,7 @@
+/* add this to your default.css, at the end of the @media screen section */
+
+/* cookie disclaimer */
+
 #cookie-disclaimer {
   background-color: #e8e8e8;
   border-bottom: 1px solid #ccc;

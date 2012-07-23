@@ -1,3 +1,8 @@
+/* add this to your default.css, at the end of the @media screen section */
+
+/* Recent articles
+   ========================================================================== */
+
 #monthly-list {
   list-style: none;
   padding: 0;

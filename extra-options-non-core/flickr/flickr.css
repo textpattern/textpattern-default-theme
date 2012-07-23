@@ -1,5 +1,8 @@
 /* add this to your default.css, at the end of the @media screen section */
 
+/* Flickr
+   ========================================================================== */
+
 #flickr_badge_wrapper {
   margin: 0 -10px 0 0;
 }

@@ -1,4 +1,13 @@
-/* add this to your default.scss, at the end of the @media screen section */
+//
+// note: this file is for use with Sass - http://sass-lang.com,
+// don't use it as your live site stylesheet!
+//
+
+
+// add this to your default.scss, at the end of the @media screen section
+
+/* Flickr
+   ========================================================================== */
 
 #flickr_badge_wrapper {
   margin: 0 -10px 0 0;
@@ -15,7 +24,7 @@
   height: 75px;
   border: solid 1px $color-border;
   @include border-radius;
-  padding: 4px;
+  padding: 6px;
   background: #fff;
   @include box-shadow;
 }

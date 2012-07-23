@@ -1,4 +1,5 @@
 <!-- Requires jQuery, see https://github.com/philwareham/txp-h5bp-theme/tree/master/extra-options-non-core#extra-code-option-jquery -->
+
 <script src="<txp:site_url />js/jquery.cookie.js"></script>
 <script src="<txp:site_url />js/jquery.cookieDisclaimer.js"></script>
 <script>
