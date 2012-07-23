@@ -171,6 +171,40 @@ h4. /extra-options-non-core/recent_articles/recent_articles.txp
 
 Either paste this file into page templates before the end of the @role="complementary"@ sidebar. Or put a @<txp:output_form form="recent_articles" />@ tag in your page templates @role="complementary"@ sidebar instead, create a new form in the system with name of 'recent_articles' and type of 'misc', then copy/paste the code from this form into it.
 
+h2. Extra code option: responsiveslides
+
+A responsive image slideshow (slider) jQuery plugin. See the "responsiveslider.js website":http://responsive-slides.viljamis.com/ for more information regarding this plugin.
+
+h4. /extra-options-non-core/responsiveslides/slides.txp
+
+Place this code into your page template at the desired location for your slider (or create a new form in the system with name of 'slides' and type of 'misc', and then output that form at the desired location). Then import a group of images into your Textpattern system and give them all matching category label (the default category is 'slides' - feel free to change it whatever suits your needs, but remember to also change the category in this code too).
+
+If you only want to display your slider on the homepage of your website then wrap it in @<txp:if_section />@ tags like so:
+
+bc. <txp:if_section name="">
+  <txp:output_form form="slider"/>
+</txp:if_section>
+
+h4. /extra-options-non-core/responsiveslides/responsiveslides.css
+
+CSS code specific to the slider. If you using Sass then refer to the file below instead. Paste this in just before the end of the @media screen section of the stylesheet (i.e. the section before the size specific media queries begin).
+
+h4. /extra-options-non-core/responsiveslides/responsiveslides.scss
+
+Sass version of the above CSS file - if you are using Sass to author your CSS then paste this code into the @default.scss@ instead of into the standard CSS file. Paste this in just before the end of the @media screen section of the stylesheet (i.e. the section before the size specific media queries begin).
+
+h4. /extra-options-non-core/responsiveslides/responsiveslides.txp
+
+You can either paste the contents of this form directly into the bottom your page templates (just before the @</body>@ tag) or put a @<txp:output_form form="responsiveslides" />@ tag in the bottom of the your page templates instead, create a new form in the system with name of 'responsiveslides' and type of 'misc', then copy/paste the code from this form into it. You must also have "jQuery":https://github.com/philwareham/txp-h5bp-theme/tree/master/extra-options-non-core#extra-code-option-jquery available and linked. Add this code *after* the jQuery link in your page (not necessary if you use yepnope).
+
+h4. /extra-options-non-core/responsiveslides/responsiveslides-yepnope.txp
+
+For advanced users, you can alternatively load the slider JavaScript via "yepnope":http://yepnopejs.com/.
+
+h4. /extra-options-non-core/responsiveslides/js/responsiveslides.min.js
+
+Place this file into your root /js/ directory.
+
 h2. Extra code option: twitter
 
 h4. /extra-options-non-core/twitter/twitter_tweet.txp

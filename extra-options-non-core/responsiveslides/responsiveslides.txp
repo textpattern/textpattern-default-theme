@@ -3,18 +3,18 @@
 <script src="<txp:site_url />js/responsiveslides.min.js"></script>
 <script>
 jQuery(function () {
-  $(".slides").responsiveSlides({
+  $(".rslides").responsiveSlides({
     // You can change the following options, more info: http://responsive-slides.viljamis.com/
     auto: true,             // Boolean: Animate automatically, true or false
-    speed: 1000,            // Integer: Speed of the transition, in milliseconds
-    timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
-    pager: false,           // Boolean: Show pager, true or false
-    nav: false,             // Boolean: Show navigation, true or false
+    speed: 1200,            // Integer: Speed of the transition, in milliseconds
+    timeout: 4800,          // Integer: Time between slide transitions, in milliseconds
+    pager: true,            // Boolean: Show pager, true or false
+    nav: true,              // Boolean: Show navigation, true or false
     random: false,          // Boolean: Randomize the order of the slides, true or false
     pause: false,           // Boolean: Pause on hover, true or false
     pauseControls: false,   // Boolean: Pause when hovering controls, true or false
-    prevText: "Previous",   // String: Text for the "previous" button
-    nextText: "Next",       // String: Text for the "next" button
+    prevText: "&#8592;",    // String: Text for the "previous" button
+    nextText: "&#8594;",    // String: Text for the "next" button
     maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
     controls: "",           // Selector: Where controls should be appended to, default is after the 'ul'
     namespace: "rslides",   // String: change the default namespace used

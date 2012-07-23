@@ -3,11 +3,7 @@
 /* Responsive slides
    ========================================================================== */
 
-.slides {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: 100%;
+.rslides-container {
   margin: 0 0 2em 0;
   border: solid 1px #ccc;
   -moz-border-radius: 5px;
@@ -19,7 +15,16 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.slides li {
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.rslides li {
   position: absolute;
   left: 0;
   top: 0;
@@ -27,14 +32,71 @@
   display: none;
 }
 
-.slides li:first-child {
+.rslides li:first-child {
   position: relative;
   float: left;
   display: block;
 }
 
-.slides img {
+.rslides img {
   float: left;
   display: block;
   width: 100%;
+}
+
+/* slideshow navigator */
+
+a.rslides_nav {
+  padding: .38461538461538em;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
+}
+
+a.rslides_nav.prev {
+  float: left;
+}
+
+a.rslides_nav.next {
+  float: right;
+}
+
+a.rslides_nav:hover {
+  text-decoration: none;
+}
+
+/* slideshow tabs */
+
+.rslides_tabs {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1;
+}
+
+.rslides_tabs li {
+  margin: 8px .25em 0;
+  display: inline-block;
+  /* display and zoom IE7 fix for display:inline-block */
+  *display: inline;
+  *zoom: 1;
+}
+
+.rslides_tabs a {
+  display: block;
+  text-indent: -9999px;
+  border: 1px solid;
+  border-color: #ccc;
+  -moz-border-radius: .38461538461538em;
+  border-radius: .38461538461538em;
+  background: #fff;
+  width: .76923076923077em;
+  height: .76923076923077em;
+}
+
+.rslides_tabs a:hover {
+  border-color: #06f;
+}
+
+.rslides_here a {
+  background: #e3e3e3;
 }
