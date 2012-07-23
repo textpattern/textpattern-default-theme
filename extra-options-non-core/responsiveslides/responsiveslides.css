@@ -1,32 +1,40 @@
-/*! http://responsiveslides.com v1.32 by @viljamis */
+/* add this to your default.css, at the end of the @media screen section */
 
-.rslides {
+/* Responsive slides
+   ========================================================================== */
+
+.slides {
   position: relative;
   list-style: none;
   overflow: hidden;
   width: 100%;
-  padding: 0;
-  margin: 0;
-  }
+  margin: 0 0 2em 0;
+  border: solid 1px #ccc;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 6px;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
 
-.rslides li {
+.slides li {
   position: absolute;
-  display: none;
-  width: 100%;
   left: 0;
   top: 0;
-  }
-
-.rslides li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-  }
-
-.rslides img {
-  display: block;
-  height: auto;
-  float: left;
   width: 100%;
-  border: 0;
-  }
+  display: none;
+}
+
+.slides li:first-child {
+  position: relative;
+  float: left;
+  display: block;
+}
+
+.slides img {
+  float: left;
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,5 @@
+<ul class="slider">
+  <txp:images category="slides" sort="id desc" break="li">
+    <txp:image width="0" height="0" />
+  </txp:images>
+</ul>

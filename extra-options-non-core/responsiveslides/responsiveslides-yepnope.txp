@@ -1,0 +1,48 @@
+<!-- yepnope version - jQuery - load from Google CDN first, load locally if CDN is unavailable
+then load Google Code Prettify and activate at DOM ready -->
+<script>
+yepnope.errorTimeout = 4000;
+yepnope([
+  {
+    // load jQuery - try CDN first, fallback to local file
+    load : '//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js',
+    callback: function () {
+      if (!window.jQuery) {
+        yepnope('<txp:site_url />js/jquery.js');
+      }
+    }
+  }, {
+    // load other essential JavaScript files and execute
+    load: [
+      '<txp:site_url />js/responsiveslides.min.js'
+    ],
+    complete: function () { // start DOM ready
+      jQuery(function () {
+
+
+        // make code pretty
+        $(".slides").responsiveSlides({
+          // You can change the following options, more info: http://responsive-slides.viljamis.com/
+          auto: true,             // Boolean: Animate automatically, true or false
+          speed: 1000,            // Integer: Speed of the transition, in milliseconds
+          timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+          pager: false,           // Boolean: Show pager, true or false
+          nav: false,             // Boolean: Show navigation, true or false
+          random: false,          // Boolean: Randomize the order of the slides, true or false
+          pause: false,           // Boolean: Pause on hover, true or false
+          pauseControls: false,   // Boolean: Pause when hovering controls, true or false
+          prevText: "Previous",   // String: Text for the "previous" button
+          nextText: "Next",       // String: Text for the "next" button
+          maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+          controls: "",           // Selector: Where controls should be appended to, default is after the 'ul'
+          namespace: "rslides",   // String: change the default namespace used
+          before: function(){},   // Function: Before callback
+          after: function(){}     // Function: After callback
+        });
+
+
+      });
+    } // end DOM ready
+  }
+]);
+</script>

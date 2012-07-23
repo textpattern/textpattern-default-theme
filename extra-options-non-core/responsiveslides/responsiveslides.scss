@@ -1,32 +1,43 @@
-/*! http://responsiveslides.com v1.32 by @viljamis */
+//
+// note: this file is for use with Sass - http://sass-lang.com,
+// don't use it as your live site stylesheet!
+//
 
-.rslides {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  }
 
-.rslides li {
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-  }
+// add this to your default.scss, at the end of the @media screen section
 
-.rslides li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-  }
+/* Responsive slides
+   ========================================================================== */
 
-.rslides img {
-  display: block;
-  height: auto;
-  float: left;
-  width: 100%;
-  border: 0;
-  }
+.slides {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 0 2em 0;
+	border: solid 1px $color-border;
+	@include border-radius;
+	padding: 6px;
+	background: #fff;
+	@include box-shadow;
+
+	li {
+		position: absolute;
+		display: none;
+		left: 0;
+		top: 0;
+		width: 100%;
+
+		&:first-child {
+			position: relative;
+			float: left;
+			display: block;
+		}
+	}
+
+	img {
+		float: left;
+		display: block;
+		width: 100%;
+	}
+}
