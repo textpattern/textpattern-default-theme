@@ -176,6 +176,7 @@ Non-core components:
 * jQuery: MIT/GPL
 * jQuery Cookie: MIT/GPL
 * Google Code Prettify: Apache License v2.0
+* ResponsiveSlides.js: MIT
 
 Everything else:
 
