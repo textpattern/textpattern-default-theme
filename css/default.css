@@ -561,6 +561,16 @@ figcaption {
 /* Embedded content
    ========================================================================== */
 
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+
 /* image alignemnts */
 img.align-left {
   float: left;
@@ -578,16 +588,6 @@ img.align-center {
 /* corrects overflow displayed oddly in IE9 */
   svg:not(:root) {
   overflow: hidden;
-}
-
-article img,
-article video {
-  max-width: 100%;
-  height: auto;
-}
-
-figure {
-  margin: 0;
 }
 
 
