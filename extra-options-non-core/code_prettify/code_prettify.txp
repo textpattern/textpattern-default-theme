@@ -1,0 +1,9 @@
+<!-- Requires jQuery, see https://github.com/philwareham/txp-h5bp-theme/tree/master/extra-options-non-core#extra-code-option-jquery -->
+
+<script src="<txp:site_url />js/google-code-prettify/prettify.js"></script>
+<script>
+jQuery(function () {
+  // make code pretty
+  window.prettyPrint && prettyPrint();
+});
+</script>
