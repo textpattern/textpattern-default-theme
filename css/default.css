@@ -1234,8 +1234,8 @@ body {
 
 @media \0screen {
 
-article img,
-article video {
+img,
+video {
   width: auto;
 }
 
