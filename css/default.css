@@ -112,11 +112,11 @@ table {
   width: 100%;
 }
 
-/* make table cells align top by default */
+/* make table cells align top and left by default */
 th,
 td {
-  text-align: left;
   vertical-align: top;
+  text-align: left;
 }
 
 /* addresses margins set differently in IE7 */
