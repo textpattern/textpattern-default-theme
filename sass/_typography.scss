@@ -72,12 +72,6 @@ blockquote {
 	background: $color-highlight-box;
 }
 
-dfn,
-q {
-	font-style: italic;
-	background: $color-highlight-box;
-}
-
 address {
 	margin: 1em 0;
 }
@@ -89,12 +83,23 @@ dfn[title] {
 	cursor: help;
 }
 
+dfn,
 mark,
+q,
 var {
 	padding: 0 .21428571428571em; // 0 3px
 	@include border-radius(.21428571428571em); // 3px / 13px
 	color: $color-text;
 	background: $color-highlight-box;
+}
+
+dfn,
+q {
+	font-style: italic;
+
+	q {
+		padding: 0;
+	}
 }
 
 var {

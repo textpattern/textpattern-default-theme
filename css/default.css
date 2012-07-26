@@ -470,12 +470,6 @@ blockquote {
   background: #fff6d3;
 }
 
-dfn,
-q {
-  font-style: italic;
-  background: #fff6d3;
-}
-
 address {
   margin: 1em 0;
 }
@@ -487,13 +481,24 @@ dfn[title] {
   cursor: help;
 }
 
+dfn,
 mark,
+q,
 var {
   padding: 0 .21428571428571em;
   -moz-border-radius: .21428571428571em;
   border-radius: .21428571428571em;
   color: #333;
   background: #fff6d3;
+}
+
+dfn,
+q {
+  font-style: italic;
+}
+
+q q {
+  padding: 0;
 }
 
 var {
