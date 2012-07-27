@@ -699,6 +699,22 @@ textarea:-moz-placeholder {
   color: #888;
 }
 
+/* focus glow on form elements */
+button:focus,
+.button:focus,
+input:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+select:focus,
+textarea:focus {
+  -webkit-box-shadow: 0 0 7px #06f;
+  -moz-box-shadow: 0 0 7px #06f;
+  box-shadow: 0 0 7px #06f;
+  /* Opera */
+  z-index: 1;
+}
+
 /* suppress red glow that Firefox adds to form fields by default, even when user is still typing
    and kill phantom spacing and dotted border that appears in Firefox */
 input:invalid,
@@ -715,17 +731,6 @@ select::-moz-focus-inner,
 textarea::-moz-focus-inner {
   border: 0;
   padding: 0;
-}
-
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
-  -webkit-box-shadow: 0 0 7px #06f;
-  -moz-box-shadow: 0 0 7px #06f;
-  box-shadow: 0 0 7px #06f;
-  /* Opera */
-  z-index: 1;
 }
 
 /* remove inner padding and search cancel button in Safari, Chrome on OS X */
@@ -931,6 +936,7 @@ input[type="submit"] {
   *display: inline;
   *zoom: 1;
   color: #333;
+  outline: 0;
   background-color: #ffda44;
   /* Konqueror */
   background-image: -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));

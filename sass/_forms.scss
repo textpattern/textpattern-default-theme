@@ -50,10 +50,26 @@ textarea:-moz-placeholder {
 	color: $color-text-footnote;
 }
 
+/* focus glow on form elements */
+button,
+.button,
+input,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+select,
+textarea {
+	&:focus {
+		@include box-shadow(0 0 7px $color-link-hover);
+		/* Opera */
+		z-index: 1;
+	}
+}
+
 /* suppress red glow that Firefox adds to form fields by default, even when user is still typing
    and kill phantom spacing and dotted border that appears in Firefox */
-input,
 button,
+input,
 select,
 textarea {
 	&:invalid {
@@ -63,12 +79,6 @@ textarea {
 	&::-moz-focus-inner {
 		border: 0;
 		padding: 0;
-	}
-
-	&:focus {
-		@include box-shadow(0 0 7px $color-link-hover);
-		/* Opera */
-		z-index: 1;
 	}
 }
 

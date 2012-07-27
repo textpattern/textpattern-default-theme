@@ -27,6 +27,7 @@ input[type="submit"] {
 	padding: .5em 1em .5em;
 	@include inline-block;
 	color: $color-text;
+	outline: 0;
 	@include gradient;
 	@include box-shadow;
 
