@@ -822,6 +822,7 @@ select[disabled],
 select[disabled] option,
 select[disabled] optgroup,
 textarea[disabled] {
+  opacity: 1;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;

@@ -163,6 +163,7 @@ select[disabled],
 select[disabled] option,
 select[disabled] optgroup,
 textarea[disabled] {
+	opacity: 1;
 	@include box-shadow(none);
 	-webkit-user-select: none;
 	-khtml-user-select: none;
