@@ -563,6 +563,42 @@ figcaption {
 }
 
 
+/* Support for non-latin languages (can be removed if not required)
+   ========================================================================== */
+
+html[dir="rtl"] body {
+	direction: rtl;
+}
+
+html[dir="ltr"] body {
+	direction: ltr;
+}
+
+html[lang="ar-dz"] * {
+	font-family: Tahoma;
+}
+
+html[lang="ja-jp"] * {
+	font-family: "MS Gothic", Osaka;
+	font-weight: normal;
+}
+
+html[lang="ko-kr"] * {
+	font-family: GulimChe, Gulim;
+	font-weight: normal;
+}
+
+html[lang="zh-cn"] * {
+	font-family: SimHei;
+	font-weight: normal;
+}
+
+html[lang="zh-tw"] * {
+	font-family: PMingLiU;
+	font-weight: normal;
+}
+
+
 /* Embedded content
    ========================================================================== */
 
