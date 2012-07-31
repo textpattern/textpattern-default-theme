@@ -7,14 +7,6 @@
 /* Support for non-latin languages (can be removed if not required)
    ========================================================================== */
 
-html[dir="rtl"] body {
-	direction: rtl;
-}
-
-html[dir="ltr"] body {
-	direction: ltr;
-}
-
 html[lang="ar-dz"] * {
 	font-family: Tahoma;
 }
