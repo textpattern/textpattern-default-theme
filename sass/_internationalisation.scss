@@ -7,26 +7,27 @@
 /* Support for non-latin languages (can be removed if not required)
    ========================================================================== */
 
-html[lang="ar-dz"] * {
+html[lang="ar-dz"] {
 	font-family: Tahoma;
 }
 
-html[lang="ja-jp"] * {
-	font-family: "MS Gothic", Osaka;
-	font-weight: normal;
+html[lang="ja-jp"] {
+	font-family: "Hiragino Kaku Gothic Pro", Meiryo;
+	font-size: .75em;
+	line-height: 1.6;
 }
 
-html[lang="ko-kr"] * {
+html[lang="ko-kr"] {
 	font-family: GulimChe, Gulim;
 	font-weight: normal;
 }
 
-html[lang="zh-cn"] * {
+html[lang="zh-cn"] {
 	font-family: SimHei;
 	font-weight: normal;
 }
 
-html[lang="zh-tw"] * {
+html[lang="zh-tw"] {
 	font-family: PMingLiU;
 	font-weight: normal;
 }
