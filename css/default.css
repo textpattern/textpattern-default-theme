@@ -566,26 +566,22 @@ figcaption {
 /* Support for non-latin languages (can be removed if not required)
    ========================================================================== */
 
-html[lang="ja-jp"] *,
-html[lang="ja-jp"] input {
+html[lang="ja-jp"] * {
   font-family: "Hiragino Kaku Gothic Pro", Meiryo;
   font-weight: normal;
 }
 
-html[lang="ko-kr"] *,
-html[lang="ko-kr"] input {
+html[lang="ko-kr"] * {
   font-family: GulimChe, Gulim;
   font-weight: normal;
 }
 
-html[lang="zh-cn"] *,
-html[lang="zh-cn"] input {
+html[lang="zh-cn"] * {
   font-family: SimHei;
   font-weight: normal;
 }
 
-html[lang="zh-tw"] *,
-html[lang="zh-tw"] input {
+html[lang="zh-tw"] * {
   font-family: PMingLiU;
   font-weight: normal;
 }
