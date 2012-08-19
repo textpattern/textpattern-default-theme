@@ -688,7 +688,7 @@ fieldset {
   padding: 0;
 }
 
-/* Corrects color not being inherited in IE7-9, corrects text not wrapping in FF3, corrects alignment displayed oddly in IE7 */
+/* corrects text not wrapping in FF3, corrects alignment displayed oddly in IE7 */
 legend {
   border: 0;
   padding: 0;
@@ -698,7 +698,6 @@ legend {
 
 /* improves appearance and consistency in all browsers */
 button,
-.button,
 input,
 select,
 textarea {
@@ -719,41 +718,45 @@ textarea:-moz-placeholder {
   color: #888;
 }
 
-/* focus glow on form elements */
+/* suppress red glow that Firefox adds to form fields by default, even when user is still typing
+   add focus glow on form elements and kill phantom spacing and dotted border that appears in Firefox */
+button:invalid,
+a.button:invalid,
+input:invalid,
+input[type="button"]:invalid,
+input[type="reset"]:invalid,
+input[type="submit"]:invalid,
+textarea:invalid {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+button::-moz-focus-inner,
+a.button::-moz-focus-inner,
+input::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+textarea::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
 button:focus,
-.button:focus,
+a.button:focus,
 input:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus,
 select:focus,
 textarea:focus {
-  -webkit-box-shadow: 0 0 7px #06f;
-  -moz-box-shadow: 0 0 7px #06f;
-  box-shadow: 0 0 7px #06f;
+  -webkit-box-shadow: 0 0 7px #0066ff;
+  -moz-box-shadow: 0 0 7px #0066ff;
+  box-shadow: 0 0 7px #0066ff;
   /* Opera */
   z-index: 1;
 }
 
-/* suppress red glow that Firefox adds to form fields by default, even when user is still typing
-   and kill phantom spacing and dotted border that appears in Firefox */
-input:invalid,
-button:invalid,
-select:invalid,
-textarea:invalid {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-input::-moz-focus-inner,
-button::-moz-focus-inner,
-select::-moz-focus-inner,
-textarea::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/* remove inner padding and search cancel button in Safari, Chrome on OS X */
+  /* remove inner padding and search cancel button in webkit on OS X */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
@@ -785,6 +788,8 @@ input[type="text"],
 input[type="time"],
 input[type="url"],
 input[type="week"] {
+  /* remove iOS Safari default styling */
+  -webkit-appearance: none;
   font-family: Arial, Helvetica, sans-serif;
   /* 12px */
   font-size: .85714285714286em;
@@ -796,8 +801,6 @@ input[type="week"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /* remove iOS Safari default styling */
-  -webkit-appearance: none;
   -moz-border-radius: 0;
   border-radius: 0;
 }
@@ -814,44 +817,6 @@ input[type="color"] {
   /* display and zoom IE7 fix for display:inline-block */
   *display: inline;
   *zoom: 1;
-}
-
-textarea[disabled],
-select[disabled],
-input[type="color"][disabled],
-input[type="date"][disabled],
-input[type="datetime"][disabled],
-input[type="datetime-local"][disabled],
-input[type="email"][disabled],
-input[type="month"][disabled],
-input[type="number"][disabled],
-input[type="password"][disabled],
-input[type="search"][disabled],
-input[type="tel"][disabled],
-input[type="text"][disabled],
-input[type="time"][disabled],
-input[type="url"][disabled],
-input[type="week"][disabled] {
-  background-color: #eee;
-}
-
-/* make sure disable elements really are disabled */
-button[disabled],
-input[disabled],
-select[disabled],
-select[disabled] option,
-select[disabled] optgroup,
-textarea[disabled] {
-  opacity: 1;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: -moz-none;
-  user-select: none;
-  color: #888;
-  cursor: default;
 }
 
 textarea {
@@ -872,7 +837,6 @@ select {
   border: solid 1px #ccc;
   padding: .5em;
   background: #fff;
-  outline: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -897,6 +861,41 @@ optgroup::-moz-focus-inner {
   padding: 0;
 }
 
+/* addresses box sizing set to content-box and excess padding in IE7-9 */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  *height: 1em;
+  *width: 1em;
+}
+
+/* make sure disable elements really are disabled */
+button[disabled],
+input[disabled],
+input[type="button"][disabled],
+input[type="reset"][disabled],
+input[type="submit"][disabled],
+select[disabled],
+select[disabled] option,
+select[disabled] optgroup,
+textarea[disabled],
+span.disabled {
+  opacity: 1;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  user-select: none;
+  border: solid 1px #d2d2d2 !important;
+  text-shadow: none !important;
+  color: #888888 !important;
+  background: #eee !important;
+  cursor: default !important;
+  top: 0 !important;
+}
+
 .large input {
   width: 50%;
   min-width: 302px;
@@ -915,26 +914,18 @@ optgroup::-moz-focus-inner {
   height: 5.5em;
 }
 
-/* addresses box sizing set to content-box and excess padding in IE7-9 */
-input[type="checkbox"],
-input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  *height: 1em;
-  *width: 1em;
-}
-
 
 /* Buttons
    ========================================================================== */
 
 button,
-.button,
+[role] a.button,
+span.disabled,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
+  /* remove iOS Safari default styling */
+  -webkit-appearance: none;
   -webkit-background-clip: padding;
   -khtml-background-clip: padding-box;
   -moz-background-clip: padding;
@@ -945,13 +936,15 @@ input[type="submit"] {
   /* 12px */
   font-size: .85714285714286em;
   font-weight: normal;
+  line-height: normal;
   text-align: center;
+  text-decoration: none;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
   cursor: pointer;
   border: solid 1px #e1a61a;
   -moz-border-radius: .35714285714286em;
   border-radius: .35714285714286em;
-  padding: .5em 1em .5em;
+  padding: .5em 1em;
   display: inline-block;
   /* display and zoom IE7 fix for display:inline-block */
   *display: inline;
@@ -971,14 +964,10 @@ input[type="submit"] {
   background-image: -o-linear-gradient(#ffda44, #fabc2b);
   /* CSS3 Compliant */
   background-image: linear-gradient(#ffda44, #fabc2b);
-  border-radius: 0 \0;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 button:hover,
-.button:hover,
+[role] a.button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
@@ -998,7 +987,7 @@ input[type="submit"]:hover {
 }
 
 button:active,
-.button:active,
+[role] a.button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
@@ -1020,34 +1009,12 @@ input[type="submit"]:active {
   background-image: linear-gradient(#fabc2b, #ffda44);
 }
 
-input[type="submit"].disabled,
-#paginator span.disabled {
-  text-shadow: none;
-  top: 0;
-  cursor: default;
-  border: solid 1px #d2d2d2;
-  color: #888;
-  background-color: #e6e6e6;
-  /* Konqueror */
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#e6e6e6), to(#dadada));
-  /* Safari4+, Chrome */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), to(#dadada));
-  /* Safari5.1+, Chrome10+ */
-  background-image: -webkit-linear-gradient(#e6e6e6, #dadada);
-  /* Firefox3.6 */
-  background-image: -moz-linear-gradient(#e6e6e6, #dadada);
-  /* Opera11.10+ */
-  background-image: -o-linear-gradient(#e6e6e6, #dadada);
-  /* CSS3 Compliant */
-  background-image: linear-gradient(#e6e6e6, #dadada);
-}
-
 #paginator {
   margin-bottom: 2em;
 }
 
 #paginator .button {
-  padding: .1em 1em;
+  padding: .25em 1em;
 }
 
 #paginator a.button {
@@ -1127,7 +1094,7 @@ input[type="submit"].disabled,
 select,
 select[size="0"],
 select[size="1"] {
-  height: 2.33333333333333em;
+  height: 2.2em;
 }
 
 select:not([size]),

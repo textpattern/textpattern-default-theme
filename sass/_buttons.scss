@@ -8,10 +8,13 @@
    ========================================================================== */
 
 button,
-.button,
+a.button,
+span.disabled,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
+	/* remove iOS Safari default styling */
+	-webkit-appearance: none;
 	@include background-clip;
 	width: auto;
 	overflow: visible;
@@ -19,17 +22,18 @@ input[type="submit"] {
 	/* 12px */
 	font-size: .85714285714286em;
 	font-weight: normal;
+	line-height: normal;
 	text-align: center;
+	text-decoration: none;
 	@include text-shadow-light;
 	cursor: pointer;
 	border: solid 1px $color-gradient-border;
 	@include border-radius($default-border-radius);
-	padding: .5em 1em .5em;
+	padding: .5em 1em;
 	@include inline-block;
 	color: $color-text;
 	outline: 0;
 	@include gradient($color-gradient-from, $color-gradient-to);
-	@include box-shadow;
 
 	&:hover {
 		@include gradient(lighten($color-gradient-from, 10%), lighten($color-gradient-to, 10%));
@@ -43,21 +47,11 @@ input[type="submit"] {
 	}
 }
 
-input[type="submit"].disabled,
-#paginator span.disabled {
-	text-shadow: none;
-	top: 0;
-	cursor: default;
-	border: solid 1px #d2d2d2;
-	color: $color-text-footnote;
-	@include gradient(#e6e6e6, #dadada);
-}
-
 #paginator {
 	margin-bottom: 2em;
 
 	.button {
-		padding: .1em 1em;
+		padding: .25em 1em;
 	}
 
 	a.button {
