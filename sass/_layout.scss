@@ -43,7 +43,7 @@ header {
 nav {
 	border-top: solid 1px $color-gradient-border;
 	border-bottom: solid 1px $color-gradient-border;
-	@include gradient;
+	@include gradient($color-gradient-from, $color-gradient-to);
 
 	h1 {
 		display: none;

@@ -23,12 +23,12 @@ input[type="submit"] {
 	@include text-shadow-light;
 	cursor: pointer;
 	border: solid 1px $color-gradient-border;
-	@include border-radius;
+	@include border-radius($default-border-radius);
 	padding: .5em 1em .5em;
 	@include inline-block;
 	color: $color-text;
 	outline: 0;
-	@include gradient;
+	@include gradient($color-gradient-from, $color-gradient-to);
 	@include box-shadow;
 
 	&:hover {

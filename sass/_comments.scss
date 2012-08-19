@@ -9,7 +9,7 @@
 
 .comments {
 	margin-bottom: 1em;
-	@include border-radius;
+	@include border-radius($default-border-radius);
 	padding: 1em 1em 1px;
 	background: $color-background-box;
 	word-wrap: break-word;
@@ -32,7 +32,7 @@
 
 #cpreview {
 	margin-bottom: 2px;
-	@include border-radius;
+	@include border-radius($default-border-radius);
 	padding: 1em;
 	background: #fff3d6;
 }

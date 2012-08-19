@@ -68,7 +68,7 @@ blockquote {
 	font-style: italic;
 	margin: .875em 0 .875em 0;
 	padding: 1px .875em;
-	@include border-radius;
+	@include border-radius($default-border-radius);
 	background: $color-highlight-box;
 }
 
@@ -130,7 +130,7 @@ pre {
 	overflow-x: auto;
 	border: 1px solid lighten($color-border, 9%);
 	padding: 1em;
-	@include border-radius;
+	@include border-radius($default-border-radius);
 	background: $color-background-box;
 	tab-size: 4;
 	code {

@@ -48,7 +48,7 @@ nav {
 [role="complementary"] {
 	float: right;
 	border: solid 1px lighten($color-border, 9%);
-	@include border-radius;
+	@include border-radius($default-border-radius);
 	padding: 1em 1em 0;
 	/* 290px / 960px */
 	width: 30.208333333333%;
