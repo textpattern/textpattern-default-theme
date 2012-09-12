@@ -101,7 +101,4 @@
 
 #monthly-list span {
   display: block;
-  /* IE7 padding fix */
-  *position: relative;
-  *top: -2px;
 }

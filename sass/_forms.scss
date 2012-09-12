@@ -7,11 +7,6 @@
 /* Forms
    ========================================================================== */
 
-/* corrects margin displayed oddly in IE6-7 */
-form {
-	margin: 0;
-}
-
 /* remove default fieldset styling across browsers */
 fieldset {
 	margin: 0;
@@ -19,12 +14,11 @@ fieldset {
 	padding: 0;
 }
 
-/* corrects text not wrapping in FF3, corrects alignment displayed oddly in IE7 */
+/* corrects text not wrapping in FF3 */
 legend {
 	border: 0;
 	padding: 0;
 	white-space: normal;
-	*margin-left: -7px;
 }
 
 /* improves appearance and consistency in all browsers */
@@ -35,8 +29,6 @@ textarea {
 	font-size: 100%;
 	margin: 0;
 	vertical-align: baseline;
-	/* improves appearance and consistency in IE7 */
-	*vertical-align: middle;
 }
 
 /* colour placeholder text (Webkit and Mozilla only, so far) */
@@ -126,12 +118,12 @@ input[type="color"] {
 [role="complementary"] input[type="search"] {
 	margin-right: 2px;
 	width: 66.666666666667%;
-	@include inline-block;
+	display: inline-block;
 }
 
 textarea {
 	min-height: 3em;
-	/* removes default vertical scrollbar in IE7-9 */
+	/* removes default vertical scrollbar in IE8-9 */
 	overflow: auto;
 	/* improves readability and alignment in all browsers */
 	vertical-align: top;

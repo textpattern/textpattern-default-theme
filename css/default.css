@@ -7,7 +7,7 @@
    ========================================================================== */
 /* original authors: Nicolas Gallagher and Jonathan Neal - http://necolas.github.com/normalize.css/ */
 
-/* corrects block display not defined in IE7-9, Firefox3 */
+/* corrects block display not defined in IE8-9, Firefox3 */
 article,
 aside,
 details,
@@ -22,14 +22,11 @@ summary {
   display: block;
 }
 
-/* corrects inline-block display not defined in IE7-9, Firefox3 */
+/* corrects inline-block display not defined in IE8-9, Firefox3 */
 audio,
 canvas,
 video {
   display: inline-block;
-  /* display and zoom IE7 fix for display:inline-block */
-  *display: inline;
-  *zoom: 1;
 }
 
 /* prevents modern browsers from displaying 'audio' without controls, remove excess height in iOS5 devices */
@@ -38,15 +35,12 @@ audio:not([controls]) {
   height: 0;
 }
 
-/* addresses styling for 'hidden' attribute not present in IE7-9, Firefox3, Safari4 */
+/* addresses styling for 'hidden' attribute not present in IE8-9, Firefox3, Safari4 */
 [hidden] {
   display: none;
 }
 
 html {
-  /* corrects text resizing oddly in IE7 when body font-size is set using em units -
-     http://clagnut.com/blog/348/#c790 */
-  font-size: 100%;
   /* always force scrollbar padding so we don't get 'jumping' */
   overflow-y: scroll;
   /* prevents iOS text size adjust after orientation change, without disabling user zoom -
@@ -56,19 +50,13 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-/* Addresses margins set differently in IE7 */
-p,
-pre {
-  margin: 1em 0;
-}
-
 /* addresses style set to 'bolder' in Firefox3-4, Safari4-5, Chrome */
 b,
 strong {
   font-weight: bold;
 }
 
-/* addresses CSS quotes not supported in IE7, addresses quote property not supported in Safari4 */
+/* remove automatically generated quotemarks */
 q {
   quotes: none;
 }
@@ -149,17 +137,6 @@ ul {
    ========================================================================== */
 /* updated to prevent margin-collapsing on child elements in most situations -
    http://nicolasgallagher.com/micro-clearfix-hack/ */
-
-.clearfix,
-header,
-nav ul,
-.container,
-footer,
-#paginator,
-#monthly-list {
-  /* zoom IE7 fix */
-  *zoom: 1;
-}
 
 .clearfix:before,
 .clearfix:after,
@@ -474,7 +451,7 @@ address {
   margin: 1em 0;
 }
 
-/* addresses styling not present in IE7-9, Safari5, Chrome */
+/* addresses styling not present in IE8-9, Safari5, Chrome */
 abbr[title],
 dfn[title] {
   border-bottom: dotted 1px;
@@ -688,12 +665,11 @@ fieldset {
   padding: 0;
 }
 
-/* corrects text not wrapping in FF3, corrects alignment displayed oddly in IE7 */
+/* corrects text not wrapping in FF3 */
 legend {
   border: 0;
   padding: 0;
   white-space: normal;
-  *margin-left: -7px;
 }
 
 /* improves appearance and consistency in all browsers */
@@ -704,8 +680,6 @@ textarea {
   font-size: 100%;
   margin: 0;
   vertical-align: baseline;
-  /* improves appearance and consistency in IE7 */
-  *vertical-align: middle;
 }
 
 /* colour placeholder text (Webkit and Mozilla only, so far) */
@@ -814,14 +788,11 @@ input[type="color"] {
   margin-right: 2px;
   width: 66.666666666667%;
   display: inline-block;
-  /* display and zoom IE7 fix for display:inline-block */
-  *display: inline;
-  *zoom: 1;
 }
 
 textarea {
   min-height: 3em;
-  /* removes default vertical scrollbar in IE7-9 */
+  /* removes default vertical scrollbar in IE8-9 */
   overflow: auto;
   /* improves readability and alignment in all browsers */
   vertical-align: top;
@@ -861,7 +832,7 @@ optgroup::-moz-focus-inner {
   padding: 0;
 }
 
-/* addresses box sizing set to content-box and excess padding in IE7-9 */
+/* addresses box sizing set to content-box and excess padding in IE8-9 */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -946,9 +917,6 @@ input[type="submit"] {
   border-radius: .35714285714286em;
   padding: .5em 1em;
   display: inline-block;
-  /* display and zoom IE7 fix for display:inline-block */
-  *display: inline;
-  *zoom: 1;
   color: #333;
   outline: 0;
   background-color: #ffda44;

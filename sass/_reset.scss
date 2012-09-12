@@ -8,7 +8,7 @@
    ========================================================================== */
 /* original authors: Nicolas Gallagher and Jonathan Neal - http://necolas.github.com/normalize.css/ */
 
-/* corrects block display not defined in IE7-9, Firefox3 */
+/* corrects block display not defined in IE8-9, Firefox3 */
 article,
 aside,
 details,
@@ -23,11 +23,11 @@ summary {
 	display: block;
 }
 
-/* corrects inline-block display not defined in IE7-9, Firefox3 */
+/* corrects inline-block display not defined in IE8-9, Firefox3 */
 audio,
 canvas,
 video {
-	@include inline-block;
+	display: inline-block;
 }
 
 /* prevents modern browsers from displaying 'audio' without controls, remove excess height in iOS5 devices */
@@ -36,15 +36,12 @@ audio:not([controls]) {
 	height: 0;
 }
 
-/* addresses styling for 'hidden' attribute not present in IE7-9, Firefox3, Safari4 */
+/* addresses styling for 'hidden' attribute not present in IE8-9, Firefox3, Safari4 */
 [hidden] {
 	display: none;
 }
 
 html {
-	/* corrects text resizing oddly in IE7 when body font-size is set using em units -
-	   http://clagnut.com/blog/348/#c790 */
-	font-size: 100%;
 	/* always force scrollbar padding so we don't get 'jumping' */
 	overflow-y: scroll;
 	/* prevents iOS text size adjust after orientation change, without disabling user zoom -
@@ -54,19 +51,13 @@ html {
 	-ms-text-size-adjust: 100%;
 }
 
-/* Addresses margins set differently in IE7 */
-p,
-pre {
-	margin: 1em 0;
-}
-
 /* addresses style set to 'bolder' in Firefox3-4, Safari4-5, Chrome */
 b,
 strong { 
 	font-weight: bold; 
 }
 
-/* addresses CSS quotes not supported in IE7, addresses quote property not supported in Safari4 */
+/* remove automatically generated quotemarks */
 q {
 	quotes: none;
 	&:before, &:after {
@@ -91,7 +82,7 @@ sub {
 	bottom: -.25em;
 }
 
-/* removes border when inside 'a' element in IE7-9, Firefox3, improves image quality when scaled in IE7 -
+/* removes border when inside 'a' element in IE8-9, Firefox3, improves image quality when scaled in IE7 -
    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
 img {
 	border: 0;
