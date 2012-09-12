@@ -1,6 +1,6 @@
-h1. txp-h5bp-theme: the Textpattern CMS default theme (as of v4.5 onwards)
+h1. txp-h5bp-theme: the Textpattern CMS default theme (4.6 branch)
 
-h3. Please note: theme requires Textpattern SVN "revision 3627 or later":http://textpattern.googlecode.com/svn/development/4.x/ (due to use of new tags and HTML5 support)
+h3. Please note: Textpattern 4.6 onwards will drop support for Internet Explorer 7
 
 This project is the default theme that ships as standard with "Textpattern CMS":http://textpattern.com as of v4.5 onwards. It is intended as a starting point for new users learning the Textpattern CMS for the first time or existing users that want to adapt their current code for modern standards, and is not intended as a finished production theme (though you could use it as such if you want to).
 
