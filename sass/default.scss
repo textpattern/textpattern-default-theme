@@ -12,7 +12,27 @@
    Styling and layout for all media
    ========================================================================== */
 
-@import "reset", "clearfix";
+/* corrects block display not defined in IE8-9 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+	display: block;
+}
+
+/* addresses styling for 'hidden' attribute not present in IE8-9 */
+[hidden] {
+	display: none;
+}
+
+@import "clearfix";
 
 
 /* ==========================================================================

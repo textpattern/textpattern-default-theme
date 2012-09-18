@@ -7,6 +7,24 @@
 /* Lists
    ========================================================================== */
 
+/* addresses paddings set differently */
+menu,
+ol,
+ul {
+	padding: 0 0 0 2em;
+}
+
+/* remove margins from nested lists */
+dl dl,
+ul ul,
+ol ol {
+	margin: 0;
+}
+
+dd {
+	margin: 0 0 0 2em;
+}
+
 dt {
 	font-style: italic;
 }

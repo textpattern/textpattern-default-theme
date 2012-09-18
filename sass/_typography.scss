@@ -29,6 +29,7 @@ h1 {
 	letter-spacing: -1px;
 	/* 28px margin top/bottom */
 	margin: .66666666666667em 0;
+
 	&:first-child {
 		margin-top: 0;
 	}
@@ -62,6 +63,16 @@ h4 {
 	margin: 0;
 }
 
+/* addresses style set to `bolder` in Firefox4+, Safari5, and Chrome */
+b,
+strong { 
+	font-weight: bold; 
+}
+
+address {
+	margin: 1em 0;
+}
+
 blockquote {
 	/* 16px */
 	font-size: 1.14285714285714em;
@@ -72,8 +83,14 @@ blockquote {
 	background: $color-highlight-box;
 }
 
-address {
-	margin: 1em 0;
+/* sets consistent quote types */
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* addresses styling not present in Safari5 and Chrome */
+dfn {
+    font-style: italic;
 }
 
 /* addresses styling not present in IE8-9, Safari5, Chrome */
@@ -83,27 +100,12 @@ dfn[title] {
 	cursor: help;
 }
 
-dfn,
 mark,
-q,
 var {
 	padding: 0 .21428571428571em; // 0 3px
 	@include border-radius(.21428571428571em); // 3px / 13px
 	color: $color-text;
 	background: $color-highlight-box;
-}
-
-dfn,
-q {
-	font-style: italic;
-
-	q {
-		padding: 0;
-	}
-}
-
-var {
-	font-weight: bold;
 }
 
 pre,
@@ -132,13 +134,30 @@ pre {
 	padding: 1em;
 	@include border-radius($default-border-radius);
 	background: $color-background-box;
-	tab-size: 4;
+	tab-size: 4; // set tab size to 4 spaces
+
 	code {
 	/* 13px */
 	font-size: 1em;
 	border: 0;
 	background: none;
 	}
+}
+
+/* prevents sub and sup affecting line-height in all browsers */
+sub,
+sup {
+	/* 12px */
+	font-size: .85714285714286em;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -.5em;
+}
+sub {
+	bottom: -.25em;
 }
 
 small,

@@ -3,10 +3,6 @@
    ========================================================================== */
 
 
-/* Abridged version of Normalize.css
-   ========================================================================== */
-/* original authors: Nicolas Gallagher and Jonathan Neal - http://necolas.github.com/normalize.css/ */
-
 /* corrects block display not defined in IE8-9, Firefox3 */
 article,
 aside,
@@ -22,121 +18,15 @@ summary {
   display: block;
 }
 
-/* corrects inline-block display not defined in IE8-9, Firefox3 */
-audio,
-canvas,
-video {
-  display: inline-block;
-}
-
-/* prevents modern browsers from displaying 'audio' without controls, remove excess height in iOS5 devices */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
 /* addresses styling for 'hidden' attribute not present in IE8-9, Firefox3, Safari4 */
 [hidden] {
   display: none;
 }
 
-html {
-  /* always force scrollbar padding so we don't get 'jumping' */
-  overflow-y: scroll;
-  /* prevents iOS text size adjust after orientation change, without disabling user zoom -
-     http://www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
-  -webkit-text-size-adjust: 100%;
-  /* as above, for Windows Phone */
-  -ms-text-size-adjust: 100%;
-}
-
-/* addresses style set to 'bolder' in Firefox3-4, Safari4-5, Chrome */
-b,
-strong {
-  font-weight: bold;
-}
-
-/* remove automatically generated quotemarks */
-q {
-  quotes: none;
-}
-
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-/* prevents sub and sup affecting line-height in all browsers */
-sub,
-sup {
-  /* 12px */
-  font-size: .85714285714286em;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-/* removes border when inside 'a' element in IE7-9, Firefox3, improves image quality when scaled in IE7 -
-   code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
-img {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-}
-
-/* consistent tables */
-table {
-  margin-bottom: 1em;
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-}
-
-/* make table cells align top and left by default */
-th,
-td {
-  vertical-align: top;
-  text-align: left;
-}
-
-/* addresses margins set differently in IE7 */
-dl,
-menu,
-ol,
-ul {
-  margin: 1em 0;
-}
-dd {
-  margin: 0 0 0 2em;
-}
-
-/* remove margins from nested lists */
-dl dl,
-ul ul,
-ol ol {
-  margin: 0;
-}
-
-/* addresses paddings set differently in IE7 */
-menu,
-ol,
-ul {
-  padding: 0 0 0 2em;
-}
-
 
 /* Clearfix
    ========================================================================== */
-/* updated to prevent margin-collapsing on child elements in most situations -
-   http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
 
 .clearfix:before,
 .clearfix:after,
@@ -178,6 +68,16 @@ footer:after,
 
 /* Layout
    ========================================================================== */
+
+html {
+  /* always force scrollbar padding so we don't get 'jumping' */
+  overflow-y: scroll;
+  /* prevents iOS text size adjust after orientation change, without disabling user zoom -
+     http://www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+  -webkit-text-size-adjust: 100%;
+  /* as above, for Windows Phone */
+  -ms-text-size-adjust: 100%;
+}
 
 body {
   margin: 0;
@@ -424,6 +324,16 @@ h4 {
   margin: 0;
 }
 
+/* addresses style set to `bolder` in Firefox4+, Safari5, and Chrome */
+b,
+strong { 
+  font-weight: bold; 
+}
+
+address {
+  margin: 1em 0;
+}
+
 blockquote {
   /* 16px */
   font-size: 1.14285714285714em;
@@ -435,8 +345,14 @@ blockquote {
   background: #fff6d3;
 }
 
-address {
-  margin: 1em 0;
+/* sets consistent quote types */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* addresses styling not present in Safari5 and Chrome */
+dfn {
+  font-style: italic;
 }
 
 /* addresses styling not present in IE8-9, Safari5, Chrome */
@@ -446,28 +362,13 @@ dfn[title] {
   cursor: help;
 }
 
-dfn,
 mark,
-q,
 var {
   padding: 0 .21428571428571em;
   -moz-border-radius: .21428571428571em;
   border-radius: .21428571428571em;
   color: #333;
   background: #fff6d3;
-}
-
-dfn,
-q {
-  font-style: italic;
-}
-
-q q {
-  padding: 0;
-}
-
-var {
-  font-weight: bold;
 }
 
 pre,
@@ -506,6 +407,24 @@ pre code {
   font-size: 1em;
   border: 0;
   background: none;
+}
+
+/* prevents sub and sup affecting line-height in all browsers */
+sub,
+sup {
+  /* 12px */
+  font-size: .85714285714286em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
 }
 
 small,
@@ -551,17 +470,28 @@ html[lang="zh-tw"] {
 /* Embedded content
    ========================================================================== */
 
+/* corrects inline-block display not defined in IE8-9, Firefox3 */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/* make embedded elements responsive */
 img,
+embed,
+object,
 video {
   max-width: 100%;
   height: auto;
 }
 
-figure {
-  margin: 0;
+/* removes border when inside 'a' element in IE8-9 */
+img {
+  border: 0;
 }
 
-/* image alignemnts */
+/* image alignments */
 img.align-left {
   float: left;
   margin: 1em 1em 1em 0;
@@ -575,6 +505,17 @@ img.align-center {
   margin: 1em auto;
 }
 
+/* addresses margin not present in IE8-9 and Safari5 */
+figure {
+  margin: 0;
+}
+
+/* prevents modern browsers from displaying 'audio' without controls, remove excess height in iOS5 devices */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
 /* corrects overflow displayed oddly in IE9 */
   svg:not(:root) {
   overflow: hidden;
@@ -584,14 +525,25 @@ img.align-center {
 /* Tables
    ========================================================================== */
 
+/* consistent tables */
+table {
+  margin-bottom: 1em;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
 caption {
   font-style: italic;
   text-align: left;
   margin-bottom: .5em;
 }
 
+/* make table cells align top and left by default */
 th,
 td {
+  vertical-align: top;
+  text-align: left;
   border-bottom: solid 1px #ccc;
   padding: .28571428571429em .5em .28571428571429em 0;
 }
@@ -619,6 +571,24 @@ tfoot:last-child {
 
 /* Lists
    ========================================================================== */
+
+/* addresses paddings set differently */
+menu,
+ol,
+ul {
+  padding: 0 0 0 2em;
+}
+
+/* remove margins from nested lists */
+dl dl,
+ul ul,
+ol ol {
+  margin: 0;
+}
+
+dd {
+  margin: 0 0 0 2em;
+}
 
 dt {
   font-style: italic;
@@ -653,11 +623,10 @@ fieldset {
   padding: 0;
 }
 
-/* corrects text not wrapping in FF3 */
+/* remove padding so people aren't caught out if they zero out fieldsets */
 legend {
   border: 0;
   padding: 0;
-  white-space: normal;
 }
 
 /* improves appearance and consistency in all browsers */
@@ -680,6 +649,19 @@ textarea:-moz-placeholder {
   color: #888;
 }
 
+/* removes inner padding and border in Firefox 4+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* removes inner padding and search cancel button in Safari5+ and Chrome on OS X */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
 /* suppress red glow that Firefox adds to form fields by default, even when user is still typing
    add focus glow on form elements and kill phantom spacing and dotted border that appears in Firefox */
 button:invalid,
@@ -692,16 +674,6 @@ textarea:invalid {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-}
-button::-moz-focus-inner,
-a.button::-moz-focus-inner,
-input::-moz-focus-inner,
-input[type="button"]::-moz-focus-inner,
-input[type="reset"]::-moz-focus-inner,
-input[type="submit"]::-moz-focus-inner,
-textarea::-moz-focus-inner {
-  border: 0;
-  padding: 0;
 }
 button:focus,
 a.button:focus,
@@ -716,12 +688,6 @@ textarea:focus {
   box-shadow: 0 0 7px #0066ff;
   /* Opera */
   z-index: 1;
-}
-
-  /* remove inner padding and search cancel button in webkit on OS X */
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button {
-  -webkit-appearance: none;
 }
 
 input[type="file"]:focus,
@@ -823,12 +789,8 @@ optgroup::-moz-focus-inner {
 /* addresses box sizing set to content-box and excess padding in IE8-9 */
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   padding: 0;
-  *height: 1em;
-  *width: 1em;
+  box-sizing: border-box;
 }
 
 /* make sure disable elements really are disabled */

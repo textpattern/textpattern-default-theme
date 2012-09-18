@@ -7,18 +7,26 @@
 /* Embedded content
    ========================================================================== */
 
+/* corrects inline-block display not defined in IE8-9, Firefox3 */
+audio,
+canvas,
+video {
+	display: inline-block;
+}
+
+/* make embedded elements responsive */
 img,
+embed,
+object,
 video {
 	max-width: 100%;
 	height: auto;
 }
 
-figure {
-	margin: 0;
-}
-
-/* image alignemnts */
 img {
+	/* removes border when inside 'a' element in IE8-9 */
+	border: 0;
+
 	&.align-left {
 		float: left;
 		margin: 1em 1em 1em 0;
@@ -28,11 +36,21 @@ img {
 		float: right;
 		margin: 1em 0 1em 1em;
 	}
-
 	&.align-center {
 		display: block;
 		margin: 1em auto;
 	}
+}
+
+/* addresses margin not present in IE8-9 and Safari5 */
+figure {
+	margin: 0;
+}
+
+/* prevents modern browsers from displaying 'audio' without controls, remove excess height in iOS5 devices */
+audio:not([controls]) {
+	display: none;
+	height: 0;
 }
 
 /* corrects overflow displayed oddly in IE9 */

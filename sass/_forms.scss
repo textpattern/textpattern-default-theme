@@ -14,11 +14,10 @@ fieldset {
 	padding: 0;
 }
 
-/* corrects text not wrapping in FF3 */
+/* remove padding so people aren't caught out if they zero out fieldsets */
 legend {
-	border: 0;
-	padding: 0;
-	white-space: normal;
+    border: 0;
+    padding: 0;
 }
 
 /* improves appearance and consistency in all browsers */
@@ -41,6 +40,19 @@ textarea:-moz-placeholder {
 	color: $color-text-footnote;
 }
 
+/* removes inner padding and border in Firefox 4+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* removes inner padding and search cancel button in Safari5+ and Chrome on OS X */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
 /* suppress red glow that Firefox adds to form fields by default, even when user is still typing
    add focus glow on form elements and kill phantom spacing and dotted border that appears in Firefox */
 button,
@@ -54,22 +66,11 @@ textarea {
 		@include box-shadow(none);
 	}
 
-	&::-moz-focus-inner {
-		border: 0;
-		padding: 0;
-	}
-
 	&:focus {
 		@include box-shadow(0 0 7px $color-link-hover);
 		/* Opera */
 		z-index: 1;
 	}
-}
-
-/* remove inner padding and search cancel button in webkit on OS X */
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button {
-	-webkit-appearance: none;
 }
 
 input[type="file"],
@@ -181,10 +182,8 @@ optgroup {
 /* addresses box sizing set to content-box and excess padding in IE8-9 */
 input[type="checkbox"],
 input[type="radio"] {
-	@include box-sizing;
 	padding: 0;
-	*height: 1em;
-	*width: 1em;
+	box-sizing: border-box;
 }
 
 /* make sure disable elements really are disabled */

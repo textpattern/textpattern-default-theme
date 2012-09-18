@@ -7,14 +7,25 @@
 /* Tables
    ========================================================================== */
 
+/* consistent tables */
+table {
+	margin-bottom: 1em;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
 caption {
 	font-style: italic;
 	text-align: left;
 	margin-bottom: .5em;
 }
 
+/* make table cells align top and left by default */
 th,
 td {
+	vertical-align: top;
+	text-align: left;
 	border-bottom: solid 1px $color-border;
 	padding: .28571428571429em .5em .28571428571429em 0;
 
