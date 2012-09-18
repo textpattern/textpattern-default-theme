@@ -57,10 +57,6 @@
   border-radius: .35714285714286em .35714285714286em 0 0;
   padding: 0 .33333333333333em;
   background-color: #ffda44;
-  /* Konqueror */
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
-  /* Safari4+, Chrome */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
   /* Safari5.1+, Chrome10+ */
   background-image: -webkit-linear-gradient(#ffda44, #fabc2b);
   /* Firefox3.6 */
@@ -74,10 +70,6 @@
 #monthly-list a:hover .archive-year,
 #monthly-list a:focus .archive-year {
   background-color: #ffe477;
-  /* Konqueror */
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
-  /* Safari4+, Chrome */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
   /* Safari5.1+, Chrome10+ */
   background-image: -webkit-linear-gradient(#ffe477, #fbcc5d);
   /* Firefox3.6 */

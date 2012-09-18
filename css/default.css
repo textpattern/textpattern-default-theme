@@ -216,10 +216,6 @@ nav {
   border-top: solid 1px #e1a61a;
   border-bottom: solid 1px #e1a61a;
   background-color: #ffda44;
-  /* Konqueror */
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
-  /* Safari4+, Chrome */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
   /* Safari5.1+, Chrome10+ */
   background-image: -webkit-linear-gradient(#ffda44, #fabc2b);
   /* Firefox3.6 */
@@ -254,10 +250,6 @@ nav li:last-child {
 nav li:hover,
 nav li.active {
   background-color: #ffe477;
-  /* Konqueror */
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
-  /* Safari4+, Chrome */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
   /* Safari5.1+, Chrome10+ */
   background-image: -webkit-linear-gradient(#ffe477, #fbcc5d);
   /* Firefox3.6 */
@@ -270,10 +262,6 @@ nav li.active {
 
 nav li:active {
   background-color: #fabc2b;
-  /* Konqueror */
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
-  /* Safari4+, Chrome */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
   /* Safari5.1+, Chrome10+ */
   background-image: -webkit-linear-gradient(#fabc2b, #ffda44);
   /* Firefox3.6 */
@@ -920,10 +908,6 @@ input[type="submit"] {
   color: #333;
   outline: 0;
   background-color: #ffda44;
-  /* Konqueror */
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
-  /* Safari4+, Chrome */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffda44), to(#fabc2b));
   /* Safari5.1+, Chrome10+ */
   background-image: -webkit-linear-gradient(#ffda44, #fabc2b);
   /* Firefox3.6 */
@@ -940,10 +924,6 @@ input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
   background-color: #ffe477;
-  /* Konqueror */
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
-  /* Safari4+, Chrome */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe477), to(#fbcc5d));
   /* Safari5.1+, Chrome10+ */
   background-image: -webkit-linear-gradient(#ffe477, #fbcc5d);
   /* Firefox3.6 */
@@ -963,10 +943,6 @@ input[type="submit"]:active {
   top: 1px;
   color: #1a1a1a;
   background-color: #fabc2b;
-  /* Konqueror */
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
-  /* Safari4+, Chrome */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fabc2b), to(#ffda44));
   /* Safari5.1+, Chrome10+ */
   background-image: -webkit-linear-gradient(#fabc2b, #ffda44);
   /* Firefox3.6 */

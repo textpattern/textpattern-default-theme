@@ -21,10 +21,6 @@
 @mixin gradient($color-gradient-from, $color-gradient-to) {
 	background: {
 		color: $color-gradient-from;
-		/* Konqueror */
-		image:  -khtml-gradient(linear, left top, left bottom, from($color-gradient-from), to($color-gradient-to));
-		/* Safari4+, Chrome */
-		image: -webkit-gradient(linear, left top, left bottom, from($color-gradient-from), to($color-gradient-to));
 		/* Safari5.1+, Chrome10+ */
 		image: -webkit-linear-gradient($color-gradient-from, $color-gradient-to);
 		/* Firefox3.6 */
