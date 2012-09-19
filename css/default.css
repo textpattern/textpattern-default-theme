@@ -701,7 +701,6 @@ input[type="checkbox"]:active {
   box-shadow: none;
 }
 
-textarea,
 input[type="color"],
 input[type="date"],
 input[type="datetime"],
@@ -715,7 +714,9 @@ input[type="tel"],
 input[type="text"],
 input[type="time"],
 input[type="url"],
-input[type="week"] {
+input[type="week"],
+select,
+textarea {
   /* remove iOS Safari default styling */
   -webkit-appearance: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -754,23 +755,15 @@ textarea {
   width: 100%;
 }
 
-select {
-  font-family: Arial, Helvetica, sans-serif;
-  /* 12px */
-  font-size: .85714285714286em;
-  text-align: left;
-  border: solid 1px #ccc;
-  padding: .5em;
-  background: #fff;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 textarea,
 select[size],
 select[multiple] {
   height: auto;
+}
+
+select[size="0"],
+select[size="1"] {
+  height: 2.33333333333333em;
 }
 
 optgroup {
@@ -1001,16 +994,20 @@ input[type="submit"]:active {
 /* addresses select alignment in Safari/Chrome */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
 
+select[size],
+select[multiple],
+select[multiple][size] {
+  background-image: none;
+  padding-right: .5em;
+}
+
 select,
 select[size="0"],
 select[size="1"] {
-  height: 2.2em;
-}
-
-select:not([size]),
-select:not([multiple]) {
-  position: relative;
-  top: -1px;
+  background: #fff url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='12px' height='4px' viewBox='0 0 12 4' enable-background='new 0 0 12 4' xml:space='preserve'><polygon fill='#333333' points='3.5,4 0,0 7,0'/></svg>") no-repeat right center;
+  padding-right: 2em;
+  -webkit-background-size: 1em .33333333333333em;
+  background-size: 1em .33333333333333em;
 }
 
 }
