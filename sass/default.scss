@@ -27,6 +27,11 @@ summary {
 	display: block;
 }
 
+/* corrects summary not showing as clickable */
+summary {
+	cursor: pointer;
+}
+
 /* addresses styling for 'hidden' attribute not present in IE8-9 */
 [hidden] {
 	display: none;
