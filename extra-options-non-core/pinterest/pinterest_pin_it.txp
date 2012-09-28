@@ -1,0 +1,7 @@
+<!-- Pinterest 'Pin it' button support - more info/extra options at: http://https://support.pinterest.com/entries/21101982-adding-the-pin-it-button-to-your-website -->
+
+<!-- add code below into your default.article.txp form (around line 25 is recommended) -->
+<a href="http://pinterest.com/pin/create/button/?url=<txp:permlink /><txp:if_article_image>&amp;media=http://example.com<txp:images><txp:image_url /></txp:images></txp:if_article_image>" class="pin-it-button">Pin it</a>
+
+<!-- place this render call where appropriate -->
+<script>(function(w,d,load){var script,first=d.getElementsByTagName('script')[0],n=load.length,i=0,go=function(){for (i = 0; i < n; i = i + 1) {script=d.createElement('script');script.async=true;script.src=load[i];first.parentNode.insertBefore(script,first);}}if(w.attachEvent){w.attachEvent('onload',go);}else{w.addEventListener('load',go,false);}}(window,document,['']));</script>

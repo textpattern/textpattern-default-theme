@@ -157,6 +157,12 @@ h4. /extra-options-non-core/page_title/page_title.misc.txp
 
 Use this form in your site to provide more context focused page titles, it sets up a variable to check what section you are in and provide specific title content. Based on an example by Els Lepelaars. Create a new form in the system with name of 'page_title' and type of 'misc', then copy/paste the code from this file into it. This form can then be called from your page/form templates by inserting @<txp:output_form form="page_title" />@ into the @<head>@ section.
 
+h2. Extra code option: pinterest
+
+h4. /extra-options-non-core/pinterest/pinterest_pin_it.txp
+
+Add a Pinterest 'Pin it' button to each of your articles. Paste the code from that form into your default.article.txp form (around line 25 is recommended).
+
 h2. Extra code option: recent_articles
 
 h4. /extra-options-non-core/recent_articles/recent_articles.css
