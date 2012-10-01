@@ -15,14 +15,14 @@
     </txp:if_category>
     </txp:if_search>
   <txp:else />
-    <txp:variable name="page-title" value='<txp:title /> &#124; <txp:site_name />' />
+    <txp:variable name="page-title" value='<txp:title no_widow="0" /> &#124; <txp:site_name />' />
   </txp:if_article_list>
 <!-- is this not the default section? -->
 <txp:else />
   <txp:if_article_list>
     <txp:variable name="page-title" value='<txp:section title="1" /> &#124; <txp:site_name />' />
   <txp:else />
-    <txp:variable name="page-title" value='<txp:title /> &#124; <txp:site_name />' />
+    <txp:variable name="page-title" value='<txp:title no_widow="0" /> &#124; <txp:site_name />' />
   </txp:if_article_list>
 </txp:if_section>
 <title><txp:variable name="page-title" /></title>
