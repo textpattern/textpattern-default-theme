@@ -96,9 +96,13 @@ Place this file into your root /js/ directory (you may wish to "minify":http://e
 
 h2. Extra code option: facebook
 
-h4. /extra-options-non-core/google_plus/facebook_like.txp
+h4. /extra-options-non-core/facebook/facebook_like.txp
 
 Add a Facebook 'Like' button to each of your articles. Paste the code from that form into your default.article.txp form (around line 25 is recommended).
+
+h4. /extra-options-non-core/facebook/meta_open_graph.txp
+
+Meta tags for the "Open Graph protocol":http://ogp.me, required for Facebook 'Like' button functionality but can also be used independently of any Facebook widgets (although only Facebook seem to use this protocol in any meaningful way).
 
 h2. Extra code option: flickr
 
