@@ -4,9 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-<!-- page title and metas, no meta keywords as they are now obsolete -->
   <title><txp:page_title /></title>
-  <meta name="description" content="">
   <meta name="generator" content="Textpattern CMS">
   <meta name="robots" content="noindex, follow, noodp, noydir">
 
