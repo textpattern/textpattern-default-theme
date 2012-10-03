@@ -13,7 +13,6 @@ header,
 nav ul,
 .container,
 footer,
-#paginator,
-#monthly-list {
+#paginator {
 	@include clearfix;
 }

@@ -8,6 +8,16 @@
   padding: 0;
 }
 
+#monthly-list:before,
+#monthly-list:after {
+  content: "";
+  display: table;
+}
+
+#monthly-list:after {
+  clear: both;
+}
+
 #monthly-list li {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
