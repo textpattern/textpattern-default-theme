@@ -44,9 +44,7 @@ nav ul:after,
 footer:before,
 footer:after,
 #paginator:before,
-#paginator:after,
-#monthly-list:before,
-#monthly-list:after {
+#paginator:after {
   content: "";
   display: table;
 }
@@ -56,8 +54,7 @@ header:after,
 nav ul:after,
 .container:after,
 footer:after,
-#paginator:after,
-#monthly-list:after {
+#paginator:after {
   clear: both;
 }
 
