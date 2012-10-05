@@ -54,8 +54,7 @@
   </header>
 
 <!-- navigation -->
-  <nav role="navigation">
-    <h1><txp:text item="navigation" /></h1>
+  <nav role="navigation" aria-label="<txp:text item='navigation' />">
     <txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="">
       <li<txp:if_section name='<txp:section />'> class="active"</txp:if_section>>
         <txp:section title="1" link="1" />
@@ -67,7 +66,7 @@
     <div class="container">
 
 <!-- left (main) column -->
-      <div role="main">
+      <div role="main" aria-label="<txp:text item='main_content' />">
 
         <txp:if_article_list><h1><txp:section title="1" /></h1></txp:if_article_list>
 
