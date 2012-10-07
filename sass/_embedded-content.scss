@@ -24,7 +24,7 @@ video {
 }
 
 img {
-	/* removes border when inside `a` element in IE8-9 */
+	/* removes border when inside `<a>` element in IE8-9 */
 	border: 0;
 
 	&.align-left {
