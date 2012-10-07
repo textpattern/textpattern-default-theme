@@ -67,7 +67,7 @@ a[rel="tag"] {
 	}
 }
 
-/* show long-form for abbreviations in print (note: acroymn to be phased out in Textile as it's obsolete in HTML5) */
+/* show long-form for abbreviations in print */
 abbr[title] {
 	&:after {
 		content: " (" attr(title) ")";
@@ -198,7 +198,7 @@ caption {
 	margin-bottom: 4pt;
 }
 
-/* display table head across multi-page tables - http://css-discuss.incutio.com/wiki/Printing_Tables */
+/* display table head across multi-page tables */
 thead {
 	display: table-header-group;
 	th {

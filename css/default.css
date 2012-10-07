@@ -18,12 +18,12 @@ summary {
   display: block;
 }
 
-/* corrects summary not showing as clickable */
+/* corrects `<summary>` not showing as clickable */
 summary {
   cursor: pointer;
 }
 
-/* addresses styling for 'hidden' attribute not present in IE8-9, Firefox3, Safari4 */
+/* addresses styling for `hidden` attribute not present in IE8-9, Firefox3, Safari4 */
 [hidden] {
   display: none;
 }
@@ -74,8 +74,7 @@ footer:after,
 html {
   /* always force scrollbar padding so we don't get 'jumping' */
   overflow-y: scroll;
-  /* prevents iOS text size adjust after orientation change, without disabling user zoom -
-     http://www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+  /* prevents iOS text size adjust after orientation change, without disabling user zoom */
   -webkit-text-size-adjust: 100%;
   /* as above, for Windows Phone */
   -ms-text-size-adjust: 100%;
@@ -411,7 +410,7 @@ pre code {
   background: none;
 }
 
-/* prevents sub and sup affecting line-height in all browsers */
+/* prevents `<sub>` and `<sup>` affecting line-height in all browsers */
 sub,
 sup {
   /* 12px */
@@ -488,7 +487,7 @@ video {
   height: auto;
 }
 
-/* removes border when inside 'a' element in IE8-9 */
+/* removes border when inside `a` element in IE8-9 */
 img {
   border: 0;
 }
@@ -512,7 +511,7 @@ figure {
   margin: 0;
 }
 
-/* prevents modern browsers from displaying 'audio' without controls, remove excess height in iOS5 devices */
+/* prevents modern browsers from displaying `<audio>` without controls, remove excess height in iOS5 devices */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -641,7 +640,7 @@ textarea {
   vertical-align: baseline;
 }
 
-/* colour placeholder text (Webkit and Mozilla only, so far) */
+/* colour placeholder text (WebKit and Mozilla only, so far) */
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #888;
@@ -664,7 +663,7 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* suppress red glow that Firefox adds to form fields by default, even when user is still typing
+/* suppress red glow that Firefox adds to form fields by default, even when user is still typing,
    add focus glow on form elements and kill phantom spacing and dotted border that appears in Firefox */
 button:invalid,
 a.button:invalid,
@@ -1159,7 +1158,7 @@ video {
 @media print {
 
 * {
-  /* black prints faster - http://sanbeiji.com/archives/953 */
+  /* black prints faster */
   color: black !important;
   text-shadow: none !important;
   background: transparent !important;
@@ -1344,7 +1343,7 @@ caption {
   margin-bottom: 4pt;
 }
 
-/* display table head across multi-page tables - http://css-discuss.incutio.com/wiki/Printing_Tables */
+/* display table head across multi-page tables */
 thead {
   display: table-header-group;
 }

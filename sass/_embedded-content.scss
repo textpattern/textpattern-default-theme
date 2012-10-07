@@ -7,7 +7,7 @@
 /* Embedded content
    ========================================================================== */
 
-/* corrects inline-block display not defined in IE8-9, Firefox3 */
+/* corrects `inline-block` display not defined in IE8-9, Firefox3 */
 audio,
 canvas,
 video {
@@ -24,7 +24,7 @@ video {
 }
 
 img {
-	/* removes border when inside 'a' element in IE8-9 */
+	/* removes border when inside `a` element in IE8-9 */
 	border: 0;
 
 	&.align-left {
@@ -47,7 +47,7 @@ figure {
 	margin: 0;
 }
 
-/* prevents modern browsers from displaying 'audio' without controls, remove excess height in iOS5 devices */
+/* prevents modern browsers from displaying `<audio>` without controls, remove excess height in iOS5 devices */
 audio:not([controls]) {
 	display: none;
 	height: 0;

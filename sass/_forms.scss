@@ -30,7 +30,7 @@ textarea {
 	vertical-align: baseline;
 }
 
-/* colour placeholder text (Webkit and Mozilla only, so far) */
+/* colour placeholder text (WebKit and Mozilla only, so far) */
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
 	color: $color-text-footnote;
@@ -53,7 +53,7 @@ input[type="search"]::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
 
-/* suppress red glow that Firefox adds to form fields by default, even when user is still typing
+/* suppress red glow that Firefox adds to form fields by default, even when user is still typing,
    add focus glow on form elements and kill phantom spacing and dotted border that appears in Firefox */
 button,
 a.button,
@@ -144,7 +144,7 @@ select[size="1"] {
 	height: 2.33333333333333em; // 28px / 12px
 }
 
-/* addresses select alignment in Safari/Chrome */
+/* addresses `<select>` alignment in Safari/Chrome */
 @media (-webkit-min-device-pixel-ratio: 0) {
 
 	select[size],
@@ -166,7 +166,7 @@ select[size="1"] {
 }
 
 optgroup {
-	font-family: $font-sans-serif; // Font family repeated, for Firefox
+	font-family: $font-sans-serif; // font family repeated, for Firefox
 	font-style: normal;
 	font-weight: normal;
 	color: $color-text;
@@ -177,7 +177,7 @@ optgroup {
 	}
 }
 
-/* addresses box sizing set to content-box and excess padding in IE8-9 */
+/* addresses box sizing set to `content-box` and excess padding in IE8-9 */
 input[type="checkbox"],
 input[type="radio"] {
 	padding: 0;
