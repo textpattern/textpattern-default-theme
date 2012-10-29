@@ -612,16 +612,11 @@ dt {
 /* Forms
    ========================================================================== */
 
-/* corrects margin displayed oddly in IE6-7 */
-form {
-  margin: 0;
-}
-
-/* remove default fieldset styling across browsers */
+/* define consistent fieldset margin, border and padding */
 fieldset {
-  margin: 0;
-  border: 0;
-  padding: 0;
+  margin: 1em 0;
+  border: 1px solid #ccc;
+  padding: 1px 1em;
 }
 
 /* remove padding so people aren't caught out if they zero out fieldsets */
