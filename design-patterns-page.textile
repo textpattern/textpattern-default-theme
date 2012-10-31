@@ -104,8 +104,8 @@ Remember that all images and videos in the theme are @max-width:100%;@ for flexi
 h3. Audio
 
 notextile. <audio controls>
-<source src="http://philwareham.co.uk/audio/nokia_dead.mp3"/>
-<source src="http://philwareham.co.uk/audio/nokia_dead.ogg"/>
+<source src="http://philwareham.co.uk/audio/nokia_dead.mp3">
+<source src="http://philwareham.co.uk/audio/nokia_dead.ogg">
 </audio>
 
 h3. Images
@@ -132,8 +132,8 @@ notextile. <svg width="100px" height="100px">
 h3. Videos
 
 notextile. <video poster="http://cdn.kaltura.org/apis/html5lib/kplayer-examples/media/bbb480.jpg" controls>
-<source src="http://cdn.kaltura.org/apis/html5lib/kplayer-examples/media/bbb_trailer_iphone.m4v"/>
-<source src="http://cdn.kaltura.org/apis/html5lib/kplayer-examples/media/bbb400p.ogv"/>
+<source src="http://cdn.kaltura.org/apis/html5lib/kplayer-examples/media/bbb_trailer_iphone.m4v">
+<source src="http://cdn.kaltura.org/apis/html5lib/kplayer-examples/media/bbb400p.ogv">
 </video>
 
 h2. Image alignment
