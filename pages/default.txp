@@ -83,7 +83,7 @@
       <txp:if_search>
 
         <h1><txp:text item="search_results" /></h1>
-        <txp:output_form form="search_results"/>
+        <txp:output_form form="search_results" />
 
       <txp:else />
 

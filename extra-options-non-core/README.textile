@@ -192,7 +192,7 @@ Place this code into your page template at the desired location for your slider 
 If you only want to display your slider on the homepage of your website then wrap it in @<txp:if_section />@ tags like so:
 
 bc. <txp:if_section name="">
-  <txp:output_form form="slider"/>
+  <txp:output_form form="slider" />
 </txp:if_section>
 
 h4. /extra-options-non-core/responsiveslides/responsiveslides.css
