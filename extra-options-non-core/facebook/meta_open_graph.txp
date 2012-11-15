@@ -27,7 +27,3 @@
 <meta property="og:image" content="<txp:if_individual_article><txp:if_article_image><txp:images limit='1'><txp:image_url/></txp:images><txp:else /><txp:site_url />images/open-graph.png</txp:if_article_image><txp:else /><txp:site_url />images/open-graph.png</txp:if_individual_article>">
 <meta property="og:url" content="<txp:if_individual_article><txp:permlink /><txp:else /><txp:if_section><txp:section url='1' /><txp:else /><txp:if_category><txp:category url='1' /><txp:else /><txp:site_url /></txp:if_category></txp:if_section></txp:if_individual_article>">
 <meta property="og:site_name" content="<txp:site_name />">
-
-<!-- for Facebook 'Like' buttons you'll also need to add this line along with your Facebook App ID -
-     more info at: http://developers.facebook.com/docs/opengraph -->
-<meta property="fb:appid" content="">

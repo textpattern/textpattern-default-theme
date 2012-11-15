@@ -1,8 +1,3 @@
 <!-- Facebook 'Like' button support - more info/extra options at: http://developers.facebook.com/docs/reference/plugins/like -->
 
-<!-- add code below into your default.article.txp form (around line 25 is recommended) -->
-<div class="fb-like" data-href="<txp:permlink />" data-send="false" data-layout="button_count" data-width="225" data-show-faces="false" data-font="verdana"></div>
-
-<!-- place this render call where appropriate - note: this example is set to international English (en-GB), you may want to change that -->
-<div id="fb-root"></div>
-<script>(function(d,s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
+<iframe class="facebook-like" src="//www.facebook.com/plugins/like.php?href=<txp:permlink />&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;height=21"></iframe>
