@@ -19,6 +19,10 @@
 
   </a></p>
 
+  <txp:if_article_image>
+    <txp:images form="images" />
+  </txp:if_article_image>
+
   <div itemprop="articleBody">
     <txp:body />
   </div>
