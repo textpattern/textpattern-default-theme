@@ -82,24 +82,36 @@
       <!-- is this result result page? also omits the pagination links below (uses pagination format within search_results.article.txp instead) -->
       <txp:if_search>
 
-        <h1><txp:text item="search_results" /></h1>
-        <txp:output_form form="search_results" />
+	    <section role="region" itemscope itemtype="http://schema.org/SearchResultsPage">
+          <h1 itemprop="name"><txp:text item="search_results" /></h1>
+          <div itemprop="mainContentOfPage">
+            <txp:output_form form="search_results" />
+          </div>
+	    </section>
 
       <txp:else />
 
         <!-- else is this an article category list? -->
         <txp:if_category>
 
-          <h1><txp:text item="category" /> <txp:category title="1" /></h1>
-          <txp:article form="article_listing" limit="5" />
+	      <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
+            <h1 itemprop="name"><txp:text item="category" /> <txp:category title="1" /></h1>
+            <div itemprop="mainContentOfPage">
+              <txp:article form="article_listing" limit="5" />
+            </div>
+	      </section>
 
         <txp:else />
 
           <!-- else is this an article author list? -->
           <txp:if_author>
 
-          <h1><txp:text item="author" /> <txp:author /></h1>
-          <txp:article form="article_listing" limit="5" />
+	        <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
+              <h1 itemprop="name"><txp:text item="author" /> <txp:author /></h1>
+              <div itemprop="mainContentOfPage">
+                <txp:article form="article_listing" limit="5" />
+              </div>
+	        </section>
 
           <txp:else />
 
@@ -117,12 +129,11 @@
         <txp:variable name="next" value='<txp:newer />' />
 
         <txp:if_variable name="prev" value="">
-          <span id="paginator-l" class="button disabled">&#8592; <txp:text item="older" /></span>
         <txp:else />
           <a id="paginator-l" href="<txp:older />" title="<txp:text item='older' />" class="button">&#8592; <txp:text item="older" /></a>
         </txp:if_variable>
+
         <txp:if_variable name="next" value="">
-          <span id="paginator-r" class="button disabled"><txp:text item="newer" /> &#8594;</span>
         <txp:else />
             <a id="paginator-r" href="<txp:newer />" title="<txp:text item='newer' />" class="button"><txp:text item="newer" /> &#8594;</a>
         </txp:if_variable>
