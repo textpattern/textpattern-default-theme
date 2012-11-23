@@ -42,25 +42,21 @@
   this method is more flexibile than using simple txp:older/txp:newer tags -->
 <txp:if_search_results min="11">
 
-  <txp:variable name="more" value='<txp:older /><txp:newer />' />
   <txp:variable name="prev" value='<txp:older />' />
   <txp:variable name="next" value='<txp:newer />' />
 
-  <txp:if_variable name="more" value="">
-  <txp:else />
-    <p id="paginator">
+  <p id="paginator">
 
-      <txp:if_variable name="next" value="">
-      <txp:else />
-        <a id="paginator-l" href="<txp:newer />" title="&#8592; <txp:text item="prev" />" class="button">&#8592; <txp:text item="prev" /></a>
-      </txp:if_variable>
+    <txp:if_variable name="next" value="">
+    <txp:else />
+      <a id="paginator-l" href="<txp:newer />" title="&#8592; <txp:text item="prev" />" class="button">&#8592; <txp:text item="prev" /></a>
+    </txp:if_variable>
 
-      <txp:if_variable name="prev" value="">
-      <txp:else />
-        <a id="paginator-r" href="<txp:older />" title="<txp:text item="next" /> &#8594;" class="button"><txp:text item="next" /> &#8594;</a>
-      </txp:if_variable>
+    <txp:if_variable name="prev" value="">
+    <txp:else />
+      <a id="paginator-r" href="<txp:older />" title="<txp:text item="next" /> &#8594;" class="button"><txp:text item="next" /> &#8594;</a>
+    </txp:if_variable>
 
-    </p>
-  </txp:if_variable>
+  </p>
 
 </txp:if_search_results>
