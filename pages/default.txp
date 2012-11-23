@@ -123,22 +123,26 @@
 
         <!-- add pagination links to foot of article/article listings/category listings if there are more articles available,
           this method is more flexibile than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
-        <p id="paginator">
-
+        <txp:variable name="more" value='<txp:older /><txp:newer />' />
         <txp:variable name="prev" value='<txp:older />' />
         <txp:variable name="next" value='<txp:newer />' />
 
-        <txp:if_variable name="prev" value="">
+        <txp:if_variable name="more" value="">
         <txp:else />
-          <a id="paginator-l" href="<txp:older />" title="<txp:text item='older' />" class="button">&#8592; <txp:text item="older" /></a>
-        </txp:if_variable>
+          <p id="paginator">
 
-        <txp:if_variable name="next" value="">
-        <txp:else />
-            <a id="paginator-r" href="<txp:newer />" title="<txp:text item='newer' />" class="button"><txp:text item="newer" /> &#8594;</a>
-        </txp:if_variable>
+            <txp:if_variable name="prev" value="">
+            <txp:else />
+              <a id="paginator-l" href="<txp:older />" title="<txp:text item='older' />" class="button">&#8592; <txp:text item="older" /></a>
+            </txp:if_variable>
 
-        </p>
+            <txp:if_variable name="next" value="">
+            <txp:else />
+              <a id="paginator-r" href="<txp:newer />" title="<txp:text item='newer' />" class="button"><txp:text item="newer" /> &#8594;</a>
+            </txp:if_variable>
+
+          </p>
+        </txp:if_variable>
 
       </txp:if_search>
 
