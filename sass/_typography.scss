@@ -77,10 +77,9 @@ blockquote {
 	/* 16px */
 	font-size: 1.14285714285714em;
 	font-style: italic;
-	margin: .875em 0 .875em 0;
-	padding: 1px .875em;
-	@include border-radius($default-border-radius);
-	background: $color-highlight-box;
+	margin: .875em 0 .875em 0; // 14px / 16px
+	border-left: 3px solid $color-border;
+	padding: 0 0 0 .875em;
 }
 
 /* sets consistent quote types */

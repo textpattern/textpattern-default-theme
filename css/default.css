@@ -340,11 +340,9 @@ blockquote {
   font-size: 1.14285714285714em;
   font-style: italic;
   margin: .875em 0 .875em 0;
-  padding: 1px .875em;
-  -moz-border-radius: .35714285714286em;
-  border-radius: .35714285714286em;
-  background: #fff6d3;
-}
+  border-left: 3px solid #cccccc;
+  padding: 0 0 0 .875em;
+  }
 
 /* sets consistent quote types */
 q {
@@ -1078,13 +1076,6 @@ h3 {
   font-size: 1.5em;
 }
 
-blockquote {
-  float: right;
-  margin: 0 0 .875em .875em;
-  /* 254px / 592px */
-  width: 42.905405405405%;
-}
-
 }
 
 
@@ -1253,8 +1244,9 @@ small,
 }
 
 blockquote {
-  border: solid 1pt black;
-  padding: 0 8pt;
+  font-size: 16pt;
+  border-left: 3pt solid black;
+  padding: 0 0 0 8pt;
   page-break-inside: avoid;
 }
 

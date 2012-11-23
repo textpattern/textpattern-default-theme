@@ -113,8 +113,9 @@ small,
 }
 
 blockquote {
-	border: solid 1pt black;
-	padding: 0 8pt;
+	font-size: 16pt;
+	border-left: 3pt solid black;
+	padding: 0 0 0 8pt;
 	page-break-inside: avoid;
 }
 
