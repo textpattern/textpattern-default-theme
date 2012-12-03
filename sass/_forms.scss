@@ -186,7 +186,7 @@ input[type="radio"] {
 
 /* make sure disable elements really are disabled */
 button[disabled],
-input[disabled],
+html input[disabled], // `html` is a workaround for Android 4 bug
 input[type="button"][disabled],
 input[type="reset"][disabled],
 input[type="submit"][disabled],
