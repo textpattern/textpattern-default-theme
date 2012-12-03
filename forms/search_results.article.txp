@@ -49,12 +49,12 @@
 
     <txp:if_variable name="next" value="">
     <txp:else />
-      <a id="paginator-l" href="<txp:newer />" title="&#8592; <txp:text item="prev" />" class="button">&#8592; <txp:text item="prev" /></a>
+      <a id="paginator-l" href="<txp:newer />" title="&#8592; <txp:text item="prev" />" class="button" rel="prev">&#8592; <txp:text item="prev" /></a>
     </txp:if_variable>
 
     <txp:if_variable name="prev" value="">
     <txp:else />
-      <a id="paginator-r" href="<txp:older />" title="<txp:text item="next" /> &#8594;" class="button"><txp:text item="next" /> &#8594;</a>
+      <a id="paginator-r" href="<txp:older />" title="<txp:text item="next" /> &#8594;" class="button" rel="next"><txp:text item="next" /> &#8594;</a>
     </txp:if_variable>
 
   </p>
