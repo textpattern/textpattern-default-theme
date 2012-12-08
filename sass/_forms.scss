@@ -7,14 +7,14 @@
 /* Forms
    ========================================================================== */
 
-/* define consistent fieldset margin, border and padding */
+/* zero out fieldsets */
 fieldset {
-	margin: 1em 0;
-	border: 1px solid $color-border;
-	padding: 1px 1em;
+	margin: 0;
+	border: 0;
+	padding: 0;
 }
 
-/* remove padding so people aren't caught out if they zero out fieldsets */
+/* zero out legends */
 legend {
     border: 0;
     padding: 0;
