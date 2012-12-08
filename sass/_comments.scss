@@ -54,12 +54,6 @@
 /* Popup comments (can be removed if you don't use popups)
    ========================================================================== */
 
-#popup-page {
-	.wrapper {
-		padding-top: 0;
-	}
-
-	.container {
-		max-width: 52em;
-	}
+#popup-page .container {
+	max-width: 52em;
 }

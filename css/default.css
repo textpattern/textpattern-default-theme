@@ -72,6 +72,7 @@ body {
 }
 
 .wrapper {
+  padding: 1px 0;
   border-bottom: solid 1px #cccccc;
   background: white;
 }
@@ -949,10 +950,6 @@ input[type="submit"]:focus {
 
 /* Popup comments (can be removed if you don't use popups)
    ========================================================================== */
-
-#popup-page .wrapper {
-  padding-top: 0;
-}
 
 #popup-page .container {
   max-width: 52em;
