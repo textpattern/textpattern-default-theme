@@ -3,8 +3,6 @@
 /* browser upgrade message (chromeframe) */
 
 #chromeframe {
-  /* 16px */
-  font-size: 1.14285714285714em;
-  padding: .875em;
+  padding: 1em;
   background: #fff6d3;
 }

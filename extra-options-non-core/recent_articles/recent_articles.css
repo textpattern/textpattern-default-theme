@@ -8,13 +8,9 @@
   padding: 0;
 }
 
-#monthly-list:before,
 #monthly-list:after {
   content: "";
   display: table;
-}
-
-#monthly-list:after {
   clear: both;
 }
 
@@ -26,8 +22,8 @@
   margin: 0 .5em .5em 0;
   min-width: 2.5em;
   border: solid 1px #ccc;
-  -moz-border-radius: .35714285714286em;
-  border-radius: .35714285714286em;
+  -moz-border-radius: 0 0 .25em .25em;
+  border-radius: .25em .25em 0 0;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -60,12 +56,10 @@
 
 #monthly-list a .archive-year {
   /* 12px */
-  font-size: .85714285714286em;
+  font-size: .75em;
   font-weight: bold;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
-  -moz-border-radius: .35714285714286em .35714285714286em 0 0;
-  border-radius: .35714285714286em .35714285714286em 0 0;
-  padding: 0 .33333333333333em;
+  padding: 0 .25em;
   background-color: #ffda44;
   /* Safari5.1+, Chrome10+ */
   background-image: -webkit-linear-gradient(#ffda44, #fabc2b);
@@ -91,9 +85,7 @@
 }
 
 #monthly-list a .archive-month {
-  -moz-border-radius: 0 0 .35714285714286em .35714285714286em;
-  border-radius: 0 0 .35714285714286em .35714285714286em;
-  padding: 0 .28571428571429em;
+  padding: 0 .25em;
 }
 
 #monthly-list a:hover .archive-month,

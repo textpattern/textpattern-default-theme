@@ -43,7 +43,7 @@ a {
 	}
 }
 
-[role="main"] h1 a {
+h1 a {
 	color: $color-text;
 	@include border-radius(.125em);
 
@@ -55,7 +55,7 @@ a {
 	&:active {
 		text-decoration: none;
 		color: $color-text;
-		background: darken($color-background-box, 3%);
+		background: darken($color-background-box, 4%);
 	}
 }
 

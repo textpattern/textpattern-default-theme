@@ -5,12 +5,12 @@
 
 
 /* ==========================================================================
-   Additional layout for screen media 490px and up
+   Additional layout for screen media 576px and up
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: $break-small) {
 
-nav {
+#site-navigation {
 	ul {
 		width: 93.75%;
 	}
@@ -34,40 +34,23 @@ nav {
 
 
 /* ==========================================================================
-   Additional layout for screen media 672px and up
+   Additional layout for screen media 864px and up
    ========================================================================== */
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: $break-medium) {
 
 [role="main"] {
 	float: left;
-	/* 592px / 960px */
-	width: 61.666666666667%;
+	width: 62.5%;
 }
 
 [role="complementary"] {
 	float: right;
 	border: solid 1px lighten($color-border, 9%);
 	@include border-radius($default-border-radius);
-	padding: 1em 1em 0;
-	/* 290px / 960px */
-	width: 30.208333333333%;
+	padding: 0 1em;
+	width: 30%;
 	background: $color-background-box;
-}
-
-h1 {
-	/* 42px */
-	font-size: 3em;
-}
-
-h2 {
-	/* 28px */
-	font-size: 2em;
-}
-
-h3 {
-	/* 21px */
-	font-size: 1.5em;
 }
 
 }
@@ -77,19 +60,14 @@ h3 {
    Additional layout for screen media 1280px and up
    ========================================================================== */
 
-@media only screen and (min-width: 80em) {
-
-body {
-	/* 16px */
-	font-size: 100%;
-}
+@media only screen and (min-width: $break-large) {
 
 header,
 .container,
-nav ul,
+#site-navigation ul,
 footer {
-	/* 1152px / 1280px */
-	width: 90%;
+	/* 1200px / 1280px */
+	width: 93.75%;
 }
 
 }

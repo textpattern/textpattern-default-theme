@@ -22,8 +22,8 @@
 		margin: 0 .5em .5em 0;
 		min-width: 2.5em;
 		border: solid 1px $color-border;
-		@include border-radius;
-		@include box-shadow;
+		@include border-radius(0 0 .25em .25em);
+		@include box-shadow(0 0 .25em .25em);
 		background: #fff;
 
 		&:active {
@@ -52,11 +52,10 @@
 
 		.archive-year {
 			/* 12px */
-			font-size: .85714285714286em;
+			font-size: .75em;
 			font-weight: bold;
 			@include text-shadow-light;
-			@include border-radius($default-border-radius $default-border-radius 0 0);
-			padding: 0 .33333333333333em;
+			padding: 0 .25em;
 			@include gradient;
 		}
 
@@ -66,8 +65,7 @@
 		}
 
 		.archive-month {
-			@include border-radius(0 0 $default-border-radius $default-border-radius);
-			padding: 0 .28571428571429em;
+			padding: 0 .25em;
 		}
 
 		&:hover .archive-month,

@@ -4,11 +4,11 @@
    ========================================================================== */
 
 .rslides-container {
-  margin: 0 0 2em 0;
+  margin: 2em 0;
   border: solid 1px #ccc;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  padding: 6px;
+  -moz-border-radius: .25em;
+  border-radius: .25em;
+  padding: .375em;
   background: #fff;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -19,7 +19,6 @@
   position: relative;
   list-style: none;
   overflow: hidden;
-  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -32,22 +31,14 @@
   display: none;
 }
 
-.rslides li:first-child {
-  position: relative;
-  float: left;
-  display: block;
-}
-
 .rslides img {
   float: left;
-  display: block;
-  width: 100%;
 }
 
 /* slideshow navigator */
 
 a.rslides_nav {
-  padding: .38461538461538em;
+  padding: .25em;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1;
 }
@@ -74,20 +65,21 @@ a.rslides_nav:hover {
 }
 
 .rslides_tabs li {
-  margin: 8px .25em 0;
+  margin: .375em .25em 0;
   display: inline-block;
 }
 
 .rslides_tabs a {
+  font-size: .75em;
   display: block;
   text-indent: -9999px;
   border: 1px solid;
   border-color: #ccc;
-  -moz-border-radius: .38461538461538em;
-  border-radius: .38461538461538em;
+  -moz-border-radius: .5em;
+  border-radius: .5em;
   background: #fff;
-  width: .76923076923077em;
-  height: .76923076923077em;
+  width: 1em;
+  height: 1em;
 }
 
 .rslides_tabs a:hover {

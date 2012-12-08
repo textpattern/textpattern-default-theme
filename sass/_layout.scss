@@ -23,7 +23,6 @@ body {
 
 .wrapper {
 	border-bottom: solid 1px $color-border;
-	padding-top: 2em;
 	background: $color-background;
 }
 
@@ -44,26 +43,21 @@ header {
 	}
 
 	h3 {
-		/* 14px margin top */
+		/* 16px margin top */
 		margin: .66666666666667em 0 0;
 	}
 }
 
-nav {
+#site-navigation {
 	border-top: solid 1px $color-gradient-border;
 	border-bottom: solid 1px $color-gradient-border;
 	@include gradient($color-gradient-from, $color-gradient-to);
-
-	h1 {
-		display: none;
-	}
 
 	ul {
 		margin: 0 auto;
 		padding: 0;
 		max-width: $container-max-width;
 		list-style: none;
-		list-style-image: none;
 	}
 
 	li {
@@ -75,7 +69,7 @@ nav {
 		}
 
 		&:hover,
-		.active {
+		&.active {
 			@include gradient(lighten($color-gradient-from, 10%), lighten($color-gradient-to, 10%));
 		}
 
@@ -89,6 +83,7 @@ nav {
 		display: block;
 		padding: .5em 3.125%;
 		color: $color-text;
+		text-decoration: none;
 	}
 }
 
@@ -97,9 +92,9 @@ nav {
 }
 
 [role="complementary"] {
-	margin-bottom: 2em;
-	padding-top: 2em;
+	margin: 2em 0;
 	border-top: dashed 2px $color-border;
+	padding-top: 1em;
 }
 
 [role="search"] p {

@@ -20,13 +20,12 @@ legend {
     padding: 0;
 }
 
-/* corrects font family not being inherited in all browsers, corrects font size not being inherited in all browsers,
+/* corrects font size not being inherited in all browsers,
    addresses margins set differently in Firefox 4+, Safari 5+, and Chrome */
 button,
 input,
 select,
 textarea {
-	font-family: inherit;
 	font-size: 100%;
 	margin: 0;
 }
@@ -132,27 +131,6 @@ select[size="1"] {
 	height: 2.28571428571429em;
 }
 
-/* addresses `<select>` alignment in Safari/Chrome */
-@media (-webkit-min-device-pixel-ratio: 0) {
-
-	select[size],
-	select[multiple],
-	select[multiple][size] {
-		background-image: none;
-		padding-right: .5em;
-	}
-
-	select,
-	select[size="0"],
-	select[size="1"] {
-		background: #fff url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='12px' height='4px' viewBox='0 0 12 4' enable-background='new 0 0 12 4' xml:space='preserve'><polygon fill='#333333' points='3.5,4 0,0 7,0'/></svg>") no-repeat right center;
-		padding-right: 2em;
-		-webkit-background-size: 1em .28571428571429em; // 14px 4px
-		        background-size: 1em .28571428571429em; // 14px 4px
-	}
-
-}
-
 optgroup {
 	font-family: $font-sans-serif; // font family repeated, for Firefox
 	font-style: normal;
@@ -216,4 +194,25 @@ span.disabled {
 	textarea {
 		height: 5.5em;
 	}
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 0) {
+
+	/* addresses `<select>` alignment in Safari/Chrome */
+	select[size],
+	select[multiple],
+	select[multiple][size] {
+		background-image: none;
+		padding-right: .5em;
+	}
+	select,
+	select[size="0"],
+	select[size="1"] {
+		background: #fff url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='12px' height='4px' viewBox='0 0 12 4' enable-background='new 0 0 12 4' xml:space='preserve'><polygon fill='#333333' points='3.5,4 0,0 7,0'/></svg>") no-repeat right center;
+		padding-right: 2em;
+		-webkit-background-size: 1em .28571428571429em; // 14px 4px
+		        background-size: 1em .28571428571429em; // 14px 4px
+	}
+
 }
