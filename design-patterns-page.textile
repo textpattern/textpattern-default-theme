@@ -419,10 +419,6 @@ Colour
 <button>Button tag</button>
 </p>
 <p>
-<a class="button" href="#">Link tag</a>
-&nbsp;
-<span class="button disabled">Span tag (disabled)</span>
-&nbsp;
 <input type="submit" value="Input (disabled)" disabled="disabled">
 &nbsp;
 <button disabled="disabled">Button (disabled)</button>
