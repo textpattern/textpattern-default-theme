@@ -46,24 +46,3 @@ input[type="submit"] {
 		@include gradient($color-gradient-to, $color-gradient-from);
 	}
 }
-
-#paginator {
-	margin-bottom: 2em;
-
-	.button {
-		padding: .25em 1em;
-	}
-
-	a.button {
-		text-decoration: none;
-		color: $color-text;
-	}
-}
-
-#paginator-l {
-	float: left;
-}
-
-#paginator-r {
-	float: right;
-}

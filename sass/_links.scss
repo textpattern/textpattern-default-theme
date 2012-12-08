@@ -65,3 +65,15 @@ footer a {
 		background: darken($color-background-box, 3%);
 	}
 }
+
+#paginator {
+	margin-bottom: 2em;
+}
+
+#paginator-l {
+	float: left;
+}
+
+#paginator-r {
+	float: right;
+}

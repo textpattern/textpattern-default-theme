@@ -265,6 +265,18 @@ footer a:visited {
   background: #efefef;
 }
 
+#paginator {
+  margin-bottom: 2em;
+}
+
+#paginator-l {
+  float: left;
+}
+
+#paginator-r {
+  float: right;
+}
+
 
 /* Typography
    ========================================================================== */
@@ -902,27 +914,6 @@ input[type="submit"]:active {
   background-image: linear-gradient(#fabc2b, #ffda44);
 }
 
-#paginator {
-  margin-bottom: 2em;
-}
-
-#paginator .button {
-  padding: .25em 1em;
-}
-
-#paginator a.button {
-  text-decoration: none;
-  color: #333;
-}
-
-#paginator-l {
-  float: left;
-}
-
-#paginator-r {
-  float: right;
-}
-
 
 /* Comments
    ========================================================================== */
@@ -1098,22 +1089,6 @@ nav ul,
 footer {
   /* 1152px / 1280px */
   width: 90%;
-}
-
-}
-
-
-
-/* ==========================================================================
-   Additional layout for screen media 1800px and up
-   ========================================================================== */
-
-
-@media only screen and (min-width: 112.5em) {
-
-body {
-  /* 18px */
-  font-size: 112.5%;
 }
 
 }
