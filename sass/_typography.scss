@@ -20,15 +20,23 @@ nav {
 	font-weight: bold;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
 	font-family: $font-sans-serif;
-	/* 28px */
-	font-size: 2em;
-	/* 34px / 28px */
-	line-height: 1.21428571428571;
-	letter-spacing: -1px;
-	/* 28px margin top/bottom */
-	margin: .66666666666667em 0;
+}
+
+h1 {
+	/* 40px / 16px */
+	font-size: 2.5em;
+	/* 48px / 40px */
+	line-height: 1.2;
+	/* 30px margin top/bottom */
+	margin: .625em 0;
 
 	&:first-child {
 		margin-top: 0;
@@ -36,31 +44,30 @@ h1 {
 }
 
 h2 {
-	font-family: $font-sans-serif;
-	/* 21px */
-	font-size: 1.5em;
-	/* 28px / 21px */
-	line-height: 1.33333333333333;
-	/* 21px margin top/bottom */
+	/* 32px / 16px */
+	font-size: 2em;
+	/* 40px / 32px */
+	line-height: 1.25;
+	/* 24px margin top/bottom */
 	margin: .75em 0;
 }
 
 h3 {
-	/* 18px */
-	font-size: 1.28571428571429em;
-	/* 26px / 18px */
-	line-height: 1.44444444444444;
-	font-weight: normal;
-	font-style: italic;
-	/* 16px margin top/bottom */
-	margin: .76190476190476em 0;
+	/* 24px / 16px */
+	font-size: 1.5em;
+	/* 32px / 24px */
+	line-height: 1.33333333333333;
+	/* 20px margin top/bottom */
+	margin: .83333333333333em 0;
 }
 
 h4 {
-	font-family: $font-sans-serif;
-	/* 16px */
-	font-size: 1.14285714285714em;
-	margin: 0;
+	/* 20px / 16px */
+	font-size: 1.25em;
+	/* 28px / 20px */
+	line-height: 1.4;
+	/* 16px margin top/bottom */
+	margin: .8em 0;
 }
 
 /* addresses style set to `bolder` in Firefox4+, Safari5, and Chrome */
@@ -74,12 +81,13 @@ address {
 }
 
 blockquote {
-	/* 16px */
-	font-size: 1.14285714285714em;
+	/* 18px / 16px */
+	font-size: 1.125em;
 	font-style: italic;
-	margin: .875em 0 .875em 0; // 14px / 16px
+	/* 16px / 18px */
+	margin: .88888888888889em 0 .88888888888889em 0;
 	border-left: 3px solid $color-border;
-	padding: 0 0 0 .875em;
+	padding: 0 0 0 .88888888888889em;
 }
 
 /* sets consistent quote types */
@@ -101,8 +109,9 @@ dfn[title] {
 
 mark,
 var {
-	padding: 0 .21428571428571em; // 0 3px
-	@include border-radius(.21428571428571em); // 3px / 13px
+	padding: 0 .25em;
+	/* 4px / 16px */
+	@include border-radius(.25em);
 	color: $color-text;
 	background: $color-highlight-box;
 }
@@ -117,37 +126,42 @@ samp {
 code,
 kbd,
 samp {
-	/* 13px */
-	font-size: .92857142857143em;
-	border: 1px solid lighten($color-border, 9%); 
-	padding: 0 .23076923076923em;
-	@include border-radius(.23076923076923em); // 3px / 13px
+	/* 14px / 16px */
+	font-size: .875em;
+	border: 1px solid lighten($color-border, 9%);
+	/* 2px / 14px + 3px / 14px */
+	padding: .07142857142857em .21428571428571em;
+	/* 4px / 14px */
+	@include border-radius(.28571428571429em);
 	background: $color-background-box;
 }
 
 pre {
-	/* 13px */
-	font-size: .92857142857143em;
+	/* 14px / 16px */
+	font-size: .875em;
 	overflow-x: auto;
 	border: 1px solid lighten($color-border, 9%);
 	padding: 1em;
-	@include border-radius($default-border-radius);
+	/* 8px / 14px */
+	@include border-radius(.57142857142857em);
 	background: $color-background-box;
-	tab-size: 4; // set tab size to 4 spaces
+	/* set tab size to 4 spaces */
+	tab-size: 4;
 
 	code {
-	/* 13px */
-	font-size: 1em;
-	border: 0;
-	background: none;
+		/* 14px */
+		font-size: 1em;
+		border: 0;
+		padding: 0;
+		background: none;
 	}
 }
 
 /* prevents `<sub>` and `<sup>` affecting line height in all browsers */
 sub,
 sup {
-	/* 12px */
-	font-size: .85714285714286em;
+	/* 13px / 16px */
+	font-size: .8125em;
 	line-height: 0;
 	position: relative;
 	vertical-align: baseline;
@@ -163,8 +177,8 @@ small,
 figcaption,
 tfoot,
 .footnote {
-	/* 12px */
-	font-size: .85714285714286em;
+	/* 13px / 16px */
+	font-size: .8125em;
 }
 
 figcaption,
@@ -174,6 +188,6 @@ tfoot,
 }
 
 figcaption {
-	margin-top: .33333333333333em;
+	margin-top: .5em;
 	font-style: italic;
 }

@@ -13,24 +13,23 @@ $font-print:			"Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // typography grid
 
-$base-font-size:		.875em; // 14px / 16px
+$base-font-size:		16px;
 $base-line-height:		1.5; // 21px / 14px
 
 // layout grid
 
 $container-max-width:	86em; // 1376px / 16px
 
-// breakpoints (requires Sass v3.2 or greater) !NOT USED YET!
+// breakpoints
 
 $break-small:			35em; // 490px / 14px
 $break-medium:			48em; // 672px / 14px
 $break-large:			80em; // 1280px / 16px
-$break-massive:			112.5em; // 1800px / 16px
 
 // text colours
 
 $color-text:			#333;
-$color-text-footnote:	#888;
+$color-text-footnote:	#999;
 $color-text-highlight:	#fabc2b;
 $color-link:			#114eb1;
 $color-link-hover:		#06f;
@@ -45,7 +44,7 @@ $color-gradient-border:	#e1a61a;
 // borders
 
 $color-border:			#ccc;
-$default-border-radius:	.35714285714286em; // 5px / 14px
+$default-border-radius:	.5em; // 8px / 16px
 
 // accent colours
 
