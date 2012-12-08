@@ -3,7 +3,7 @@
    ========================================================================== */
 
 
-/* corrects block display not defined in IE8-9, Firefox3 */
+/* corrects block display not defined in IE8-9 */
 article,
 aside,
 details,
@@ -23,7 +23,7 @@ summary {
   cursor: pointer;
 }
 
-/* addresses styling for `hidden` attribute not present in IE8-9, Firefox3, Safari4 */
+/* addresses styling for `hidden` attribute not present in IE8-9 */
 [hidden] {
   display: none;
 }
@@ -33,28 +33,14 @@ summary {
    ========================================================================== */
 /* http://nicolasgallagher.com/micro-clearfix-hack/ */
 
-.clearfix:before,
 .clearfix:after,
-header:before,
 header:after,
-nav ul:before,
 nav ul:after,
-.container:before,
 .container:after,
-footer:before,
 footer:after,
-#paginator:before,
 #paginator:after {
   content: "";
   display: table;
-}
-
-.clearfix:after,
-header:after,
-nav ul:after,
-.container:after,
-footer:after,
-#paginator:after {
   clear: both;
 }
 
@@ -86,9 +72,8 @@ body {
 }
 
 .wrapper {
-  border-bottom: solid 1px #ccc;
-  padding-top: 2em;
-  background: #fff;
+  border-bottom: solid 1px #cccccc;
+  background: white;
 }
 
 header,
@@ -109,11 +94,11 @@ header h1 {
 }
 
 header h3 {
-  /* 14px margin top */
+  /* 16px margin top */
   margin: .66666666666667em 0 0;
 }
 
-nav {
+#site-navigation {
   border-top: solid 1px #e1a61a;
   border-bottom: solid 1px #e1a61a;
   background-color: #ffda44;
@@ -127,29 +112,24 @@ nav {
   background-image: linear-gradient(#ffda44, #fabc2b);
 }
 
-nav h1 {
-  display: none;
-}
-
-nav ul {
+#site-navigation ul {
   margin: 0 auto;
   padding: 0;
   max-width: 86em;
   list-style: none;
-  list-style-image: none;
 }
 
-nav li {
+#site-navigation li {
   margin: 0;
   border-bottom: solid 1px #e1a61a;
 }
 
-nav li:last-child {
+#site-navigation li:last-child {
   border-bottom: 0;
 }
 
-nav li:hover,
-nav li.active {
+#site-navigation li:hover,
+#site-navigation li.active {
   background-color: #ffe477;
   /* Safari5.1+, Chrome10+ */
   background-image: -webkit-linear-gradient(#ffe477, #fbcc5d);
@@ -161,7 +141,7 @@ nav li.active {
   background-image: linear-gradient(#ffe477, #fbcc5d);
 }
 
-nav li:active {
+#site-navigation li:active {
   background-color: #fabc2b;
   /* Safari5.1+, Chrome10+ */
   background-image: -webkit-linear-gradient(#fabc2b, #ffda44);
@@ -173,11 +153,12 @@ nav li:active {
   background-image: linear-gradient(#fabc2b, #ffda44);
 }
 
-nav a {
+#site-navigation a {
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
   display: block;
   padding: .5em 3.125%;
-  color: #333;
+  color: #333333;
+  text-decoration: none;
 }
 
 [role="article"] {
@@ -185,9 +166,9 @@ nav a {
 }
 
 [role="complementary"] {
-  margin-bottom: 2em;
-  padding-top: 2em;
-  border-top: dashed 2px #ccc;
+  margin: 2em 0;
+  border-top: dashed 2px #cccccc;
+  padding-top: 1em;
 }
 
 [role="search"] p {
@@ -209,9 +190,12 @@ a {
   -webkit-tap-highlight-color: rgba(0, 102, 255, 0.5);
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   /* improves readability when focused and also mouse hovered in all browsers */
   outline: 0;
+  text-decoration: underline;
+  color: #0066ff;
 }
 
 a:active {
@@ -219,50 +203,39 @@ a:active {
 }
 
 a:focus {
-  outline: thin dotted #06f;
+  outline: thin dotted #0066ff;
 }
 
-header a {
-  color: #333;
-  -moz-border-radius: .11904761904762em;
-  border-radius: .11904761904762em;
-}
-
-header a:hover, header a:active {
-  background: #e8e8e8;
-}
-
-[role="main"] a:hover,
-[role="main"] a:active,
-[role="complementary"] a:hover,
-[role="complementary"] a:active,
-footer a:hover,
-footer a:active {
-  text-decoration: underline;
-  color: #06f;
-}
-
-[role="main"] a:visited,
-[role="complementary"] a:visited,
-footer a:visited {
+a:visited {
   color: #183082;
 }
 
-[role="main"] h1 a {
-  color: #333;
-  -moz-border-radius: .11904761904762em;
-  border-radius: .11904761904762em;
+header a {
+  color: #333333;
+  -moz-border-radius: 0.125em;
+  border-radius: 0.125em;
 }
 
-[role="main"] h1 a:visited {
-  color: #333;
+header a:hover,
+header a:active {
+  background: #e8e8e8;
 }
 
-[role="main"] h1 a:hover,
-[role="main"] h1 a:active {
+h1 a {
+  color: #333333;
+  -moz-border-radius: 0.125em;
+  border-radius: 0.125em;
+}
+
+h1 a:visited {
+  color: #333333;
+}
+
+h1 a:hover,
+h1 a:active {
   text-decoration: none;
-  color: #333;
-  background: #efefef;
+  color: #333333;
+  background: #ededed;
 }
 
 #paginator {
@@ -284,63 +257,66 @@ footer a:visited {
 body {
   font-family: "PT Serif", Georgia, serif;
   /* 14px / 16px */
-  font-size: 0.875em;
+  font-size: 16px;
   line-height: 1.5;
-  color: #333;
+  color: #333333;
 }
 
-nav {
+#site-navigation {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
   font-family: Arial, Helvetica, sans-serif;
-  /* 28px */
-  font-size: 2em;
-  /* 34px / 28px */
-  line-height: 1.21428571428571;
-  letter-spacing: -1px;
-  /* 28px margin top/bottom */
-  margin: .66666666666667em 0;
 }
 
-h1:first-child {
-  margin-top: 0;
+h1 {
+  /* 40px / 16px */
+  font-size: 2.5em;
+  /* 48px / 40px */
+  line-height: 1.2;
+  /* 30px margin top/bottom */
+  margin: .625em 0;
 }
 
 h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  /* 21px */
-  font-size: 1.5em;
-  /* 28px / 21px */
-  line-height: 1.33333333333333;
-  /* 21px margin top/bottom */
+  /* 32px / 16px */
+  font-size: 2em;
+  /* 40px / 32px */
+  line-height: 1.25;
+  /* 24px margin top/bottom */
   margin: .75em 0;
 }
 
 h3 {
-  /* 18px */
-  font-size: 1.28571428571429em;
-  /* 26px / 18px */
-  line-height: 1.44444444444444;
-  font-weight: normal;
-  font-style: italic;
-  /* 16px margin top/bottom */
-  margin: .76190476190476em 0;
+  /* 24px / 16px */
+  font-size: 1.5em;
+  /* 32px / 24px */
+  line-height: 1.33333333333333;
+  /* 20px margin top/bottom */
+  margin: .83333333333333em 0;
 }
 
 h4 {
-  font-family: Arial, Helvetica, sans-serif;
-  /* 16px */
-  font-size: 1.14285714285714em;
-  margin: 0;
+  /* 20px / 16px */
+  font-size: 1.25em;
+  /* 28px / 20px */
+  line-height: 1.4;
+  /* 16px margin top/bottom */
+  margin: .8em 0;
 }
 
 /* addresses style set to `bolder` in Firefox4+, Safari5, and Chrome */
 b,
-strong { 
-  font-weight: bold; 
+strong {
+  font-weight: bold;
 }
 
 address {
@@ -348,13 +324,14 @@ address {
 }
 
 blockquote {
-  /* 16px */
-  font-size: 1.14285714285714em;
+  /* 18px / 16px */
+  font-size: 1.125em;
   font-style: italic;
-  margin: .875em 0 .875em 0;
+  /* 16px / 18px */
+  margin: .88888888888889em 0 .88888888888889em 0;
   border-left: 3px solid #cccccc;
-  padding: 0 0 0 .875em;
-  }
+  padding: 0 0 0 .88888888888889em;
+}
 
 /* sets consistent quote types */
 q {
@@ -375,10 +352,11 @@ dfn[title] {
 
 mark,
 var {
-  padding: 0 .21428571428571em;
-  -moz-border-radius: .21428571428571em;
-  border-radius: .21428571428571em;
-  color: #333;
+  padding: 0 .25em;
+  /* 4px / 16px */
+  -moz-border-radius: 0.25em;
+  border-radius: 0.25em;
+  color: #333333;
   background: #fff6d3;
 }
 
@@ -392,39 +370,44 @@ samp {
 code,
 kbd,
 samp {
-  /* 13px */
-  font-size: .92857142857143em;
+  /* 14px / 16px */
+  font-size: .875em;
   border: 1px solid #e3e3e3;
-  padding: 0 .23076923076923em;
-  -moz-border-radius: .23076923076923em;
-  border-radius: .23076923076923em;
+  /* 2px / 14px + 3px / 14px */
+  padding: .07142857142857em .21428571428571em;
+  /* 4px / 14px */
+  -moz-border-radius: 0.28571em;
+  border-radius: 0.28571em;
   background: #f7f7f7;
 }
 
 pre {
-  /* 13px */
-  font-size: .92857142857143em;
+  /* 14px / 16px */
+  font-size: .875em;
   overflow-x: auto;
   border: 1px solid #e3e3e3;
   padding: 1em;
-  -moz-border-radius: .35714285714286em;
-  border-radius: .35714285714286em;
+  /* 8px / 14px */
+  -moz-border-radius: 0.57143em;
+  border-radius: 0.57143em;
   background: #f7f7f7;
+  /* set tab size to 4 spaces */
   tab-size: 4;
 }
 
 pre code {
-  /* 13px */
+  /* 14px */
   font-size: 1em;
   border: 0;
+  padding: 0;
   background: none;
 }
 
-/* prevents `<sub>` and `<sup>` affecting line-height in all browsers */
+/* prevents `<sub>` and `<sup>` affecting line height in all browsers */
 sub,
 sup {
-  /* 12px */
-  font-size: .85714285714286em;
+  /* 13px / 16px */
+  font-size: .8125em;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -442,18 +425,18 @@ small,
 figcaption,
 tfoot,
 .footnote {
-  /* 12px */
-  font-size: .85714285714286em;
+  /* 13px / 16px */
+  font-size: .8125em;
 }
 
 figcaption,
 tfoot,
 .footnote {
-  color: #888;
+  color: #999999;
 }
 
 figcaption {
-  margin-top: .33333333333333em;
+  margin-top: .5em;
   font-style: italic;
 }
 
@@ -481,7 +464,7 @@ html[lang="zh-tw"] {
 /* Embedded content
    ========================================================================== */
 
-/* corrects inline-block display not defined in IE8-9, Firefox3 */
+/* corrects `inline-block` display not defined in IE8-9 */
 audio,
 canvas,
 video {
@@ -497,20 +480,21 @@ video {
   height: auto;
 }
 
-/* removes border when inside `<a>` element in IE8-9 */
 img {
+  /* removes border when inside `<a>` element in IE8-9 */
   border: 0;
 }
 
-/* image alignments */
 img.align-left {
   float: left;
   margin: 1em 1em 1em 0;
 }
+
 img.align-right {
   float: right;
   margin: 1em 0 1em 1em;
 }
+
 img.align-center {
   display: block;
   margin: 1em auto;
@@ -528,7 +512,7 @@ audio:not([controls]) {
 }
 
 /* corrects overflow displayed oddly in IE9 */
-  svg:not(:root) {
+svg:not(:root) {
   overflow: hidden;
 }
 
@@ -550,15 +534,14 @@ caption {
   margin-bottom: .5em;
 }
 
-/* make table cells align top and left by default */
 th,
 td {
+  /* make table cells align top and left by default */
   vertical-align: top;
   text-align: left;
-  border-bottom: solid 1px #ccc;
-  padding: .28571428571429em .5em .28571428571429em 0;
+  border-bottom: solid 1px #cccccc;
+  padding: .25em .5em .25em 0;
 }
-
 th:last-child,
 td:last-child {
   padding-right: 0;
@@ -566,15 +549,14 @@ td:last-child {
 
 thead th,
 thead td {
-  border-bottom: solid 2px #ccc;
+  border-bottom: solid 2px #cccccc;
 }
 
 tfoot th,
 tfoot td {
   border-bottom: 0;
-  padding: .33333333333333em .58333333333333em .33333333333333em 0;
+  padding: .325em .61538461538462em .325em 0;
 }
-
 tfoot:last-child {
   padding-right: 0;
 }
@@ -609,11 +591,11 @@ dt {
   list-style: none;
   margin: 0 0 2em 0;
   padding: 0;
-  border-top: solid 1px #ccc;
+  border-top: solid 1px #cccccc;
 }
 
 #article-list li {
-  border-bottom: solid 1px #ccc;
+  border-bottom: solid 1px #cccccc;
   padding-top: 1em;
   margin-bottom: 0;
 }
@@ -625,7 +607,7 @@ dt {
 /* define consistent fieldset margin, border and padding */
 fieldset {
   margin: 1em 0;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   padding: 1px 1em;
 }
 
@@ -635,24 +617,31 @@ legend {
   padding: 0;
 }
 
-/* improves appearance and consistency in all browsers */
+/* corrects font size not being inherited in all browsers,
+   addresses margins set differently in Firefox 4+, Safari 5+, and Chrome */
 button,
 input,
 select,
 textarea {
   font-size: 100%;
   margin: 0;
-  vertical-align: baseline;
+}
+
+/* addresses Firefox 4+ setting `line-height` on `<input>` using `!important` in the UA stylesheet */
+button,
+input {
+  line-height: normal;
 }
 
 /* colour placeholder text (WebKit and Mozilla only, so far) */
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #888;
+  color: #999999;
 }
+
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: #888;
+  color: #999999;
 }
 
 /* removes inner padding and border in Firefox 4+ */
@@ -666,45 +655,6 @@ input::-moz-focus-inner {
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
-}
-
-/* suppress red glow that Firefox adds to form fields by default, even when user is still typing,
-   add focus glow on form elements and kill phantom spacing and dotted border that appears in Firefox */
-button:invalid,
-a.button:invalid,
-input:invalid,
-input[type="button"]:invalid,
-input[type="reset"]:invalid,
-input[type="submit"]:invalid,
-textarea:invalid {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-button:focus,
-a.button:focus,
-input:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus,
-select:focus,
-textarea:focus {
-  -webkit-box-shadow: 0 0 7px #0066ff;
-  -moz-box-shadow: 0 0 7px #0066ff;
-  box-shadow: 0 0 7px #0066ff;
-  /* Opera */
-  z-index: 1;
-}
-
-input[type="file"]:focus,
-input[type="file"]:active,
-input[type="radio"]:focus,
-input[type="radio"]:active,
-input[type="checkbox"]:focus,
-input[type="checkbox"]:active {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
 }
 
 input[type="color"],
@@ -726,28 +676,54 @@ textarea {
   /* remove iOS Safari default styling */
   -webkit-appearance: none;
   font-family: Arial, Helvetica, sans-serif;
-  /* 12px */
-  font-size: .85714285714286em;
+  /* 14px / 16px */
+  font-size: .875em;
   text-align: left;
-  border: solid 1px #ccc;
+  border: solid 1px #cccccc;
   padding: .5em;
   background: #fff;
   outline: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -moz-border-radius: 0;
-  border-radius: 0;
+}
+
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
+select:focus,
+textarea:focus {
+  /* better form focus glows */
+  outline: 0;
+  -webkit-box-shadow: 0 0 7px #0066ff;
+  -moz-box-shadow: 0 0 7px #0066ff;
+  box-shadow: 0 0 7px #0066ff;
+  /* Opera fix */
+  z-index: 1;
 }
 
 input[type="color"] {
   padding: 0;
-  height: 2.33333333333333em;
+  /* 32px / 14px */
+  height: 2.28571428571429em;
 }
 
 [role="complementary"] input[type="search"] {
   margin-right: 2px;
-  width: 66.666666666667%;
+  width: 66%;
   display: inline-block;
 }
 
@@ -769,14 +745,15 @@ select[multiple] {
 
 select[size="0"],
 select[size="1"] {
-  height: 2.33333333333333em;
+  /* 32px / 14px */
+  height: 2.28571428571429em;
 }
 
 optgroup {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: #333;
+  color: #333333;
 }
 
 /* kill phantom spacing and dotted border that appears in Firefox */
@@ -785,7 +762,7 @@ optgroup::-moz-focus-inner {
   padding: 0;
 }
 
-/* addresses box sizing set to content-box and excess padding in IE8-9 */
+/* addresses box sizing set to `content-box` and excess padding in IE8-9 */
 input[type="checkbox"],
 input[type="radio"] {
   padding: 0;
@@ -808,9 +785,9 @@ span.disabled {
   -khtml-user-select: none;
   -moz-user-select: -moz-none;
   user-select: none;
-  border: solid 1px #d2d2d2 !important;
+  border-color: #e3e3e3 !important;
   text-shadow: none !important;
-  color: #888888 !important;
+  color: #999999 !important;
   background: #eee !important;
   cursor: default !important;
   top: 0 !important;
@@ -839,8 +816,6 @@ span.disabled {
    ========================================================================== */
 
 button,
-[role] a.button,
-span.disabled,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -853,21 +828,21 @@ input[type="submit"] {
   width: auto;
   overflow: visible;
   font-family: Arial, Helvetica, sans-serif;
-  /* 12px */
-  font-size: .85714285714286em;
+  /* 14px / 16px */
+  font-size: .875em;
   font-weight: normal;
-  line-height: normal;
+  /* 16x / 14px */
+  line-height: 1.14285714285714;
   text-align: center;
   text-decoration: none;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
   cursor: pointer;
   border: solid 1px #e1a61a;
-  -moz-border-radius: .35714285714286em;
-  border-radius: .35714285714286em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
   padding: .5em 1em;
   display: inline-block;
-  color: #333;
-  outline: 0;
+  color: #333333;
   background-color: #ffda44;
   /* Safari5.1+, Chrome10+ */
   background-image: -webkit-linear-gradient(#ffda44, #fabc2b);
@@ -880,7 +855,6 @@ input[type="submit"] {
 }
 
 button:hover,
-[role] a.button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
@@ -896,7 +870,6 @@ input[type="submit"]:hover {
 }
 
 button:active,
-[role] a.button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
@@ -914,15 +887,27 @@ input[type="submit"]:active {
   background-image: linear-gradient(#fabc2b, #ffda44);
 }
 
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  /* better button focus glows */
+  outline: 0;
+  -webkit-box-shadow: 0px 0px 7px #0066ff;
+  -moz-box-shadow: 0px 0px 7px #0066ff;
+  box-shadow: 0px 0px 7px #0066ff;
+  z-index: 1;
+}
+
 
 /* Comments
    ========================================================================== */
 
 .comments {
   margin-bottom: 1em;
-  -moz-border-radius: .35714285714286em;
-  border-radius: .35714285714286em;
-  padding: 1em 1em 1px;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  padding: 1px 1em;
   background: #f7f7f7;
   word-wrap: break-word;
 }
@@ -934,7 +919,7 @@ input[type="submit"]:active {
 .comments h4 .comment-anchor {
   float: right;
   font-weight: normal;
- }
+}
 
 .comments-author {
   background: #efefef;
@@ -942,8 +927,8 @@ input[type="submit"]:active {
 
 #cpreview {
   margin-bottom: 2px;
-  -moz-border-radius: .35714285714286em;
-  border-radius: .35714285714286em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
   padding: 1em;
   background: #fff3d6;
 }
@@ -958,7 +943,7 @@ input[type="submit"]:active {
 }
 
 .required {
-	cursor: help;
+  cursor: help;
 }
 
 
@@ -973,11 +958,18 @@ input[type="submit"]:active {
   max-width: 52em;
 }
 
-}
+
+} /* end of @media screen */
 
 
-/* addresses select alignment in Safari/Chrome */
+
+/* ==========================================================================
+   addresses `<select>` alignment in Safari/Chrome
+   ========================================================================== */
+
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
+
 
 select[size],
 select[multiple],
@@ -989,85 +981,73 @@ select[multiple][size] {
 select,
 select[size="0"],
 select[size="1"] {
-  background: #fff url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='12px' height='4px' viewBox='0 0 12 4' enable-background='new 0 0 12 4' xml:space='preserve'><polygon fill='#333333' points='3.5,4 0,0 7,0'/></svg>") no-repeat right center;
+  background: white url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='12px' height='4px' viewBox='0 0 12 4' enable-background='new 0 0 12 4' xml:space='preserve'><polygon fill='#333333' points='3.5,4 0,0 7,0'/></svg>") no-repeat right center;
   padding-right: 2em;
-  -webkit-background-size: 1em .33333333333333em;
-  background-size: 1em .33333333333333em;
+  -webkit-background-size: 1em .28571428571429em;
+  background-size: 1em .28571428571429em;
 }
 
-}
+
+} /* end of @media screen and (-webkit-min-device-pixel-ratio: 0) */
 
 
 
 /* ==========================================================================
-   Additional layout for screen media 490px and up
+   Additional layout for screen media 576px and up
    ========================================================================== */
 
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 36em) {
 
-nav ul {
+
+#site-navigation ul {
   width: 93.75%;
 }
 
-nav li {
+#site-navigation li {
   float: left;
   border-right: solid 1px #e1a61a;
   border-bottom: 0;
 }
 
-nav li:first-child {
+#site-navigation li:first-child {
   border-left: solid 1px #e1a61a;
 }
 
-nav a {
+#site-navigation a {
   padding: .5em 1em;
 }
 
-}
+
+} /* end of @media screen and (min-width: 36em) */
 
 
 
 /* ==========================================================================
-   Additional layout for screen media 672px and up
+   Additional layout for screen media 864px and up
    ========================================================================== */
 
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 54em) {
+
 
 [role="main"] {
   float: left;
-  /* 592px / 960px */
-  width: 61.666666666667%;
+  width: 62.5%;
 }
 
 [role="complementary"] {
   float: right;
-  border: 1px solid #e3e3e3;
-  -moz-border-radius: .35714285714286em;
-  border-radius: .35714285714286em;
-  padding: 1em 1em 0;
-  /* 290px / 960px */
-  width: 30.208333333333%;
+  border: solid 1px #e3e3e3;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  padding: 0 1em;
+  width: 30%;
   background: #f7f7f7;
 }
 
-h1 {
-  /* 42px */
-  font-size: 3em;
-}
 
-h2 {
-  /* 28px */
-  font-size: 2em;
-}
-
-h3 {
-  /* 21px */
-  font-size: 1.5em;
-}
-
-}
+} /* end of @media screen and (min-width: 54em) */
 
 
 
@@ -1076,22 +1056,19 @@ h3 {
    ========================================================================== */
 
 
-@media only screen and (min-width: 80em) {
+@media only screen and (min-width: 82em) {
 
-body {
-  /* 16px */
-  font-size: 100%;
-}
 
 header,
-nav ul,
 .container,
+#site-navigation ul,
 footer {
-  /* 1152px / 1280px */
-  width: 90%;
+  /* 1200px / 1280px */
+  width: 93.75%;
 }
 
-}
+
+} /* end of @media screen and (min-width: 82em) */
 
 
 
@@ -1102,12 +1079,14 @@ footer {
 
 @media \0screen {
 
+
 img,
 video {
   width: auto;
 }
 
-}
+
+} /* end of @media \0screen */
 
 
 
@@ -1118,8 +1097,9 @@ video {
 
 @media print {
 
+
 * {
-  /* black prints faster */
+  /* black prints faster - http://sanbeiji.com/archives/953 */
   color: black !important;
   text-shadow: none !important;
   background: transparent !important;
@@ -1202,7 +1182,16 @@ h3 {
   page-break-after: avoid;
   orphans: 3;
   widows: 3;
-  margin: .66666666666667em 0;
+  margin: .75em 0;
+}
+
+h4 {
+  font-size: 10pt;
+  line-height: 14pt;
+  page-break-after: avoid;
+  orphans: 3;
+  widows: 3;
+  margin: .875em 0;
 }
 
 p {
@@ -1254,22 +1243,19 @@ img {
   page-break-inside: avoid;
 }
 
-/* image alignemnts */
 img.align-left {
   float: left;
   margin: 1em 1em 1em 0;
 }
+
 img.align-right {
   float: right;
   margin: 1em 0 1em 1em;
 }
+
 img.align-center {
   display: block;
   margin: 1em auto;
-}
-
-audio {
-  display: none;
 }
 
 figure {
@@ -1324,4 +1310,5 @@ td {
   padding: 4pt 8pt;
 }
 
-}
+
+} /* end of @media print */
