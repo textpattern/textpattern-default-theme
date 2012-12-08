@@ -9,7 +9,6 @@
 
 /* consistent tables */
 table {
-	margin-bottom: 1em;
 	border-collapse: collapse;
 	border-spacing: 0;
 	width: 100%;
@@ -21,13 +20,13 @@ caption {
 	margin-bottom: .5em;
 }
 
-/* make table cells align top and left by default */
 th,
 td {
+	/* make table cells align top and left by default */
 	vertical-align: top;
 	text-align: left;
 	border-bottom: solid 1px $color-border;
-	padding: .28571428571429em .5em .28571428571429em 0;
+	padding: .25em .5em .25em 0;
 
 	&:last-child {
 		padding-right: 0;
@@ -45,7 +44,7 @@ tfoot {
 	th,
 	td {
 		border-bottom: 0;
-		padding: .33333333333333em .58333333333333em .33333333333333em 0;
+		padding: .325em .61538461538462em .325em 0;
 	}
 
 	&:last-child {

@@ -8,8 +8,6 @@
    ========================================================================== */
 
 button,
-a.button,
-span.disabled,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -19,10 +17,11 @@ input[type="submit"] {
 	width: auto;
 	overflow: visible;
 	font-family: $font-sans-serif;
-	/* 12px */
-	font-size: .85714285714286em;
+	/* 14px / 16px */
+	font-size: .875em;
 	font-weight: normal;
-	line-height: normal;
+	/* 16x / 14px */
+	line-height: 1.14285714285714;
 	text-align: center;
 	text-decoration: none;
 	@include text-shadow-light;
@@ -32,7 +31,6 @@ input[type="submit"] {
 	padding: .5em 1em;
 	display: inline-block;
 	color: $color-text;
-	outline: 0;
 	@include gradient($color-gradient-from, $color-gradient-to);
 
 	&:hover {
@@ -44,5 +42,12 @@ input[type="submit"] {
 		top: 1px;
 		color: darken($color-text, 10%);
 		@include gradient($color-gradient-to, $color-gradient-from);
+	}
+
+	&:focus {
+		/* better button focus glows */
+		outline: 0;
+		@include box-shadow(0px 0px 7px $color-link-hover);
+		z-index: 1; // Opera fix
 	}
 }

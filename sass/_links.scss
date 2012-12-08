@@ -16,6 +16,8 @@ a {
 	&:hover,
 	&:active { /* improves readability when focused and also mouse hovered in all browsers */
 		outline: 0;
+		text-decoration: underline;
+		color: $color-link-hover;
 	}
 
 	&:active {
@@ -26,9 +28,14 @@ a {
 		outline: thin dotted $color-link-hover;
 	}
 
+	&:visited {
+		color: $color-link-visited;
+	}
+
 	header & {
 		color: $color-text;
-		@include border-radius(.11904761904762em);
+		@include border-radius(.125em);
+
 		&:hover,
 		&:active {
 			background: darken($color-background-box, 6%);
@@ -36,23 +43,9 @@ a {
 	}
 }
 
-[role="main"] a,
-[role="complementary"] a,
-footer a {
-	&:hover,
-	&:active {
-		text-decoration: underline;
-		color: $color-link-hover;
-	}
-
-	&:visited {
-		color: $color-link-visited;
-	}
-}
-
 [role="main"] h1 a {
 	color: $color-text;
-	@include border-radius(.11904761904762em);
+	@include border-radius(.125em);
 
 	&:visited {
 		color: $color-text;

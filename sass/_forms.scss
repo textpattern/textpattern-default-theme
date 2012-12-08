@@ -20,14 +20,21 @@ legend {
     padding: 0;
 }
 
-/* improves appearance and consistency in all browsers */
+/* corrects font family not being inherited in all browsers, corrects font size not being inherited in all browsers,
+   addresses margins set differently in Firefox 4+, Safari 5+, and Chrome */
 button,
 input,
 select,
 textarea {
+	font-family: inherit;
 	font-size: 100%;
 	margin: 0;
-	vertical-align: baseline;
+}
+
+/* addresses Firefox 4+ setting `line-height` on `<input>` using `!important` in the UA stylesheet */
+button,
+input {
+    line-height: normal;
 }
 
 /* colour placeholder text (WebKit and Mozilla only, so far) */
@@ -53,35 +60,6 @@ input[type="search"]::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
 
-/* suppress red glow that Firefox adds to form fields by default, even when user is still typing,
-   add focus glow on form elements and kill phantom spacing and dotted border that appears in Firefox */
-button,
-a.button,
-input,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-textarea {
-	&:invalid {
-		@include box-shadow(none);
-	}
-
-	&:focus {
-		@include box-shadow(0 0 7px $color-link-hover);
-		/* Opera */
-		z-index: 1;
-	}
-}
-
-input[type="file"],
-input[type="radio"],
-input[type="checkbox"] {
-	&:focus,
-	&:active {
-		@include box-shadow(none);
-	}
-}
-
 input[type="color"],
 input[type="date"],
 input[type="datetime"],
@@ -101,25 +79,34 @@ textarea {
 	/* remove iOS Safari default styling */
 	-webkit-appearance: none;
 	font-family: $font-sans-serif;
-	/* 12px */
-	font-size: .85714285714286em;
+	/* 14px / 16px */
+	font-size: .875em;
 	text-align: left;
 	border: solid 1px $color-border;
 	padding: .5em;
 	background: #fff;
 	outline: 0;
-	@include box-sizing;
 	@include border-radius(0);
+	@include box-sizing;
+
+	&:focus {
+		/* better form focus glows */
+		outline: 0;
+		@include box-shadow(0 0 7px $color-link-hover);
+		/* Opera fix */
+		z-index: 1;
+	}
 }
 
 input[type="color"] {
 	padding: 0;
-	height: 2.33333333333333em; // 28px / 12px
+	/* 32px / 14px */
+	height: 2.28571428571429em;
 }
 
 [role="complementary"] input[type="search"] {
 	margin-right: 2px;
-	width: 66.666666666667%;
+	width: 66%;
 	display: inline-block;
 }
 
@@ -141,7 +128,8 @@ select[multiple] {
 
 select[size="0"],
 select[size="1"] {
-	height: 2.33333333333333em; // 28px / 12px
+	/* 32px / 14px */
+	height: 2.28571428571429em;
 }
 
 /* addresses `<select>` alignment in Safari/Chrome */
@@ -159,8 +147,8 @@ select[size="1"] {
 	select[size="1"] {
 		background: #fff url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='12px' height='4px' viewBox='0 0 12 4' enable-background='new 0 0 12 4' xml:space='preserve'><polygon fill='#333333' points='3.5,4 0,0 7,0'/></svg>") no-repeat right center;
 		padding-right: 2em;
-		-webkit-background-size: 1em .33333333333333em; // 12px 4px
-		        background-size: 1em .33333333333333em; // 12px 4px
+		-webkit-background-size: 1em .28571428571429em; // 14px 4px
+		        background-size: 1em .28571428571429em; // 14px 4px
 	}
 
 }
@@ -197,10 +185,10 @@ textarea[disabled],
 span.disabled {
 	opacity: 1;
 	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: -moz-none;
-	user-select: none;
-	border: solid 1px #d2d2d2 !important;
+	 -khtml-user-select: none;
+	   -moz-user-select: -moz-none;
+	        user-select: none;
+	border-color: lighten($color-border, 9%) !important;
 	text-shadow: none !important;
 	color: $color-text-footnote !important;
 	background: #eee !important;
