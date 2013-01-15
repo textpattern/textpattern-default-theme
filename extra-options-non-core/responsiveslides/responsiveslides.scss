@@ -26,6 +26,7 @@
 	padding: 0;
 
 	li {
+		-webkit-backface-visibility: hidden;
 		position: absolute;
 		display: none;
 		left: 0;
