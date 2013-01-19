@@ -173,6 +173,7 @@ h2. License
 
 Non-core components:
 
+* HTML5 Shiv: MIT/GPL
 * jQuery: MIT/GPL
 * jQuery Cookie: MIT/GPL
 * Google Code Prettify: Apache License v2.0
