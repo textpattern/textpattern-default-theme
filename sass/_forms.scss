@@ -20,8 +20,8 @@ legend {
     padding: 0;
 }
 
-/* corrects font size not being inherited in all browsers,
-   addresses margins set differently in Firefox 4+, Safari 5+, and Chrome */
+/* correct font size not being inherited in all browsers,
+   address margins set differently in Firefox 4+, Safari 5+, and Chrome */
 button,
 input,
 select,
@@ -30,10 +30,19 @@ textarea {
 	margin: 0;
 }
 
-/* addresses Firefox 4+ setting `line-height` on `<input>` using `!important` in the UA stylesheet */
+/* address Firefox 4+ setting `line-height` on `<input>` using `!important` in the UA stylesheet */
 button,
 input {
     line-height: normal;
+}
+
+/* address inconsistent `text-transform` inheritance for `button` and `select`.
+   all other form control elements do not inherit `text-transform` values.
+   correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+   correct `select` style inheritance in Firefox 4+ and Opera. */
+button,
+select {
+	text-transform: none;
 }
 
 /* colour placeholder text (WebKit and Mozilla only, so far) */
@@ -46,14 +55,14 @@ textarea:-moz-placeholder {
 	color: $color-text-footnote;
 }
 
-/* removes inner padding and border in Firefox 4+ */
+/* remove inner padding and border in Firefox 4+ */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
     border: 0;
     padding: 0;
 }
 
-/* removes inner padding and search cancel button in Safari5+ and Chrome on OS X */
+/* remove inner padding and search cancel button in Safari5+ and Chrome on OS X */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
 	-webkit-appearance: none;
@@ -111,9 +120,9 @@ input[type="color"] {
 
 textarea {
 	min-height: 3em;
-	/* removes default vertical scrollbar in IE8-9 */
+	/* remove default vertical scrollbar in IE8-9 */
 	overflow: auto;
-	/* improves readability and alignment in all browsers */
+	/* improve readability and alignment in all browsers */
 	vertical-align: top;
 	resize: vertical;
 	width: 100%;
@@ -143,7 +152,7 @@ optgroup {
 	}
 }
 
-/* addresses box sizing set to `content-box` and excess padding in IE8-9 */
+/* address box sizing set to `content-box` and excess padding in IE8-9 */
 input[type="checkbox"],
 input[type="radio"] {
 	padding: 0;
@@ -199,7 +208,7 @@ span.disabled {
 
 @media (-webkit-min-device-pixel-ratio: 0) {
 
-	/* addresses `<select>` alignment in Safari/Chrome */
+	/* address `<select>` alignment in Safari/Chrome */
 	select[size],
 	select[multiple],
 	select[multiple][size] {

@@ -7,7 +7,7 @@
 /* Embedded content
    ========================================================================== */
 
-/* corrects `inline-block` display not defined in IE8-9 */
+/* correct `inline-block` display not defined in IE8-9 */
 audio,
 canvas,
 video {
@@ -24,7 +24,7 @@ video {
 }
 
 img {
-	/* removes border when inside `<a>` element in IE8-9 */
+	/* remove border when inside `<a>` element in IE8-9 */
 	border: 0;
 
 	&.align-left {
@@ -42,18 +42,18 @@ img {
 	}
 }
 
-/* addresses margin not present in IE8-9 and Safari5 */
+/* address margin not present in IE8-9 and Safari5 */
 figure {
 	margin: 0;
 }
 
-/* prevents modern browsers from displaying `<audio>` without controls, remove excess height in iOS5 devices */
+/* prevent modern browsers from displaying `<audio>` without controls, remove excess height in iOS5 devices */
 audio:not([controls]) {
 	display: none;
 	height: 0;
 }
 
-/* corrects overflow displayed oddly in IE9 */
+/* correct overflow displayed oddly in IE9 */
 svg:not(:root) {
 	overflow: hidden;
 }

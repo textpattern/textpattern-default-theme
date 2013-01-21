@@ -12,7 +12,7 @@
    Styling and layout for all media
    ========================================================================== */
 
-/* corrects block display not defined in IE8-9 */
+/* correct block display not defined in IE8-9 */
 article,
 aside,
 details,
@@ -28,12 +28,12 @@ summary {
 	display: block;
 }
 
-/* corrects `<summary>` not showing as clickable */
+/* correct `<summary>` not showing as clickable */
 summary {
 	cursor: pointer;
 }
 
-/* addresses styling for `hidden` attribute not present in IE8-9 */
+/* address styling for `hidden` attribute not present in IE8-9 */
 [hidden] {
 	display: none;
 }

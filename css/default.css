@@ -3,7 +3,7 @@
    ========================================================================== */
 
 
-/* corrects block display not defined in IE8-9 */
+/* correct block display not defined in IE8-9 */
 article,
 aside,
 details,
@@ -19,12 +19,12 @@ summary {
   display: block;
 }
 
-/* corrects `<summary>` not showing as clickable */
+/* correct `<summary>` not showing as clickable */
 summary {
   cursor: pointer;
 }
 
-/* addresses styling for `hidden` attribute not present in IE8-9 */
+/* address styling for `hidden` attribute not present in IE8-9 */
 [hidden] {
   display: none;
 }
@@ -61,7 +61,7 @@ footer:after,
 html {
   /* always force scrollbar padding so we don't get 'jumping' */
   overflow-y: scroll;
-  /* prevents iOS text size adjust after orientation change, without disabling user zoom */
+  /* prevent iOS text size adjust after orientation change, without disabling user zoom */
   -webkit-text-size-adjust: 100%;
   /* as above, for Windows Phone */
   -ms-text-size-adjust: 100%;
@@ -181,6 +181,14 @@ footer {
   padding: .5em 0;
 }
 
+/* address differences between Firefox and other browsers */
+hr {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
 
 /* Links
    ========================================================================== */
@@ -194,7 +202,7 @@ a {
 
 a:hover,
 a:active {
-  /* improves readability when focused and also mouse hovered in all browsers */
+  /* improve readability when focused and also mouse hovered in all browsers */
   outline: 0;
   text-decoration: underline;
   color: #0066ff;
@@ -315,7 +323,7 @@ h4 {
   margin: .8em 0;
 }
 
-/* addresses style set to `bolder` in Firefox4+, Safari5, and Chrome */
+/* address style set to `bolder` in Firefox4+, Safari5, and Chrome */
 b,
 strong {
   font-weight: bold;
@@ -335,17 +343,17 @@ blockquote {
   padding: 0 0 0 .88888888888889em;
 }
 
-/* sets consistent quote types */
+/* set consistent quote types */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/* addresses styling not present in Safari5 and Chrome */
+/* address styling not present in Safari5 and Chrome */
 dfn {
   font-style: italic;
 }
 
-/* addresses styling not present in IE8-9, Safari5, Chrome */
+/* address styling not present in IE8-9, Safari5, Chrome */
 abbr[title],
 dfn[title] {
   border-bottom: dotted 1px;
@@ -405,7 +413,7 @@ pre code {
   background: none;
 }
 
-/* prevents `<sub>` and `<sup>` affecting line height in all browsers */
+/* prevent `<sub>` and `<sup>` affecting line height in all browsers */
 sub,
 sup {
   /* 13px / 16px */
@@ -466,7 +474,7 @@ html[lang="zh-tw"] {
 /* Embedded content
    ========================================================================== */
 
-/* corrects `inline-block` display not defined in IE8-9 */
+/* correct `inline-block` display not defined in IE8-9 */
 audio,
 canvas,
 video {
@@ -483,7 +491,7 @@ video {
 }
 
 img {
-  /* removes border when inside `<a>` element in IE8-9 */
+  /* remove border when inside `<a>` element in IE8-9 */
   border: 0;
 }
 
@@ -502,18 +510,18 @@ img.align-center {
   margin: 1em auto;
 }
 
-/* addresses margin not present in IE8-9 and Safari5 */
+/* address margin not present in IE8-9 and Safari5 */
 figure {
   margin: 0;
 }
 
-/* prevents modern browsers from displaying `<audio>` without controls, remove excess height in iOS5 devices */
+/* prevent modern browsers from displaying `<audio>` without controls, remove excess height in iOS5 devices */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* corrects overflow displayed oddly in IE9 */
+/* correct overflow displayed oddly in IE9 */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -567,7 +575,7 @@ tfoot:last-child {
 /* Lists
    ========================================================================== */
 
-/* addresses paddings set differently */
+/* address paddings set differently */
 menu,
 ol,
 ul {
@@ -619,8 +627,8 @@ legend {
   padding: 0;
 }
 
-/* corrects font size not being inherited in all browsers,
-   addresses margins set differently in Firefox 4+, Safari 5+, and Chrome */
+/* correct font size not being inherited in all browsers,
+   address margins set differently in Firefox 4+, Safari 5+, and Chrome */
 button,
 input,
 select,
@@ -629,10 +637,19 @@ textarea {
   margin: 0;
 }
 
-/* addresses Firefox 4+ setting `line-height` on `<input>` using `!important` in the UA stylesheet */
+/* address Firefox 4+ setting `line-height` on `<input>` using `!important` in the UA stylesheet */
 button,
 input {
   line-height: normal;
+}
+
+/* address inconsistent `text-transform` inheritance for `button` and `select`.
+   all other form control elements do not inherit `text-transform` values.
+   correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+   correct `select` style inheritance in Firefox 4+ and Opera. */
+button,
+select {
+	text-transform: none;
 }
 
 /* colour placeholder text (WebKit and Mozilla only, so far) */
@@ -646,14 +663,14 @@ textarea:-moz-placeholder {
   color: #999999;
 }
 
-/* removes inner padding and border in Firefox 4+ */
+/* remove inner padding and border in Firefox 4+ */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* removes inner padding and search cancel button in Safari5+ and Chrome on OS X */
+/* remove inner padding and search cancel button in Safari5+ and Chrome on OS X */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -731,9 +748,9 @@ input[type="color"] {
 
 textarea {
   min-height: 3em;
-  /* removes default vertical scrollbar in IE8-9 */
+  /* remove default vertical scrollbar in IE8-9 */
   overflow: auto;
-  /* improves readability and alignment in all browsers */
+  /* improve readability and alignment in all browsers */
   vertical-align: top;
   resize: vertical;
   width: 100%;
@@ -764,7 +781,7 @@ optgroup::-moz-focus-inner {
   padding: 0;
 }
 
-/* addresses box sizing set to `content-box` and excess padding in IE8-9 */
+/* address box sizing set to `content-box` and excess padding in IE8-9 */
 input[type="checkbox"],
 input[type="radio"] {
   padding: 0;

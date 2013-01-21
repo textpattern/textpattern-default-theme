@@ -66,7 +66,7 @@ h4 {
 	margin: .8em 0;
 }
 
-/* addresses style set to `bolder` in Firefox4+, Safari5, and Chrome */
+/* address style set to `bolder` in Firefox4+, Safari5, and Chrome */
 b,
 strong { 
 	font-weight: bold; 
@@ -91,12 +91,12 @@ q {
     quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/* addresses styling not present in Safari5 and Chrome */
+/* address styling not present in Safari5 and Chrome */
 dfn {
     font-style: italic;
 }
 
-/* addresses styling not present in IE8-9, Safari5, Chrome */
+/* address styling not present in IE8-9, Safari5, Chrome */
 abbr[title],
 dfn[title] {
 	border-bottom: dotted 1px;
@@ -153,7 +153,7 @@ pre {
 	}
 }
 
-/* prevents `<sub>` and `<sup>` affecting line height in all browsers */
+/* prevent `<sub>` and `<sup>` affecting line height in all browsers */
 sub,
 sup {
 	/* 13px / 16px */

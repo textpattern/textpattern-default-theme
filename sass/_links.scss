@@ -14,7 +14,7 @@ a {
 	-webkit-tap-highlight-color: rgba($color-link-hover, .5);
 
 	&:hover,
-	&:active { /* improves readability when focused and also mouse hovered in all browsers */
+	&:active { /* improve readability when focused and also mouse hovered in all browsers */
 		outline: 0;
 		text-decoration: underline;
 		color: $color-link-hover;

@@ -10,7 +10,7 @@
 html {
 	/* always force scrollbar padding so we don't get 'jumping' */
 	overflow-y: scroll;
-	/* prevents iOS text size adjust after orientation change, without disabling user zoom */
+	/* prevent iOS text size adjust after orientation change, without disabling user zoom */
 	-webkit-text-size-adjust: 100%;
 	/* as above, for Windows Phone */
 	-ms-text-size-adjust: 100%;
@@ -104,4 +104,10 @@ header {
 
 footer {
 	padding: .5em 0;
+}
+
+/* address differences between Firefox and other browsers */
+hr {
+	@include box-sizing(content-box);
+	height: 0;
 }
