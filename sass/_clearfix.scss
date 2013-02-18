@@ -15,4 +15,5 @@ nav ul,
 footer,
 #paginator {
 	@include clearfix;
+	border-collapse: collapse;
 }
