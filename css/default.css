@@ -598,7 +598,7 @@ dt {
   font-style: italic;
 }
 
-[role="main"] #article-list {
+main #article-list {
   list-style: none;
   margin: 0 0 2em 0;
   padding: 0;
@@ -1047,7 +1047,7 @@ select[size="1"] {
 @media only screen and (min-width: 54em) {
 
 
-[role="main"] {
+main {
   float: left;
   width: 62.5%;
 }

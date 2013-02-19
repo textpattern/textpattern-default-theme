@@ -77,7 +77,7 @@
     <div class="container">
 
 <!-- left (main) column -->
-      <div role="main" aria-label="<txp:text item='main_content' />">
+      <main role="main" aria-label="<txp:text item='main_content' />">
 
       <!-- is this result result page? also omits the pagination links below (uses pagination format within search_results.article.txp instead) -->
       <txp:if_search>
@@ -146,7 +146,7 @@
 
       </txp:if_search>
 
-      </div> <!-- /main -->
+      </main>
 
 <!-- right (complementary) column -->
       <div role="complementary">

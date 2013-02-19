@@ -52,10 +52,10 @@
     <div class="container">
 
 <!-- left (main) column -->
-      <div role="main" aria-label="<txp:text item='main_content' />">
+      <main role="main" aria-label="<txp:text item='main_content' />">
         <h1 class="error-status"><txp:error_status /></h1>
         <p class="error-msg"><txp:error_message /></p>
-      </div> <!-- /main -->
+      </main>
 
 <!-- right (complementary) column -->
       <div role="complementary">

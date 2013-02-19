@@ -66,7 +66,7 @@
     <div class="container">
 
 <!-- left (main) column -->
-      <div role="main" aria-label="<txp:text item='main_content' />">
+      <main role="main" aria-label="<txp:text item='main_content' />">
 
         <txp:if_article_list>
 	      <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
@@ -132,7 +132,7 @@
 
         </txp:if_individual_article>
 
-      </div> <!-- /main -->
+      </main>
 
   <!-- right (complementary) column -->
       <div role="complementary">
