@@ -30,11 +30,6 @@
   background: #fff;
 }
 
-#monthly-list li:active {
-  position: relative;
-  top: 1px;
-}
-
 #monthly-list a {
   display: block;
   text-decoration: none;

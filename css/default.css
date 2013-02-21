@@ -195,7 +195,6 @@ hr {
    ========================================================================== */
 
 a {
-  position: relative;
   text-decoration: none;
   color: #114eb1;
   -webkit-tap-highlight-color: rgba(0, 102, 255, 0.5);
@@ -207,10 +206,6 @@ a:active {
   outline: 0;
   text-decoration: underline;
   color: #0066ff;
-}
-
-a:active {
-  top: 1px;
 }
 
 a:focus {
@@ -893,8 +888,6 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-  position: relative;
-  top: 1px;
   color: #1a1a1a;
   background-color: #fabc2b;
   /* Safari5.1+, Chrome10+ */

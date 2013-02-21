@@ -25,11 +25,6 @@
 		@include border-radius(0 0 .25em .25em);
 		@include box-shadow(0 0 .25em .25em);
 		background: #fff;
-
-		&:active {
-			position: relative;
-			top: 1px;
-		}
 	}
 
 	a {

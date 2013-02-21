@@ -38,8 +38,6 @@ input[type="submit"] {
 	}
 
 	&:active {
-		position: relative;
-		top: 1px;
 		color: darken($color-text, 10%);
 		@include gradient($color-gradient-to, $color-gradient-from);
 	}
