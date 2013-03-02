@@ -74,8 +74,8 @@ body {
 }
 
 .wrapper {
-  padding: 1px 0;
   border-bottom: solid 1px #cccccc;
+  padding: 1px 0;
   background: white;
 }
 
@@ -102,17 +102,17 @@ header h3 {
 }
 
 #site-navigation {
-  border-top: solid 1px #e1a61a;
-  border-bottom: solid 1px #e1a61a;
-  background-color: #ffda44;
+  border-top: solid 1px #bbbbbb;
+  border-bottom: solid 1px #bbbbbb;
+  background-color: #e4e4e4;
   /* Safari5.1+, Chrome10+ */
-  background-image: -webkit-linear-gradient(#ffda44, #fabc2b);
+  background-image: -webkit-linear-gradient(#e4e4e4, #cccccc);
   /* Firefox3.6 */
-  background-image: -moz-linear-gradient(#ffda44, #fabc2b);
+  background-image: -moz-linear-gradient(#e4e4e4, #cccccc);
   /* Opera11.10+ */
-  background-image: -o-linear-gradient(#ffda44, #fabc2b);
+  background-image: -o-linear-gradient(#e4e4e4, #cccccc);
   /* CSS3 Compliant */
-  background-image: linear-gradient(#ffda44, #fabc2b);
+  background-image: linear-gradient(#e4e4e4, #cccccc);
 }
 
 #site-navigation ul {
@@ -124,7 +124,7 @@ header h3 {
 
 #site-navigation li {
   margin: 0;
-  border-bottom: solid 1px #e1a61a;
+  border-bottom: solid 1px #bbbbbb;
 }
 
 #site-navigation li:last-child {
@@ -133,27 +133,31 @@ header h3 {
 
 #site-navigation li:hover,
 #site-navigation li.active {
-  background-color: #ffe477;
+  background-color: #f1f1f1;
   /* Safari5.1+, Chrome10+ */
-  background-image: -webkit-linear-gradient(#ffe477, #fbcc5d);
+  background-image: -webkit-linear-gradient(#f1f1f1, #d9d9d9);
   /* Firefox3.6 */
-  background-image: -moz-linear-gradient(#ffe477, #fbcc5d);
+  background-image: -moz-linear-gradient(#f1f1f1, #d9d9d9);
   /* Opera11.10+ */
-  background-image: -o-linear-gradient(#ffe477, #fbcc5d);
+  background-image: -o-linear-gradient(#f1f1f1, #d9d9d9);
   /* CSS3 Compliant */
-  background-image: linear-gradient(#ffe477, #fbcc5d);
+  background-image: linear-gradient(#f1f1f1, #d9d9d9);
 }
 
 #site-navigation li:active {
-  background-color: #fabc2b;
+  color: #1a1a1a;
+  -webkit-box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
+  background-color: #bfbfbf;
   /* Safari5.1+, Chrome10+ */
-  background-image: -webkit-linear-gradient(#fabc2b, #ffda44);
+  background-image: -webkit-linear-gradient(#bfbfbf, #d7d7d7);
   /* Firefox3.6 */
-  background-image: -moz-linear-gradient(#fabc2b, #ffda44);
+  background-image: -moz-linear-gradient(#bfbfbf, #d7d7d7);
   /* Opera11.10+ */
-  background-image: -o-linear-gradient(#fabc2b, #ffda44);
+  background-image: -o-linear-gradient(#bfbfbf, #d7d7d7);
   /* CSS3 Compliant */
-  background-image: linear-gradient(#fabc2b, #ffda44);
+  background-image: linear-gradient(#bfbfbf, #d7d7d7);
 }
 
 #site-navigation a {
@@ -339,7 +343,7 @@ blockquote {
   padding: 0 0 0 0.88889em;
 }
 
-/* set consistent quote types */
+/* sets consistent quote types */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -363,7 +367,7 @@ var {
   -moz-border-radius: 0.25em;
   border-radius: 0.25em;
   color: #333333;
-  background: #fff6d3;
+  background: #e8f0fd;
 }
 
 pre,
@@ -377,7 +381,7 @@ code,
 kbd,
 samp {
   /* 14px / 16px */
-  font-size: 0.875em;
+  font-size: .875em;
   border: 1px solid #e3e3e3;
   /* 2px / 14px + 3px / 14px */
   padding: 0.07143em 0.21429em;
@@ -389,7 +393,7 @@ samp {
 
 pre {
   /* 14px / 16px */
-  font-size: 0.875em;
+  font-size: .875em;
   overflow-x: auto;
   border: 1px solid #e3e3e3;
   padding: 1em;
@@ -413,18 +417,18 @@ pre code {
 sub,
 sup {
   /* 13px / 16px */
-  font-size: 0.8125em;
+  font-size: .8125em;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
 
 sup {
-  top: -0.5em;
+  top: -.5em;
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -.25em;
 }
 
 small,
@@ -432,7 +436,7 @@ figcaption,
 tfoot,
 .footnote {
   /* 13px / 16px */
-  font-size: 0.8125em;
+  font-size: .8125em;
 }
 
 figcaption,
@@ -442,7 +446,7 @@ tfoot,
 }
 
 figcaption {
-  margin-top: 0.5em;
+  margin-top: .5em;
   font-style: italic;
 }
 
@@ -537,7 +541,7 @@ table {
 caption {
   font-style: italic;
   text-align: left;
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
 }
 
 th,
@@ -548,6 +552,7 @@ td {
   border-bottom: solid 1px #cccccc;
   padding: 0.25em 0.5em 0.25em 0;
 }
+
 th:last-child,
 td:last-child {
   padding-right: 0;
@@ -563,6 +568,7 @@ tfoot td {
   border-bottom: 0;
   padding: 0.325em 0.61538em 0.325em 0;
 }
+
 tfoot:last-child {
   padding-right: 0;
 }
@@ -645,7 +651,7 @@ input {
    correct `select` style inheritance in Firefox 4+ and Opera. */
 button,
 select {
-	text-transform: none;
+  text-transform: none;
 }
 
 /* colour placeholder text (WebKit and Mozilla only, so far) */
@@ -692,10 +698,10 @@ textarea {
   -webkit-appearance: none;
   font-family: Arial, Helvetica, sans-serif;
   /* 14px / 16px */
-  font-size: 0.875em;
+  font-size: .875em;
   text-align: left;
   border: solid 1px #cccccc;
-  padding: 0.5em;
+  padding: .5em;
   background: #fff;
   outline: 0;
   -moz-border-radius: 0;
@@ -803,7 +809,7 @@ span.disabled {
   border-color: #e3e3e3 !important;
   text-shadow: none !important;
   color: #999999 !important;
-  background: #eee !important;
+  background: #eeeeee !important;
   cursor: default !important;
   top: 0 !important;
 }
@@ -844,7 +850,7 @@ input[type="submit"] {
   overflow: visible;
   font-family: Arial, Helvetica, sans-serif;
   /* 14px / 16px */
-  font-size: 0.875em;
+  font-size: .875em;
   font-weight: normal;
   /* 16x / 14px */
   line-height: 1.14286;
@@ -852,7 +858,7 @@ input[type="submit"] {
   text-decoration: none;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
   cursor: pointer;
-  border: solid 1px #e1a61a;
+  border: solid 1px #bbbbbb;
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
   padding: 0.5em 1em;
@@ -861,30 +867,30 @@ input[type="submit"] {
   -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
   -moz-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
   box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
-  background-color: #ffda44;
+  background-color: #e4e4e4;
   /* Safari5.1+, Chrome10+ */
-  background-image: -webkit-linear-gradient(#ffda44, #fabc2b);
+  background-image: -webkit-linear-gradient(#e4e4e4, #cccccc);
   /* Firefox3.6 */
-  background-image: -moz-linear-gradient(#ffda44, #fabc2b);
+  background-image: -moz-linear-gradient(#e4e4e4, #cccccc);
   /* Opera11.10+ */
-  background-image: -o-linear-gradient(#ffda44, #fabc2b);
+  background-image: -o-linear-gradient(#e4e4e4, #cccccc);
   /* CSS3 Compliant */
-  background-image: linear-gradient(#ffda44, #fabc2b);
+  background-image: linear-gradient(#e4e4e4, #cccccc);
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  background-color: #ffdf5d;
+  background-color: #f1f1f1;
   /* Safari5.1+, Chrome10+ */
-  background-image: -webkit-linear-gradient(#ffdf5d, #fbc444);
+  background-image: -webkit-linear-gradient(#f1f1f1, #d9d9d9);
   /* Firefox3.6 */
-  background-image: -moz-linear-gradient(#ffdf5d, #fbc444);
+  background-image: -moz-linear-gradient(#f1f1f1, #d9d9d9);
   /* Opera11.10+ */
-  background-image: -o-linear-gradient(#ffdf5d, #fbc444);
+  background-image: -o-linear-gradient(#f1f1f1, #d9d9d9);
   /* CSS3 Compliant */
-  background-image: linear-gradient(#ffdf5d, #fbc444);
+  background-image: linear-gradient(#f1f1f1, #d9d9d9);
 }
 
 button:active,
@@ -895,15 +901,15 @@ input[type="submit"]:active {
   -webkit-box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
-  background-color: #f9b412;
+  background-color: #bfbfbf;
   /* Safari5.1+, Chrome10+ */
-  background-image: -webkit-linear-gradient(#f9b412, #ffd52a);
+  background-image: -webkit-linear-gradient(#bfbfbf, #d7d7d7);
   /* Firefox3.6 */
-  background-image: -moz-linear-gradient(#f9b412, #ffd52a);
+  background-image: -moz-linear-gradient(#bfbfbf, #d7d7d7);
   /* Opera11.10+ */
-  background-image: -o-linear-gradient(#f9b412, #ffd52a);
+  background-image: -o-linear-gradient(#bfbfbf, #d7d7d7);
   /* CSS3 Compliant */
-  background-image: linear-gradient(#f9b412, #ffd52a);
+  background-image: linear-gradient(#bfbfbf, #d7d7d7);
 }
 
 button:focus,
@@ -953,12 +959,12 @@ input[type="submit"]:focus {
 }
 
 .comments_error {
-  background: #fff4f4 !important;
+  background: #f2dede !important;
 }
 
 .required,
 .error_message li {
-  color: #c00;
+  color: #9d261d;
 }
 
 .required {
@@ -1021,12 +1027,12 @@ select[size="1"] {
 
 #site-navigation li {
   float: left;
-  border-right: solid 1px #e1a61a;
+  border-right: solid 1px #bbbbbb;
   border-bottom: 0;
 }
 
 #site-navigation li:first-child {
-  border-left: solid 1px #e1a61a;
+  border-left: solid 1px #bbbbbb;
 }
 
 #site-navigation a {
@@ -1127,7 +1133,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 8pt;
   line-height: 1.5;
-  margin: 0.5cm;
+  margin: .5cm;
   padding: 2em 5em;
 }
 

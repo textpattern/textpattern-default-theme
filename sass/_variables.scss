@@ -6,48 +6,53 @@
 
 // font families
 
-$font-serif:			"PT Serif", Georgia, serif;
-$font-sans-serif:		Arial, Helvetica, sans-serif;
-$font-mono:				Cousine, Consolas, "Lucida Console", Monaco, monospace;
-$font-print:			"Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-serif:			 "PT Serif", Georgia, serif;
+$font-sans-serif:		 Arial, Helvetica, sans-serif;
+$font-mono:				 Cousine, Consolas, "Lucida Console", Monaco, monospace;
+$font-print:			 "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // typography grid
 
-$base-font-size:		16px;
-$base-line-height:		1.5; // 24px / 16px
+$base-font-size:		 16px;
+$base-line-height:		 1.5; // 24px / 16px
 
 // layout grid
 
-$container-max-width:	86em; // 1376px / 16px
+$container-max-width:	 86em; // 1376px / 16px
 
 // breakpoints
 
-$break-small:			36em; // 576px / 16px
-$break-medium:			54em; // 864px / 16px
-$break-large:			82em; // 1280px / 16px
+$break-small:			 36em; // 576px / 16px
+$break-medium:			 54em; // 864px / 16px
+$break-large:			 82em; // 1280px / 16px
 
 // text colours
 
-$color-text:			#333;
-$color-text-footnote:	#999;
-$color-text-highlight:	#fabc2b;
-$color-link:			#114eb1;
-$color-link-hover:		#06f;
-$color-link-visited:	#183082;
+$color-text:			 #333;
+$color-text-footnote:	 #999;
+$color-link:			 #114eb1;
+$color-link-hover:		 #06f;
+$color-link-visited:	 #183082;
 
 // default gradients
 
-$color-gradient-from:	#ffda44;
-$color-gradient-to:		#fabc2b;
-$color-gradient-border:	#e1a61a;
+$color-gradient-from:    #e4e4e4;
+$color-gradient-to:      #ccc;
+$color-gradient-border:  #bbb;
 
 // borders
 
-$color-border:			#ccc;
-$default-border-radius:	.5em; // 8px / 16px
+$color-border:			 #ccc;
+$default-border-radius:	 .5em; // 8px / 16px
 
 // accent colours
 
-$color-background:		#fff;
-$color-background-box:	#f7f7f7;
-$color-highlight-box:	#fff6d3;
+$color-background:		 #fff;
+$color-background-box:	 #f7f7f7;
+$color-highlight-box:	 lighten($color-link, 57%);
+
+// alert colours
+
+$color-error-text:       #9d261d;
+$color-error-background: #f2dede;
+

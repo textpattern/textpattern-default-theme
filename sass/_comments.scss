@@ -38,12 +38,12 @@
 }
 
 .comments_error {
-	background: #fff4f4 !important;
+	background: $color-error-background !important;
 }
 
 .required,
 .error_message li {
-	color: #c00;
+	color: $color-error-text;
 }
 
 .required {
