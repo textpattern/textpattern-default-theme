@@ -52,9 +52,9 @@ h3 {
 	/* 24px / 16px */
 	font-size: 1.5em;
 	/* 32px / 24px */
-	line-height: 1.33333333333333;
+	line-height: 1.33333;
 	/* 20px margin top/bottom */
-	margin: .83333333333333em 0;
+	margin: .83333em 0;
 }
 
 h4 {
@@ -81,9 +81,9 @@ blockquote {
 	font-size: 1.125em;
 	font-style: italic;
 	/* 16px / 18px */
-	margin: .88888888888889em 0 .88888888888889em 0;
+	margin: .88889em 0 .88889em 0;
 	border-left: 3px solid $color-border;
-	padding: 0 0 0 .88888888888889em;
+	padding: 0 0 0 .88889em;
 }
 
 /* sets consistent quote types */
@@ -126,7 +126,7 @@ samp {
 	font-size: .875em;
 	border: 1px solid lighten($color-border, 9%);
 	/* 2px / 14px + 3px / 14px */
-	padding: .07142857142857em .21428571428571em;
+	padding: .07143em .21429em;
 	/* 4px / 14px */
 	@include border-radius(.28571428571429em);
 	background: $color-background-box;

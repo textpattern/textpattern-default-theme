@@ -109,7 +109,7 @@ textarea {
 input[type="color"] {
 	padding: 0;
 	/* 32px / 14px */
-	height: 2.28571428571429em;
+	height: 2.28571em;
 }
 
 [role="complementary"] input[type="search"] {
@@ -137,7 +137,7 @@ select[multiple] {
 select[size="0"],
 select[size="1"] {
 	/* 32px / 14px */
-	height: 2.28571428571429em;
+	height: 2.28571em;
 }
 
 optgroup {
@@ -220,8 +220,8 @@ span.disabled {
 	select[size="1"] {
 		background: #fff url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='12px' height='4px' viewBox='0 0 12 4' enable-background='new 0 0 12 4' xml:space='preserve'><polygon fill='#333333' points='3.5,4 0,0 7,0'/></svg>") no-repeat right center;
 		padding-right: 2em;
-		-webkit-background-size: 1em .28571428571429em; // 14px 4px
-		        background-size: 1em .28571428571429em; // 14px 4px
+		-webkit-background-size: 1em .28571em; // 14px 4px
+		        background-size: 1em .28571em; // 14px 4px
 	}
 
 }

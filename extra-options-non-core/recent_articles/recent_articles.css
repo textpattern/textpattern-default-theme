@@ -19,11 +19,11 @@
   text-align: center;
   float: left;
   display: block;
-  margin: 0 .5em .5em 0;
+  margin: 0 0.5em 0.5em 0;
   min-width: 2.5em;
   border: solid 1px #ccc;
-  -moz-border-radius: 0 0 .25em .25em;
-  border-radius: .25em .25em 0 0;
+  -moz-border-radius: 0 0 0.25em 0.25em;
+  border-radius: 0 0 0.25em 0.25em;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -51,10 +51,10 @@
 
 #monthly-list a .archive-year {
   /* 12px */
-  font-size: .75em;
+  font-size: 0.75em;
   font-weight: bold;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
-  padding: 0 .25em;
+  padding: 0 0.25em;
   background-color: #ffda44;
   /* Safari5.1+, Chrome10+ */
   background-image: -webkit-linear-gradient(#ffda44, #fabc2b);
@@ -80,7 +80,7 @@
 }
 
 #monthly-list a .archive-month {
-  padding: 0 .25em;
+  padding: 0 0.25em;
 }
 
 #monthly-list a:hover .archive-month,
