@@ -727,8 +727,8 @@ textarea:focus {
 
 input[type="color"] {
   padding: 0;
-  /* 32px / 14px */
-  height: 2.28571em;
+  /* 35px / 14px */
+  height: 2.5em;
 }
 
 /* address box sizing set to `content-box` and excess padding in IE8-9 */
@@ -756,8 +756,8 @@ select[multiple] {
 
 select[size="0"],
 select[size="1"] {
-  /* 32px / 14px */
-  height: 2.28571em;
+  /* 35px / 14px */
+  height: 2.5em;
 }
 
 optgroup {
@@ -998,10 +998,10 @@ select[multiple][size] {
 select,
 select[size="0"],
 select[size="1"] {
-  background: white url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='12px' height='4px' viewBox='0 0 12 4' enable-background='new 0 0 12 4' xml:space='preserve'><polygon fill='#333333' points='3.5,4 0,0 7,0'/></svg>") no-repeat right center;
-  padding-right: 2em;
-  -webkit-background-size: 1em 0.28571em;
-  background-size: 1em 0.28571em;
+  background: white url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='7px' viewBox='0 0 21 7' enable-background='new 0 0 21 7' xml:space='preserve'><polygon fill='#333333' points='2,0 7,7 12,0'/></svg>") no-repeat right center;
+  padding-right: 2.25em;
+  -webkit-background-size: 1.5em 0.5em;
+  background-size: 1.5em 0.5em;
 }
 
 
