@@ -104,6 +104,9 @@ header h3 {
 #site-navigation {
   border-top: solid 1px #bbbbbb;
   border-bottom: solid 1px #bbbbbb;
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
   background-color: #e4e4e4;
   /* Safari5.1+, Chrome10+ */
   background-image: -webkit-linear-gradient(#e4e4e4, #cccccc);
@@ -629,29 +632,18 @@ legend {
   padding: 0;
 }
 
-/* correct font size not being inherited in all browsers,
-   address margins set differently in Firefox 4+, Safari 5+, and Chrome */
 button,
 input,
 select,
 textarea {
-  font-size: 100%;
+  /* address margins set differently in Firefox4+, Safari5+, and Chrome */
   margin: 0;
-}
-
-/* address Firefox 4+ setting `line-height` on `<input>` using `!important` in the UA stylesheet */
-button,
-input {
-  line-height: normal;
-}
-
-/* address inconsistent `text-transform` inheritance for `button` and `select`.
-   all other form control elements do not inherit `text-transform` values.
-   correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
-   correct `select` style inheritance in Firefox 4+ and Opera. */
-button,
-select {
-  text-transform: none;
+  font-family: Arial, Helvetica, sans-serif;
+  /* correct font size not being inherited in all browsers */
+  font-size: 100%;
+  font-size: .875em;
+  line-height: 1.4;
+  vertical-align: baseline;
 }
 
 /* colour placeholder text (WebKit and Mozilla only, so far) */
@@ -696,9 +688,6 @@ select,
 textarea {
   /* remove iOS Safari default styling */
   -webkit-appearance: none;
-  font-family: Arial, Helvetica, sans-serif;
-  /* 14px / 16px */
-  font-size: .875em;
   text-align: left;
   border: solid 1px #cccccc;
   padding: .5em;
@@ -742,23 +731,24 @@ input[type="color"] {
   height: 2.28571em;
 }
 
+/* address box sizing set to `content-box` and excess padding in IE8-9 */
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+  box-sizing: border-box;
+}
+
 [role="complementary"] input[type="search"] {
   margin-right: 2px;
   width: 66%;
   display: inline-block;
 }
 
-textarea {
-  min-height: 3em;
-  /* remove default vertical scrollbar in IE8-9 */
-  overflow: auto;
-  /* improve readability and alignment in all browsers */
-  vertical-align: top;
-  resize: vertical;
-  width: 100%;
+/* address inconsistent `text-transform` inheritance for `select` in Firefox 4+ and Opera */
+select {
+  text-transform: none;
 }
 
-textarea,
 select[size],
 select[multiple] {
   height: auto;
@@ -783,11 +773,13 @@ optgroup::-moz-focus-inner {
   padding: 0;
 }
 
-/* address box sizing set to `content-box` and excess padding in IE8-9 */
-input[type="checkbox"],
-input[type="radio"] {
-  padding: 0;
-  box-sizing: border-box;
+textarea {
+  height: auto;
+  min-height: 3em;
+  /* remove default vertical scrollbar in IE8-9 */
+  overflow: auto;
+  resize: vertical;
+  width: 100%;
 }
 
 /* make sure disable elements really are disabled */
@@ -836,24 +828,21 @@ span.disabled {
 /* Buttons
    ========================================================================== */
 
+/* address inconsistent `text-transform` inheritance for `button` in Chrome, Safari5+, and IE6+ */
+button {
+  text-transform: none;
+}
+
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   /* remove iOS Safari default styling */
   -webkit-appearance: none;
-  -webkit-background-clip: padding;
-  -khtml-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
   width: auto;
   overflow: visible;
   font-family: Arial, Helvetica, sans-serif;
-  /* 14px / 16px */
-  font-size: .875em;
   font-weight: normal;
-  /* 16x / 14px */
-  line-height: 1.14286;
   text-align: center;
   text-decoration: none;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
@@ -867,6 +856,13 @@ input[type="submit"] {
   -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
   -moz-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
   box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
+  -webkit-background-clip: padding;
+  -khtml-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #e4e4e4;
   /* Safari5.1+, Chrome10+ */
   background-image: -webkit-linear-gradient(#e4e4e4, #cccccc);

@@ -20,29 +20,18 @@ legend {
     padding: 0;
 }
 
-/* correct font size not being inherited in all browsers,
-   address margins set differently in Firefox 4+, Safari 5+, and Chrome */
 button,
 input,
 select,
 textarea {
-	font-size: 100%;
+	/* address margins set differently in Firefox4+, Safari5+, and Chrome */
 	margin: 0;
-}
-
-/* address Firefox 4+ setting `line-height` on `<input>` using `!important` in the UA stylesheet */
-button,
-input {
-    line-height: normal;
-}
-
-/* address inconsistent `text-transform` inheritance for `button` and `select`.
-   all other form control elements do not inherit `text-transform` values.
-   correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
-   correct `select` style inheritance in Firefox 4+ and Opera. */
-button,
-select {
-	text-transform: none;
+	font-family: $font-sans-serif;
+	/* correct font size not being inherited in all browsers */
+	font-size: 100%;
+	font-size: .875em;
+	line-height: 1.4;
+	vertical-align: baseline;
 }
 
 /* colour placeholder text (WebKit and Mozilla only, so far) */
@@ -86,9 +75,6 @@ select,
 textarea {
 	/* remove iOS Safari default styling */
 	-webkit-appearance: none;
-	font-family: $font-sans-serif;
-	/* 14px / 16px */
-	font-size: .875em;
 	text-align: left;
 	border: solid 1px $color-border;
 	padding: .5em;
@@ -112,23 +98,24 @@ input[type="color"] {
 	height: 2.28571em;
 }
 
+/* address box sizing set to `content-box` and excess padding in IE8-9 */
+input[type="checkbox"],
+input[type="radio"] {
+	padding: 0;
+	box-sizing: border-box;
+}
+
 [role="complementary"] input[type="search"] {
 	margin-right: 2px;
 	width: 66%;
 	display: inline-block;
 }
 
-textarea {
-	min-height: 3em;
-	/* remove default vertical scrollbar in IE8-9 */
-	overflow: auto;
-	/* improve readability and alignment in all browsers */
-	vertical-align: top;
-	resize: vertical;
-	width: 100%;
+/* address inconsistent `text-transform` inheritance for `select` in Firefox 4+ and Opera */
+select {
+	text-transform: none;
 }
 
-textarea,
 select[size],
 select[multiple] {
 	height: auto;
@@ -152,11 +139,13 @@ optgroup {
 	}
 }
 
-/* address box sizing set to `content-box` and excess padding in IE8-9 */
-input[type="checkbox"],
-input[type="radio"] {
-	padding: 0;
-	box-sizing: border-box;
+textarea {
+	height: auto;
+	min-height: 3em;
+	/* remove default vertical scrollbar in IE8-9 */
+	overflow: auto;
+	resize: vertical;
+	width: 100%;
 }
 
 /* make sure disable elements really are disabled */
