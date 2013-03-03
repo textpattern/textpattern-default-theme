@@ -13,7 +13,7 @@
 
 <!-- css -->
   <!-- Google font API (remove this if you intend to use the theme in a project without internet access) -->
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:n4,i4,n7,i7|Cousine">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic|Cousine">
 
   <txp:css format="link" media="" />
   <!-- or you can use (faster) external CSS files eg. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
