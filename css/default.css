@@ -60,6 +60,7 @@ footer:after,
    ========================================================================== */
 
 html {
+  -webkit-tap-highlight-color: rgba(0, 102, 255, 0.5);
   /* always force scrollbar padding so we don't get 'jumping' */
   overflow-y: scroll;
   /* prevent iOS text size adjust after orientation change, without disabling user zoom */
@@ -204,7 +205,6 @@ hr {
 a {
   text-decoration: none;
   color: #114eb1;
-  -webkit-tap-highlight-color: rgba(0, 102, 255, 0.5);
 }
 
 a:hover,
