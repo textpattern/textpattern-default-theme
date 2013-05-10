@@ -102,7 +102,7 @@ header h3 {
   margin: 0.66667em 0 0;
 }
 
-#site-navigation {
+.site-navigation {
   border-top: solid 1px #bbbbbb;
   border-bottom: solid 1px #bbbbbb;
   -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
@@ -119,24 +119,24 @@ header h3 {
   background-image: linear-gradient(#e4e4e4, #cccccc);
 }
 
-#site-navigation ul {
+.site-navigation ul {
   margin: 0 auto;
   padding: 0;
   max-width: 86em;
   list-style: none;
 }
 
-#site-navigation li {
+.site-navigation li {
   margin: 0;
   border-bottom: solid 1px #bbbbbb;
 }
 
-#site-navigation li:last-child {
+.site-navigation li:last-child {
   border-bottom: 0;
 }
 
-#site-navigation li:hover,
-#site-navigation li.active {
+.site-navigation li:hover,
+.site-navigation li.active {
   background-color: #f1f1f1;
   /* Safari5.1+, Chrome10+ */
   background-image: -webkit-linear-gradient(#f1f1f1, #d9d9d9);
@@ -148,7 +148,7 @@ header h3 {
   background-image: linear-gradient(#f1f1f1, #d9d9d9);
 }
 
-#site-navigation li:active {
+.site-navigation li:active {
   color: #1a1a1a;
   -webkit-box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
@@ -164,7 +164,7 @@ header h3 {
   background-image: linear-gradient(#bfbfbf, #d7d7d7);
 }
 
-#site-navigation a {
+.site-navigation li a {
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
   display: block;
   padding: 0.5em 3.125%;
@@ -275,7 +275,7 @@ body {
   color: #333333;
 }
 
-#site-navigation {
+.site-navigation {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
@@ -602,16 +602,15 @@ dt {
   font-style: italic;
 }
 
-main #article-list {
+.article-list {
   list-style: none;
   margin: 0 0 2em 0;
   padding: 0;
   border-top: solid 1px #cccccc;
 }
 
-#article-list li {
+.article-list li {
   border-bottom: solid 1px #cccccc;
-  padding-top: 1em;
   margin-bottom: 0;
 }
 
@@ -1017,21 +1016,21 @@ select[size="1"] {
 @media only screen and (min-width: 36em) {
 
 
-#site-navigation ul {
+.site-navigation ul {
   width: 93.75%;
 }
 
-#site-navigation li {
+.site-navigation li {
   float: left;
   border-right: solid 1px #bbbbbb;
   border-bottom: 0;
 }
 
-#site-navigation li:first-child {
+.site-navigation li:first-child {
   border-left: solid 1px #bbbbbb;
 }
 
-#site-navigation a {
+.site-navigation li a {
   padding: 0.5em 1em;
 }
 
@@ -1077,9 +1076,9 @@ main {
 
 
 header,
+footer,
 .container,
-#site-navigation ul,
-footer {
+.site-navigation ul {
   /* 1200px / 1280px */
   width: 93.75%;
 }

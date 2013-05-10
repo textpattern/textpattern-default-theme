@@ -1,4 +1,4 @@
-<txp:if_first_article><ul id="article-list"></txp:if_first_article>
+<txp:if_first_article><ul class="article-list"></txp:if_first_article>
   <li role="article" itemscope itemtype="http://schema.org/Article">
     <h4 itemprop="name"><a href="<txp:permlink />" itemprop="url"><txp:title /></a></h4>
 

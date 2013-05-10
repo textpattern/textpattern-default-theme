@@ -29,15 +29,14 @@ dt {
 	font-style: italic;
 }
 
-main #article-list {
+.article-list {
 	list-style: none;
 	margin: 0 0 2em 0;
 	padding: 0;
 	border-top: solid 1px $color-border;
-}
 
-#article-list li {
-	border-bottom: solid 1px $color-border;
-	padding-top: 1em;
-	margin-bottom: 0;
+	li {
+		margin-bottom: 0;
+		border-bottom: solid 1px $color-border;
+	}
 }

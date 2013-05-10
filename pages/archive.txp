@@ -54,7 +54,7 @@
   </header>
 
 <!-- navigation -->
-  <nav role="navigation" id="site-navigation" aria-label="<txp:text item='navigation' />">
+  <nav role="navigation" class="site-navigation" aria-label="<txp:text item='navigation' />">
     <txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="">
       <li<txp:if_section name='<txp:section />'> class="active"</txp:if_section>>
         <txp:section title="1" link="1" />

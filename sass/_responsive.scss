@@ -10,7 +10,7 @@
 
 @media only screen and (min-width: $break-small) {
 
-#site-navigation {
+.site-navigation {
 	ul {
 		width: 93.75%;
 	}
@@ -63,9 +63,9 @@ main {
 @media only screen and (min-width: $break-large) {
 
 header,
+footer,
 .container,
-#site-navigation ul,
-footer {
+.site-navigation ul {
 	/* 1200px / 1280px */
 	width: 93.75%;
 }
