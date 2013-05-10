@@ -9,7 +9,7 @@
 /* Recent articles
    ========================================================================== */
 
-[role="complementary"] #monthly-list {
+.monthly-list {
 	@include clearfix;
 	list-style: none;
 	padding: 0;
@@ -19,57 +19,57 @@
 		text-align: center;
 		float: left;
 		display: block;
-		margin: 0 .5em .5em 0;
+		margin: 0 0.5em 0.5em 0;
 		min-width: 2.5em;
 		border: solid 1px $color-border;
-		@include border-radius(0 0 .25em .25em);
-		@include box-shadow(0 0 .25em .25em);
+		@include border-radius(0 0 0.25em 0.25em);
+		@include box-shadow(0 0 0.25em 0.25em);
 		background: #fff;
-	}
 
-	a {
-		display: block;
-		text-decoration: none;
-		color: $color-text;
+		a {
+			display: block;
+			text-decoration: none;
+			color: $color-text;
 
-		&:hover,
-		&:focus {
-			color: darken($color-text, 10%);
+			&:hover,
+			&:focus {
+				color: darken($color-text, 10%);
+			}
+
+			&:focus {
+				outline: 0;
+			}
+
+			&:active {
+				top: 0;
+			}
+
+			.archive-year {
+				/* 12px */
+				font-size: 0.75em;
+				font-weight: bold;
+				@include text-shadow-light;
+				padding: 0 0.25em;
+				@include gradient;
+			}
+
+			&:hover .archive-year,
+			&:focus .archive-year {
+				@include gradient(lighten($color-gradient-from, 10%), lighten($color-gradient-to, 10%));
+			}
+
+			.archive-month {
+				padding: 0 0.25em;
+			}
+
+			&:hover .archive-month,
+			&:focus .archive-month {
+				background: $color-highlight-box;
+			}
 		}
 
-		&:focus {
-			outline: 0;
+		span {
+			display: block;
 		}
-
-		&:active {
-			top: 0;
-		}
-
-		.archive-year {
-			/* 12px */
-			font-size: .75em;
-			font-weight: bold;
-			@include text-shadow-light;
-			padding: 0 .25em;
-			@include gradient;
-		}
-
-		&:hover .archive-year,
-		&:focus .archive-year {
-			@include gradient(lighten($color-gradient-from, 10%), lighten($color-gradient-to, 10%));
-		}
-
-		.archive-month {
-			padding: 0 .25em;
-		}
-
-		&:hover .archive-month,
-		&:focus .archive-month {
-			background: $color-highlight-box;
-		}
-	}
-
-	span {
-		display: block;
 	}
 }
