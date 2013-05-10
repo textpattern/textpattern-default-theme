@@ -34,12 +34,12 @@ summary {
    ========================================================================== */
 /* http://nicolasgallagher.com/micro-clearfix-hack/ */
 
-.clearfix:after,
 header:after,
+footer:after,
 nav ul:after,
 .container:after,
-footer:after,
-#paginator:after {
+.clearfix:after,
+.paginator:after {
   content: "";
   display: table;
   clear: both;
@@ -81,8 +81,8 @@ body {
 }
 
 header,
-.container,
-footer {
+footer,
+.container {
   margin: 0 auto;
   /* 960px / 1024px */
   width: 93.75%;
@@ -251,15 +251,15 @@ h1 a:active {
   background: #ededed;
 }
 
-#paginator {
+.paginator {
   margin-bottom: 2em;
 }
 
-#paginator-l {
+.paginator-prev {
   float: left;
 }
 
-#paginator-r {
+.paginator-next {
   float: right;
 }
 
@@ -1148,9 +1148,9 @@ audio,
 video,
 form,
 [role="complementary"],
-#paginator,
 #comments-form,
-.comments h4 a:last-child {
+.comments h4 a:last-child,
+.paginator {
   display: none;
 }
 

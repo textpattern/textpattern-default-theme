@@ -41,9 +41,9 @@ audio,
 video,
 form,
 [role="complementary"],
-#paginator,
 #comments-form,
-.comments h4 a:last-child {
+.comments h4 a:last-child,
+.paginator {
 	display: none;
 }
 

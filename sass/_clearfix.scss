@@ -8,11 +8,11 @@
    ========================================================================== */
 /* http://nicolasgallagher.com/micro-clearfix-hack/ */
 
-.clearfix,
 header,
+footer,
 nav ul,
 .container,
-footer,
-#paginator {
+.clearfix,
+.paginator {
 	@include clearfix;
 }
