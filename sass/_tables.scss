@@ -18,7 +18,7 @@ table {
 caption {
 	font-style: italic;
 	text-align: left;
-	margin-bottom: .5em;
+	margin-bottom: 0.5em;
 }
 
 th,
@@ -27,7 +27,7 @@ td {
 	vertical-align: top;
 	text-align: left;
 	border-bottom: solid 1px $color-border;
-	padding: .25em .5em .25em 0;
+	padding: 0.25em 0.5em 0.25em 0;
 
 	&:last-child {
 		padding-right: 0;
@@ -45,7 +45,7 @@ tfoot {
 	th,
 	td {
 		border-bottom: 0;
-		padding: .325em .61538em .325em 0;
+		padding: 0.325em 0.61538em 0.325em 0;
 	}
 
 	&:last-child {

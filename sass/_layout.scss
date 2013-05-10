@@ -8,7 +8,7 @@
    ========================================================================== */
 
 html {
-	-webkit-tap-highlight-color: rgba($color-link-hover, .5);
+	-webkit-tap-highlight-color: rgba($color-link-hover, 0.5);
 	/* always force scrollbar padding so we don't get 'jumping' */
 	overflow-y: scroll;
 	/* prevent iOS text size adjust after orientation change, without disabling user zoom */
@@ -46,14 +46,14 @@ header {
 
 	h3 {
 		/* 16px margin top */
-		margin: .66667em 0 0;
+		margin: 0.66667em 0 0;
 	}
 }
 
 .site-navigation {
 	border-top: solid 1px $color-gradient-border;
 	border-bottom: solid 1px $color-gradient-border;
-	@include box-shadow(inset 0 1px 0 0 rgba(#fff, .25));
+	@include box-shadow(inset 0 1px 0 0 rgba(#fff, 0.25));
 	@include gradient($color-gradient-from, $color-gradient-to);
 
 	ul {
@@ -78,7 +78,7 @@ header {
 
 		&:active {
 			color: darken($color-text, 10%);
-			@include box-shadow(inset 0 .2em .25em rgba(#000, .15));
+			@include box-shadow(inset 0 0.2em 0.25em rgba(#000, 0.15));
 			@include gradient(darken($color-gradient-to, 5%), darken($color-gradient-from, 5%));
 		}
 	}
@@ -86,7 +86,7 @@ header {
 	a {
 		@include text-shadow-light;
 		display: block;
-		padding: .5em 3.125%;
+		padding: 0.5em 3.125%;
 		color: $color-text;
 		text-decoration: none;
 	}
@@ -107,7 +107,7 @@ header {
 }
 
 footer {
-	padding: .5em 0;
+	padding: 0.5em 0;
 }
 
 /* address differences between Firefox and other browsers */

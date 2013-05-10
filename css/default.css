@@ -384,7 +384,7 @@ code,
 kbd,
 samp {
   /* 14px / 16px */
-  font-size: .875em;
+  font-size: 0.875em;
   border: 1px solid #e3e3e3;
   /* 2px / 14px + 3px / 14px */
   padding: 0.07143em 0.21429em;
@@ -396,7 +396,7 @@ samp {
 
 pre {
   /* 14px / 16px */
-  font-size: .875em;
+  font-size: 0.875em;
   overflow-x: auto;
   border: 1px solid #e3e3e3;
   padding: 1em;
@@ -420,18 +420,18 @@ pre code {
 sub,
 sup {
   /* 13px / 16px */
-  font-size: .8125em;
+  font-size: 0.8125em;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
 
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 small,
@@ -439,7 +439,7 @@ figcaption,
 tfoot,
 .footnote {
   /* 13px / 16px */
-  font-size: .8125em;
+  font-size: 0.8125em;
 }
 
 figcaption,
@@ -449,7 +449,7 @@ tfoot,
 }
 
 figcaption {
-  margin-top: .5em;
+  margin-top: 0.5em;
   font-style: italic;
 }
 
@@ -544,7 +544,7 @@ table {
 caption {
   font-style: italic;
   text-align: left;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 th,
@@ -640,7 +640,7 @@ textarea {
   font-family: Arial, Helvetica, sans-serif;
   /* correct font size not being inherited in all browsers */
   font-size: 100%;
-  font-size: .875em;
+  font-size: 0.875em;
   line-height: 1.4;
   vertical-align: baseline;
 }
@@ -689,7 +689,7 @@ textarea {
   -webkit-appearance: none;
   text-align: left;
   border: solid 1px #cccccc;
-  padding: .5em;
+  padding: 0.5em;
   background: #fff;
   outline: 0;
   -moz-border-radius: 0;
@@ -1128,7 +1128,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 8pt;
   line-height: 1.5;
-  margin: .5cm;
+  margin: 0.5cm;
   padding: 2em 5em;
 }
 
