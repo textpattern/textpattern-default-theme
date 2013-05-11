@@ -914,9 +914,9 @@ input[type="reset"]:focus,
 input[type="submit"]:focus {
   /* better button focus glows */
   outline: 0;
-  -webkit-box-shadow: 0px 0px 7px #0066ff;
-  -moz-box-shadow: 0px 0px 7px #0066ff;
-  box-shadow: 0px 0px 7px #0066ff;
+  -webkit-box-shadow: 0 0 7px #0066ff;
+  -moz-box-shadow: 0 0 7px #0066ff;
+  box-shadow: 0 0 7px #0066ff;
   z-index: 1;
 }
 

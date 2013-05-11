@@ -48,7 +48,7 @@ input[type="submit"] {
 	&:focus {
 		/* better button focus glows */
 		outline: 0;
-		@include box-shadow(0px 0px 7px $color-link-hover);
+		@include box-shadow(0 0 7px $color-link-hover);
 		z-index: 1; // Opera fix
 	}
 }
