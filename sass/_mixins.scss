@@ -67,7 +67,6 @@
 
 @mixin background-clip {
 	-webkit-background-clip: padding;
-	 -khtml-background-clip: padding-box;
 	   -moz-background-clip: padding;
 	        background-clip: padding-box;
 }
