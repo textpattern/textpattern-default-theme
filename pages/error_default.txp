@@ -31,7 +31,7 @@
 
 </head>
 
-<body id="error-page">
+<body class="error-page">
 
 <!-- header -->
   <header role="banner">

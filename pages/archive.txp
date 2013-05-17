@@ -43,7 +43,7 @@
 
 </head>
 
-<body id="<txp:section />-page">
+<body class="<txp:section />-page">
 
 <!-- header -->
   <header role="banner">

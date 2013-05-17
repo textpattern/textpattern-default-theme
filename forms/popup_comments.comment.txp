@@ -26,7 +26,7 @@
 
 </head>
 
-<body id="popup-page">
+<body class="popup-page">
 
   <div class="wrapper">
     <div class="container">
