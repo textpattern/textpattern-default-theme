@@ -160,10 +160,6 @@ select[disabled] optgroup,
 textarea[disabled],
 span.disabled {
 	opacity: 1;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
 	border-color: lighten($color-border, 9%) !important;
 	text-shadow: none !important;
 	color: $color-text-footnote !important;
