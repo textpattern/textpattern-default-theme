@@ -4,17 +4,22 @@
 //
 
 
+// import Sass partials
+@import "variables", "mixins";
+
+
 /* ==========================================================================
-   Additional layout for screen media 576px and up
+   Desktop version layout for IE8 due to lack of media queries support
    ========================================================================== */
 
-@media only screen and (min-width: $break-small) {
+header,
+footer,
+.container,
+.site-navigation ul {
+	width: 93.75%;
+}
 
 .site-navigation {
-	ul {
-		width: 93.75%;
-	}
-
 	li {
 		float: left;
 		border-right: solid 1px $color-gradient-border;
@@ -30,15 +35,6 @@
 	}
 }
 
-}
-
-
-/* ==========================================================================
-   Additional layout for screen media 864px and up
-   ========================================================================== */
-
-@media only screen and (min-width: $break-medium) {
-
 main {
 	float: left;
 	width: 62.5%;
@@ -53,19 +49,11 @@ main {
 	background: $color-background-box;
 }
 
-}
 
-
-/* ==========================================================================
-   Additional layout for screen media 1280px and up
+/* Fix for reponsive embedded content in IE8
    ========================================================================== */
 
-@media only screen and (min-width: $break-large) {
-
-header,
-footer,
-.container {
-	width: 93.75%;
-}
-
+img,
+video {
+	width: auto;
 }

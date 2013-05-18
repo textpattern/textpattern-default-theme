@@ -792,10 +792,6 @@ select[disabled] optgroup,
 textarea[disabled],
 span.disabled {
   opacity: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   border-color: #e3e3e3 !important;
   text-shadow: none !important;
   color: #999999 !important;
@@ -1075,32 +1071,12 @@ main {
 
 header,
 footer,
-.container,
-.site-navigation ul {
-  /* 1200px / 1280px */
+.container {
   width: 93.75%;
 }
 
 
 } /* end of @media screen and (min-width: 82em) */
-
-
-
-/* ==========================================================================
-   Fix for reponsive embedded content in IE8
-   ========================================================================== */
-
-
-@media \0screen {
-
-
-img,
-video {
-  width: auto;
-}
-
-
-} /* end of @media \0screen */
 
 
 
