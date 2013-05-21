@@ -82,6 +82,7 @@ textarea {
 	outline: 0;
 	@include border-radius(0);
 	@include box-sizing;
+	@include transition(box-shadow 0.2s linear);
 
 	&:focus {
 		/* better form focus glows */

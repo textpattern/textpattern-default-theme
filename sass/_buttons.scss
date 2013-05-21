@@ -34,6 +34,7 @@ input[type="submit"] {
 	@include background-clip;
 	@include box-sizing;
 	@include gradient($color-gradient-from, $color-gradient-to);
+	@include transition(box-shadow 0.2s linear);
 
 	&:hover {
 		@include gradient(lighten($color-gradient-from, 5%), lighten($color-gradient-to, 5%));

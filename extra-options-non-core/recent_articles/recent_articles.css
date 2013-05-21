@@ -56,26 +56,18 @@
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
   padding: 0 0.25em;
   background-color: #ffda44;
-  /* Safari5.1+, Chrome10+ */
   background-image: -webkit-linear-gradient(#ffda44, #fabc2b);
-  /* Firefox3.6 */
   background-image: -moz-linear-gradient(#ffda44, #fabc2b);
-  /* Opera11.10+ */
   background-image: -o-linear-gradient(#ffda44, #fabc2b);
-  /* CSS3 Compliant */
   background-image: linear-gradient(#ffda44, #fabc2b);
 }
 
 .monthly-list li a:hover .archive-year,
 .monthly-list li a:focus .archive-year {
   background-color: #ffe477;
-  /* Safari5.1+, Chrome10+ */
   background-image: -webkit-linear-gradient(#ffe477, #fbcc5d);
-  /* Firefox3.6 */
   background-image: -moz-linear-gradient(#ffe477, #fbcc5d);
-  /* Opera11.10+ */
   background-image: -o-linear-gradient(#ffe477, #fbcc5d);
-  /* CSS3 Compliant */
   background-image: linear-gradient(#ffe477, #fbcc5d);
 }
 
