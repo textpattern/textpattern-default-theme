@@ -4,39 +4,18 @@
 //
 
 
-// import Sass partials
-@import "variables", "mixins";
+// import global variables
+@import "variables";
+
+// import mixins
+@import "mixins";
 
 
 /* ==========================================================================
    Styling and layout for all media
    ========================================================================== */
 
-/* correct block display not defined in IE8-9 */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-nav,
-section,
-summary {
-	display: block;
-}
-
-/* correct `<summary>` not showing as clickable */
-summary {
-	cursor: pointer;
-}
-
-/* address styling for `hidden` attribute not present in IE8-9 */
-[hidden] {
-	display: none;
-}
-
+@import "base";
 @import "clearfix";
 
 
@@ -46,8 +25,24 @@ summary {
 
 @media screen {
 
-@import "layout", "links", "typography", "internationalisation", "embedded-content", "tables", "lists", "forms", "buttons", "comments";
+@import "layout";
+@import "links";
+@import "typography";
+@import "internationalisation";
+@import "embedded-content";
+@import "tables";
+@import "lists";
+@import "forms";
+@import "buttons";
+@import "comments";
 
 }
 
-@import "responsive", "print";
+@import "responsive";
+
+
+/* ==========================================================================
+   Styling and layout for print media
+   ========================================================================== */
+
+@import "print";
