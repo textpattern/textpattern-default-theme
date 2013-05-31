@@ -6,36 +6,36 @@ header,
 footer,
 .container,
 .site-navigation ul {
-	width: 93.75%;
+  width: 93.75%;
 }
 
 .site-navigation li {
-	float: left;
-	border-right: 1px solid #bbbbbb;
-	border-bottom: 0;
+  float: left;
+  border-right: 1px solid #bbbbbb;
+  border-bottom: 0;
 }
 
 .site-navigation li:first-child {
-	border-left: 1px solid #bbbbbb;
+  border-left: 1px solid #bbbbbb;
 }
 
 .site-navigation a {
-	padding: 0.5em 1em;
+  padding: 0.5em 1em;
 }
 
 main {
-	float: left;
-	width: 62.5%;
+  float: left;
+  width: 62.5%;
 }
 
 [role="complementary"] {
-	float: right;
-	border: solid 1px #e3e3e3;
-	-moz-border-radius: 0.5em;
-	border-radius: 0.5em;
-	padding: 0 1em;
-	width: 30%;
-	background: #f7f7f7;
+  float: right;
+  border: solid 1px #e3e3e3;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  padding: 0 1em;
+  width: 30%;
+  background: #f7f7f7;
 }
 
 
@@ -44,5 +44,5 @@ main {
 
 img,
 video {
-	width: auto;
+  width: auto;
 }
