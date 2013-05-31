@@ -18,7 +18,7 @@
 	display: block;
 	width: 75px;
 	height: 75px;
-	border: solid 1px;
+	border: 1px solid;
 	border-color: $color-border;
 	@include border-radius(.25em);
 	padding: 0.375em;

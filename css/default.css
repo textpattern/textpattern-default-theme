@@ -74,7 +74,7 @@ body {
 }
 
 .wrapper {
-  border-bottom: solid 1px #cccccc;
+  border-bottom: 1px solid #cccccc;
   padding: 1px 0;
   background: white;
 }
@@ -102,8 +102,8 @@ header h3 {
 }
 
 .site-navigation {
-  border-top: solid 1px #bbbbbb;
-  border-bottom: solid 1px #bbbbbb;
+  border-top: 1px solid #bbbbbb;
+  border-bottom: 1px solid #bbbbbb;
   -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
   -moz-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
   box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
@@ -123,7 +123,7 @@ header h3 {
 
 .site-navigation li {
   margin: 0;
-  border-bottom: solid 1px #bbbbbb;
+  border-bottom: 1px solid #bbbbbb;
 }
 
 .site-navigation li:last-child {
@@ -165,7 +165,7 @@ header h3 {
 
 [role="complementary"] {
   margin: 2em 0;
-  border-top: dashed 2px #cccccc;
+  border-top: 2px dashed #cccccc;
   padding-top: 1em;
 }
 
@@ -346,7 +346,7 @@ dfn {
 /* address styling not present in IE8-9, Safari5, Chrome */
 abbr[title],
 dfn[title] {
-  border-bottom: dotted 1px;
+  border-bottom: 1px dotted;
   cursor: help;
 }
 
@@ -539,7 +539,7 @@ td {
   /* make table cells align top and left by default */
   vertical-align: top;
   text-align: left;
-  border-bottom: solid 1px #cccccc;
+  border-bottom: 1px solid #cccccc;
   padding: 0.25em 0.5em 0.25em 0;
 }
 
@@ -550,7 +550,7 @@ td:last-child {
 
 thead th,
 thead td {
-  border-bottom: solid 2px #cccccc;
+  border-bottom: 2px solid #cccccc;
 }
 
 tfoot th,
@@ -593,11 +593,11 @@ dt {
   list-style: none;
   margin: 0 0 2em 0;
   padding: 0;
-  border-top: solid 1px #cccccc;
+  border-top: 1px solid #cccccc;
 }
 
 .article-list li {
-  border-bottom: solid 1px #cccccc;
+  border-bottom: 1px solid #cccccc;
   margin-bottom: 0;
 }
 
@@ -675,7 +675,7 @@ textarea {
   /* remove iOS Safari default styling */
   -webkit-appearance: none;
   text-align: left;
-  border: solid 1px #cccccc;
+  border: 1px solid #cccccc;
   padding: 0.5em;
   background: #fff;
   outline: 0;
@@ -833,7 +833,7 @@ input[type="submit"] {
   text-decoration: none;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
   cursor: pointer;
-  border: solid 1px #bbbbbb;
+  border: 1px solid #bbbbbb;
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
   padding: 0.5em 1em;
@@ -1000,12 +1000,12 @@ select[size="1"] {
 
 .site-navigation li {
   float: left;
-  border-right: solid 1px #bbbbbb;
+  border-right: 1px solid #bbbbbb;
   border-bottom: 0;
 }
 
 .site-navigation li:first-child {
-  border-left: solid 1px #bbbbbb;
+  border-left: 1px solid #bbbbbb;
 }
 
 .site-navigation li a {
@@ -1032,7 +1032,7 @@ main {
 
 [role="complementary"] {
   float: right;
-  border: solid 1px #e3e3e3;
+  border: 1px solid #e3e3e3;
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
   padding: 0 1em;
@@ -1091,12 +1091,12 @@ body {
 }
 
 header {
-  border-bottom: solid 1pt black;
+  border-bottom: 1pt solid black;
 }
 
 footer {
   margin-top: 12pt;
-  border-top: solid 1pt black;
+  border-top: 1pt solid black;
 }
 
 /* hide unnecessary content from print */
@@ -1190,7 +1190,7 @@ blockquote {
 
 pre {
   margin-bottom: 8pt;
-  border: solid 1pt black;
+  border: 1pt solid black;
   padding: 8pt;
 }
 
@@ -1271,7 +1271,7 @@ thead {
 }
 
 thead th {
-  border-top: solid 1pt black;
+  border-top: 1pt solid black;
 }
 
 tr {
@@ -1280,7 +1280,7 @@ tr {
 
 th,
 td {
-  border-bottom: solid 1pt black;
+  border-bottom: 1pt solid black;
   padding: 4pt 8pt;
 }
 

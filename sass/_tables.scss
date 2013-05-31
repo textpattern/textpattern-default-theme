@@ -26,7 +26,7 @@ td {
 	/* make table cells align top and left by default */
 	vertical-align: top;
 	text-align: left;
-	border-bottom: solid 1px $color-border;
+	border-bottom: 1px solid $color-border;
 	padding: 0.25em 0.5em 0.25em 0;
 
 	&:last-child {
@@ -37,7 +37,7 @@ td {
 thead {
 	th,
 	td {
-		border-bottom: solid 2px $color-border;
+		border-bottom: 2px solid $color-border;
 	}
 }
 

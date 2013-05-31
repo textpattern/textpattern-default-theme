@@ -21,7 +21,7 @@
 		display: block;
 		margin: 0 0.5em 0.5em 0;
 		min-width: 2.5em;
-		border: solid 1px $color-border;
+		border: 1px solid $color-border;
 		@include border-radius(0 0 0.25em 0.25em);
 		@include box-shadow(0 0 0.25em 0.25em);
 		background: #fff;

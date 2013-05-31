@@ -23,12 +23,12 @@ body {
 }
 
 header {
-	border-bottom: solid 1pt black;
+	border-bottom: 1pt solid black;
 }
 
 footer {
 	margin-top: 12pt;
-	border-top: solid 1pt black;
+	border-top: 1pt solid black;
 }
 
 /* hide unnecessary content from print */
@@ -126,7 +126,7 @@ blockquote {
 
 pre {
 	margin-bottom: 8pt;
-	border: solid 1pt black;
+	border: 1pt solid black;
 	padding: 8pt;
 }
 
@@ -207,7 +207,7 @@ caption {
 thead {
 	display: table-header-group;
 	th {
-		border-top: solid 1pt black;
+		border-top: 1pt solid black;
 	}
 }
 
@@ -217,7 +217,7 @@ tr {
 
 th,
 td {
-	border-bottom: solid 1pt black;
+	border-bottom: 1pt solid black;
 	padding: 4pt 8pt;
 }
 

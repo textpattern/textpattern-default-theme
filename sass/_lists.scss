@@ -33,10 +33,10 @@ dt {
 	list-style: none;
 	margin: 0 0 2em 0;
 	padding: 0;
-	border-top: solid 1px $color-border;
+	border-top: 1px solid $color-border;
 
 	li {
 		margin-bottom: 0;
-		border-bottom: solid 1px $color-border;
+		border-bottom: 1px solid $color-border;
 	}
 }

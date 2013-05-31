@@ -11,7 +11,7 @@
 
 .rslides-container {
 	margin: 2em 0;
-	border: solid 1px $color-border;
+	border: 1px solid $color-border;
 	@include border-radius(.25em);
 	padding: 0.375em;
 	background: #fff;

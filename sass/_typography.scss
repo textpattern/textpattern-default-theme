@@ -99,7 +99,7 @@ dfn {
 /* address styling not present in IE8-9, Safari5, Chrome */
 abbr[title],
 dfn[title] {
-	border-bottom: dotted 1px;
+	border-bottom: 1px dotted;
 	cursor: help;
 }
 

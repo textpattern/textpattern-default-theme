@@ -22,11 +22,11 @@ footer,
 .site-navigation {
 	li {
 		float: left;
-		border-right: solid 1px $color-gradient-border;
+		border-right: 1px solid $color-gradient-border;
 		border-bottom: 0;
 
 		&:first-child {
-			border-left: solid 1px $color-gradient-border;
+			border-left: 1px solid $color-gradient-border;
 		}
 	}
 
@@ -42,7 +42,7 @@ main {
 
 [role="complementary"] {
 	float: right;
-	border: solid 1px lighten($color-border, 9%);
+	border: 1px solid lighten($color-border, 9%);
 	@include border-radius($default-border-radius);
 	padding: 0 1em;
 	width: 30%;

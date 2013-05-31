@@ -11,12 +11,12 @@ footer,
 
 .site-navigation li {
 	float: left;
-	border-right: solid 1px #bbbbbb;
+	border-right: 1px solid #bbbbbb;
 	border-bottom: 0;
 }
 
 .site-navigation li:first-child {
-	border-left: solid 1px #bbbbbb;
+	border-left: 1px solid #bbbbbb;
 }
 
 .site-navigation a {
