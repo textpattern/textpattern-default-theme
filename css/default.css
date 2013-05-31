@@ -548,19 +548,28 @@ td:last-child {
   padding-right: 0;
 }
 
-thead th,
-thead td {
+thead tr:last-child th,
+thead tr:last-child td {
   border-bottom: 2px solid #cccccc;
 }
 
 tfoot th,
 tfoot td {
-  border-bottom: 0;
   padding: 0.325em 0.61538em 0.325em 0;
 }
 
 tfoot:last-child {
   padding-right: 0;
+}
+
+tfoot tr:last-child th,
+tfoot tr:last-child td {
+  border-bottom: 0;
+}
+
+/* vertical cell alignment */
+[rowspan] {
+  vertical-align: middle;
 }
 
 

@@ -34,7 +34,7 @@ td {
 	}
 }
 
-thead {
+thead tr:last-child {
 	th,
 	td {
 		border-bottom: 2px solid $color-border;
@@ -44,11 +44,22 @@ thead {
 tfoot {
 	th,
 	td {
-		border-bottom: 0;
 		padding: 0.325em 0.61538em 0.325em 0;
 	}
 
 	&:last-child {
 		padding-right: 0;
 	}
+
+	tr:last-child {
+		th,
+		td {
+			border-bottom: 0;
+		}
+	}
+}
+
+/* vertical cell alignment */
+[rowspan] {
+	vertical-align: middle;
 }
