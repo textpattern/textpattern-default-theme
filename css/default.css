@@ -36,6 +36,7 @@ summary {
 header:after,
 footer:after,
 nav ul:after,
+nav ol:after,
 .container:after,
 .clearfix:after,
 .paginator:after {
@@ -603,13 +604,13 @@ dt {
 .article-list {
   list-style: none;
   margin: 0 0 2em 0;
-  padding: 0;
   border-top: 1px solid #cccccc;
+  padding: 0;
 }
 
 .article-list li {
-  border-bottom: 1px solid #cccccc;
   margin-bottom: 0;
+  border-bottom: 1px solid #cccccc;
 }
 
 
