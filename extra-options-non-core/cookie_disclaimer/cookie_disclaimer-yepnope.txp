@@ -21,7 +21,7 @@ yepnope([
 
 
         // display cookie disclaimer on first visit
-        if($.cookie('acceptedCookies') === null ) {
+        if ($.cookie('acceptedCookies') != 1) {
           $('body').prepend('<div id="cookie-disclaimer"><div class="container"><p><strong>This website uses cookies to enhance your experience.</strong> By continuing to use this website you agree to cookies being placed on your computer. If you wish to use this website but do not wish for cookies to be placed on your computer you can change the settings in your internet browser. <a href="#" data-action="close">Close</a>.</p></div></div>');
           // show disclaimer
           $('#cookie-disclaimer').css('display', 'block');
