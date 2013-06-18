@@ -1,5 +1,6 @@
 {
   "name": "txp-h5bp-theme",
   "version": "4.6.0-beta.1",
-  "author": "Phil Wareham"
+  "author": "Phil Wareham",
+  "description": "The Textpattern CMS default theme"
 }
