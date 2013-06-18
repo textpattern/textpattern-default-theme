@@ -19,6 +19,12 @@ You can see the latest version of the theme running at "http://www.philwareham.c
 
 h2. Before you begin (fresh installs)
 
+h3. Get the latest version of the theme
+
+"Download from GitHub":https://github.com/philwareham/txp-h5bp-theme/archive/master.zip or use "Bower":http://bower.io:
+
+bc. $ bower install txp-h5bp-theme
+
 h3. Adjust Textpattern preferences
 
 h4. Essential
