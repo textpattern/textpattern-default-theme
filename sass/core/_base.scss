@@ -4,6 +4,32 @@
 //
 
 
+/* correct block display not defined in IE8-9 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+	display: block;
+}
+
+/* correct `<summary>` not showing as clickable */
+summary {
+	cursor: pointer;
+}
+
+/* address styling for `hidden` attribute not present in IE8-9 */
+[hidden] {
+	display: none;
+}
+
+
 /* Clearfix
    ========================================================================== */
 /* http://nicolasgallagher.com/micro-clearfix-hack/ */

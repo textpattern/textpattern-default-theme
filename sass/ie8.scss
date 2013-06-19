@@ -4,8 +4,11 @@
 //
 
 
-// import Sass partials
-@import "variables", "mixins";
+// import global variables
+@import "core/settings";
+
+// import mixins
+@import "core/helpers";
 
 
 /* ==========================================================================

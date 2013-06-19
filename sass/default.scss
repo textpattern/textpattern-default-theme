@@ -5,18 +5,17 @@
 
 
 // import global variables
-@import "variables";
+@import "core/settings";
 
 // import mixins
-@import "mixins";
+@import "core/helpers";
 
 
 /* ==========================================================================
    Styling and layout for all media
    ========================================================================== */
 
-@import "base";
-@import "clearfix";
+@import "core/base";
 
 
 /* ==========================================================================
@@ -25,24 +24,24 @@
 
 @media screen {
 
-@import "layout";
-@import "links";
-@import "typography";
-@import "internationalisation";
-@import "embedded-content";
-@import "tables";
-@import "lists";
-@import "forms";
-@import "buttons";
-@import "comments";
+@import "modules/layout";
+@import "modules/links";
+@import "modules/typography";
+@import "modules/internationalisation";
+@import "modules/embedded-content";
+@import "modules/tables";
+@import "modules/lists";
+@import "modules/forms";
+@import "modules/buttons";
+@import "modules/comments";
 
 }
 
-@import "responsive";
+@import "modules/responsive";
 
 
 /* ==========================================================================
    Styling and layout for print media
    ========================================================================== */
 
-@import "print";
+@import "core/print";
