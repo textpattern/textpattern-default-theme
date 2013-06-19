@@ -67,23 +67,39 @@ bc. <txp:css format="link" />
 
 or serve as an external stylesheet and link as (for example):
 
-bc. <link rel="stylesheet" href="/css/default.css">
+bc. <link rel="stylesheet" href="<txp:site_url />css/default.css">
 
-There are advantages/disadvanatges to both methods...
+There are advantages/disadvantages to both methods...
 
 Keeping style within the database by using the first method means you can make adjustments to the code without the need for FTP or a text editor, but is less flexible because you either lose the tools available in a dedicated IDE (integrated development environment) or have to paste your new code from the IDE which is time consuming. You can however make use of versioning tools such as 'cnk_versioning' Textpattern plugin to streamline this process somewhat (see above). Serving CSS from a mySQL database is significantly slower than serving as a static file.
 
 The second (and recommended) method of serving as an external stylesheet is much more flexible though it relies on you having FTP access to change the CSS files. This static file is quicker for a browser to load (and takes advantage of any cacheing rules), so your pages will render slightly faster.
 
-h4. /css/default.scss
+h4. /css/default.min.css
 
-"Sass":http://sass-lang.com version of the CSS file, users familiar with the Sass language can utilise this optional source file for rapid development of their own themes.
+Optional minified version of the 'default.css' file.
+
+h4. /css/ie8.css
+
+Internet Explorer 8 does not support media queries, so we provide an additional stylesheet to that browsers which forces the desktop (full width) layout. You can either copy/paste the whole stylesheet into admin area -> presentation -> style -> ie8 (you might need to create this stylesheet if it's not already in the CMS), and link as:
+
+bc. <!--[if lt IE 9]>
+  <script src="<txp:site_url />js/html5shiv.js"></script>
+  <txp:css format="link" media="" name="ie8" />
+<![endif]-->
+
+or serve as an external stylesheet and link as (for example):
+
+bc. <!--[if lt IE 9]>
+  <script src="<txp:site_url />js/html5shiv.js"></script>
+  <link rel="stylesheet" href="<txp:site_url />css/ie8.css">
+<![endif]-->
+
+h4. /css/ie8.min.css
+
+Optional minified version of the 'ie8.css' file.
 
 h3. JavaScript
-
-h4. /js/css3-mediaqueries.js
-
-Makes Internet Explorer 6-8 test and apply CSS3 media queries. This script can be removed if you don't intend to support IE less than version 9 (remember to also remove the corresponding link in the page @<head>@ section of page templates).
 
 h4. /js/html5shiv.js
 
@@ -174,6 +190,18 @@ h3. Design patterns Textile/HTML reference page
 h4. /design-patterns-page.textile
 
 This is a reference file you can use when authoring themes, it contains many of the valid HTML5 tags (and their equivalent Textile format where available) that should be accounted for in your designs. Paste this code directly into a Textpattern article (*please note* that some HTML5 tags are not fully supported by browsers yet).
+
+h3. Sass directory
+
+h4. /sass
+
+"Sass":http://sass-lang.com version of the CSS file, users familiar with the Sass language can utilise these optional source files for rapid development of their own themes.
+
+h3. Extra options directory
+
+h4. /extra-options-non-core
+
+These snippets of code are purely optional and allow you to extend the functionality of the original theme. You can find further information within the directory.
 
 h2. License
 
