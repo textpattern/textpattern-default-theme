@@ -1,6 +1,6 @@
 h1. Extra code options
 
-This snippets of code are purely optional and allow you to extend the functionality of the original theme.
+These snippets of code are purely optional and allow you to extend the functionality of the original theme.
 
 h2. Extra code option: analytics
 
