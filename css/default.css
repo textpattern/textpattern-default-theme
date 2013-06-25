@@ -37,8 +37,8 @@ header:after,
 footer:after,
 nav ul:after,
 nav ol:after,
-.container:after,
 .clearfix:after,
+.container:after,
 .paginator:after {
   content: "";
   display: table;
@@ -103,16 +103,16 @@ header h3 {
 }
 
 .site-navigation {
-  border-top: 1px solid #bbbbbb;
-  border-bottom: 1px solid #bbbbbb;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
   -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
   -moz-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
   box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
-  background-color: #e4e4e4;
-  background-image: -webkit-linear-gradient(#e4e4e4, #cccccc);
-  background-image: -moz-linear-gradient(#e4e4e4, #cccccc);
-  background-image: -o-linear-gradient(#e4e4e4, #cccccc);
-  background-image: linear-gradient(#e4e4e4, #cccccc);
+  background-color: #eeeeee;
+  background-image: -webkit-linear-gradient(#eeeeee, #dddddd);
+  background-image: -moz-linear-gradient(#eeeeee, #dddddd);
+  background-image: -o-linear-gradient(#eeeeee, #dddddd);
+  background-image: linear-gradient(#eeeeee, #dddddd);
 }
 
 .site-navigation ul {
@@ -124,7 +124,7 @@ header h3 {
 
 .site-navigation li {
   margin: 0;
-  border-bottom: 1px solid #bbbbbb;
+  border-bottom: 1px solid #cccccc;
 }
 
 .site-navigation li:last-child {
@@ -133,11 +133,11 @@ header h3 {
 
 .site-navigation li:hover,
 .site-navigation li.active {
-  background-color: #f1f1f1;
-  background-image: -webkit-linear-gradient(#f1f1f1, #d9d9d9);
-  background-image: -moz-linear-gradient(#f1f1f1, #d9d9d9);
-  background-image: -o-linear-gradient(#f1f1f1, #d9d9d9);
-  background-image: linear-gradient(#f1f1f1, #d9d9d9);
+  background-color: #fbfbfb;
+  background-image: -webkit-linear-gradient(#fbfbfb, #eaeaea);
+  background-image: -moz-linear-gradient(#fbfbfb, #eaeaea);
+  background-image: -o-linear-gradient(#fbfbfb, #eaeaea);
+  background-image: linear-gradient(#fbfbfb, #eaeaea);
 }
 
 .site-navigation li:active {
@@ -145,11 +145,11 @@ header h3 {
   -webkit-box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
-  background-color: #bfbfbf;
-  background-image: -webkit-linear-gradient(#bfbfbf, #d7d7d7);
-  background-image: -moz-linear-gradient(#bfbfbf, #d7d7d7);
-  background-image: -o-linear-gradient(#bfbfbf, #d7d7d7);
-  background-image: linear-gradient(#bfbfbf, #d7d7d7);
+  background-color: #d1d1d1;
+  background-image: -webkit-linear-gradient(#d1d1d1, #e1e1e1);
+  background-image: -moz-linear-gradient(#d1d1d1, #e1e1e1);
+  background-image: -o-linear-gradient(#d1d1d1, #e1e1e1);
+  background-image: linear-gradient(#d1d1d1, #e1e1e1);
 }
 
 .site-navigation li a {
@@ -689,7 +689,7 @@ textarea {
   text-align: left;
   border: 1px solid #cccccc;
   padding: 0.5em;
-  background: #fff;
+  background: #ffffff;
   outline: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -839,13 +839,12 @@ input[type="submit"] {
   -webkit-appearance: none;
   width: auto;
   overflow: visible;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   text-align: center;
   text-decoration: none;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
   cursor: pointer;
-  border: 1px solid #bbbbbb;
+  border: 1px solid #cccccc;
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
   padding: 0.5em 1em;
@@ -860,11 +859,11 @@ input[type="submit"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: #e4e4e4;
-  background-image: -webkit-linear-gradient(#e4e4e4, #cccccc);
-  background-image: -moz-linear-gradient(#e4e4e4, #cccccc);
-  background-image: -o-linear-gradient(#e4e4e4, #cccccc);
-  background-image: linear-gradient(#e4e4e4, #cccccc);
+  background-color: #eeeeee;
+  background-image: -webkit-linear-gradient(#eeeeee, #dddddd);
+  background-image: -moz-linear-gradient(#eeeeee, #dddddd);
+  background-image: -o-linear-gradient(#eeeeee, #dddddd);
+  background-image: linear-gradient(#eeeeee, #dddddd);
   -webkit-transition: box-shadow 0.2s linear;
   -moz-transition: box-shadow 0.2s linear;
   -o-transition: box-shadow 0.2s linear;
@@ -875,11 +874,11 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  background-color: #f1f1f1;
-  background-image: -webkit-linear-gradient(#f1f1f1, #d9d9d9);
-  background-image: -moz-linear-gradient(#f1f1f1, #d9d9d9);
-  background-image: -o-linear-gradient(#f1f1f1, #d9d9d9);
-  background-image: linear-gradient(#f1f1f1, #d9d9d9);
+  background-color: #fbfbfb;
+  background-image: -webkit-linear-gradient(#fbfbfb, #eaeaea);
+  background-image: -moz-linear-gradient(#fbfbfb, #eaeaea);
+  background-image: -o-linear-gradient(#fbfbfb, #eaeaea);
+  background-image: linear-gradient(#fbfbfb, #eaeaea);
 }
 
 button:active,
@@ -890,11 +889,11 @@ input[type="submit"]:active {
   -webkit-box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
-  background-color: #bfbfbf;
-  background-image: -webkit-linear-gradient(#bfbfbf, #d7d7d7);
-  background-image: -moz-linear-gradient(#bfbfbf, #d7d7d7);
-  background-image: -o-linear-gradient(#bfbfbf, #d7d7d7);
-  background-image: linear-gradient(#bfbfbf, #d7d7d7);
+  background-color: #d1d1d1;
+  background-image: -webkit-linear-gradient(#d1d1d1, #e1e1e1);
+  background-image: -moz-linear-gradient(#d1d1d1, #e1e1e1);
+  background-image: -o-linear-gradient(#d1d1d1, #e1e1e1);
+  background-image: linear-gradient(#d1d1d1, #e1e1e1);
 }
 
 button:focus,
@@ -1012,12 +1011,12 @@ select[size="1"] {
 
 .site-navigation li {
   float: left;
-  border-right: 1px solid #bbbbbb;
+  border-right: 1px solid #cccccc;
   border-bottom: 0;
 }
 
 .site-navigation li:first-child {
-  border-left: 1px solid #bbbbbb;
+  border-left: 1px solid #cccccc;
 }
 
 .site-navigation li a {
@@ -1117,9 +1116,9 @@ audio,
 video,
 form,
 [role="complementary"],
-#comments-form,
+.paginator,
 .comments h4 a:last-child,
-.paginator {
+#comments-form {
   display: none;
 }
 

@@ -78,7 +78,7 @@ textarea {
 	text-align: left;
 	border: 1px solid $color-border;
 	padding: 0.5em;
-	background: #fff;
+	background: #ffffff;
 	outline: 0;
 	@include border-radius(0);
 	@include box-sizing;
@@ -164,7 +164,7 @@ span.disabled {
 	border-color: lighten($color-border, 9%) !important;
 	text-shadow: none !important;
 	color: $color-text-footnote !important;
-	background: #eee !important;
+	background: #eeeeee !important;
 	cursor: default !important;
 	top: 0 !important;
 }

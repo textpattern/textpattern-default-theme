@@ -47,10 +47,10 @@
 // text shadows
 
 @mixin text-shadow-light {
-	text-shadow: 1px 1px 0 rgba(#fff, 0.5);
+	text-shadow: 1px 1px 0 rgba(#ffffff, 0.5);
 }
 @mixin text-shadow-dark {
-	text-shadow: -1px -1px 0 rgba(#000, 0.25);
+	text-shadow: -1px -1px 0 rgba(#000000, 0.25);
 }
 
 // box sizing

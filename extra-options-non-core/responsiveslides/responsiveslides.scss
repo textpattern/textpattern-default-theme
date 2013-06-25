@@ -14,7 +14,7 @@
 	border: 1px solid $color-border;
 	@include border-radius(.25em);
 	padding: 0.375em;
-	background: #fff;
+	background: #ffffff;
 	@include box-shadow;
 }
 
@@ -79,7 +79,7 @@ a.rslides_nav {
 		border: 1px solid;
 		border-color: $color-border;
 		@include border-radius;
-		background: #fff;
+		background: #ffffff;
 		width: 1em;  // 12px
 		height: 1em; // 12px
 

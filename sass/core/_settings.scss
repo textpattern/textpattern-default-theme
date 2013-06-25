@@ -28,26 +28,26 @@ $break-large:			 82em; // 1280px / 16px
 
 // text colours
 
-$color-text:			 #333;
-$color-text-footnote:	 #999;
+$color-text:			 #333333;
+$color-text-footnote:	 #999999;
 $color-link:			 #114eb1;
-$color-link-hover:		 #06f;
+$color-link-hover:		 #0066ff;
 $color-link-visited:	 #183082;
 
 // default gradients
 
-$color-gradient-from:    #e4e4e4;
-$color-gradient-to:      #ccc;
-$color-gradient-border:  #bbb;
+$color-gradient-from:    #eeeeee;
+$color-gradient-to:      darken($color-gradient-from, 6.5%);
+$color-gradient-border:  darken($color-gradient-from, 13.5%);
 
 // borders
 
-$color-border:			 #ccc;
+$color-border:			 #cccccc;
 $default-border-radius:	 0.5em; // 8px / 16px
 
 // accent colours
 
-$color-background:		 #fff;
+$color-background:		 #ffffff;
 $color-background-box:	 #f7f7f7;
 $color-highlight-box:	 lighten($color-link, 57%);
 
