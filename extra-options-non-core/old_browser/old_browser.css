@@ -2,7 +2,7 @@
 
 /* browser upgrade message (chromeframe) */
 
-#chromeframe {
+.browsehappy {
   padding: 1em;
   background: #fff6d3;
 }

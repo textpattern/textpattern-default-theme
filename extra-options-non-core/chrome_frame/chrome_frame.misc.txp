@@ -1,4 +1,0 @@
-<!-- Prompt IE users < 8 to install Chrome Frame - http://chromium.org/developers/how-tos/chrome-frame-getting-started -->
-<!--[if lt IE 8]>
-  <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" rel="external">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true" rel="external">activate Google Chrome Frame</a> to improve your experience.</p>
-<![endif]-->

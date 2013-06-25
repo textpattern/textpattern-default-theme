@@ -8,20 +8,6 @@ h4. /extra-options-non-core/analytics/analytics.misc.txp
 
 Add "Google Analytics":http://www.google.com/analytics/ tracking to your pages. You can either paste the contents of this form directly into the bottom your page templates (just before the @</body>@ tag) or put a @<txp:output_form form="analytics" />@ tag in the bottom of the your page templates instead, create a new form in the system with name of 'analytics' and type of 'misc', then copy/paste the code from this form into it. Add your unique Google Analytics ID into the code where indicated.
 
-h2. Extra code option: chrome_frame
-
-h4. /extra-options-non-core/chrome_frame/chrome_frame.misc.txp
-
-Add the option for politely informing any users of Internet Explorer 6 that they could install "Chrome Frame":http://code.google.com/chrome/chromeframe/ on their browser to support modern web page layouts. You could also target IE 7 (or newer) if you so desired by amending the code @<!--[if lt IE 7]>@ to @<!--[if lt IE 8]>@ for example for IE 7 (the code @lt IE 8@ means lower than IE 8). You can either paste the contents of this form directly into your page templates (just after @<div class="container">@ is recommended) or put a @<txp:output_form form="chrome_frame" />@ tag in your page templates instead (again, just after @<div class="container">@ is recommended), create a new form in the system with name of 'chrome_frame' and type of 'misc', then copy/paste the code from this form into it.
-
-h4. /extra-options-non-core/code_prettify/chrome_frame.css
-
-CSS code specific to the Chrome Frame message. If you using Sass then refer to the file below instead. Paste this in just before the end of the @media screen section of the stylesheet (i.e. the section before the size specific media queries begin).
-
-h4. /extra-options-non-core/code_prettify/chrome_frame.scss
-
-Sass version of the above CSS file - if you are using Sass to author your CSS then paste this code into the @default.scss@ instead of into the standard CSS file. Paste this in just before the end of the @media screen section of the stylesheet (i.e. the section before the size specific media queries begin).
-
 h2. Extra code option: code_prettify
 
 Google provides scripting to turn code within @<pre>@ tags into colour coded markup. It is recommended that you read the documentation before installation, which is available on the "Google Code Prettify project page":http://google-code-prettify.googlecode.com/svn/trunk/README.html. *Note:* requires Textile v2.3.2 or later.
@@ -154,6 +140,20 @@ For advanced users, you can alternative load jQuery via "yepnope":http://yepnope
 h4. /extra-options-non-core/jquery/js/jquery.js
 
 The ubiquitous "jQuery":http://jquery.com/ JavaScript library is used on thousands of sites worldwide. Place this file into your root /js/ directory.
+
+h2. Extra code option: old_browser
+
+h4. /extra-options-non-core/chrome_frame/old_browser.misc.txp
+
+Add the option for politely informing any users of Internet Explorer < 8 that they could should update to a modern browser. You can either paste the contents of this form directly into your page templates (just after @<div class="container">@ is recommended) or put a @<txp:output_form form="chrome_frame" />@ tag in your page templates instead (again, just after @<div class="container">@ is recommended), create a new form in the system with name of 'chrome_frame' and type of 'misc', then copy/paste the code from this form into it.
+
+h4. /extra-options-non-core/code_prettify/old_browser.css
+
+CSS code specific to the Chrome Frame message. If you using Sass then refer to the file below instead. Paste this in just before the end of the @media screen section of the stylesheet (i.e. the section before the size specific media queries begin).
+
+h4. /extra-options-non-core/code_prettify/old_browser.scss
+
+Sass version of the above CSS file - if you are using Sass to author your CSS then paste this code into the @default.scss@ instead of into the standard CSS file. Paste this in just before the end of the @media screen section of the stylesheet (i.e. the section before the size specific media queries begin).
 
 h2. Extra code option: page_title
 
