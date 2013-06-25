@@ -167,20 +167,6 @@ h4. /extra-options-non-core/pinterest/pinterest_pin_it.txp
 
 Add a Pinterest 'Pin it' button to each of your articles. Paste the code from that form into your default.article.txp form (around line 25 is recommended).
 
-h2. Extra code option: recent_articles
-
-h4. /extra-options-non-core/recent_articles/recent_articles.css
-
-CSS code specific to the recent articles section. If you using Sass then refer to the file below instead. Paste this in just before the end of the @media screen section of the stylesheet (i.e. the section before the size specific media queries begin).
-
-h4. /extra-options-non-core/recent_articles/recent_articles.scss
-
-Sass version of the above CSS file - if you are using Sass to author your CSS then paste this code into the @default.scss@ instead of into the standard CSS file. Paste this in just before the end of the @media screen section of the stylesheet (i.e. the section before the size specific media queries begin).
-
-h4. /extra-options-non-core/recent_articles/recent_articles.txp
-
-Either paste this file into page templates before the end of the @role="complementary"@ sidebar. Or put a @<txp:output_form form="recent_articles" />@ tag in your page templates @role="complementary"@ sidebar instead, create a new form in the system with name of 'recent_articles' and type of 'misc', then copy/paste the code from this form into it.
-
 h2. Extra code option: responsiveslides
 
 A responsive image slideshow (slider) jQuery plugin. See the "responsiveslider.js website":http://responsive-slides.viljamis.com/ for more information regarding this plugin.

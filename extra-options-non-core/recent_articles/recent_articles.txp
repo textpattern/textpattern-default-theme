@@ -1,9 +1,0 @@
-<h4><txp:text item="recent_articles" /></h4>
-<ul class="monthly-list">
-  <!-- using if_different tag to populate list only with months that actually contain articles -->
-  <txp:article_custom section="articles" limit="24">
-    <txp:if_different>
-      <li><a href="<txp:site_url />articles/?month=<txp:posted format="%Y-%m" />"><span class="archive-year"><txp:posted format="%Y" /></span> <span class="archive-month"><txp:posted format="%b" /></span></a></li>
-    </txp:if_different>
-  </txp:article_custom>
-</ul>
