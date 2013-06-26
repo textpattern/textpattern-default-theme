@@ -38,7 +38,7 @@
 
 <!-- if this is an individual article then add the comments section via form: comments_display.article.txp -->
 <txp:if_individual_article>
-  <txp:article form="comments_display" />
+  <txp:output_form form="comments_display" />
 </txp:if_individual_article>
 
 </article>
