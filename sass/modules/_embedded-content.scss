@@ -7,6 +7,14 @@
 /* Embedded content
    ========================================================================== */
 
+/* remove the gap between images, videos, audio and canvas and the bottom of their containers */
+audio,
+canvas,
+img,
+video {
+	vertical-align: middle;
+}
+
 /* correct `inline-block` display not defined in IE8-9 */
 audio,
 canvas,
