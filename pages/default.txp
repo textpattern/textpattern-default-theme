@@ -77,7 +77,7 @@
 <!-- left (main) column -->
       <main role="main" aria-label="<txp:text item='main_content' />">
 
-      <!-- is this result result page? also omits the pagination links below (uses pagination format within search_results.article.txp instead) -->
+      <!-- is this the search result page? also omits the pagination links below (uses pagination format within search_results.article.txp instead) -->
       <txp:if_search>
 
 	    <section role="region" itemscope itemtype="http://schema.org/SearchResultsPage">
