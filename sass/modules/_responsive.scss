@@ -11,22 +11,24 @@
 @media only screen and (min-width: $break-small) {
 
 .site-navigation {
+	border-top: 1px solid $color-border;
+
 	ul {
 		width: 93.75%;
 	}
 
 	li {
 		float: left;
+		border-top: 0;
 		border-right: 1px solid $color-gradient-border;
-		border-bottom: 0;
 
 		&:first-child {
 			border-left: 1px solid $color-gradient-border;
 		}
+	}
 
-		a {
-			padding: 0.5em 1em;
-		}
+	a {
+		padding: 0.5em 1em;
 	}
 }
 

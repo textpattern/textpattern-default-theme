@@ -75,9 +75,10 @@ body {
 }
 
 .wrapper {
+  border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
-  padding: 1px 0;
-  background: white;
+  padding: 1px 0 1em;
+  background: #ffffff;
 }
 
 header,
@@ -103,16 +104,7 @@ header h3 {
 }
 
 .site-navigation {
-  border-top: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
-  -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
-  -moz-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
-  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
-  background-color: #eeeeee;
-  background-image: -webkit-linear-gradient(#eeeeee, #dddddd);
-  background-image: -moz-linear-gradient(#eeeeee, #dddddd);
-  background-image: -o-linear-gradient(#eeeeee, #dddddd);
-  background-image: linear-gradient(#eeeeee, #dddddd);
+  background-color: #dddddd;
 }
 
 .site-navigation ul {
@@ -123,40 +115,47 @@ header h3 {
 }
 
 .site-navigation li {
-  margin: 0;
-  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  background-color: #eeeeee;
+  -webkit-transition: box-shadow 0.2s linear;
+  -moz-transition: box-shadow 0.2s linear;
+  -o-transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;
 }
 
-.site-navigation li:last-child {
-  border-bottom: 0;
-}
-
-.site-navigation li:hover,
-.site-navigation li.active {
-  background-color: #fbfbfb;
-  background-image: -webkit-linear-gradient(#fbfbfb, #eaeaea);
-  background-image: -moz-linear-gradient(#fbfbfb, #eaeaea);
-  background-image: -o-linear-gradient(#fbfbfb, #eaeaea);
-  background-image: linear-gradient(#fbfbfb, #eaeaea);
+.site-navigation li:hover {
+  background-color: #f8f8f8;
 }
 
 .site-navigation li:active {
-  color: #1a1a1a;
   -webkit-box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
-  background-color: #d1d1d1;
-  background-image: -webkit-linear-gradient(#d1d1d1, #e1e1e1);
-  background-image: -moz-linear-gradient(#d1d1d1, #e1e1e1);
-  background-image: -o-linear-gradient(#d1d1d1, #e1e1e1);
-  background-image: linear-gradient(#d1d1d1, #e1e1e1);
+  background-color: #e4e4e4;
+  background-image: -webkit-linear-gradient(#d3d3d3, #e4e4e4);
+  background-image: -moz-linear-gradient(#d3d3d3, #e4e4e4);
+  background-image: -o-linear-gradient(#d3d3d3, #e4e4e4);
+  background-image: linear-gradient(#d3d3d3, #e4e4e4);
 }
 
-.site-navigation li a {
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+.site-navigation li.active {
+  background-color: #ffffff;
+}
+
+.site-navigation a {
   display: block;
   padding: 0.5em 3.125%;
   color: #333333;
+}
+
+.site-navigation a:hover,
+.site-navigation a:visited {
+  color: #333333;
+  text-decoration: none;
+}
+
+.site-navigation a:active {
+  color: #1a1a1a;
   text-decoration: none;
 }
 
@@ -867,7 +866,7 @@ input[type="submit"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: #eeeeee;
+  background-color: #dddddd;
   background-image: -webkit-linear-gradient(#eeeeee, #dddddd);
   background-image: -moz-linear-gradient(#eeeeee, #dddddd);
   background-image: -o-linear-gradient(#eeeeee, #dddddd);
@@ -882,26 +881,28 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  background-color: #fbfbfb;
-  background-image: -webkit-linear-gradient(#fbfbfb, #eaeaea);
-  background-image: -moz-linear-gradient(#fbfbfb, #eaeaea);
-  background-image: -o-linear-gradient(#fbfbfb, #eaeaea);
-  background-image: linear-gradient(#fbfbfb, #eaeaea);
+  border-color: #aaaaaa;
+  background-color: #e8e8e8;
+  background-image: -webkit-linear-gradient(#f8f8f8, #e8e8e8);
+  background-image: -moz-linear-gradient(#f8f8f8, #e8e8e8);
+  background-image: -o-linear-gradient(#f8f8f8, #e8e8e8);
+  background-image: linear-gradient(#f8f8f8, #e8e8e8);
 }
 
 button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
+  border-color: #aaaaaa;
   color: #1a1a1a;
   -webkit-box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
-  background-color: #d1d1d1;
-  background-image: -webkit-linear-gradient(#d1d1d1, #e1e1e1);
-  background-image: -moz-linear-gradient(#d1d1d1, #e1e1e1);
-  background-image: -o-linear-gradient(#d1d1d1, #e1e1e1);
-  background-image: linear-gradient(#d1d1d1, #e1e1e1);
+  background-color: #e4e4e4;
+  background-image: -webkit-linear-gradient(#d3d3d3, #e4e4e4);
+  background-image: -moz-linear-gradient(#d3d3d3, #e4e4e4);
+  background-image: -o-linear-gradient(#d3d3d3, #e4e4e4);
+  background-image: linear-gradient(#d3d3d3, #e4e4e4);
 }
 
 button:focus,
@@ -994,7 +995,7 @@ select[multiple][size] {
 select,
 select[size="0"],
 select[size="1"] {
-  background: white url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='7px' viewBox='0 0 21 7' enable-background='new 0 0 21 7' xml:space='preserve'><polygon fill='#333333' points='2,0 7,7 12,0'/></svg>") no-repeat right center;
+  background: #ffffff url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='7px' viewBox='0 0 21 7' enable-background='new 0 0 21 7' xml:space='preserve'><polygon fill='#333333' points='2,0 7,7 12,0'/></svg>") no-repeat right center;
   padding-right: 2.25em;
   -webkit-background-size: 1.5em 0.5em;
   background-size: 1.5em 0.5em;
@@ -1013,21 +1014,25 @@ select[size="1"] {
 @media only screen and (min-width: 36em) {
 
 
+.site-navigation {
+  border-top: 1px solid #cccccc;
+}
+
 .site-navigation ul {
   width: 93.75%;
 }
 
 .site-navigation li {
   float: left;
+  border-top: 0;
   border-right: 1px solid #cccccc;
-  border-bottom: 0;
 }
 
 .site-navigation li:first-child {
   border-left: 1px solid #cccccc;
 }
 
-.site-navigation li a {
+.site-navigation a {
   padding: 0.5em 1em;
 }
 
