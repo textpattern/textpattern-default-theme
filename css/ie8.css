@@ -9,10 +9,14 @@ footer,
   width: 93.75%;
 }
 
+.site-navigation {
+  border-top: 1px solid #cccccc;
+}
+
 .site-navigation li {
   float: left;
+  border-top: 0;
   border-right: 1px solid #cccccc;
-  border-bottom: 0;
 }
 
 .site-navigation li:first-child {
