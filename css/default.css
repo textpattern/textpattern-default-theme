@@ -434,7 +434,7 @@ tfoot,
 figcaption,
 tfoot,
 .footnote {
-  color: #999999;
+  color: #888888;
 }
 
 figcaption {
@@ -654,12 +654,12 @@ textarea {
 /* colour placeholder text (WebKit and Mozilla only, so far) */
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #999999;
+  color: #888888;
 }
 
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: #999999;
+  color: #888888;
 }
 
 /* remove inner padding and border in Firefox 4+ */
@@ -805,7 +805,7 @@ span.disabled {
   opacity: 1;
   border-color: #e3e3e3 !important;
   text-shadow: none !important;
-  color: #999999 !important;
+  color: #aaaaaa !important;
   background: #eeeeee !important;
   cursor: default !important;
   top: 0 !important;
