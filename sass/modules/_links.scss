@@ -55,12 +55,12 @@ h1 a {
 
 .paginator {
 	margin-bottom: 2em;
-}
 
-.paginator-prev {
-	float: left;
-}
+    [rel="prev"] {
+        float: left;
+    }
 
-.paginator-next {
-	float: right;
+    [rel="next"] {
+        float: left;
+    }
 }

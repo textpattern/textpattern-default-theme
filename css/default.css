@@ -244,11 +244,11 @@ h1 a:active {
   margin-bottom: 2em;
 }
 
-.paginator-prev {
+.paginator [rel="prev"] {
   float: left;
 }
 
-.paginator-next {
+.paginator [rel="next"] {
   float: right;
 }
 
