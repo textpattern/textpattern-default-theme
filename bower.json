@@ -1,6 +1,6 @@
 {
-  "name": "txp-h5bp-theme",
+  "name": "textpattern-default-theme",
   "version": "4.6.0-beta.3",
-  "author": "Phil Wareham",
+  "author": "The Textpattern Development Team",
   "description": "The Textpattern CMS default theme"
 }
