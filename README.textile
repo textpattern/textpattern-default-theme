@@ -1,4 +1,4 @@
-h1. txp-h5bp-theme: the Textpattern CMS default theme (4.6 branch)
+h1. Textpattern CMS default theme (4.6 branch)
 
 h3. Please note: Textpattern 4.6 onwards will drop support for Internet Explorer 7
 
