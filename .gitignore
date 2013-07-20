@@ -5,7 +5,10 @@
 ._*
 .Spotlight-V100
 .Trashes
-.sass-cache
 Icon?
 ehthumbs.db
 Thumbs.db
+
+# Development files  #
+######################
+.sass-cache
