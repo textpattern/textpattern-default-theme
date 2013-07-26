@@ -1,40 +1,31 @@
-//
-// note: this file is for use with Sass - http://sass-lang.com,
-// don't use it as your live site stylesheet!
-//
-
-
-// add this to your default.scss, at the end of the @media screen section
-
-/* Flickr
-   ========================================================================== */
+/* Flickr */
 
 .flickr_badge_image {
-	float: left;
-	margin: 0.5em 1em 0.5em 0;
+    float: left;
+    margin: 0.5em 1em 0.5em 0;
 }
 
 .flickr_badge_image a {
-	display: block;
-	width: 75px;
-	height: 75px;
-	border: 1px solid;
-	border-color: $color-border;
-	@include border-radius(.25em);
-	padding: 0.375em;
-	background: #ffffff;
-	@include box-shadow;
+    display: block;
+    width: 75px;
+    height: 75px;
+    border: 1px solid;
+    border-color: $color-border;
+    @include border-radius(.25em);
+    padding: 0.375em;
+    background: #ffffff;
+    @include box-shadow;
 }
 
 .flickr_badge_image a:hover {
-	border-color: $color-link-hover;
-	@include box-shadow(0 1px 2px rgba($color-link-hover, 0.4));
+    border-color: $color-link-hover;
+    @include box-shadow(0 1px 2px rgba($color-link-hover, 0.4));
 }
 
 .flickr_badge_image a:visited {
-	border-color: $color-link-visited;
+    border-color: $color-link-visited;
 }
 
 #flickr p {
-	margin-top: 0;
+    margin-top: 0;
 }

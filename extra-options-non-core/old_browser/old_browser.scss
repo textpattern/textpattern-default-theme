@@ -1,14 +1,6 @@
-//
-// note: this file is for use with Sass - http://sass-lang.com,
-// don't use it as your live site stylesheet!
-//
-
-
-// add this to your default.scss, at the end of the @media screen section
-
-/* browser upgrade message (chromeframe) */
+/* Browser upgrade message (chromeframe) */
 
 .browsehappy {
-	padding: 1em;
-	background: $color-highlight-box;
+    padding: 1em;
+    background: $color-highlight-box;
 }
