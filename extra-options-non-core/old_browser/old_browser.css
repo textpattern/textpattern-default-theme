@@ -1,8 +1,0 @@
-/* add this to your default.css, at the end of the @media screen section */
-
-/* browser upgrade message (chromeframe) */
-
-.browsehappy {
-  padding: 1em;
-  background: #fff6d3;
-}
