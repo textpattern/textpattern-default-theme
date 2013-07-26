@@ -1,10 +1,5 @@
 # Require any additional Compass plugins here:
 
-# Singularity GS - https://github.com/Team-Sass/Singularity
-require "singularitygs"
-
-
-
 # Set this to the root of your project when deployed:
 http_path = "../"
 
