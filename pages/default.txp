@@ -94,7 +94,7 @@
 	      <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
             <h1 itemprop="name"><txp:text item="category" /> <txp:category title="1" /></h1>
             <div itemprop="mainContentOfPage">
-              <txp:article form="article_listing" limit="5" />
+              <txp:article form="article_listing" limit="5" wraptag="ul" class="article-list" />
             </div>
 	      </section>
 
@@ -106,7 +106,7 @@
 	        <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
               <h1 itemprop="name"><txp:text item="author" /> <txp:author /></h1>
               <div itemprop="mainContentOfPage">
-                <txp:article form="article_listing" limit="5" />
+                <txp:article form="article_listing" limit="5" wraptag="ul" class="article-list" />
               </div>
 	        </section>
 
