@@ -9,9 +9,9 @@
 
 /* zero out fieldsets */
 fieldset {
-	margin: 0;
-	border: 0;
-	padding: 0;
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
 /* zero out legends */
@@ -24,24 +24,24 @@ button,
 input,
 select,
 textarea {
-	/* address margins set differently in Firefox4+, Safari5+, and Chrome */
-	margin: 0;
-	font-family: $font-sans-serif;
-	/* correct font size not being inherited in all browsers */
-	font-size: 100%;
-	font-size: 0.875em;
-	line-height: 1.4;
-	vertical-align: baseline;
+    /* address margins set differently in Firefox4+, Safari5+, and Chrome */
+    margin: 0;
+    font-family: $font-sans-serif;
+    /* correct font size not being inherited in all browsers */
+    font-size: 100%;
+    font-size: 0.875em;
+    line-height: 1.4;
+    vertical-align: baseline;
 }
 
 /* colour placeholder text (WebKit and Mozilla only, so far) */
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-	color: $color-text-footnote;
+    color: $color-text-footnote;
 }
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-	color: $color-text-footnote;
+    color: $color-text-footnote;
 }
 
 /* remove inner padding and border in Firefox 4+ */
@@ -54,7 +54,7 @@ input::-moz-focus-inner {
 /* remove inner padding and search cancel button in Safari5+ and Chrome on OS X */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-	-webkit-appearance: none;
+    -webkit-appearance: none;
 }
 
 input[type="color"],
@@ -73,80 +73,80 @@ input[type="url"],
 input[type="week"],
 select,
 textarea {
-	/* remove iOS Safari default styling */
-	-webkit-appearance: none;
-	text-align: left;
-	border: 1px solid $color-border;
-	padding: 0.5em;
-	background: #ffffff;
-	outline: 0;
-	@include border-radius(0);
-	@include box-sizing;
-	@include transition(box-shadow 0.2s linear);
+    /* remove iOS Safari default styling */
+    -webkit-appearance: none;
+    text-align: left;
+    border: 1px solid $color-border;
+    padding: 0.5em;
+    background: #ffffff;
+    outline: 0;
+    @include border-radius(0);
+    @include box-sizing;
+    @include transition(box-shadow 0.2s linear);
 
-	&:focus {
-		/* better form focus glows */
-		outline: 0;
-		@include box-shadow(0 0 7px $color-link-hover);
-		/* Opera fix */
-		z-index: 1;
-	}
+    &:focus {
+        /* better form focus glows */
+        outline: 0;
+        @include box-shadow(0 0 7px $color-link-hover);
+        /* Opera fix */
+        z-index: 1;
+    }
 }
 
 input[type="color"] {
-	padding: 0;
-	/* 35px / 14px */
-	height: 2.5em;
+    padding: 0;
+    /* 35px / 14px */
+    height: 2.5em;
 }
 
 /* address box sizing set to `content-box` and excess padding in IE8-9 */
 input[type="checkbox"],
 input[type="radio"] {
-	padding: 0;
-	box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 [role="complementary"] input[type="search"] {
-	margin-right: 2px;
-	width: 66%;
-	display: inline-block;
+    margin-right: 2px;
+    width: 66%;
+    display: inline-block;
 }
 
 /* address inconsistent `text-transform` inheritance for `select` in Firefox 4+ and Opera */
 select {
-	text-transform: none;
+    text-transform: none;
 }
 
 select[size],
 select[multiple] {
-	height: auto;
+    height: auto;
 }
 
 select[size="0"],
 select[size="1"] {
-	/* 35px / 14px */
-	height: 2.5em;
+    /* 35px / 14px */
+    height: 2.5em;
 }
 
 optgroup {
-	font-family: $font-sans-serif; // font family repeated, for Firefox
-	font-style: normal;
-	font-weight: normal;
-	color: $color-text;
+    font-family: $font-sans-serif; // font family repeated, for Firefox
+    font-style: normal;
+    font-weight: normal;
+    color: $color-text;
 
-	&::-moz-focus-inner { // kill phantom spacing and dotted border that appears in Firefox
-		border: 0;
-		padding: 0;
-	}
+    &::-moz-focus-inner { // kill phantom spacing and dotted border that appears in Firefox
+        border: 0;
+        padding: 0;
+    }
 }
 
 textarea {
-	height: auto;
-	min-height: 3em;
-	/* remove default vertical scrollbar in IE8-9 */
-	overflow: auto;
-	resize: vertical;
-	width: 100%;
+    height: auto;
+    min-height: 3em;
+    /* remove default vertical scrollbar in IE8-9 */
+    overflow: auto;
+    resize: vertical;
+    width: 100%;
 }
 
 /* make sure disable elements really are disabled */
@@ -160,54 +160,54 @@ select[disabled] option,
 select[disabled] optgroup,
 textarea[disabled],
 span.disabled {
-	opacity: 1;
-	border-color: lighten($color-border, 9%) !important;
-	text-shadow: none !important;
-	color: #aaaaaa !important;
-	background: #eeeeee !important;
-	cursor: default !important;
-	top: 0 !important;
+    opacity: 1;
+    border-color: lighten($color-border, 9%) !important;
+    text-shadow: none !important;
+    color: #aaaaaa !important;
+    background: #eeeeee !important;
+    cursor: default !important;
+    top: 0 !important;
 }
 
 .large {
-	input {
-		width: 50%;
-		min-width: 302px;
-	}
+    input {
+        width: 50%;
+        min-width: 302px;
+    }
 
-	textarea {
-		height: 156px;
-	}
+    textarea {
+        height: 156px;
+    }
 }
 
 .small {
-	input {
-		width: 25%;
-		min-width: 151px;
-	}
+    input {
+        width: 25%;
+        min-width: 151px;
+    }
 
-	textarea {
-		height: 5.5em;
-	}
+    textarea {
+        height: 5.5em;
+    }
 }
 
 
 @media (-webkit-min-device-pixel-ratio: 0) {
 
-	/* address `<select>` alignment in Safari/Chrome */
-	select[size],
-	select[multiple],
-	select[multiple][size] {
-		background-image: none;
-		padding-right: 0.5em;
-	}
-	select,
-	select[size="0"],
-	select[size="1"] {
-		background: #fff url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='7px' viewBox='0 0 21 7' enable-background='new 0 0 21 7' xml:space='preserve'><polygon fill='#333333' points='2,0 7,7 12,0'/></svg>") no-repeat right center;
-		padding-right: 2.25em;
-		-webkit-background-size: 1.5em 0.5em; // 21px 7px
-		        background-size: 1.5em 0.5em; // 21px 7px
-	}
+    /* address `<select>` alignment in Safari/Chrome */
+    select[size],
+    select[multiple],
+    select[multiple][size] {
+        background-image: none;
+        padding-right: 0.5em;
+    }
+    select,
+    select[size="0"],
+    select[size="1"] {
+        background: #fff url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='7px' viewBox='0 0 21 7' enable-background='new 0 0 21 7' xml:space='preserve'><polygon fill='#333333' points='2,0 7,7 12,0'/></svg>") no-repeat right center;
+        padding-right: 2.25em;
+        -webkit-background-size: 1.5em 0.5em; // 21px 7px
+                background-size: 1.5em 0.5em; // 21px 7px
+    }
 
 }

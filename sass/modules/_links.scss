@@ -8,53 +8,53 @@
    ========================================================================== */
 
 a {
-	text-decoration: none;
-	color: $color-link;
+    text-decoration: none;
+    color: $color-link;
 
-	&:hover,
-	&:active { /* improve readability when focused and also mouse hovered in all browsers */
-		outline: 0;
-		text-decoration: underline;
-		color: $color-link-hover;
-	}
+    &:hover,
+    &:active { /* improve readability when focused and also mouse hovered in all browsers */
+        outline: 0;
+        text-decoration: underline;
+        color: $color-link-hover;
+    }
 
-	&:focus {
-		outline: thin dotted $color-link-hover;
-	}
+    &:focus {
+        outline: thin dotted $color-link-hover;
+    }
 
-	&:visited {
-		color: $color-link-visited;
-	}
+    &:visited {
+        color: $color-link-visited;
+    }
 
-	header & {
-		color: $color-text;
-		@include border-radius(.125em);
+    header & {
+        color: $color-text;
+        @include border-radius(.125em);
 
-		&:hover,
-		&:active {
-			background: darken($color-background-box, 6%);
-		}
-	}
+        &:hover,
+        &:active {
+            background: darken($color-background-box, 6%);
+        }
+    }
 }
 
 h1 a {
-	color: $color-text;
-	@include border-radius(.125em);
+    color: $color-text;
+    @include border-radius(.125em);
 
-	&:visited {
-		color: $color-text;
-	}
+    &:visited {
+        color: $color-text;
+    }
 
-	&:hover,
-	&:active {
-		text-decoration: none;
-		color: $color-text;
-		background: darken($color-background-box, 4%);
-	}
+    &:hover,
+    &:active {
+        text-decoration: none;
+        color: $color-text;
+        background: darken($color-background-box, 4%);
+    }
 }
 
 .paginator {
-	margin-bottom: 2em;
+    margin-bottom: 2em;
 
     [rel="prev"] {
         float: left;

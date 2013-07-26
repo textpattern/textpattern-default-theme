@@ -19,39 +19,39 @@ header,
 footer,
 .container,
 .site-navigation ul {
-	width: 93.75%;
+    width: 93.75%;
 }
 
 .site-navigation {
-	border-top: 1px solid $color-border;
+    border-top: 1px solid $color-border;
 
-	li {
-		float: left;
-		border-top: 0;
-		border-right: 1px solid $color-gradient-border;
+    li {
+        float: left;
+        border-top: 0;
+        border-right: 1px solid $color-gradient-border;
 
-		&:first-child {
-			border-left: 1px solid $color-gradient-border;
-		}
-	}
+        &:first-child {
+            border-left: 1px solid $color-gradient-border;
+        }
+    }
 
-	a {
-		padding: 0.5em 1em;
-	}
+    a {
+        padding: 0.5em 1em;
+    }
 }
 
 main {
-	float: left;
-	width: 62.5%;
+    float: left;
+    width: 62.5%;
 }
 
 [role="complementary"] {
-	float: right;
-	border: 1px solid lighten($color-border, 9%);
-	@include border-radius($default-border-radius);
-	padding: 0 1em;
-	width: 30%;
-	background: $color-background-box;
+    float: right;
+    border: 1px solid lighten($color-border, 9%);
+    @include border-radius($default-border-radius);
+    padding: 0 1em;
+    width: 30%;
+    background: $color-background-box;
 }
 
 
@@ -60,5 +60,5 @@ main {
 
 img,
 video {
-	width: auto;
+    width: auto;
 }

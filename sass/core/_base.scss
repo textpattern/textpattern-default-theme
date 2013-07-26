@@ -16,17 +16,17 @@ main,
 nav,
 section,
 summary {
-	display: block;
+    display: block;
 }
 
 /* correct `<summary>` not showing as clickable */
 summary {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 /* address styling for `hidden` attribute not present in IE8-9 */
 [hidden] {
-	display: none;
+    display: none;
 }
 
 
@@ -41,5 +41,5 @@ nav ol,
 .clearfix,
 .container,
 .paginator {
-	@include clearfix;
+    @include clearfix;
 }

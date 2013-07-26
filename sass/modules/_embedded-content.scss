@@ -12,14 +12,14 @@ audio,
 canvas,
 img,
 video {
-	vertical-align: middle;
+    vertical-align: middle;
 }
 
 /* correct `inline-block` display not defined in IE8-9 */
 audio,
 canvas,
 video {
-	display: inline-block;
+    display: inline-block;
 }
 
 /* make embedded elements responsive */
@@ -27,41 +27,41 @@ img,
 embed,
 object,
 video {
-	max-width: 100%;
-	height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 img {
-	/* remove border when inside `<a>` element in IE8-9 */
-	border: 0;
+    /* remove border when inside `<a>` element in IE8-9 */
+    border: 0;
 
-	&.align-left {
-		float: left;
-		margin: 1em 1em 1em 0;
-	}
+    &.align-left {
+        float: left;
+        margin: 1em 1em 1em 0;
+    }
 
-	&.align-right {
-		float: right;
-		margin: 1em 0 1em 1em;
-	}
-	&.align-center {
-		display: block;
-		margin: 1em auto;
-	}
+    &.align-right {
+        float: right;
+        margin: 1em 0 1em 1em;
+    }
+    &.align-center {
+        display: block;
+        margin: 1em auto;
+    }
 }
 
 /* address margin not present in IE8-9 and Safari5 */
 figure {
-	margin: 0;
+    margin: 0;
 }
 
 /* prevent modern browsers from displaying `<audio>` without controls, remove excess height in iOS5 devices */
 audio:not([controls]) {
-	display: none;
-	height: 0;
+    display: none;
+    height: 0;
 }
 
 /* correct overflow displayed oddly in IE9 */
 svg:not(:root) {
-	overflow: hidden;
+    overflow: hidden;
 }

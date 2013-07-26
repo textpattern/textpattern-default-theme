@@ -7,75 +7,75 @@
 // clearfix - http://nicolasgallagher.com/micro-clearfix-hack/
 
 @mixin clearfix {
-	&:after {
-		content: "";
-		display: table;
-		clear: both;
-		border-collapse: collapse;
-	}
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+        border-collapse: collapse;
+    }
 }
 
 // standard gradients
 
 @mixin gradient($color-gradient-from, $color-gradient-to) {
-	background: {
-		color: $color-gradient-from;
-		image: -webkit-linear-gradient($color-gradient-from, $color-gradient-to);
-		image:    -moz-linear-gradient($color-gradient-from, $color-gradient-to);
-		image:      -o-linear-gradient($color-gradient-from, $color-gradient-to);
-		image:         linear-gradient($color-gradient-from, $color-gradient-to);
-	}
+    background: {
+        color: $color-gradient-from;
+        image: -webkit-linear-gradient($color-gradient-from, $color-gradient-to);
+        image:    -moz-linear-gradient($color-gradient-from, $color-gradient-to);
+        image:      -o-linear-gradient($color-gradient-from, $color-gradient-to);
+        image:         linear-gradient($color-gradient-from, $color-gradient-to);
+    }
 }
 
 // rounded corners
 
 @mixin border-radius($default-border-radius) {
-	-moz-border-radius: $default-border-radius;
-	     border-radius: $default-border-radius;
+    -moz-border-radius: $default-border-radius;
+         border-radius: $default-border-radius;
 }
 
 // drop shadows
 
 @mixin box-shadow($shadow-1, $shadow-2: false) {
-	$shadow: $shadow-1;
-	@if $shadow-2 != false {$shadow: $shadow-1, $shadow-2;}
-	-webkit-box-shadow: $shadow;
-	   -moz-box-shadow: $shadow;
-	        box-shadow: $shadow;
+    $shadow: $shadow-1;
+    @if $shadow-2 != false {$shadow: $shadow-1, $shadow-2;}
+    -webkit-box-shadow: $shadow;
+       -moz-box-shadow: $shadow;
+            box-shadow: $shadow;
 }
 
 // text shadows
 
 @mixin text-shadow-light {
-	text-shadow: 1px 1px 0 rgba(#ffffff, 0.5);
+    text-shadow: 1px 1px 0 rgba(#ffffff, 0.5);
 }
 @mixin text-shadow-dark {
-	text-shadow: -1px -1px 0 rgba(#000000, 0.25);
+    text-shadow: -1px -1px 0 rgba(#000000, 0.25);
 }
 
 // box sizing
 
 @mixin box-sizing($box-sizing: border-box) {
-	-webkit-box-sizing: $box-sizing;
-	   -moz-box-sizing: $box-sizing;
-	        box-sizing: $box-sizing;
+    -webkit-box-sizing: $box-sizing;
+       -moz-box-sizing: $box-sizing;
+            box-sizing: $box-sizing;
 }
 
 // background clipping
 
 @mixin background-clip {
-	-webkit-background-clip: padding;
-	   -moz-background-clip: padding;
-	        background-clip: padding-box;
+    -webkit-background-clip: padding;
+       -moz-background-clip: padding;
+            background-clip: padding-box;
 }
 
 // transitions
 
 @mixin transition($transition-1, $transition-2: false) {
-	$transition: $transition-1;
-	@if $transition-2 != false {$transition: $transition-1, $transition-2;}
-	-webkit-transition: $transition;
-	   -moz-transition: $transition;
-	     -o-transition: $transition;
-	        transition: $transition;
+    $transition: $transition-1;
+    @if $transition-2 != false {$transition: $transition-1, $transition-2;}
+    -webkit-transition: $transition;
+       -moz-transition: $transition;
+         -o-transition: $transition;
+            transition: $transition;
 }

@@ -8,46 +8,46 @@
    ========================================================================== */
 
 .comments {
-	margin-bottom: 1em;
-	@include border-radius($default-border-radius);
-	padding: 1px 1em;
-	background: $color-background-box;
-	word-wrap: break-word;
+    margin-bottom: 1em;
+    @include border-radius($default-border-radius);
+    padding: 1px 1em;
+    background: $color-background-box;
+    word-wrap: break-word;
 
-	h4 {
-		.is-author {
-			font-weight: normal;
-		}
+    h4 {
+        .is-author {
+            font-weight: normal;
+        }
 
-		.comment-anchor {
-			float: right;
-			font-weight: normal;
-		}
-	}
+        .comment-anchor {
+            float: right;
+            font-weight: normal;
+        }
+    }
 }
 
 .comments-author {
-	background: darken($color-background-box, 3%);
+    background: darken($color-background-box, 3%);
 }
 
 #cpreview {
-	margin-bottom: 2px;
-	@include border-radius($default-border-radius);
-	padding: 1em;
-	background: #fff3d6;
+    margin-bottom: 2px;
+    @include border-radius($default-border-radius);
+    padding: 1em;
+    background: #fff3d6;
 }
 
 .comments_error {
-	background: $color-error-background !important;
+    background: $color-error-background !important;
 }
 
 .required,
 .error_message li {
-	color: $color-error-text;
+    color: $color-error-text;
 }
 
 .required {
-	cursor: help;
+    cursor: help;
 }
 
 
@@ -55,5 +55,5 @@
    ========================================================================== */
 
 #popup-page .container {
-	max-width: 52em;
+    max-width: 52em;
 }
