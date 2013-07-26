@@ -2,40 +2,40 @@
 <html lang="<txp:lang />">
 
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title><txp:page_title /></title>
-  <meta name="generator" content="Textpattern CMS">
-  <meta name="robots" content="noindex, follow, noodp, noydir">
+    <title><txp:page_title /></title>
+    <meta name="generator" content="Textpattern CMS">
+    <meta name="robots" content="noindex, follow, noodp, noydir">
 
 <!-- mobile viewport optimised, more info: http://h5bp.com/viewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- css -->
-  <!-- Google font API (remove this if you intend to use the theme in a project without internet access) -->
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic|Cousine">
+    <!-- Google font API (remove this if you intend to use the theme in a project without internet access) -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic|Cousine">
 
-  <txp:css format="link" media="" />
-  <!-- or you can use (faster) external CSS files eg. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
+    <txp:css format="link" media="" />
+    <!-- or you can use (faster) external CSS files eg. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
 
 <!-- HTML5/Media Queries support for IE < 9 (you can remove this section and the corresponding 'js' directory files if you don't intend to support IE < 9) -->
-  <!--[if lt IE 9]>
-    <script src="<txp:site_url />js/html5shiv.js"></script>
-    <script src="<txp:site_url />js/css3-mediaqueries.js"></script>
-  <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="<txp:site_url />js/html5shiv.js"></script>
+        <script src="<txp:site_url />js/css3-mediaqueries.js"></script>
+    <![endif]-->
 
 </head>
 
 <body class="popup-page">
 
-  <div class="wrapper">
-    <div class="container">
+    <div class="wrapper">
+        <div class="container">
 
-      <!-- this form is only used if you set 'Comments mode' to 'popup' format in preferences -->
-      <txp:popup_comments />
+            <!-- this form is only used if you set 'Comments mode' to 'popup' format in preferences -->
+            <txp:popup_comments />
 
-    </div> <!-- /.container -->
-  </div> <!-- /.wrapper -->
+        </div> <!-- /.container -->
+    </div> <!-- /.wrapper -->
 
 </body>
 </html>
