@@ -38,7 +38,7 @@
   </header>
 
 <!-- navigation -->
-  <nav role="navigation" class="site-navigation" aria-label="<txp:text item='navigation' />">
+  <nav role="navigation" class="site-navigation" aria-label="<txp:text item="navigation" />">
     <txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="li">
       <txp:section title="1" link="1" />
     </txp:section_list>
@@ -48,7 +48,7 @@
     <div class="container">
 
 <!-- left (main) column -->
-      <main role="main" aria-label="<txp:text item='main_content' />">
+      <main role="main" aria-label="<txp:text item="main_content" />">
         <h1 class="error-status"><txp:error_status /></h1>
         <p class="error-msg"><txp:error_message /></p>
       </main>
@@ -69,7 +69,7 @@
 
 <!-- footer -->
   <footer role="contentinfo">
-    <p><small><txp:text item="published_with" /> <a rel="external" href="http://textpattern.com" title="<txp:text item='go_txp_com' />">Textpattern CMS</a>.</small></p>
+    <p><small><txp:text item="published_with" /> <a rel="external" href="http://textpattern.com" title="<txp:text item="go_txp_com" />">Textpattern CMS</a>.</small></p>
   </footer>
 
   <!-- add your own JavaScript here -->
