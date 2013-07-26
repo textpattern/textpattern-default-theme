@@ -143,10 +143,6 @@ h4. /extra-options-non-core/responsiveslides/responsiveslides.txp
 
 You can either paste the contents of this form directly into the bottom your page templates (just before the @</body>@ tag) or put a @<txp:output_form form="responsiveslides" />@ tag in the bottom of the your page templates instead, create a new form in the system with name of 'responsiveslides' and type of 'misc', then copy/paste the code from this form into it. You must also have "jQuery":https://github.com/philwareham/txp-h5bp-theme/tree/master/extra-options-non-core#extra-code-option-jquery available and linked. Add this code *after* the jQuery link in your page (not necessary if you use yepnope).
 
-h4. /extra-options-non-core/responsiveslides/js/responsiveslides.min.js
-
-Place this file into your root /js/ directory.
-
 h2. Extra code option: twitter
 
 h4. /extra-options-non-core/twitter/twitter_tweet.txp
