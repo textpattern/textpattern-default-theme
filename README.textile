@@ -17,13 +17,13 @@ h4. Features
 
 You can see the latest version of the theme running at "http://www.philwareham.co.uk/":http://www.philwareham.co.uk/.
 
-h2. Before you begin (fresh installs)
+h2. Build
 
-h3. Get the latest version of the theme
+Todo.
 
-"Download from GitHub":https://github.com/philwareham/txp-h5bp-theme/archive/master.zip or use "Bower":http://bower.io:
+h2. Install
 
-bc. $ bower install txp-h5bp-theme
+Todo.
 
 h3. Adjust Textpattern preferences
 
@@ -56,48 +56,6 @@ Textpattern differs from many CMS solutions in that it stores the all template f
 However, many coders like to use their preferred IDE (integrated development environment) to write code and leverage all the tools within those applications provide to make code writing easier. That means you will have to copy/paste from your IDE into the corresponding parts of the Textpattern admin-side which adds a bit of time.
 
 With CSS files you could simply use external stylesheet and link in the traditional way (see below). However there is another solution in the form of the "'cnk_versioning' Textpattern plugin":http://forum.textpattern.com/viewtopic.php?id=27516, which effectively moves the 'styles', 'pages' and 'forms' back out of the database and into external directories for easier editing - a good solution when used in combination with an IDE. If you do use that plugin then dropping the files from this project into your correspondingly named directories will suffice. Detailed information on how to use cnk_versioning is "available at the Textpattern forum":http://forum.textpattern.com/viewtopic.php?id=27516.
-
-h3. CSS
-
-h4. /css/default.css
-
-You can either copy/paste the whole stylesheet into admin area -> presentation -> style -> default, and link as:
-
-bc. <txp:css format="link" />
-
-or serve as an external stylesheet and link as (for example):
-
-bc. <link rel="stylesheet" href="<txp:site_url />css/default.css">
-
-There are advantages/disadvantages to both methods...
-
-Keeping style within the database by using the first method means you can make adjustments to the code without the need for FTP or a text editor, but is less flexible because you either lose the tools available in a dedicated IDE (integrated development environment) or have to paste your new code from the IDE which is time consuming. You can however make use of versioning tools such as 'cnk_versioning' Textpattern plugin to streamline this process somewhat (see above). Serving CSS from a mySQL database is significantly slower than serving as a static file.
-
-The second (and recommended) method of serving as an external stylesheet is much more flexible though it relies on you having FTP access to change the CSS files. This static file is quicker for a browser to load (and takes advantage of any cacheing rules), so your pages will render slightly faster.
-
-h4. /css/default.min.css
-
-Optional minified version of the 'default.css' file.
-
-h4. /css/ie8.css
-
-Internet Explorer 8 does not support media queries, so we provide an additional stylesheet to that browsers which forces the desktop (full width) layout. You can either copy/paste the whole stylesheet into admin area -> presentation -> style -> ie8 (you might need to create this stylesheet if it's not already in the CMS), and link as:
-
-bc. <!--[if lt IE 9]>
-  <script src="<txp:site_url />js/html5shiv.js"></script>
-  <txp:css format="link" media="" name="ie8" />
-<![endif]-->
-
-or serve as an external stylesheet and link as (for example):
-
-bc. <!--[if lt IE 9]>
-  <script src="<txp:site_url />js/html5shiv.js"></script>
-  <link rel="stylesheet" href="<txp:site_url />css/ie8.css">
-<![endif]-->
-
-h4. /css/ie8.min.css
-
-Optional minified version of the 'ie8.css' file.
 
 h3. JavaScript
 
@@ -208,10 +166,6 @@ h2. License
 Non-core components:
 
 * HTML5 Shiv: MIT/GPL
-* jQuery: MIT/GPL
-* jQuery Cookie: MIT/GPL
-* Google Code Prettify: Apache License v2.0
-* ResponsiveSlides.js: MIT
 
 Everything else:
 
