@@ -32,12 +32,6 @@ h4. Essential
 # Check 'Automatically append comments to articles?' is set to 'no'. "More info":http://textpattern.com/faq/95/comment-display-confusion.
 # Check you have the latest Textpattern language database update, new data was added to the Textpattern language server from 31/08/11 onwards specifically to support this theme. Go to the preferences, language tab - if you are not already running the latest language version there will be a prompt to update next to your installed languages. Click on 'update' and an up-to-date language table will be automatically loaded.
 
-h4. Recommended but optional
-
-# You may decide you don't want to leave Textpattern managed images files loose in the 'images' directory - it may be tidier (and more secure) to create an additonal 'cms' directory within the 'images' directory and use that for any Textpattern managed images instead. You then set the Textpattern advance preference 'Image directory' to your new directory 'images/cms'. Make sure that PHP is able to write to 'images/cms' (usually chmod 777) - you can also set the original 'images' directory back to something more secure (such as chmod 755).
-# Removing 'sbl.spamhaus.org' from the advanced preference 'Spam blacklists (comma-separated)' may yield a (very minor) speed increase.
-# You might want to set 'New comment means site updated?' to 'Yes' since "search engines like fresh content":http://www.seoguide.org/seo201-google-ranking.htm.
-
 h3. Delete surplus forms
 
 There were a number of forms and pages that formed part of the original default (pre-4.5) theme for Textpattern. For the most part we will be reusing those existing forms with our own code. However, there are some forms you can safely remove from the system, if present, as we will not be using them (in fact the original default Textpattern theme did not require them either - they are mostly left over from earlier versions of Textpattern and not used any more).
