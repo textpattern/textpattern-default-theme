@@ -33,19 +33,19 @@ input[type="submit"] {
     @include box-shadow($inset-highlighting);
     @include background-clip;
     @include box-sizing(border-box);
-    @include gradient($color-gradient-from, $color-gradient-to);
+    @include gradient-linear($color-gradient-from, $color-gradient-to);
     @include transition(box-shadow 0.2s linear);
 
     &:hover {
         border-color: darken($color-gradient-to, 20%);
-        @include gradient(lighten($color-gradient-from, 4%), lighten($color-gradient-to, 4%));
+        @include gradient-linear(lighten($color-gradient-from, 4%), lighten($color-gradient-to, 4%));
     }
 
     &:active {
         border-color: darken($color-gradient-to, 20%);
         color: darken($color-text, 10%);
         @include box-shadow(inset 0 0.2em 0.25em rgba(#000000, 0.15));
-        @include gradient(darken($color-gradient-to, 4%), darken($color-gradient-from, 4%));
+        @include gradient-linear(darken($color-gradient-to, 4%), darken($color-gradient-from, 4%));
     }
 
     &:focus {
