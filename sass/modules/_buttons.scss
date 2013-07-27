@@ -32,7 +32,7 @@ input[type="submit"] {
     color: $color-text;
     @include box-shadow($inset-highlighting);
     @include background-clip;
-    @include box-sizing;
+    @include box-sizing(border-box);
     @include gradient($color-gradient-from, $color-gradient-to);
     @include transition(box-shadow 0.2s linear);
 

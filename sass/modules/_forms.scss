@@ -81,7 +81,7 @@ textarea {
     background: #ffffff;
     outline: 0;
     @include border-radius(0);
-    @include box-sizing;
+    @include box-sizing(border-box);
     @include transition(box-shadow 0.2s linear);
 
     &:focus {

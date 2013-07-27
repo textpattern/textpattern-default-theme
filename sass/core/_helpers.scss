@@ -20,14 +20,6 @@
     }
 }
 
-// box sizing
-
-@mixin box-sizing($box-sizing: border-box) {
-    -webkit-box-sizing: $box-sizing;
-       -moz-box-sizing: $box-sizing;
-            box-sizing: $box-sizing;
-}
-
 // background clipping
 
 @mixin background-clip {
