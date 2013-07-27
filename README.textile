@@ -1,10 +1,10 @@
-h1. Textpattern CMS default theme (4.6 branch)
+h1. Textpattern CMS default theme
 
-h3. Please note: Textpattern 4.6 onwards will drop support for Internet Explorer 7
+Download? | "Demo":http://www.philwareham.co.uk/
 
-This project is the default theme that ships as standard with "Textpattern CMS":http://textpattern.com as of v4.5 onwards. It is intended as a starting point for new users learning the Textpattern CMS for the first time or existing users that want to adapt their current code for modern standards, and is not intended as a finished production theme (though you could use it as such if you want to).
+This project is the source for the default theme that ships as standard with "Textpattern CMS":http://textpattern.com as of v4.5.0 onwards. It is intended as a starting point for new users learning the Textpattern CMS for the first time or existing users that want to adapt their current code for modern standards, and is not intended as a finished production theme (though you could use it as such if you want to).
 
-h4. Features
+h2. Features
 
 # The code is commented throughout with helpful information to help you learn some of the techniques and tags available within Textpattern.
 # Current best practices gathered from all over the web - in particular the "HTML5 Boilerplate":http://html5boilerplate.com/.
@@ -15,28 +15,70 @@ h4. Features
 # No images used at all.
 # Tested on a wide range of devices, browsers and operating systems.
 
-You can see the latest version of the theme running at "http://www.philwareham.co.uk/":http://www.philwareham.co.uk/.
+h2. Supported web browsers
 
-h2. Build
+* Internet Explorer 8, 9, 10
+* Chrome, Firefox, Safari and Opera the last two recent stable releases
 
-Todo.
+h2. Requirements
 
-h2. Install
+Building this source repository requires:
 
-Todo.
+* "Node.js":http://nodejs.org/ >=0.8.0
+* "Ruby":http://www.ruby-lang.org/en/
+* "Bundler":http://bundler.io/
+* "Grunt":http://gruntjs.com/ ~0.4.0
 
-h3. Adjust Textpattern preferences
+Environment must consist of:
 
-h4. Essential
+* Apache 2
+* PHP >=5.3
+* MySQL >=5
+* Textpattern CMS 4.6.0-dev
+* Unix-like OS, e.g. Linux or Mac OS
+
+h2. Setup
+
+h3. Installing required tools
+
+The project uses "Grunt":http://gruntjs.com/ to run tasks and "Sass":http://sass-lang.com/ for CSS pre-processing. This creates few dependencies in addition to your normal PHP required by Textpattern. First make sure you have base dependencies installed: "Ruby":http://www.ruby-lang.org/en/, "Node.js":http://nodejs.org/, "Bundler":http://bundler.io/ and "Grunt":http://gruntjs.com/. You can install Node, Ruby and "Composer":http://getcomposer.org/ using their installers, Bunder with gem and the rest with npm:
+
+bc. $ gem install bundler
+$ npm install -g grunt-cli
+$ npm install -g bower
+
+Consult the tools' documentation for more instructions. Outside from these, the project will also require the normal git, Apache, MySQL and PHP. All requirements must be added to your path variable.
+
+h3. Installing dependencies
+
+After you have the base dependencies taken care of, you can install the project's dependencies. Navigate to the project's directory, and run the dependency managers:
+
+bc. $ cd textpattern-default-theme
+$ npm install
+$ bundle install
+
+*npm* installs Node modules for Grunt and *bundle* takes care of Ruby gems.
+
+h2. Building
+
+This repository hosts sources and needs to be built before it can be used. After you have installed all dependencies, you will be able to run tasks using Grunt, including building:
+
+bc. $ grunt [task]
+
+Where the @[task]@ is either @test@, @build@ or @watch@. Watch will launch a task that watches for file changes. The project is automatically built if a source file is modified. The build task builds the project.
+
+h2. Adjust Textpattern preferences
+
+h3. Essential
 
 # Check 'Automatically append comments to articles?' is set to 'no'. "More info":http://textpattern.com/faq/95/comment-display-confusion.
 # Check you have the latest Textpattern language database update, new data was added to the Textpattern language server from 31/08/11 onwards specifically to support this theme. Go to the preferences, language tab - if you are not already running the latest language version there will be a prompt to update next to your installed languages. Click on 'update' and an up-to-date language table will be automatically loaded.
 
-h3. Delete surplus forms
+h2. Delete surplus forms
 
 There were a number of forms and pages that formed part of the original default (pre-4.5) theme for Textpattern. For the most part we will be reusing those existing forms with our own code. However, there are some forms you can safely remove from the system, if present, as we will not be using them (in fact the original default Textpattern theme did not require them either - they are mostly left over from earlier versions of Textpattern and not used any more).
 
-h4. You can safely delete the following forms from your fresh install if present:
+h3. You can safely delete the following forms from your fresh install if present:
 
 * link (link type form)
 * lofi (article type form)
