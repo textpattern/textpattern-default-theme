@@ -56,16 +56,6 @@ h4. /extra-options-non-core/cookie_disclaimer/cookie_disclaimer.txp
 
 You can either paste the contents of this form directly into the bottom your page templates (just before the @</body>@ tag) or put a @<txp:output_form form="cookie_disclaimer" />@ tag in the bottom of the your page templates instead, create a new form in the system with name of 'cookie_disclaimer' and type of 'misc', then copy/paste the code from this form into it. You must also have "jQuery":https://github.com/philwareham/txp-h5bp-theme/tree/master/extra-options-non-core#extra-code-option-jquery available and linked. Add this code *after* the jQuery link in your page (not necessary if you use yepnope).
 
-h2. Extra code option: facebook
-
-h4. /extra-options-non-core/facebook/facebook_like.txp
-
-Add a Facebook 'Like' button to each of your articles. Paste the code from that form into your default.article.txp form (around line 25 is recommended).
-
-h4. /extra-options-non-core/facebook/meta_open_graph.txp
-
-Meta tags for the "Open Graph protocol":http://ogp.me, required for Facebook 'Like' button functionality but can also be used independently of any Facebook widgets (although only Facebook seem to use this protocol in any meaningful way).
-
 h2. Extra code option: flickr
 
 h4. /extra-options-non-core/flickr/flickr.scss
@@ -104,6 +94,12 @@ bc. <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></s
 <script>window.jQuery || document.write('<script src="<txp:site_url />js/libs/jquery.js"><\/script>')</script>
 
 The advantages of using the CDN version over your own hosted copy is threefold - one, it saves bandwidth on your own server; two, Google's servers are extremely low latency and high bandwidth; three, there is a fair chance an end user will already have a copy of Google's CDN jQuery already cached in their browser if they have been to another site that has also used this method to provide jQuery, that means they will not have to reload it and ultimately makes your site render quicker - bonus points!
+
+h2. Extra code option: meta_open_graph
+
+h4. /extra-options-non-core/meta_open_graph/meta_open_graph.txp
+
+Meta tags for the "Open Graph protocol":http://ogp.me, primarily for Facebook functionality but can also be used independently of any Facebook widgets (although only Facebook seem to use this protocol in any meaningful way).
 
 h2. Extra code option: old_browser
 

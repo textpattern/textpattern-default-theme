@@ -1,3 +1,0 @@
-<!-- Facebook 'Like' button support - more info/extra options at: http://developers.facebook.com/docs/reference/plugins/like -->
-
-<iframe class="facebook-like" src="//www.facebook.com/plugins/like.php?href=<txp:permlink />&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;height=20"></iframe>

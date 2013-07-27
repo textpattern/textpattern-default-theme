@@ -1,0 +1,34 @@
+<!-- Open Graph tags - more info at: http://ogp.me -->
+
+<!-- if you're already using the optional 'page_title.misc.txp' form you can omit this (lines 5-23 below) -->
+
+<!-- is this the default section? () -->
+<txp:if_section name=",">
+    <txp:if_article_list>
+        <txp:if_category>
+            <txp:variable name="page-title" value='<txp:text item="category" /> <txp:category title="1" /> &#124; <txp:site_name />' />
+        <txp:else />
+            <txp:variable name="page-title" value='<txp:site_slogan /> &#124; <txp:site_name />' />
+        </txp:if_category>
+    <txp:else />
+        <txp:variable name="page-title" value='<txp:title no_widow="0" /> &#124; <txp:site_name />' />
+    </txp:if_article_list>
+<!-- is this not the default section? -->
+<txp:else />
+    <txp:if_article_list>
+        <txp:variable name="page-title" value='<txp:section title="1" /> &#124; <txp:site_name />' />
+    <txp:else />
+        <txp:variable name="page-title" value='<txp:title no_widow="0" /> &#124; <txp:site_name />' />
+    </txp:if_article_list>
+</txp:if_section>
+
+<meta property="og:title" content="<txp:variable name='page-title' />">
+<meta property="og:type" content="article">
+<!-- use article image, if available -->
+<txp:if_individual_article>
+    <txp:if_article_image>
+        <meta property="og:image" content="<txp:images limit='1'><txp:image_url/></txp:images>">
+    </txp:if_article_image>
+</txp:if_individual_article>
+<meta property="og:url" content="<txp:if_individual_article><txp:permlink /><txp:else /><txp:if_section><txp:section url='1' /><txp:else /><txp:if_category><txp:category url='1' /><txp:else /><txp:site_url /></txp:if_category></txp:if_section></txp:if_individual_article>">
+<meta property="og:site_name" content="<txp:site_name />">
