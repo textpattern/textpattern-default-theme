@@ -1,6 +1,6 @@
 h1. Textpattern CMS default theme
 
-Download? | "Demo":http://www.philwareham.co.uk/
+"Demo":http://www.philwareham.co.uk/
 
 This project is the source for the default theme that ships as standard with "Textpattern CMS":http://textpattern.com as of v4.5.0 onwards. It is intended as a starting point for new users learning the Textpattern CMS for the first time or existing users that want to adapt their current code for modern standards, and is not intended as a finished production theme (though you could use it as such if you want to).
 
@@ -66,6 +66,16 @@ This repository hosts sources and needs to be built before it can be used. After
 bc. $ grunt [task]
 
 Where the @[task]@ is either @test@, @build@ or @watch@. Watch will launch a task that watches for file changes. The project is automatically built if a source file is modified. The build task builds the project.
+
+h3. Compiling CSS with extra modules
+
+The theme comes with some extra CSS modules. To compile a custom CSS file from Sass, create a new .scss file to the @sass@ directory, for instance @custom.scss@. In that file, import any extra modules you want:
+
+bc. @import "default";
+@import "extra/code-prettify";
+@import "extra/flickr";
+
+When you now run @grunt build@ you will get a @/css/custom.css@ file, containing any extra modules too. Now just change the Style for your sections to @custom@ and you are set.
 
 h2. Adjust Textpattern preferences
 
