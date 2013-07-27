@@ -20,14 +20,6 @@
     }
 }
 
-// background clipping
-
-@mixin background-clip {
-    -webkit-background-clip: padding;
-       -moz-background-clip: padding;
-            background-clip: padding-box;
-}
-
 // transitions
 
 @mixin transition($transition-1, $transition-2: false) {
