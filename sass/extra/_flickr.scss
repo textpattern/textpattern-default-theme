@@ -14,7 +14,6 @@
     @include border-radius(.25em);
     padding: 0.375em;
     background: #ffffff;
-    @include box-shadow;
 }
 
 .flickr_badge_image a:hover {
