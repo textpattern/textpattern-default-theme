@@ -65,20 +65,24 @@
             <main role="main" aria-label="<txp:text item="main_content" />">
 
                 <txp:if_article_list>
-                <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
-                    <h1 itemprop="name"><txp:section title="1" /></h1>
-                    <div itemprop="mainContentOfPage">
+
+                    <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
+                        <h1 itemprop="name"><txp:section title="1" /></h1>
+
+                        <div itemprop="mainContentOfPage">
                             <txp:if_article_list>
                                 <txp:article form="article_listing" limit="5" wraptag="ul" class="article-list" />
                                 <!-- or if you want to list all articles from all sections instead, then replace txp:article with txp:article_custom -->
                             <txp:else />
                                 <txp:article />
                             </txp:if_article_list>
+                        </div>
+                    </section>
 
-                    </div>
-                </section>
-            <txp:else />
-                <txp:article />
+                <txp:else />
+
+                    <txp:article />
+
                 </txp:if_article_list>
 
                 <!-- add pagination links to foot of article/article listings if there are more articles available,
@@ -92,19 +96,17 @@
                     <txp:if_variable name="more" value="">
                     <txp:else />
                         <p class="paginator">
+                            <txp:if_variable name="prev" value="">
+                            <txp:else />
+                                <a rel="prev" href="<txp:link_to_prev />" title="<txp:prev_title />">&#8592; <txp:text item="older" /></a>
+                            </txp:if_variable>
 
-                        <txp:if_variable name="prev" value="">
-                        <txp:else />
-                            <a rel="prev" href="<txp:link_to_prev />" title="<txp:prev_title />">&#8592; <txp:text item="older" /></a>
-                        </txp:if_variable>
-
-                        <txp:if_variable name="next" value="">
-                        <txp:else />
-                            <a rel="next" href="<txp:link_to_next />" title="<txp:next_title />"><txp:text item="newer" /> &#8594;</a>
-                        </txp:if_variable>
-
-                    </p>
-                </txp:if_variable>
+                            <txp:if_variable name="next" value="">
+                            <txp:else />
+                                <a rel="next" href="<txp:link_to_next />" title="<txp:next_title />"><txp:text item="newer" /> &#8594;</a>
+                            </txp:if_variable>
+                        </p>
+                    </txp:if_variable>
 
                 <txp:else />
 
@@ -115,7 +117,6 @@
                     <txp:if_variable name="more" value="">
                     <txp:else />
                         <p class="paginator">
-
                             <txp:if_variable name="prev" value="">
                             <txp:else />
                                 <a rel="prev" href="<txp:older />" title="<txp:text item="older" />">&#8592; <txp:text item="older" /></a>
@@ -125,7 +126,6 @@
                             <txp:else />
                                 <a rel="next" href="<txp:newer />" title="<txp:text item="newer" />"><txp:text item="newer" /> &#8594;</a>
                             </txp:if_variable>
-
                         </p>
                     </txp:if_variable>
 
