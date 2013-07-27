@@ -111,7 +111,7 @@ Provides "basic HTML5 support for Internet Explorer versions 6-8":http://pauliri
 
 h3. Forms
 
-The forms follow the cnk_versioning standard of labelling, in that 'xxxx.misc.txp' is a misc type form, 'xxxx.article.txp' is an article type form, etc. This is only for file structure, when you actually create new forms within Textpattern you should *not* include the '.xxxx.txp', just the first part of the filename. See the analytics form description below.
+The forms follow the cnk_versioning standard of labelling, in that 'xxxx.misc.txp' is a misc type form, 'xxxx.article.txp' is an article type form, etc. This is only for file structure, when you actually create new forms within Textpattern you should *not* include the '.xxxx.txp', just the first part of the filename.
 
 h4. /forms/article_listing.article.txp
 
