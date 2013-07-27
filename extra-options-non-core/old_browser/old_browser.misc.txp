@@ -1,4 +1,4 @@
 <!-- Prompt IE users < 8 to upgrade to a modern browser -->
 <!--[if lt IE 8]>
-  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a rel="external" href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a rel="external" href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
