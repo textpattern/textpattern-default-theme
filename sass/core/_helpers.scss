@@ -18,14 +18,3 @@
     background-color: $color-gradient-to;
     @include background-image(radial-gradient($color-gradient-from, $color-gradient-to));
 }
-
-// transitions
-
-@mixin transition($transition-1, $transition-2: false) {
-    $transition: $transition-1;
-    @if $transition-2 != false {$transition: $transition-1, $transition-2;}
-    -webkit-transition: $transition;
-       -moz-transition: $transition;
-         -o-transition: $transition;
-            transition: $transition;
-}
