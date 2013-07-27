@@ -31,13 +31,6 @@
     }
 }
 
-// rounded corners
-
-@mixin border-radius($default-border-radius) {
-    -moz-border-radius: $default-border-radius;
-         border-radius: $default-border-radius;
-}
-
 // drop shadows
 
 @mixin box-shadow($shadow-1, $shadow-2: false) {
