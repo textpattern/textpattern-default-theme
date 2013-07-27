@@ -8,17 +8,6 @@
 @import "compass";
 
 
-// clearfix - http://nicolasgallagher.com/micro-clearfix-hack/
-
-@mixin clearfix {
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-        border-collapse: collapse;
-    }
-}
-
 // standard gradients
 
 @mixin gradient($color-gradient-from, $color-gradient-to) {

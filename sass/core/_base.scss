@@ -41,5 +41,5 @@ nav ol,
 .clearfix,
 .container,
 .paginator {
-    @include clearfix;
+    @include pie-clearfix;
 }
