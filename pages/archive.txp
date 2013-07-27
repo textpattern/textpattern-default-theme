@@ -65,9 +65,9 @@
             <main role="main" aria-label="<txp:text item="main_content" />">
 
                 <txp:if_article_list>
-	            <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
-	                <h1 itemprop="name"><txp:section title="1" /></h1>
-	                <div itemprop="mainContentOfPage">
+                <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
+                    <h1 itemprop="name"><txp:section title="1" /></h1>
+                    <div itemprop="mainContentOfPage">
                             <txp:if_article_list>
                                 <txp:article form="article_listing" limit="5" wraptag="ul" class="article-list" />
                                 <!-- or if you want to list all articles from all sections instead, then replace txp:article with txp:article_custom -->
@@ -75,10 +75,10 @@
                                 <txp:article />
                             </txp:if_article_list>
 
-	                </div>
-	            </section>
-	        <txp:else />
-	            <txp:article />
+                    </div>
+                </section>
+            <txp:else />
+                <txp:article />
                 </txp:if_article_list>
 
                 <!-- add pagination links to foot of article/article listings if there are more articles available,

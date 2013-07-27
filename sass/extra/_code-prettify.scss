@@ -4,47 +4,47 @@
 .dec,
 .typ,
 .var {
-	color: teal;
+    color: teal;
 }
 .atv,
 .str {
-	color: #d14;
+    color: #d14;
 }
 .clo,
 .opn,
 .pun {
-	color: #93a1a1;
+    color: #93a1a1;
 }
 .com {
-	color: #93a1a1;
+    color: #93a1a1;
 }
 
 .fun {
-	color: #dc322f;
+    color: #dc322f;
 }
 .kwd {
-	color: #1e347b;
+    color: #1e347b;
 }
 .lit {
-	color: #195f91;
+    color: #195f91;
 }
 .pln {
-	color: #48484c;
+    color: #48484c;
 }
 .tag {
-	color: #1e347b;
+    color: #1e347b;
 }
 
 /* Line number colouring */
 
 .linenums {
-	padding-left: 2em;
-	ol {
-		margin: 0;
-		@include box-shadow((inset 1.9375em 0 0 $color-background-box, inset 2em 0 0 lighten($color-border, 9%))); // 26px and 27px
-	}
-	li {
-		padding-left: 1em;
-		color: darken($color-border, 8%);
-	}
+    padding-left: 2em;
+    ol {
+        margin: 0;
+        @include box-shadow((inset 1.9375em 0 0 $color-background-box, inset 2em 0 0 lighten($color-border, 9%))); // 26px and 27px
+    }
+    li {
+        padding-left: 1em;
+        color: darken($color-border, 8%);
+    }
 }

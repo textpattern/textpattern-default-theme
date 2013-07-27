@@ -79,36 +79,36 @@
             <!-- is this the search result page? also omits the pagination links below (uses pagination format within search_results.article.txp instead) -->
                 <txp:if_search>
 
-	                <section role="region" itemscope itemtype="http://schema.org/SearchResultsPage">
+                    <section role="region" itemscope itemtype="http://schema.org/SearchResultsPage">
                         <h1 itemprop="name"><txp:text item="search_results" /></h1>
                         <div itemprop="mainContentOfPage">
                             <txp:output_form form="search_results" />
                         </div>
-	                </section>
+                    </section>
 
                 <txp:else />
 
                 <!-- else is this an article category list? -->
                     <txp:if_category>
 
-	                    <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
+                        <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
                             <h1 itemprop="name"><txp:text item="category" /> <txp:category title="1" /></h1>
                             <div itemprop="mainContentOfPage">
                                 <txp:article form="article_listing" limit="5" wraptag="ul" class="article-list" />
                             </div>
-	                    </section>
+                        </section>
 
                     <txp:else />
 
                         <!-- else is this an article author list? -->
                         <txp:if_author>
 
-	                        <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
+                            <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
                                 <h1 itemprop="name"><txp:text item="author" /> <txp:author /></h1>
                                 <div itemprop="mainContentOfPage">
                                     <txp:article form="article_listing" limit="5" wraptag="ul" class="article-list" />
                                 </div>
-	                        </section>
+                            </section>
 
                         <txp:else />
 

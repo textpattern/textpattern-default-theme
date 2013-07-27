@@ -4,18 +4,18 @@
 <script src="<txp:site_url />js/jquery.cookieDisclaimer.js"></script>
 <script>
 jQuery(function () {
-  // display cookie disclaimer on first visit
-  if ($.cookie('acceptedCookies') != 1) {
-    $('body').prepend('<div id="cookie-disclaimer"><div class="container"><p><strong>This website uses cookies to enhance your experience.</strong> By continuing to use this website you agree to cookies being placed on your computer. If you wish to use this website but do not wish for cookies to be placed on your computer you can change the settings in your internet browser. <a href="#" data-action="close">Close</a>.</p></div></div>');
-    // show disclaimer
-    $('#cookie-disclaimer').css('display', 'block');
-    // mark disclaimer as viewed, keep cookie for 4 years (1461 days)
-    $.cookie('acceptedCookies', 1, { expires: 1461 });
-    // close button
-    $('[data-action="close"]').click(function() {
-	  $('#cookie-disclaimer').slideUp('fast');
-	  return false;
-	});
-  }
+    // display cookie disclaimer on first visit
+    if ($.cookie('acceptedCookies') != 1) {
+        $('body').prepend('<div id="cookie-disclaimer"><div class="container"><p><strong>This website uses cookies to enhance your experience.</strong> By continuing to use this website you agree to cookies being placed on your computer. If you wish to use this website but do not wish for cookies to be placed on your computer you can change the settings in your internet browser. <a href="#" data-action="close">Close</a>.</p></div></div>');
+        // show disclaimer
+        $('#cookie-disclaimer').css('display', 'block');
+        // mark disclaimer as viewed, keep cookie for 4 years (1461 days)
+        $.cookie('acceptedCookies', 1, { expires: 1461 });
+        // close button
+        $('[data-action="close"]').click(function() {
+            $('#cookie-disclaimer').slideUp('fast');
+            return false;
+        });
+    }
 });
 </script>
