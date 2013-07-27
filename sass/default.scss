@@ -1,5 +1,5 @@
 //
-// note: this file is for use with Sass - http://sass-lang.com,
+// note: this file is for use with Sass and Compass - http://sass-lang.com, http://compass-style.org
 // don't use it as your live site stylesheet!
 //
 
@@ -7,15 +7,17 @@
 // import global variables
 @import "core/settings";
 
-// import mixins
+// import Compass and any additional mixins
 @import "core/helpers";
-@import "compass/css3/images";
+
+
 
 /* ==========================================================================
    Styling and layout for all media
    ========================================================================== */
 
 @import "core/base";
+
 
 
 /* ==========================================================================
@@ -44,6 +46,7 @@
 }
 
 @import "modules/responsive";
+
 
 
 /* ==========================================================================

@@ -1,8 +1,18 @@
 //
-// note: this file is for use with Sass - http://sass-lang.com,
+// note: this file is for use with Sass and Compass - http://sass-lang.com, http://compass-style.org
 // don't use it as your live site stylesheet!
 //
 
+
+// disable Compass support of IE6 and IE7
+
+$legacy-support-for-ie6:      false;
+$legacy-support-for-ie7:      false;
+
+// use the Kellum method for hiding text
+// http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
+
+$hide-text-direction:         right;
 
 // font families
 
@@ -14,7 +24,7 @@ $font-print:             "Helvetica Neue", Helvetica, Arial, sans-serif;
 // typography grid
 
 $base-font-size:         16px;
-$base-line-height:       1.5; // 24px / 16px
+$base-line-height:       24px;
 
 // layout grid
 
