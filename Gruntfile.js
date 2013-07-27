@@ -27,14 +27,11 @@ module.exports = function (grunt) {
 
         cssmin: {
             main: {
-                files: {
-                    'css/default.min.css': [
-                        'css/default.css'
-                    ],
-                    'css/ie8.min.css': [
-                        'css/ie8.css'
-                    ]
-                }
+                expand: true,
+                cwd: 'css/',
+                src: ['*.css', '!*.min.css'],
+                dest: 'css/',
+                ext: '.min.css'
             }
         },
 
