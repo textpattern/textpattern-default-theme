@@ -55,6 +55,12 @@ $color-gradient-border:  darken($color-gradient-from, 13.5%);
 $color-border:           #cccccc;
 $default-border-radius:  0.5em; // 8px / 16px
 
+// shadows
+
+$inset-highlighting:     inset 0 1px 0 rgba(#ffffff, 0.25);
+$text-shadow-light:      1px 1px 0 rgba(#ffffff, 0.5);
+$text-shadow-dark:       -1px -1px 0 rgba(#000000, 0.1);
+
 // accent colours
 
 $color-background:       #ffffff;
