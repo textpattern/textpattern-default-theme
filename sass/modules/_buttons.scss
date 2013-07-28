@@ -26,21 +26,22 @@ input[type="submit"] {
 
     /* remove iOS Safari default styling */
     -webkit-appearance: none;
+    display: inline-block;
+    border: 1px solid $color-gradient-border;
+    padding: .3571428em .7142857em; // 5px / 14px, 10px / 14px
     width: auto;
-    overflow: visible;
+    height: 2.3571428em; // 33px / 14px
+    overflow: visible; // the overflow property removes extra width in IE
     font-weight: normal;
     text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid $color-gradient-border;
-    padding: 0.5em 1em;
-    display: inline-block;
     color: $color-text;
+    cursor: pointer;
 
     &:hover {
         @include gradient-linear(lighten($color-gradient-from, 4%), lighten($color-gradient-to, 4%));
 
         border-color: darken($color-gradient-to, 20%);
+        text-decoration: none;
     }
 
     &:active {
