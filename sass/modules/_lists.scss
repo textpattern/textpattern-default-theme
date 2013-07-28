@@ -15,10 +15,11 @@ ul {
 }
 
 /* remove margins from nested lists */
-dl dl,
-ul ul,
-ol ol {
-    margin: 0;
+li {
+    > ul,
+    > ol {
+        margin: 0;
+    }
 }
 
 dd {
