@@ -7,7 +7,7 @@ GEM
       listen (<= 0.9.9)
       sass (~> 3.2.5)
     listen (0.7.3)
-    sass (3.2.9)
+    sass (3.2.10)
 
 PLATFORMS
   ruby
