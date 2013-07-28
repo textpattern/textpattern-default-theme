@@ -90,8 +90,6 @@ textarea {
         @include box-shadow(0 0 7px $color-link-hover);
 
         outline: 0;
-        /* Opera fix */
-        z-index: 1;
     }
 }
 
@@ -112,7 +110,7 @@ input[type="radio"] {
     display: inline-block;
 }
 
-/* address inconsistent `text-transform` inheritance for `select` in Firefox 4+ and Opera */
+/* address inconsistent `text-transform` inheritance for `select` in Firefox 4+ */
 select {
     text-transform: none;
 }
