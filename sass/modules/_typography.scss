@@ -7,11 +7,10 @@
 /* Typography
    ========================================================================== */
 
+@include establish-baseline;
+
 body {
     font-family: $font-serif;
-    /* 14px / 16px */
-    font-size: $base-font-size;
-    line-height: $base-line-height;
     color: $color-text;
 }
 
@@ -31,39 +30,27 @@ h6 {
 }
 
 h1 {
-    /* 40px / 16px */
-    font-size: 2.5em;
-    /* 48px / 40px */
-    line-height: 1.2;
-    /* 30px margin top/bottom */
-    margin: 0.625em 0;
+    @include adjust-font-size-to(40px, 2);
+
+    margin: rhythm(1, 40px) 0;
 }
 
 h2 {
-    /* 32px / 16px */
-    font-size: 2em;
-    /* 40px / 32px */
-    line-height: 1.25;
-    /* 24px margin top/bottom */
-    margin: 0.75em 0;
+    @include adjust-font-size-to(32px, 1.6666667);
+
+    margin: rhythm(1, 32px) 0;
 }
 
 h3 {
-    /* 24px / 16px */
-    font-size: 1.5em;
-    /* 32px / 24px */
-    line-height: 1.33333;
-    /* 20px margin top/bottom */
-    margin: 0.83333em 0;
+    @include adjust-font-size-to(24px, 1.3333333);
+
+    margin: rhythm(1, 24px) 0;
 }
 
 h4 {
-    /* 20px / 16px */
-    font-size: 1.25em;
-    /* 28px / 20px */
-    line-height: 1.4;
-    /* 16px margin top/bottom */
-    margin: 0.8em 0;
+    @include adjust-font-size-to(20px, 1.1666667);
+
+    margin: rhythm(1, 20px) 0;
 }
 
 /* address style set to `bolder` in Firefox4+, Safari5, and Chrome */
@@ -77,8 +64,8 @@ address {
 }
 
 blockquote {
-    /* 18px / 16px */
-    font-size: 1.125em;
+    @include adjust-font-size-to(18px, 1.08);
+
     font-style: italic;
     /* 16px / 18px */
     margin: 0.88889em 0;
@@ -122,10 +109,9 @@ samp {
 code,
 kbd,
 samp {
-    @include border-radius(.28571428571429em);
+    @include adjust-font-size-to(14px, .875);
+    @include border-radius(.28571428571429em); // 4px / 14px
 
-    /* 14px / 16px */
-    font-size: 0.875em;
     border: 1px solid lighten($color-border, 9%);
     /* 2px / 14px + 3px / 14px */
     padding: 0.07143em 0.21429em;
@@ -133,10 +119,9 @@ samp {
 }
 
 pre {
-    @include border-radius(.57142857142857em);
+    @include adjust-font-size-to(14px, .875);
+    @include border-radius(.57142857142857em); // 8px / 14px
 
-    /* 14px / 16px */
-    font-size: 0.875em;
     overflow-x: auto;
     border: 1px solid lighten($color-border, 9%);
     padding: 1em;
@@ -145,8 +130,7 @@ pre {
     tab-size: 4;
 
     code {
-        /* 14px */
-        font-size: 1em;
+        font-size: 1em; // 14px
         border: 0;
         padding: 0;
         background: none;
@@ -156,9 +140,8 @@ pre {
 /* prevent `<sub>` and `<sup>` affecting line height in all browsers */
 sub,
 sup {
-    /* 13px / 16px */
-    font-size: 0.8125em;
-    line-height: 0;
+    @include adjust-font-size-to(12px, 0);
+
     position: relative;
     vertical-align: baseline;
 }
@@ -173,8 +156,7 @@ small,
 figcaption,
 tfoot,
 .footnote {
-    /* 13px / 16px */
-    font-size: 0.8125em;
+    @include adjust-font-size-to(12px, .75);
 }
 
 figcaption,

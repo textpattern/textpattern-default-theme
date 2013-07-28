@@ -24,13 +24,13 @@ button,
 input,
 select,
 textarea {
+    /* correct font size not being inherited in all browsers */
+    font-size: 100%;
+    @include adjust-font-size-to(14px, .875);
+
     /* address margins set differently in Firefox4+, Safari5+, and Chrome */
     margin: 0;
     font-family: $font-sans-serif;
-    /* correct font size not being inherited in all browsers */
-    font-size: 100%;
-    font-size: 0.875em;
-    line-height: 1.4;
     vertical-align: baseline;
 }
 
