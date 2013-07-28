@@ -10,6 +10,7 @@
 a {
     text-decoration: none;
     color: $color-link;
+    background: transparent; // remove the gray background color from active links in IE10
 
     &:hover,
     &:active { /* improve readability when focused and also mouse hovered in all browsers */
