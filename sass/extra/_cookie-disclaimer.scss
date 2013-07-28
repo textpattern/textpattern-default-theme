@@ -7,8 +7,9 @@
 /* cookie disclaimer */
 
 #cookie-disclaimer {
-    background-color: #e8e8e8;
+    @include box-shadow(inset 0 -0.25em 0.25em rgba(51, 51, 51, 0.1));
+
     border-bottom: 1px solid $color-border;
     padding: 1px 0;
-    @include box-shadow(inset 0 -0.25em 0.25em rgba(51, 51, 51, 0.1));
+    background-color: darken($color-background-box, 6%);
 }

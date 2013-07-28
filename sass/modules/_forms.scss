@@ -73,21 +73,23 @@ input[type="url"],
 input[type="week"],
 select,
 textarea {
-    /* remove iOS Safari default styling */
-    -webkit-appearance: none;
-    text-align: left;
-    border: 1px solid $color-border;
-    padding: 0.5em;
-    background: #ffffff;
-    outline: 0;
     @include border-radius(0);
     @include box-sizing(border-box);
     @include transition(box-shadow 0.2s linear);
 
+    /* remove iOS Safari default styling */
+    -webkit-appearance: none;
+    border: 1px solid $color-border;
+    padding: 0.3571428em; // 5px / 14px
+    height: 2.3571428em; // 33px / 14px
+    background: #ffffff;
+    text-align: left;
+
     &:focus {
         /* better form focus glows */
-        outline: 0;
         @include box-shadow(0 0 7px $color-link-hover);
+
+        outline: 0;
         /* Opera fix */
         z-index: 1;
     }
@@ -95,8 +97,6 @@ textarea {
 
 input[type="color"] {
     padding: 0;
-    /* 35px / 14px */
-    height: 2.5em;
 }
 
 /* address box sizing set to `content-box` and excess padding in IE8-9 */
@@ -124,8 +124,28 @@ select[multiple] {
 
 select[size="0"],
 select[size="1"] {
-    /* 35px / 14px */
-    height: 2.5em;
+    height: 2.3571428em; // 33px / 14px
+}
+
+/* address `<select>` alignment in Safari/Chrome */
+@media (-webkit-min-device-pixel-ratio: 0) {
+
+    select[size],
+    select[multiple],
+    select[multiple][size] {
+        background-image: none;
+        padding-right: .5em;
+    }
+
+    select,
+    select[size="0"],
+    select[size="1"] {
+        background: #ffffff url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='7px' viewBox='0 0 21 7' enable-background='new 0 0 21 7' xml:space='preserve'><polygon fill='#333333' points='2,0 7,7 12,0'/></svg>") no-repeat right center;
+        padding-right: 2.25em;
+        -webkit-background-size: 1.5em .5em; // 21px 7px
+                background-size: 1.5em .5em; // 21px 7px
+    }
+
 }
 
 optgroup {
@@ -160,12 +180,13 @@ select[disabled] option,
 select[disabled] optgroup,
 textarea[disabled],
 span.disabled {
+    @include box-shadow(none !important);
+
     opacity: 1;
     border-color: lighten($color-border, 9%) !important;
-    text-shadow: none !important;
-    @include box-shadow(none !important);
     color: #aaaaaa !important;
     background: #eeeeee !important;
+    text-shadow: none !important;
     cursor: default !important;
 }
 
@@ -189,25 +210,4 @@ span.disabled {
     textarea {
         height: 5.5em;
     }
-}
-
-
-@media (-webkit-min-device-pixel-ratio: 0) {
-
-    /* address `<select>` alignment in Safari/Chrome */
-    select[size],
-    select[multiple],
-    select[multiple][size] {
-        background-image: none;
-        padding-right: 0.5em;
-    }
-    select,
-    select[size="0"],
-    select[size="1"] {
-        background: #fff url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='7px' viewBox='0 0 21 7' enable-background='new 0 0 21 7' xml:space='preserve'><polygon fill='#333333' points='2,0 7,7 12,0'/></svg>") no-repeat right center;
-        padding-right: 2.25em;
-        -webkit-background-size: 1.5em 0.5em; // 21px 7px
-                background-size: 1.5em 0.5em; // 21px 7px
-    }
-
 }

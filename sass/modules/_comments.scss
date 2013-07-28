@@ -8,8 +8,9 @@
    ========================================================================== */
 
 .comments {
+    @include border-radius;
+
     margin-bottom: 1em;
-    @include border-radius($default-border-radius);
     padding: 1px 1em;
     background: $color-background-box;
     word-wrap: break-word;
@@ -31,8 +32,9 @@
 }
 
 #cpreview {
+    @include border-radius;
+
     margin-bottom: 2px;
-    @include border-radius($default-border-radius);
     padding: 1em;
     background: #fff3d6;
 }

@@ -62,9 +62,9 @@ header {
     }
 
     li {
+        @include transition(box-shadow 0.2s linear);
         border-top: 1px solid $color-gradient-border;
         background-color: $color-gradient-from;
-        @include transition(box-shadow 0.2s linear);
 
         &:hover {
             background-color: lighten($color-gradient-from, 4%);
@@ -119,6 +119,7 @@ footer {
 /* address differences between Firefox and other browsers */
 hr {
     @include box-sizing(content-box);
+
     border: 0; // remove the default `hr` border
     border-bottom: 1px solid $color-border;
     height: 0;

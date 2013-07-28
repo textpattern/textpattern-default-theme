@@ -7,11 +7,12 @@
 @media print {
 
 * {
-    /* black prints faster - http://sanbeiji.com/archives/953 */
+    @include box-shadow(none !important);
+
+    /* black prints faster */
     color: black !important;
     text-shadow: none !important;
     background: transparent !important;
-    @include box-shadow(none !important);
 }
 
 body {
