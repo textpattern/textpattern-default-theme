@@ -48,7 +48,6 @@ main {
 [role="complementary"] {
     float: right;
     border: 1px solid lighten($color-border, 9%);
-    @include border-radius($default-border-radius);
     padding: 0 1em;
     width: 30%;
     background: $color-background-box;
