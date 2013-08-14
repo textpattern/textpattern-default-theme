@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<txp:lang />">
+<html lang="<txp:lang />" dir="<txp:text item="lang_dir" />">
 
 <head>
     <meta charset="utf-8">
