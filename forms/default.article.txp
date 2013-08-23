@@ -8,7 +8,7 @@
 </txp:if_individual_article>
 
     <p><strong><txp:text item="posted" /></strong> <time datetime="<txp:posted format="iso8601" />" itemprop="datePublished"><txp:posted /></time><br>
-        <strong><txp:text item="comments" /></strong> <a href="<txp:permlink />#comments-head" title="<txp:text item="view" />&#8230;" itemprop="discussionUrl" itemscope itemtype="http://schema.org/UserComments">
+        <strong><txp:text item="comments" /></strong> <a href="<txp:permlink />#comments-head" title="<txp:text item="view" />" itemprop="discussionUrl" itemscope itemtype="http://schema.org/UserComments">
 
 <!-- if comments then display the number, if no comments then print 'none' -->
 <txp:if_comments>

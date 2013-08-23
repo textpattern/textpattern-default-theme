@@ -6,19 +6,19 @@
 <txp:if_section name=",">
     <txp:if_article_list>
         <txp:if_category>
-            <txp:variable name="page-title" value='<txp:text item="category" /> <txp:category title="1" /> &#124; <txp:site_name />' />
+            <txp:variable name="page-title" value='<txp:text item="category" /> <txp:category title="1" /> | <txp:site_name />' />
         <txp:else />
-            <txp:variable name="page-title" value='<txp:site_slogan /> &#124; <txp:site_name />' />
+            <txp:variable name="page-title" value='<txp:site_slogan /> | <txp:site_name />' />
         </txp:if_category>
     <txp:else />
-        <txp:variable name="page-title" value='<txp:title no_widow="0" /> &#124; <txp:site_name />' />
+        <txp:variable name="page-title" value='<txp:title no_widow="0" /> | <txp:site_name />' />
     </txp:if_article_list>
 <!-- is this not the default section? -->
 <txp:else />
     <txp:if_article_list>
-        <txp:variable name="page-title" value='<txp:section title="1" /> &#124; <txp:site_name />' />
+        <txp:variable name="page-title" value='<txp:section title="1" /> | <txp:site_name />' />
     <txp:else />
-        <txp:variable name="page-title" value='<txp:title no_widow="0" /> &#124; <txp:site_name />' />
+        <txp:variable name="page-title" value='<txp:title no_widow="0" /> | <txp:site_name />' />
     </txp:if_article_list>
 </txp:if_section>
 

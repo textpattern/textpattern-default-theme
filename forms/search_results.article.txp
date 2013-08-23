@@ -5,9 +5,9 @@
 
 <!-- if search result count greater than 200 then display excessive results message, otherwise show search result count -->
     <txp:if_search_results max="200">
-        <h3><txp:search_result_count /> <txp:text item="matching_search_request" /> &#8216;<txp:search_term />&#8217;&#8230;</h3>
+        <h3><txp:search_result_count /> <txp:text item="matching_search_request" /> <q><txp:search_term /></q></h3>
     <txp:else />
-        <h3><txp:text item="too_common_search_term" /> &#8216;<txp:search_term />&#8217;</h3>
+        <h3><txp:text item="too_common_search_term" /> <q><txp:search_term /></q></h3>
     </txp:if_search_results>
 
 <!-- if no search results, then display no search results message -->
@@ -46,12 +46,12 @@
     <p class="paginator">
         <txp:if_variable name="next" value="">
         <txp:else />
-            <a rel="prev" href="<txp:newer />" title="&#8592; <txp:text item="prev" />">&#8592; <txp:text item="prev" /></a>
+            <a rel="prev" href="<txp:newer />" title="<txp:text item="prev" />">← <txp:text item="prev" /></a>
         </txp:if_variable>
 
         <txp:if_variable name="prev" value="">
         <txp:else />
-            <a rel="next" href="<txp:older />" title="<txp:text item="next" /> &#8594;"><txp:text item="next" /> &#8594;</a>
+            <a rel="next" href="<txp:older />" title="<txp:text item="next" />"><txp:text item="next" /> →</a>
         </txp:if_variable>
     </p>
 
