@@ -2,10 +2,11 @@
 <html lang="<txp:lang />" dir="<txp:text item="lang_dir" />">
 
 <head>
-    <meta charset="utf-8">
-
     <title><txp:page_title /></title>
+    <meta charset="utf-8">
     <meta name="generator" content="Textpattern CMS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <txp:if_search>
         <meta name="robots" content="none">
     <txp:else />
@@ -19,8 +20,6 @@
             </txp:if_author>
         </txp:if_category>
     </txp:if_search>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- content feeds -->
     <txp:feed_link flavor="atom" format="link" label="Atom" />

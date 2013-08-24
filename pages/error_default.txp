@@ -2,12 +2,11 @@
 <html lang="<txp:lang />" dir="<txp:text item="lang_dir" />">
 
 <head>
-    <meta charset="utf-8">
-
     <title><txp:error_status /></title>
+    <meta charset="utf-8">
     <meta name="generator" content="Textpattern CMS">
-    <meta name="robots" content="none">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="none">
 
 <!-- content feeds -->
     <txp:feed_link flavor="atom" format="link" label="Atom" />
