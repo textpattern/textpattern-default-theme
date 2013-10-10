@@ -141,7 +141,7 @@ pre {
 sub,
 sup.footnote, // override Textile class
 sup {
-    @include adjust-font-size-to(12px, 0);
+    @include adjust-font-size-to(10px, 0);
 
     position: relative;
     vertical-align: baseline;
