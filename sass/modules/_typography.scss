@@ -139,6 +139,7 @@ pre {
 
 /* prevent `<sub>` and `<sup>` affecting line height in all browsers */
 sub,
+sup.footnote, // override Textile class
 sup {
     @include adjust-font-size-to(12px, 0);
 
