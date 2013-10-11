@@ -7,7 +7,7 @@
 /* Responsive slides */
 
 .rslides-container {
-    @include border-radius(.25em);
+    @include border-radius($default-border-radius / 2);
     @include box-shadow;
 
     margin: 2em 0;

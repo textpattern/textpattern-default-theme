@@ -28,7 +28,7 @@ a {
     }
 
     header & {
-        @include border-radius(.125em);
+        @include border-radius($default-border-radius / 4);
 
         color: $color-text;
 
@@ -40,7 +40,7 @@ a {
 }
 
 h1 a {
-    @include border-radius(.125em);
+    @include border-radius($default-border-radius / 4);
 
     color: $color-text;
 

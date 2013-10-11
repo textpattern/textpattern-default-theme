@@ -12,7 +12,7 @@
 }
 
 .flickr_badge_image a {
-    @include border-radius(.25em);
+    @include border-radius($default-border-radius / 2);
 
     display: block;
     width: 75px;
