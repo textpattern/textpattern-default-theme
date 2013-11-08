@@ -44,7 +44,19 @@ h3 {
 h4 {
     @include adjust-font-size-to(20px, 1.1666667);
 
-    margin: rhythm(1, 20px) 0;
+    margin: 1.1em 0;
+}
+
+h5 {
+    @include adjust-font-size-to(18px, 1.08);
+
+    margin: 1.1111111em 0;
+}
+
+h6 {
+    @include adjust-font-size-to(16px, 1);
+
+    margin: 1em 0;
 }
 
 /* address style set to `bolder` in Firefox4+, Safari5, and Chrome */

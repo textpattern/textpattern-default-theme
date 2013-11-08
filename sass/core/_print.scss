@@ -69,39 +69,57 @@ h1 {
     font-size: 32pt;
     line-height: 36pt;
     font-weight: normal;
-    margin: 0.5em 0;
+    margin: 16pt 0;
 }
 
 h2 {
-    font-size: 18pt;
-    line-height: 23pt;
+    font-size: 24pt;
+    line-height: 28pt;
     page-break-after: avoid;
-    orphans: 3;
-    widows: 3;
-    margin: 0.66667em 0;
+    orphans: 2;
+    widows: 2;
+    margin: 14pt 0;
 }
 
 h3 {
-    font-size: 12pt;
-    line-height: 17pt;
+    font-size: 18pt;
+    line-height: 22pt;
     page-break-after: avoid;
-    orphans: 3;
-    widows: 3;
-    margin: 0.75em 0;
+    orphans: 2;
+    widows: 2;
+    margin: 12pt 0;
 }
 
 h4 {
+    font-size: 14pt;
+    line-height: 18pt;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    margin: 11pt 0;
+}
+
+h5 {
+    font-size: 12pt;
+    line-height: 16pt;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    margin: 10pt 0;
+}
+
+h6 {
     font-size: 10pt;
     line-height: 14pt;
     page-break-after: avoid;
-    orphans: 3;
-    widows: 3;
-    margin: 0.875em 0;
+    orphans: 2;
+    widows: 2;
+    margin: 9pt 0;
 }
 
 p {
-    orphans: 3;
-    widows: 3;
+    orphans: 2;
+    widows: 2;
 }
 
 footer,
