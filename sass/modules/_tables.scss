@@ -53,6 +53,13 @@ tfoot {
     }
 }
 
+tbody tr:first-child {
+    td,
+    th {
+        border-top: 1px solid $color-border;
+    }
+}
+
 /* vertical cell alignment */
 [rowspan] {
     vertical-align: middle;
