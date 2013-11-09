@@ -28,14 +28,10 @@ textarea {
     vertical-align: baseline;
 }
 
-/* colour placeholder text (WebKit and Mozilla only, so far) */
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-    color: $color-text-footnote;
-}
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-    color: $color-text-footnote;
+/* colour placeholder text */
+input,
+textarea {
+    @include placeholder($color-text-footnote);
 }
 
 /* remove inner padding and border in Firefox 4+ */
