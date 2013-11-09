@@ -121,17 +121,16 @@ select[size="1"] {
     select[size],
     select[multiple],
     select[multiple][size] {
-        background-image: none;
         padding-right: .5em;
+        background-image: none;
     }
 
     select,
     select[size="0"],
     select[size="1"] {
-        background: #ffffff url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='7px' viewBox='0 0 21 7' enable-background='new 0 0 21 7' xml:space='preserve'><polygon fill='#333333' points='2,0 7,7 12,0'/></svg>") no-repeat right center;
         padding-right: 2.25em;
-        -webkit-background-size: 1.5em .5em; // 21px 7px
-                background-size: 1.5em .5em; // 21px 7px
+        background: #ffffff url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='7px' viewBox='0 0 21 7' enable-background='new 0 0 21 7' xml:space='preserve'><polygon fill='#333333' points='2,0 7,7 12,0'/></svg>") no-repeat right center;
+        background-size: 1.5em .5em; // 21px 7px
     }
 
 }
