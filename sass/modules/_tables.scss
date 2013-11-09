@@ -24,6 +24,13 @@ td {
     padding: 0.25em;
 }
 
+thead tr:first-child {
+    th,
+    td {
+        padding-top: 0;
+    }
+}
+
 thead tr:last-child {
     th,
     td {
@@ -41,6 +48,7 @@ tfoot {
         th,
         td {
             border-bottom: 0;
+            padding-bottom: 0;
         }
     }
 }
