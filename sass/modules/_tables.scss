@@ -24,17 +24,19 @@ td {
     padding: 0.25em;
 }
 
-thead tr:first-child {
-    th,
-    td {
-        padding-top: 0;
+thead {
+    tr:first-child {
+        th,
+        td {
+            padding-top: 0;
+        }
     }
-}
 
-thead tr:last-child {
-    th,
-    td {
-        border-bottom: 2px solid $color-border;
+    tr:last-child {
+        th,
+        td {
+            border-bottom: 2px solid $color-border;
+        }
     }
 }
 
