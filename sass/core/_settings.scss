@@ -1,7 +1,6 @@
-// disable Compass support of IE6 and IE7
+// disable Compass support for IE < 8
 
-$legacy-support-for-ie6:      false;
-$legacy-support-for-ie7:      false;
+$browser-minimum-versions:     (ie: '8');
 
 // use the Kellum method for hiding text
 // http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
@@ -10,58 +9,58 @@ $hide-text-direction:         right;
 
 // font families
 
-$font-serif:             "PT Serif", Georgia, serif;
-$font-sans-serif:        sans-serif;
-$font-mono:              Menlo, Consolas, Monaco, monospace;
-$font-print:             "Helvetica Neue", sans-serif;
+$font-serif:                  "PT Serif", Georgia, serif;
+$font-sans-serif:             sans-serif;
+$font-mono:                   Menlo, Consolas, Monaco, monospace;
+$font-print:                  "Helvetica Neue", sans-serif;
 
 // typography grid
 
-$base-font-size:         16px;
-$base-line-height:       24px;
+$base-font-size:              16px;
+$base-line-height:            24px;
 
 // layout grid
 
-$container-max-width:    86em; // 1376px / 16px
+$container-max-width:         86em; // 1376px / 16px
 
 // breakpoints
 
-$break-small:            36em; // 576px / 16px
-$break-medium:           54em; // 864px / 16px
-$break-large:            82em; // 1280px / 16px
+$break-small:                 36em; // 576px / 16px
+$break-medium:                54em; // 864px / 16px
+$break-large:                 82em; // 1280px / 16px
 
 // text colours
 
-$color-text:             #333333;
-$color-text-footnote:    #888888;
-$color-link:             #114eb1;
-$color-link-hover:       #0066ff;
-$color-link-visited:     #183082;
+$color-text:                  #333333;
+$color-text-footnote:         #888888;
+$color-link:                  #114eb1;
+$color-link-hover:            #0066ff;
+$color-link-visited:          #183082;
 
 // default gradients
 
-$color-gradient-from:    #eeeeee;
-$color-gradient-to:      darken($color-gradient-from, 6.5%);
-$color-gradient-border:  darken($color-gradient-from, 13.5%);
+$color-gradient-from:         #eeeeee;
+$color-gradient-to:           darken($color-gradient-from, 6.5%);
+$color-gradient-border:       darken($color-gradient-from, 13.5%);
 
 // borders
 
-$color-border:           #cccccc;
-$default-border-radius:  0.5em; // 8px / 16px
+$color-border:                #cccccc;
+$default-border-radius:       0.5em; // 8px / 16px
 
 // shadows
 
-$inset-highlighting:     inset 0 1px 0 rgba(#ffffff, 0.25);
-$text-shadow-light:      1px 1px 0 rgba(#ffffff, 0.5);
-$text-shadow-dark:       -1px -1px 0 rgba(#000000, 0.1);
+$inset-highlighting:          inset 0 1px 0 rgba(#ffffff, 0.25);
+$text-shadow-light:           1px 1px 0 rgba(#ffffff, 0.5);
+$text-shadow-dark:            -1px -1px 0 rgba(#000000, 0.1);
 
 // accent colours
 
-$color-background:       #ffffff;
-$color-background-box:   #f7f7f7;
-$color-highlight-box:    lighten($color-link, 57%);
+$color-background:            #ffffff;
+$color-background-box:        #f7f7f7;
+$color-highlight-box:         lighten($color-link, 57%);
 
 // alert colours
 
-$color-error-text:       #9d261d;
-$color-error-background: #f2dede;
+$color-error-text:            #9d261d;
+$color-error-background:      #f2dede;
