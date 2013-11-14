@@ -48,4 +48,5 @@ module.exports = function (grunt) {
     grunt.registerTask('test', ['jshint']);
     grunt.registerTask('sass', ['compass', 'cssmin']);
     grunt.registerTask('build', ['sass', 'copy:core']);
+    grunt.registerTask('travis', ['jshint', 'compass']);
 };
