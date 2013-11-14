@@ -12,20 +12,3 @@
     background-color: $color-gradient-to;
     @include background-image(radial-gradient($color-gradient-from, $color-gradient-to));
 }
-
-// form placeholders
-
-@mixin placeholder($color-placeholder){
-    &::-webkit-input-placeholder { // Safari >= 5, Chrome, Opera >= 11.6
-        color: $color-placeholder;
-    }
-    &:-moz-placeholder { // Firefox < 19
-        color: $color-placeholder;
-    }
-    &::-moz-placeholder { // Firefox >= 19
-        color: $color-placeholder;
-    }
-    &:-ms-input-placeholder {
-        color: $color-placeholder; // IE >= 10
-    }
-}
