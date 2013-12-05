@@ -97,10 +97,14 @@ header {
 }
 
 [role="article"] {
+    @include word-break(break-all);
+
     margin-bottom: 2em;
 }
 
 [role="complementary"] {
+    @include word-break(break-all);
+
     margin: 2em 0;
     border-top: 2px dashed $color-border;
     padding-top: 1em;

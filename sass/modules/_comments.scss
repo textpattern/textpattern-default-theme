@@ -3,11 +3,11 @@
 
 .comments {
     @include border-radius;
+    @include word-break(break-all);
 
     margin-bottom: 1em;
     padding: 1px 1em;
     background: $color-background-box;
-    word-wrap: break-word;
 
     h4 {
         .is-author {

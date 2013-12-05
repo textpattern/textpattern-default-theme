@@ -122,6 +122,7 @@ samp {
 pre {
     @include adjust-font-size-to(14px, .875);
     @include border-radius(0.2857143em); // 4px / 14px
+    @include word-break(normal);
 
     overflow-x: auto;
     border: 1px solid lighten($color-border, 9%);
