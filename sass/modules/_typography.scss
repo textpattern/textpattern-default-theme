@@ -123,6 +123,7 @@ pre {
     @include adjust-font-size-to(14px, .875);
     @include border-radius(0.2857143em); // 4px / 14px
 
+    word-wrap: normal;
     overflow-x: auto;
     border: 1px solid lighten($color-border, 9%);
     padding: 0.5714286em 1.1428571em; // 8px / 14px + 16px / 14px
