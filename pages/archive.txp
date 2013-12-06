@@ -2,8 +2,8 @@
 <html lang="<txp:lang />" dir="<txp:text item="lang_dir" />">
 
 <head>
-    <title><txp:page_title /></title>
     <meta charset="utf-8">
+    <title><txp:page_title /></title>
     <meta name="generator" content="Textpattern CMS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow, noodp, noydir">
