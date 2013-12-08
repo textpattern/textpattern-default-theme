@@ -26,31 +26,31 @@ h6 {
 h1 {
     @include adjust-font-size-to(40px, 2);
 
-    margin: rhythm(1, 40px) 0;
+    margin: 0.6em 0;
 }
 
 h2 {
     @include adjust-font-size-to(32px, 1.6666667);
 
-    margin: rhythm(1, 32px) 0;
+    margin: 0.75em 0;
 }
 
 h3 {
     @include adjust-font-size-to(24px, 1.3333333);
 
-    margin: rhythm(1, 24px) 0;
+    margin: 1em 0;
 }
 
 h4 {
     @include adjust-font-size-to(20px, 1.1666667);
 
-    margin: 1.1em 0;
+    margin: 1em 0;
 }
 
 h5 {
     @include adjust-font-size-to(18px, 1.08);
 
-    margin: 1.1111111em 0;
+    margin: 1em 0;
 }
 
 h6 {
