@@ -2,9 +2,9 @@
 
 <!-- if not an individual article then make the title h1 a link -->
 <txp:if_individual_article>
-    <h1 itemprop="name"><txp:title /></h1>
+    <h1 itemprop="name headline"><txp:title /></h1>
 <txp:else />
-    <h1 itemprop="name"><a href="<txp:permlink />" itemprop="url"><txp:title /></a></h1>
+    <h1 itemprop="name headline"><a href="<txp:permlink />" itemprop="url"><txp:title /></a></h1>
 </txp:if_individual_article>
 
     <p><strong><txp:text item="posted" /></strong> <time datetime="<txp:posted format="iso8601" />" itemprop="datePublished"><txp:posted /></time><br>
