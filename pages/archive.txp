@@ -135,7 +135,7 @@
     <!-- right (complementary) column -->
             <div role="complementary">
                 <txp:search_input /> <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
-    
+
                 <!-- Feed links, default flavor is rss, so we don't need to specify a flavor on the first feed_link -->
                 <p><txp:feed_link label="RSS" class="feed-rss" /> / <txp:feed_link flavor="atom" label="Atom" class="feed-atom" /></p>
 
