@@ -5,10 +5,8 @@
     <meta charset="utf-8">
     <title><txp:page_title /></title>
     <meta name="generator" content="Textpattern CMS">
-    <meta name="robots" content="noindex, follow, noodp, noydir">
-
-<!-- mobile viewport optimised, more info: http://h5bp.com/viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, follow, noodp, noydir">
 
 <!-- css -->
     <!-- Google font API (remove this if you intend to use the theme in a project without internet access) -->
