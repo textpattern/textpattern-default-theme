@@ -26,7 +26,7 @@
         <strong><txp:text item="category" /></strong> <txp:file_download_category /> | 
     </txp:if_variable>
 
-        <strong><txp:text item="author" /></strong> <txp:file_download_author link="1" /> | 
+        <strong><txp:text item="author" /></strong> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><txp:file_download_author link="1" /></span></span> | 
         <strong><txp:text item="file_size" /></strong> <txp:file_download_size /> | 
         <strong><txp:text item="last_modified" /></strong> <span itemprop="dateModified"><txp:file_download_created /></span> | 
         <strong><txp:text item="download_count" /></strong> <span itemprop="interactionCount"><txp:file_download_downloads /></span>

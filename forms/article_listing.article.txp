@@ -8,5 +8,5 @@
         </div>
     </txp:if_excerpt>
 
-    <p class="footnote"><txp:text item="posted" /> <time datetime="<txp:posted format="iso8601" />" itemprop="datePublished"><txp:posted /></time>, <txp:text item="author" /> <span itemprop="author"><txp:author link="1" this_section="1" /></span></p>
+    <p class="footnote"><txp:text item="posted" /> <time datetime="<txp:posted format="iso8601" />" itemprop="datePublished"><txp:posted /></time>, <txp:text item="author" /> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><txp:author link="1" this_section="1" /></span></span></p>
 </li>

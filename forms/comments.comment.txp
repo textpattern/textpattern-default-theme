@@ -2,14 +2,14 @@
     then check the comment email variable against article author email variable, and if it matches add 'comments-author' class -->
 <txp:variable name="this_comment" value='<txp:comment_email />' />
 <txp:if_variable name="this_comment" value='<txp:author_email />'>
-    <article class="comments comments-author" itemprop="comment">
+    <article class="comments comments-author" itemscope itemtype="http://schema.org/Comment">
 <txp:else />
-    <article class="comments" itemprop="comment">
+    <article class="comments" itemscope itemtype="http://schema.org/Comment">
 </txp:if_variable>
 
     <h4>
 
-    <span itemprop="creator"><txp:comment_name /></span>
+        <span class="comment-author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><txp:comment_name /></span></span>
 
     <!-- ...now check the comment email variable against article author email variable, and if it matches add '(author)' text -->
     <txp:if_variable name="this_comment" value='<txp:author_email />'>
@@ -22,9 +22,9 @@
     </h4>
 
     <!-- also add a 'since' to show comment freshness -->
-    <p class="footnote"><time datetime="<txp:comment_time format="iso8601" />" itemprop="commentTime"><txp:comment_time /> (<txp:comment_time format="since" />)</time></p>
+    <p class="footnote"><time datetime="<txp:comment_time format="iso8601" />" itemprop="dateCreated"><txp:comment_time /> (<txp:comment_time format="since" />)</time></p>
 
-    <div itemprop="commentText">
+    <div itemprop="text">
         <txp:comment_message />
     </div>
 

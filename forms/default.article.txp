@@ -27,7 +27,7 @@
         <txp:body />
     </div>
 
-    <p><strong><txp:text item="author" /></strong> <span itemprop="author"><txp:author link="1" this_section="1" /></span>
+    <p><strong><txp:text item="author" /></strong> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><txp:author link="1" this_section="1" /></span></span>
 
 <!-- only display categories if they are actually set for an article, otherwise omit -->
     <txp:if_article_category>
