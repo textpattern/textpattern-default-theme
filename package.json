@@ -2,10 +2,10 @@
     "name": "textpattern-default-theme",
     "version": "0.0.0",
     "devDependencies": {
-        "grunt": "~0.4.1",
+        "grunt": "~0.4.2",
         "grunt-cli": "~0.1",
-        "grunt-contrib-compass": "0.6.0",
-        "grunt-contrib-copy": "0.4.1",
+        "grunt-contrib-compass": "0.7.0",
+        "grunt-contrib-copy": "0.5.0",
         "grunt-contrib-cssmin": "0.7.0",
         "grunt-contrib-watch": "0.5.3"
     },
