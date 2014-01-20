@@ -65,7 +65,7 @@ a.rslides_nav {
     }
 
     a {
-        @include adjust-font-size-to(12px, .75);
+        @include adjust-font-size-to(12px, 0.75);
         @include hide-text;
         @include border-radius; // 6px
 

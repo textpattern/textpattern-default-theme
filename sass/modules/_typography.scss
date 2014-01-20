@@ -110,7 +110,7 @@ samp {
 code,
 kbd,
 samp {
-    @include adjust-font-size-to(14px, .875);
+    @include adjust-font-size-to(14px, 0.875);
     @include border-radius(.28571428571429em); // 4px / 14px
 
     border: 1px solid lighten($color-border, 9%);
@@ -120,7 +120,7 @@ samp {
 }
 
 pre {
-    @include adjust-font-size-to(14px, .875);
+    @include adjust-font-size-to(14px, 0.875);
     @include border-radius(0.2857143em); // 4px / 14px
 
     word-wrap: normal;
@@ -159,7 +159,7 @@ small,
 figcaption,
 tfoot,
 .footnote {
-    @include adjust-font-size-to(12px, .75);
+    @include adjust-font-size-to(12px, 0.75);
 }
 
 figcaption,
