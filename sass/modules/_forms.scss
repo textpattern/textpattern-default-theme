@@ -6,6 +6,7 @@ fieldset {
     margin: 0;
     border: 0;
     padding: 0;
+    min-width: 0; // address width being affected by wide descendants in Chrome and Firefox
 }
 
 /* zero out legends */
@@ -16,15 +17,16 @@ legend {
 
 button,
 input,
+optgroup,
 select,
 textarea {
     @include box-sizing(border-box);
 
     /* correct font size not being inherited in all browsers */
     font-size: 100%;
-    @include adjust-font-size-to(14px, .875);
+    @include adjust-font-size-to(14px, 0.875);
 
-    /* address margins set differently in Firefox4+, Safari5+, and Chrome */
+    /* address margins set differently in Firefox4+, Safari5+ and Chrome */
     margin: 0;
     font-family: $font-sans-serif;
     vertical-align: baseline;
@@ -123,7 +125,7 @@ select[size="1"] {
     select[size],
     select[multiple],
     select[multiple][size] {
-        padding-right: .5em;
+        padding-right: 0.5em;
         background-image: none;
     }
 
@@ -132,15 +134,14 @@ select[size="1"] {
     select[size="1"] {
         padding-right: 2.25em;
         background: #ffffff url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='7px' viewBox='0 0 21 7' enable-background='new 0 0 21 7' xml:space='preserve'><polygon fill='#333333' points='2,0 7,7 12,0'/></svg>") no-repeat right center;
-        background-size: 1.5em .5em; // 21px 7px
+        background-size: 1.5em 0.5em; // 21px 7px
     }
 
 }
 
 optgroup {
-    font-family: $font-sans-serif; // font family repeated, for Firefox
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     color: $color-text;
 
     &::-moz-focus-inner { // kill phantom spacing and dotted border that appears in Firefox
