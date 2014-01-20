@@ -12,3 +12,10 @@
     background-color: $color-gradient-to;
     @include background-image(radial-gradient($color-gradient-from, $color-gradient-to));
 }
+
+// touch actions
+
+@mixin touch-action {
+    -ms-touch-action: none;
+        touch-action: none;
+}

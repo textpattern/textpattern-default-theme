@@ -30,6 +30,13 @@ template {
     display: none;
 }
 
+/* remove tap delay in IE10+ (and proposed for other browsers) */
+a,
+input,
+button {
+    @include touch-action;
+}
+
 
 /* Clearfix
    ========================================================================== */
