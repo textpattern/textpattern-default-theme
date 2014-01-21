@@ -28,6 +28,8 @@ textarea {
 
     /* address margins set differently in Firefox4+, Safari5+ and Chrome */
     margin: 0;
+    /* prevent elements from spilling out of their parent */
+    max-width: 100%;
     font-family: $font-sans-serif;
     vertical-align: baseline;
 }
