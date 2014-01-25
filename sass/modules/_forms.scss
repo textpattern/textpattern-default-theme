@@ -94,6 +94,12 @@ input[type="color"] {
     padding: 0;
 }
 
+/* fix the cursor style for Chrome's increment/decrement buttons */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
 /* address box sizing set to `content-box` and excess padding in IE8-9 */
 input[type="checkbox"],
 input[type="radio"] {

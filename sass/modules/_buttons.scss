@@ -1,9 +1,11 @@
 /* Buttons
    ========================================================================== */
 
-/* address inconsistent `text-transform` inheritance for `button` in Chrome, Safari5+, and IE6+ */
+/* address inconsistent `text-transform` inheritance for `button` in Chrome, Safari5+, and IE6+
+   address `overflow` set to `hidden` in IE8-10. */
 button {
     text-transform: none;
+    overflow: visible;
 }
 
 button,
@@ -24,7 +26,6 @@ input[type="submit"] {
     padding: 0.3571428em 0.7142857em; // 5px / 14px, 10px / 14px
     width: auto;
     height: 2.3571428em; // 33px / 14px
-    overflow: visible; // the overflow property removes extra width in IE
     font-weight: normal;
     text-align: center;
     color: $color-text;
