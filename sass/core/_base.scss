@@ -18,9 +18,11 @@ summary {
     cursor: pointer;
 }
 
-/* set correct display for `progress` in IE8-9 */
+/* set correct display for `progress` in IE8-9
+   improve vertical alignment of `progress` in Chrome, Firefox, and Opera */
 progress {
     display: inline-block;
+    vertical-align: baseline;
 }
 
 /* address `[hidden]` styling not present in IE8-9.
