@@ -1,4 +1,6 @@
-/* correct block display not defined in IE8-9 */
+/* correct `block` display not defined for any HTML5 element in IE 8-9
+   correct `block` display not defined for `details` or `summary` in IE 10-11 and Firefox
+   correct `block` display not defined for `main` in IE 11 */
 article,
 aside,
 details,
@@ -18,21 +20,21 @@ summary {
     cursor: pointer;
 }
 
-/* set correct display for `progress` in IE8-9
-   improve vertical alignment of `progress` in Chrome, Firefox, and Opera */
+/* set correct display for `progress` in IE 8-9
+   improve vertical alignment of `progress` in Chrome, Firefox, Opera */
 progress {
     display: inline-block;
     vertical-align: baseline;
 }
 
-/* address `[hidden]` styling not present in IE8-9.
-   hide the `template` element in IE, Safari, and Firefox < 22 */
+/* address `[hidden]` styling not present in IE 8-10
+   hide the `template` element in IE 8-11, Safari, Firefox < 22 */
 [hidden],
 template {
     display: none;
 }
 
-/* remove tap delay in IE10+ (and proposed for other browsers) */
+/* remove tap delay in IE 10+ (and proposed for other browsers) */
 a,
 input,
 button {

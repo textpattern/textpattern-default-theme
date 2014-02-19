@@ -26,7 +26,7 @@ textarea {
     font-size: 100%;
     @include adjust-font-size-to(14px, 0.875);
 
-    /* address margins set differently in Firefox4+, Safari5+ and Chrome */
+    /* address margins set differently in Firefox 4+, Safari 5+, Chrome */
     margin: 0;
     /* prevent elements from spilling out of their parent */
     max-width: 100%;
@@ -49,7 +49,7 @@ input::-moz-focus-inner {
     padding: 0;
 }
 
-/* remove inner padding and search cancel button in Safari5+ and Chrome on OS X */
+/* address `appearance` set to `searchfield` in Safari, Chrome */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
@@ -100,7 +100,7 @@ input[type="number"]::-webkit-outer-spin-button {
     height: auto;
 }
 
-/* address box sizing set to `content-box` and excess padding in IE8-9 */
+/* address box sizing set to `content-box` and excess padding in IE 8-9 */
 input[type="checkbox"],
 input[type="radio"] {
     padding: 0;
@@ -127,7 +127,7 @@ select[size="1"] {
     height: 2.3571428em; // 33px / 14px
 }
 
-/* address `<select>` alignment in Safari/Chrome */
+/* address `<select>` alignment in Safari, Chrome */
 @media (-webkit-min-device-pixel-ratio: 0) {
 
     select[size],
@@ -161,7 +161,7 @@ optgroup {
 textarea {
     height: auto;
     min-height: 3em;
-    /* remove default vertical scrollbar in IE8-9 */
+    /* remove default vertical scrollbar in IE 8-9 */
     overflow: auto;
     resize: vertical;
     width: 100%;

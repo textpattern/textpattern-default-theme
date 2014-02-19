@@ -1,8 +1,8 @@
 /* Buttons
    ========================================================================== */
 
-/* address inconsistent `text-transform` inheritance for `button` in Chrome, Safari5+, and IE6+
-   address `overflow` set to `hidden` in IE8-10. */
+/* address inconsistent `text-transform` inheritance for `button` in Chrome, Safari 5+, IE 6+
+   address `overflow` set to `hidden` in IE 8-10. */
 button {
     text-transform: none;
     overflow: visible;

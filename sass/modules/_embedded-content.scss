@@ -9,7 +9,7 @@ video {
     vertical-align: middle;
 }
 
-/* correct `inline-block` display not defined in IE8-9 */
+/* correct `inline-block` display not defined in IE 8-9 */
 audio,
 canvas,
 video {
@@ -26,7 +26,7 @@ video {
 }
 
 img {
-    /* remove border when inside `<a>` element in IE8-9 */
+    /* remove border when inside `<a>` element in IE 8-10 */
     border: 0;
 
     &.align-left {
@@ -45,18 +45,18 @@ img {
     }
 }
 
-/* address margin not present in IE8-9 and Safari5 */
+/* address margin not present in IE 8-9, Safari 5 */
 figure {
     margin: 0;
 }
 
-/* prevent modern browsers from displaying `<audio>` without controls, remove excess height in iOS5 devices */
+/* prevent modern browsers from displaying `<audio>` without controls, remove excess height in iOS 5 devices */
 audio:not([controls]) {
     display: none;
     height: 0;
 }
 
-/* correct overflow displayed oddly in IE9 */
+/* correct overflow not hidden in IE 9-11 */
 svg:not(:root) {
     overflow: hidden;
 }

@@ -44,7 +44,7 @@
     <txp:css format="link" media="" />
     <!-- or you can use (faster) external CSS files eg. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
 
-<!-- HTML5/Media Queries support for IE8 (you can remove this section and the corresponding 'js' directory file if you don't intend to support IE8) -->
+<!-- HTML5/Media Queries support for IE 8 (you can remove this section and the corresponding 'js' directory file if you don't intend to support IE 8) -->
     <!--[if lt IE 9]>
         <script src="<txp:site_url />js/html5shiv.js"></script>
         <txp:css format="link" media="" name="ie8" />
