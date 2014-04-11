@@ -4,17 +4,11 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-copy');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-
-        watch: {
-            sass: {
-                files: 'sass/**',
-                tasks: ['sass']
-            }
-        },
 
         compass: {
             dev: {
@@ -22,6 +16,14 @@ module.exports = function (grunt) {
                     config: 'config.rb',
                     force: true
                 }
+            }
+        },
+
+        copy: {
+            core: {
+                files: [
+                    {expand: true, cwd: 'bower_components/html5shiv/dist/', src: ['html5shiv.js'], dest: 'js/'}
+                ]
             }
         },
 
@@ -35,13 +37,40 @@ module.exports = function (grunt) {
             }
         },
 
-        copy: {
-            core: {
-                files: [
-                    {expand: true, cwd: 'bower_components/html5shiv/dist/', src: ['html5shiv.js'], dest: 'js/'}
-                ]
+        jshint: {
+            files: ['Gruntfile.js'],
+            options: {
+                bitwise: true,
+                camelcase: true,
+                curly: true,
+                eqeqeq: true,
+                es3: true,
+                forin: true,
+                immed: true,
+                indent: 4,
+                latedef: true,
+                noarg: true,
+                noempty: true,
+                nonew: true,
+                quotmark: 'single',
+                undef: true,
+                unused: true,
+                strict: true,
+                trailing: true,
+                browser: true,
+                globals: {
+                    module: true
+                }
+            }
+        },
+
+        watch: {
+            sass: {
+                files: 'sass/**',
+                tasks: ['sass']
             }
         }
+
     });
 
     grunt.registerTask('default', ['watch']);
