@@ -2,12 +2,12 @@
     "name": "textpattern-default-theme",
     "version": "0.0.0",
     "devDependencies": {
-        "grunt": "~0.4.2",
+        "grunt": "~0.4.4",
         "grunt-cli": "~0.1",
         "grunt-contrib-compass": "0.7.2",
         "grunt-contrib-copy": "0.5.0",
         "grunt-contrib-cssmin": "0.9.0",
-        "grunt-contrib-watch": "0.6.0"
+        "grunt-contrib-watch": "0.6.1"
     },
     "scripts": {
         "test": "grunt travis --verbose"
