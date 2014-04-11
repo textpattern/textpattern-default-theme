@@ -3,19 +3,22 @@
 
 <head>
     <meta charset="utf-8">
-    <title><txp:page_title /></title>
+    <title>
+        <txp:page_title />
+    </title>
     <meta name="generator" content="Textpattern CMS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, follow, noodp, noydir">
 
-<!-- css -->
+    <!-- CSS -->
     <!-- Google font API (remove this if you intend to use the theme in a project without internet access) -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic">
 
     <txp:css format="link" media="" />
-    <!-- or you can use (faster) external CSS files eg. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
+    <!-- ...or you can use (faster) external CSS files eg. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
 
-<!-- HTML5/Media Queries support for IE < 9 (you can remove this section and the corresponding 'js' directory files if you don't intend to support IE < 9) -->
+    <!-- HTML5/Media Queries support for IE < 9 (you can remove this section and the corresponding
+         'js' directory files if you don't intend to support IE < 9) -->
     <!--[if lt IE 9]>
         <script src="<txp:site_url />js/html5shiv.js"></script>
         <script src="<txp:site_url />js/css3-mediaqueries.js"></script>
