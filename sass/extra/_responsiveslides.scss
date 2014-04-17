@@ -1,4 +1,16 @@
-/* Responsive slides */
+/* Responsive slides (via ResponsiveSlides.js)
+   ========================================================================== */
+
+/**
+ * Slideshow parent container.
+ *
+ * Example HTML:
+ *
+ * <div class="rslides-container">
+ *     <ul class="rslides">
+ *         <li><img></li>
+ *         <li><img></li>
+ */
 
 .rslides-container {
     @include border-radius($default-border-radius / 2);
@@ -9,6 +21,17 @@
     padding: 0.375em;
     background: #ffffff;
 }
+
+/**
+ * Slideshow slides child container.
+ *
+ * Example HTML:
+ *
+ * <div class="rslides-container">
+ *     <ul class="rslides">
+ *         <li><img></li>
+ *         <li><img></li>
+ */
 
 .rslides {
     position: relative;
@@ -31,10 +54,11 @@
     }
 }
 
-/* slideshow navigator */
+/**
+ * Slideshow navigator arrows.
+ */
 
-a.rslides_nav {
-    padding: 0.25em;
+a.rslides_nav {    padding: 0.25em;
     font-family: $font-sans-serif;
     line-height: 1;
 
@@ -51,7 +75,9 @@ a.rslides_nav {
     }
 }
 
-/* slideshow tabs */
+/**
+ * Slideshow position indicator tabs.
+ */
 
 .rslides_tabs {
     margin: 0;
@@ -81,6 +107,10 @@ a.rslides_nav {
         }
     }
 }
+
+/**
+ * Highlight the position indicator tab of currently active slide.
+ */
 
 .rslides_here a {
     background: #e3e3e3;

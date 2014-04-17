@@ -1,13 +1,22 @@
 @media print {
 
+/**
+ * Remove unnecessary global styling from printed media.
+ *
+ * 1. Black prints faster.
+ */
+
 * {
     @include box-shadow(none !important);
 
-    /* black prints faster */
-    color: black !important;
+    color: black !important; /* 1 */
     text-shadow: none !important;
     background: transparent !important;
 }
+
+/**
+ * Use a print-friendly font and size.
+ */
 
 body {
     font-family: $font-print;
@@ -17,16 +26,27 @@ body {
     padding: 2em 5em;
 }
 
+/**
+ * Visually separate header from body.
+ */
+
 header {
-    border-bottom: 1pt solid black;
+    border-bottom: solid 1pt black;
 }
+
+/**
+ * Visually separate footer from body.
+ */
 
 footer {
     margin-top: 12pt;
-    border-top: 1pt solid black;
+    border-top: solid 1pt black;
 }
 
-/* hide unnecessary content from print */
+/**
+ * Hide unnecessary content from print.
+ */
+
 nav,
 audio,
 video,
@@ -38,14 +58,25 @@ form,
     display: none;
 }
 
+/**
+ * Make sure links are not underlined.
+ */
+
 a {
     text-decoration: none;
 }
 
-/* show URLs for certain links in print */
+/**
+ * Show URLs for certain links in print.
+ */
+
 a[href]:after {
     content: " (" attr(href) ")";
 }
+
+/**
+ * Don't show URLs for certain links in print.
+ */
 
 h1 a[href],
 h2 a[href],
@@ -61,12 +92,19 @@ a[rel="tag"] {
     }
 }
 
-/* show long-form for abbreviations in print */
+/**
+ *  Show long-form for abbreviations in print.
+ */
+
 abbr[title] {
     &:after {
         content: " (" attr(title) ")";
     }
 }
+
+/**
+ *  Harmonise size, style and vertical margin of headings.
+ */
 
 h1 {
     font-size: 32pt;
@@ -120,10 +158,19 @@ h6 {
     margin: 9pt 0;
 }
 
+/**
+ * Prevent widows (single final paragraph line on next page) and orphans (single
+ * first paragraph line on previous page).
+ */
+
 p {
     orphans: 2;
     widows: 2;
 }
+
+/**
+ * Harmonise size and style of small text.
+ */
 
 footer,
 figcaption,
@@ -133,22 +180,40 @@ small,
     font-size: 6pt;
 }
 
+/**
+ * Simple blockquote styling.
+ *
+ * 1. Avoid blockquotes breaking across mutiple pages.
+ */
+
 blockquote {
     font-size: 16pt;
     border-left: 3pt solid black;
     padding: 0 0 0 8pt;
-    page-break-inside: avoid;
+    page-break-inside: avoid; /* 1 */
 }
+
+/**
+ * Simple preformatted text styling.
+ */
 
 pre {
     margin-bottom: 8pt;
-    border: 1pt solid black;
+    border: solid 1pt black;
     padding: 8pt;
 }
+
+/**
+ * Avoid user comments breaking across mutiple pages.
+ */
 
 .comments {
     page-break-inside: avoid;
 }
+
+/**
+ * Use a print-friendly monospaced font and size.
+ */
 
 pre,
 code,
@@ -158,16 +223,35 @@ var {
     font-family: "Courier New", Courier, monospace;
 }
 
+/**
+ * Italic definitons, quotes and definition terms.
+ */
+
 dfn,
 q,
 dt {
     font-style: italic;
 }
 
+/**
+ * 1. Ensure images are maximum possible width.
+ * 2. Avoid images breaking across mutiple pages.
+ */
+
 img {
-    max-width: 100% !important;
-    page-break-inside: avoid;
+    max-width: 100% !important; /* 1 */
+    page-break-inside: avoid; /* 2 */
 }
+
+/**
+ * Image alignment (compatible with Textile markup syntax).
+ *
+ * Example HTML:
+ *
+ * <img class="align-left">
+ * <img class="align-right">
+ * <img class="align-center">
+ */
 
 img {
     &.align-left {
@@ -186,32 +270,61 @@ img {
     }
 }
 
+/**
+ * Ensure margin below `figure`.
+ */
+
 figure {
     margin-bottom: 8pt;
 }
 
+/**
+ * Ensure margin above `figcaption`.
+ */
+
 figcaption {
     margin-top: 4pt;
 }
+
+/**
+ * Simple bullet styling for `ul` unordered lists.
+ */
 
 ul {
     list-style: square;
     margin: 0 0 8pt 1.8em;
 }
 
+/**
+ * Simple numerical styling for `ol` ordered lists.
+ */
+
 ol {
     list-style: decimal;
     margin: 0 0 8pt 1.8em;
 }
 
+/**
+ * Normalise margins on `dl` definition lists.
+ */
+
 dl {
     margin: 0 0 8pt 1.8em;
 }
 
+/**
+ * 1. Ensure margin below `table`.
+ * 2. Make `table` span entire page width.
+ */
+
 table {
-    margin-bottom: 8pt;
-    width: 100%;
+    margin-bottom: 8pt; /* 2 */
+    width: 100%; /* 2 */
 }
+
+/**
+ * Harmonise styling for `caption`.
+ */
 
 caption {
     font-weight: bold;
@@ -219,21 +332,33 @@ caption {
     margin-bottom: 4pt;
 }
 
-/* display table head across multi-page tables */
+/**
+ * Display table head across multi-page tables.
+ */
+
 thead {
     display: table-header-group;
+
     th {
         border-top: 1pt solid black;
     }
 }
 
+/**
+ * Avoid table rows breaking across mutiple pages.
+ */
+
 tr {
     page-break-inside: avoid;
 }
 
+/**
+ * Simple styling for table cells.
+ */
+
 th,
 td {
-    border-bottom: 1pt solid black;
+    border-bottom: solid 1pt black;
     padding: 4pt 8pt;
 }
 

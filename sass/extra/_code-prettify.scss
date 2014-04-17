@@ -1,4 +1,9 @@
-/* Google Code Prettify */
+/* Google Code Prettify
+   ========================================================================== */
+
+/**
+ * Colouring for code language syntax.
+ */
 
 .atn,
 .dec,
@@ -9,13 +14,16 @@
 
 .atv,
 .str {
-    color: #d14;
+    color: #dd1144;
 }
 
 .clo,
-.opn,
-.pun {
+.opn {
     color: #93a1a1;
+}
+
+.pun {
+    color: #000;
 }
 
 .com {
@@ -28,6 +36,7 @@
 
 .kwd {
     color: #1e347b;
+    font-weight: bold;
 }
 
 .lit {
@@ -42,7 +51,13 @@
     color: #1e347b;
 }
 
-/* Line number colouring */
+/**
+ * Colouring for optional code line numbers.
+ *
+ * Example HTML:
+ *
+ * <pre class="linenums">
+ */
 
 .linenums {
     padding-left: 2em;

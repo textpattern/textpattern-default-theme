@@ -1,34 +1,37 @@
 /* Embedded content
    ========================================================================== */
 
-/* remove the gap between images, videos, audio and canvas and the bottom of their containers */
-audio,
-canvas,
-img,
-video {
-    vertical-align: middle;
-}
+/**
+ * Make embedded elements responsive.
+ */
 
-/* correct `inline-block` display not defined in IE 8-9 */
-audio,
-canvas,
-video {
-    display: inline-block;
-}
-
-/* make embedded elements responsive */
 img,
-embed,
-object,
 video {
     max-width: 100%;
     height: auto;
 }
 
-img {
-    /* remove border when inside `<a>` element in IE 8-10 */
-    border: 0;
+/**
+ * 1. Remove the gap between images and the bottom of their containers.
+ * 2. Remove border when inside `a` element in IE 8-10.
+ */
 
+img {
+    vertical-align: middle; /* 1 */
+    border: 0; /* 2 */
+}
+
+/**
+ * Image alignment (compatible with Textile markup syntax).
+ *
+ * Example HTML:
+ *
+ * <img class="align-left">
+ * <img class="align-right">
+ * <img class="align-center">
+ */
+
+img {
     &.align-left {
         float: left;
         margin: 1em 1em 1em 0;
@@ -45,18 +48,28 @@ img {
     }
 }
 
-/* address margin not present in IE 8-9, Safari 5 */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
 figure {
     margin: 0;
 }
 
-/* prevent modern browsers from displaying `<audio>` without controls, remove excess height in iOS 5 devices */
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
 audio:not([controls]) {
     display: none;
     height: 0;
 }
 
-/* correct overflow not hidden in IE 9-11 */
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
 svg:not(:root) {
     overflow: hidden;
 }
