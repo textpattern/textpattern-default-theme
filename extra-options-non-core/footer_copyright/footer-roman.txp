@@ -2,5 +2,11 @@
 <footer role="contentinfo">
     <!-- using PHP to dynamically update the copyright year with roman numerals (note: requires the Textpattern advanced preference 'Allow PHP in pages?' set to 'Yes' -->
     <txp:php>function romanNumerals($num){$n = intval($num);$res = '';$roman_numerals = array('M' => 1000,'CM'=> 900,'D' => 500,'CD' => 400,'C' => 100,'XC' => 90,'L' => 50,'XL' => 40,'X' => 10,'IX' => 9,'V' => 5,'IV' => 4,'I' => 1);foreach ($roman_numerals as $roman => $number){$matches = intval($n / $number);$res .= str_repeat($roman, $matches);$n = $n % $number;}return $res;}</txp:php>
-    <p><small><span class="copyright">&#169; <abbr title="<txp:php>echo date('Y');</txp:php>"><txp:php>$year = date('Y');echo romanNumerals($year);</txp:php></abbr> <txp:site_name /></span>. <txp:text item="published_with" /> <a rel="external" href="http://textpattern.com" title="<txp:text item='go_txp_com' />">Textpattern CMS</a>.</small></p>
+    <p>
+        <small>
+            <span class="copyright">&#169; <abbr title="<txp:php>echo date('Y');</txp:php>"><txp:php>$year = date('Y');echo romanNumerals($year);</txp:php></abbr> <txp:site_name /></span>.
+            <txp:text item="published_with" />
+            <a rel="external" href="http://textpattern.com" title="<txp:text item='go_txp_com' />">Textpattern CMS</a>.
+        </small>
+    </p>
 </footer>

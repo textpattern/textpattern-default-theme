@@ -7,5 +7,7 @@
         <script src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=your_flickr_badge_id"></script>
     </div>
     <!-- replace 'your_flickr_url' with your own Flickr URL -->
-    <p><a rel="external" itemprop="url" href="http://www.flickr.com/photos/your_flickr_url"><txp:text item="go_to" /> Flickr</a></p>
+    <p>
+        <a rel="external" itemprop="url" href="http://www.flickr.com/photos/your_flickr_url"><txp:text item="go_to" /> Flickr</a>
+    </p>
 </aside>
