@@ -1,14 +1,20 @@
 /* Lists
    ========================================================================== */
 
-/* address paddings set differently */
+/**
+ * Address paddings set differently.
+ */
+
 menu,
 ol,
 ul {
     padding: 0 0 0 2em;
 }
 
-/* remove margins from nested lists */
+/**
+ * Remove margins from nested lists.
+ */
+
 li {
     > ul,
     > ol {
@@ -16,13 +22,29 @@ li {
     }
 }
 
+/**
+ * Address margins set differently.
+ */
+
 dd {
     margin: 0 0 0 2em;
 }
 
+/**
+ * Italicise definition terms.
+ */
+
 dt {
     font-style: italic;
 }
+
+/**
+ * Additional styling for article lists.
+ *
+ * Example HTML:
+ *
+ * <ul class="article-list">
+ */
 
 .article-list {
     list-style: none;

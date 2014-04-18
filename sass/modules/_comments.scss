@@ -1,6 +1,14 @@
 /* Comments
    ========================================================================== */
 
+/**
+ * Styling for user comments.
+ *
+ * Example HTML:
+ *
+ * <article class="comments">
+ */
+
 .comments {
     @include border-radius;
 
@@ -21,9 +29,21 @@
     }
 }
 
+/**
+ * Additional styling for article author's comments.
+ *
+ * Example HTML:
+ *
+ * <article class="comments comments-author">
+ */
+
 .comments-author {
     background: darken($color-background-box, 3%);
 }
+
+/**
+ * Styling for user comments preview.
+ */
 
 #cpreview {
     @include border-radius;
@@ -33,22 +53,38 @@
     background: #fff9e1;
 }
 
+/**
+ * Highlight background colour for comment errors.
+ */
+
 .comments_error {
     background: $color-error-background !important;
 }
 
-.required,
+/**
+ * Highlight text colour for comment errors.
+ */
+
 .error_message li {
     color: $color-error-text;
 }
 
+/**
+ * Styling for 'required' indicators.
+ */
+
 .required {
+    color: $color-error-text;
     cursor: help;
 }
 
 
 /* Popup comments (can be removed if you don't use popups)
    ========================================================================== */
+
+/**
+ * Restrict maximum width of popup container.
+ */
 
 #popup-page .container {
     max-width: 52em;

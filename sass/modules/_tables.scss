@@ -1,7 +1,10 @@
 /* Tables
    ========================================================================== */
 
-/* consistent tables */
+/**
+ * Consistent tables.
+ */
+
 table {
     margin-bottom: 1em;
     border-collapse: collapse;
@@ -9,25 +12,38 @@ table {
     width: 100%;
 }
 
+/**
+ * Styling of table captions.
+ */
+
 caption {
     font-style: italic;
     text-align: left;
     margin-bottom: 0.5em;
 }
 
+/**
+ * Make table cells align top and left by default.
+ */
+
 th,
 td {
-    /* make table cells align top and left by default */
     vertical-align: top;
     text-align: left;
     border-bottom: 1px solid $color-border;
     padding: 0.25em;
 }
 
+/**
+ * 1. Remove padding from top cells of table header.
+ * 2. Thicker border at bottom of `thead`.
+ */
+
 thead {
     tr:first-child {
         th,
         td {
+            /* 1 */
             padding-top: 0;
         }
     }
@@ -35,25 +51,37 @@ thead {
     tr:last-child {
         th,
         td {
+            /* 2 */
             border-bottom: 2px solid $color-border;
         }
     }
 }
 
+/**
+ * 1. Adjust padding of table footer due to smaller font size.
+ * 2. Remove padding from bottom cells of table footer.
+ */
+
 tfoot {
     th,
     td {
+        /* 1 */
         padding: 0.3333333em;
     }
 
     tr:last-child {
         th,
         td {
+            /* 2 */
             border-bottom: 0;
             padding-bottom: 0;
         }
     }
 }
+
+/**
+ * Border at top of each new table row.
+ */
 
 tbody tr:first-child {
     td,
@@ -62,7 +90,10 @@ tbody tr:first-child {
     }
 }
 
-/* vertical cell alignment */
+/**
+ * Multi-row span vertical cell alignments.
+ */
+
 [rowspan] {
     vertical-align: middle;
 }

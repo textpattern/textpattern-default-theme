@@ -9,7 +9,8 @@
 * {
     @include box-shadow(none !important);
 
-    color: black !important; /* 1 */
+    /* 1 */
+    color: black !important;
     text-shadow: none !important;
     background: transparent !important;
 }
@@ -190,7 +191,8 @@ blockquote {
     font-size: 16pt;
     border-left: 3pt solid black;
     padding: 0 0 0 8pt;
-    page-break-inside: avoid; /* 1 */
+    /* 1 */
+    page-break-inside: avoid;
 }
 
 /**
@@ -239,8 +241,10 @@ dt {
  */
 
 img {
-    max-width: 100% !important; /* 1 */
-    page-break-inside: avoid; /* 2 */
+    /* 1 */
+    max-width: 100% !important;
+    /* 2 */
+    page-break-inside: avoid;
 }
 
 /**

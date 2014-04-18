@@ -4,27 +4,41 @@
 
 @media only screen and (min-width: $break-small) {
 
-    .site-navigation {
-        border-top: 1px solid $color-border;
+/**
+ * Desktop version of the navigation menu. Overrides mobile first version.
+ *
+ * Example HTML:
+ *
+ * <nav class="site-navigation">
+ *     <ul>
+ *         <li class="active"><a></li>
+ *         <li><a></li>
+ *         <li><a></li>
+ *     </ul>
+ * </nav>
+ */
 
-        ul {
-            width: 93.75%;
-        }
+.site-navigation {
+    border-top: 1px solid $color-border;
 
-        li {
-            float: left;
-            border-top: 0;
-            border-right: 1px solid $color-gradient-border;
+    ul {
+        width: 93.75%;
+    }
 
-            &:first-child {
-                border-left: 1px solid $color-gradient-border;
-            }
-        }
+    li {
+        float: left;
+        border-top: 0;
+        border-right: 1px solid $color-gradient-border;
 
-        a {
-            padding: 0.5em 1em;
+        &:first-child {
+            border-left: 1px solid $color-gradient-border;
         }
     }
+
+    a {
+        padding: 0.5em 1em;
+    }
+}
 
 }
 
@@ -33,36 +47,31 @@
    Additional layout for screen media 864px and up
    ========================================================================== */
 
-@media only screen and (min-width: $break-medium) {
-
-    main {
-        float: left;
-        width: 62.5%;
-    }
-
-    [role="complementary"] {
-        @include border-radius;
-
-        float: right;
-        border: 1px solid lighten($color-border, 9%);
-        padding: 0 1em;
-        width: 30%;
-        background: $color-background-box;
-    }
-
-}
-
-
-/* ==========================================================================
-   Additional layout for screen media 1280px and up
-   ========================================================================== */
-
 @media only screen and (min-width: $break-large) {
 
-    header,
-    footer,
-    .container {
-        width: 93.75%;
-    }
+/**
+ * Desktop version of layout. Sidebar moves from under content to the right
+ * column and main column is reduced in width to allow this.
+ *
+ * Example HTML:
+ *
+ * <main role="main">
+ * <div role="complementary"></div>
+ */
+
+main {
+    float: left;
+    width: 62.5%;
+}
+
+[role="complementary"] {
+    @include border-radius;
+
+    float: right;
+    border: 1px solid lighten($color-border, 9%);
+    padding: 0 1em;
+    width: 30%;
+    background: $color-background-box;
+}
 
 }

@@ -1,12 +1,23 @@
 /* Buttons
    ========================================================================== */
 
-/* address inconsistent `text-transform` inheritance for `button` in Chrome, Safari 5+, IE 6+
-   address `overflow` set to `hidden` in IE 8-10. */
+/**
+ * 1. Address `overflow` set to `hidden` in IE 8/9/10/11.
+ * 2. Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ */
+
 button {
-    text-transform: none;
+    /* 1 */
     overflow: visible;
+    /* 2 */
+    text-transform: none;
 }
+
+/**
+ * 1. Remove iOS Safari default styling.
+ * 2. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
 
 button,
 input[type="button"],
@@ -19,7 +30,7 @@ input[type="submit"] {
     @include gradient-linear($color-gradient-from, $color-gradient-to);
     @include transition(box-shadow 0.2s linear);
 
-    /* remove iOS Safari default styling */
+    /* 1 */ 
     -webkit-appearance: none;
     display: inline-block;
     border: 1px solid $color-gradient-border;
@@ -29,6 +40,7 @@ input[type="submit"] {
     font-weight: normal;
     text-align: center;
     color: $color-text;
+    /* 2 */
     cursor: pointer;
 
     &:hover {
@@ -47,8 +59,7 @@ input[type="submit"] {
     }
 
     &:focus {
-        /* better button focus glows */
-        @include box-shadow($inset-highlighting, 0 0 7px $color-link-hover);
+        @include box-shadow($inset-highlighting, 0 0 4px 2px $color-link-focus);
 
         outline: 0;
     }

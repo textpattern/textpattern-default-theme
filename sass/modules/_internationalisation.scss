@@ -1,17 +1,33 @@
 /* Support for non-latin languages (can be removed if not required)
    ========================================================================== */
 
+/**
+ * Preferred font for Japanese langauge
+ */
+
 html[lang="ja-jp"] {
     font-family: "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
 }
+
+/**
+ * Preferred font for Korean langauge
+ */
 
 html[lang="ko-kr"] {
     font-family: GulimChe, Gulim, sans-serif;
 }
 
+/**
+ * Preferred font for Chinese (PRC) langauge
+ */
+
 html[lang="zh-cn"] {
     font-family: SimHei, sans-serif;
 }
+
+/**
+ * Preferred font for Chinese (Taiwan) langauge
+ */
 
 html[lang="zh-tw"] {
     font-family: PMingLiU, sans-serif;

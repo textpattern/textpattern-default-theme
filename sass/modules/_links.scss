@@ -1,37 +1,46 @@
 /* Links
    ========================================================================== */
 
-a {
-    text-decoration: none;
-    color: $color-link;
-    background: transparent; // remove the gray background color from active links in IE10
+/**
+ * 1. Remove default underline style from non-hover state links.
+ * 2. Specify link colour.
+ * 3. Remove the gray background color from active links in IE 10.
+ */
 
+a {
+    /* 1 */
+    text-decoration: none;
+    /* 2 */
+    color: $color-link;
+    /* 3 */
+    background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ * Specify link state colours.
+ */
+
+a {
     &:hover,
-    &:active { /* improve readability when focused and also mouse hovered in all browsers */
+    &:active {
         outline: 0;
         text-decoration: underline;
         color: $color-link-hover;
     }
 
     &:focus {
-        outline: thin dotted $color-link-hover;
+        outline: thin dotted $color-link-focus;
     }
 
     &:visited {
         color: $color-link-visited;
     }
-
-    header & {
-        @include border-radius($default-border-radius / 4);
-
-        color: $color-text;
-
-        &:hover,
-        &:active {
-            background: darken($color-background-box, 6%);
-        }
-    }
 }
+
+/**
+ * Additional styling for `h1` heading links.
+ */
 
 h1 a {
     @include border-radius($default-border-radius / 4);
@@ -46,9 +55,30 @@ h1 a {
     &:active {
         text-decoration: none;
         color: $color-text;
-        background: darken($color-background-box, 4%);
+        background: $color-background-box;
     }
 }
+
+/**
+ * Additional styling for child links within `header`.
+ */
+
+header h1 a {
+    &:hover,
+    &:active {
+        background: darken($color-background-box, 6%);
+    }
+}
+
+/**
+ * Paginator (prev/next) navigation links on articles/article lists.
+ *
+ * Example HTML:
+ *
+ * <nav class="paginator">
+ *     <a rel="prev">
+ *     <a rel="next">
+ */
 
 .paginator {
     margin-bottom: 2em;

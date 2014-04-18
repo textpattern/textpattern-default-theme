@@ -2,6 +2,14 @@
    ========================================================================== */
 
 /**
+ * Negtaive margin on Flickr container to allow images to have right margins.
+ */
+
+#flickr_badge_wrapper {
+    margin-right: -1em;
+}
+
+/**
  * Styling of Flickr photo images.
  */
 
