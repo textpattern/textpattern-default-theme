@@ -1,0 +1,140 @@
+/* Layout
+   ========================================================================== */
+
+/**
+ * 1. Always force scrollbar padding so we don't get 'jumping'.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ * 3. As 2 above, for Windows Phone.
+ */
+
+html {
+    -webkit-tap-highlight-color: rgba($color-link-hover, 0.5);
+    /* 1 */
+    overflow-y: scroll;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 3 */
+    -ms-text-size-adjust: 100%;
+}
+
+/**
+ * 1. Remove default margin.
+ */
+
+body {
+    /* 1 */
+    margin: 0;
+    background: $color-background-box;
+}
+
+/**
+ * Outer wrapper for main layouts.
+ *
+ * Example HTML:
+ *
+ * <div class="wrapper">
+ *     <div class="container">
+ *         Content
+ *     </div>
+ * </div>
+ */
+
+.wrapper {
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+    padding: 1px 0 1em;
+    background: $color-background;
+}
+
+/**
+ * Wrapper for layouts, and for header/footer.
+ *
+ * Example HTML:
+ *
+ * <div class="wrapper">
+ *     <div class="container">
+ *         Content
+ *     </div>
+ * </div>
+ */
+
+header,
+footer,
+.container {
+    margin: 0 auto;
+    width: 93.75%;
+    max-width: $container-max-width;
+}
+
+/**
+ * Additional styling for child content within `header`.
+ */
+
+header {
+    padding: 1em 0;
+
+    h1 {
+        margin: 0;
+    }
+
+    h3 {
+        margin: 0.8333333em 0 0; // 20px margin top
+    }
+}
+
+/**
+ * Additional styling for child content within `footer`.
+ */
+
+footer {
+    padding: 0.5em 0;
+}
+
+/**
+ * Styling for articles.
+ *
+ * 1. Prevent really, really long words in article from breaking layout.
+ */
+
+[role="article"] {
+    margin-bottom: 2em;
+    /* 1 */
+    word-wrap: break-word;
+}
+
+/**
+ * Styling for sidebar.
+ *
+ * Initially the sidebar appears under main content, it is then repositioned
+ * with media queries at 2nd breakpoint.
+ *
+ * 1. Prevent really, really long words in article from breaking layout.
+ */
+
+[role="complementary"] {
+    margin: 2em 0;
+    border-top: 2px dashed $color-border;
+    padding-top: 1em;
+    word-wrap: break-word;
+}
+
+/**
+ * Remove top margin from sidebar search form.
+ */
+
+[role="search"] p {
+    margin-top: 0;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    @include box-sizing(content-box);
+
+    border: 0; // remove the default `hr` border
+    border-bottom: 1px solid $color-border;
+    height: 0;
+}
