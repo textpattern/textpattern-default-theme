@@ -213,6 +213,11 @@ select[size="1"] {
         background-image: none;
     }
 
+/**
+ * Use indicator icon to signify the downdown ability of `select` in Safari,
+ * Chrome, Opera.
+ */
+
     select,
     select[size="0"],
     select[size="1"] {
