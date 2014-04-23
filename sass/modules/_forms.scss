@@ -202,9 +202,9 @@ select[size="1"] {
 
 @media (-webkit-min-device-pixel-ratio: 0) {
 
-/**
- * Address `select` alignment in Safari, Chrome, Opera.
- */
+    /**
+     * Address `select` alignment in Safari, Chrome, Opera.
+     */
 
     select[size],
     select[multiple],
@@ -213,17 +213,16 @@ select[size="1"] {
         background-image: none;
     }
 
-/**
- * Use indicator icon to signify the downdown ability of `select` in Safari,
- * Chrome, Opera.
- */
+    /**
+     * Use indicator icon to signify the downdown ability of `select` in Safari,
+     * Chrome, Opera.
+     */
 
     select,
     select[size="0"],
     select[size="1"] {
         padding-right: 2.25em;
-        background: #ffffff url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='7px' viewBox='0 0 21 7' enable-background='new 0 0 21 7' xml:space='preserve'><polygon fill='#333333' points='2,0 7,7 12,0'/></svg>") no-repeat right center;
-        background-size: 1.5em 0.5em; // 21px 7px
+        background: #ffffff url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='7px' viewBox='0 0 21 7' enable-background='new 0 0 21 7' xml:space='preserve'><polygon fill='#333333' points='2,0 7,7 12,0'/></svg>") no-repeat right center / 1.5em 0.5em;
     }
 
 }
