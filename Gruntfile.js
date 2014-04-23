@@ -1,4 +1,5 @@
-module.exports = function (grunt) {
+module.exports = function (grunt)
+{
     'use strict';
 
     // Load Grunt plugins.
