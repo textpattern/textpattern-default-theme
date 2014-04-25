@@ -119,18 +119,10 @@ footer {
  */
 
 [role="complementary"] {
-    margin: 2em 0;
-    border-top: 2px dashed $color-border;
-    padding-top: 1em;
+    margin: 2em -6% 0;
+    border-top: 3px dashed $color-border;
+    padding: 0 6%;
     word-wrap: break-word;
-}
-
-/**
- * Remove top margin from sidebar search form.
- */
-
-[role="search"] p {
-    margin-top: 0;
 }
 
 /**
