@@ -101,16 +101,6 @@ h4. /extra-options-non-core/meta_open_graph/meta_open_graph.txp
 
 Meta tags for the "Open Graph protocol":http://ogp.me, primarily for Facebook functionality but can also be used independently of any Facebook widgets (although only Facebook seem to use this protocol in any meaningful way).
 
-h2. Extra code option: old_browser
-
-h4. /extra-options-non-core/chrome_frame/old_browser.misc.txp
-
-Add the option for politely informing any users of Internet Explorer < 8 that they could should update to a modern browser. You can either paste the contents of this form directly into your page templates (just after @<div class="container">@ is recommended) or put a @<txp:output_form form="chrome_frame" />@ tag in your page templates instead (again, just after @<div class="container">@ is recommended), create a new form in the system with name of 'chrome_frame' and type of 'misc', then copy/paste the code from this form into it.
-
-h4. /extra-options-non-core/code_prettify/old_browser.scss
-
-Todo.
-
 h2. Extra code option: page_title
 
 h4. /extra-options-non-core/page_title/page_title.misc.txp
