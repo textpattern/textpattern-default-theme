@@ -36,39 +36,39 @@ h6 {
 }
 
 h1 {
-    @include adjust-font-size-to(40px, 2);
+    @include adjust-font-size-to(38px, 1.875); // 45px line height
 
-    margin: 0.6em 0;
+    margin: 0.6315789em 0; // 24px / 38px
 }
 
 h2 {
-    @include adjust-font-size-to(32px, 1.6666667);
+    @include adjust-font-size-to(30px, 1.5833333); // 38px line height
 
-    margin: 0.75em 0;
+    margin: 0.8em 0; // 24px / 30px
 }
 
 h3 {
-    @include adjust-font-size-to(24px, 1.3333333);
+    @include adjust-font-size-to(24px, 1.3333333); // 32px line height
 
-    margin: 1em 0;
+    margin: 1em 0; // 24px
 }
 
 h4 {
-    @include adjust-font-size-to(20px, 1.1666667);
+    @include adjust-font-size-to(20px, 1.1666667); // 28px line height
 
-    margin: 1em 0;
+    margin: 1em 0; // 20px
 }
 
 h5 {
-    @include adjust-font-size-to(18px, 1.08);
+    @include adjust-font-size-to(18px, 1.08); // 26px line height
 
-    margin: 1em 0;
+    margin: 1em 0; // 18px
 }
 
 h6 {
     @include adjust-font-size-to(16px, 1);
 
-    margin: 1em 0;
+    margin: 1em 0; // 16px
 }
 
 /**
@@ -93,13 +93,12 @@ address {
  */
 
 blockquote {
-    @include adjust-font-size-to(18px, 1.08);
+    @include adjust-font-size-to(20px, 1.1666667);
 
     font-style: italic;
-    /* 16px / 18px */
-    margin: 0.88889em 0;
-    border-left: 3px solid $color-border;
-    padding: 0 0 0 0.88889em;
+    /* 16px / 20px */
+    margin: 0.8em 0;
+    text-align: center;
 }
 
 /**
