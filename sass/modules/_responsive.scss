@@ -4,41 +4,41 @@
 
 @media only screen and (min-width: $break-small) {
 
-/**
- * Desktop version of the navigation menu. Overrides mobile first version.
- *
- * Example HTML:
- *
- * <nav class="site-navigation">
- *     <ul>
- *         <li class="active"><a></li>
- *         <li><a></li>
- *         <li><a></li>
- *     </ul>
- * </nav>
- */
+    /**
+     * Desktop version of the navigation menu. Overrides mobile first version.
+     *
+     * Example HTML:
+     *
+     * <nav class="site-navigation">
+     *     <ul>
+     *         <li class="active"><a></li>
+     *         <li><a></li>
+     *         <li><a></li>
+     *     </ul>
+     * </nav>
+     */
 
-.site-navigation {
-    border-top: 1px solid $color-border;
+    .site-navigation {
+        border-top: 1px solid $color-border;
 
-    ul {
-        width: 93.75%;
-    }
+        ul {
+            width: 93.75%;
+        }
 
-    li {
-        float: left;
-        border-top: 0;
-        border-right: 1px solid $color-gradient-border;
+        li {
+            float: left;
+            border-top: 0;
+            border-right: 1px solid $color-gradient-border;
+    
+            &:first-child {
+                border-left: 1px solid $color-gradient-border;
+            }
+        }
 
-        &:first-child {
-            border-left: 1px solid $color-gradient-border;
+        a {
+            padding: 0.5em 1em;
         }
     }
-
-    a {
-        padding: 0.5em 1em;
-    }
-}
 
 }
 
@@ -49,29 +49,29 @@
 
 @media only screen and (min-width: $break-large) {
 
-/**
- * Desktop version of layout. Sidebar moves from under content to the right
- * column and main column is reduced in width to allow this.
- *
- * Example HTML:
- *
- * <main role="main">
- * <div role="complementary"></div>
- */
+    /**
+     * Desktop version of layout. Sidebar moves from under content to the right
+     * column and main column is reduced in width to allow this.
+     *
+     * Example HTML:
+     *
+     * <main role="main">
+     * <div role="complementary"></div>
+     */
 
-main {
-    float: left;
-    width: 62.5%;
-}
+    main {
+        float: left;
+        width: 62.5%;
+    }
 
-[role="complementary"] {
-    @include border-radius;
+    [role="complementary"] {
+        @include border-radius;
 
-    float: right;
-    border: 1px solid lighten($color-border, 9%);
-    padding: 0 1em;
-    width: 30%;
-    background: $color-background-box;
-}
+        float: right;
+        border: 1px solid lighten($color-border, 9%);
+        padding: 0 1em;
+        width: 30%;
+        background: $color-background-box;
+    }
 
 }
