@@ -9,6 +9,10 @@
    Desktop version layout for IE 8 due to lack of media queries support
    ========================================================================== */
 
+html {
+    font-size: 112.5%;
+}
+
 header,
 footer,
 .container,
