@@ -80,7 +80,7 @@ h2. Delete surplus forms
 
 There were a number of forms and pages that formed part of the original default (pre-4.5) theme for Textpattern. For the most part we will be reusing those existing forms with our own code. However, there are some forms you can safely remove from the system, if present, as we will not be using them (in fact the original default Textpattern theme did not require them either - they are mostly left over from earlier versions of Textpattern and not used any more).
 
-h3. You can safely delete the following forms from your fresh install, if present (as of Textpattern v4.5 these forms are not part of the theme):
+*You can safely delete the following forms from your fresh install, if present (as of Textpattern v4.5 these forms are not part of the theme):*
 
 * link (link type form)
 * lofi (article type form)
