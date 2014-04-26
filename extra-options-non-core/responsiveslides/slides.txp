@@ -1,8 +1,0 @@
-<!-- change category="slides" to whatever image category you have designated for your slideshow -->
-<div class="rslides-container">
-    <ul class="rslides">
-        <txp:images category="slides" sort="id desc" break="li">
-            <txp:image width="0" height="0" />
-        </txp:images>
-    </ul>
-</div>
