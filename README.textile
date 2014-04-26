@@ -19,8 +19,8 @@ h2. Features
 
 h2. Supported web browsers
 
-* Internet Explorer 8, 9, 10
-* Chrome, Firefox, Safari and Opera the last two recent stable releases
+* Internet Explorer 8, 9, 10.
+* Chrome, Firefox, Safari and Opera the last two recent stable releases.
 
 h2. Requirements
 
@@ -69,16 +69,6 @@ bc. $ grunt [task]
 
 Where the @[task]@ is either @test@, @build@ or @watch@. Watch will launch a task that watches for file changes. The project is automatically built if a source file is modified. The build task builds the project.
 
-h3. Compiling CSS with extra modules
-
-The theme comes with some extra CSS modules. To compile a custom CSS file from Sass, create a new .scss file to the @sass@ directory, for instance @custom.scss@. In that file, import any extra modules you want:
-
-bc. @import "default";
-@import "extra/code-prettify";
-@import "extra/flickr";
-
-When you now run @grunt build@ you will get a @/css/custom.css@ file, containing any extra modules too. Now just change the Style for your sections to @custom@ and you are set.
-
 h2. Adjust Textpattern preferences
 
 h3. Essential
@@ -90,7 +80,7 @@ h2. Delete surplus forms
 
 There were a number of forms and pages that formed part of the original default (pre-4.5) theme for Textpattern. For the most part we will be reusing those existing forms with our own code. However, there are some forms you can safely remove from the system, if present, as we will not be using them (in fact the original default Textpattern theme did not require them either - they are mostly left over from earlier versions of Textpattern and not used any more).
 
-h3. You can safely delete the following forms from your fresh install if present:
+h3. You can safely delete the following forms from your fresh install, if present (as of Textpattern v4.5 these forms are not part of the theme):
 
 * link (link type form)
 * lofi (article type form)
@@ -103,7 +93,7 @@ Textpattern differs from many CMS solutions in that it stores the all template f
 
 However, many coders like to use their preferred IDE (integrated development environment) to write code and leverage all the tools within those applications provide to make code writing easier. That means you will have to copy/paste from your IDE into the corresponding parts of the Textpattern admin-side which adds a bit of time.
 
-With CSS files you could simply use external stylesheet and link in the traditional way (see below). However there is another solution in the form of the "'cnk_versioning' Textpattern plugin":http://forum.textpattern.com/viewtopic.php?id=27516, which effectively moves the 'styles', 'pages' and 'forms' back out of the database and into external directories for easier editing - a good solution when used in combination with an IDE. If you do use that plugin then dropping the files from this project into your correspondingly named directories will suffice. Detailed information on how to use cnk_versioning is "available at the Textpattern forum":http://forum.textpattern.com/viewtopic.php?id=27516.
+With CSS files you could simply use external stylesheet and link in the traditional way (see below). However there is another solution in the form of the "'rah_flat' Textpattern plugin":https://github.com/gocom/rah_flat, which effectively moves the 'styles', 'pages' and 'forms' back out of the database and into external directories for easier editing - a good solution when used in combination with an IDE. If you do use that plugin then dropping the files from this project into your correspondingly named directories will suffice. Detailed information on how to use rah_flat is "available at the GitHub project":https://github.com/gocom/rah_flat.
 
 h3. JavaScript
 
@@ -202,9 +192,3 @@ h3. Sass directory
 h4. /sass
 
 "Sass":http://sass-lang.com version of the CSS file, users familiar with the Sass language can utilise these optional source files for rapid development of their own themes.
-
-h3. Extra options directory
-
-h4. /extra-options-non-core
-
-These snippets of code are purely optional and allow you to extend the functionality of the original theme. You can find further information within the directory.
