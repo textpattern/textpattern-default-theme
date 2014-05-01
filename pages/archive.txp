@@ -97,7 +97,7 @@
                 </txp:if_article_list>
 
                 <!-- add pagination links to foot of article/article listings if there are more articles available,
-                     this method is more flexibile than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
+                     this method is more flexible than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
                 <txp:if_individual_article>
 
                     <txp:variable name="more" value='<txp:link_to_prev /><txp:link_to_next />' />

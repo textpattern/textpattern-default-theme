@@ -68,7 +68,7 @@
 </txp:article>
 
 <!-- check if there are further results and provide pagination links or disabled buttons depending on the result,
-     this method is more flexibile than using simple txp:older/txp:newer tags -->
+     this method is more flexible than using simple txp:older/txp:newer tags -->
 <txp:if_search_results min="11">
 
     <txp:variable name="prev" value='<txp:older />' />
