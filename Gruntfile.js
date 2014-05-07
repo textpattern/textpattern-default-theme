@@ -26,7 +26,17 @@ module.exports = function (grunt)
         copy: {
             core: {
                 files: [
-                    {expand: true, cwd: 'bower_components/html5shiv/dist/', src: ['html5shiv.js'], dest: 'js/'}
+                    {
+                        expand: true,
+                        cwd: 'bower_components/html5shiv/dist/',
+                        src: ['html5shiv.min.js'],
+                        dest: 'js/',
+                        // Use minified version of HTML5 Shiv but remove '.min' from filename.
+                        rename: function (dest, src)
+                        {
+                            return dest + src.replace('html5shiv.min.js', 'html5shiv.js');
+                        }
+                    }
                 ]
             }
         },
