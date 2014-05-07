@@ -2,6 +2,6 @@
     "name": "textpattern-default-theme",
     "directory": "bower_components",
     "dependencies": {
-        "html5shiv": "3.7.1"
+        "html5shiv": "3.7.2"
     }
 }
