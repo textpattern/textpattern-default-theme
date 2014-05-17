@@ -1,4 +1,4 @@
-<!-- set up a variables to check whether a file also has a title, description, category associated with it... -->
+<!-- set up variables to check whether a file also has a title, description, category associated with it... -->
 <txp:variable name="file_download_title" value='<txp:file_download_name title="1" />' />
 <txp:variable name="file_download_description" value='<txp:file_download_description />' />
 <txp:variable name="file_download_category" value='<txp:file_download_category />' />

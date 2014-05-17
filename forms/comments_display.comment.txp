@@ -29,7 +29,7 @@
         </ol>
     <txp:else />
 
-        <!-- else if there are no comments and if user is currently previewing comment,display it (but only if there is no error) -->
+        <!-- else if there are no comments and if user is currently previewing comment, display it (but only if there is no error) -->
         <txp:if_comments_preview>
             <ol class="comments-list">
                 <li>
