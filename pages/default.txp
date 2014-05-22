@@ -128,7 +128,7 @@
 
                         <!-- else display articles normally -->
                         <txp:else />
-                            
+
                             <!-- links by default to form: 'default.article.txp' unless you specify a different form -->
                             <txp:article limit="5" />
 
