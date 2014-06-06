@@ -66,32 +66,6 @@ a {
 }
 
 /**
- * Show URLs for certain links in print.
- */
-
-a[href]:after {
-    content: " (" attr(href) ")";
-}
-
-/**
- * Don't show URLs for certain links in print.
- */
-
-h1 a[href],
-h2 a[href],
-h3 a[href],
-h4 a[href],
-h5 a[href],
-h6 a[href],
-sup a[href],
-a[itemprop="discussionUrl"],
-a[rel="tag"] {
-    &:after {
-        content: "";
-    }
-}
-
-/**
  *  Show long-form for abbreviations in print.
  */
 
