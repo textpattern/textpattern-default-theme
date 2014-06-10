@@ -18,6 +18,17 @@ html {
 }
 
 /**
+ * Don't allow site to collapse smaller than large breakpoint.
+ */
+
+header,
+footer,
+.container,
+.site-navigation ul {
+    min-width: $break-large;
+}
+
+/**
  * Desktop version of the navigation menu. Overrides mobile first version.
  */
 
