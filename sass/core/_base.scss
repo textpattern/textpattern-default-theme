@@ -81,5 +81,9 @@ nav ol,
 .clearfix,
 .container,
 .paginator {
-    @include pie-clearfix;
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
