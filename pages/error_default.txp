@@ -78,12 +78,17 @@
                     <txp:feed_link class="feed-atom" flavor="atom" label="Atom" />
                 </p>
 
-                <h4>
-                    <txp:text item="external_links" />
-                </h4>
+                <txp:variable name="external_links" value='<txp:linklist limit="1" />' />
 
-                <!-- links by default to form: 'plainlinks.link.txp' unless you specify a different form -->
-                <txp:linklist wraptag="ul" break="li" limit="10" />
+                <txp:if_variable name="external_links" value="">
+                <txp:else />
+                    <h4>
+                        <txp:text item="external_links" />
+                    </h4>
+
+                    <!-- links by default to form: 'plainlinks.link.txp' unless you specify a different form -->
+                    <txp:linklist wraptag="ul" break="li" limit="10" />
+                </txp:if_variable>
 
             </div> <!-- /complementary -->
 
