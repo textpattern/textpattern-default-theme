@@ -177,7 +177,8 @@
                     <txp:feed_link class="feed-atom" flavor="atom" label="Atom" />
                 </p>
 
-                <txp:variable name="external_links" value='<txp:linklist wraptag="ul" break="li" limit="10" />' />
+                <!-- if links exist, renders a links list -->
+                <txp:variable name="external_links" value='<txp:linklist limit="1" />' />
 
                 <txp:if_variable name="external_links" value="">
                 <txp:else />
