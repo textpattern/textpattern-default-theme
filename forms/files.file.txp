@@ -3,7 +3,7 @@
 <txp:variable name="file_download_description" value='<txp:file_download_description />' />
 <txp:variable name="file_download_category" value='<txp:file_download_category />' />
 
-<div itemscope itemtype="http://schema.org/userDownloads">
+<div itemscope itemtype="http://schema.org/DataDownloads">
 
     <!-- ...if exists, use the file title, otherwise use file name -->
     <txp:if_variable name="file_download_title" value="">
