@@ -38,7 +38,7 @@ input,
 optgroup,
 select,
 textarea {
-    @include box-sizing(border-box);
+    @include box-sizing;
 
     /* 1 */
     font-size: 100%;

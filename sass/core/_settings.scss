@@ -1,6 +1,10 @@
-// disable Compass support for IE < 8
-$legacy-support-for-ie6:      false;
-$legacy-support-for-ie7:      false;
+// set Compass minimum browser support and caniuse thresholds
+
+$graceful-usage-threshold:     1;
+$critical-usage-threshold:     0.1;
+$supported-browsers:           ("chrome", "firefox", "ie", "safari");
+$browser-minimum-versions:     ("chrome": "22", "firefox": "16", "ie": "8", "safari": "5");
+$debug-browser-support:        true;
 
 // use the Kellum method for hiding text
 // http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
