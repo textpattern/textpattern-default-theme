@@ -226,3 +226,15 @@ figcaption {
     margin-top: 0.5em;
     font-style: italic;
 }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    @include box-sizing(content-box);
+
+    border: 0; // remove the default `hr` border
+    border-bottom: 1px solid $color-border;
+    height: 0;
+}
