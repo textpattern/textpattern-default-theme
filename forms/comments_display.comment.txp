@@ -71,7 +71,7 @@
         </section>
 
     <txp:else />
-    
+
         <!-- display either a comments expired message or a comments disabled message -->
         <txp:if_comments>
             <p>
