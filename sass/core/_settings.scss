@@ -3,7 +3,7 @@
 $graceful-usage-threshold:     1;
 $critical-usage-threshold:     0.1;
 $supported-browsers:           ("chrome", "firefox", "ie", "safari");
-$browser-minimum-versions:     ("chrome": "22", "firefox": "16", "ie": "8", "safari": "5");
+$browser-minimum-versions:     ("chrome": "30", "firefox": "24", "ie": "8", "safari": "5");
 $debug-browser-support:        false;
 
 // use the Kellum method for hiding text
