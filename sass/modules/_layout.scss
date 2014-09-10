@@ -20,8 +20,8 @@ html {
 
 /**
  * 1. Set `body` to `relative` to allow positioning of absolute elements.
- * 1. Remove default margin.
- * 1. Make sure body fills entire viewport height.
+ * 2. Remove default margin.
+ * 3. Make sure body fills entire viewport height.
  */
 
 body {
@@ -122,5 +122,6 @@ footer {
     margin: 2em -6% 0;
     border-top: 2px dashed $color-border;
     padding: 0 6%;
+    /* 1 */
     word-wrap: break-word;
 }
