@@ -19,11 +19,11 @@ GEM
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    sass (3.4.3)
+    sass (3.4.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   compass (= 1.0.1)
-  sass (= 3.4.3)
+  sass (= 3.4.4)
