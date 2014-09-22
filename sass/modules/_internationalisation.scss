@@ -32,3 +32,91 @@ html[lang="zh-cn"] {
 html[lang="zh-tw"] {
     font-family: PMingLiU, sans-serif;
 }
+
+/**
+ * Reduce risk of render glitches in links on RTL languages.
+ */
+
+[dir="rtl"] a {
+    unicode-bidi: embed;
+}
+
+/**
+ * Swap image alignment right/left positions in RTL languages.
+ */
+
+[dir="rtl"] img {
+    &.align-left {
+        float: right;
+        margin: 1em 0 1em 1em;
+    }
+
+    &.align-right {
+        float: left;
+        margin: 1em 1em 1em 0;
+    }
+}
+
+/**
+ * Swap table caption alignment in RTL languages.
+ */
+
+[dir="rtl"] caption {
+    text-align: right;
+}
+
+/**
+ * Swap table cell text alignments in RTL languages.
+ */
+
+[dir="rtl"] {
+    th,
+    td {
+        text-align: right;
+    }
+}
+
+/**
+ * Swap menu/list padding positions in RTL languages.
+ */
+
+[dir="rtl"] {
+    menu,
+    ol,
+    ul {
+        padding: 0 2em 0 0;
+    }
+}
+
+/**
+ * Swap definition description margin positions in RTL languages.
+ */
+
+[dir="rtl"] dd {
+    margin: 0 2em 0 0;
+}
+
+/**
+ * Swap checkbox/radio margin positions in RTL languages.
+ */
+
+[dir="rtl"] {
+    input[type="checkbox"],
+    input[type="radio"] {
+        & + label {
+            margin: 0 0 0 0.5em;
+
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+    }
+}
+
+/**
+ * Swap anchor float position on comments.
+ */
+
+[dir="rtl"] .comments h4 .comment-anchor {
+    float: left;
+}
