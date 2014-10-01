@@ -85,6 +85,8 @@ header h1 a {
  */
 
 .paginator {
+    clear: both;
+
     [rel="prev"] {
         float: left;
     }
