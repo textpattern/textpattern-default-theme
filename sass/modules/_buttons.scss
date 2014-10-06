@@ -34,9 +34,9 @@ input[type="submit"] {
     -webkit-appearance: none;
     display: inline-block;
     border: 1px solid $color-gradient-border;
-    padding: 0.3571428em 0.7142857em; // 5px / 14px, 10px / 14px
+    padding: 0.35714285714286em 0.71428571428571em; // 5px / 14px, 10px / 14px
     width: auto;
-    height: 2.3571428em; // 33px / 14px
+    height: 2.35714285714286em; // 33px / 14px
     font-weight: normal;
     text-align: center;
     color: $color-text;
@@ -56,11 +56,13 @@ input[type="submit"] {
 
         border-color: darken($color-gradient-to, 20%);
         color: darken($color-text, 10%);
+        text-decoration: none;
     }
 
     &:focus {
         @include box-shadow($inset-highlighting, 0 0 4px 2px $color-link-focus);
 
+        border-color: $color-link-focus;
         outline: 0;
     }
 }

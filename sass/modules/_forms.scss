@@ -112,8 +112,8 @@ textarea {
     /* 1 */
     -webkit-appearance: none;
     border: 1px solid $color-border;
-    padding: 0.3571428em; // 5px / 14px
-    height: 2.3571428em; // 33px / 14px
+    padding: 0.35714285714286em; // 5px / 14px
+    height: 2.35714285714286em; // 33px / 14px
     background: #ffffff;
 
     &:focus {
@@ -196,7 +196,7 @@ select[multiple] {
 
 select[size="0"],
 select[size="1"] {
-    height: 2.3571428em; // 33px / 14px
+    height: 2.35714285714286em; // 33px / 14px
 }
 
 @media (-webkit-min-device-pixel-ratio: 0) {
