@@ -42,7 +42,7 @@ textarea {
 
     /* 1 */
     font-size: 100%;
-    @include adjust-font-size-to(14px, 0.875);
+    @include adjust-font-size-to(16px, 0.91666666666667); // 22px line height.
 
     /* 2 */
     margin: 0;
@@ -112,8 +112,8 @@ textarea {
     /* 1 */
     -webkit-appearance: none;
     border: 1px solid $color-border;
-    padding: 0.35714285714286em; // 5px / 14px
-    height: 2.35714285714286em; // 33px / 14px
+    padding: 0.5em; // 8px / 16px
+    height: 2.5em; // 40px / 16px
     background: #ffffff;
 
     &:focus {
@@ -196,7 +196,7 @@ select[multiple] {
 
 select[size="0"],
 select[size="1"] {
-    height: 2.35714285714286em; // 33px / 14px
+    height: 2.5em; // 40px / 16px
 }
 
 @media (-webkit-min-device-pixel-ratio: 0) {
@@ -220,9 +220,9 @@ select[size="1"] {
     select,
     select[size="0"],
     select[size="1"] {
-        padding-right: 2.25em;
-        background: #ffffff url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='7px' viewBox='0 0 21 7' enable-background='new 0 0 21 7' xml:space='preserve'><polygon fill='#333333' points='2,0 7,7 12,0'/></svg>") right center no-repeat;
-        background-size: 1.5em 0.5em;
+        padding-right: 1.5em; // 24px / 16px
+        background: #ffffff url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='17px' height='5px' viewBox='0 0 17 5' enable-background='new 0 0 17 5' xml:space='preserve'><polygon fill='#333333' points='0,0 5,5 10,0'/></svg>") right center no-repeat;
+        background-size: 1.0625em 0.3125em; // 17px / 16px, 5px / 16px
     }
 
 }
