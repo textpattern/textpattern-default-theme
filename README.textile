@@ -1,6 +1,6 @@
 h1. Textpattern CMS default theme
 
-!https://travis-ci.org/textpattern/textpattern-default-theme.svg?branch=master!:https://travis-ci.org/textpattern/textpattern-default-theme !https://cdn.gruntjs.com/builtwith.png(Built with Grunt)!:http://gruntjs.com/
+!https://travis-ci.org/textpattern/textpattern-default-theme.svg?branch=master!:https://travis-ci.org/textpattern/textpattern-default-theme !https://david-dm.org/philwareham/hive-framework/dev-status.svg(devDependency Status)!:https://david-dm.org/textpattern/textpattern-default-theme#info=devDependencies !https://cdn.gruntjs.com/builtwith.png(Built with Grunt)!:http://gruntjs.com/
 
 "Demo":http://www.philwareham.co.uk/
 
