@@ -1,0 +1,32 @@
+// text colours
+
+$color-text:                  #333333;
+$color-text-footnote:         #888888;
+
+// interaction colours
+
+$color-link:                  #004cbf;
+$color-link-hover:            #0066ff;
+$color-link-focus:            #7fb2ff;
+$color-link-visited:          #00327f;
+
+// default gradients
+
+$color-gradient-from:         #eeeeee;
+$color-gradient-to:           darken($color-gradient-from, 6.5%);
+$color-gradient-border:       darken($color-gradient-from, 13.5%);
+
+// borders
+
+$color-border:                #cccccc;
+
+// accent colours
+
+$color-background:            #ffffff;
+$color-background-box:        #f7f7f7;
+$color-highlight-box:         #fff9e1;
+
+// alert colours
+
+$color-error-text:            #9d261d;
+$color-error-background:      #f2dede;

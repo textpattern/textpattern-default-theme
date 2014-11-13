@@ -29,27 +29,8 @@ $container-max-width:         86em; // 1376px / 16px
 $break-large:                 50em; // 800px / 16px
 $break-small:                 36em; // 576px / 16px
 
-// text colours
-
-$color-text:                  #333333;
-$color-text-footnote:         #888888;
-
-// interaction colours
-
-$color-link:                  #004cbf;
-$color-link-hover:            #0066ff;
-$color-link-focus:            #7fb2ff;
-$color-link-visited:          #00327f;
-
-// default gradients
-
-$color-gradient-from:         #eeeeee;
-$color-gradient-to:           darken($color-gradient-from, 6.5%);
-$color-gradient-border:       darken($color-gradient-from, 13.5%);
-
 // borders
 
-$color-border:                #cccccc;
 $default-border-radius:       0.5em; // 8px / 16px
 
 // shadows
@@ -57,14 +38,3 @@ $default-border-radius:       0.5em; // 8px / 16px
 $inset-highlighting:          inset 0 1px 0 rgba(#ffffff, 0.25);
 $text-shadow-light:           1px 1px 0 rgba(#ffffff, 0.5);
 $text-shadow-dark:            -1px -1px 0 rgba(#000000, 0.1);
-
-// accent colours
-
-$color-background:            #ffffff;
-$color-background-box:        #f7f7f7;
-$color-highlight-box:         #fff9e1;
-
-// alert colours
-
-$color-error-text:            #9d261d;
-$color-error-background:      #f2dede;

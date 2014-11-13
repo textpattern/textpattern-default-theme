@@ -1,8 +1,12 @@
 // import global variables
 @import "core/settings";
 
-// import mixins
+// import Compass, Compass Plugins and any additional mixins
 @import "core/helpers";
+
+// import colourscheme
+@import "core/colours";
+
 
 
 /* ==========================================================================
