@@ -4,7 +4,7 @@ $graceful-usage-threshold:     1;
 $critical-usage-threshold:     0.1;
 $supported-browsers:           ("chrome", "firefox", "ie", "safari");
 $browser-minimum-versions:     ("chrome": "30", "firefox": "24", "ie": "8", "safari": "5");
-$debug-browser-support:        false;
+$debug-browser-support:        false; // set to `true` to see debug comments
 
 // use the Kellum method for hiding text
 // http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
