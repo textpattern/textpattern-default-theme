@@ -96,8 +96,7 @@ blockquote {
     @include adjust-font-size-to(20px, 1.1666667);
 
     font-style: italic;
-    /* 16px / 20px */
-    margin: 0.8em 0;
+    margin: 0.8em 0; // 16px / 20px
     text-align: center;
 }
 
@@ -125,9 +124,8 @@ dfn[title] {
 
 mark,
 var {
-    @include border-radius($default-border-radius / 2);
-
-    padding: 0 0.25em;
+    border-radius: $default-border-radius / 2;
+    padding: 0 0.25em; // 0 4px
     color: $color-text;
     background: $color-highlight-box;
 }
@@ -140,18 +138,19 @@ pre,
 code,
 kbd,
 samp {
+    @include adjust-font-size-to(14px, 0.875);
+
+    border: 1px solid lighten($color-border, 9%);
+    border-radius: 0.2857143em; // 4px / 14px
+    color: $color-text;
+    background-color: $color-background-box;
     font-family: $font-mono;
 }
 
 code,
 kbd,
 samp {
-    @include adjust-font-size-to(14px, 0.875);
-    @include border-radius(.28571428571429em); // 4px / 14px
-
-    border: 1px solid lighten($color-border, 9%);
     padding: 1px 0.21429em; // 2px / 14px + 3px / 14px
-    background: $color-background-box;
 }
 
 /**
@@ -163,16 +162,11 @@ samp {
  */
 
 pre {
-    @include adjust-font-size-to(14px, 0.875);
-    @include border-radius(0.2857143em); // 4px / 14px
-
     /* 1 */
     word-wrap: normal;
     /* 2 */
     overflow-x: auto;
-    border: 1px solid lighten($color-border, 9%);
     padding: 0.5714286em 1.1428571em; // 8px / 14px + 16px / 14px
-    background: $color-background-box;
     /* 3 */
     tab-size: 4;
 
@@ -180,7 +174,7 @@ pre {
         font-size: 1em; // 14px
         border: 0;
         padding: 0;
-        background: none;
+        background-color: transparent;
     }
 }
 

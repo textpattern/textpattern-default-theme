@@ -24,7 +24,6 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
     @include text-shadow($text-shadow-light);
-    @include border-radius;
     @include box-shadow($inset-highlighting);
     @include background-clip;
     @include gradient-linear($color-gradient-from, $color-gradient-to);
@@ -34,6 +33,7 @@ input[type="submit"] {
     -webkit-appearance: none;
     display: inline-block;
     border: 1px solid $color-gradient-border;
+    border-radius: $default-border-radius;
     padding: 0.5em 0.75em; // 8px / 16px, 12px / 16px
     width: auto;
     height: 2.5em; // 40px / 16px

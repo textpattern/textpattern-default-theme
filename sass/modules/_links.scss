@@ -47,8 +47,7 @@ a {
  */
 
 h1 a {
-    @include border-radius($default-border-radius / 4);
-
+    border-radius: $default-border-radius / 4;
     color: $color-text;
 
     &:visited {
