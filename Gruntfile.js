@@ -4,7 +4,6 @@ module.exports = function (grunt)
 
     // Load Grunt plugins.
     grunt.loadNpmTasks('grunt-contrib-compass');
-    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
@@ -19,25 +18,6 @@ module.exports = function (grunt)
                     config: 'config.rb',
                     force: true
                 }
-            }
-        },
-
-        // Copy JavaScript files from `bower-components`.
-        copy: {
-            core: {
-                files: [
-                    {
-                        expand: true,
-                        cwd: 'bower_components/html5shiv/dist/',
-                        src: ['html5shiv.min.js'],
-                        dest: 'js/',
-                        // Use minified version of HTML5 Shiv but remove '.min' from filename.
-                        rename: function (dest, src)
-                        {
-                            return dest + src.replace('html5shiv.min.js', 'html5shiv.js');
-                        }
-                    }
-                ]
             }
         },
 
@@ -91,7 +71,7 @@ module.exports = function (grunt)
     });
 
     // Register tasks.
-    grunt.registerTask('build', ['sass', 'copy:core']);
+    grunt.registerTask('build', ['sass']);
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('sass', ['compass', 'cssmin']);
     grunt.registerTask('test', ['jshint']);
