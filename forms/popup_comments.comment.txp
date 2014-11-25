@@ -10,12 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, follow, noodp, noydir">
 
-    <!-- CSS -->
-    <!-- Google font API (remove this if you intend to use the theme in a project without internet access) -->
+
+    <!-- Google font API -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic">
 
+    <!-- CSS -->
     <txp:css format="link" media="" />
-    <!-- ...or you can use (faster) external CSS files eg. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
+    <!-- ...or you can use (faster) external CSS files e.g. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
 
     <!-- HTML5/Media Queries support for IE 8 (you can remove this section and the corresponding
          'js' directory file if you don't intend to support IE 8) -->
