@@ -15,7 +15,7 @@
 
 // touch actions
 
-@mixin touch-action {
-    -ms-touch-action: none;
-        touch-action: none;
+@mixin touch-action($taction: none) {
+    -ms-touch-action: $taction;
+        touch-action: $taction;
 }
