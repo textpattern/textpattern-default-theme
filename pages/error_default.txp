@@ -6,6 +6,14 @@
     <title>
         <txp:error_status />
     </title>
+
+    <!-- Google font API -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic">
+
+    <!-- CSS -->
+    <txp:css format="link" media="" />
+    <!-- ...or you can use (faster) external CSS files e.g. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
+
     <meta name="generator" content="Textpattern CMS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="none">
@@ -14,13 +22,6 @@
     <txp:feed_link flavor="atom" format="link" label="Atom" />
     <txp:feed_link flavor="rss" format="link" label="RSS" />
     <txp:rsd />
-
-    <!-- Google font API -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic">
-
-    <!-- CSS -->
-    <txp:css format="link" media="" />
-    <!-- ...or you can use (faster) external CSS files e.g. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
 
     <!-- HTML5/Media Queries support for IE 8 (you can remove this section if you don't intend to support IE 8) -->
     <!--[if lt IE 9]>
