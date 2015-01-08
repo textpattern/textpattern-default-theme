@@ -43,10 +43,10 @@
 
 </head>
 
-<body class="<txp:section />-page">
+<body class="<txp:section />-page" itemscope itemtype="http://schema.org/WebPage">
 
     <!-- header -->
-    <header role="banner">
+    <header class="site-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
         <h1>
             <txp:link_to_home>
                 <txp:site_name />
@@ -58,10 +58,14 @@
     </header>
 
     <!-- navigation -->
-    <nav class="site-navigation" role="navigation" aria-label="<txp:text item="navigation" />">
+    <nav class="site-navigation" role="navigation" aria-label="<txp:text item="navigation" />" itemscope itemtype="http://schema.org/SiteNavigationElement">
         <txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="">
             <li<txp:if_section name='<txp:section />'> class="active"</txp:if_section>>
-                <txp:section title="1" link="1" />
+                <a itemprop="url" href="<txp:section url="1" />">
+                    <span itemprop="name">
+                        <txp:section title="1" />
+                    </span>
+                </a>
             </li>
         </txp:section_list>
     </nav>
@@ -70,7 +74,7 @@
         <div class="container">
 
             <!-- left (main) column -->
-            <main role="main" aria-label="<txp:text item="main_content" />">
+            <main role="main" aria-label="<txp:text item="main_content" />" itemprop="mainContentOfPage">
 
                 <txp:if_article_list>
 
@@ -184,7 +188,7 @@
     </div> <!-- /.wrapper -->
 
     <!-- footer -->
-    <footer role="contentinfo">
+    <footer class="site-footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
         <p>
             <small>
                 <txp:text item="published_with" />
