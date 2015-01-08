@@ -1,11 +1,11 @@
-<form role="search" method="get" action="<txp:site_url />">
+<section role="region">
     <h4>
-        <label for="search-textbox">
-            <txp:text item="search" />
-        </label>
+        <txp:text item="search" />
     </h4>
-    <p>
-        <input id="search-textbox" type="search" name="q"<txp:if_search> value="<txp:search_term />"</txp:if_search>>
-        <input type="submit" value="<txp:text item="go" />">
-    </p>
-</form>
+    <form role="search" method="get" action="<txp:site_url />">
+        <p>
+            <input name="q" type="search"<txp:if_search> value="<txp:search_term />"</txp:if_search>>
+            <input type="submit" value="<txp:text item="go" />">
+        </p>
+    </form>
+</section>

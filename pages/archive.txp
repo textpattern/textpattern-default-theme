@@ -151,7 +151,7 @@
             </main>
 
             <!-- Complementary content -->
-            <div class="complementary-content" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+            <aside class="complementary-content" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
 
                 <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
                 <txp:search_input />
@@ -178,7 +178,7 @@
                     </section>
                 </txp:if_variable>
 
-            </div> <!-- /.complementary-content -->
+            </aside>
 
         </div> <!-- /.container -->
     </div> <!-- /.wrapper -->
