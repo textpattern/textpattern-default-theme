@@ -54,7 +54,7 @@ body {
 }
 
 /**
- * Wrapper for layouts, and for header/footer.
+ * Wrapper for layouts, and for site header/footer.
  *
  * Example HTML:
  *
@@ -65,8 +65,8 @@ body {
  * </div>
  */
 
-header,
-footer,
+.site-header,
+.site-footer,
 .container {
     margin: 0 auto;
     width: 88%;
@@ -74,10 +74,10 @@ footer,
 }
 
 /**
- * Additional styling for child content within `header`.
+ * Additional styling for child content within site header.
  */
 
-header {
+.site-header {
     padding: 1em 0;
 
     h1 {
@@ -90,10 +90,10 @@ header {
 }
 
 /**
- * Additional styling for child content within `footer`.
+ * Additional styling for child content within site footer.
  */
 
-footer {
+.site-footer {
     padding: 0.5em 0;
 }
 
@@ -118,7 +118,7 @@ footer {
  * 1. Prevent really, really long words in article from breaking layout.
  */
 
-[role="complementary"] {
+.complementary-content {
     margin: 2em -6% 0;
     border-top: 2px dashed $color-border;
     padding: 0 6%;

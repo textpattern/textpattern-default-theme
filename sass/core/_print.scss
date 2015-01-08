@@ -29,7 +29,7 @@ body {
  * Visually separate header from body.
  */
 
-header {
+.site-header {
     border-bottom: solid 1pt black;
 }
 
@@ -37,7 +37,7 @@ header {
  * Visually separate footer from body.
  */
 
-footer {
+.site-footer {
     margin-top: 12pt;
     border-top: solid 1pt black;
 }

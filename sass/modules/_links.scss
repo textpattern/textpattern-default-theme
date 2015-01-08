@@ -63,10 +63,10 @@ h1 a {
 }
 
 /**
- * Additional styling for child links within `header`.
+ * Additional styling for child links within site header.
  */
 
-header h1 a {
+.site-header h1 a {
     &:hover,
     &:active {
         background-color: darken($color-background-box, 6%);

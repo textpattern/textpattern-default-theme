@@ -25,9 +25,9 @@ html {
  * Don't allow site to collapse smaller than large breakpoint.
  */
 
-header,
-footer,
 .container,
+.site-header,
+.site-footer,
 .site-navigation ul {
     min-width: $break-large;
 }
