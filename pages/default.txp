@@ -86,7 +86,7 @@
         <div class="container">
 
             <!-- Main content -->
-            <main role="main" aria-label="<txp:text item="main_content" />" itemprop="mainContentOfPage">
+            <main role="main" aria-label="<txp:text item="main_content" />">
 
                 <!-- is this the search result page? also omits the pagination links below (uses pagination format within search_results.article.txp instead) -->
                 <txp:if_search>
