@@ -165,10 +165,10 @@ input[type="radio"] {
 }
 
 /**
- * Inline search field on sidebar.
+ * Inline search field in complementary content section.
  */
 
-[role="complementary"] input[type="search"] {
+.complementary-content input[type="search"] {
     width: 66%;
     display: inline-block;
 }

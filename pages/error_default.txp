@@ -61,7 +61,7 @@
     <div class="wrapper">
         <div class="container">
 
-            <!-- left (main) column -->
+            <!-- Main content -->
             <main role="main" aria-label="<txp:text item="main_content" />" itemprop="mainContentOfPage">
                 <h1 class="error-status">
                     <txp:error_status />
@@ -71,7 +71,7 @@
                 </p>
             </main>
 
-            <!-- right (complementary) column -->
+            <!-- Complementary content -->
             <div class="complementary-content" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
 
                 <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
@@ -99,7 +99,7 @@
                     </section>
                 </txp:if_variable>
 
-            </div> <!-- /complementary -->
+            </div> <!-- /.complementary-content -->
 
         </div> <!-- /.container -->
     </div> <!-- /.wrapper -->

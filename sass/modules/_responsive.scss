@@ -60,14 +60,14 @@
     /**
      * Two-column layout.
      *
-     * 1. Sidebar moves from under content to the right column and main column
-     *    is reduced in width to allow this.
+     * 1. Complementary content moves from under main content to the right
+     *    column and main column is reduced in width to allow this.
      * 2. Golden ratio at container maximum width.
      *
      * Example HTML:
      *
      * <main role="main">
-     * <div role="complementary"></div>
+     * <div class="complementary-content" role="complementary"></div>
      */
 
     main {
@@ -77,7 +77,7 @@
         width: 54%;
     }
 
-    [role="complementary"] {
+    .complementary-content {
         /* 1 */
         float: right;
         margin: 2em 0;
