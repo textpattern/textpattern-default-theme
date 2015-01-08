@@ -89,12 +89,14 @@
 
                 <txp:if_variable name="external_links" value="">
                 <txp:else />
-                    <h4>
-                        <txp:text item="external_links" />
-                    </h4>
+                    <section role="region">
+                        <h4>
+                            <txp:text item="external_links" />
+                        </h4>
 
-                    <!-- links by default to form: 'plainlinks.link.txp' unless you specify a different form -->
-                    <txp:linklist wraptag="ul" break="li" limit="10" />
+                        <!-- links by default to form: 'plainlinks.link.txp' unless you specify a different form -->
+                        <txp:linklist wraptag="ul" break="li" limit="10" />
+                    </section>
                 </txp:if_variable>
 
             </div> <!-- /complementary -->
