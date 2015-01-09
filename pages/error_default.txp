@@ -50,9 +50,7 @@
         <txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="">
             <li<txp:if_section name='<txp:section />'> class="active"</txp:if_section>>
                 <a itemprop="url" href="<txp:section url="1" />">
-                    <span itemprop="name">
-                        <txp:section title="1" />
-                    </span>
+                    <txp:section title="1" />
                 </a>
             </li>
         </txp:section_list>
