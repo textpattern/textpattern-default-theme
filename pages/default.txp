@@ -180,13 +180,13 @@
                 </p>
 
                 <!-- if links exist, renders a links list -->
-                <txp:variable name="external_links" value='<txp:linklist limit="1" />' />
+                <txp:variable name="links" value='<txp:linklist limit="1" />' />
 
-                <txp:if_variable name="external_links" value="">
+                <txp:if_variable name="links" value="">
                 <txp:else />
                     <section role="region">
                         <h4>
-                            <txp:text item="external_links" />
+                            <txp:text item="links" />
                         </h4>
 
                         <!-- links by default to form: 'plainlinks.link.txp' unless you specify a different form -->
