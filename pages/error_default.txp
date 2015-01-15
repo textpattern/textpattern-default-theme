@@ -35,12 +35,12 @@
 
     <!-- header -->
     <header class="site-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-        <h1>
+        <h1 itemprop="name">
             <txp:link_to_home>
                 <txp:site_name />
             </txp:link_to_home>
         </h1>
-        <h3>
+        <h3 itemprop="description">
             <txp:site_slogan />
         </h3>
     </header>
