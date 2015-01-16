@@ -55,7 +55,7 @@
             <time datetime="<txp:posted format="iso8601" />" itemprop="datePublished">
                 <txp:posted />
             </time>
-            ,
+            &middot;
             <txp:text item="author" />
             <span itemprop="author" itemscope itemtype="http://schema.org/Person">
                 <span itemprop="name">
