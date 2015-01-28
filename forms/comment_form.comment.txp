@@ -12,7 +12,7 @@
     <p class="large">
         <label for="name">
             <txp:text item="comment_name" />
-            <b class="required" title="<txp:text item="required" />">*</b>
+            <abbr class="required" title="<txp:text item="required" />">*</abbr>
         </label>
         <br>
         <txp:comment_name_input />
@@ -21,7 +21,7 @@
     <p class="large">
         <label for="email">
             <txp:text item="comment_email" />
-            <b class="required" title="<txp:text item="required" />">*</b>
+            <abbr class="required" title="<txp:text item="required" />">*</abbr>
         </label>
         <br>
         <txp:comment_email_input />
@@ -42,7 +42,7 @@
     <p class="small">
         <label for="message">
             <txp:text item="comment_message" />
-            <b class="required" title="<txp:text item="required" />">*</b>
+            <abbr class="required" title="<txp:text item="required" />">*</abbr>
         </label>
         <br>
         <txp:comment_message_input />

@@ -317,12 +317,16 @@ span.disabled {
 }
 
 /**
- * Styling for 'required' indicators.
+ * Styling for required field indicators.
+ *
+ * Example HTML:
+ *
+ * <abbr class="required" title="Required">*</abbr>
  */
 
-.required {
+abbr.required {
     color: $color-error-text;
-    cursor: help;
+    border: 0;
 }
 
 /**
