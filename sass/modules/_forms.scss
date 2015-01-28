@@ -213,7 +213,7 @@ select[size="1"] {
     }
 
     /**
-     * Use indicator icon to signify the downdown ability of `select` in Safari,
+     * Use indicator icon to signify the drop-down ability of `select` in Safari,
      * Chrome, Opera.
      */
 
@@ -314,4 +314,26 @@ span.disabled {
     textarea {
         height: 9.75em;
     }
+}
+
+/**
+ * Styling for 'required' indicators.
+ */
+
+.required {
+    color: $color-error-text;
+    cursor: help;
+}
+
+/**
+ * Highlighting for form validation errors.
+ */
+
+:invalid,
+:-moz-submit-invalid,
+:-moz-ui-invalid,
+.comments_error {
+    @include box-shadow(0 0 4px 2px $color-error-text);
+
+    border-color: $color-error-text;
 }

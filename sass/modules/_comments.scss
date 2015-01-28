@@ -52,28 +52,11 @@
 }
 
 /**
- * Highlight background colour for comment errors.
- */
-
-.comments_error {
-    background: $color-error-background !important;
-}
-
-/**
  * Highlight text colour for comment errors.
  */
 
 .error_message li {
     color: $color-error-text;
-}
-
-/**
- * Styling for 'required' indicators.
- */
-
-.required {
-    color: $color-error-text;
-    cursor: help;
 }
 
 
