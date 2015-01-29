@@ -18,22 +18,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow, noodp, noydir">
 
+    <!-- specify canonical and author -->
     <txp:if_individual_article>
-        <!-- add meta author for individual articles -->
+        <link rel="canonical" href="<txp:permlink />">
         <txp:meta_author title="1" />
+    <txp:else />
+        <link rel="canonical" href="<txp:section url="1" />">
     </txp:if_individual_article>
 
     <!-- content feeds -->
     <txp:feed_link flavor="atom" format="link" label="Atom" />
     <txp:feed_link flavor="rss" format="link" label="RSS" />
     <txp:rsd />
-
-    <!-- specify canonical, more info: http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html -->
-    <txp:if_individual_article>
-        <link rel="canonical" href="<txp:permlink />">
-    <txp:else />
-        <link rel="canonical" href="<txp:section url="1" />">
-    </txp:if_individual_article>
 
     <!-- HTML5/Media Queries support for IE 8 (you can remove this section if you don't intend to support IE 8) -->
     <!--[if lt IE 9]>

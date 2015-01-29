@@ -17,6 +17,7 @@
     <meta name="generator" content="Textpattern CMS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- specify robots and canonical -->
     <txp:if_search>
         <meta name="robots" content="none">
     <txp:else />
@@ -29,23 +30,21 @@
                 <meta name="robots" content="index, follow, noodp, noydir">
             </txp:if_author>
         </txp:if_category>
+        <txp:if_section name="">
+            <link rel="canonical" href="<txp:site_url />">
+        <txp:else />
+            <txp:if_individual_article>
+                <link rel="canonical" href="<txp:permlink />">
+            <txp:else />
+                <link rel="canonical" href="<txp:section url="1" />">
+            </txp:if_individual_article>
+        </txp:if_section>
     </txp:if_search>
 
     <!-- content feeds -->
     <txp:feed_link flavor="atom" format="link" label="Atom" />
     <txp:feed_link flavor="rss" format="link" label="RSS" />
     <txp:rsd />
-
-    <!-- specify canonical, more info: http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html -->
-    <txp:if_section name="">
-        <link rel="canonical" href="<txp:site_url />">
-    <txp:else />
-        <txp:if_individual_article>
-            <link rel="canonical" href="<txp:permlink />">
-        <txp:else />
-            <link rel="canonical" href="<txp:section url="1" />">
-        </txp:if_individual_article>
-    </txp:if_section>
 
     <!-- HTML5/Media Queries support for IE 8 (you can remove this section if you don't intend to support IE 8) -->
     <!--[if lt IE 9]>
