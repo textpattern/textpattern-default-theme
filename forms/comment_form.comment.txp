@@ -7,48 +7,44 @@
     <txp:comments_error class="error_message" wraptag="ol" break="li" />
 </txp:if_comments_error>
 
-<fieldset>
+<p class="large">
+    <label for="name">
+        <txp:text item="comment_name" />
+        <abbr class="required" title="<txp:text item="required" />">*</abbr>
+    </label>
+    <br>
+    <txp:comment_name_input />
+</p>
 
-    <p class="large">
-        <label for="name">
-            <txp:text item="comment_name" />
-            <abbr class="required" title="<txp:text item="required" />">*</abbr>
-        </label>
-        <br>
-        <txp:comment_name_input />
-    </p>
+<p class="large">
+    <label for="email">
+        <txp:text item="comment_email" />
+        <abbr class="required" title="<txp:text item="required" />">*</abbr>
+    </label>
+    <br>
+    <txp:comment_email_input />
+</p>
 
-    <p class="large">
-        <label for="email">
-            <txp:text item="comment_email" />
-            <abbr class="required" title="<txp:text item="required" />">*</abbr>
-        </label>
-        <br>
-        <txp:comment_email_input />
-    </p>
+<p class="large">
+    <label for="web">
+        <txp:text item="comment_web" />
+    </label>
+    <br>
+    <txp:comment_web_input />
+</p>
 
-    <p class="large">
-        <label for="web">
-            <txp:text item="comment_web" />
-        </label>
-        <br>
-        <txp:comment_web_input />
-    </p>
+<p>
+    <txp:comment_remember />
+</p>
 
-    <p>
-        <txp:comment_remember />
-    </p>
-
-    <p class="small">
-        <label for="message">
-            <txp:text item="comment_message" />
-            <abbr class="required" title="<txp:text item="required" />">*</abbr>
-        </label>
-        <br>
-        <txp:comment_message_input />
-    </p>
-
-</fieldset>
+<p class="small">
+    <label for="message">
+        <txp:text item="comment_message" />
+        <abbr class="required" title="<txp:text item="required" />">*</abbr>
+    </label>
+    <br>
+    <txp:comment_message_input />
+</p>
 
 <!-- preview and submit buttons (note: submit button will have a class of 'disabled'
      applied until you have previewed the message at least once) -->
