@@ -33,16 +33,16 @@
 <txp:article class="article-list" limit="10" wraptag="ul">
 
     <li role="article" itemscope itemtype="http://schema.org/Article">
-	    <!-- if the article has an title, display that -->
-		<txp:variable name="article_title" value='<txp:title />' />
-	    <txp:if_variable name="article_title" value="">
-	    <txp:else />
-	        <h4 itemprop="name headline">
-	            <a href="<txp:permlink />" itemprop="url">
-	                <txp:title />
-	            </a>
-	        </h4>
-		</txp:if_variable>
+        <!-- if the article has an title, display that -->
+        <txp:variable name="article_title" value='<txp:title />' />
+        <txp:if_variable name="article_title" value="">
+        <txp:else />
+            <h4 itemprop="name headline">
+                <a href="<txp:permlink />" itemprop="url">
+                    <txp:title />
+                </a>
+            </h4>
+        </txp:if_variable>
 
         <!-- if the article has an excerpt, display that, otherwise show highlighted keywords in context of article -->
         <txp:if_excerpt>
