@@ -333,9 +333,9 @@ span.disabled {
  * Highlighting for form validation errors.
  */
 
-:invalid,
-:-moz-submit-invalid,
-:-moz-ui-invalid,
+input:invalid,
+input:-moz-submit-invalid,
+input:-moz-ui-invalid,
 .comments_error {
     @include box-shadow(0 0 4px 2px $color-error-text);
 
