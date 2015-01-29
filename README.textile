@@ -99,12 +99,6 @@ However, many coders like to use their preferred IDE (integrated development env
 
 With CSS files you could simply use external stylesheet and link in the traditional way (see below). However there is another solution in the form of the "'rah_flat' Textpattern plugin":https://github.com/gocom/rah_flat, which effectively moves the 'styles', 'pages' and 'forms' back out of the database and into external directories for easier editing - a good solution when used in combination with an IDE. If you do use that plugin then dropping the files from this project into your correspondingly named directories will suffice. Detailed information on how to use rah_flat is "available at the GitHub project":https://github.com/gocom/rah_flat.
 
-h3. JavaScript
-
-h4. /js/html5shiv.js
-
-Provides "basic HTML5 support for Internet Explorer versions 6-8":http://paulirish.com/2011/the-history-of-the-html5-shiv/. This script can be removed if you don't intend to support IE less than version 9 (remember to also remove the corresponding link in the page @<head>@ section of page templates).
-
 h3. Forms
 
 The forms follow the cnk_versioning standard of labelling, in that 'xxxx.misc.txp' is a misc type form, 'xxxx.article.txp' is an article type form, etc. This is only for file structure, when you actually create new forms within Textpattern you should *not* include the '.xxxx.txp', just the first part of the filename.
