@@ -1,5 +1,5 @@
 <!-- count how many results return -->
-<txp:article limit="10" pgonly="1" />
+<txp:article pgonly="1" />
 
 <txp:if_search_results>
 
