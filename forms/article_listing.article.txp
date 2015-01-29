@@ -1,6 +1,6 @@
 <li role="article" itemscope itemtype="http://schema.org/Article">
 
-    <!-- if the article has an title, display that -->
+    <!-- if the article has a title, display that -->
     <txp:variable name="article_title" value='<txp:title />' />
     <txp:if_variable name="article_title" value="">
     <txp:else />
