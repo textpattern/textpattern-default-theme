@@ -59,6 +59,16 @@
     color: $color-error-text;
 }
 
+/**
+ * Highlighting for comment form errors.
+ */
+
+.comments_error {
+    @include box-shadow(0 0 4px 2px $color-error-text);
+
+    border-color: $color-error-text;
+}
+
 
 /* Popup comments (can be removed if you don't use popups)
    ========================================================================== */
