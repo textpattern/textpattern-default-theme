@@ -117,7 +117,7 @@ h4. /forms/comment_form.comment.txp
 
 Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to format the form for inputting comments.
 
-h4. /forms/comments_display.article.txp
+h4. /forms/comments_display.comment.txp
 
 Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to display all the comments features, and calls other comment type forms.
 
