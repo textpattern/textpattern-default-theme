@@ -321,10 +321,10 @@ span.disabled {
  *
  * Example HTML:
  *
- * <abbr class="required" title="Required">*</abbr>
+ * <b class="required" title="Required">*</b>
  */
 
-abbr.required {
+.required {
     color: $color-error-text;
     border: 0;
 }
