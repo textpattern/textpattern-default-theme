@@ -44,9 +44,13 @@
         <txp:images form="images" />
     </txp:if_article_image>
 
-    <div itemprop="articleBody">
-        <txp:body />
-    </div>
+    <txp:variable name="article_body" value='<txp:body />' />
+    <txp:if_variable name="article_body" value="">
+    <txp:else />
+        <div itemprop="articleBody">
+            <txp:body />
+        </div>
+    </txp:if_variable>
 
     <p>
         <strong>
