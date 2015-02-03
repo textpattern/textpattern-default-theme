@@ -1,15 +1,9 @@
 <li role="article" itemscope itemtype="http://schema.org/Article">
-
-    <!-- if the article has a title, display that -->
-    <txp:variable name="article_title" value='<txp:title />' />
-    <txp:if_variable name="article_title" value="">
-    <txp:else />
     <h4 itemprop="name headline">
         <a href="<txp:permlink />" itemprop="url">
             <txp:title />
         </a>
     </h4>
-    </txp:if_variable>
 
     <!-- if the article has an excerpt, display that -->
     <txp:if_excerpt>

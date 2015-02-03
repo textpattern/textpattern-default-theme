@@ -1,21 +1,16 @@
 <article role="article" itemscope itemtype="http://schema.org/Article">
 
-    <!-- if not an individual article then make the title h1 a link -->
-    <txp:variable name="article_title" value='<txp:title />' />
-    <txp:if_variable name="article_title" value="">
+    <txp:if_individual_article>
+        <h1 itemprop="name headline">
+            <txp:title />
+        </h1>
     <txp:else />
-        <txp:if_individual_article>
-            <h1 itemprop="name headline">
+        <h1 itemprop="name headline">
+            <a href="<txp:permlink />" itemprop="url">
                 <txp:title />
-            </h1>
-        <txp:else />
-            <h1 itemprop="name headline">
-                <a href="<txp:permlink />" itemprop="url">
-                    <txp:title />
-                </a>
-            </h1>
-        </txp:if_individual_article>
-    </txp:if_variable>
+            </a>
+        </h1>
+    </txp:if_individual_article>
 
     <p>
         <strong>
