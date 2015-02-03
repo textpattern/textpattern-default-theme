@@ -168,7 +168,7 @@
                         </h4>
 
                         <!-- links by default to form: 'plainlinks.link.txp' unless you specify a different form -->
-                        <txp:linklist wraptag="ul" break="li" limit="10" />
+                        <txp:linklist wraptag="ul" break="li" />
                     </section>
                 </txp:if_variable>
 
