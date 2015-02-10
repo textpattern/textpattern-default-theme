@@ -54,7 +54,23 @@
 
 </head>
 
-<body class="<txp:if_section name=""><txp:if_search>search<txp:else />front</txp:if_search><txp:else /><txp:section /></txp:if_section>-page" itemscope itemtype="http://schema.org/WebPage">
+<txp:if_section name="">
+    <txp:if_search>
+        <body class="search-page" itemscope itemtype="http://schema.org/SearchResultsPage"
+    <txp:else />
+        <txp:if_category>
+            <body class="listing-page" itemscope itemtype="http://schema.org/CollectionPage">
+        <txp:else />
+            <txp:if_author>
+                <body class="listing-page" itemscope itemtype="http://schema.org/CollectionPage">
+            <txp:else />
+                <body class="front-page" itemscope itemtype="http://schema.org/WebPage">
+            </txp:if_author>
+        </txp:if_category>
+    </txp:if_search>
+<txp:else />
+    <body class="<txp:section />-page" itemscope itemtype="http://schema.org/WebPage">
+</txp:if_section>
 
     <!-- header -->
     <header class="site-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
@@ -83,49 +99,37 @@
         <div class="container">
 
             <!-- Main content -->
-            <main role="main" aria-label="<txp:text item="main_content" />">
+            <main role="main" aria-label="<txp:text item="main_content" />" itemprop="mainContentOfPage">
 
                 <!-- is this the search result page? also omits the pagination links below (uses pagination format within search_results.article.txp instead) -->
                 <txp:if_search>
 
-                    <section role="region" itemscope itemtype="http://schema.org/SearchResultsPage">
-                        <h1 itemprop="name">
-                            <txp:text item="search_results" />
-                        </h1>
-                        <div itemprop="mainContentOfPage">
-                            <txp:output_form form="search_results" />
-                        </div>
-                    </section>
+                    <h1 itemprop="name">
+                        <txp:text item="search_results" />
+                    </h1>
+                    <txp:output_form form="search_results" />
 
                 <txp:else />
 
                     <!-- else is this an article category list? -->
                     <txp:if_category>
 
-                        <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
-                            <h1 itemprop="name">
-                                <txp:text item="category" />
-                                <txp:category title="1" />
-                            </h1>
-                            <div itemprop="mainContentOfPage">
-                                <txp:article form="article_listing" limit="5" wraptag="ul" class="article-list" />
-                            </div>
-                        </section>
+                        <h1 itemprop="name">
+                            <txp:text item="category" />
+                            <txp:category title="1" />
+                        </h1>
+                        <txp:article form="article_listing" limit="5" wraptag="ul" class="article-list" />
 
                     <txp:else />
 
                         <!-- else is this an article author list? -->
                         <txp:if_author>
 
-                            <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
-                                <h1 itemprop="name">
-                                    <txp:text item="author" />
-                                    <txp:author />
-                                </h1>
-                                <div itemprop="mainContentOfPage">
-                                    <txp:article form="article_listing" limit="5" wraptag="ul" class="article-list" />
-                                </div>
-                            </section>
+                            <h1 itemprop="name">
+                                <txp:text item="author" />
+                                <txp:author />
+                            </h1>
+                            <txp:article form="article_listing" limit="5" wraptag="ul" class="article-list" />
 
                         <!-- else display articles normally -->
                         <txp:else />
