@@ -83,7 +83,7 @@
                     <!-- ...or if you want to list all articles from all sections instead, then replace txp:article with txp:article_custom -->
 
                     <!-- add pagination links to foot of article/article listings if there are more articles available,
-                     this method is more flexible than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
+                         this method is more flexible than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
                     <txp:variable name="more" value='<txp:older /><txp:newer />' />
                     <txp:variable name="prev" value='<txp:older />' />
                     <txp:variable name="next" value='<txp:newer />' />
@@ -112,7 +112,7 @@
                     <txp:article />
 
                     <!-- add pagination links to foot of article/article listings if there are more articles available,
-                     this method is more flexible than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
+                         this method is more flexible than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
                     <txp:variable name="more" value='<txp:link_to_prev /><txp:link_to_next />' />
                     <txp:variable name="prev" value='<txp:link_to_prev />' />
                     <txp:variable name="next" value='<txp:link_to_next />' />
