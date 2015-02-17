@@ -2,8 +2,9 @@
 
 language: node_js
 node_js:
-  - "0.10"
+  - "0.12"
 before_install:
   - bundle install
+sudo: false
 notifications:
   slack: textpattern:2ft1Tge0j2OzxpmERtqRKEC0
