@@ -59,7 +59,7 @@
             <txp:text item="last_modified" />
         </strong>
         <span itemprop="dateModified">
-            <txp:file_download_created />
+            <txp:file_download_modified />
         </span>
         |
         <strong>
