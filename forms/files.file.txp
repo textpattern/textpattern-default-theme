@@ -7,29 +7,28 @@
 
     <!-- ...if exists, use the file title, otherwise use file name -->
     <txp:if_variable name="file_download_title" value="">
-        <strong itemprop="name"><a href="<txp:file_download_link />" title="<txp:file_download_name />" itemprop="url">
-            <txp:file_download_name /></a>
+        <strong itemprop="name">
+            <a href="<txp:file_download_link />" itemprop="contentUrl">
+                <txp:file_download_name />
+            </a>
         </strong>
-        <br>
     <txp:else />
         <strong itemprop="name">
-            <a href="<txp:file_download_link />" title="<txp:file_download_name title='1' />" itemprop="url">
+            <a href="<txp:file_download_link />" itemprop="contentUrl">
                 <txp:file_download_name title="1" />
             </a>
         </strong>
-        <br>
     </txp:if_variable>
 
     <!-- ...if exists, use the file description, otherwise omit that line -->
     <txp:if_variable name="file_download_description" value="">
     <txp:else />
-        <span itemprop="description">
+        <div itemprop="description">
             <txp:file_download_description />
-        </span>
-        <br>
+        </div>
     </txp:if_variable>
 
-    <span class="footnote">
+    <div class="footnote">
 
         <!-- ...if exists, use the file category, otherwise omit that line -->
         <txp:if_variable name="file_download_category" value="">
@@ -37,8 +36,10 @@
             <strong>
                 <txp:text item="category" />
             </strong>
-            <txp:file_download_category />
-            |
+            <span itemprop="keywords">
+                <txp:file_download_category title="1" />
+            </span>
+            &#183;
         </txp:if_variable>
 
         <strong>
@@ -49,19 +50,21 @@
                 <txp:file_download_author link="1" />
             </span>
         </span>
-        |
+        &#183;
         <strong>
             <txp:text item="file_size" />
         </strong>
-        <txp:file_download_size />
-        |
+        <span itemprop="contentSize">
+            <txp:file_download_size />
+        </span>
+        &#183;
         <strong>
             <txp:text item="last_modified" />
         </strong>
-        <span itemprop="dateModified">
+        <time datetime="<txp:file_download_modified format="iso8601" />" itemprop="dateModified">
             <txp:file_download_modified />
-        </span>
-        |
+        </time>
+        &#183;
         <strong>
             <txp:text item="download_count" />
         </strong>
@@ -69,6 +72,6 @@
             <txp:file_download_downloads />
         </span>
 
-    </span>
+    </div>
 
 </div>
