@@ -6,19 +6,15 @@
 <div itemscope itemtype="http://schema.org/DataDownloads">
 
     <!-- ...if exists, use the file title, otherwise use file name -->
-    <txp:if_variable name="file_download_title" value="">
+    <a href="<txp:file_download_link />" itemprop="contentUrl">
         <strong itemprop="name">
-            <a href="<txp:file_download_link />" itemprop="contentUrl">
+            <txp:if_variable name="file_download_title" value="">
                 <txp:file_download_name />
-            </a>
-        </strong>
-    <txp:else />
-        <strong itemprop="name">
-            <a href="<txp:file_download_link />" itemprop="contentUrl">
+            <txp:else />
                 <txp:file_download_name title="1" />
-            </a>
+            </txp:if_variable>
         </strong>
-    </txp:if_variable>
+    </a>
 
     <!-- ...if exists, use the file description, otherwise omit that line -->
     <txp:if_variable name="file_download_description" value="">
