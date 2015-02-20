@@ -24,9 +24,6 @@ module.exports = function (grunt)
         // Minified versions of CSS files within `css/`.
         cssmin: {
             main: {
-                options: {
-                    rebase: false
-                },
                 expand: true,
                 cwd: 'css/',
                 src: ['*.css', '!*.min.css'],
