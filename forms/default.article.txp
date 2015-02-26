@@ -26,20 +26,18 @@
             <strong>
                 <txp:text item="comments" />
             </strong>
-            <a href="<txp:permlink />#comments-head" title="<txp:text item="view" />" itemprop="discussionUrl" itemscope itemtype="http://schema.org/UserComments">
-                <span itemprop="interactionCount">
-                    <txp:comments_count />
-                </span>
+            <a href="<txp:permlink />#comments-head" title="<txp:text item="view" />" itemprop="discussionUrl">
+                <txp:comments_count />
             </a>
+            <meta itemprop="interactionCount" content="UserComments:<txp:comments_count />">
         <txp:else />
             <txp:if_comments_allowed>
                 <br>
                 <strong>
                     <txp:text item="comments" />
                 </strong>
-                <a href="<txp:permlink />#comments-head" title="<txp:text item="view" />" itemprop="discussionUrl" itemscope itemtype="http://schema.org/UserComments">
-                    <span itemprop="interactionCount">0</span>
-                </a>
+                <a href="<txp:permlink />#comments-head" title="<txp:text item="view" />" itemprop="discussionUrl">0</a>
+                <meta itemprop="interactionCount" content="UserComments:0">
             </txp:if_comments_allowed>
         </txp:if_comments>
     </p>

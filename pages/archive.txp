@@ -72,7 +72,7 @@
         <div class="container">
 
             <!-- Main content -->
-            <main role="main" aria-label="<txp:text item="main_content" />" itemprop="mainContentOfPage">
+            <main role="main" aria-label="<txp:text item="main_content" />">
 
                 <txp:if_article_list>
 

@@ -60,7 +60,7 @@
         <div class="container">
 
             <!-- Main content -->
-            <main role="main" aria-label="<txp:text item="main_content" />" itemprop="mainContentOfPage">
+            <main role="main" aria-label="<txp:text item="main_content" />">
                 <h1 class="error-status">
                     <txp:error_status />
                 </h1>
