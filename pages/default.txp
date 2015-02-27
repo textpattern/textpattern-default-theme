@@ -51,7 +51,6 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
         <txp:css format="link" media="" name="ie8" />
     <![endif]-->
-
 </head>
 
 <txp:if_section name="">
