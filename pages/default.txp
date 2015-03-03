@@ -139,26 +139,26 @@
                         </txp:if_author>
                     </txp:if_category>
 
-                    <!-- add pagination links to foot of article/article listings/category listings/author listings if there are more articles available,
+                    <!-- add pagination links to foot of article listings/category listings/author listings if there are more articles available,
                          this method is more flexible than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
-                    <txp:variable name="more" value='<txp:older /><txp:newer />' />
-                    <txp:variable name="prev" value='<txp:older />' />
-                    <txp:variable name="next" value='<txp:newer />' />
+                    <txp:variable name="more" value='<txp:newer /><txp:older />' />
+                    <txp:variable name="prev" value='<txp:newer />' />
+                    <txp:variable name="next" value='<txp:older />' />
 
                     <txp:if_variable name="more" value="">
                     <txp:else />
                         <p class="paginator">
                             <txp:if_variable name="prev" value="">
                             <txp:else />
-                                <a rel="prev" href="<txp:older />" title="<txp:text item="older" />">
-                                    ← <txp:text item="older" />
+                                <a rel="prev" href="<txp:newer />" title="<txp:text item="newer" />">
+                                    ← <txp:text item="newer" />
                                 </a>
                             </txp:if_variable>
 
                             <txp:if_variable name="next" value="">
                             <txp:else />
-                                <a rel="next" href="<txp:newer />" title="<txp:text item="newer" />">
-                                    <txp:text item="newer" /> →
+                                <a rel="next" href="<txp:older />" title="<txp:text item="older" />">
+                                    <txp:text item="older" /> →
                                 </a>
                             </txp:if_variable>
                         </p>
