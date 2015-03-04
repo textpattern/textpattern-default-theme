@@ -387,7 +387,7 @@ Month
 Search
 </label>
 <br>
-<input type="search" id="search" name="search">
+<input type="search" id="search" name="search" autosave="saved-searches" results="5">
 </p>
 <p>
 <label for="range">
