@@ -79,7 +79,6 @@ input::-moz-focus-inner {
  * padding (and `textfield` appearance).
  */
 
-input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
 }
@@ -112,7 +111,7 @@ textarea {
     -webkit-appearance: none;
     border: 1px solid $color-border;
     border-radius: 0;
-    padding: 0.5em; // 8px / 16px
+    padding: 0.5em 0.1875em; // 8px / 16px + 3px / 16px
     height: 2.5em; // 40px / 16px
     background: #ffffff;
 
