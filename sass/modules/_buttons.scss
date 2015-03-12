@@ -60,9 +60,6 @@ input[type="submit"] {
     }
 
     &:focus {
-        @include box-shadow($inset-highlighting, 0 0 4px 2px $color-link-focus);
-
         border-color: $color-link-focus;
-        outline: 0;
     }
 }
