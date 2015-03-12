@@ -324,3 +324,17 @@ span.disabled {
     color: $color-error-text;
     border: 0;
 }
+
+/**
+ * Styling for form field validation.
+ */
+
+input,
+select,
+textarea {
+    &:focus:invalid {
+        @include box-shadow(none); // Normalise Firefox styling
+
+        border-color: $color-error-text;
+    }
+}
