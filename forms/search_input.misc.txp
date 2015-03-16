@@ -1,4 +1,4 @@
-<section role="region" itemscope itemtype="http://schema.org/WebSite">
+<section itemscope itemtype="http://schema.org/WebSite">
     <h4>
         <txp:text item="search" />
     </h4>

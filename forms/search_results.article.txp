@@ -32,7 +32,7 @@
 <!-- display resulting articles (10 per page; default setting) -->
 <txp:article class="article-list" wraptag="ul">
 
-    <li role="article" itemscope itemtype="http://schema.org/Article">
+    <li class="article" itemscope itemtype="http://schema.org/Article">
         <h4 itemprop="name headline">
             <a href="<txp:permlink />" itemprop="url">
                 <txp:title />

@@ -2,7 +2,7 @@
      attributes of wraptag="" and break="", you are instead using ol and li tags below)... -->
 <txp:if_comments>
 
-    <section id="comments-head" role="region">
+    <section id="comments-head">
         <h3>
             <txp:text item="comments" />
         </h3>
@@ -29,7 +29,7 @@
 <txp:else />
 
     <txp:if_comments_preview>
-        <section id="comments-head" role="region">
+        <section id="comments-head">
             <h3>
                 <txp:text item="comments" />
             </h3>
@@ -49,7 +49,7 @@
     <txp:else />
 
         <txp:if_comments_allowed>
-            <section id="comments-head" role="region">
+            <section id="comments-head">
                 <h3>
                     <txp:text item="comments" />
                 </h3>
@@ -64,7 +64,7 @@
 <!-- next, if new comments are allowed for this article then display comment form -->
 <txp:if_comments_allowed>
 
-    <section id="comments-form" role="region">
+    <section id="comments-form">
 
         <!-- comment invite text is taken for the article's comment invitation field on the 'write' screen -->
         <h3>

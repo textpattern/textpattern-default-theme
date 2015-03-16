@@ -33,7 +33,7 @@
 <body class="error-page" itemscope itemtype="http://schema.org/WebPage">
 
     <!-- header -->
-    <header class="site-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+    <header class="site-header" itemscope itemtype="http://schema.org/WPHeader">
         <h1 itemprop="name">
             <txp:link_to_home>
                 <txp:site_name />
@@ -45,7 +45,7 @@
     </header>
 
     <!-- navigation -->
-    <nav class="site-navigation" role="navigation" aria-label="<txp:text item="navigation" />" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <nav class="site-navigation" aria-label="<txp:text item="navigation" />" itemscope itemtype="http://schema.org/SiteNavigationElement">
         <txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="">
             <li<txp:if_section name='<txp:section />'> class="active"</txp:if_section>>
                 <a itemprop="url" href="<txp:section url="1" />">
@@ -59,7 +59,7 @@
         <div class="container">
 
             <!-- Main content -->
-            <main role="main" aria-label="<txp:text item="main_content" />">
+            <main aria-label="<txp:text item="main_content" />">
                 <h1 class="error-status">
                     <txp:error_status />
                 </h1>
@@ -69,7 +69,7 @@
             </main>
 
             <!-- Complementary content -->
-            <aside class="complementary-content" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+            <aside class="complementary-content" itemscope itemtype="http://schema.org/WPSideBar">
 
                 <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
                 <txp:search_input />
@@ -86,7 +86,7 @@
 
                 <txp:if_variable name="links" value="">
                 <txp:else />
-                    <section role="region">
+                    <section>
                         <h4>
                             <txp:text item="links" />
                         </h4>

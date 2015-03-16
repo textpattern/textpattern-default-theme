@@ -103,7 +103,7 @@ body {
  * 1. Prevent really, really long words in article from breaking layout.
  */
 
-[role="article"] {
+.article {
     margin-bottom: 2em;
     /* 1 */
     word-wrap: break-word;
