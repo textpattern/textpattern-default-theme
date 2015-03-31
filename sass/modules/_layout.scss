@@ -3,8 +3,8 @@
 
 /**
  * 1. Always force scrollbar padding so we don't get 'jumping'.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
  * 3. As 2 above, for Windows Phone.
  */
 
