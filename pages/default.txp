@@ -8,7 +8,7 @@
     </title>
 
     <!-- Google font API -->
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic">
 
     <!-- CSS -->
     <txp:css format="link" media="" />
@@ -48,7 +48,7 @@
 
     <!-- HTML5/Media Queries support for IE 8 (you can remove this section if you don't intend to support IE 8) -->
     <!--[if lt IE 9]>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
         <txp:css format="link" media="" name="ie8" />
     <![endif]-->
 </head>
