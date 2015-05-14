@@ -1,3 +1,5 @@
+# OS generated files #
+######################
 .DS_Store
 .DS_Store?
 ._*
@@ -6,9 +8,13 @@
 Icon?
 ehthumbs.db
 Thumbs.db
+
+# Development files  #
+######################
 .sass-cache
 /node_modules
 /npm-debug.log
 /css
 /bower_components
 /js
+/scss-lint-report.xml

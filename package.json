@@ -5,9 +5,10 @@
     "grunt": "~0.4.5",
     "grunt-cli": "~0.1",
     "grunt-contrib-compass": "1.0.3",
-    "grunt-contrib-cssmin": "0.12.2",
-    "grunt-contrib-jshint": "0.11.1",
-    "grunt-contrib-watch": "0.6.1"
+    "grunt-contrib-cssmin": "0.12.3",
+    "grunt-contrib-jshint": "0.11.2",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-scss-lint": "0.3.6"
   },
   "scripts": {
     "test": "grunt travis --verbose"

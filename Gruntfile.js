@@ -7,6 +7,7 @@ module.exports = function (grunt)
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-scss-lint');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -60,6 +61,18 @@ module.exports = function (grunt)
             }
         },
 
+        // Validate Sass files via scss-lint.
+        scsslint: {
+            all: ['sass/**/*.scss'],
+            options: {
+                bundleExec: true,
+                colorizeOutput: false,
+                config: '.scss-lint.yml',
+                force: true,
+                reporterOutput: 'scss-lint-report.xml'
+            }
+        },
+
         // Directories watched and tasks performed by invoking `grunt watch`.
         watch: {
             sass: {
@@ -73,7 +86,7 @@ module.exports = function (grunt)
     // Register tasks.
     grunt.registerTask('build', ['sass']);
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('sass', ['compass', 'cssmin']);
+    grunt.registerTask('sass', ['scsslint', 'compass', 'cssmin']);
     grunt.registerTask('test', ['jshint']);
     grunt.registerTask('travis', ['jshint', 'compass']);
 };
