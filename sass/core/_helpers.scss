@@ -8,6 +8,7 @@
     background-color: $color-gradient-to;
     @include background-image(linear-gradient($color-gradient-from, $color-gradient-to));
 }
+
 @mixin gradient-radial($color-gradient-from, $color-gradient-to) {
     background-color: $color-gradient-to;
     @include background-image(radial-gradient($color-gradient-from, $color-gradient-to));
@@ -17,5 +18,5 @@
 
 @mixin touch-action($taction: none) {
     -ms-touch-action: $taction;
-        touch-action: $taction;
+    touch-action: $taction;
 }

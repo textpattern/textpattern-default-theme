@@ -23,17 +23,17 @@
 
 @media screen {
 
-@import "modules/layout";
-@import "modules/navigation";
-@import "modules/links";
-@import "modules/typography";
-@import "modules/internationalisation";
-@import "modules/embedded-content";
-@import "modules/tables";
-@import "modules/lists";
-@import "modules/forms";
-@import "modules/buttons";
-@import "modules/comments";
+    @import "modules/layout";
+    @import "modules/navigation";
+    @import "modules/links";
+    @import "modules/typography";
+    @import "modules/internationalisation";
+    @import "modules/embedded-content";
+    @import "modules/tables";
+    @import "modules/lists";
+    @import "modules/forms";
+    @import "modules/buttons";
+    @import "modules/comments";
 
 }
 
@@ -47,6 +47,6 @@
 
 @media print {
 
-@import "core/print";
+    @import "core/print";
 
 }

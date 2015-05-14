@@ -103,7 +103,7 @@ html[lang="zh-tw"] {
 [dir="rtl"] {
     input[type="checkbox"],
     input[type="radio"] {
-        & + label {
+        + label {
             margin: 0 0 0 0.5em;
 
             &:last-of-type {

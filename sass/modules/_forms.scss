@@ -165,8 +165,8 @@ input[type="radio"] {
  */
 
 .complementary-content input[type="search"] {
-    width: 66%;
     display: inline-block;
+    width: 66%;
 }
 
 /**
@@ -240,6 +240,7 @@ optgroup {
  */
 
 textarea {
+    width: 100%;
     height: auto;
     min-height: 3em;
     /* 1 */
@@ -248,7 +249,6 @@ textarea {
     resize: vertical;
     /* 3 */
     vertical-align: top;
-    width: 100%;
 }
 
 /**
@@ -270,12 +270,12 @@ textarea[disabled],
 span.disabled {
     @include box-shadow(none !important);
 
-    /* 1 */
-    opacity: 1;
     border-color: lighten($color-border, 9%) !important;
     color: #aaaaaa !important;
     background: #eeeeee !important;
     text-shadow: none !important;
+    /* 1 */
+    opacity: 1;
     /* 2 */
     cursor: default !important;
 }
@@ -321,8 +321,8 @@ span.disabled {
  */
 
 .required {
-    color: $color-error-text;
     border: 0;
+    color: $color-error-text;
 }
 
 /**
