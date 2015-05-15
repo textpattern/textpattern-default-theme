@@ -227,7 +227,7 @@ linters:
 # Properties within rule sets should each reside on their own line.
   SingleLinePerProperty:
     enabled: true
-    allow_single_line_rule_sets: false
+    allow_single_line_rule_sets: true
 
 # Split selectors onto separate lines after each comma.
   SingleLinePerSelector:
