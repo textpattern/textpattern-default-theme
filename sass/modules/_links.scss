@@ -18,14 +18,7 @@ a {
     color: $color-link;
     /* 4 */
     background-color: transparent;
-}
 
-/**
- * Improve readability of focused elements when they are also in an
- * active/hover state. Specify link state colours.
- */
-
-a {
     &:hover,
     &:active {
         outline: 0;

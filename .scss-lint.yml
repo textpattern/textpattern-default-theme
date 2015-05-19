@@ -184,7 +184,9 @@ linters:
   PropertySpelling:
     enabled: true
     severity: warning
-    extra_properties: []
+    extra_properties: [
+        'text-decoration-skip'
+    ]
 
 # Configure which units are allowed for property values.
   PropertyUnits:
@@ -307,7 +309,9 @@ linters:
     additional_identifiers: []
     excluded_identifiers: [
       '-ms-touch-action',
-      '-webkit-tap-highlight-color'
+      '-webkit-tap-highlight-color',
+      '-webkit-text-size-adjust',
+      '-ms-text-size-adjust'
     ]
 
 # Omit length units on zero values.

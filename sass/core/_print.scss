@@ -205,18 +205,11 @@ dt {
 }
 
 /**
+ * Images.
+ *
  * 1. Ensure images are maximum possible width.
  * 2. Avoid images breaking across mutiple pages.
- */
-
-img {
-    /* 1 */
-    max-width: 100% !important;
-    /* 2 */
-    page-break-inside: avoid;
-}
-
-/**
+ *
  * Image alignment (compatible with Textile markup syntax).
  *
  * Example HTML:
@@ -227,6 +220,11 @@ img {
  */
 
 img {
+    /* 1 */
+    max-width: 100% !important;
+    /* 2 */
+    page-break-inside: avoid;
+
     &.align-left {
         float: left;
         margin: 1em 1em 1em 0;
