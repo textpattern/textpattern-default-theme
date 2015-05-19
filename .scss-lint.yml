@@ -28,6 +28,7 @@ linters:
 # variable declarations.
   ColorVariable:
     enabled: false
+    severity: warning
 
 # Prefer `//` comments over `/* ... */`.
   Comment:
@@ -294,7 +295,7 @@ linters:
 # Properties, like color and font, are easier to read and maintain when defined
 # using variables rather than literals.
   VariableForProperty:
-    enabled: true
+    enabled: false
     severity: warning
     properties: [
       'color',
@@ -308,10 +309,9 @@ linters:
     identifier_list: base
     additional_identifiers: []
     excluded_identifiers: [
-      '-ms-touch-action',
-      '-webkit-tap-highlight-color',
-      '-webkit-text-size-adjust',
-      '-ms-text-size-adjust'
+      'touch-action',
+      'tap-highlight-color',
+      'text-size-adjust'
     ]
 
 # Omit length units on zero values.
