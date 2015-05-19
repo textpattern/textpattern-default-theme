@@ -27,8 +27,7 @@ linters:
 # Prefer color literals (keywords or hexadecimal codes) to be used only in
 # variable declarations.
   ColorVariable:
-    enabled: true
-    severity: warning
+    enabled: false
 
 # Prefer `//` comments over `/* ... */`.
   Comment:
@@ -129,6 +128,7 @@ linters:
 # lowercase letters and hyphens instead of underscores.
   NameFormat:
     enabled: true
+    severity: warning
     allow_leading_underscore: false
     convention: hyphenated_lowercase
 
