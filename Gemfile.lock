@@ -20,8 +20,8 @@ GEM
     rb-fsevent (0.9.5)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    sass (3.4.13)
-    scss_lint (0.38.0)
+    sass (3.4.14)
+    scss_lint (0.39.0)
       rainbow (~> 2.0)
       sass (~> 3.4.1)
 
@@ -30,5 +30,5 @@ PLATFORMS
 
 DEPENDENCIES
   compass (= 1.0.3)
-  sass (= 3.4.13)
-  scss_lint (= 0.38.0)
+  sass (= 3.4.14)
+  scss_lint (= 0.39.0)
