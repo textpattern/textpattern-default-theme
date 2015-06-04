@@ -45,13 +45,13 @@
 </txp:if_article_list>
 
     <!-- header -->
-    <header class="site-header" itemscope itemtype="http://schema.org/WPHeader">
-        <h1 itemprop="name">
+    <header class="site-header">
+        <h1>
             <txp:link_to_home>
                 <txp:site_name />
             </txp:link_to_home>
         </h1>
-        <h3 itemprop="description">
+        <h3>
             <txp:site_slogan />
         </h3>
     </header>
@@ -140,7 +140,7 @@
             </main>
 
             <!-- Complementary content -->
-            <aside class="complementary-content" itemscope itemtype="http://schema.org/WPSideBar">
+            <aside class="complementary-content">
 
                 <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
                 <txp:search_input />
@@ -173,7 +173,7 @@
     </div> <!-- /.wrapper -->
 
     <!-- footer -->
-    <footer class="site-footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <footer class="site-footer" role="contentinfo">
         <p>
             <small>
                 <txp:text item="published_with" />
