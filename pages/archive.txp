@@ -15,9 +15,7 @@
     <!-- ...or you can use (faster) external CSS files e.g. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
 
     <!-- specify meta description if available -->
-    <txp:if_description>
-        <txp:meta_description />
-    </txp:if_description>
+    <txp:meta_description />
 
     <meta name="generator" content="Textpattern CMS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
