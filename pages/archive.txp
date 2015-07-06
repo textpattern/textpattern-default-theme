@@ -32,7 +32,6 @@
     <!-- content feeds -->
     <txp:feed_link flavor="atom" format="link" label="Atom" />
     <txp:feed_link flavor="rss" format="link" label="RSS" />
-    <txp:rsd />
 
     <!-- HTML5/Media Queries support for IE 8 (you can remove this section if you don't intend to support IE 8) -->
     <!--[if lt IE 9]>
