@@ -2,7 +2,11 @@
  * Remove unnecessary global styling from printed media.
  */
 
-* {
+*,
+*:before,
+*:after,
+*:first-letter,
+*:first-line {
     @include box-shadow(none !important);
 
     color: $color-text-print !important;
