@@ -57,7 +57,7 @@
 
 <txp:if_section name="">
     <txp:if_search>
-        <body class="search-page" itemscope itemtype="http://schema.org/SearchResultsPage"
+        <body class="search-page" itemscope itemtype="http://schema.org/SearchResultsPage">
     <txp:else />
         <txp:if_category>
             <body class="listing-page" itemscope itemtype="http://schema.org/CollectionPage">
