@@ -103,31 +103,43 @@ h3. Forms
 
 The forms follow the cnk_versioning standard of labelling, in that 'xxxx.misc.txp' is a misc type form, 'xxxx.article.txp' is an article type form, etc. This is only for file structure, when you actually create new forms within Textpattern you should *not* include the '.xxxx.txp', just the first part of the filename.
 
-h4. /forms/article_listing.article.txp
+h4. /forms/article.article_listing.txp
 
 Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to display listings of articles and is called from the 'default.txp' page when viewing category lists of articles, and the 'archive.txp' page when viewing the archive list of articles.
 
-h4. /forms/comment_form.comment.txp
-
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to format the form for inputting comments.
-
-h4. /forms/comments_display.comment.txp
-
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to display all the comments features, and calls other comment type forms.
-
-h4. /forms/comments.comment.txp
-
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to display the individual comments.
-
-h4. /forms/default.article.txp
+h4. /forms/article.default.txp
 
 Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to display the written article, either as an individual article of part of a set of articles. When called on an individual article basis this form also calls the 'comments_display.article.txp'.
 
-h4. /forms/files.file.txp
+h4. /forms/article.search_results.txp
+
+Copy/paste over the existing form of the same name that was part of the standard Textpattern install. This form displays the search results, if any exist.
+
+h4. /forms/comment.comment_form.txp
+
+Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to format the form for inputting comments.
+
+h4. /forms/comment.comments_display.txp
+
+Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to display all the comments features, and calls other comment type forms.
+
+h4. /forms/comment.comments.txp
+
+h4. /forms/comment.popup_comments.txp
+
+Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to display the comment system in a new window if you set 'Comments mode' to 'popup' in the Textapttern preferences. If you don't need the popup comments feature (quite likely) then you can safely remove this form from the system.
+
+Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to display the individual comments.
+
+h4. /forms/file.files.txp
 
 Copy/paste over the existing form of the same name that was part of the standard Textpattern install. You can call this form from within an article by simply using @<txp:file_download id="xxx" />@ (you don't need to specify a form name as 'files' is the default form for files) - you can also call this form from within other any other forms and pages using the same method (just mind your @<p>@'s).
 
-h4. /forms/images.misc.txp
+h4. /forms/link.plainlinks.txp
+
+Copy/paste over the existing form of the same name that was part of the standard Textpattern install. You can call this form from within a form, page or article by using @<txp:linklist />@ (you don't need to specify a form name as 'plainlinks' is the default form for links).
+
+h4. /forms/misc.images.txp
 
 Create a new form in the system with name of 'images' and type of 'misc', then copy/paste the code from this file into it. This form can optionally be used in your page/form templates. You could also, for example, display article_images by inserting the following code into a written article...
 
@@ -135,15 +147,7 @@ bc. notextile. <txp:images form="images" />
 
 ...you should use the @notextile.@ prefix in this instance because the HTML @<figure>@ tag cannot be wrapped inside a @<p>@ tag.
 
-h4. /forms/plainlinks.link.txp
-
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. You can call this form from within a form, page or article by using @<txp:linklist />@ (you don't need to specify a form name as 'plainlinks' is the default form for links).
-
-h4. /forms/popup_comments.comment.txp
-
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to display the comment system in a new window if you set 'Comments mode' to 'popup' in the Textapttern preferences. If you don't need the popup comments feature (quite likely) then you can safely remove this form from the system.
-
-h4. /forms/search_input.misc.txp
+h4. /forms/misc.search_input.txp
 
 Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Note that this form makes use of the following tag...
 
@@ -154,10 +158,6 @@ bc. <txp:text />
 bc. <txp:text item="search" />
 
 You can get a idea of the items you can target with this tag by looking through the specific language file within the textpattern -> lang directory which was created as part of your installation. You would probably not use this tag very often unless you were designing a multi-language site as it adds needlessly to the amount of PHP database calls (that is also true for other tags such as @<txp:site_name />@) - it's included here purely as an example of what the tag is for.
-
-h4. /forms/search_results.article.txp
-
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. This form displays the search results, if any exist.
 
 h3. Pages
 
