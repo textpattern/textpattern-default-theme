@@ -6,13 +6,9 @@ h1. h1 Heading 1 h1 Heading 1 h1 Heading 1 h1 Heading 1 h1
 
 h2. h2 Heading 2 h2 Heading 2 h2 Heading 2 h2 Heading 2 h2 Heading 2
 
-h3. h3 Heading 3 h3 Heading 3 h3 Heading 3 h3 Heading 3 h3 Heading 3 h3 Heading 3
+h3. h3 Heading 3 h3 Heading 3 h3 Heading 3 h3 Heading 3 h3 Heading 3 h3 Heading 3 h3 Heading 3
 
-h4. h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4
-
-h5. h5 Heading 5 h5 Heading 5 h5 Heading 5 h5 Heading 5 h5 Heading 5 h5 Heading 5 h5 Heading 5 h5 Heading 5
-
-h6. h6 Heading 6 h6 Heading 6 h6 Heading 6 h6 Heading 6 h6 Heading 6 h6 Heading 6 h6 Heading 6 h6 Heading 6 h6 Heading 6
+h4. h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4
 
 *Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper.* Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.
 
@@ -79,7 +75,7 @@ pre. This is an example of a non-code
 
 h3. Pre-formatted code blocks
 
-bc. <section role="alert" class="alert alert-error fade in">
+bc. <section class="alert alert-error fade in" role="alert">
     <a class="close" data-dismiss="alert">&amp;times;</a>
     <h3>Message pane</h3>
     <p>Error message goes here.</p>
@@ -89,60 +85,49 @@ h3. Blockquotes
 
 bq.:http://textpattern.com/ Here is an example of a block quote. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.
-
 h2. Embedded content
 
 Remember that all images and videos in the theme are @max-width:100%;@ for flexibility and accommodation of responsive design, so parent containers are what control a given desired image/video width in layout, except when they are at their maximum width already (100%). *Images/video width and height attribute values should _never_ be used.*
 
-h3. Audio
-
-notextile. <audio controls>
-<source src="http://philwareham.co.uk/audio/nokia_dead.mp3">
-<source src="http://philwareham.co.uk/audio/nokia_dead.ogg">
-</audio>
-
 h3. Images
 
-!http://placehold.it/160/cccccc/333333 (Alt text)!
+!http://placehold.it/160/999999/333333 (Alt text)!
 
 h3. Images with links
 
-<a href="#" title="Title text"><img src="http://placehold.it/160/cccccc/333333" alt="Alt text"></a>
+<a href="#" title="Title text"><img src="http://placehold.it/160/999999/333333" alt="Alt text"></a>
 
 h3. Figures
 
 notextile. <figure>
-<img src="http://placehold.it/480x240/cccccc/333333" alt="Alt text">
+<img src="http://placehold.it/480x240/999999/333333" alt="Alt text">
 <figcaption>Figcaption content</figcaption>
 </figure>
+
+h3. Left ranged image
+
+Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. !<http://placehold.it/160/999999/333333(160x160px placeholder)! Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.
+
+h3. Right ranged image
+
+Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. !>http://placehold.it/160/999999/333333(160x160px placeholder)! Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.
+
+h3. Centred image
+
+Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. !=http://placehold.it/160/999999/333333(160x160px placeholder)! Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.
 
 h3. SVG
 
 notextile. <svg width="100px" height="100px">
-<circle cx="100" cy="100" r="100" fill="#cccccc"/>
+<circle cx="100" cy="100" r="100" fill="#999999"/>
 </svg>
 
 h3. Videos
 
-notextile. <video poster="http://static2.designhive.com/video/home.jpg" controls>
-<source src="http://static2.designhive.com/video/home.mp4">
-<source src="http://static2.designhive.com/video/home.webm">
+notextile. <video>
+<source type="video/mp4"  src="http://stream.flowplayer.org/bauhaus/624x260.mp4">
+<source type="video/webm" src="http://stream.flowplayer.org/bauhaus/624x260.webm">
 </video>
-
-h2. Image alignment
-
-h3. Left ranged image
-
-Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. !<http://placehold.it/160/cccccc/333333(160x160px placeholder)! Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.
-
-h3. Right ranged image
-
-Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. !>http://placehold.it/160/cccccc/333333(160x160px placeholder)! Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.
-
-h3. Centred image
-
-Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. !=http://placehold.it/160/cccccc/333333(160x160px placeholder)! Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.
 
 h2. Details / summary
 
@@ -196,37 +181,37 @@ h2. Forms
 
 notextile. <form action="#" method="post" enctype="multipart/form-data" onsubmit="return false">
 <p>
-<input type="checkbox" id="test_checkbox_1" name="test_checkbox_1">
+<input id="test_checkbox_1" name="test_checkbox_1" type="checkbox">
 <label for="test_checkbox_1">
 Test checkbox 1
 </label>
 &nbsp;
 &nbsp;
-<input type="checkbox" id="test_checkbox_2" name="test_checkbox_2">
+<input id="test_checkbox_2" name="test_checkbox_2" type="checkbox">
 <label for="test_checkbox_2">
 Test checkbox 2
 </label>
 &nbsp;
 &nbsp;
-<input type="checkbox" id="test_checkbox_3" name="test_checkbox_3">
+<input id="test_checkbox_3" name="test_checkbox_3" type="checkbox">
 <label for="test_checkbox_3">
 Test checkbox 3
 </label>
 </p>
 <p>
-<input type="radio" id="test_radio_1" name="test_radio_group">
+<input id="test_radio_1" name="test_radio_group" type="radio">
 <label for="test_radio_1">
 Test radio 1
 </label>
 &nbsp;
 &nbsp;
-<input type="radio" id="test_radio_2" name="test_radio_group">
+<input id="test_radio_2" name="test_radio_group" type="radio">
 <label for="test_radio_2">
 Test radio 2
 </label>
 &nbsp;
 &nbsp;
-<input type="radio" id="test_radio_3" name="test_radio_group">
+<input id="test_radio_3" name="test_radio_group" type="radio">
 <label for="test_radio_3">
 Test radio 3
 </label>
@@ -250,12 +235,12 @@ Test radio 3
 <option value="9">Yet another item to be chosen</option>
 </optgroup>
 </select>
-<input type="text" id="text_inline" name="text_inline">
+<input id="text_inline" name="text_inline" type="text">
 <input type="button" value="Hello">
 </p>
 <p>
 <label for="select_dd2">Inline form elements (disabled)</label><br>
-<select id="select_dd2" name="select_dd2" disabled="disabled">
+<select id="select_dd2" name="select_dd2" disabled>
 <optgroup label="Group 1">
 <option value="1">Some text goes here</option>
 <option value="2">Another choice could be here</option>
@@ -272,8 +257,8 @@ Test radio 3
 <option value="9">Yet another item to be chosen</option>
 </optgroup>
 </select>
-<input type="text" id="text_inline2" name="text_inline2" disabled="disabled">
-<input type="button" value="Hello" disabled="disabled">
+<input id="text_inline2" name="text_inline2" type="text" disabled>
+<input type="button" value="Hello" disabled>
 </p>
 <p>
 <label for="select_multi">
@@ -310,28 +295,28 @@ Textarea
 URL
 </label>
 <br>
-<input type="url" id="url" name="url">
+<input id="url" name="url" type="url">
 </p>
 <p>
 <label for="email">
 Email
 </label>
 <br>
-<input type="email" id="email" name="email" placeholder="name@example.com">
+<input id="email" name="email" type="email" placeholder="name@example.com">
 </p>
 <p>
 <label for="text">
 Text
 </label>
 <br>
-<input type="text" id="text" name="text">
+<input id="text" name="text" type="text">
 </p>
 <p>
 <label for="text-data">
 Text with data list
 </label>
 <br>
-<input type="text" id="text-data" name="text-data" list="text-data-list">
+<input id="text-data" name="text-data" type="text" list="text-data-list">
 <datalist id="text-data-list">
 <option value="Afghanistan">
 <option value="Albania">
@@ -345,63 +330,63 @@ Text with data list
 Datetime local
 </label>
 <br>
-<input type="datetime-local" id="datetime-local" name="datetime-local">
+<input id="datetime-local" name="datetime-local" type="datetime-local">
 </p>
 <p>
 <label for="number">
 Number
 </label>
 <br>
-<input type="number" id="number" name="number" min="0" max="999" step="1">
+<input id="number" name="number" type="number" min="0" max="999" step="1">
 </p>
 <p>
 <label for="tel">
 Tel (phone)
 </label>
 <br>
-<input type="tel" id="tel" name="tel">
+<input id="tel" name="tel" type="tel">
 </p>
 <p>
 <label for="datetime">
 Datetime
 </label>
 <br>
-<input type="datetime" id="datetime" name="datetime">
+<input id="datetime" name="datetime" type="datetime">
 </p>
 <p>
 <label for="date">
 Date
 </label>
 <br>
-<input type="date" id="date" name="date">
+<input id="date" name="date" type="date">
 </p>
 <p>
 <label for="month">
 Month
 </label>
 <br>
-<input type="month" id="month" name="month">
+<input id="month" name="month" type="month">
 </p>
 <p>
 <label for="search">
 Search
 </label>
 <br>
-<input type="search" id="search" name="search" autosave="saved-searches" results="5">
+<input id="search" name="search" type="search">
 </p>
 <p>
 <label for="range">
 Range
 </label>
 <br>
-<input type="range" id="range" name="range">
+<input id="range" name="range" type="range">
 </p>
 <p>
 <label for="color">
 Colour
 </label>
 <br>
-<input type="color" id="color" name="color" value="#cc0000">
+<input id="color" name="color" type="color" value="#cc0000">
 </p>
 <p>
 <input type="submit" value="Input - Submit">
@@ -413,8 +398,8 @@ Colour
 <button>Button tag</button>
 </p>
 <p>
-<input type="submit" value="Input (disabled)" disabled="disabled">
+<input type="submit" value="Input (disabled)" disabled>
 &nbsp;
-<button disabled="disabled">Button (disabled)</button>
+<button disabled>Button (disabled)</button>
 </p>
 </form>
