@@ -55,6 +55,11 @@ linters:
   DeclarationOrder:
     enabled: true
 
+# Enforces including a comment explaining why a linter was disabled via a
+# control comment.
+  DisableLinterReason:
+    enabled: false
+
 # Reports when you define the same property twice in a single rule set.
   DuplicateProperty:
     enabled: true
@@ -250,6 +255,15 @@ linters:
   SpaceAfterPropertyName:
     enabled: true
 
+# Variables should be formatted with no space between the name and the colon.
+  SpaceAfterVariableName:
+    enabled: true
+
+# Enforces whitespace padding around mathematical operators.
+  SpaceAroundOperator:
+    enabled: true
+    style: one_space # or 'no_space'
+
 # Opening braces should be preceded by a single space.
   SpaceBeforeBrace:
     enabled: true
@@ -273,6 +287,10 @@ linters:
 
 # Don't write trailing zeros for numeric values with a decimal point.
   TrailingZero:
+    enabled: false
+
+# Reports the use of `transition: all`.
+  TransitionAll:
     enabled: false
 
 # Numeric values should not contain unnecessary fractional portions.
