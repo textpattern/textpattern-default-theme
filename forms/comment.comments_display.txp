@@ -72,7 +72,7 @@
         </h3>
 
         <!-- links by default to form: 'comment_form.comment.txp' unless you specify a different form -->
-        <txp:comments_form isize="32" msgcols="64" msgrows="4" />
+        <txp:comments_form />
 
     </section>
 

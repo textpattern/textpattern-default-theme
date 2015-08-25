@@ -13,7 +13,7 @@
         <b class="required" title="<txp:text item="required" />">*</b>
     </label>
     <br>
-    <txp:comment_name_input />
+    <txp:comment_name_input size="32" />
 </p>
 
 <p class="large">
@@ -22,7 +22,7 @@
         <b class="required" title="<txp:text item="required" />">*</b>
     </label>
     <br>
-    <txp:comment_email_input />
+    <txp:comment_email_input size="32" />
 </p>
 
 <p class="large">
@@ -30,7 +30,7 @@
         <txp:text item="comment_web" />
     </label>
     <br>
-    <txp:comment_web_input />
+    <txp:comment_web_input size="32" />
 </p>
 
 <p>
@@ -43,7 +43,7 @@
         <b class="required" title="<txp:text item="required" />">*</b>
     </label>
     <br>
-    <txp:comment_message_input />
+    <txp:comment_message_input cols="64" rows="4" />
 </p>
 
 <!-- preview and submit buttons (note: submit button will have a class of 'disabled'
