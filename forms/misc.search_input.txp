@@ -6,7 +6,7 @@
     <form role="search" method="get" action="<txp:site_url />" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
         <meta itemprop="target" content="<txp:site_url />?q={q}">
         <p>
-            <input name="q" type="search" autosave="saved-searches" results="5" itemprop="query-input"<txp:if_search> value="<txp:search_term />"</txp:if_search>>
+            <input name="q" type="search" itemprop="query-input"<txp:if_search> value="<txp:search_term />"</txp:if_search>>
             <input type="submit" value="<txp:text item="go" />">
         </p>
     </form>
