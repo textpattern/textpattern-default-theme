@@ -1,4 +1,4 @@
-// import all Compass core mixins
+// import Bourbon mixins
 @import "bourbon";
 
 
@@ -12,11 +12,4 @@
 @mixin gradient-radial($color-gradient-from, $color-gradient-to) {
     background-color: $color-gradient-to;
     @include background-image(radial-gradient($color-gradient-from, $color-gradient-to));
-}
-
-// touch actions
-
-@mixin touch-action($taction: none) {
-    -ms-touch-action: $taction;
-    touch-action: $taction;
 }

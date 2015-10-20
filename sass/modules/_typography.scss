@@ -233,8 +233,7 @@ figcaption {
  */
 
 hr {
-    @include box-sizing(content-box);
-
+    box-sizing: content-box;
     border: 0; // remove the default `hr` border
     border-bottom: 1px solid $color-border;
     height: 0;

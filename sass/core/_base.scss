@@ -54,7 +54,7 @@ template {
 a,
 input,
 button {
-    @include touch-action;
+    touch-action: none;
 }
 
 /**
