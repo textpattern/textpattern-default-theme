@@ -26,7 +26,7 @@ h2. Requirements
 
 Building this source repository requires:
 
-* "Node.js":http://nodejs.org/ >=0.8.0
+* "Node.js":http://nodejs.org/ >=0.10.0
 * "Grunt":http://gruntjs.com/ ~0.4.0
 
 Environment must consist of:
@@ -41,13 +41,11 @@ h2. Setup
 
 h3. Installing required tools
 
-The project uses "Grunt":http://gruntjs.com/ to run tasks and "Sass":http://sass-lang.com/ for CSS pre-processing. This creates few dependencies in addition to your normal PHP required by Textpattern. First make sure you have base dependencies installed: "Node.js":http://nodejs.org/ and "Grunt":http://gruntjs.com/. You can install Node, Ruby and "Composer":http://getcomposer.org/ using their installers, Bundler with gem and the rest with npm:
+The project uses "Grunt":http://gruntjs.com/ to run tasks and "Sass":http://sass-lang.com/ for CSS pre-processing. This creates few dependencies in addition to your normal PHP required by Textpattern. First make sure you have base dependencies installed: "Node.js":http://nodejs.org/ and "Grunt":http://gruntjs.com/. You can install Node using the "installer":https://nodejs.org and Grunt with npm:
 
-bc. $ gem install bundler
-$ npm install -g grunt-cli
-$ npm install -g bower
+bc. $ npm install -g grunt-cli
 
-Consult the tools' documentation for more instructions. Outside from these, the project will also require the normal git, Apache, MySQL and PHP. All requirements must be added to your path variable.
+Consult the Grunt documentation for more instructions if necessary. You might need to use @sudo npm install -g grunt-cli@ instead when installing on certain Unix-based systems.
 
 h3. Installing dependencies
 
@@ -55,9 +53,8 @@ After you have the base dependencies taken care of, you can install the project'
 
 bc. $ cd textpattern-default-theme
 $ npm install
-$ bundle install
 
-*npm* installs Node modules for Grunt and *bundle* takes care of Ruby gems.
+*npm* installs Node modules for Grunt.
 
 h2. Building
 
