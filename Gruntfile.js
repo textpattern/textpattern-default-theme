@@ -3,24 +3,14 @@ module.exports = function (grunt)
     'use strict';
 
     // Load Grunt plugins.
-    grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-scss-lint');
+    grunt.loadNpmTasks('grunt-sass');
+    //grunt.loadNpmTasks('grunt-scss-lint');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-
-        // Use 'config.rb' file to configure Compass.
-        compass: {
-            dev: {
-                options: {
-                    config: 'config.rb',
-                    force: true
-                }
-            }
-        },
 
         // Minified versions of CSS files within `css/`.
         cssmin: {
@@ -61,32 +51,47 @@ module.exports = function (grunt)
             }
         },
 
-        // Validate Sass files via scss-lint.
-        scsslint: {
-            all: ['sass/**/*.scss'],
+        // Sass configuration.
+        sass: {
             options: {
-                bundleExec: true,
-                colorizeOutput: false,
-                config: '.scss-lint.yml',
-                force: true,
-                reporterOutput: 'scss-lint-report.xml'
+                includePaths: require('bourbon').includePaths
+            },
+            dist: {
+                options: {
+                    outputStyle: 'expanded', // outputStyle = expanded, nested, compact or compressed.
+                    sourceMap: true,
+                },
+                files: {
+                    'css/*.css': 'sass/*.scss'
+                }
             }
         },
+
+        // Validate Sass files via scss-lint.
+        //scsslint: {
+        //    all: ['sass/**/*.scss'],
+        //    options: {
+        //        bundleExec: true,
+        //        colorizeOutput: false,
+        //        config: '.scss-lint.yml',
+        //        force: true,
+        //        reporterOutput: 'scss-lint-report.xml'
+        //    }
+        //},
 
         // Directories watched and tasks performed by invoking `grunt watch`.
         watch: {
             sass: {
                 files: 'sass/**',
-                tasks: ['sass']
+                tasks: ['sass', 'cssmin']
             }
         }
 
     });
 
     // Register tasks.
-    grunt.registerTask('build', ['sass']);
+    grunt.registerTask('build', ['sass', 'cssmin']); // TODO: add 'sass-lint' before 'sass'
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('sass', ['scsslint', 'compass', 'cssmin']);
     grunt.registerTask('test', ['jshint']);
-    grunt.registerTask('travis', ['jshint', 'compass']);
+    grunt.registerTask('travis', ['jshint', 'sass']);
 };
