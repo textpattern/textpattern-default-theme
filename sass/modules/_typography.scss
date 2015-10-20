@@ -1,7 +1,14 @@
 /* Typography
    ========================================================================== */
 
-@include establish-baseline;
+/**
+ * Establish baseline.
+ */
+
+html {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+}
 
 /**
  * Global font and text colour.
