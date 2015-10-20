@@ -54,7 +54,7 @@ After you have the base dependencies taken care of, you can install the project'
 bc. $ cd textpattern-default-theme
 $ npm install
 
-*npm* installs Node modules for Grunt.
+*npm* installs Node modules for Grunt. You might need to use @sudo npm install@ instead when installing on certain Unix-based systems.
 
 h2. Building
 
@@ -62,10 +62,9 @@ This repository hosts sources and needs to be built before it can be used. After
 
 bc. $ grunt [task]
 
-Where the @[task]@ is either @build@, @test@ or @watch@.
+Where the @[task]@ is either @build@ or @watch@.
 
 * The @build@ task builds the project.
-* The @test@ task runs JSHint over your JavaScript files, checking the code quality.
 * The @watch@ task will launch a task that watches for file changes; the project is then automatically built if a source file is modified.
 
 h2. Adjust Textpattern preferences
