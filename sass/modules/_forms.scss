@@ -268,11 +268,10 @@ select[disabled] option,
 select[disabled] optgroup,
 textarea[disabled],
 span.disabled {
-    @include box-shadow(none !important);
-
     border-color: lighten($color-border, 9%) !important;
     color: #aaaaaa !important;
     background: #eeeeee !important;
+    box-shadow: none !important;
     text-shadow: none !important;
     /* 1 */
     opacity: 1;
@@ -333,8 +332,7 @@ input,
 select,
 textarea {
     &:focus:invalid {
-        @include box-shadow(none); // Normalise Firefox styling
-
         border-color: $color-error-text;
+        box-shadow: none; // Normalise Firefox styling
     }
 }
