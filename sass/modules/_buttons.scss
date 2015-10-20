@@ -23,12 +23,12 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    @include background-clip;
     @include gradient-linear($color-gradient-from, $color-gradient-to);
     @include transition(box-shadow 0.2s linear);
 
     /* 1 */
     -webkit-appearance: none;
+    background-clip: padding-box;
     display: inline-block;
     border: 1px solid $color-gradient-border;
     border-radius: $default-border-radius;

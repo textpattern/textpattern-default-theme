@@ -40,9 +40,8 @@ select,
 textarea {
     box-sizing: border-box;
     /* 1 */
-    font-size: 100%;
-    @include adjust-font-size-to(16px, 0.91666666666667); // 22px line height.
-
+    font-size: 16px;
+    line-height: 1.375em; // 22px / 16px
     /* 2 */
     margin: 0;
     /* 3 */
@@ -57,7 +56,7 @@ textarea {
 
 input,
 textarea {
-    @include input-placeholder {
+    @include placeholder {
         color: $color-text-footnote;
     }
 }

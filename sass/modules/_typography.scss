@@ -43,38 +43,38 @@ h6 {
 }
 
 h1 {
-    @include adjust-font-size-to(38px, 1.875); // 45px line height
-
+    font-size: 2.375em; // 38px / 16px
+    line-height: 1.1842105em; // 45px / 38px
     margin: 0.6315789em 0; // 24px / 38px
 }
 
 h2 {
-    @include adjust-font-size-to(30px, 1.5833333); // 38px line height
-
+    font-size: 1.875em; // 30px / 16px
+    line-height: 1.2666667em; // 38px / 30px
     margin: 0.8em 0; // 24px / 30px
 }
 
 h3 {
-    @include adjust-font-size-to(24px, 1.3333333); // 32px line height
-
+    font-size: 1.5em; // 24px / 16px
+    line-height: 1.3333333em; // 32px / 24px
     margin: 1em 0; // 24px
 }
 
 h4 {
-    @include adjust-font-size-to(20px, 1.1666667); // 28px line height
-
+    font-size: 1.25em; // 20px / 16px
+    line-height: 1.4em; // 28px / 20px
     margin: 1em 0; // 20px
 }
 
 h5 {
-    @include adjust-font-size-to(18px, 1.08); // 26px line height
-
+    font-size: 1.125em; // 18px / 16px
+    line-height: 1.4444444em; // 26px / 18px
     margin: 1em 0; // 18px
 }
 
 h6 {
-    @include adjust-font-size-to(16px, 1);
-
+    font-size: 1em; // 16px / 16px
+    line-height: 1.5em; // 24px / 16px
     margin: 1em 0; // 16px
 }
 
@@ -100,10 +100,10 @@ address {
  */
 
 blockquote {
-    @include adjust-font-size-to(20px, 1.1666667);
-
-    font-style: italic;
+    font-size: 1.25em; // 20px / 16px
+    line-height: 1.4em; // 28px / 20px
     margin: 0.8em 0; // 16px / 20px
+    font-style: italic;
     text-align: center;
 }
 
@@ -145,8 +145,8 @@ pre,
 code,
 kbd,
 samp {
-    @include adjust-font-size-to(14px, 0.875);
-
+    font-size: 0.875em; // 14px / 16px
+    line-height: 1.5em; // 21px / 14px
     border: 1px solid lighten($color-border, 9%);
     border-radius: 0.2857143em; // 4px / 14px
     font-family: $font-mono;
@@ -192,8 +192,8 @@ pre {
 sub,
 sup.footnote, // override Textile class
 sup {
-    @include adjust-font-size-to(10px, 0);
-
+    font-size: 0.625em; // 10px / 16px
+    line-height: 0em;
     position: relative;
     vertical-align: baseline;
 }
@@ -214,7 +214,8 @@ small,
 figcaption,
 tfoot,
 .footnote {
-    @include adjust-font-size-to(12px, 0.75);
+    font-size: 0.75em; // 12px / 16px
+    line-height: 1.5em; // 18px / 12px
 }
 
 figcaption,
