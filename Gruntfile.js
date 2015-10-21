@@ -60,10 +60,10 @@ module.exports = function (grunt)
             dist: {
                 options: {
                     outputStyle: 'expanded', // outputStyle = expanded, nested, compact or compressed.
-                    sourceMap: true
+                    sourceMap: false
                 },
                 files: {
-                    'css/*.css': 'sass/*.scss'
+                    'css/default.css': 'sass/default.scss'
                 }
             }
         },
