@@ -46,7 +46,8 @@ module.exports = function (grunt)
                 trailing: true,
                 browser: true,
                 globals: {
-                    module: true
+                    module: true,
+                    require: true
                 }
             }
         },
@@ -59,7 +60,7 @@ module.exports = function (grunt)
             dist: {
                 options: {
                     outputStyle: 'expanded', // outputStyle = expanded, nested, compact or compressed.
-                    sourceMap: true,
+                    sourceMap: true
                 },
                 files: {
                     'css/*.css': 'sass/*.scss'
