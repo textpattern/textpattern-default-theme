@@ -15,7 +15,7 @@ video {
  * Images.
  *
  * 1. Remove the gap between images and the bottom of their containers.
- * 2. Remove border when inside `a` element in IE 8-10.
+ * 2. Remove border when inside `a` element in IE 9/10.
  *
  * Image alignment (compatible with Textile markup syntax).
  *
@@ -49,7 +49,7 @@ img {
 }
 
 /**
- * Address margin not present in IE 8/9 and Safari.
+ * Address margin not present in IE 9 and Safari.
  */
 
 figure {
