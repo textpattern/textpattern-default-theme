@@ -1,16 +1,3 @@
-// set Compass minimum browser support and caniuse thresholds
-
-$graceful-usage-threshold:     1;
-$critical-usage-threshold:     0.1;
-$supported-browsers:           ("chrome", "firefox", "ie", "safari");
-$browser-minimum-versions:     ("chrome": "34", "firefox": "30", "ie": "8", "safari": "6");
-$debug-browser-support:        false; // set to `true` to see debug comments
-
-// use the Kellum method for hiding text
-// http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
-
-$hide-text-direction:         right;
-
 // font families
 
 $font-serif:                  "PT Serif", Georgia, serif;
