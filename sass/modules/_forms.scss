@@ -16,7 +16,7 @@ fieldset {
 }
 
 /**
- * 1. Correct `color` not being inherited in IE 9/10/11.
+ * 1. Correct `color` not being inherited in IE 10/11.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
 
@@ -137,7 +137,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /**
- * 1. Remove excess padding in IE 9/10.
+ * 1. Remove excess padding in IE 10.
  * 2. Correct margins for inline checkbox/radio labels.
  */
 
@@ -231,7 +231,7 @@ optgroup {
 }
 
 /**
- * 1. Remove default vertical scrollbar in IE 9/10/11.
+ * 1. Remove default vertical scrollbar in IE 10/11.
  * 2. Restrict to vertical resizing to prevent layout breakage.
  * 3. Remove unwanted space below `textarea` in Safari, Chrome, Opera.
  */
