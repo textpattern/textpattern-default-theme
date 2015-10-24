@@ -116,12 +116,13 @@ dfn {
 }
 
 /**
- * Address styling not present in IE 9/10/11, Safari, and Chrome.
+ * Address styling not present in Safari and Chrome.
  */
 
 abbr[title],
 dfn[title] {
-    border-bottom: 1px dotted;
+    -webkit-text-decoration: dotted underline;
+    text-decoration: dotted underline;
     cursor: help;
 }
 
