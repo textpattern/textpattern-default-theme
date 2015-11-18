@@ -8,7 +8,7 @@ module.exports = function (grunt)
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-sass');
-    //grunt.loadNpmTasks('grunt-scss-lint');
+    //grunt.loadNpmTasks('grunt-sass-lint');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -17,8 +17,7 @@ module.exports = function (grunt)
             main: {
                 // Copy files from `src/` to `dist/`.
                 files: [
-                    {expand: true, src: ['forms/*'], dest: 'dist/forms/', filter: 'isFile'},
-                    {expand: true, src: ['pages/*'], dest: 'dist/pages/', filter: 'isFile'}
+                    {expand: true, src: ['forms/*', 'pages/*'], dest: 'dist/', filter: 'isFile'}
                 ]
             }
         },
