@@ -8,7 +8,7 @@ module.exports = function (grunt)
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-sass');
-    //grunt.loadNpmTasks('grunt-sass-lint');
+    grunt.loadNpmTasks('grunt-sass-lint');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -78,7 +78,14 @@ module.exports = function (grunt)
             }
         },
 
-        // Validate Sass files via scss-lint.
+        // Validate Sass files via sass-lint.
+        sasslint: {
+            options: {
+                configFile: '.sass-lint.yml',
+            },
+            target: ['sass/**/*.scss']
+        },
+
         //scsslint: {
         //    all: ['sass/**/*.scss'],
         //    options: {
@@ -101,7 +108,7 @@ module.exports = function (grunt)
     });
 
     // Register tasks.
-    grunt.registerTask('build', ['sass', 'cssmin', 'copy']); // TODO: add 'sass-lint' before 'sass'
+    grunt.registerTask('build', ['sasslint', 'sass', 'cssmin', 'copy']);
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('test', ['jshint']);
     grunt.registerTask('travis', ['jshint', 'sass']);

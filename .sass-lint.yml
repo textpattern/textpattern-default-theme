@@ -1,0 +1,20 @@
+# Lint project Sass files via Sass-Lint.
+# More info - https://github.com/sasstools/sass-lint.
+# More info - https://github.com/sasstools/grunt-sass-lint.
+
+
+options:
+  formatter: stylish
+
+files:
+  include: '**/*.s+(a|c)ss'
+
+rules:
+
+  # Enforce whether one should use 0 or none when specifying a zero border value.
+  border-zero: 1
+
+  # Enforce the use of the chosen brace style.
+  brace-style: 1
+  style: '1tbs' # options: '1tbs', 'stroustrup', 'allman'
+  allow-single-line: true
