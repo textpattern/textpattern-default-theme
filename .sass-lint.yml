@@ -15,6 +15,20 @@ rules:
   border-zero: 1
 
   # Enforce the use of the chosen brace style.
-  brace-style: 1
-  style: '1tbs' # options: '1tbs', 'stroustrup', 'allman'
-  allow-single-line: true
+  brace-style:
+    - 1
+    - style: '1tbs' # options: '1tbs', 'stroustrup', 'allman'
+    - allow-single-line: true
+
+  # Enforce an indentation size (in spaces) and ensure that tabs and spaces are not mixed.
+  indentation:
+    - 1
+    - size: 4
+
+  # Enforce whether or not decimal numbers should include a leading zero.
+  leading-zero:
+    - 1
+    - include: true
+
+  # Enforce the use of Sass single-line comments and disallow CSS comments.
+  no-css-comments: 0
