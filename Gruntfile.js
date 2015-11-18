@@ -3,6 +3,7 @@ module.exports = function (grunt)
     'use strict';
 
     // Load Grunt plugins.
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
@@ -12,13 +13,23 @@ module.exports = function (grunt)
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        copy: {
+            main: {
+                // Copy files from `src/` to `dist/`.
+                files: [
+                    {expand: true, src: ['forms/*'], dest: 'dist/forms/', filter: 'isFile'},
+                    {expand: true, src: ['pages/*'], dest: 'dist/pages/', filter: 'isFile'}
+                ]
+            }
+        },
+
         // Minified versions of CSS files within `css/`.
         cssmin: {
             main: {
                 expand: true,
-                cwd: 'css/',
+                cwd: 'dist/css/',
                 src: ['*.css', '!*.min.css'],
-                dest: 'css/',
+                dest: 'dist/css/',
                 ext: '.min.css'
             }
         },
@@ -57,13 +68,13 @@ module.exports = function (grunt)
             options: {
                 includePaths: require('bourbon').includePaths
             },
-            dist: {
+            main: {
                 options: {
                     outputStyle: 'expanded', // outputStyle = expanded, nested, compact or compressed.
                     sourceMap: false
                 },
                 files: {
-                    'css/default.css': 'sass/default.scss'
+                    'dist/css/default.css': 'sass/default.scss'
                 }
             }
         },
@@ -91,7 +102,7 @@ module.exports = function (grunt)
     });
 
     // Register tasks.
-    grunt.registerTask('build', ['sass', 'cssmin']); // TODO: add 'sass-lint' before 'sass'
+    grunt.registerTask('build', ['sass', 'cssmin', 'copy']); // TODO: add 'sass-lint' before 'sass'
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('test', ['jshint']);
     grunt.registerTask('travis', ['jshint', 'sass']);
