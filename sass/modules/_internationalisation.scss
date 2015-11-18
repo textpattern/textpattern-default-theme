@@ -5,7 +5,7 @@
  * Preferred font for Japanese language.
  */
 
-html[lang="ja-jp"] {
+[lang="ja-jp"] {
     font-family: "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
 }
 
@@ -13,7 +13,7 @@ html[lang="ja-jp"] {
  * Preferred font for Korean language.
  */
 
-html[lang="ko-kr"] {
+[lang="ko-kr"] {
     font-family: GulimChe, Gulim, sans-serif;
 }
 
@@ -21,7 +21,7 @@ html[lang="ko-kr"] {
  * Preferred font for Chinese (PRC) language.
  */
 
-html[lang="zh-cn"] {
+[lang="zh-cn"] {
     font-family: SimHei, sans-serif;
 }
 
@@ -29,7 +29,7 @@ html[lang="zh-cn"] {
  * Preferred font for Chinese (Taiwan) language.
  */
 
-html[lang="zh-tw"] {
+[lang="zh-tw"] {
     font-family: PMingLiU, sans-serif;
 }
 
