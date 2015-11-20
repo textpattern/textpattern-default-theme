@@ -20,6 +20,21 @@ rules:
     - style: '1tbs' # options: '1tbs', 'stroustrup', 'allman'
     - allow-single-line: true
 
+  # Enforce whether or not @import paths should have leading underscores and/or filename extensions.
+  clean-import-paths: 1
+
+  # Enforce whether or not parenthesis should be included if no arguments are defined or used, when declaring or invoking a mixin.
+  empty-args: 1
+
+  # Enforce whether or not nested blocks should include a space between the last non-comment declaration or not.
+  empty-line-between-blocks: 1
+
+  # Enforce that extends should be written before declarations in a ruleset.
+  extends-before-declarations: 1
+
+  # Enforce that extends should be written before mixins in a ruleset.
+  extends-before-mixins: 1
+
   # Enforce an indentation size (in spaces) and ensure that tabs and spaces are not mixed.
   indentation:
     - 1
