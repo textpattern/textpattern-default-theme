@@ -81,7 +81,7 @@ module.exports = function (grunt)
         // Validate Sass files via sass-lint.
         sasslint: {
             options: {
-                configFile: '.sass-lint.yml',
+                configFile: '.sass-lint.yml'
             },
             target: ['sass/**/*.scss']
         },
