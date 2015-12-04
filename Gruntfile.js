@@ -3,15 +3,20 @@ module.exports = function (grunt)
     'use strict';
 
     // Load Grunt plugins.
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-sass-lint');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+
+        // Empty `dist` directory to start afresh.
+        clean: ['dist/'],
 
         copy: {
             main: {
@@ -88,9 +93,6 @@ module.exports = function (grunt)
 
         // Sass configuration.
         sass: {
-            options: {
-                includePaths: require('bourbon').includePaths
-            },
             main: {
                 options: {
                     outputStyle: 'expanded', // outputStyle = expanded, nested, compact or compressed.
@@ -132,8 +134,8 @@ module.exports = function (grunt)
     });
 
     // Register tasks.
-    grunt.registerTask('build', ['sasslint', 'sass', 'postcss', 'cssmin', 'copy']);
+    grunt.registerTask('build', ['clean', 'sasslint', 'sass', 'postcss', 'cssmin', 'copy']);
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('test', ['jshint']);
-    grunt.registerTask('travis', ['jshint', 'sass']);
+    grunt.registerTask('travis', ['jshint', 'build']);
 };

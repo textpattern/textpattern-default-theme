@@ -47,3 +47,8 @@ rules:
 
   # Enforce the use of Sass single-line comments and disallow CSS comments.
   no-css-comments: 0
+
+  # Enforce the order in which declarations are written.
+  property-sort-order:
+    - 1
+    - order: 'smacss' # options: 'alphabetical', 'concentric', 'recess', 'smacss', or [array of properties].
