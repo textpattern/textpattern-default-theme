@@ -20,9 +20,9 @@
     background-color: $color-gradient-to;
 
     ul {
+        max-width: $container-max-width;
         margin: 0 auto;
         padding: 0;
-        max-width: $container-max-width;
         list-style: none;
     }
 

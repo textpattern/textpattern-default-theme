@@ -20,17 +20,17 @@ html {
 
 /**
  * 1. Set `body` to `relative` to allow positioning of absolute elements.
- * 2. Remove default margin.
- * 3. Make sure body fills entire viewport height.
+ * 2. Make sure body fills entire viewport height.
+ * 3. Remove default margin.
  */
 
 body {
     /* 1 */
     position: relative;
     /* 2 */
-    margin: 0;
-    /* 3 */
     min-height: 100vh;
+    /* 3 */
+    margin: 0;
     background: $color-background-box;
 }
 
@@ -47,9 +47,9 @@ body {
  */
 
 .wrapper {
+    padding: 1px 0 1em;
     border-top: 1px solid $color-border;
     border-bottom: 1px solid $color-border;
-    padding: 1px 0 1em;
     background: $color-background;
 }
 
@@ -68,9 +68,9 @@ body {
 .site-header,
 .site-footer,
 .container {
-    margin: 0 auto;
     width: 88%;
     max-width: $container-max-width;
+    margin: 0 auto;
 }
 
 /**
@@ -120,8 +120,8 @@ body {
 
 .complementary-content {
     margin: 2em -6% 0;
-    border-top: 2px dashed $color-border;
     padding: 0 6%;
+    border-top: 2px dashed $color-border;
     /* 1 */
     word-wrap: break-word;
 }

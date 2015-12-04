@@ -15,8 +15,8 @@ html {
  */
 
 body {
-    font-family: $font-serif;
     color: $color-text;
+    font-family: $font-serif;
 }
 
 /**
@@ -43,39 +43,39 @@ h6 {
 }
 
 h1 {
+    margin: 0.6315789em 0; // 24px / 38px
     font-size: 2.375em; // 38px / 16px
     line-height: 1.1842105em; // 45px / 38px
-    margin: 0.6315789em 0; // 24px / 38px
 }
 
 h2 {
+    margin: 0.8em 0; // 24px / 30px
     font-size: 1.875em; // 30px / 16px
     line-height: 1.2666667em; // 38px / 30px
-    margin: 0.8em 0; // 24px / 30px
 }
 
 h3 {
+    margin: 1em 0; // 24px
     font-size: 1.5em; // 24px / 16px
     line-height: 1.3333333em; // 32px / 24px
-    margin: 1em 0; // 24px
 }
 
 h4 {
+    margin: 1em 0; // 20px
     font-size: 1.25em; // 20px / 16px
     line-height: 1.4em; // 28px / 20px
-    margin: 1em 0; // 20px
 }
 
 h5 {
+    margin: 1em 0; // 18px
     font-size: 1.125em; // 18px / 16px
     line-height: 1.4444444em; // 26px / 18px
-    margin: 1em 0; // 18px
 }
 
 h6 {
+    margin: 1em 0; // 16px
     font-size: 1em; // 16px / 16px
     line-height: 1.5em; // 24px / 16px
-    margin: 1em 0; // 16px
 }
 
 /**
@@ -100,10 +100,10 @@ address {
  */
 
 blockquote {
-    font-size: 1.25em; // 20px / 16px
-    line-height: 1.4em; // 28px / 20px
     margin: 0.8em 0; // 16px / 20px
+    font-size: 1.25em; // 20px / 16px
     font-style: italic;
+    line-height: 1.4em; // 28px / 20px
     text-align: center;
 }
 
@@ -119,11 +119,12 @@ dfn {
  * Address styling not present in Safari and Chrome.
  */
 
-abbr[title],
-dfn[title] {
-    -webkit-text-decoration: dotted underline;
-    text-decoration: dotted underline;
-    cursor: help;
+abbr,
+dfn {
+    &[title] {
+        text-decoration: dotted underline;
+        cursor: help;
+    }
 }
 
 /**
@@ -132,10 +133,10 @@ dfn[title] {
 
 mark,
 var {
-    border-radius: $default-border-radius / 2;
     padding: 0 0.25em; // 0 4px
-    color: $color-text;
+    border-radius: $default-border-radius / 2;
     background: $color-highlight-box;
+    color: $color-text;
 }
 
 /**
@@ -146,13 +147,13 @@ pre,
 code,
 kbd,
 samp {
-    font-size: 0.875em; // 14px / 16px
-    line-height: 1.5em; // 21px / 14px
     border: 1px solid lighten($color-border, 9%);
     border-radius: 0.2857143em; // 4px / 14px
-    font-family: $font-mono;
-    color: $color-text;
     background-color: $color-background-box;
+    color: $color-text;
+    font-family: $font-mono;
+    font-size: 0.875em; // 14px / 16px
+    line-height: 1.5em; // 21px / 14px
 }
 
 code,
@@ -170,19 +171,19 @@ samp {
  */
 
 pre {
+    padding: 0.5714286em 1.1428571em; // 8px / 14px + 16px / 14px
     /* 1 */
     word-wrap: normal;
     /* 2 */
     overflow-x: auto;
-    padding: 0.5714286em 1.1428571em; // 8px / 14px + 16px / 14px
     /* 3 */
     tab-size: 4;
 
     code {
-        font-size: 1em; // 14px
-        border: 0;
         padding: 0;
+        border: 0;
         background-color: transparent;
+        font-size: 1em; // 14px
     }
 }
 
@@ -191,11 +192,12 @@ pre {
  */
 
 sub,
-sup.footnote, // override Textile class
+// override Textile class
+sup.footnote,
 sup {
+    position: relative;
     font-size: 0.625em; // 10px / 16px
     line-height: 0;
-    position: relative;
     vertical-align: baseline;
 }
 
@@ -235,8 +237,8 @@ figcaption {
  */
 
 hr {
-    box-sizing: content-box;
+    height: 0;
     border: 0; // remove the default `hr` border
     border-bottom: 1px solid $color-border;
-    height: 0;
+    box-sizing: content-box;
 }

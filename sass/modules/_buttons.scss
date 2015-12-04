@@ -2,21 +2,21 @@
    ========================================================================== */
 
 /**
- * 1. Address `overflow` set to `hidden` in IE 10/11.
- * 2. Correct `button` style inheritance in Firefox, IE 10/11 and Opera.
+ * 1. Correct `button` style inheritance in Firefox, IE 10/11 and Opera.
+ * 2. Address `overflow` set to `hidden` in IE 10/11.
  */
 
 button {
     /* 1 */
-    overflow: visible;
-    /* 2 */
     text-transform: none;
+    /* 2 */
+    overflow: visible;
 }
 
 /**
- * 1. Remove iOS Safari default styling.
- * 2. Improve usability and consistency of cursor style between image-type
+ * 1. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
+ * 2. Remove iOS Safari default styling.
  */
 
 button,
@@ -25,23 +25,23 @@ input[type="reset"],
 input[type="submit"] {
     @include gradient-linear($color-gradient-from, $color-gradient-to);
 
-    transition: box-shadow 0.2s linear;
-    /* 1 */
-    -webkit-appearance: none;
-    background-clip: padding-box;
     display: inline-block;
-    border: 1px solid $color-gradient-border;
-    border-radius: $default-border-radius;
-    padding: 0.5em 0.75em; // 8px / 16px, 12px / 16px
     width: auto;
     height: 2.5em; // 40px / 16px
+    padding: 0.5em 0.75em; // 8px / 16px, 12px / 16px
+    transition: box-shadow 0.2s linear;
+    border: 1px solid $color-gradient-border;
+    border-radius: $default-border-radius;
+    background-clip: padding-box;
+    color: $color-text;
     font-weight: normal;
     text-align: center;
-    color: $color-text;
-    box-shadow: $inset-highlighting;
     text-shadow: $text-shadow-light;
-    /* 2 */
+    box-shadow: $inset-highlighting;
+    /* 1 */
     cursor: pointer;
+    /* 2 */
+    -webkit-appearance: none;
 
     &:hover {
         @include gradient-linear(lighten($color-gradient-from, 4%), lighten($color-gradient-to, 4%));
@@ -55,8 +55,8 @@ input[type="submit"] {
 
         border-color: darken($color-gradient-to, 20%);
         color: darken($color-text, 10%);
-        box-shadow: inset 0 0.2em 0.25em rgba(#000000, 0.15);
         text-decoration: none;
+        box-shadow: inset 0 0.2em 0.25em rgba(#000000, 0.15);
     }
 
     &:focus {

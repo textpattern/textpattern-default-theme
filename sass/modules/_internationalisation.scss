@@ -47,13 +47,13 @@
 
 [dir="rtl"] img {
     &.align-left {
-        float: right;
         margin: 1em 0 1em 1em;
+        float: right;
     }
 
     &.align-right {
-        float: left;
         margin: 1em 1em 1em 0;
+        float: left;
     }
 }
 

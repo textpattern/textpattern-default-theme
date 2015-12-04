@@ -6,10 +6,10 @@
  */
 
 table {
+    width: 100%;
     margin-bottom: 1em;
     border-collapse: collapse;
     border-spacing: 0;
-    width: 100%;
 }
 
 /**
@@ -17,9 +17,9 @@ table {
  */
 
 caption {
+    margin-bottom: 0.5em;
     font-style: italic;
     text-align: left;
-    margin-bottom: 0.5em;
 }
 
 /**
@@ -28,10 +28,10 @@ caption {
 
 th,
 td {
-    vertical-align: top;
-    text-align: left;
-    border-bottom: 1px solid $color-border;
     padding: 0.25em;
+    border-bottom: 1px solid $color-border;
+    text-align: left;
+    vertical-align: top;
 }
 
 /**
@@ -73,8 +73,8 @@ tfoot {
         th,
         td {
             /* 2 */
-            border-bottom: 0;
             padding-bottom: 0;
+            border-bottom: 0;
         }
     }
 }

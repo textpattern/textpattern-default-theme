@@ -2,28 +2,28 @@
    ========================================================================== */
 
 /**
- * 1. Remove default underline style from non-hover state links.
- * 2. Interrupt the decoration line to let the shape of the text show through
+ * 1. Remove the grey background colour from active links in IE 10.
+ * 2. Specify link colour.
+ * 3. Remove default underline style from non-hover state links.
+ * 4. Interrupt the decoration line to let the shape of the text show through
  *    in supported browsers.
- * 3. Specify link colour.
- * 4. Remove the grey background colour from active links in IE 10.
  */
 
 a {
     /* 1 */
-    text-decoration: none;
-    /* 2 */
-    text-decoration-skip: ink edges;
-    /* 3 */
-    color: $color-link;
-    /* 4 */
     background-color: transparent;
+    /* 2 */
+    color: $color-link;
+    /* 3 */
+    text-decoration: none;
+    /* 4 */
+    text-decoration-skip: ink edges;
 
     &:hover,
     &:active {
         outline: 0;
-        text-decoration: underline;
         color: $color-link-hover;
+        text-decoration: underline;
     }
 
     &:focus {
@@ -49,9 +49,9 @@ h1 a {
 
     &:hover,
     &:active {
-        text-decoration: none;
-        color: $color-text;
         background-color: $color-background-box;
+        color: $color-text;
+        text-decoration: none;
     }
 }
 

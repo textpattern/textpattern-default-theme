@@ -14,8 +14,8 @@ video {
 /**
  * Images.
  *
- * 1. Remove the gap between images and the bottom of their containers.
- * 2. Remove border when inside `a` element in IE 10.
+ * 1. Remove border when inside `a` element in IE 10.
+ * 2. Remove the gap between images and the bottom of their containers.
  *
  * Image alignment (compatible with Textile markup syntax).
  *
@@ -28,18 +28,18 @@ video {
 
 img {
     /* 1 */
-    vertical-align: middle;
-    /* 2 */
     border: 0;
+    /* 2 */
+    vertical-align: middle;
 
     &.align-left {
-        float: left;
         margin: 1em 1em 1em 0;
+        float: left;
     }
 
     &.align-right {
-        float: right;
         margin: 1em 0 1em 1em;
+        float: right;
     }
 
     &.align-center {
