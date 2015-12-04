@@ -62,6 +62,30 @@ module.exports = function (grunt)
             }
         },
 
+        // Add vendor prefixed styles and other post-processing transformations.
+        postcss: {
+            options: {
+                map: true,
+                processors: [
+                    require('autoprefixer')({
+                        browsers: [
+                            'last 2 versions'
+                        ]
+                    })
+                ]
+            },
+            dist: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'dist/css/',
+                        src: ['*.css', '!*.min.css'],
+                        dest: 'dist/css/'
+                    }
+                ]
+            }
+        },
+
         // Sass configuration.
         sass: {
             options: {
@@ -108,7 +132,7 @@ module.exports = function (grunt)
     });
 
     // Register tasks.
-    grunt.registerTask('build', ['sasslint', 'sass', 'cssmin', 'copy']);
+    grunt.registerTask('build', ['sasslint', 'sass', 'postcss', 'cssmin', 'copy']);
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('test', ['jshint']);
     grunt.registerTask('travis', ['jshint', 'sass']);
