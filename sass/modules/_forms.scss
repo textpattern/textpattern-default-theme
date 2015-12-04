@@ -51,17 +51,6 @@ textarea {
 }
 
 /**
- * Colour for placeholder text.
- */
-
-input,
-textarea {
-    @include placeholder {
-        color: $color-text-footnote;
-    }
-}
-
-/**
  * Remove inner padding and border in Firefox 4+.
  */
 
