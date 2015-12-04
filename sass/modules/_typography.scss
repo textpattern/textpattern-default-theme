@@ -194,7 +194,7 @@ sub,
 sup.footnote, // override Textile class
 sup {
     font-size: 0.625em; // 10px / 16px
-    line-height: 0em;
+    line-height: 0;
     position: relative;
     vertical-align: baseline;
 }
