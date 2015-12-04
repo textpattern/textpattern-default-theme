@@ -4,6 +4,9 @@
 
 
 options:
+  # Don't merge default rules.
+  merge-default-rules: false
+  # Set the formatter.
   formatter: stylish
 
 files:
@@ -35,6 +38,14 @@ rules:
   # Enforce that extends should be written before mixins in a ruleset.
   extends-before-mixins: 1
 
+  # Enforce whether or not files should end with a newline.
+  final-newline: 1
+
+  # Enforce the length of hexadecimal values.
+  hex-length:
+    - 1
+    - style: long
+
   # Enforce an indentation size (in spaces) and ensure that tabs and spaces are not mixed.
   indentation:
     - 1
@@ -45,10 +56,27 @@ rules:
     - 1
     - include: true
 
+  # Enforce how deeply a selector can be nested.
+  nesting-depth:
+    - 1
+    - max-depth: 3
+
   # Enforce the use of Sass single-line comments and disallow CSS comments.
   no-css-comments: 0
+
+  # Enforce that selectors are not allowed to have qualifying elements.
+  no-qualifying-elements:
+    - 1
+    - allow-element-with-attribute: true
+    - allow-element-with-class: true
+    - allow-element-with-id: false
 
   # Enforce the order in which declarations are written.
   property-sort-order:
     - 1
     - order: 'smacss' # options: 'alphabetical', 'concentric', 'recess', 'smacss', or [array of properties].
+
+  # Enforce whether single quotes or double quotes should be used for all strings.
+  quotes:
+    - 1
+    - style: double
