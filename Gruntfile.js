@@ -70,7 +70,6 @@ module.exports = function (grunt)
         // Add vendor prefixed styles and other post-processing transformations.
         postcss: {
             options: {
-                map: true,
                 processors: [
                     require('autoprefixer')({
                         browsers: [
@@ -111,17 +110,6 @@ module.exports = function (grunt)
             },
             target: ['sass/**/*.scss']
         },
-
-        //scsslint: {
-        //    all: ['sass/**/*.scss'],
-        //    options: {
-        //        bundleExec: true,
-        //        colorizeOutput: false,
-        //        config: '.scss-lint.yml',
-        //        force: true,
-        //        reporterOutput: 'scss-lint-report.xml'
-        //    }
-        //},
 
         // Directories watched and tasks performed by invoking `grunt watch`.
         watch: {
