@@ -31,9 +31,9 @@ module.exports = function (grunt)
         cssmin: {
             main: {
                 expand: true,
-                cwd: 'dist/css/',
+                cwd: 'dist/styles/',
                 src: ['*.css', '!*.min.css'],
-                dest: 'dist/css/',
+                dest: 'dist/styles/',
                 ext: '.min.css'
             }
         },
@@ -82,9 +82,9 @@ module.exports = function (grunt)
                 files: [
                     {
                         expand: true,
-                        cwd: 'dist/css/',
+                        cwd: 'dist/styles/',
                         src: ['*.css', '!*.min.css'],
-                        dest: 'dist/css/'
+                        dest: 'dist/styles/'
                     }
                 ]
             }
@@ -98,7 +98,7 @@ module.exports = function (grunt)
                     sourceMap: false
                 },
                 files: {
-                    'dist/css/default.css': 'sass/default.scss'
+                    'dist/styles/default.css': 'sass/default.scss'
                 }
             }
         },
