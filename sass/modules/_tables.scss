@@ -83,10 +83,12 @@ tfoot {
  * Border at top of each new table row.
  */
 
-tbody tr:first-child {
-    td,
-    th {
-        border-top: 1px solid $color-border;
+tbody {
+    tr:first-child {
+        td,
+        th {
+            border-top: 1px solid $color-border;
+        }
     }
 }
 

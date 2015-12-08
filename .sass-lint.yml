@@ -41,6 +41,15 @@ rules:
   # Enforce whether or not files should end with a newline.
   final-newline: 1
 
+  # Enforce the nesting of attributes.
+  force-attribute-nesting: 0
+
+  # Enforce the nesting of elements.
+  force-element-nesting: 0
+
+  # Enforce the nesting of pseudo elements/classes.
+  force-pseudo-nesting: 0
+
   # Enforce the length of hexadecimal values.
   hex-length:
     - 1
@@ -63,6 +72,12 @@ rules:
 
   # Enforce the use of Sass single-line comments and disallow CSS comments.
   no-css-comments: 0
+
+  # Enforce that ID selectors are not allowed to be used.
+  no-ids: 0
+
+  # Enforce that important declarations are not allowed to be used.
+  no-important: 0
 
   # Enforce that selectors are not allowed to have qualifying elements.
   no-qualifying-elements:
