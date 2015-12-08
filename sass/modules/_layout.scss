@@ -3,9 +3,8 @@
 
 /**
  * 1. Always force scrollbar padding so we don't get 'jumping'.
- * 2. Prevent iOS and IE text size adjust after device orientation change,
- *    without disabling user zoom.
- * 3. As 2 above, for Windows Phone.
+ * 2. Prevent text size adjust after mobile device orientation change, without
+ *    disabling user zoom.
  */
 
 html {
@@ -13,9 +12,7 @@ html {
     /* 1 */
     overflow-y: scroll;
     /* 2 */
-    -webkit-text-size-adjust: 100%;
-    /* 3 */
-    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 /**
