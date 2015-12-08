@@ -7,10 +7,10 @@
 *:after,
 *:first-letter,
 *:first-line {
-    color: $color-text-print !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
     background: transparent !important;
+    color: $color-text-print !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
 }
 
 /**
@@ -80,55 +80,55 @@ abbr[title] {
  */
 
 h1 {
-    font-size: 32pt;
-    line-height: 36pt;
-    font-weight: normal;
     margin: 16pt 0;
+    font-size: 32pt;
+    font-weight: normal;
+    line-height: 36pt;
 }
 
 h2 {
+    margin: 14pt 0;
     font-size: 24pt;
     line-height: 28pt;
     page-break-after: avoid;
     orphans: 2;
     widows: 2;
-    margin: 14pt 0;
 }
 
 h3 {
+    margin: 12pt 0;
     font-size: 18pt;
     line-height: 22pt;
     page-break-after: avoid;
     orphans: 2;
     widows: 2;
-    margin: 12pt 0;
 }
 
 h4 {
+    margin: 11pt 0;
     font-size: 14pt;
     line-height: 18pt;
     page-break-after: avoid;
     orphans: 2;
     widows: 2;
-    margin: 11pt 0;
 }
 
 h5 {
+    margin: 10pt 0;
     font-size: 12pt;
     line-height: 16pt;
     page-break-after: avoid;
     orphans: 2;
     widows: 2;
-    margin: 10pt 0;
 }
 
 h6 {
+    margin: 9pt 0;
     font-size: 10pt;
     line-height: 14pt;
     page-break-after: avoid;
     orphans: 2;
     widows: 2;
-    margin: 9pt 0;
 }
 
 /**
@@ -160,9 +160,9 @@ small,
  */
 
 blockquote {
-    font-size: 16pt;
-    border-left: 3pt solid $color-text-print;
     padding: 0 0 0 8pt;
+    border-left: 3pt solid $color-text-print;
+    font-size: 16pt;
     /* 1 */
     page-break-inside: avoid;
 }
@@ -173,8 +173,8 @@ blockquote {
 
 pre {
     margin-bottom: 8pt;
-    border: solid 1pt $color-text-print;
     padding: 8pt;
+    border: solid 1pt $color-text-print;
 }
 
 /**
@@ -229,13 +229,13 @@ img {
     page-break-inside: avoid;
 
     &.align-left {
-        float: left;
         margin: 1em 1em 1em 0;
+        float: left;
     }
 
     &.align-right {
-        float: right;
         margin: 1em 0 1em 1em;
+        float: right;
     }
 
     &.align-center {
@@ -265,8 +265,8 @@ figcaption {
  */
 
 ul {
-    list-style: square;
     padding: 0 0 8pt 1.8em;
+    list-style: square;
 }
 
 /**
@@ -274,8 +274,8 @@ ul {
  */
 
 ol {
-    list-style: decimal;
     padding: 0 0 8pt 1.8em;
+    list-style: decimal;
 }
 
 /**
@@ -287,15 +287,15 @@ dl {
 }
 
 /**
- * 1. Ensure margin below `table`.
- * 2. Make `table` span entire page width.
+ * 1. Make `table` span entire page width.
+ * 2. Ensure margin below `table`.
  */
 
 table {
     /* 1 */
-    margin-bottom: 8pt;
-    /* 2 */
     width: 100%;
+    /* 2 */
+    margin-bottom: 8pt;
 }
 
 /**
@@ -303,9 +303,9 @@ table {
  */
 
 caption {
+    margin-bottom: 4pt;
     font-weight: bold;
     text-align: left;
-    margin-bottom: 4pt;
 }
 
 /**
@@ -334,6 +334,6 @@ tr {
 
 th,
 td {
-    border-bottom: solid 1pt $color-text-print;
     padding: 4pt 8pt;
+    border-bottom: solid 1pt $color-text-print;
 }
