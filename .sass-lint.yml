@@ -14,7 +14,7 @@ files:
 
 rules:
 
-  # Enforce whether one should use 0 or none when specifying a zero border value.
+  # Enforce whether one should use 0 or none when specifying a zero `border` value.
   border-zero: 1
 
   # Enforce the use of the chosen brace style.
@@ -23,7 +23,7 @@ rules:
     - style: '1tbs' # options: '1tbs', 'stroustrup', 'allman'
       allow-single-line: true
 
-  # Enforce whether or not @import paths should have leading underscores and/or filename extensions.
+  # Enforce whether or not `@import` paths should have leading underscores and/or filename extensions.
   clean-import-paths: 1
 
   # Enforce whether or not parenthesis should be included if no arguments are defined or used, when declaring or invoking a mixin.
@@ -39,7 +39,9 @@ rules:
   extends-before-mixins: 1
 
   # Enforce whether or not files should end with a newline.
-  final-newline: 1
+  final-newline:
+    - 1
+    - include: true
 
   # Enforce the nesting of attributes.
   force-attribute-nesting: 0
@@ -50,10 +52,21 @@ rules:
   # Enforce the nesting of pseudo elements/classes.
   force-pseudo-nesting: 0
 
+  # Enforce a convention for function names.
+  function-name-format:
+    - 1
+    - allow-leading-underscore: false
+      convention: hyphenatedlowercase
+
   # Enforce the length of hexadecimal values.
   hex-length:
     - 1
     - style: long
+
+  # Enforce the case of hexadecimal values.
+  hex-notation:
+    - 1
+    - style: lowercase
 
   # Enforce an indentation size (in spaces) and ensure that tabs and spaces are not mixed.
   indentation:
@@ -65,13 +78,37 @@ rules:
     - 1
     - include: true
 
+  # Enforce a convention for mixin names.
+  mixin-name-format:
+    - 1
+    - allow-leading-underscore: false
+      convention: hyphenatedlowercase
+
+  # Enforce that mixins should be written before declarations in a ruleset.
+  mixins-before-declarations: 1
+
   # Enforce how deeply a selector can be nested.
   nesting-depth:
     - 1
-    - max-depth: 3
+    - max-depth: 4
+
+  # Enforce the use of hexadecimal color values rather than literals.
+  no-color-keyword: 1
+
+  # Disallow the use of color literals and basic color functions in any declarations other than variables or maps/lists.
+  no-color-literals: 0
 
   # Enforce the use of Sass single-line comments and disallow CSS comments.
   no-css-comments: 0
+
+  # Enforce that `@debug` statements are not allowed to be used.
+  no-debug: 1
+
+  # Enforce that duplicate properties are not allowed within the same block.
+  no-duplicate-properties: 1
+
+  # Enforce that rulesets are not empty.
+  no-empty-rulesets: 1
 
   # Enforce that ID selectors are not allowed to be used.
   no-ids: 0
@@ -79,12 +116,45 @@ rules:
   # Enforce that important declarations are not allowed to be used.
   no-important: 0
 
+  # Enforce that only valid of hexadecimal values are written.
+  no-invalid-hex: 1
+
+  # Enforce that selectors aren't repeated and that their properties are merged.
+  no-mergeable-selectors: 1
+
+  # Enforce the correct spelling of CSS properties and prevent the use of unknown CSS properties.
+  no-misspelled-properties:
+    - 1
+    - extra-properties:
+        - text-decoration-skip
+
   # Enforce that selectors are not allowed to have qualifying elements.
   no-qualifying-elements:
     - 1
     - allow-element-with-attribute: true
       allow-element-with-class: true
       allow-element-with-id: false
+
+  # Enforce that trailing zeros are not allowed.
+  no-trailing-zero: 0
+
+  # Enforce whether the keyword all can be used with the `transition` or `transition-property` property.
+  no-transition-all: 1
+
+  # Enforce that protocols and domains are not used within URLs.
+  no-url-protocols: 1
+
+  # Enforce that vendor prefixes are not allowed to be used.
+  no-vendor-prefixes: 1
+
+  # Enforce whether extends should only include placeholder selectors.
+  placeholder-in-extend: 1
+
+  # Enforce a convention for placeholder names.
+  placeholder-name-format:
+    - 1
+    - allow-leading-underscore: false
+      convention: hyphenatedlowercase
 
   # Enforce the order in which declarations are written.
   property-sort-order:
@@ -95,3 +165,63 @@ rules:
   quotes:
     - 1
     - style: double
+
+  # Enforce that values in their shorthand form are as concise as specified.
+  shorthand-values:
+    - 1
+    - allowed-shorthands:
+        - 1
+        - 2
+        - 3
+
+  # Enforce whether selectors should be placed on a new line.
+  single-line-per-selector: 1
+
+  # Enforce whether or not a space should be included after a bang `!`.
+  space-after-bang:
+    - 1
+    - include: false
+
+  # Enforce whether or not a space should be included after a colon `:`.
+  space-after-colon:
+    - 1
+    - include: true
+
+  # Enforce whether or not a space should be included after a comma `,`.
+  space-after-comma: 1
+
+  # Enforce whether or not a space should be included before a bang `!`.
+  space-before-bang:
+    - 1
+    - include: true
+
+  # Enforce whether or not a space should be included before a brace `{`.
+  space-before-brace:
+    - 1
+    - include: true
+
+  # Enforce whether or not a space should be included before a colon `:`.
+  space-before-colon: 1
+
+  # Enforce whether or not a space should be included before the first item and after the last item inside parenthesis `()`.
+  space-between-parens:
+    - 1
+    - include: false
+
+  # Enforce whether the last declaration in a block should include a semicolon `;` or not (.sass syntax excluded).
+  trailing-semicolon: 1
+
+  # Enforce that URLs are wrapped in quotes.
+  url-quotes: 1
+
+  # Enforce the use of variables for the values of specified properties.
+  variable-for-property: 0
+
+  # Enforce a convention for variable names.
+  variable-name-format:
+    - 1
+    - allow-leading-underscore: false
+      convention: hyphenatedlowercase
+
+  # Enforce whether or not values of `0` used for length should be unitless.
+  zero-unit: 1
