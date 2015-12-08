@@ -120,7 +120,7 @@ rules:
   no-invalid-hex: 1
 
   # Enforce that selectors aren't repeated and that their properties are merged.
-  no-mergeable-selectors: 1
+  no-mergeable-selectors: 0
 
   # Enforce the correct spelling of CSS properties and prevent the use of unknown CSS properties.
   no-misspelled-properties:

@@ -16,7 +16,7 @@ button {
 /**
  * 1. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
- * 2. Remove iOS Safari default styling.
+ * 2. Remove browser-specific default styling.
  */
 
 button,
@@ -41,7 +41,7 @@ input[type="submit"] {
     /* 1 */
     cursor: pointer;
     /* 2 */
-    -webkit-appearance: none;
+    appearance: none;
 
     &:hover {
         @include gradient-linear(lighten($color-gradient-from, 4%), lighten($color-gradient-to, 4%));

@@ -73,7 +73,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Styling of form input fields.
  *
- * 1. Remove iOS Safari default styling.
+ * 1. Remove browser-specific default styling.
  */
 
 input[type="color"],
@@ -99,7 +99,7 @@ textarea {
     border-radius: 0;
     background: $color-background;
     /* 1 */
-    -webkit-appearance: none;
+    appearance: none;
 
     &:focus {
         border-color: $color-link-focus;
