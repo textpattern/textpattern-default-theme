@@ -145,7 +145,7 @@ rules:
   no-url-protocols: 1
 
   # Enforce that vendor prefixes are not allowed to be used.
-  no-vendor-prefixes: 1
+  no-vendor-prefixes: 0
 
   # Enforce whether extends should only include placeholder selectors.
   placeholder-in-extend: 1
