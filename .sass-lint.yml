@@ -21,7 +21,7 @@ rules:
   brace-style:
     - 1
     - style: '1tbs' # options: '1tbs', 'stroustrup', 'allman'
-    - allow-single-line: true
+      allow-single-line: true
 
   # Enforce whether or not @import paths should have leading underscores and/or filename extensions.
   clean-import-paths: 1
@@ -83,8 +83,8 @@ rules:
   no-qualifying-elements:
     - 1
     - allow-element-with-attribute: true
-    - allow-element-with-class: true
-    - allow-element-with-id: false
+      allow-element-with-class: true
+      allow-element-with-id: false
 
   # Enforce the order in which declarations are written.
   property-sort-order:
