@@ -8,6 +8,16 @@ module.exports = function (grunt)
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        // Set up paths.
+        paths: {
+            src: {
+                sass: 'sass/'
+            },
+            dest: {
+                css: 'dist/styles/'
+            }
+        },
+
         // Empty `dist` directory to start afresh.
         clean: ['dist/'],
 
@@ -24,9 +34,9 @@ module.exports = function (grunt)
         cssmin: {
             main: {
                 expand: true,
-                cwd: 'dist/styles/',
+                cwd: '<%= paths.dest.css %>',
                 src: ['*.css', '!*.min.css'],
-                dest: 'dist/styles/',
+                dest: '<%= paths.dest.css %>',
                 ext: '.min.css'
             }
         },
@@ -75,9 +85,9 @@ module.exports = function (grunt)
                 files: [
                     {
                         expand: true,
-                        cwd: 'dist/styles/',
+                        cwd: '<%= paths.dest.css %>',
                         src: ['*.css', '!*.min.css'],
-                        dest: 'dist/styles/'
+                        dest: '<%= paths.dest.css %>'
                     }
                 ]
             }
@@ -91,7 +101,7 @@ module.exports = function (grunt)
                     sourceMap: false
                 },
                 files: {
-                    'dist/styles/default.css': 'sass/default.scss'
+                    '<%= paths.dest.css %>default.css': '<%= paths.src.sass %>default.scss'
                 }
             }
         },
@@ -101,13 +111,13 @@ module.exports = function (grunt)
             options: {
                 configFile: '.sass-lint.yml'
             },
-            target: ['sass/**/*.scss']
+            target: ['<%= paths.src.sass %>**/*.scss']
         },
 
         // Directories watched and tasks performed by invoking `grunt watch`.
         watch: {
             sass: {
-                files: 'sass/**',
+                files: '<%= paths.src.sass %>**',
                 tasks: ['sass', 'cssmin']
             }
         }
