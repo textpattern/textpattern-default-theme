@@ -2,7 +2,7 @@ module.exports = function (grunt)
 {
     'use strict';
 
-    // Load all grunt tasks.
+    // Load all Grunt tasks.
     require('load-grunt-tasks')(grunt);
 
     grunt.initConfig({
