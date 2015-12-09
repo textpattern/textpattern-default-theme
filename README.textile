@@ -59,120 +59,12 @@ Where the @[task]@ is either @build@ or @watch@.
 * The @build@ task builds the project.
 * The @watch@ task will launch a task that watches for file changes; the project is then automatically built if a source file is modified.
 
-h2. Adjust Textpattern preferences
-
-h3. Essential
-
-# Check 'Automatically append comments to articles?' is set to 'no'. "More info":http://textpattern.com/faq/95/comment-display-confusion.
-# Check you have the latest Textpattern language database update, new data was added to the Textpattern language server from 31/08/11 onwards specifically to support this theme. Go to the preferences, language tab - if you are not already running the latest language version there will be a prompt to update next to your installed languages. Click on 'update' and an up-to-date language table will be automatically loaded.
-
-h2. Delete surplus forms
-
-There were a number of forms and pages that formed part of the original default (pre-4.5) theme for Textpattern. For the most part we will be reusing those existing forms with our own code. However, there are some forms you can safely remove from the system, if present, as we will not be using them (in fact the original default Textpattern theme did not require them either - they are mostly left over from earlier versions of Textpattern and not used any more).
-
-You can safely delete the following forms from your fresh install, if present (as of Textpattern v4.5 these forms were not part of the default theme):
-
-* link (link type form)
-* lofi (article type form)
-* noted (link type form)
-* single (article type form)
-
-h2. How to use these files
-
-Textpattern differs from many CMS solutions in that it stores the all template files (used to build the final page a browser sees) directly in the database as 'styles' (the CSS styling), 'pages' (the main page templates) and 'forms' snippets of code and logic that form building blocks within the 'pages'.
-
-However, many coders like to use their preferred IDE (integrated development environment) to write code and leverage all the tools within those applications provide to make code writing easier. That means you will have to copy/paste from your IDE into the corresponding parts of the Textpattern admin-side which adds a bit of time.
-
-With CSS files you could simply use external stylesheet and link in the traditional way (see below). However there is another solution in the form of the "'rah_flat' Textpattern plugin":https://github.com/gocom/rah_flat, which effectively moves the 'styles', 'pages' and 'forms' back out of the database and into external directories for easier editing - a good solution when used in combination with an IDE. If you do use that plugin then dropping the files from this project into your correspondingly named directories will suffice. Detailed information on how to use rah_flat is "available at the GitHub project":https://github.com/gocom/rah_flat.
-
-h3. Forms
-
-The forms follow the cnk_versioning standard of labelling, in that 'xxxx.misc.txp' is a misc type form, 'xxxx.article.txp' is an article type form, etc. This is only for file structure, when you actually create new forms within Textpattern you should *not* include the '.xxxx.txp', just the first part of the filename.
-
-h4. /forms/article.article_listing.txp
-
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to display listings of articles and is called from the 'default.txp' page when viewing category lists of articles, and the 'archive.txp' page when viewing the archive list of articles.
-
-h4. /forms/article.default.txp
-
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to display the written article, either as an individual article of part of a set of articles. When called on an individual article basis this form also calls the 'comments_display.article.txp'.
-
-h4. /forms/article.search_results.txp
-
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. This form displays the search results, if any exist.
-
-h4. /forms/comment.comment_form.txp
-
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to format the form for inputting comments.
-
-h4. /forms/comment.comments_display.txp
-
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to display all the comments features, and calls other comment type forms.
-
-h4. /forms/comment.comments.txp
-
-h4. /forms/comment.popup_comments.txp
-
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to display the comment system in a new window if you set 'Comments mode' to 'popup' in the Textapttern preferences. If you don't need the popup comments feature (quite likely) then you can safely remove this form from the system.
-
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Used to display the individual comments.
-
-h4. /forms/file.files.txp
-
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. You can call this form from within an article by simply using @<txp:file_download id="xxx" />@ (you don't need to specify a form name as 'files' is the default form for files) - you can also call this form from within other any other forms and pages using the same method (just mind your @<p>@'s).
-
-h4. /forms/link.plainlinks.txp
-
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. You can call this form from within a form, page or article by using @<txp:linklist />@ (you don't need to specify a form name as 'plainlinks' is the default form for links).
-
-h4. /forms/misc.images.txp
-
-Create a new form in the system with name of 'images' and type of 'misc', then copy/paste the code from this file into it. This form can optionally be used in your page/form templates. You could also, for example, display article_images by inserting the following code into a written article...
-
-bc. notextile. <txp:images form="images" />
-
-...you should use the @notextile.@ prefix in this instance because the HTML @<figure>@ tag cannot be wrapped inside a @<p>@ tag.
-
-h4. /forms/misc.search_input.txp
-
-Copy/paste over the existing form of the same name that was part of the standard Textpattern install. Note that this form makes use of the following tag...
-
-bc. <txp:text />
-
-...which is used to target language strings from the database 'txp_lang' table for the language you set in the Textpattern preferences. For example to display 'Search' in your chosen language the tag would be:
-
-bc. <txp:text item="search" />
-
-You can get a idea of the items you can target with this tag by looking through the specific language file within the textpattern -> lang directory which was created as part of your installation. You would probably not use this tag very often unless you were designing a multi-language site as it adds needlessly to the amount of PHP database calls (that is also true for other tags such as @<txp:site_name />@) - it's included here purely as an example of what the tag is for.
-
-h3. Pages
-
-h4. /pages/archive.txp
-
-This page template is utilised when viewing a list of articles.
-
-Copy/paste over the existing page of the same name that was part of the standard Textpattern install.
-
-h4. /pages/default.txp
-
-This page template is utilised as the standard page layout.
-
-Copy/paste over the existing page of the same name that was part of the standard Textpattern install.
-
-h4. /pages/error_default.txp
-
-This page template is utilised when viewing a page error (such as a 404 page not found).
-
-Copy/paste over the existing page of the same name that was part of the standard Textpattern install
-
 h3. Design patterns Textile/HTML reference page
 
-h4. /design-patterns-page.textile
+bc. /design-patterns-page.textile
 
-This is a reference file you can use when authoring themes, it contains many of the valid HTML5 tags (and their equivalent Textile format where available) that should be accounted for in your designs. Paste this code directly into a Textpattern article (*please note* that some HTML5 tags are not fully supported by browsers yet).
+This is a reference file you can use when authoring themes, it contains many of the HTML5 tags (and their equivalent Textile format where available) that should be accounted for in your designs. Paste this code directly into a Textpattern article (*please note* that some HTML5 tags may not be fully supported by all browsers).
 
-h3. Sass directory
+h2. License
 
-h4. /sass
-
-"Sass":http://sass-lang.com version of the CSS file, users familiar with the Sass language can utilise these optional source files for rapid development of their own themes.
+Licensed under the "GPLv2 license":https://github.com/textpattern/textpattern-default-theme/blob/master/LICENSE.
