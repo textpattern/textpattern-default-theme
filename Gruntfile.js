@@ -21,9 +21,10 @@ module.exports = function (grunt)
             }
         },
 
-        // Empty `dist` directory to start afresh.
+        // Clean distribution directory to start afresh.
         clean: ['<%= paths.dest.dist %>'],
 
+        // Copy Textpattern templates to distribution directory.
         copy: {
             formsTemplates: {
                 expand: true,
@@ -39,7 +40,7 @@ module.exports = function (grunt)
             }
         },
 
-        // Minified versions of CSS files within `css/`.
+        // Minified versions of CSS files.
         cssmin: {
             files: {
                 expand: true,
