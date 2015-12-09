@@ -11,28 +11,37 @@ module.exports = function (grunt)
         // Set up paths.
         paths: {
             src: {
-                sass: 'sass/'
+                sass: 'sass/',
+                formsTemplates: 'forms/',
+                pagesTemplates: 'pages/'
             },
             dest: {
+                dist: 'dist/',
                 css: 'dist/styles/'
             }
         },
 
         // Empty `dist` directory to start afresh.
-        clean: ['dist/'],
+        clean: ['<%= paths.dest.dist %>'],
 
         copy: {
-            main: {
-                // Copy files from `src/` to `dist/`.
-                files: [
-                    {expand: true, src: ['forms/*', 'pages/*'], dest: 'dist/', filter: 'isFile'}
-                ]
+            formsTemplates: {
+                expand: true,
+                src: '<%= paths.src.formsTemplates %>**/*.txp',
+                dest: '<%= paths.dest.dist %>',
+                filter: 'isFile'
+            },
+            pagesTemplates: {
+                expand: true,
+                src: '<%= paths.src.pagesTemplates %>**/*.txp',
+                dest: '<%= paths.dest.dist %>',
+                filter: 'isFile'
             }
         },
 
         // Minified versions of CSS files within `css/`.
         cssmin: {
-            main: {
+            files: {
                 expand: true,
                 cwd: '<%= paths.dest.css %>',
                 src: ['*.css', '!*.min.css'],
@@ -43,7 +52,6 @@ module.exports = function (grunt)
 
         // Check code quality of Gruntfile.js using JSHint.
         jshint: {
-            files: ['Gruntfile.js'],
             options: {
                 bitwise: true,
                 camelcase: true,
@@ -67,7 +75,8 @@ module.exports = function (grunt)
                     module: true,
                     require: true
                 }
-            }
+            },
+            files: ['Gruntfile.js']
         },
 
         // Add vendor prefixed styles and other post-processing transformations.
@@ -75,31 +84,25 @@ module.exports = function (grunt)
             options: {
                 processors: [
                     require('autoprefixer')({
-                        browsers: [
-                            'last 2 versions'
-                        ]
+                        browsers: ['last 2 versions']
                     })
                 ]
             },
-            dist: {
-                files: [
-                    {
-                        expand: true,
-                        cwd: '<%= paths.dest.css %>',
-                        src: ['*.css', '!*.min.css'],
-                        dest: '<%= paths.dest.css %>'
-                    }
-                ]
+            files: {
+                expand: true,
+                cwd: '<%= paths.dest.css %>',
+                src: ['*.css', '!*.min.css'],
+                dest: '<%= paths.dest.css %>'
             }
         },
 
         // Sass configuration.
         sass: {
-            main: {
-                options: {
-                    outputStyle: 'expanded', // outputStyle = expanded, nested, compact or compressed.
-                    sourceMap: false
-                },
+            options: {
+                outputStyle: 'expanded', // outputStyle = expanded, nested, compact or compressed.
+                sourceMap: false
+            },
+            dist: {
                 files: {
                     '<%= paths.dest.css %>default.css': '<%= paths.src.sass %>default.scss'
                 }
@@ -117,15 +120,24 @@ module.exports = function (grunt)
         // Directories watched and tasks performed by invoking `grunt watch`.
         watch: {
             sass: {
-                files: '<%= paths.src.sass %>**',
-                tasks: ['sass', 'cssmin']
+                files: '<%= paths.src.sass %>**/*.scss',
+                tasks: ['css']
+            },
+            formsTemplates: {
+                files: '<%= paths.src.formsTemplates %>**/*.txp',
+                tasks: ['copy:formsTemplates']
+            },
+            pagesTemplates: {
+                files: '<%= paths.src.pagesTemplates %>**/*.txp',
+                tasks: ['copy:pagesTemplates']
             }
         }
 
     });
 
     // Register tasks.
-    grunt.registerTask('build', ['clean', 'sasslint', 'sass', 'postcss', 'cssmin', 'copy']);
+    grunt.registerTask('build', ['clean', 'css', 'copy']);
+    grunt.registerTask('css', ['sasslint', 'sass', 'postcss', 'cssmin']);
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('test', ['jshint']);
     grunt.registerTask('travis', ['jshint', 'build']);
