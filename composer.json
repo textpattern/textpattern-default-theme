@@ -1,0 +1,6 @@
+{
+  "require": {
+    "textpattern/lock": "4.6.*@dev",
+    "rah/rah_flat": "*@dev"
+  }
+}
