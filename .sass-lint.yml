@@ -14,6 +14,11 @@ files:
 
 rules:
 
+  # Enforce how many elements a BEM selector can contain.
+  bem-depth:
+    - 1
+    - max-depth: 1
+
   # Enforce whether one should use 0 or none when specifying a zero `border` value.
   border-zero: 1
 
@@ -22,6 +27,16 @@ rules:
     - 1
     - style: '1tbs' # options: '1tbs', 'stroustrup', 'allman'
       allow-single-line: true
+
+  # Enforce a convention for class names.
+  class-name-format:
+    - 1
+    - allow-leading-underscore: false
+      convention: hyphenatedlowercase
+      ignore: [
+        'error_message',
+        'comments_error'
+      ]
 
   # Enforce whether or not `@import` paths should have leading underscores and/or filename extensions.
   clean-import-paths: 1
@@ -67,6 +82,12 @@ rules:
   hex-notation:
     - 1
     - style: lowercase
+
+  # Enforce a convention for ids.
+  id-name-format:
+    - 1
+    - allow-leading-underscore: false
+      convention: hyphenatedlowercase
 
   # Enforce an indentation size (in spaces) and ensure that tabs and spaces are not mixed.
   indentation:
@@ -147,6 +168,12 @@ rules:
   # Enforce that vendor prefixes are not allowed to be used.
   no-vendor-prefixes: 0
 
+  # Enforce that `@warn` statements are not allowed to be used.
+  no-warn: 1
+
+  # Enforce that new declarations must begin on new lines.
+  one-declaration-per-line: 1
+
   # Enforce whether extends should only include placeholder selectors.
   placeholder-in-extend: 1
 
@@ -160,6 +187,21 @@ rules:
   property-sort-order:
     - 1
     - order: 'smacss' # options: 'alphabetical', 'concentric', 'recess', 'smacss', or [array of properties].
+
+  # Disallow the use of units not specified in global or per-property. Units specified per-property will override the global units for that property.
+  property-units:
+    - 1
+    - global: [
+        'cm',
+        'em',
+        'pt',
+        'px',
+        'rem',
+        'vh'
+      ]
+      per-property: {
+        transition: ['s']
+      }
 
   # Enforce whether single quotes or double quotes should be used for all strings.
   quotes:
@@ -189,6 +231,9 @@ rules:
 
   # Enforce whether or not a space should be included after a comma `,`.
   space-after-comma: 1
+
+  # Enforce whether or not a single space should be included before and after the following operators: +, -, /, *, %, <, > ==, !=, <= and >=.
+  space-around-operator: 1
 
   # Enforce whether or not a space should be included before a bang `!`.
   space-before-bang:
