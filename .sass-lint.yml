@@ -200,7 +200,8 @@ rules:
         'vh'
       ]
       per-property: {
-        transition: ['s']
+        transition: ['s'],
+        animation: ['s']
       }
 
   # Enforce whether single quotes or double quotes should be used for all strings.
