@@ -61,9 +61,9 @@ input::-moz-focus-inner {
 }
 
 /**
- * Remove inner padding and search cancel button in Safari and Chrome on OS X.
- * Safari (but not Chrome) clips the cancel button when the search input has
- * padding (and `textfield` appearance).
+ * Remove inner padding in Safari and Chrome on OS X. Safari (but not Chrome)
+ * clips the cancel button when the search input has padding (and `textfield`
+ * appearance).
  */
 
 input[type="search"]::-webkit-search-decoration {
