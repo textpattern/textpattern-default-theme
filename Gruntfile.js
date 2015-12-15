@@ -24,6 +24,14 @@ module.exports = function (grunt)
         // Clean distribution directory to start afresh.
         clean: ['<%= paths.dest.dist %>'],
 
+        // Run some tasks in parallel to speed up the build process.
+        concurrent: {
+            dist: [
+                'css',
+                'copy'
+            ]
+        },
+
         // Copy Textpattern templates to distribution directory.
         copy: {
             formsTemplates: {
@@ -137,7 +145,7 @@ module.exports = function (grunt)
     });
 
     // Register tasks.
-    grunt.registerTask('build', ['clean', 'css', 'copy']);
+    grunt.registerTask('build', ['clean', 'concurrent']);
     grunt.registerTask('css', ['sasslint', 'sass', 'postcss', 'cssmin']);
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('test', ['jshint']);
