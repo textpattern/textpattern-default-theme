@@ -29,7 +29,7 @@ Building this source repository requires:
 * "Node.js":http://nodejs.org/ >=0.10.0
 * "Grunt":http://gruntjs.com/ ~0.4.0
 
-h2. Setup
+h2. Build setup
 
 h3. Installing required tools
 
@@ -48,7 +48,7 @@ $ npm install
 
 *npm* installs Node modules for Grunt. You might need to use @sudo npm install@ instead when installing on certain Unix-based systems.
 
-h2. Building
+h3. Building
 
 This repository hosts sources and needs to be built before it can be used. After you have installed all dependencies, you will be able to run tasks using Grunt, including building:
 
@@ -58,6 +58,10 @@ Where the @[task]@ is either @build@ or @watch@.
 
 * The @build@ task builds the project.
 * The @watch@ task will launch a task that watches for file changes; the project is then automatically built if a source file is modified.
+
+h2. Pre-built version
+
+We provide a pre-built version of the theme files within the @dist@ directory in case you don't want to build it yourself.
 
 h3. Design patterns Textile/HTML reference page
 
