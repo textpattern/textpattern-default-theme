@@ -28,7 +28,8 @@ module.exports = function (grunt)
         concurrent: {
             dist: [
                 'css',
-                'copy'
+                'copy',
+                'devUpdate'
             ]
         },
 
@@ -56,6 +57,20 @@ module.exports = function (grunt)
                 src: ['*.css', '!*.min.css'],
                 dest: '<%= paths.dest.css %>',
                 ext: '.min.css'
+            }
+        },
+
+        // Report on any available updates for development dependencies.
+        devUpdate: {
+            main: {
+                options: {
+                    updateType: 'report',
+                    reportUpdated: false, // Don't report up-to-date packages.
+                    packages: {
+                        dependencies: true,
+                        devDependencies: true
+                    }
+                }
             }
         },
 
