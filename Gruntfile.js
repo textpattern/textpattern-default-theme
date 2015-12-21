@@ -60,7 +60,7 @@ module.exports = function (grunt)
             }
         },
 
-        // Report on any available updates for development dependencies.
+        // Report on any available updates for dependencies.
         devUpdate: {
             main: {
                 options: {
