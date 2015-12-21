@@ -22,7 +22,7 @@ module.exports = function (grunt)
         },
 
         // Clean distribution directory to start afresh.
-        clean: '<%= paths.dest.dist %>',
+        clean: ['<%= paths.dest.dist %>'],
 
         // Run some tasks in parallel to speed up the build process.
         concurrent: {
