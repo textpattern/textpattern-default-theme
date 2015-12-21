@@ -22,7 +22,7 @@ module.exports = function (grunt)
         },
 
         // Clean distribution directory to start afresh.
-        clean: ['<%= paths.dest.dist %>'],
+        clean: '<%= paths.dest.dist %>',
 
         // Run some tasks in parallel to speed up the build process.
         concurrent: {
@@ -85,7 +85,7 @@ module.exports = function (grunt)
                     require: true
                 }
             },
-            files: ['Gruntfile.js']
+            files: 'Gruntfile.js'
         },
 
         // Add vendor prefixed styles and other post-processing transformations.
@@ -93,7 +93,7 @@ module.exports = function (grunt)
             options: {
                 processors: [
                     require('autoprefixer')({
-                        browsers: ['last 2 versions']
+                        browsers: 'last 2 versions'
                     })
                 ]
             },
@@ -123,22 +123,22 @@ module.exports = function (grunt)
             options: {
                 configFile: '.sass-lint.yml'
             },
-            target: ['<%= paths.src.sass %>**/*.scss']
+            target: '<%= paths.src.sass %>**/*.scss'
         },
 
         // Directories watched and tasks performed by invoking `grunt watch`.
         watch: {
             sass: {
                 files: '<%= paths.src.sass %>**/*.scss',
-                tasks: ['css']
+                tasks: 'css'
             },
             formsTemplates: {
                 files: '<%= paths.src.formsTemplates %>**/*.txp',
-                tasks: ['copy:formsTemplates']
+                tasks: 'copy:formsTemplates'
             },
             pagesTemplates: {
                 files: '<%= paths.src.pagesTemplates %>**/*.txp',
-                tasks: ['copy:pagesTemplates']
+                tasks: 'copy:pagesTemplates'
             }
         }
 
