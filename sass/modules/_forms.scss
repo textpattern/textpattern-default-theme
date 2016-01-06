@@ -16,14 +16,11 @@ fieldset {
 }
 
 /**
- * 1. Remove padding so people aren't caught out if they zero out fieldsets.
- * 2. Correct `color` not being inherited in IE 10/11.
+ * Normalize styling of `legend`.
  */
 
 legend {
-    /* 1 */
     padding: 0;
-    /* 2 */
     border: 0;
 }
 
@@ -126,7 +123,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /**
- * 1. Remove excess padding in IE 10.
+ * 1. Remove any excess padding.
  * 2. Correct margins for inline checkbox/radio labels.
  */
 
@@ -210,7 +207,7 @@ select[size="1"] {
 }
 
 /**
- * Normalise styling of `optgroup`.
+ * Normalize styling of `optgroup`.
  */
 
 optgroup {
@@ -220,7 +217,7 @@ optgroup {
 }
 
 /**
- * 1. Remove default vertical scrollbar in IE 10/11.
+ * 1. Remove default vertical scrollbar in IE 11.
  * 2. Remove unwanted space below `textarea` in Safari, Chrome, Opera.
  * 3. Restrict to vertical resizing to prevent layout breakage.
  */
@@ -319,6 +316,6 @@ select,
 textarea {
     &:focus:invalid {
         border-color: $color-error-text;
-        box-shadow: none; // Normalise Firefox styling
+        box-shadow: none; // Normalize Firefox styling
     }
 }

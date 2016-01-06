@@ -14,7 +14,7 @@ video {
 /**
  * Images.
  *
- * 1. Remove border when inside `a` element in IE 10.
+ * 1. Remove potential border when inside `a` element.
  * 2. Remove the gap between images and the bottom of their containers.
  *
  * Image alignment (compatible with Textile markup syntax).
@@ -58,16 +58,14 @@ figure {
 
 /**
  * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
  */
 
 audio:not([controls]) {
     display: none;
-    height: 0;
 }
 
 /**
- * Correct overflow not hidden in IE 10/11.
+ * Correct overflow not hidden in IE 11.
  */
 
 svg:not(:root) {

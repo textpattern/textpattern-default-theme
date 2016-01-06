@@ -19,7 +19,7 @@ h2. Features
 
 h2. Supported web browsers
 
-* Internet Explorer 10 onwards.
+* Internet Explorer 11.
 * Chrome, Edge, Firefox, Safari and Opera the last two recent stable releases.
 
 h2. Requirements
