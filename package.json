@@ -1,6 +1,7 @@
 {
   "name": "textpattern-default-theme",
   "version": "0.0.0",
+  "description": "The default theme that ships as standard with Textpattern CMS.",
   "repository": {
     "type": "git",
     "url": "https://github.com/textpattern/textpattern-default-theme"
