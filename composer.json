@@ -1,6 +1,9 @@
 {
+  "name": "textpattern/textpattern-default-theme",
+  "description": "The default theme that ships as standard with Textpattern CMS.",
   "require": {
     "textpattern/lock": "4.6.*@dev",
     "rah/rah_flat": "*@dev"
-  }
+  },
+  "license": "GPL-2.0"
 }
