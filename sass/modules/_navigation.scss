@@ -37,7 +37,7 @@
 
         &:active {
             background-color: darken($color-gradient-to, 4%);
-            box-shadow: inset 0 0.2em 0.25em rgba(#000000, 0.15);
+            box-shadow: $inset-lowlighting;
         }
 
         &.active {

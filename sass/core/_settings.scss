@@ -25,5 +25,6 @@ $border-radius:       0.5em !default; // 8px / 16px
 // shadows
 
 $inset-highlighting:  inset 0 1px 0 rgba(#ffffff, 0.25) !default;
+$inset-lowlighting:   inset 0 0.2em 0.25em rgba(#000000, 0.15) !default;
 $text-shadow-light:   1px 1px 0 rgba(#ffffff, 0.5) !default;
 $text-shadow-dark:    -1px -1px 0 rgba(#000000, 0.1) !default;
