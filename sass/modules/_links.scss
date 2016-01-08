@@ -27,7 +27,7 @@ a {
     }
 
     &:focus {
-        outline: thin dotted $color-link-focus;
+        outline: thin solid $color-link-focus;
     }
 
     &:visited {
@@ -40,7 +40,7 @@ a {
  */
 
 h1 a {
-    border-radius: $default-border-radius / 4;
+    border-radius: $border-radius / 4;
     color: $color-text;
 
     &:visited {

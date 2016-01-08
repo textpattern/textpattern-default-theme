@@ -1,27 +1,29 @@
 // font families
 
-$font-serif:                  "PT Serif", Georgia, serif;
-$font-sans-serif:             sans-serif;
-$font-mono:                   Menlo, Consolas, Monaco, monospace;
-$font-print:                  "Helvetica Neue", sans-serif;
+$font-serif:          "PT Serif", Georgia, serif !default;
+$font-sans-serif:     sans-serif !default;
+$font-mono:           Menlo, Consolas, Monaco, monospace !default;
+$font-print:          "Helvetica Neue", sans-serif !default;
 
 // typography grid
 
-$base-font-size:              16px;
-$base-line-height:            1.5em;
+$base-font-size:      16px !default;
+$base-line-height:    1.5em !default;
+$small-font-size:     12px !default;
+$code-font-size:      14px !default;
 
 // layout grid
 
-$container-max-width:         86em; // 1376px / 16px
-$break-large:                 50em; // 800px / 16px
-$break-small:                 36em; // 576px / 16px
+$container-max-width: 86em !default; // 1376px / 16px
+$break-large:         50em !default; // 800px / 16px
+$break-small:         36em !default; // 576px / 16px
 
 // borders
 
-$default-border-radius:       0.5em; // 8px / 16px
+$border-radius:       0.5em !default; // 8px / 16px
 
 // shadows
 
-$inset-highlighting:          inset 0 1px 0 rgba(#ffffff, 0.25);
-$text-shadow-light:           1px 1px 0 rgba(#ffffff, 0.5);
-$text-shadow-dark:            -1px -1px 0 rgba(#000000, 0.1);
+$inset-highlighting:  inset 0 1px 0 rgba(#ffffff, 0.25) !default;
+$text-shadow-light:   1px 1px 0 rgba(#ffffff, 0.5) !default;
+$text-shadow-dark:    -1px -1px 0 rgba(#000000, 0.1) !default;
