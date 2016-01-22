@@ -1,11 +1,11 @@
 // import global variables
-@import "core/settings";
+@import "setup/settings";
 
 // import Bourbon and any additional mixins
-@import "core/helpers";
+@import "setup/helpers";
 
 // import colourscheme
-@import "core/colours";
+@import "setup/colours";
 
 
 
@@ -47,6 +47,6 @@
 
 @media print {
 
-    @import "core/print";
+    @import "modules/print";
 
 }
