@@ -1,4 +1,4 @@
-<article class="article" itemscope itemtype="http://schema.org/Article">
+<article class="article" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 
     <txp:if_individual_article>
         <h1 itemprop="name headline">
