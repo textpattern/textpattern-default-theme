@@ -10,48 +10,48 @@
 
 // text colours
 
-$color-text:                          #333333 !default;
-$color-text-button:                   $color-text !default;
-$color-text-button-hover:             $color-text-button !default;
-$color-text-button-active:            darken($color-text-button, 10%) !default;
-$color-text-form:                     #000000 !default;
-$color-text-form-disabled:            #aaaaaa !default;
-$color-text-footnote:                 #777777 !default;
-$color-text-print:                    #000000 !default; // solid black prints faster/cleaner
+$color-text:                     #333333 !default;
+$color-text-button:              $color-text !default;
+$color-text-button-hover:        $color-text-button !default;
+$color-text-button-active:       darken($color-text-button, 10%) !default;
+$color-text-form:                #000000 !default;
+$color-text-form-disabled:       #aaaaaa !default;
+$color-text-footnote:            #777777 !default;
+$color-text-print:               #000000 !default; // solid black prints faster/cleaner
 
 // interaction colours
 
-$color-link:                          #004cbf !default;
-$color-link-hover:                    #0066ff !default;
-$color-link-focus:                    $color-link-hover !default;
-$color-link-visited:                  shade($color-link, 33%) !default;
+$color-link:                     #004cbf !default;
+$color-link-hover:               #0066ff !default;
+$color-link-focus:               $color-link-hover !default;
+$color-link-visited:             shade($color-link, 33%) !default;
 
 // borders
 
-$color-border:                        #cccccc !default;
-$color-border-light:                  #d4d4d4 !default;
+$color-border:                   #cccccc !default;
+$color-border-light:             #d4d4d4 !default;
 
 // neutral colours
 
-$color-background:                    #ffffff !default;
-$color-background-box:                #f7f7f7 !default;
-$color-background-form:               #ffffff !default;
-$color-background-form-disabled:      #eeeeee !default;
-$color-gradient-from:                 #eeeeee !default;
-$color-gradient-to:                   darken($color-gradient-from, 6.5%) !default;
-$color-gradient-border:               darken($color-gradient-from, 13.5%) !default;
+$color-background:               #ffffff !default;
+$color-background-box:           #f7f7f7 !default;
+$color-background-form:          #ffffff !default;
+$color-background-form-disabled: #eeeeee !default;
+$color-gradient-from:            #eeeeee !default;
+$color-gradient-to:              darken($color-gradient-from, 6.5%) !default;
+$color-gradient-border:          darken($color-gradient-from, 13.5%) !default;
 
 // accent colours
 
-$color-highlight-box:                 #fff9e1 !default;
+$color-highlight-box:            #fff9e1 !default;
 
 // button colours
 
-$color-button-gradient-from:          $color-gradient-from !default;
-$color-button-gradient-to:            darken($color-button-gradient-from, 6.5%) !default;
-$color-button-border:                 darken($color-button-gradient-to, 7%) !default;
+$color-button-gradient-from:     $color-gradient-from !default;
+$color-button-gradient-to:       darken($color-button-gradient-from, 6.5%) !default;
+$color-button-border:            darken($color-button-gradient-to, 7%) !default;
 
 // alert colours
 
-$color-error-text:                    #9d261d !default;
-$color-error-background:              #f2dede !default;
+$color-error-text:               #9d261d !default;
+$color-error-background:         #f2dede !default;
