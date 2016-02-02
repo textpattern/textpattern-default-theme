@@ -178,14 +178,6 @@ pre {
 }
 
 /**
- * Avoid user comments breaking across multiple pages.
- */
-
-.comments {
-    page-break-inside: avoid;
-}
-
-/**
  * Use a print-friendly monospaced font and size.
  */
 
@@ -336,4 +328,12 @@ th,
 td {
     padding: 4pt 8pt;
     border-bottom: solid 1pt $color-text-print;
+}
+
+/**
+ * Avoid user comments breaking across multiple pages.
+ */
+
+.comments {
+    page-break-inside: avoid;
 }

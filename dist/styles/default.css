@@ -1412,12 +1412,6 @@ nav ol:after,
     border: solid 1pt #000000;
   }
   /**
- * Avoid user comments breaking across multiple pages.
- */
-  .comments {
-    page-break-inside: avoid;
-  }
-  /**
  * Use a print-friendly monospaced font and size.
  */
   pre,
@@ -1539,5 +1533,11 @@ nav ol:after,
   td {
     padding: 4pt 8pt;
     border-bottom: solid 1pt #000000;
+  }
+  /**
+ * Avoid user comments breaking across multiple pages.
+ */
+  .comments {
+    page-break-inside: avoid;
   }
 }
