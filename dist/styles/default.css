@@ -80,15 +80,12 @@ nav ol:after,
   }
   /**
  * 1. Set `body` to `relative` to allow positioning of absolute elements.
- * 2. Make sure body fills entire viewport height.
- * 3. Remove default margin.
+ * 2. Remove default margin.
  */
   body {
     /* 1 */
     position: relative;
     /* 2 */
-    min-height: 100vh;
-    /* 3 */
     margin: 0;
     background: #f7f7f7;
   }
