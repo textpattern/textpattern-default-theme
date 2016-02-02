@@ -1097,14 +1097,15 @@ nav ol:after,
     background-color: #e8e8e8;
     background-image: linear-gradient(#f8f8f8, #e8e8e8);
     border-color: #aaaaaa;
+    color: #333333;
     text-decoration: none;
   }
   button:active,
   input[type="button"]:active,
   input[type="reset"]:active,
   input[type="submit"]:active {
-    background-color: #e4e4e4;
-    background-image: linear-gradient(lightgray, #e4e4e4);
+    background-color: #d6d6d6;
+    background-image: linear-gradient(#e6e6e6, #d6d6d6);
     border-color: #aaaaaa;
     color: #1a1a1a;
     text-decoration: none;
