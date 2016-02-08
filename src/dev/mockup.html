@@ -31,17 +31,16 @@
             <li>
                 <a itemprop="url" href="#">Articles</a>
             </li>
-            <li itemscope itemtype="http://schema.org/WebSite">
-                <meta itemprop="url" content="http://example.com/">
-                <form role="search" method="get" action="http://example.com/" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
-                    <meta itemprop="target" content="http://example.com/?q={q}">
-                    <p>
-                        <input name="q" type="search" itemprop="query-input" placeholder="Search">
-                        <input type="submit" value="Go">
-                    </p>
-                </form>
-            </li>
         </ul>
+        <div class="search" itemscope itemtype="http://schema.org/WebSite">
+            <meta itemprop="url" content="http://example.com/">
+            <form role="search" method="get" action="http://example.com/" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+                <meta itemprop="target" content="http://example.com/?q={q}">
+                <p>
+                    <input name="q" type="search" itemprop="query-input" placeholder="Search"><input type="submit" value="Go">
+                </p>
+            </form>
+        </div>
     </nav>
 
     <div class="wrapper">
