@@ -11,7 +11,7 @@ module.exports = function (grunt)
         // Set up paths.
         paths: {
             src: {
-                sass: 'sass/',
+                sass: 'src/sass/',
                 formsTemplates: 'forms/',
                 pagesTemplates: 'pages/'
             },
@@ -37,12 +37,14 @@ module.exports = function (grunt)
         copy: {
             formsTemplates: {
                 expand: true,
+                cwd: 'src/',
                 src: '<%= paths.src.formsTemplates %>**/*.txp',
                 dest: '<%= paths.dest.dist %>',
                 filter: 'isFile'
             },
             pagesTemplates: {
                 expand: true,
+                cwd: 'src/',
                 src: '<%= paths.src.pagesTemplates %>**/*.txp',
                 dest: '<%= paths.dest.dist %>',
                 filter: 'isFile'

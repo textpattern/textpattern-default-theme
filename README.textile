@@ -65,7 +65,7 @@ We provide a pre-built version of the theme files within the @dist@ directory in
 
 h3. Design patterns Textile/HTML reference page
 
-bc. /design-patterns-page.textile
+bc. src/dev/design-patterns-page.textile
 
 This is a reference file you can use when authoring themes, it contains many of the HTML5 tags (and their equivalent Textile format where available) that should be accounted for in your designs. Paste this code directly into a Textpattern article (*please note* that some HTML5 tags may not be fully supported by all browsers).
 
