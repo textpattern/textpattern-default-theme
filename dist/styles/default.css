@@ -95,7 +95,6 @@ nav ol:after,
  */
   .wrapper {
     padding: 1px 0;
-    border-top: 1px solid #cccccc;
     border-bottom: 1px solid #cccccc;
     background: #ffffff;
   }
@@ -177,19 +176,25 @@ nav ol:after,
  * </nav>
  */
   .site-navigation {
-    position: relative;
     background-color: #dddddd;
   }
-  .site-navigation ul {
+  .site-navigation > div {
+    position: relative;
     max-width: 54em;
     margin: 0 auto;
+  }
+  .site-navigation ul {
+    margin: 0;
     padding: 0;
     list-style: none;
   }
   .site-navigation li {
     transition: box-shadow 0.2s linear;
-    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
     background-color: #eeeeee;
+  }
+  .site-navigation li:first-child {
+    border-top: 1px solid #cccccc;
   }
   .site-navigation li:hover {
     background-color: #f8f8f8;
@@ -219,35 +224,17 @@ nav ol:after,
  * Search field in navigation.
  */
   .search {
-    position: absolute;
-    top: 50%;
-    right: 6%;
-    margin-top: -1.0625em;
-    z-index: 2;
-  }
-  [dir="rtl"] .search {
-    right: auto;
-    left: 6%;
+    padding: 1em 6% 0.5em;
+    background: #ffffff;
   }
   .search input[type="search"] {
-    width: 2.125em;
-    height: 2.125em;
-    padding-right: 0;
-    padding-left: 2em;
-    transition: width 0.2s ease-in-out, border-color 0.2s ease-in-out;
-    border-radius: 0.5em;
-    background: #eeeeee url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32px' height='32px' viewBox='0 0 32 32'><g fill='%23333'><path d='M4,13c0-5,4-9,9-9c5,0,9,4,9,9c0,5-4,9-9,9C8,22,4,18,4,13z M13,19c3.3,0,6-2.7,6-6s-2.7-6-6-6s-6,2.7-6,6S9.7,19,13,19z'/><path d='M17.5,19l1.5-1.5l4.5,3L28,25c0,0,0,1.5-0.75,2.25S25,28,25,28l-4.5-4.5L17.5,19z'/></g></svg>") no-repeat left center;
-    background-size: 2em 2em;
-    cursor: pointer;
-  }
-  .search input[type="search"]:hover {
-    background-color: #f8f8f8;
-  }
-  .search input[type="search"]:focus {
     width: 16em;
+    height: 2.125em;
     padding-right: 0.1875em;
-    background-color: white;
-    cursor: auto;
+    padding-left: 2em;
+    border-radius: 0.5em;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32px' height='32px' viewBox='0 0 32 32'><g fill='%23333'><path d='M4,13c0-5,4-9,9-9c5,0,9,4,9,9c0,5-4,9-9,9C8,22,4,18,4,13z M13,19c3.3,0,6-2.7,6-6s-2.7-6-6-6s-6,2.7-6,6S9.7,19,13,19z'/><path d='M17.5,19l1.5-1.5l4.5,3L28,25c0,0,0,1.5-0.75,2.25S25,28,25,28l-4.5-4.5L17.5,19z'/></g></svg>") no-repeat left center;
+    background-size: 2em 2em;
   }
   /* Links
    ========================================================================== */
@@ -1226,23 +1213,60 @@ nav ol:after,
      */
   .site-navigation {
     border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
   }
-  .site-navigation ul {
+  .site-navigation > div {
     width: 88%;
   }
   .site-navigation li {
     float: left;
-    border-top: 0;
     border-right: 1px solid #cccccc;
+    border-bottom: 0;
   }
   .site-navigation li:first-child {
+    border-top: 0;
     border-left: 1px solid #cccccc;
   }
   [dir="rtl"] .site-navigation li {
     float: right;
   }
+  [dir="rtl"] .site-navigation li:first-child {
+    border-left: 0;
+  }
+  [dir="rtl"] .site-navigation li:last-child {
+    border-left: 1px solid #cccccc;
+  }
   .site-navigation a {
     padding: 0.5em 1em;
+  }
+  .search {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -1.0625em;
+    padding: 0;
+    background: transparent;
+    z-index: 2;
+  }
+  [dir="rtl"] .search {
+    right: auto;
+    left: 0;
+  }
+  .search input[type="search"] {
+    width: 2.125em;
+    padding-right: 0;
+    transition: width 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    background-color: #eeeeee;
+    cursor: pointer;
+  }
+  .search input[type="search"]:hover {
+    background-color: #f8f8f8;
+  }
+  .search input[type="search"]:focus {
+    width: 16em;
+    padding-right: 0.1875em;
+    background-color: white;
+    cursor: auto;
   }
 }
 
