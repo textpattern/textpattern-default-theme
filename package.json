@@ -1,7 +1,20 @@
 {
   "name": "textpattern-default-theme",
-  "version": "0.0.0",
   "description": "The default theme that ships as standard with Textpattern CMS.",
+  "version": "4.6.0.alpha.5",
+  "keywords": [
+    "skin",
+    "theme",
+    "template",
+    "framework",
+    "front-end",
+    "responsive",
+    "textpattern",
+    "cms",
+    "css",
+    "sass",
+    "web"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/textpattern/textpattern-default-theme"
