@@ -10,14 +10,14 @@ $font-print:          "Helvetica Neue", sans-serif !default;
 
 $base-font-size:      16px !default;
 $base-line-height:    1.5em !default;
-$small-font-size:     12px !default;
-$code-font-size:      14px !default;
+$code-font-size:      0.875em !default; // 14px / 16px
+$small-font-size:     0.75em !default; // 12px / 16px
 
 // layout grid
 
-$container-max-width: 86em !default; // 1376px / 16px
-$break-large:         50em !default; // 800px / 16px
-$break-small:         36em !default; // 576px / 16px
+$container-max-width: 54em !default; // 864px / 16px
+$break-large:         46em !default; // 736px / 16px
+$break-small:         38em !default; // 608px / 16px
 
 // borders
 

@@ -42,7 +42,7 @@ textarea {
     color: $color-text-form;
     font-family: $font-form;
     /* 3 */
-    font-size: $base-font-size;
+    font-size: 1em;
     line-height: 1.375em; // 22px / 16px
     vertical-align: baseline;
     box-sizing: border-box;
@@ -143,15 +143,6 @@ input[type="radio"] {
             margin: 0;
         }
     }
-}
-
-/**
- * Inline search field in complementary content section.
- */
-
-.complementary-content input[type="search"] {
-    display: inline-block;
-    width: 66%;
 }
 
 /**
@@ -264,6 +255,20 @@ span.disabled {
     opacity: 1;
 }
 
+
+/**
+ * Styling for form field validation.
+ */
+
+input,
+select,
+textarea {
+    &:focus:invalid {
+        border-color: $color-error-text;
+        box-shadow: none; // Normalize Firefox styling
+    }
+}
+
 /**
  * Width display options for `input` fields. Height display options
  * for textareas.
@@ -307,17 +312,4 @@ span.disabled {
 .required {
     border: 0;
     color: $color-error-text;
-}
-
-/**
- * Styling for form field validation.
- */
-
-input,
-select,
-textarea {
-    &:focus:invalid {
-        border-color: $color-error-text;
-        box-shadow: none; // Normalize Firefox styling
-    }
 }

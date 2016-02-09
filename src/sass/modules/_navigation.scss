@@ -17,6 +17,7 @@
  */
 
 .site-navigation {
+    position: relative;
     background-color: $color-gradient-to;
 
     ul {
@@ -60,6 +61,47 @@
         &:active {
             color: darken($color-text, 10%);
             text-decoration: none;
+        }
+    }
+}
+
+/**
+ * Search field in navigation.
+ */
+
+.search {
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    margin-top: -1.0625em;
+    z-index: 2;
+
+    [dir="rtl"] & {
+        right: auto;
+        left: 6%;
+    }
+
+    // search input field
+    input[type="search"] {
+        width: 2.125em;
+        height: 2.125em;
+        padding-right: 0;
+        padding-left: 2em;
+        transition: width 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        border-radius: $border-radius;
+        background: $color-gradient-from url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32px' height='32px' viewBox='0 0 32 32'><g fill='%23333'><path d='M4,13c0-5,4-9,9-9c5,0,9,4,9,9c0,5-4,9-9,9C8,22,4,18,4,13z M13,19c3.3,0,6-2.7,6-6s-2.7-6-6-6s-6,2.7-6,6S9.7,19,13,19z'/><path d='M17.5,19l1.5-1.5l4.5,3L28,25c0,0,0,1.5-0.75,2.25S25,28,25,28l-4.5-4.5L17.5,19z'/></g></svg>") no-repeat left center;
+        background-size: 2em 2em;
+        cursor: pointer;
+
+        &:hover {
+            background-color: lighten($color-gradient-from, 4%);
+        }
+
+        &:focus {
+            width: 16em;
+            padding-right: 0.1875em;
+            background-color: lighten($color-gradient-from, 8%);
+            cursor: auto;
         }
     }
 }

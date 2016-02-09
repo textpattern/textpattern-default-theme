@@ -42,6 +42,14 @@
 }
 
 /**
+ * Computer code should be LTR.
+ */
+
+[dir="rtl"] code {
+    direction: ltr;
+}
+
+/**
  * Swap image alignment right/left positions in RTL languages.
  */
 
@@ -82,8 +90,8 @@
 
 [dir="rtl"] {
     menu,
-    ol,
-    ul {
+    ol:not(.site-navigation ul),
+    ul:not(.site-navigation ul) {
         padding: 0 2em 0 0;
     }
 }

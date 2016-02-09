@@ -63,6 +63,9 @@
                 </a>
             </li>
         </txp:section_list>
+
+        <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
+        <txp:search_input />
     </nav>
 
     <div class="wrapper">
@@ -139,9 +142,6 @@
 
             <!-- Complementary content -->
             <aside class="complementary-content">
-
-                <!-- links by default to form: 'search_input.misc.txp' unless you specify a different form -->
-                <txp:search_input />
 
                 <!-- feed links, default flavor is RSS, so we don't need to specify a flavor on the first feed_link -->
                 <p>
