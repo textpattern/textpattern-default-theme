@@ -10,11 +10,11 @@ This project is the source for the default theme that ships as standard with [Te
 ## Features
 
 1. The code is commented throughout with helpful information to help you learn some of the techniques and tags available within Textpattern.
-2. Current best practices gathered from all over the web - in particular the "HTML5 Boilerplate":http://html5boilerplate.com/.
+2. Current best practices gathered from all over the web - in particular the [HTML5 Boilerplate](http://html5boilerplate.com/).
 3. Mobile first structure.
 4. Responsive CSS layout adapts to various device screen sizes, from 320px to over 1280px.
-5. Adheres to the "Schema.org microdata format":http://schema.org/.
-6. Includes "Sass":http://sass-lang.com version of CSS for rapid development.
+5. Adheres to the [Schema.org microdata format](http://schema.org/).
+6. Includes [Sass](http://sass-lang.com) version of CSS for rapid development.
 7. No images used at all.
 8. Tested on a wide range of devices, browsers and operating systems.
 
