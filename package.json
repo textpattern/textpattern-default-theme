@@ -1,7 +1,7 @@
 {
   "name": "textpattern-default-theme",
   "description": "The default theme that ships as standard with Textpattern CMS.",
-  "version": "4.6.0.alpha.5",
+  "version": "0.1.0",
   "keywords": [
     "skin",
     "theme",
