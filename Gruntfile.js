@@ -51,17 +51,6 @@ module.exports = function (grunt)
             }
         },
 
-        // Minified versions of CSS files.
-        cssmin: {
-            files: {
-                expand: true,
-                cwd: '<%= paths.dest.css %>',
-                src: ['*.css', '!*.min.css'],
-                dest: '<%= paths.dest.css %>',
-                ext: '.min.css'
-            }
-        },
-
         // Report on any available updates for dependencies.
         devUpdate: {
             main: {
@@ -163,7 +152,7 @@ module.exports = function (grunt)
 
     // Register tasks.
     grunt.registerTask('build', ['clean', 'concurrent']);
-    grunt.registerTask('css', ['sasslint', 'sass', 'postcss', 'cssmin']);
+    grunt.registerTask('css', ['sasslint', 'sass', 'postcss']);
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('travis', ['jshint', 'build']);
 };
