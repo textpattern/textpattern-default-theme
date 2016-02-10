@@ -1313,14 +1313,14 @@ nav ol:after,
  * Visually separate header from body.
  */
   .site-header {
-    border-bottom: solid 1pt #000000;
+    border-bottom: 1pt solid #000000;
   }
   /**
  * Visually separate footer from body.
  */
   .site-footer {
     margin-top: 12pt;
-    border-top: solid 1pt #000000;
+    border-top: 1pt solid #000000;
   }
   /**
  * Hide unnecessary content from print.
@@ -1432,7 +1432,7 @@ nav ol:after,
   pre {
     margin-bottom: 8pt;
     padding: 8pt;
-    border: solid 1pt #000000;
+    border: 1pt solid #000000;
   }
   /**
  * Use a print-friendly monospaced font and size.
@@ -1555,7 +1555,7 @@ nav ol:after,
   th,
   td {
     padding: 4pt 8pt;
-    border-bottom: solid 1pt #000000;
+    border-bottom: 1pt solid #000000;
   }
   /**
  * Avoid user comments breaking across multiple pages.

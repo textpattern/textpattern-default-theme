@@ -30,7 +30,7 @@ body {
  */
 
 .site-header {
-    border-bottom: solid 1pt $color-text-print;
+    border-bottom: 1pt solid $color-text-print;
 }
 
 /**
@@ -39,7 +39,7 @@ body {
 
 .site-footer {
     margin-top: 12pt;
-    border-top: solid 1pt $color-text-print;
+    border-top: 1pt solid $color-text-print;
 }
 
 /**
@@ -174,7 +174,7 @@ blockquote {
 pre {
     margin-bottom: 8pt;
     padding: 8pt;
-    border: solid 1pt $color-text-print;
+    border: 1pt solid $color-text-print;
 }
 
 /**
@@ -327,7 +327,7 @@ tr {
 th,
 td {
     padding: 4pt 8pt;
-    border-bottom: solid 1pt $color-text-print;
+    border-bottom: 1pt solid $color-text-print;
 }
 
 /**
