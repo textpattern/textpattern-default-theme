@@ -146,20 +146,33 @@ input[type="radio"] {
 }
 
 /**
- * Correct `select` style inheritance in Firefox.
+ * Use indicator icon to signify the downdown ability of `select`.
  */
 
 select {
+    padding-right: 1.5em; // 24px / 16px
+    background: $color-background-form url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='17px' height='5px' viewBox='0 0 17 5'><polygon fill='%23333' points='0,0 5,5 10,0'/></svg>") right center no-repeat;
+    background-size: 1.0625em 0.3125em; // 17px / 16px, 5px / 16px
     text-transform: none;
 }
 
 /**
- * Override height set in a previous rule and allow auto height.
+ * Remove browser-specific `select` UI in IE 11.
+ */
+
+select::-ms-expand {
+    opacity: 0;
+}
+
+/**
+ * Override height and background set in a previous rule and allow auto height.
  */
 
 select[size],
 select[multiple] {
     height: auto;
+    padding-right: 0.5em;
+    background-image: none;
 }
 
 /**
@@ -169,34 +182,6 @@ select[multiple] {
 select[size="0"],
 select[size="1"] {
     height: 2.5em; // 40px / 16px
-}
-
-@media (-webkit-min-device-pixel-ratio: 0) {
-
-    /**
-     * Address `select` alignment in Safari, Chrome, Opera.
-     */
-
-    select[size],
-    select[multiple],
-    select[multiple][size] {
-        padding-right: 0.5em;
-        background-image: none;
-    }
-
-    /**
-     * Use indicator icon to signify the drop-down ability of `select` in Safari,
-     * Chrome, Opera.
-     */
-
-    select,
-    select[size="0"],
-    select[size="1"] {
-        padding-right: 1.5em; // 24px / 16px
-        background: $color-background-form url("data:image/svg+xml,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='17px' height='5px' viewBox='0 0 17 5' enable-background='new 0 0 17 5' xml:space='preserve'><polygon fill='#333333' points='0,0 5,5 10,0'/></svg>") right center no-repeat;
-        background-size: 1.0625em 0.3125em; // 17px / 16px, 5px / 16px
-    }
-
 }
 
 /**
