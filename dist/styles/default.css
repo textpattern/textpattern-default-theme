@@ -647,12 +647,6 @@ nav ol:after,
     margin: 0;
   }
   /**
- * Prevent modern browsers from displaying `audio` without controls.
- */
-  audio:not([controls]) {
-    display: none;
-  }
-  /**
  * Correct overflow not hidden in IE 11.
  */
   svg:not(:root) {
