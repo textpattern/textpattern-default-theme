@@ -44,7 +44,7 @@ Consult the Grunt documentation for more instructions if necessary. You might ne
 
 ### Installing dependencies
 
-After you have the base dependencies taken care of, you can install the project's dependencies. Navigate to the project's directory, and run the dependency managers:
+After you have the base dependencies taken care of, you can install the project's dependencies. Navigate to the project's directory, and run the dependency manager:
 
 ```ShellSession
 $ cd textpattern-default-theme
