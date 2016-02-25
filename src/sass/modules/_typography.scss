@@ -184,6 +184,13 @@ pre {
         border: 0;
         background-color: transparent;
         font-size: 1em;
+        text-align: left;
+        white-space: pre;
+        word-spacing: normal;
+        word-break: normal;
+        word-wrap: normal;
+        direction: ltr;
+        hyphens: none;
     }
 }
 
