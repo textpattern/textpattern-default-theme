@@ -396,12 +396,6 @@ nav ol:after,
   /**
  * Address styling not present in Safari and Chrome.
  */
-  dfn {
-    font-style: italic;
-  }
-  /**
- * Address styling not present in Safari and Chrome.
- */
   abbr[title],
   dfn[title] {
     text-decoration: dotted underline;
