@@ -794,10 +794,13 @@ nav ol:after,
   }
   /**
  * Normalize styling of `legend`.
+ *
+ * 1. Correct `color` not being inherited from fieldset in IE 11.
  */
   legend {
     padding: 0;
-    border: 0;
+    color: inherit;
+    /* 1 */
   }
   /**
  * 1. Prevent elements from spilling out of their parent.
