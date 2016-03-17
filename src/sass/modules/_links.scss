@@ -21,7 +21,7 @@ a {
 
     &:hover,
     &:active {
-        outline: 0;
+        outline-width: 0;
         color: $color-link-hover;
         text-decoration: underline;
     }

@@ -256,7 +256,7 @@ nav ol:after,
     text-decoration-skip: ink edges;
   }
   a:hover, a:active {
-    outline: 0;
+    outline-width: 0;
     color: #0066ff;
     text-decoration: underline;
   }
@@ -886,7 +886,7 @@ nav ol:after,
   select:focus,
   textarea:focus {
     border-color: #0066ff;
-    outline: 0;
+    outline-width: 0;
   }
   /**
  * Remove padding from `color` fields.
@@ -1115,7 +1115,7 @@ nav ol:after,
   input[type="reset"]:focus,
   input[type="submit"]:focus {
     border-color: #0066ff;
-    outline: 0;
+    outline-width: 0;
   }
   /* Comments
    ========================================================================== */
