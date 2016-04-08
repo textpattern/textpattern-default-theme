@@ -35,7 +35,7 @@
     "grunt-postcss": "0.8.0",
     "grunt-sass": "1.1.0",
     "grunt-sass-lint": "0.1.1",
-    "load-grunt-tasks": "~3.4",
+    "load-grunt-tasks": "~3.5",
     "node-sass": "3.4.2",
     "sass-lint": "1.5.1"
   },
