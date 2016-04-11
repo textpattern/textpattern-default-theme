@@ -14,9 +14,7 @@ button {
 }
 
 /**
- * 1. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
- * 2. Remove browser-specific default styling.
+ * 1. Remove browser-specific default styling.
  */
 
 button,
@@ -39,8 +37,6 @@ button,
     text-shadow: $text-shadow-light;
     box-shadow: $inset-highlighting;
     /* 1 */
-    cursor: pointer;
-    /* 2 */
     appearance: none;
 
     &:hover {
