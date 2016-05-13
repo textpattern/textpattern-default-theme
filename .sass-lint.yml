@@ -204,6 +204,9 @@ rules:
         transition: ['s']
       }
 
+  # Enforce that pseudo-elements must start with double colons, pseudo-classes must start with single colon.
+  #pseudo-element: 1 TODO: UPCOMING RULE
+
   # Enforce whether single quotes or double quotes should be used for all strings.
   quotes:
     - 1
