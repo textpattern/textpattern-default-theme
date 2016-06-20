@@ -36,8 +36,8 @@
     "grunt-sass": "1.2.0",
     "grunt-sass-lint": "0.2.0",
     "load-grunt-tasks": "~3.5",
-    "node-sass": "3.7.0",
-    "sass-lint": "1.7.0"
+    "node-sass": "3.8.0",
+    "sass-lint": "1.8.0"
   },
   "scripts": {
     "test": "grunt travis --verbose"

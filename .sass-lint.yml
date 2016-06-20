@@ -14,6 +14,9 @@ files:
 
 rules:
 
+  # Enforce the use of the use of quotes in attribute values.
+  attribute-quotes: 1
+
   # Enforce how many elements a BEM selector can contain.
   bem-depth:
     - 1
@@ -113,17 +116,26 @@ rules:
     - 1
     - max-depth: 4
 
+  # Disallow the use of attribute selectors.
+  no-attribute-selectors: 0
+
   # Enforce the use of hexadecimal color values rather than literals.
-  no-color-keyword: 1
+  no-color-keywords: 1
 
   # Disallow the use of color literals and basic color functions in any declarations other than variables or maps/lists.
   no-color-literals: 0
+
+  # Disallow the use of combinators.
+  no-combinators: 0
 
   # Enforce the use of Sass single-line comments and disallow CSS comments.
   no-css-comments: 0
 
   # Enforce that `@debug` statements are not allowed to be used.
   no-debug: 1
+
+  # Disallow the use of certain properties.
+  no-disallowed-properties: 0
 
   # Enforce that duplicate properties are not allowed within the same block.
   no-duplicate-properties: 1
@@ -161,6 +173,9 @@ rules:
 
   # Enforce whether the keyword all can be used with the `transition` or `transition-property` property.
   no-transition-all: 1
+
+  # Disallow the use of `*` (universal) selectors.
+  no-universal-selectors: 0
 
   # Enforce that protocols and domains are not used within URLs.
   no-url-protocols: 1
@@ -205,7 +220,7 @@ rules:
       }
 
   # Enforce that pseudo-elements must start with double colons, pseudo-classes must start with single colon.
-  #pseudo-element: 1 TODO: UPCOMING RULE
+  pseudo-element: 1
 
   # Enforce whether single quotes or double quotes should be used for all strings.
   quotes:
