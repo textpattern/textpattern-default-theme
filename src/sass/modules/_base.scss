@@ -49,7 +49,7 @@ nav ol,
 .clearfix,
 .container,
 .paginator {
-    &:after {
+    &::after {
         display: table;
         clear: both;
         content: "";
