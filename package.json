@@ -23,7 +23,7 @@
     "url": "https://github.com/textpattern/textpattern-default-theme/issues"
   },
   "devDependencies": {
-    "autoprefixer": "6.3.7",
+    "autoprefixer": "6.4.0",
     "grunt": "~1.0",
     "grunt-cli": "~1",
     "grunt-concurrent": "2.3.0",
