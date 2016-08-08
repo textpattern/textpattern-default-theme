@@ -122,6 +122,20 @@
 }
 
 /**
+ * Swap paginator (prev/next) navigation links on articles/article lists.
+ */
+
+[dir="rtl"] .paginator {
+    [rel="prev"] {
+        float: right;
+    }
+
+    [rel="next"] {
+        float: left;
+    }
+}
+
+/**
  * Swap anchor float position on comments.
  */
 

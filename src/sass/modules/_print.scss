@@ -237,6 +237,22 @@ img {
 }
 
 /**
+ * Swap image alignment right/left positions in RTL languages.
+ */
+
+[dir="rtl"] img {
+    &.align-left {
+        margin: 1em 0 1em 1em;
+        float: right;
+    }
+
+    &.align-right {
+        margin: 1em 1em 1em 0;
+        float: left;
+    }
+}
+
+/**
  * Ensure margin below `figure`.
  */
 
