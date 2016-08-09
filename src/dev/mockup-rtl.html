@@ -11,7 +11,7 @@
 
     <header class="site-header">
         <h1>
-            <a rel="home" href="http://www.textpattern.dev/">My site</a>
+            <a rel="home" href="#">My site</a>
         </h1>
         <h3>My pithy slogan</h3>
     </header>
@@ -20,18 +20,18 @@
         <div>
             <ul class="section_list">
                 <li>
-                    <a itemprop="url" href="http://www.textpattern.dev/">Home</a>
+                    <a itemprop="url" href="#">Home</a>
                 </li>
 
                 <li class="active">
-                    <a itemprop="url" href="http://www.textpattern.dev/articles/">Articles</a>
+                    <a itemprop="url" href="#">Articles</a>
                 </li>
             </ul>
 
             <div class="search" aria-label="Search" itemscope itemtype="http://schema.org/WebSite">
-                <meta itemprop="url" content="http://www.textpattern.dev/">
-                <form role="search" method="get" action="http://www.textpattern.dev/" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
-                    <meta itemprop="target" content="http://www.textpattern.dev/?q={q}">
+                <meta itemprop="url" content="http://example.com/">
+                <form role="search" method="get" action="http://example.com/" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+                    <meta itemprop="target" content="http://example.com/?q={q}">
                     <input name="q" type="search" itemprop="query-input" placeholder="Search">
                 </form>
             </div>
@@ -51,7 +51,7 @@
                         <meta itemprop="dateModified" content="2016-08-09T07:33:55Z" />
                         <br>
                         <strong>Comments</strong>
-                        <a href="http://www.textpattern.dev/articles/1/welcome-to-your-site#comments-head" title="View" itemprop="discussionUrl">1</a>
+                        <a href="#comments-head" title="View" itemprop="discussionUrl">1</a>
                         <span itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
                             <meta itemprop="interactionType" content="http://schema.org/CommentAction" />
                             <meta itemprop="userInteractionCount" content="1" />
@@ -59,40 +59,372 @@
                     </p>
 
                     <div itemprop="articleBody">
-                        <h3>What do you want to do next?</h3>
+                        <p>Article containing examples of various inline and block elements that should be considered and styled within any theme.</p>
+                        <h2>Typography</h2>
+                        <h1>h1 Heading 1 h1 Heading 1 h1 Heading 1 h1 Heading 1 h1</h1>
+                        <h2>h2 Heading 2 h2 Heading 2 h2 Heading 2 h2 Heading 2 h2 Heading 2</h2>
+                        <h3>h3 Heading 3 h3 Heading 3 h3 Heading 3 h3 Heading 3 h3 Heading 3 h3 Heading 3 h3 Heading 3</h3>
+                        <h4>h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4</h4>
+                        <p><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper.</strong> Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.</p>
+                        <p>Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci.</p>
+                        <p>This text has a reference in the footnote<sup class="footnote" id="fnrev11192490257aa0c61b601c-1"><a href="#fn11192490257aa0c61b601c-1">1</a></sup>.</p>
+                        <p class="footnote" id="fn11192490257aa0c61b601c-1"><sup>1</sup> Here is the footnote.</p>
+                        <h3>Addresses</h3>
+                        <address>Address: somewhere, world</address>
+                        <h2>Text alignment</h2>
+                        <h3>Text ranged left</h3>
+                        <p style="text-align:left;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.</p>
+                        <h3>Text ranged right</h3>
+                        <p style="text-align:right;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.</p>
+                        <h3>Text centred</h3>
+                        <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.</p>
+                        <h3>Text justified</h3>
+                        <p style="text-align:justify;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.</p>
+                        <h2>Text-level semantics</h2>
+                        <p>The <a href="http://codeispottery.com/">a element</a> example<br>
+                            The <abbr>abbr element</abbr> and <abbr title="Title text">abbr element with title</abbr> examples<br>
+                            The <b>b element</b> example<br>
+                            The <cite>cite element</cite> example<br>
+                            The <code>code element</code> example<br>
+                            The <del>del element</del> example<br>
+                            The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples<br>
+                            The <em>em element</em> example<br>
+                            The <i>i element</i> example<br>
+                            The <ins>ins element</ins> example<br>
+                            The <kbd>kbd element</kbd> example<br>
+                            The <mark>mark element</mark> example<br>
+                            The <q>q element <q>inside</q> a q element</q> example<br>
+                            The <s>s element</s> example<br>
+                            The <samp>samp element</samp> example<br>
+                            The <small>small element</small> example<br>
+                            The <span>span element</span> example<br>
+                            The <strong>strong element</strong> example<br>
+                            The <sub>sub element</sub> example<br>
+                            The <sup>sup element</sup> example<br>
+                            The <u>u element</u> example<br>
+                            The <var>var element</var> example</p>
+                        <h2>Block text-level semantics</h2>
+                        <h3>Pre-formatted text blocks</h3>
+                        <pre>This is an example of a non-code
+    pre-formatted text block
+        preserving white spaces</pre>
+                        <h3>Pre-formatted code blocks</h3>
+                        <pre><code>&lt;section class=&quot;alert alert-error fade in&quot; role=&quot;alert&quot;&gt;
+    &lt;a class=&quot;close&quot; data-dismiss=&quot;alert&quot;&gt;&amp;amp;times;&lt;/a&gt;
+    &lt;h3&gt;Message pane&lt;/h3&gt;
+    &lt;p&gt;Error message goes here.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+                        <h3>Blockquotes</h3>
+                        <blockquote cite="http://textpattern.com/">
+                            <p>Here is an example of a block quote. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                        </blockquote>
+                        <h2>Embedded content</h2>
+                        <p>Remember that all images and videos in the theme are <code>max-width:100%;</code> for flexibility and accommodation of responsive design, so parent containers are what control a given desired image/video width in layout, except when they are at their maximum width already (100%). <strong>Images/video width and height attribute values should <em>never</em> be used.</strong></p>
+                        <h3>Images</h3>
+                        <p><img alt="Alt text" src="http://placehold.it/160/999999/333333" title="Alt text" /></p>
+                        <h3>Images with links</h3>
+                        <p><a href="#" title="Title text"><img src="http://placehold.it/160/999999/333333" alt="Alt text"></a></p>
+                        <h3>Figures</h3>
+                        <figure>
+                            <img src="http://placehold.it/480x240/999999/333333" alt="Alt text">
+                            <figcaption>Figcaption content</figcaption>
+                        </figure>
+                        <h3>Left ranged image</h3>
+                        <p>Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. <img alt="160x160px placeholder" class="align-left" src="http://placehold.it/160/999999/333333" title="160x160px placeholder" /> Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.</p>
+                        <h3>Right ranged image</h3>
+                        <p>Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. <img alt="160x160px placeholder" class="align-right" src="http://placehold.it/160/999999/333333" title="160x160px placeholder" /> Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.</p>
+                        <h3>Centred image</h3>
+                        <p>Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. <img alt="160x160px placeholder" class="align-center" src="http://placehold.it/160/999999/333333" title="160x160px placeholder" /> Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.</p>
+                        <h3><span class="caps">SVG</span></h3>
+                        <svg width="100px" height="100px">
+                            <circle cx="100" cy="100" r="100" fill="#999999"/>
+                        </svg>
+                        <h3>Videos</h3>
+                        <video>
+                            <source type="video/mp4" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4">
+                            <source type="video/webm" src="http://clips.vorwaerts-gmbh.de/VfE.webm">
+                        </video>
+                        <h2>Details / summary</h2>
+                        <details>
+                            <summary>More info</summary>
+                            <p>Additional information</p>
+                            <ul>
+                                <li>Point 1</li>
+                                <li>Point 2</li>
+                            </ul>
+                        </details>
+                        <h2>Lists</h2>
+                        <ol>
+                        	<li>this is an example</li>
+                        	<li>of a numbered</li>
+                        	<li>(ordered) list
+                            	<ol>
+                            		<li>and a second level</li>
+                            		<li>numbered list example</li>
+                            	</ol>
+                            </li>
+                        </ol>
                         <ul>
-                        	<li>Modify or even delete this article? The <a href="#">article list</a> is the place to start.</li>
-                        	<li>Change this site&#8217;s name, or modify the style of the <span class="caps">URL</span>s? It&#8217;s all up to your <a href="#">preferences</a>.</li>
-                        	<li>Get yourself acquainted with Textile, the humane web text generator which comes with Textpattern? The basics are <a href="#">simple</a>. If you want to learn more about Textile, you can dig into an <a href="#">extensive manual</a> later.</li>
-                        	<li>Be guided through your <a href="#">Textpattern first steps</a> by completing some basic tasks?</li>
-                        	<li>Study the <a href="#">Textpattern Semantic Model?</a></li>
-                        	<li>Add <a href="#">another user</a>, or extend the capabilities with <a href="#">third party plugins</a> you discovered from the central plugin directory at <a href="#">Textpattern Resources</a>?</li>
-                        	<li>Dive in and learn by trial and error? Then please note:
+                        	<li>this is an example</li>
+                        	<li>of a bulletpoint</li>
+                        	<li>(unordered) list
                             	<ul>
-                            		<li>When you <a href="#">write</a> an article you assign it to a section of your site.</li>
-                            		<li>Sections use a <a href="#">page template</a> and a <a href="#">style</a> as an output scaffold.</li>
-                            		<li>Page templates use <span class="caps">HTML</span> and Textpattern tags (like this: <code>&lt;txp:article /&gt;</code>) to build the markup.</li>
-                            		<li>Some Textpattern tags use <a href="#">forms</a>, which are building blocks for reusable snippets of code and markup you may build and use at your discretion.</li>
+                            		<li>and a second level</li>
+                            		<li>bulletpoint list example</li>
                             	</ul>
                             </li>
                         </ul>
-                        <p>There are a host of <a href="#">Frequently Asked Questions</a> to help you get started.</p>
-                        <p><a href="#">Textpattern tags</a>, their attributes and values are explained and sampled within the <a href="http://textpattern.net/">Textpattern User Documentation</a>, where you will also find valuable tips and tutorials.</p>
-                        <p>There&#8217;s also a crowd of friendly, helpful people over at the <a href="#">Textpattern support forum</a>. Come and pay a visit!</p>
+                        <dl>
+                            <dt>This is a definition list term 1</dt>
+                            <dd>Definition of term 1 here</dd>
+                        	<dd>Another definition of term 1
+                        	<dl>
+                        		<dt>A sub term</dt>
+                        		<dd>With</dd>
+                        		<dd>Subs</dd>
+                        	</dl></dd>
+                        </dl>
+                        <h2>Tables</h2>
+                        <p>Table with <code>&lt;caption&gt;</code>, <code>&lt;thead&gt;</code> and <code>&lt;tfoot&gt;</code> included.</p>
+                        <table>
+                        	<caption>This is a table caption</caption>
+                        	<thead>
+                        		<tr>
+                        			<th>Planet </th>
+                        			<th>Population </th>
+                        			<th>Government </th>
+                        		</tr>
+                        	</thead>
+                        	<tfoot>
+                        		<tr>
+                        			<td colspan="3">This is the tfoot </td>
+                        		</tr>
+                        	</tfoot>
+                        	<tbody>
+                        		<tr>
+                        			<td> Diso </td>
+                        			<td> 4.1 B </td>
+                        			<td> Democracy </td>
+                        		</tr>
+                        		<tr>
+                        			<td> Lave </td>
+                        			<td> 2.5 B </td>
+                        			<td> Dictatorship </td>
+                        		</tr>
+                        		<tr>
+                        			<td> Leesti </td>
+                        			<td> 5.0 B </td>
+                        			<td> Corporate State </td>
+                        		</tr>
+                        		<tr>
+                        			<td> Reorte </td>
+                        			<td> 3.1 B </td>
+                        			<td> Dictatorship </td>
+                        		</tr>
+                        		<tr>
+                        			<td> Zaonce </td>
+                        			<td> 5.3 B </td>
+                        			<td> Corporate State </td>
+                        		</tr>
+                        	</tbody>
+                        </table>
+                        <h2>Forms</h2>
+                        <form action="#" method="post" enctype="multipart/form-data" onsubmit="return false">
+                            <p>
+                                <input id="test_checkbox_1" name="test_checkbox_1" type="checkbox">
+                                <label for="test_checkbox_1">Test checkbox 1</label>
+                                &nbsp;
+                                &nbsp;
+                                <input id="test_checkbox_2" name="test_checkbox_2" type="checkbox">
+                                <label for="test_checkbox_2">Test checkbox 2</label>
+                                &nbsp;
+                                &nbsp;
+                                <input id="test_checkbox_3" name="test_checkbox_3" type="checkbox">
+                                <label for="test_checkbox_3">Test checkbox 3</label>
+                            </p>
+                            <p>
+                                <input id="test_radio_1" name="test_radio_group" type="radio">
+                                <label for="test_radio_1">Test radio 1</label>
+                                &nbsp;
+                                &nbsp;
+                                <input id="test_radio_2" name="test_radio_group" type="radio">
+                                <label for="test_radio_2">Test radio 2</label>
+                                &nbsp;
+                                &nbsp;
+                                <input id="test_radio_3" name="test_radio_group" type="radio">
+                                <label for="test_radio_3">Test radio 3</label>
+                            </p>
+                            <p>
+                                <label for="select_dd">Inline form elements</label><br>
+                                <select id="select_dd" name="select_dd">
+                                    <optgroup label="Group 1">
+                                        <option value="1">Some text goes here</option>
+                                        <option value="2">Another choice could be here</option>
+                                        <option value="3">Yet another item to be chosen</option>
+                                    </optgroup>
+                                    <optgroup label="Group 2">
+                                        <option value="4">Some text goes here</option>
+                                        <option value="5">Another choice could be here</option>
+                                        <option value="6">Yet another item to be chosen</option>
+                                    </optgroup>
+                                    <optgroup label="Group 3">
+                                        <option value="7">Some text goes here</option>
+                                        <option value="8">Another choice could be here</option>
+                                        <option value="9">Yet another item to be chosen</option>
+                                    </optgroup>
+                                </select>
+                                <input id="text_inline" name="text_inline" type="text">
+                                <input type="button" value="Hello">
+                            </p>
+                            <p>
+                                <label for="select_dd2">Inline form elements (disabled)</label><br>
+                                <select id="select_dd2" name="select_dd2" disabled>
+                                    <optgroup label="Group 1">
+                                        <option value="1">Some text goes here</option>
+                                        <option value="2">Another choice could be here</option>
+                                        <option value="3">Yet another item to be chosen</option>
+                                    </optgroup>
+                                    <optgroup label="Group 2">
+                                        <option value="4">Some text goes here</option>
+                                        <option value="5">Another choice could be here</option>
+                                        <option value="6">Yet another item to be chosen</option>
+                                    </optgroup>
+                                    <optgroup label="Group 3">
+                                        <option value="7">Some text goes here</option>
+                                        <option value="8">Another choice could be here</option>
+                                        <option value="9">Yet another item to be chosen</option>
+                                    </optgroup>
+                                </select>
+                                <input id="text_inline2" name="text_inline2" type="text" disabled>
+                                <input type="button" value="Hello" disabled>
+                            </p>
+                            <p>
+                                <label for="select_multi">Select multiple</label>
+                                <br>
+                                <select id="select_multi" name="select_multi" multiple="multiple" size="10">
+                                    <optgroup label="Group 1">
+                                        <option value="1">Some text goes here</option>
+                                        <option value="2">Another choice could be here</option>
+                                        <option value="3">Yet another item to be chosen</option>
+                                    </optgroup>
+                                    <optgroup label="Group 2">
+                                        <option value="4">Some text goes here</option>
+                                        <option value="5">Another choice could be here</option>
+                                        <option value="6">Yet another item to be chosen</option>
+                                    </optgroup>
+                                    <optgroup label="Group 3">
+                                        <option value="7">Some text goes here</option>
+                                        <option value="8">Another choice could be here</option>
+                                        <option value="9">Yet another item to be chosen</option>
+                                    </optgroup>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="textarea">Textarea</label>
+                                <br>
+                                <textarea id="textarea" name="textarea" rows="5" placeholder="This is an example of HTML5 placeholder text."></textarea>
+                            </p>
+                            <p>
+                                <label for="url">URL</label>
+                                <br>
+                                <input id="url" name="url" type="url">
+                            </p>
+                            <p>
+                                <label for="email">Email</label>
+                                <br>
+                                <input id="email" name="email" type="email" placeholder="name@example.com">
+                            </p>
+                            <p>
+                                <label for="text">Text</label>
+                                <br>
+                                <input id="text" name="text" type="text">
+                            </p>
+                            <p>
+                                <label for="text-data">Text with data list</label>
+                                <br>
+                                <input id="text-data" name="text-data" type="text" list="text-data-list">
+                                <datalist id="text-data-list">
+                                    <option value="Afghanistan">
+                                    <option value="Albania">
+                                    <option value="Algeria">
+                                    <option value="Andorra">
+                                    <option value="Angola">
+                                </datalist>
+                            </p>
+                            <p>
+                                <label for="datetime-local">Datetime local</label>
+                                <br>
+                                <input id="datetime-local" name="datetime-local" type="datetime-local">
+                            </p>
+                            <p>
+                                <label for="number">Number</label>
+                                <br>
+                                <input id="number" name="number" type="number" min="0" max="999" step="1">
+                            </p>
+                            <p>
+                                <label for="tel">Tel (phone)</label>
+                                <br>
+                                <input id="tel" name="tel" type="tel">
+                            </p>
+                            <p>
+                                <label for="datetime">Datetime</label>
+                                <br>
+                                <input id="datetime" name="datetime" type="datetime">
+                            </p>
+                            <p>
+                                <label for="date">Date</label>
+                                <br>
+                                <input id="date" name="date" type="date">
+                            </p>
+                            <p>
+                                <label for="month">Month</label>
+                                <br>
+                                <input id="month" name="month" type="month">
+                            </p>
+                            <p>
+                                <label for="search">Search</label>
+                                <br>
+                                <input id="search" name="search" type="search">
+                            </p>
+                            <p>
+                                <label for="range">Range</label>
+                                <br>
+                                <input id="range" name="range" type="range">
+                            </p>
+                            <p>
+                                <label for="color">Colour</label>
+                                <br>
+                                <input id="color" name="color" type="color" value="#cc0000">
+                            </p>
+                            <p>
+                                <input type="submit" value="Input - Submit">
+                                &nbsp;
+                                <input type="button" value="Input - Button">
+                                &nbsp;
+                                <input type="reset" value="Input - Reset">
+                                &nbsp;
+                                <button>Button tag</button>
+                            </p>
+                            <p>
+                                <input type="submit" value="Input (disabled)" disabled>
+                                &nbsp;
+                                <button disabled>Button (disabled)</button>
+                            </p>
+                        </form>
                     </div>
 
                     <p>
                         <strong>Author</strong>
                         <span itemprop="author" itemscope itemtype="http://schema.org/Person">
                             <span itemprop="name">
-                                <a rel="author" href="http://www.textpattern.dev/articles/?author=Phil+Wareham">Phil Wareham</a>
+                                <a rel="author" href="#">Phil Wareham</a>
                             </span>
                         </span>
                         <br>
                         <strong>Categories</strong>
                         <span itemprop="keywords">
-                            <a rel="category tag" href="http://www.textpattern.dev/category/hope-for-the-future/">Hope for the future</a>,
-                            <a rel="category tag" href="http://www.textpattern.dev/category/meaningful-labor/">Meaningful labor</a>
+                            <a rel="category tag" href="#">Hope for the future</a>,
+                            <a rel="category tag" href="#">Meaningful labor</a>
                         </span>
                     </p>
 
@@ -108,7 +440,7 @@
                                             </span>
                                         </span>
                                         <span class="comment-anchor" itemprop="url">
-                                            <a href="http://www.textpattern.dev/articles/1/welcome-to-your-site#c000001" id="c000001">#</a>
+                                            <a href="#" id="c000001">#</a>
                                         </span>
                                     </h4>
                                     <p class="footnote">
@@ -124,7 +456,7 @@
                         <section id="comments-form">
                             <h3>Comment</h3>
 
-                            <form id="txpCommentInputForm" method="post" action="/articles/1/welcome-to-your-site#cpreview">
+                            <form id="txpCommentInputForm" method="post" action="#">
                                 <div class="comments-wrapper">
                                     <p><strong>Enter your comment below.</strong> Fields marked <b class="required" title="Required">*</b> are required. You must preview your comment before submitting it.</p>
 
@@ -171,9 +503,9 @@
 
             <aside class="complementary-content">
                 <p>
-                    <a title="RSS feed" href="http://www.textpattern.dev/rss/?section=articles">RSS</a>
+                    <a title="RSS feed" href="#">RSS</a>
                     /
-                    <a title="Atom feed" href="http://www.textpattern.dev/atom/?section=articles">Atom</a>
+                    <a title="Atom feed" href="#">Atom</a>
                 </p>
 
                 <section>
