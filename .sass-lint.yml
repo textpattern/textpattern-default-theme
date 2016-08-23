@@ -119,6 +119,9 @@ rules:
   # Disallow the use of attribute selectors.
   no-attribute-selectors: 0
 
+  # Disallow the use of hexadecimal colors.
+  no-color-hex: 0
+
   # Enforce the use of hexadecimal color values rather than literals.
   no-color-keywords: 1
 
