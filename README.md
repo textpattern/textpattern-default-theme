@@ -5,7 +5,7 @@
 
 [Demo](http://www.philwareham.co.uk/)
 
-This project is the source for the default theme that ships as standard with [Textpattern CMS](http://textpattern.com) as of v4.6.0 onwards. It is intended as a starting point for new users learning the Textpattern CMS for the first time or existing users that want to adapt their current code for modern standards, and is not intended as a finished production theme (though you could use it as such if you want to).
+This project is the source for the default theme that ships as standard with [Textpattern CMS](http://textpattern.com) as of v4.7.0 onwards. It is intended as a starting point for new users learning the Textpattern CMS for the first time or existing users that want to adapt their current code for modern standards, and is not intended as a finished production theme (though you could use it as such if you want to).
 
 ## Features
 
