@@ -99,7 +99,10 @@ module.exports = function (grunt)
             options: {
                 processors: [
                     require('autoprefixer')({
-                        browsers: 'last 2 versions'
+                        browsers: [
+                            'last 3 versions',
+                            'not ie <= 11'
+                        ]
                     })
                 ]
             },
