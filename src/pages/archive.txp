@@ -22,7 +22,7 @@
 
     <meta name="generator" content="Textpattern CMS">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="robots" content="index, follow, noodp, noydir">
+    <meta name="robots" content="noindex, follow, noodp, noydir">
 
     <!-- specify canonical and author -->
     <txp:if_individual_article>
