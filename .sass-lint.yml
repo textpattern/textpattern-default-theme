@@ -44,6 +44,9 @@ rules:
   # Enforce whether or not `@import` paths should have leading underscores and/or filename extensions.
   clean-import-paths: 1
 
+  # Enforce that declarations should be written before nesting in a ruleset.
+  declarations-before-nesting: 1
+
   # Enforce whether or not parenthesis should be included if no arguments are defined or used, when declaring or invoking a mixin.
   empty-args: 1
 
@@ -101,6 +104,12 @@ rules:
   leading-zero:
     - 1
     - include: true
+
+  # Enforce that a file's length doesn't exceed a certain number of lines.
+  max-file-line-count: 0
+
+  # Enforce that lines do not exceed a max length/limit.
+  max-line-length: 0
 
   # Enforce a convention for mixin names.
   mixin-name-format:
@@ -179,6 +188,9 @@ rules:
 
   # Disallow the use of `*` (universal) selectors.
   no-universal-selectors: 0
+
+  # Enforce that domains are not used within URLs.
+  no-url-domains: 1
 
   # Enforce that protocols and domains are not used within URLs.
   no-url-protocols: 1
