@@ -78,7 +78,7 @@
                 </p>
 
                 <!-- if links exist, renders a links list -->
-                <txp:hide test="linklist">
+                <txp:evaluate test="linklist">
                     <section>
                         <h4>
                             <txp:text item="links" />
@@ -87,7 +87,7 @@
                         <!-- links by default to form: 'plainlinks.link.txp' unless you specify a different form -->
                         <txp:linklist wraptag="ul" break="li" />
                     </section>
-                </txp:hide>
+                </txp:evaluate>
 
             </aside>
 
