@@ -36,7 +36,7 @@
     "grunt-sass": "1.2.1",
     "grunt-sass-lint": "0.2.2",
     "load-grunt-tasks": "~3.5",
-    "node-sass": "3.11.2",
+    "node-sass": "3.12.2",
     "sass-lint": "1.10.2"
   },
   "scripts": {
