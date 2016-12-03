@@ -2,6 +2,7 @@
 
 [![Build Status](https://img.shields.io/travis/textpattern/textpattern-default-theme/master.svg)](https://travis-ci.org/textpattern/textpattern-default-theme)
 [![devDependency Status](https://david-dm.org/textpattern/textpattern-default-theme/dev-status.svg)](https://david-dm.org/textpattern/textpattern-default-theme#info=devDependencies)
+![Downloads](https://img.shields.io/github/downloads/textpattern/textpattern-default-theme/total.svg)
 
 [Demo](http://www.philwareham.co.uk/)
 
