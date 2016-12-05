@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/travis/textpattern/textpattern-default-theme/master.svg)](https://travis-ci.org/textpattern/textpattern-default-theme)
 [![devDependency Status](http://img.shields.io/david/dev/textpattern/textpattern-default-theme.svg)](https://david-dm.org/textpattern/textpattern-default-theme#info=devDependencies)
-[![Downloads](https://img.shields.io/github/downloads/textpattern/textpattern-default-theme/total.svg)](/textpattern/textpattern-default-theme/archive/master.zip)
+[![Downloads](https://img.shields.io/github/downloads/textpattern/textpattern-default-theme/total.svg)](https://github.com/textpattern/textpattern-default-theme/archive/master.zip)
 
 [Demo](http://www.philwareham.co.uk/)
 
