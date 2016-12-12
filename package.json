@@ -33,10 +33,10 @@
     "grunt-contrib-watch": "1.0.0",
     "grunt-dev-update": "2.0.0",
     "grunt-postcss": "0.8.0",
-    "grunt-sass": "1.2.1",
+    "grunt-sass": "2.0.0",
     "grunt-sass-lint": "0.2.2",
     "load-grunt-tasks": "~3.5",
-    "node-sass": "3.13.0",
+    "node-sass": "4.0.0",
     "sass-lint": "1.10.2"
   },
   "scripts": {
