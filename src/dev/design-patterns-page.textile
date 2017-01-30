@@ -22,24 +22,6 @@ h3. Addresses
 
 notextile. <address>Address: somewhere, world</address>
 
-h2. Text alignment
-
-h3. Text ranged left
-
-p<. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.
-
-h3. Text ranged right
-
-p>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.
-
-h3. Text centred
-
-p=. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.
-
-h3. Text justified
-
-p<>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.
-
 h2. Text-level semantics
 
 The "a element":http://codeispottery.com/ example
