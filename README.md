@@ -1,6 +1,7 @@
 # Textpattern CMS default theme
 
-[![Build Status](https://img.shields.io/travis/textpattern/textpattern-default-theme/master.svg)](https://travis-ci.org/textpattern/textpattern-default-theme)
+[![Build Status](https://img.shields.io/travis/textpattern/textpattern-default-theme.svg)](https://travis-ci.org/textpattern/textpattern-default-theme)
+[![devDependency Status](http://img.shields.io/david/dev/textpattern/textpattern-default-theme.svg)](https://david-dm.org/textpattern/textpattern-default-theme?type=dev)
 
 [Demo](http://default-theme.textpattern.io/)
 
