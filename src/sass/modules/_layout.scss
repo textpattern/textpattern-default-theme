@@ -2,15 +2,12 @@
    ========================================================================== */
 
 /**
- * 1. Always force scrollbar padding so we don't get 'jumping'.
- * 2. Prevent adjustments of font size after orientation changes in
+ * 1. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
 
 html {
     /* 1 */
-    overflow-y: scroll;
-    /* 2 */
     text-size-adjust: 100%;
 }
 
