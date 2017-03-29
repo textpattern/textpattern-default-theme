@@ -114,9 +114,7 @@ blockquote {
 
 abbr[title] {
     /* 1 */
-    border-bottom: none;
-    /* 2 */
-    text-decoration: underline;
+    border-bottom: 0;
     /* 2 */
     text-decoration: underline dotted;
 }
