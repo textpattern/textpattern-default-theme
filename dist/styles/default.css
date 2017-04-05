@@ -254,7 +254,7 @@ nav ol::after,
     outline: thin solid #0066ff;
   }
   /**
- * Additional styling for h1-h3 heading links.
+ * Additional styling for `h1`-`h3` heading links.
  *
  * 1. Expanded CSS level 3 `text-decoration-color` property in supported
  *    browsers, older browsers ignore this addition.
