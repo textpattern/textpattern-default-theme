@@ -14,7 +14,7 @@ a {
     /* 2 */
     text-decoration: none;
     /* 3 */
-    text-decoration-skip: ink edges;
+    text-decoration-skip: ink;
 
     &:hover,
     &:active {
@@ -26,40 +26,26 @@ a {
     &:focus {
         outline: thin solid $color-link-focus;
     }
-
-    &:visited {
-        color: $color-link-visited;
-    }
 }
 
 /**
- * Additional styling for `h1` heading links.
+ * Additional styling for h1-h3 heading links.
+ *
+ * 1. Expanded CSS level 3 `text-decoration-color` property in supported
+ *    browsers, older browsers ignore this addition.
  */
 
-h1 a {
-    border-radius: $border-radius / 4;
-    color: $color-text;
-
-    &:visited {
+h1,
+h2,
+h3 {
+    a {
         color: $color-text;
-    }
 
-    &:hover,
-    &:active {
-        background-color: $color-background-box;
-        color: $color-text;
-        text-decoration: none;
-    }
-}
-
-/**
- * Additional styling for child links within site header.
- */
-
-.site-header h1 a {
-    &:hover,
-    &:active {
-        background-color: darken($color-background-box, 6%);
+        &:hover,
+        &:active {
+            color: $color-text;
+            text-decoration-color: rgba($color-text, 0.5);  /* 1 */
+        }
     }
 }
 

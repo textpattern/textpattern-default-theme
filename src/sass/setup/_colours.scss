@@ -1,13 +1,3 @@
-// slightly lighten a colour
-@function tint($color, $percentage) {
-    @return mix(white, $color, $percentage);
-}
-
-// slightly darken a colour
-@function shade($color, $percentage) {
-    @return mix(black, $color, $percentage);
-}
-
 // text colours
 
 $color-text:                     #333333 !default;
@@ -24,7 +14,6 @@ $color-text-print:               #000000 !default; // solid black prints faster/
 $color-link:                     #004cbf !default;
 $color-link-hover:               #0066ff !default;
 $color-link-focus:               $color-link-hover !default;
-$color-link-visited:             shade($color-link, 33%) !default;
 
 // borders
 
