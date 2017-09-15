@@ -11,42 +11,34 @@ module.exports = function (grunt)
         // Set up paths.
         paths: {
             src: {
-                sass: 'src/sass/',
-                formsTemplates: 'forms/',
-                pagesTemplates: 'pages/'
+                sass: 'scss/',
+                templates: 'templates/'
             },
             dest: {
-                dist: 'dist/',
-                css: 'dist/styles/'
+                css: 'dist/default-theme/styles/',
+                templates: 'dist/default-theme/'
             }
         },
 
         // Clean distribution directory to start afresh.
-        clean: ['<%= paths.dest.dist %>'],
+        clean: ['dist/'],
 
         // Run some tasks in parallel to speed up the build process.
         concurrent: {
             dist: [
                 'css',
-                'copy'
+                'copy',
+                'jshint'
             ]
         },
 
         // Copy Textpattern templates to distribution directory.
         copy: {
-            formsTemplates: {
+            templates: {
                 expand: true,
-                cwd: 'src/',
-                src: '<%= paths.src.formsTemplates %>**/*.txp',
-                dest: '<%= paths.dest.dist %>',
-                filter: 'isFile'
-            },
-            pagesTemplates: {
-                expand: true,
-                cwd: 'src/',
-                src: '<%= paths.src.pagesTemplates %>**/*.txp',
-                dest: '<%= paths.dest.dist %>',
-                filter: 'isFile'
+                cwd: '<%= paths.src.templates %>',
+                src: '**',
+                dest: '<%= paths.dest.templates %>'
             }
         },
 
@@ -121,13 +113,9 @@ module.exports = function (grunt)
                 files: '<%= paths.src.sass %>**/*.scss',
                 tasks: 'css'
             },
-            formsTemplates: {
-                files: '<%= paths.src.formsTemplates %>**/*.txp',
-                tasks: 'copy:formsTemplates'
-            },
-            pagesTemplates: {
-                files: '<%= paths.src.pagesTemplates %>**/*.txp',
-                tasks: 'copy:pagesTemplates'
+            templates: {
+                files: '<%= paths.src.templates %>**/*.txp',
+                tasks: 'copy:templates'
             }
         }
 
