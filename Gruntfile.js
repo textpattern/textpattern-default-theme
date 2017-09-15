@@ -11,17 +11,17 @@ module.exports = function (grunt)
         // Set up paths.
         paths: {
             src: {
-                sass: 'scss/',
-                templates: 'templates/'
+                sass: 'src/scss/',
+                templates: 'src/templates/'
             },
             dest: {
-                css: 'dist/default-theme/styles/',
+                css: 'dist/default_theme/styles/',
                 templates: 'dist/default_theme/'
             }
         },
 
         // Clean distribution directory to start afresh.
-        clean: ['dist/'],
+        clean: ['dist'],
 
         // Run some tasks in parallel to speed up the build process.
         concurrent: {
