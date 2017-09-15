@@ -6,14 +6,12 @@
     "skin",
     "theme",
     "template",
-    "framework",
     "front-end",
     "responsive",
     "textpattern",
     "cms",
     "css",
-    "sass",
-    "web"
+    "sass"
   ],
   "repository": {
     "type": "git",
