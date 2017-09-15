@@ -1,5 +1,27 @@
 {
+  "config": {
+    "vendor-dir": "themes",
+    "preferred-install": "dist"
+  },
   "name": "textpattern/textpattern-default-theme",
   "description": "The default theme that ships as standard with Textpattern CMS.",
-  "license": "GPL-2.0"
+  "version": "4.7.0-dev",
+  "keywords": [
+    "skin",
+    "theme",
+    "template",
+    "front-end",
+    "responsive",
+    "textpattern",
+    "cms",
+    "css",
+    "sass"
+  ],
+  "homepage": "https://github.com/textpattern/textpattern-default-theme",
+  "license": "GPL-2.0",
+  "type": "textpattern-theme",
+  "support": {
+    "issues": "https://github.com/textpattern/textpattern-default-theme/issues",
+    "source": "https://github.com/textpattern/textpattern-default-theme"
+  }
 }
