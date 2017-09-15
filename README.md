@@ -3,7 +3,7 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/textpattern/textpattern-default-theme.svg)](https://greenkeeper.io/)
 [![Build Status](https://img.shields.io/travis/textpattern/textpattern-default-theme.svg)](https://travis-ci.org/textpattern/textpattern-default-theme)
 
-[Demo](http://default-theme.textpattern.io/)
+[Demo](https://default-theme.textpattern.io/)
 
 This project is the source for the default theme that ships as standard with [Textpattern CMS](https://textpattern.com/) as of v4.7.0 onwards. It is intended as a starting point for new users learning the Textpattern CMS for the first time or existing users that want to adapt their current code for modern standards, and is not intended as a finished production theme (though you could use it as such if you want to).
 
@@ -72,7 +72,7 @@ We provide a pre-built version of the theme files within the `dist` directory in
 
 ### Design patterns Textile/HTML reference page
 
-The file `src/dev/design-patterns-page.textile` is a reference you can use when authoring themes, it contains many of the HTML5 tags (and their equivalent [Textile](https://github.com/textile/php-textile) format where available) that should be accounted for in your designs. Paste this code directly into a Textpattern article. **Note:** some HTML5 tags may not be fully supported by all browsers, for the latest compatibility details please visit [caniuse](http://caniuse.com/).
+The file `src/dev-docs/design-patterns-page.textile` is a reference you can use when authoring themes, it contains many of the HTML tags (and their equivalent [Textile](https://github.com/textile/php-textile) format where available) that should be accounted for in your designs. Paste this code directly into a Textpattern article.
 
 ## License
 
