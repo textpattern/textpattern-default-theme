@@ -15,8 +15,8 @@ module.exports = function (grunt)
                 templates: 'src/templates/'
             },
             dest: {
-                css: 'dist/default/styles/',
-                templates: 'dist/default/'
+                css: 'dist/default_theme/styles/',
+                templates: 'dist/default_theme/'
             }
         },
 
