@@ -1,5 +1,5 @@
 {
-  "name": "textpattern/textpattern-default-theme",
+  "name": "Default theme",
   "description": "The default theme that ships as standard with Textpattern CMS.",
   "version": "4.7.0-dev",
   "txp-type":"textpattern-theme",
