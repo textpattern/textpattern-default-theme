@@ -1,4 +1,4 @@
-const distDir = __dirname + '/dist2/default_theme';
+const distDir = __dirname + '/dist/default_theme';
 
 var fs = require('fs');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
