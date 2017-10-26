@@ -15,7 +15,7 @@ This project is the source for the default theme that ships as standard with [Te
 4. Responsive CSS layout adapts to various device screen sizes, from 320px to over 1280px.
 5. Adheres to the [Schema.org microdata format](https://schema.org/).
 6. Includes [Sass](http://sass-lang.com/) version of CSS for rapid development.
-7. No images used at all.
+7. No external images used at all.
 8. Tested on a wide range of devices, browsers and operating systems.
 
 ## Supported web browsers
@@ -27,36 +27,32 @@ This project is the source for the default theme that ships as standard with [Te
 
 Building this repository requires:
 
-* [Node.js](https://nodejs.org/) >=4.0
+* [Node.js](https://nodejs.org/) >=6.9
 
 ## Build setup
 
 ### Installing required tools
 
-The project uses [Webpack](https://webpack.github.io/) to run tasks and [Sass](http://sass-lang.com/) for CSS pre-processing. First make sure you have base dependencies installed: [Node.js](https://nodejs.org/). You can install Node using the [installer](https://nodejs.org/en/download/) or [package manager](https://nodejs.org/en/download/package-manager/).
+The project uses [Webpack](https://webpack.github.io/) to run tasks and [Sass](http://sass-lang.com/) for CSS pre-processing. First make sure you have a recent version of [Node.js](https://nodejs.org/) installed. You can install Node using the [installer](https://nodejs.org/en/download/) or [package manager](https://nodejs.org/en/download/package-manager/).
 
 ### Installing dependencies
 
-After you have the base dependencies taken care of, you can install the project's dependencies. Navigate to the project's directory, and run the dependency manager:
+After you have Node.js taken care of, you can install the project's dependencies. Navigate to the project's directory, and run the dependency manager:
 
 ```ShellSession
 $ cd textpattern-default-theme
 $ npm install
 ```
 
-**npm** installs Webpack and the necessary Node modules.
+**npm** installs Webpack and the necessary JavaScript packages.
 
 ## Building
 
-This repository hosts sources and needs to be built before it can be used. After you have installed all dependencies, you will be able to run tasks, including building:
+This repository hosts sources and needs to be built before it can be used. After you have installed all dependencies, you will be able to run the build:
 
 ```ShellSession
-$ npm run @task@
+$ npm run build
 ```
-
-Where the `@task@` is `build`.
-
-* The `build` task builds the project.
 
 ## Pre-built version
 
