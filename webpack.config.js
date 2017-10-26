@@ -1,14 +1,17 @@
-var fs = require('fs');
+const distDir = __dirname + '/dist2/default_theme';
 
+var fs = require('fs');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var WebpackOnBuildPlugin = require('on-build-webpack');
+var CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
         'styles/default.css': './src/scss/default.scss'
     },
     output: {
+        path: distDir,
         filename: '.Trashes'
     },
     module: {
@@ -41,6 +44,7 @@ module.exports = {
         ]
     },
     plugins: [
+        new CleanWebpackPlugin(distDir),
         new ExtractTextPlugin('[name]', {
             allChunks: true
         }),

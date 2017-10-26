@@ -25,6 +25,7 @@
     "url": "https://github.com/textpattern/textpattern-default-theme/issues"
   },
   "devDependencies": {
+    "clean-webpack-plugin": "^0.1.17",
     "copy-webpack-plugin": "^4.2.0",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.2",
@@ -44,8 +45,7 @@
     "> 2%"
   ],
   "scripts": {
-    "dist2": "out='./dist2/default_theme' && rm -rf $out && webpack --config webpack.config.js --output-path=$out  -p",
-    "dist3": "out='./dist3/default_theme' && rm -rf $out && webpack --config webpack.config.js --output-path=$out  -p"
+    "build": "webpack --config webpack.config.js -p"
   },
   "license": "GPL-2.0"
 }
