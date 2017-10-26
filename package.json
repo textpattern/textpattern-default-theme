@@ -1,7 +1,11 @@
 {
   "name": "textpattern-default-theme",
-  "description": "The default theme that ships as standard with Textpattern CMS.",
+  "title": "Default theme",
+  "txp-type": "textpattern-theme",
   "version": "4.7.0-dev",
+  "description": "The default theme that ships as standard with Textpattern CMS.",
+  "author": "Team Textpattern",
+  "homepage": "https://github.com/textpattern/textpattern-default-theme",
   "keywords": [
     "skin",
     "theme",
@@ -39,8 +43,8 @@
     "> 2%"
   ],
   "scripts": {
-    "dist2": "out='./dist2/default_theme' && rm -rf $out && ./node_modules/.bin/webpack --config webpack.config.js --output-path=$out  -p && rm $out/.Trashes",
-    "dist3": "out='./dist3/default_theme' && rm -rf $out && ./node_modules/.bin/webpack --config webpack.config.js --output-path=$out  -p"
+    "dist2": "out='./dist2/default_theme' && rm -rf $out && webpack --config webpack.config.js --output-path=$out  -p",
+    "dist3": "out='./dist3/default_theme' && rm -rf $out && webpack --config webpack.config.js --output-path=$out  -p"
   },
   "license": "GPL-2.0"
 }
