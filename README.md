@@ -33,7 +33,7 @@ Building this repository requires:
 
 ### Installing required tools
 
-The project uses [Webpack](https://webpack.github.io/) to run tasks and [Sass](http://sass-lang.com/) for CSS pre-processing. First make sure you have a recent version of [Node.js](https://nodejs.org/) installed. You can install Node using the [installer](https://nodejs.org/en/download/) or [package manager](https://nodejs.org/en/download/package-manager/).
+The project uses [Webpack](https://webpack.github.io/) to run tasks and [Sass](http://sass-lang.com/) for CSS pre-processing. First make sure you have a recent version of [Node.js](https://nodejs.org/) installed. You can install Node.js using the [installer](https://nodejs.org/en/download/) or [package manager](https://nodejs.org/en/download/package-manager/).
 
 ### Installing dependencies
 
@@ -44,7 +44,7 @@ $ cd textpattern-default-theme
 $ npm install
 ```
 
-**npm** installs Webpack and the necessary JavaScript packages.
+**npm** installs Webpack and any necessary JavaScript packages.
 
 ## Building
 
