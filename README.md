@@ -28,19 +28,12 @@ This project is the source for the default theme that ships as standard with [Te
 Building this repository requires:
 
 * [Node.js](https://nodejs.org/) >=4.0
-* [Grunt](https://gruntjs.com/) >=1.0
 
 ## Build setup
 
 ### Installing required tools
 
-The project uses [Grunt](https://gruntjs.com/) to run tasks and [Sass](http://sass-lang.com/) for CSS pre-processing. First make sure you have base dependencies installed: [Node.js](https://nodejs.org/) and [Grunt](https://gruntjs.com/). You can install Node using the [installer](https://nodejs.org/) and Grunt with npm:
-
-```ShellSession
-$ npm install -g grunt-cli
-```
-
-Consult the Grunt documentation for more instructions if necessary.
+The project uses [Webpack](https://webpack.github.io/) to run tasks and [Sass](http://sass-lang.com/) for CSS pre-processing. First make sure you have base dependencies installed: [Node.js](https://nodejs.org/). You can install Node using the [installer](https://nodejs.org/en/download/) or [package manager](https://nodejs.org/en/download/package-manager/).
 
 ### Installing dependencies
 
@@ -51,20 +44,19 @@ $ cd textpattern-default-theme
 $ npm install
 ```
 
-**npm** installs Node modules for Grunt.
+**npm** installs Webpack and the necessary Node modules.
 
 ## Building
 
-This repository hosts sources and needs to be built before it can be used. After you have installed all dependencies, you will be able to run tasks using Grunt, including building:
+This repository hosts sources and needs to be built before it can be used. After you have installed all dependencies, you will be able to run tasks, including building:
 
 ```ShellSession
-$ grunt @task@
+$ npm run @task@
 ```
 
-Where the `@task@` is either `build` or `watch`.
+Where the `@task@` is `build`.
 
 * The `build` task builds the project.
-* The `watch` task will launch a task that watches for file changes; the project is then automatically built if a source file is modified.
 
 ## Pre-built version
 
