@@ -15,11 +15,11 @@ module.exports = {
         rules: [
             {
                 test: /\.(sass|scss)$/,
-                loader: ExtractTextPlugin.extract(['css-loader?minimize=false', 'sass-loader?outputStyle=expanded'])
+                loader: ExtractTextPlugin.extract(['css-loader?minimize=false', 'postcss-loader', 'sass-loader?outputStyle=expanded'])
             },
             {
                 test: /\.css$/,
-                loader: ExtractTextPlugin.extract('css-loader?minimize=false')
+                loader: ExtractTextPlugin.extract('css-loader?minimize=false', 'postcss-loader')
             },
             {
                 test: /\.woff2?$|\.ttf$|\.eot$|\.svg$|\.png|\.jpe?g|\.gif$/,

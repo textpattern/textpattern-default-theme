@@ -58,7 +58,9 @@ nav ol::after,
  */
   html {
     /* 1 */
-    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
   }
   /**
  * 1. Set `body` to `relative` to allow positioning of absolute elements.
@@ -239,7 +241,8 @@ nav ol::after,
     /* 2 */
     text-decoration: none;
     /* 3 */
-    text-decoration-skip: ink;
+    -webkit-text-decoration-skip: ink;
+            text-decoration-skip: ink;
   }
   a:hover, a:active {
     outline: 0;
@@ -266,7 +269,8 @@ nav ol::after,
   h3 a:hover,
   h3 a:active {
     color: #333333;
-    text-decoration-color: rgba(51, 51, 51, 0.5);
+    -webkit-text-decoration-color: rgba(51, 51, 51, 0.5);
+            text-decoration-color: rgba(51, 51, 51, 0.5);
     /* 1 */
   }
   /**
@@ -429,7 +433,9 @@ nav ol::after,
     /* 2 */
     overflow-x: auto;
     /* 3 */
-    tab-size: 4;
+    -moz-tab-size: 4;
+      -o-tab-size: 4;
+         tab-size: 4;
   }
   pre code {
     padding: 0;
@@ -442,7 +448,9 @@ nav ol::after,
     word-break: normal;
     word-wrap: normal;
     direction: ltr;
-    hyphens: none;
+    -webkit-hyphens: none;
+        -ms-hyphens: none;
+            hyphens: none;
   }
   /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
@@ -862,7 +870,9 @@ nav ol::after,
     border-radius: 0;
     background: #ffffff;
     /* 1 */
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
   }
   [type="color"]:focus,
   [type="date"]:focus,
@@ -1085,7 +1095,9 @@ nav ol::after,
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
     /* 1 */
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
   }
   button:hover,
   [type="button"]:hover,
