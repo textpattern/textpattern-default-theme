@@ -21,20 +21,16 @@
     "url": "https://github.com/textpattern/textpattern-default-theme/issues"
   },
   "devDependencies": {
-    "autoprefixer": "7.1.6",
-    "grunt": "~1.0",
-    "grunt-cli": "~1",
-    "grunt-concurrent": "2.3.1",
-    "grunt-contrib-clean": "1.1.0",
-    "grunt-contrib-copy": "1.0.0",
-    "grunt-contrib-jshint": "1.1.0",
-    "grunt-contrib-watch": "1.0.0",
-    "grunt-postcss": "0.9.0",
-    "grunt-sass": "2.0.0",
-    "grunt-sass-lint": "0.2.4",
-    "load-grunt-tasks": "~3.5",
-    "node-sass": "4.5.3",
-    "sass-lint": "1.12.1"
+    "copy-webpack-plugin": "^4.2.0",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "node-sass": "^4.5.3",
+    "on-build-webpack": "^0.1.0",
+    "resolve-url-loader": "^2.1.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1"
   },
   "browserslist": [
     "last 2 versions",
@@ -43,7 +39,8 @@
     "> 2%"
   ],
   "scripts": {
-    "test": "grunt travis --verbose"
+    "dist2": "out='./dist2/default_theme' && rm -rf $out && ./node_modules/.bin/webpack --config webpack.config.js --output-path=$out  -p && rm $out/.Trashes",
+    "dist3": "out='./dist3/default_theme' && rm -rf $out && ./node_modules/.bin/webpack --config webpack.config.js --output-path=$out  -p"
   },
   "license": "GPL-2.0"
 }
