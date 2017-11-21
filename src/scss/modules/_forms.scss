@@ -58,8 +58,8 @@ textarea {
     /* 3 */
     font-size: 1em;
     line-height: 1.375em; // 22px / 16px
-    vertical-align: baseline;
     box-sizing: border-box;
+    vertical-align: baseline;
 }
 
 /**
@@ -232,9 +232,9 @@ optgroup {
 }
 
 /**
- * 1. Remove default vertical scrollbar in IE 11.
- * 2. Remove unwanted space below `textarea` in Safari, Chrome, Opera.
- * 3. Restrict to vertical resizing to prevent layout breakage.
+ * 1. Restrict to vertical resizing to prevent layout breakage.
+ * 2. Remove default vertical scrollbar in IE 11.
+ * 3. Remove unwanted space below `textarea` in Safari, Chrome, Opera.
  */
 
 textarea {
@@ -242,18 +242,18 @@ textarea {
     height: auto;
     min-height: 3em;
     /* 1 */
-    overflow: auto;
-    /* 2 */
-    vertical-align: top;
-    /* 3 */
     resize: vertical;
+    /* 2 */
+    overflow: auto;
+    /* 3 */
+    vertical-align: top;
 }
 
 /**
  * Make sure disabled elements really are disabled and styled appropriately.
  *
- * 1. Re-set default cursor for disabled elements.
- * 2. Override default iOS opacity setting.
+ * 1. Override default iOS opacity setting.
+ * 2. Re-set default cursor for disabled elements.
  */
 
 [disabled],
@@ -262,13 +262,13 @@ textarea {
 span.disabled {
     border-color: $color-border-light !important;
     background: $color-background-form-disabled !important;
+    /* 1 */
+    opacity: 1;
     color: $color-text-form-disabled !important;
     text-shadow: none !important;
     box-shadow: none !important;
-    /* 1 */
-    cursor: default !important;
     /* 2 */
-    opacity: 1;
+    cursor: default !important;
 }
 
 

@@ -35,9 +35,9 @@ button,
     font-weight: normal;
     text-align: center;
     text-shadow: $text-shadow-light;
-    box-shadow: $inset-highlighting;
     /* 1 */
     appearance: none;
+    box-shadow: $inset-highlighting;
 
     &:hover {
         @include gradient-linear(lighten($color-button-gradient-from, 4%), lighten($color-button-gradient-to, 4%));

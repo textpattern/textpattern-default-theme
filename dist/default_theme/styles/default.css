@@ -830,9 +830,9 @@ nav ol::after,
     /* 3 */
     font-size: 1em;
     line-height: 1.375em;
-    vertical-align: baseline;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    vertical-align: baseline;
   }
   /**
  * Remove the inner border and padding in Firefox.
@@ -995,26 +995,26 @@ nav ol::after,
     font-weight: bold;
   }
   /**
- * 1. Remove default vertical scrollbar in IE 11.
- * 2. Remove unwanted space below `textarea` in Safari, Chrome, Opera.
- * 3. Restrict to vertical resizing to prevent layout breakage.
+ * 1. Restrict to vertical resizing to prevent layout breakage.
+ * 2. Remove default vertical scrollbar in IE 11.
+ * 3. Remove unwanted space below `textarea` in Safari, Chrome, Opera.
  */
   textarea {
     width: 100%;
     height: auto;
     min-height: 3em;
     /* 1 */
-    overflow: auto;
-    /* 2 */
-    vertical-align: top;
-    /* 3 */
     resize: vertical;
+    /* 2 */
+    overflow: auto;
+    /* 3 */
+    vertical-align: top;
   }
   /**
  * Make sure disabled elements really are disabled and styled appropriately.
  *
- * 1. Re-set default cursor for disabled elements.
- * 2. Override default iOS opacity setting.
+ * 1. Override default iOS opacity setting.
+ * 2. Re-set default cursor for disabled elements.
  */
   [disabled],
   [disabled] option,
@@ -1022,14 +1022,14 @@ nav ol::after,
   span.disabled {
     border-color: #d4d4d4 !important;
     background: #eeeeee !important;
+    /* 1 */
+    opacity: 1;
     color: #aaaaaa !important;
     text-shadow: none !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
-    /* 1 */
-    cursor: default !important;
     /* 2 */
-    opacity: 1;
+    cursor: default !important;
   }
   /**
  * Styling for form field validation.
@@ -1112,12 +1112,12 @@ nav ol::after,
     font-weight: normal;
     text-align: center;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
     /* 1 */
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
   }
   button:hover,
   [type="button"]:hover,

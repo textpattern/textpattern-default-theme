@@ -5,6 +5,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var WebpackOnBuildPlugin = require('on-build-webpack');
 var CleanWebpackPlugin = require('clean-webpack-plugin');
+var StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -45,6 +46,14 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(distDir),
+        new StyleLintPlugin({
+            configFile: '.stylelintrc.yml',
+            syntax: 'scss',
+            context: 'src/scss',
+            files: '**/*.scss',
+            failOnError: false,
+            quiet: false
+        }),
         new ExtractTextPlugin('[name]', {
             allChunks: true
         }),
