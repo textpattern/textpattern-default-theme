@@ -24,7 +24,7 @@ module.exports = {
                     use: [
                         { loader: 'css-loader', options: { minimize: false, importLoaders: 2 } },
                         { loader: 'postcss-loader', options: { plugins: [require('autoprefixer')] } },
-                        { loader: 'sass-loader', options: { outputStyle: 'expanded' } }
+                        { loader: 'sass-loader', options: { outputStyle: 'expanded', precision: 7 } }
                     ]
                 })
             },
