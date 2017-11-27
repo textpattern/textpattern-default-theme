@@ -229,6 +229,9 @@ rules:
   # Require a single space or disallow whitespace before the commas of media query lists.
   media-query-list-comma-space-before: never
 
+  # Disallow duplicate `@import` rules within a stylesheet.
+  no-duplicate-at-import-rules: true
+
   # Disallow empty sources.
   no-empty-source: true
 
