@@ -143,13 +143,13 @@ rules:
   function-calc-no-unspaced-operator: true
 
   # Require a newline or disallow whitespace after the commas of functions.
-  function-comma-newline-after: never-multi-line
+  function-comma-newline-after: always-multi-line
 
   # Require a newline or disallow whitespace before the commas of functions.
   function-comma-newline-before: never-multi-line
 
   # Require a single space or disallow whitespace after the commas of functions.
-  function-comma-space-after: always
+  function-comma-space-after: always-single-line
 
   # Require a single space or disallow whitespace before the commas of functions.
   function-comma-space-before: never
@@ -167,7 +167,7 @@ rules:
   function-parentheses-newline-inside: always-multi-line
 
   # Require a single space or disallow whitespace on the inside of the parentheses of functions.
-  function-parentheses-space-inside: never
+  function-parentheses-space-inside: never-single-line
 
   # Disallow scheme-relative URLs.
   function-url-no-scheme-relative: true
@@ -247,9 +247,6 @@ rules:
   # Disallow missing end-of-source newlines.
   no-missing-end-of-source-newline: true
 
-  # Disallow unknown animations.
-  no-unknown-animations: true
-
   # Require or disallow a leading zero for fractional numbers less than 1.
   number-leading-zero: always
 
@@ -302,7 +299,7 @@ rules:
   selector-max-attribute: 2
 
   # Limit the number of classes in a selector.
-  selector-max-class: 2
+  selector-max-class: 4
 
   # Limit the number of combinators in a selector.
   selector-max-combinators: 3
