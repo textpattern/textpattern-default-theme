@@ -363,11 +363,11 @@ nav ol::after,
     line-height: 1.5em;
   }
   /**
- * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ * Add the correct font weight in Chrome, Edge, and Safari.
  */
   b,
   strong {
-    font-weight: bold;
+    font-weight: bolder;
   }
   /**
  * Add vertical margin to addresses.
@@ -710,46 +710,33 @@ nav ol::after,
  */
   th,
   td {
-    padding: 0.25em;
-    border-bottom: 1px solid #cccccc;
+    padding: 0.5em;
+    border: 1px solid #d4d4d4;
     text-align: left;
     vertical-align: top;
   }
   /**
- * 1. Remove padding from top cells of table header.
- * 2. Thicker border at bottom of `thead`.
+ * Emphasize table header.
  */
-  thead tr:first-child th,
-  thead tr:first-child td {
-    /* 1 */
-    padding-top: 0;
+  thead tr {
+    background-color: #eeeeee;
   }
-  thead tr:last-child th,
-  thead tr:last-child td {
-    /* 2 */
-    border-bottom: 2px solid #cccccc;
+  thead th,
+  thead td {
+    border: 1px solid #cccccc;
   }
   /**
- * 1. Adjust padding of table footer due to smaller font size.
- * 2. Remove padding from bottom cells of table footer.
+ * 'Zebra striping' of `tbody` rows.
+ */
+  tbody tr:nth-child(even) {
+    background-color: #f7f7f7;
+  }
+  /**
+ * Adjust padding of table footer due to smaller font size.
  */
   tfoot th,
   tfoot td {
-    /* 1 */
-    padding: 0.3333333em;
-  }
-  tfoot tr:last-child th,
-  tfoot tr:last-child td {
-    /* 2 */
-    padding-bottom: 0;
-    border-bottom: 0;
-  }
-  /**
- * Border at top of each new table row.
- */
-  tbody tr:first-child td,
-  tbody tr:first-child th {
-    border-top: 1px solid #cccccc;
+    padding: 0.6666667em;
   }
   /**
  * Multi-row span vertical cell alignments.

@@ -28,67 +28,43 @@ caption {
 
 th,
 td {
-    padding: 0.25em;
-    border-bottom: 1px solid $color-border;
+    padding: 0.5em; // 8px / 16px
+    border: 1px solid $color-border-light;
     text-align: left;
     vertical-align: top;
 }
 
 /**
- * 1. Remove padding from top cells of table header.
- * 2. Thicker border at bottom of `thead`.
+ * Emphasize table header.
  */
 
 thead {
-    tr:first-child {
-        th,
-        td {
-            /* 1 */
-            padding-top: 0;
-        }
+    tr {
+        background-color: $color-gradient-from;
     }
 
-    tr:last-child {
-        th,
-        td {
-            /* 2 */
-            border-bottom: 2px solid $color-border;
-        }
+    th,
+    td {
+        border: 1px solid $color-border;
     }
 }
 
 /**
- * 1. Adjust padding of table footer due to smaller font size.
- * 2. Remove padding from bottom cells of table footer.
+ * 'Zebra striping' of `tbody` rows.
+ */
+
+tbody tr:nth-child(even) {
+    background-color: $color-background-box;
+}
+
+/**
+ * Adjust padding of table footer due to smaller font size.
  */
 
 tfoot {
     th,
     td {
-        /* 1 */
-        padding: 0.3333333em;
-    }
-
-    tr:last-child {
-        th,
-        td {
-            /* 2 */
-            padding-bottom: 0;
-            border-bottom: 0;
-        }
-    }
-}
-
-/**
- * Border at top of each new table row.
- */
-
-tbody {
-    tr:first-child {
-        td,
-        th {
-            border-top: 1px solid $color-border;
-        }
+        padding: 0.6666667em; // 8px / 12px
     }
 }
 
