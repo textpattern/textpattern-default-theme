@@ -67,6 +67,14 @@ h3. Blockquotes
 
 bq.:https://textpattern.io/ Here is an example of a block quote. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 
+h3. Thematic break (hr tag)
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper.
+
+<hr>
+
+Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.
+
 h2. Embedded content
 
 Remember that all images and videos in the theme are @max-width:100%;@ for flexibility and accommodation of responsive design, so parent containers are what control a given desired image/video width in layout, except when they are at their maximum width already (100%). *Images/video width and height attribute values should _never_ be used.*

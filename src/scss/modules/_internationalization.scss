@@ -2,44 +2,65 @@
    ========================================================================== */
 
 /**
+ * Bidirectional (bidi) text support.
+ * See: https://www.w3.org/International/articles/inline-bidi-markup/#cssshim
+ */
+
+[dir="ltr"],
+[dir="rtl"] {
+    unicode-bidi: isolate;
+}
+
+bdo[dir="ltr"],
+bdo[dir="rtl"] {
+    unicode-bidi: isolate-override;
+}
+
+/**
  * Preferred font for Japanese language.
  */
 
-[lang="ja-jp"] {
-    font-family: "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
+:lang(ja) {
+    font-family: "Hiragino  Sans", "Hiragino Kaku Gothic Pro", "Meiryo UI", sans-serif;
+    font-weight: 300;
 }
 
 /**
  * Preferred font for Korean language.
  */
 
-[lang="ko-kr"] {
+:lang(ko) {
     font-family: GulimChe, Gulim, sans-serif;
 }
 
 /**
- * Preferred font for Chinese (PRC) language.
+ * Preferred font for simplified Chinese (PRC) language.
  */
 
-[lang="zh-cn"] {
-    font-family: SimHei, sans-serif;
+:lang(zh-cn) {
+    font-family: "PingFang SC", SimHei, sans-serif;
 }
 
 /**
- * Preferred font for Chinese (Taiwan) language.
+ * Preferred font for traditional Chinese (Taiwan, Hong Kong) language.
  */
 
-[lang="zh-tw"] {
-    font-family: PMingLiU, sans-serif;
+:lang(zh-tw) {
+    font-family: "PingFang TC", PMingLiU, sans-serif;
 }
 
 /**
- * Reduce risk of render glitches in links on RTL languages.
+ * Suppress `text-decoration` in some RTL languages for better legibility.
  */
 
-[dir="rtl"] a {
-    unicode-bidi: embed;
+[lang|="ar"],
+[lang|="fa"],
+[lang|="ur"] {
+    a:hover {
+        text-decoration: none;
+    }
 }
+
 
 /**
  * Computer code should be LTR.
@@ -92,7 +113,7 @@
     menu,
     ol:not(.site-navigation ul),
     ul:not(.site-navigation ul) {
-        padding: 0 2em 0 0;
+        padding: 0 1.75em 0 0;
     }
 }
 
@@ -101,7 +122,7 @@
  */
 
 [dir="rtl"] dd {
-    margin: 0 2em 0 0;
+    margin: 0 1.75em 0 0;
 }
 
 /**

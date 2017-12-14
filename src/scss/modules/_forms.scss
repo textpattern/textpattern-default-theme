@@ -106,9 +106,8 @@ button::-moz-focus-inner,
 [type="week"],
 select,
 textarea {
-    height: 2.5em; // 40px / 16px
-    padding: 0.5em 0.1875em; // 8px / 16px + 3px / 16px
-    transition: box-shadow 0.2s linear;
+    height: 2em; // 32px / 16px
+    padding: 0.25em 0.1875em; // 8px / 16px + 3px / 16px
     border: 1px solid $color-border;
     border-radius: 0;
     background: $color-background-form;
@@ -117,16 +116,16 @@ textarea {
 
     &:focus {
         border-color: $color-link-focus;
-        outline: 0;
+        outline: 1px solid transparent; // Allows for repainting in high contrast modes.
     }
 }
 
 /**
- * Remove padding from `color` fields.
+ * Fix vertical alignment of `color` fields with their label.
  */
 
 [type="color"] {
-    padding: 0;
+    vertical-align: middle;
 }
 
 /**
@@ -218,7 +217,7 @@ select[multiple] {
 
 select[size="0"],
 select[size="1"] {
-    height: 2.5em; // 40px / 16px
+    height: 2em; // 32px / 16px
 }
 
 /**

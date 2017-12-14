@@ -2,6 +2,14 @@
    ========================================================================== */
 
 /**
+ * Add the correct display in IE 11.
+ */
+
+video {
+    display: inline-block;
+}
+
+/**
  * Make embedded elements responsive.
  */
 

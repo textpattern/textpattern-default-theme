@@ -2,9 +2,7 @@
    ========================================================================== */
 
 /**
- * Correct `block` display not defined for any HTML5 element in older browsers.
- * Correct `block` display not defined for `details` or `summary` in IE 11 and Firefox.
- * Correct `block` display not defined for `main` in IE 11.
+ * Add the correct display in various browsers.
  */
 
 article,
@@ -17,9 +15,12 @@ header,
 main,
 menu,
 nav,
-section,
-summary {
+section {
     display: block;
+}
+
+summary {
+    display: list-item;
 }
 
 /**
@@ -40,7 +41,6 @@ header,
 footer,
 nav ul,
 nav ol,
-.clearfix,
 .container,
 .paginator {
     &::after {

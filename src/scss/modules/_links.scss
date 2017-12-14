@@ -24,7 +24,7 @@ a {
     }
 
     &:focus {
-        outline: thin solid $color-link-focus;
+        outline: 1px solid $color-link-focus;
     }
 }
 
@@ -44,7 +44,8 @@ h3 {
         &:hover,
         &:active {
             color: $color-text;
-            text-decoration-color: rgba($color-text, 0.5);  /* 1 */
+            /* 1 */
+            text-decoration-color: rgba($color-text, 0.5);
         }
     }
 }

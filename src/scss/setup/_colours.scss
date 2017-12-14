@@ -37,8 +37,9 @@ $color-highlight-box:            #fff9e1 !default;
 // button colours
 
 $color-button-gradient-from:     $color-gradient-from !default;
-$color-button-gradient-to:       darken($color-button-gradient-from, 6.5%) !default;
-$color-button-border:            darken($color-button-gradient-to, 7%) !default;
+$color-button-gradient-to:       darken($color-button-gradient-from, 6%) !default;
+$color-button-border:            $color-button-gradient-to !default;
+$color-button-shadow:            darken($color-button-border, 20%) !default;
 
 // alert colours
 
