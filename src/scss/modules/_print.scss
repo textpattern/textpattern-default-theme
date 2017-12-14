@@ -282,6 +282,10 @@ ul {
     list-style: square;
 }
 
+[dir="rtl"] ul {
+    padding: 0 1.8em 8pt 0;
+}
+
 /**
  * Simple numerical styling for `ol` ordered lists.
  */
@@ -291,12 +295,20 @@ ol {
     list-style: decimal;
 }
 
+[dir="rtl"] ol {
+    padding: 0 1.8em 8pt 0;
+}
+
 /**
  * Normalize margins on `dl` definition lists.
  */
 
 dl {
     padding: 0 0 8pt 1.8em;
+}
+
+[dir="rtl"] dl {
+    padding: 0 1.8em 8pt 0;
 }
 
 /**
@@ -318,7 +330,6 @@ table {
 caption {
     margin-bottom: 4pt;
     font-weight: bold;
-    text-align: left;
 }
 
 /**
