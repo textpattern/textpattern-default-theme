@@ -1,4 +1,4 @@
-const distDir = __dirname + '/dist/default_theme';
+const distDir = __dirname + '/dist/default';
 
 var fs = require('fs');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -45,7 +45,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(distDir),
+        new CleanWebpackPlugin(__dirname +'/dist'),
         new StyleLintPlugin({
             configFile: '.stylelintrc.yml',
             syntax: 'scss',
