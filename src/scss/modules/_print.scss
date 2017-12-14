@@ -165,6 +165,12 @@ blockquote {
     page-break-inside: avoid;
 }
 
+[dir="rtl"] blockquote {
+    padding: 0 8pt 0 0;
+    border-right: 3pt solid $color-text-print;
+    border-left: 0;
+}
+
 /**
  * Simple preformatted text styling.
  *
