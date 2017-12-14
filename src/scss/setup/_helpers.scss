@@ -4,8 +4,3 @@
     background-color: $color-gradient-to;
     background-image: linear-gradient($color-gradient-from, $color-gradient-to);
 }
-
-@mixin gradient-radial($color-gradient-from, $color-gradient-to) {
-    background-color: $color-gradient-to;
-    background-image: radial-gradient($color-gradient-from, $color-gradient-to);
-}
