@@ -181,10 +181,6 @@ nav ol::after,
     list-style: none;
   }
   .site-navigation li {
-    -webkit-transition: -webkit-box-shadow 0.2s linear;
-    transition: -webkit-box-shadow 0.2s linear;
-    transition: box-shadow 0.2s linear;
-    transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
     border-bottom: 1px solid #cccccc;
     background-color: #eeeeee;
   }
@@ -1107,10 +1103,6 @@ nav ol::after,
     width: auto;
     height: 2em;
     padding: 0.25em 1em;
-    -webkit-transition: -webkit-box-shadow 0.2s linear;
-    transition: -webkit-box-shadow 0.2s linear;
-    transition: box-shadow 0.2s linear;
-    transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
     border: 1px solid #dfdfdf;
     border-radius: 1em;
     background-clip: padding-box;
