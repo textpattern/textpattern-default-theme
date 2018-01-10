@@ -1,4 +1,4 @@
-const distDir = __dirname + '/dist/txp_47';
+const distDir = __dirname + '/dist/four-point-seven';
 
 var fs = require('fs');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
