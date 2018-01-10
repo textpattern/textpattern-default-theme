@@ -1,4 +1,4 @@
-const distDir = __dirname + '/dist/default';
+const distDir = __dirname + '/dist/txp-4.7';
 
 var fs = require('fs');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
