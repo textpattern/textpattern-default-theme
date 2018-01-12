@@ -25,7 +25,7 @@
     "url": "https://github.com/textpattern/textpattern-default-theme/issues"
   },
   "devDependencies": {
-    "autoprefixer": "7.2.4",
+    "autoprefixer": "7.2.5",
     "clean-webpack-plugin": "0.1.17",
     "copy-webpack-plugin": "4.3.1",
     "css-loader": "0.28.8",
