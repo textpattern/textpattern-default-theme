@@ -39,7 +39,7 @@
     "stylelint": "8.4.0",
     "stylelint-order": "0.8.0",
     "stylelint-scss": "2.2.0",
-    "stylelint-webpack-plugin": "0.10.0",
+    "stylelint-webpack-plugin": "0.10.1",
     "webpack": "3.10.0"
   },
   "browserslist": [
