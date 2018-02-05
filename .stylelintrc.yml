@@ -585,6 +585,9 @@ rules:
   # Require a single space or disallow whitespace before the colon in `$`-variable declarations.
   scss/dollar-variable-colon-space-before: never
 
+  # Require `!default` flag for `$`-variable declarations.
+  scss/dollar-variable-default: true
+
   # Disallow Sass variables that are used without interpolation with CSS features that use custom identifiers.
   scss/dollar-variable-no-missing-interpolation: true
 
