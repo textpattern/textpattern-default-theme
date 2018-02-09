@@ -60,11 +60,3 @@ img {
 figure {
     margin: 0;
 }
-
-/**
- * Correct overflow not hidden in IE 11.
- */
-
-svg:not(:root) {
-    overflow: hidden;
-}
