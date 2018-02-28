@@ -30,7 +30,7 @@ template {
 a,
 input,
 button {
-  touch-action: none;
+  touch-action: manipulation;
 }
 
 /* Clearfix
