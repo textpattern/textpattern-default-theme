@@ -34,7 +34,7 @@
     "node-sass": "4.7.2",
     "on-build-webpack": "0.1.0",
     "postcss-loader": "2.1.1",
-    "sass-loader": "6.0.6",
+    "sass-loader": "6.0.7",
     "style-loader": "0.20.2",
     "stylelint": "9.1.1",
     "stylelint-order": "0.8.1",
