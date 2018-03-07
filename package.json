@@ -2,7 +2,7 @@
   "name": "textpattern-default-theme",
   "title": "Default theme",
   "txp-type": "textpattern-theme",
-  "version": "4.7.0-dev",
+  "version": "4.7.0-beta",
   "description": "The default theme that ships as standard with Textpattern CMS.",
   "author": "Team Textpattern",
   "homepage": "https://github.com/textpattern/textpattern-default-theme",
