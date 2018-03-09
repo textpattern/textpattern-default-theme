@@ -35,7 +35,7 @@
     "on-build-webpack": "0.1.0",
     "postcss-loader": "2.1.1",
     "sass-loader": "6.0.7",
-    "style-loader": "0.20.2",
+    "style-loader": "0.20.3",
     "stylelint": "9.1.1",
     "stylelint-order": "0.8.1",
     "stylelint-scss": "2.5.0",
