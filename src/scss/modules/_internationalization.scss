@@ -111,10 +111,14 @@ bdo[dir="rtl"] {
 
 [dir="rtl"] {
     menu,
-    ol:not(.site-navigation ul),
-    ul:not(.site-navigation ul) {
+    ol,
+    ul {
         padding: 0 1.75em 0 0;
     }
+}
+
+[dir="rtl"] .site-navigation ul {
+    padding: 0;
 }
 
 /**
