@@ -117,8 +117,11 @@ bdo[dir="rtl"] {
     }
 }
 
-[dir="rtl"] .site-navigation ul {
-    padding: 0;
+[dir="rtl"] {
+    .site-navigation ul,
+    .article-list {
+        padding: 0;
+    }
 }
 
 /**
