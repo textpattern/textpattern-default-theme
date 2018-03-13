@@ -44,10 +44,8 @@
     "webpack-cli": "2.0.11"
   },
   "browserslist": [
-    "last 2 versions",
-    "not ie < 11",
-    "not ExplorerMobile < 11",
-    "> 2%"
+    "> 0.5%",
+    "not ie < 11"
   ],
   "scripts": {
     "build": "webpack --config webpack.config.js -p"
