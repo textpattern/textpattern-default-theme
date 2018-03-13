@@ -18,23 +18,17 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(sass|scss)$/,
+                test: /\.(scss)$/,
                 use: ExtractTextPlugin.extract({
+                    // Inject CSS to page.
                     fallback: 'style-loader',
                     use: [
+                        // Translates CSS into CommonJS modules.
                         { loader: 'css-loader', options: { minimize: false, importLoaders: 2 } },
+                        // Run postCSS actions.
                         { loader: 'postcss-loader', options: { plugins: [require('autoprefixer')] } },
+                        // Compiles Sass to CSS.
                         { loader: 'sass-loader', options: { outputStyle: 'expanded', precision: 7 } }
-                    ]
-                })
-            },
-            {
-                test: /\.css$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: [
-                        { loader: 'css-loader', options: { minimize: false, importLoaders: 1 } },
-                        { loader: 'postcss-loader', options: { plugins: [require('autoprefixer')] } }
                     ]
                 })
             },
@@ -64,13 +58,13 @@ module.exports = {
             }
         ]),
         new WebpackOnBuildPlugin(function(stats) {
-            // Delete `output.filename`
+            // Delete `output.filename`.
             try {
                 fs.unlinkSync(this.outputPath+'/'+this.options.output.filename);
             } catch(e) {
             }
 
-            // AutoBuild/Repair `manifest.json` from `package.json`, if some parameters are missing or `manifest.json` not exist
+            // Auto build/repair `manifest.json` from `package.json` if some parameters are missing or `manifest.json` does not exist.
             var pkg = require(this.context+'/package.json');
             try {
                 var manifest = require(this.outputPath+'/manifest.json');
