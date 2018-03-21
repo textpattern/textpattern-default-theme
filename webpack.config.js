@@ -1,11 +1,11 @@
 const distDir = __dirname + '/dist/four-point-seven';
 
-var fs = require('fs');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
-var WebpackOnBuildPlugin = require('on-build-webpack');
-var CleanWebpackPlugin = require('clean-webpack-plugin');
-var StyleLintPlugin = require('stylelint-webpack-plugin');
+const fs = require('fs');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const WebpackOnBuildPlugin = require('on-build-webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
     entry: {
