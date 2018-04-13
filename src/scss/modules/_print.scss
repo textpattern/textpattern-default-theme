@@ -12,15 +12,22 @@
 }
 
 /**
- * Use a print-friendly font and size.
+ * Use a print-friendly font size.
+ */
+
+html {
+    font-size: 8pt;
+    line-height: 1.5;
+}
+
+/**
+ * Use a print-friendly font family.
  */
 
 body {
     margin: 0.5cm;
     padding: 2em 5em;
     font-family: $font-print;
-    font-size: 8pt;
-    line-height: 1.5;
 }
 
 /**
