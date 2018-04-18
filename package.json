@@ -39,7 +39,7 @@
     "style-loader": "0.20.3",
     "stylelint": "9.2.0",
     "stylelint-order": "0.8.1",
-    "stylelint-scss": "3.0.0",
+    "stylelint-scss": "3.0.1",
     "stylelint-webpack-plugin": "0.10.4",
     "webpack": "3.11.0"
   },
