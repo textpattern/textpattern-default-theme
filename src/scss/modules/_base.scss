@@ -5,7 +5,8 @@
  * Add the correct display in Edge, IE 11, and Firefox.
  */
 
-details {
+details,
+main {
     display: block;
 }
 

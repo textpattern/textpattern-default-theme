@@ -127,25 +127,6 @@ textarea {
 }
 
 /**
- * Fix vertical alignment of `color` fields with their label.
- */
-
-[type="color"] {
-    vertical-align: middle;
-}
-
-/**
- * Fix the cursor style for Chrome's increment/decrement buttons. For certain
- * `font-size` values of the `input`, it causes the cursor style of the
- * decrement button to change from `default` to `text`.
- */
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-    height: auto;
-}
-
-/**
  * 1. Remove any excess padding.
  * 2. Correct margins for inline checkbox/radio labels.
  */
@@ -164,6 +145,15 @@ textarea {
             margin: 0;
         }
     }
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Safari.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
 }
 
 /**
