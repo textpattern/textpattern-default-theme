@@ -1,10 +1,9 @@
 const distDir = __dirname + '/dist/four-point-seven';
 
 const fs = require('fs');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const WebpackOnBuildPlugin = require('on-build-webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
@@ -19,18 +18,15 @@ module.exports = {
         rules: [
             {
                 test: /\.(scss)$/,
-                use: ExtractTextPlugin.extract({
-                    // Inject CSS to page.
-                    fallback: 'style-loader',
-                    use: [
-                        // Translates CSS into CommonJS modules.
-                        { loader: 'css-loader', options: { minimize: false, importLoaders: 2 } },
-                        // Run postCSS actions.
-                        { loader: 'postcss-loader', options: { plugins: [require('autoprefixer')] } },
-                        // Compiles Sass to CSS.
-                        { loader: 'sass-loader', options: { outputStyle: 'expanded', precision: 7 } }
-                    ]
-                })
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    // Translates CSS into CommonJS modules.
+                    { loader: 'css-loader', options: { minimize: false, importLoaders: 2 } },
+                    // Run postCSS actions.
+                    { loader: 'postcss-loader', options: { plugins: [require('autoprefixer')] } },
+                    // Compiles Sass to CSS.
+                    { loader: 'sass-loader', options: { outputStyle: 'expanded', precision: 7 } }
+                ]
             },
             {
                 test: /\.woff2?$|\.ttf$|\.eot$|\.svg$|\.png|\.jpe?g|\.gif$/,
@@ -48,8 +44,8 @@ module.exports = {
             failOnError: false,
             quiet: false
         }),
-        new ExtractTextPlugin('[name]', {
-            allChunks: true
+        new MiniCssExtractPlugin({
+            filename: '[name]'
         }),
         new CopyWebpackPlugin([
             {
@@ -57,30 +53,5 @@ module.exports = {
                 from: '**/*',
             }
         ]),
-        new WebpackOnBuildPlugin(function(stats) {
-            // Delete `output.filename`.
-            try {
-                fs.unlinkSync(this.outputPath+'/'+this.options.output.filename);
-            } catch(e) {
-            }
-
-            // Auto build/repair `manifest.json` from `package.json` if some parameters are missing or `manifest.json` does not exist.
-            var pkg = require(this.context+'/package.json');
-            try {
-                var manifest = require(this.outputPath+'/manifest.json');
-            } catch(e) {
-                var manifest = {};
-            }
-
-            var manifest2 = {
-                "title":        manifest.title          || pkg.title        || pkg.name,
-                "txp-type":     manifest['txp-type']    || pkg['txp-type']  || "textpattern-theme",
-                "version":      manifest.version        || pkg.version      || "0.0.1",
-                "description":  manifest.description    || pkg.description  || "",
-                "author":       manifest.author         || pkg.author       || "Team Textpattern",
-                "author_uri":   manifest.author_uri     || pkg.homepage     || pkg.repository.url   || ""
-            };
-            fs.writeFile(this.outputPath+'/manifest.json', JSON.stringify(manifest2, null, 2));
-        }),
     ]
 };
