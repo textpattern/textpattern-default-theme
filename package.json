@@ -40,7 +40,7 @@
     "stylelint-scss": "3.0.1",
     "stylelint-webpack-plugin": "0.10.4",
     "webpack": "4.6.0",
-    "webpack-cli": "2.0.14"
+    "webpack-cli": "2.0.15"
   },
   "browserslist": [
     "> 0.5%",
