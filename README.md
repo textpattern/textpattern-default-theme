@@ -27,7 +27,7 @@ This project is the source for the default theme that ships as standard with [Te
 
 Building this repository requires:
 
-* [Node.js](https://nodejs.org/) >=6.9
+* [Node.js](https://nodejs.org/)
 
 ## Build setup
 
