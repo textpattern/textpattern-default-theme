@@ -75,6 +75,11 @@ body {
 
     h3 {
         margin: 0.5em 0 0; // 12px margin top
+        font-family: $font-serif;
+        font-size: 1.25rem; // 20px / 16px
+        font-style: italic;
+        font-weight: normal;
+        line-height: 1.4; // 28px / 20px
     }
 }
 
