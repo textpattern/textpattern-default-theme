@@ -4,9 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-    <title>
-        <txp:page_title />
-    </title>
+    <title><txp:page_title /></title>
 
     <!-- Google font API -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&amp;subset=latin-ext">
@@ -15,14 +13,10 @@
     <txp:css format="link" media="" />
     <!-- ...or you can use (faster) external CSS files e.g. <link rel="stylesheet" href="<txp:page_url type="theme_path" />/styles/default.css"> -->
 
-    <!-- specify meta description if available -->
+    <meta name="generator" content="Textpattern CMS">
     <txp:meta_description />
-    <!-- specify meta keywords if available -->
     <txp:meta_keywords separator="," />
 
-    <meta name="generator" content="Textpattern CMS">
-
-    <!-- specify canonical and author -->
     <txp:if_individual_article>
         <meta name="robots" content="<txp:if_expires>unavailable_after: <txp:expires gmt="1" format="%d-%b-%y %T" /> GMT<txp:else />index, follow</txp:if_expires>">
         <link rel="canonical" href="<txp:permlink />">
