@@ -18,7 +18,6 @@
 </head>
 
 <body class="popup-page">
-
     <div class="wrapper">
         <div class="container">
 
@@ -27,6 +26,5 @@
 
         </div> <!-- /.container -->
     </div> <!-- /.wrapper -->
-
 </body>
 </html>
