@@ -27,7 +27,6 @@
                 <link rel="canonical" href="<txp:section url="1" />">
             <txp:else />
                 <meta name="robots" content="noindex, follow">
-                <link rel="canonical" href="<txp:section url="1" />?pg=<txp:page_url type="pg" />">
             </txp:if_variable>
         <txp:else />
             <txp:meta_keywords separator="," />
