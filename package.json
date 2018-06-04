@@ -25,7 +25,7 @@
     "url": "https://github.com/textpattern/textpattern-default-theme/issues"
   },
   "devDependencies": {
-    "autoprefixer": "8.5.1",
+    "autoprefixer": "8.6.0",
     "clean-webpack-plugin": "0.1.19",
     "copy-webpack-plugin": "4.5.1",
     "cross-env": "5.1.6",
@@ -34,12 +34,12 @@
     "mini-css-extract-plugin": "0.4.0",
     "node-sass": "4.9.0",
     "postcss-loader": "2.1.5",
-    "sass-loader": "7.0.1",
+    "sass-loader": "7.0.2",
     "stylelint": "9.2.1",
     "stylelint-order": "0.8.1",
     "stylelint-scss": "3.1.0",
     "stylelint-webpack-plugin": "0.10.5",
-    "webpack": "4.10.1",
+    "webpack": "4.10.2",
     "webpack-cli": "3.0.1"
   },
   "browserslist": [
