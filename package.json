@@ -27,7 +27,7 @@
   "devDependencies": {
     "autoprefixer": "8.6.3",
     "clean-webpack-plugin": "0.1.19",
-    "copy-webpack-plugin": "4.5.1",
+    "copy-webpack-plugin": "4.5.2",
     "cross-env": "5.2.0",
     "css-loader": "0.28.11",
     "file-loader": "1.1.11",
