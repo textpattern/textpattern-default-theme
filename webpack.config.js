@@ -3,6 +3,7 @@ const distDir = __dirname + '/dist/four-point-seven';
 const fs = require('fs');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const Fiber = require('fibers');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
@@ -25,7 +26,14 @@ module.exports = {
                     // Run postCSS actions.
                     { loader: 'postcss-loader', options: { plugins: [require('autoprefixer')] } },
                     // Compiles Sass to CSS.
-                    { loader: 'sass-loader', options: { outputStyle: 'expanded', precision: 7 } }
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            implementation: require('dart-sass'),
+                            fiber: Fiber,
+                            outputStyle: 'expanded'
+                        }
+                    }
                 ]
             },
             {
