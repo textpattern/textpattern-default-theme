@@ -3,7 +3,7 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/textpattern/textpattern-default-theme.svg)](https://greenkeeper.io/)
 [![Build Status](https://img.shields.io/travis/textpattern/textpattern-default-theme.svg)](https://travis-ci.org/textpattern/textpattern-default-theme)
 
-[Demo](https://default-theme.textpattern.io/)
+[Demo](https://default-theme.textpattern.com/)
 
 This project is the source for the default theme that ships as standard with [Textpattern CMS](https://textpattern.com/) as of v4.7.0 onwards. It is intended as a starting point for new users learning the Textpattern CMS for the first time or existing users that want to adapt their current code for modern standards, and is not intended as a finished production theme (though you could use it as such if you want to).
 
