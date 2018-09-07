@@ -127,6 +127,15 @@ notextile. <video controls>
 
 <small>Video copyright 2008, Blender Foundation / www.bigbuckbunny.org</small>
 
+h3. Audio
+
+notextile. <audio controls>
+  <source src="https://default-theme.textpattern.com/audio/moonlight_reprise.mp3" type="audio/mp3">
+  <source src="https://default-theme.textpattern.com/audio/moonlight_reprise.ogg; codecs=vorbis" type="audio/ogg">
+</audio>
+
+<small>"Moonlight Reprise" from "Irsen's Tale" by Kai Engel. License: "Attribution-NonCommercial 3.0 International License":http://creativecommons.org/licenses/by-nc/3.0/</small>
+
 h2. Lists
 
 # this is an example
