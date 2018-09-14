@@ -77,7 +77,7 @@ bc. <section class="alert alert-error" role="alert">
 
 h3. Blockquotes
 
-bq.:https://textpattern.io/ Here is an example of a block quote. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+bq.:https://textpattern.com/ Here is an example of a block quote. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 
 h3. Thematic break (hr tag)
 
@@ -123,6 +123,7 @@ h3. Videos
 notextile. <video controls poster="https://default-theme.textpattern.com/video/big_buck_bunny.jpg">
     <source type="video/mp4" src="https://default-theme.textpattern.com/video/big_buck_bunny.mp4">
     <source type="video/webm" src="https://default-theme.textpattern.com/video/big_buck_bunny.webm">
+    I’m sorry, your browser doesn’t support HTML5 video in MP4 with H.264 or WebM with VP8/VP9.
 </video>
 
 <small>Video copyright 2008, Blender Foundation / www.bigbuckbunny.org</small>
@@ -130,11 +131,12 @@ notextile. <video controls poster="https://default-theme.textpattern.com/video/b
 h3. Audio
 
 notextile. <audio controls>
-  <source src="https://default-theme.textpattern.com/audio/moonlight_reprise.mp3" type="audio/mp3">
-  <source src="https://default-theme.textpattern.com/audio/moonlight_reprise.ogg; codecs=vorbis" type="audio/ogg">
+    <source type="audio/mp3" src="https://default-theme.textpattern.com/audio/moonlight_reprise.mp3">
+    <source type="audio/ogg; codecs=vorbis" src="https://default-theme.textpattern.com/audio/moonlight_reprise.ogg">
+    I’m sorry, your browser doesn't support HTML5 audio.
 </audio>
 
-<small>"Moonlight Reprise" from "Irsen's Tale" by Kai Engel. License: "Attribution-NonCommercial 3.0 International License":http://creativecommons.org/licenses/by-nc/3.0/</small>
+<small>"Moonlight Reprise" from "Irsen's Tale" by Kai Engel. License: "Attribution-NonCommercial 3.0 International License":https://creativecommons.org/licenses/by-nc/3.0/</small>
 
 h2. Lists
 
@@ -175,7 +177,7 @@ Table with @<caption>@, @<thead>@ and @<tfoot>@ included.
 
 h2. Forms
 
-notextile. <form action="#" method="post" enctype="multipart/form-data" onsubmit="return false">
+notextile. <form>
     <p>
         <input type="checkbox" id="test_checkbox_1" name="test_checkbox_1" checked>
         <label for="test_checkbox_1">Test checkbox 1</label>

@@ -62,27 +62,21 @@
                     <div itemprop="articleBody">
                         <p>Article containing examples of various inline and block elements that should be considered and styled within any theme.</p>
                         <h2>Typography</h2>
-                        <h1>h1 Heading 1 h1 Heading 1 h1 Heading 1 h1 Heading 1 h1</h1>
-                        <h2>h2 Heading 2 h2 Heading 2 h2 Heading 2 h2 Heading 2 h2 Heading 2</h2>
-                        <h3>h3 Heading 3 h3 Heading 3 h3 Heading 3 h3 Heading 3 h3 Heading 3 h3 Heading 3 h3 Heading 3</h3>
-                        <h4>h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4</h4>
+                        <h1>h1 Heading 1 h1 Heading 1 h1 Heading 1</h1>
+                        <h2>h2 Heading 2 h2 Heading 2 h2 Heading 2 h2 Heading 2</h2>
+                        <h3>h3 Heading 3 h3 Heading 3 h3 Heading 3 h3 Heading 3 h3 Heading 3</h3>
+                        <h4>h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4 h4 Heading 4</h4>
+                        <h5>h5 Heading 5 h5 Heading 5 h5 Heading 5 h5 Heading 5 h5 Heading 5 h5 Heading 5 h5 Heading 5</h5>
+                        <h6>h6 Heading 6 h6 Heading 6 h6 Heading 6 h6 Heading 6 h6 Heading 6 h6 Heading 6 h6 Heading 6 h6 Heading 6</h6>
                         <p><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper.</strong> Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.</p>
                         <p>Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci.</p>
-                        <p>This text has a reference in the footnote<sup class="footnote" id="fnrev11192490257aa0c61b601c-1"><a href="#fn11192490257aa0c61b601c-1">1</a></sup>.</p>
-                        <p class="footnote" id="fn11192490257aa0c61b601c-1"><sup>1</sup> Here is the footnote.</p>
+                        <p>This text has a reference in the footnote<sup class="footnote" id="footnote-reference-reverse"><a href="#footnote-reference">1</a></sup>.</p>
+                        <p class="footnote" id="footnote-reference"><sup>1</sup> Here is the footnote.</p>
                         <h3>Addresses</h3>
                         <address>Address: somewhere, world</address>
-                        <h2>Text alignment</h2>
-                        <h3>Text ranged left</h3>
-                        <p style="text-align:left;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.</p>
-                        <h3>Text ranged right</h3>
-                        <p style="text-align:right;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.</p>
-                        <h3>Text centred</h3>
-                        <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.</p>
-                        <h3>Text justified</h3>
-                        <p style="text-align:justify;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.</p>
                         <h2>Text-level semantics</h2>
-                        <p>The <a href="http://codeispottery.com/">a element</a> example<br>
+                        <p>
+                            The <a href="http://codeispottery.com/">a element</a> example<br>
                             The <abbr>abbr element</abbr> and <abbr title="Title text">abbr element with title</abbr> examples<br>
                             The <b>b element</b> example<br>
                             The <cite>cite element</cite> example<br>
@@ -103,14 +97,21 @@
                             The <sub>sub element</sub> example<br>
                             The <sup>sup element</sup> example<br>
                             The <u>u element</u> example<br>
-                            The <var>var element</var> example</p>
+                            The <var>var element</var> example
+                        </p>
                         <h2>Block text-level semantics</h2>
+                        <h3>Disclosure (details/summary)</h3>
+                        <details>
+                            <summary>System requirements</summary>
+                            <p>Requires a computer running an operating system. The computer must have some memory and ideally some kind of long-term storage.</p>
+                            <p>An <a href="#">input device</a> as well as some form of <a href="#">output device</a> is recommended.</p>
+                        </details>
                         <h3>Pre-formatted text blocks</h3>
                         <pre>This is an example of a non-code
     pre-formatted text block
         preserving white spaces</pre>
                         <h3>Pre-formatted code blocks</h3>
-                        <pre dir="ltr"><code>&lt;section class=&quot;alert alert-error fade in&quot; role=&quot;alert&quot;&gt;
+                        <pre dir="ltr"><code>&lt;section class=&quot;alert alert-error&quot; role=&quot;alert&quot;&gt;
     &lt;a class=&quot;close&quot; data-dismiss=&quot;alert&quot;&gt;&amp;amp;times;&lt;/a&gt;
     &lt;h3&gt;Message pane&lt;/h3&gt;
     &lt;p&gt;Error message goes here.&lt;/p&gt;
@@ -123,41 +124,37 @@
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper.</p>
                         <hr>
                         <p>Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.</p>
+
                         <h2>Embedded content</h2>
                         <p>Remember that all images and videos in the theme are <code>max-width:100%;</code> for flexibility and accommodation of responsive design, so parent containers are what control a given desired image/video width in layout, except when they are at their maximum width already (100%). <strong>Images/video width and height attribute values should <em>never</em> be used.</strong></p>
                         <h3>Images</h3>
-                        <p><img alt="Alt text" src="https://placehold.it/160/999999/333333" title="Alt text" /></p>
+                        <p><img alt="160×160 Image Example" src="https://default-theme.textpattern.com/images/1.png" title="160×160 Image Example"></p>
                         <h3>Images with links</h3>
-                        <p><a href="#" title="Title text"><img src="https://placehold.it/160/999999/333333" alt="Alt text"></a></p>
+                        <p><a href="#" title="Title text"><img alt="160×160 Image Example" src="https://default-theme.textpattern.com/images/1.png" title="160×160 Image Example"></a></p>
                         <h3>Figures</h3>
                         <figure>
-                            <img src="https://placehold.it/480x240/999999/333333" alt="Alt text">
+                            <img alt="480×240 Image Example" src="https://default-theme.textpattern.com/images/2.png" title="480×240 Image Example">
+
                             <figcaption>Figcaption content</figcaption>
                         </figure>
                         <h3>Left ranged image</h3>
-                        <p>Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. <img alt="160x160px placeholder" class="align-left" src="https://placehold.it/160/999999/333333" title="160x160px placeholder" /> Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.</p>
+                        <p>Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. <img alt="160×160 Image Example" class="align-left" src="https://default-theme.textpattern.com/images/1.png" title="160×160 Image Example"> Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.</p>
                         <h3>Right ranged image</h3>
-                        <p>Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. <img alt="160x160px placeholder" class="align-right" src="https://placehold.it/160/999999/333333" title="160x160px placeholder" /> Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.</p>
+                        <p>Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. <img alt="160×160 Image Example" class="align-right" src="https://default-theme.textpattern.com/images/1.png" title="160×160 Image Example"> Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.</p>
                         <h3>Centred image</h3>
-                        <p>Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. <img alt="160x160px placeholder" class="align-center" src="https://placehold.it/160/999999/333333" title="160x160px placeholder" /> Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.</p>
-                        <h3><span class="caps">SVG</span></h3>
-                        <svg width="100px" height="100px">
-                            <circle cx="100" cy="100" r="100" fill="#999999"/>
-                        </svg>
+                        <p>Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. <img alt="160×160 Image Example" class="align-center" src="https://default-theme.textpattern.com/images/1.png" title="160×160 Image Example"> Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.</p>
                         <h3>Videos</h3>
-                        <video>
-                            <source type="video/mp4" src="https://clips.vorwaerts-gmbh.de/VfE_html5.mp4">
-                            <source type="video/webm" src="https://clips.vorwaerts-gmbh.de/VfE.webm">
+                        <video controls poster="https://default-theme.textpattern.com/video/big_buck_bunny.jpg">
+                            <source type="video/mp4" src="https://default-theme.textpattern.com/video/big_buck_bunny.mp4">
+                            <source type="video/webm" src="https://default-theme.textpattern.com/video/big_buck_bunny.webm">
+                            I’m sorry, your browser doesn’t support HTML5 video in MP4 with H.264 or WebM with VP8/VP9.
                         </video>
-                        <h2>Details / summary</h2>
-                        <details>
-                            <summary>More info</summary>
-                            <p>Additional information</p>
-                            <ul>
-                                <li>Point 1</li>
-                                <li>Point 2</li>
-                            </ul>
-                        </details>
+                        <audio controls>
+                            <source type="audio/mp3" src="https://default-theme.textpattern.com/audio/moonlight_reprise.mp3">
+                            <source type="audio/ogg; codecs=vorbis" src="https://default-theme.textpattern.com/audio/moonlight_reprise.ogg">
+                            I’m sorry, your browser doesn't support HTML5 audio.
+                        </audio>
+                        <p><small>“Moonlight Reprise” from “Irsen’s Tale” by Kai Engel. License: <a href="https://creativecommons.org/licenses/by-nc/3.0/">Attribution-NonCommercial 3.0 International License</a></small></p>
                         <h2>Lists</h2>
                         <ol>
                         	<li>this is an example</li>
@@ -180,14 +177,15 @@
                             </li>
                         </ul>
                         <dl>
-                            <dt>This is a definition list term 1</dt>
-                            <dd>Definition of term 1 here</dd>
+                        	<dt>This is a definition list term 1</dt>
+                        	<dd>Definition of term 1 here</dd>
                         	<dd>Another definition of term 1
-                        	<dl>
-                        		<dt>A sub term</dt>
-                        		<dd>With</dd>
-                        		<dd>Subs</dd>
-                        	</dl></dd>
+                            	<dl>
+                            		<dt>A sub term</dt>
+                            		<dd>With</dd>
+                            		<dd>Subs</dd>
+                            	</dl>
+                            </dd>
                         </dl>
                         <h2>Tables</h2>
                         <p>Table with <code>&lt;caption&gt;</code>, <code>&lt;thead&gt;</code> and <code>&lt;tfoot&gt;</code> included.</p>
@@ -200,64 +198,58 @@
                         			<th>Government </th>
                         		</tr>
                         	</thead>
+                        	<tbody>
+                        		<tr>
+                        			<td>Diso</td>
+                        			<td>4.1 B</td>
+                        			<td>Democracy</td>
+                        		</tr>
+                        		<tr>
+                        			<td>Lave</td>
+                        			<td>2.5 B</td>
+                        			<td>Dictatorship</td>
+                        		</tr>
+                        		<tr>
+                        			<td>Leesti</td>
+                        			<td>5.0 B</td>
+                        			<td>Corporate State</td>
+                        		</tr>
+                        		<tr>
+                        			<td>Reorte</td>
+                        			<td>3.1 B </td>
+                        			<td>Dictatorship</td>
+                        		</tr>
+                        		<tr>
+                        			<td>Zaonce</td>
+                        			<td>5.3 B</td>
+                        			<td>Corporate State</td>
+                        		</tr>
+                        	</tbody>
                         	<tfoot>
                         		<tr>
                         			<td colspan="3">This is the tfoot </td>
                         		</tr>
                         	</tfoot>
-                        	<tbody>
-                        		<tr>
-                        			<td> Diso </td>
-                        			<td> 4.1 B </td>
-                        			<td> Democracy </td>
-                        		</tr>
-                        		<tr>
-                        			<td> Lave </td>
-                        			<td> 2.5 B </td>
-                        			<td> Dictatorship </td>
-                        		</tr>
-                        		<tr>
-                        			<td> Leesti </td>
-                        			<td> 5.0 B </td>
-                        			<td> Corporate State </td>
-                        		</tr>
-                        		<tr>
-                        			<td> Reorte </td>
-                        			<td> 3.1 B </td>
-                        			<td> Dictatorship </td>
-                        		</tr>
-                        		<tr>
-                        			<td> Zaonce </td>
-                        			<td> 5.3 B </td>
-                        			<td> Corporate State </td>
-                        		</tr>
-                        	</tbody>
                         </table>
                         <h2>Forms</h2>
                         <form action="#" method="post" enctype="multipart/form-data" onsubmit="return false">
                             <p>
-                                <input id="test_checkbox_1" name="test_checkbox_1" type="checkbox">
+                                <input type="checkbox" id="test_checkbox_1" name="test_checkbox_1" checked>
                                 <label for="test_checkbox_1">Test checkbox 1</label>
-                                &nbsp;
-                                &nbsp;
-                                <input id="test_checkbox_2" name="test_checkbox_2" type="checkbox">
+                                <input type="checkbox" id="test_checkbox_2" name="test_checkbox_2">
                                 <label for="test_checkbox_2">Test checkbox 2</label>
-                                &nbsp;
-                                &nbsp;
-                                <input id="test_checkbox_3" name="test_checkbox_3" type="checkbox">
-                                <label for="test_checkbox_3">Test checkbox 3</label>
+                                <input type="checkbox" id="test_checkbox_3" name="test_checkbox_3" disabled>
+                                <label for="test_checkbox_3">Test checkbox 3 (disabled)</label>
+                                <input type="checkbox" id="test_checkbox_4" name="test_checkbox_4" disabled checked>
+                                <label for="test_checkbox_4">Test checkbox 4 (disabled checked)</label>
                             </p>
                             <p>
-                                <input id="test_radio_1" name="test_radio_group" type="radio">
+                                <input type="radio" id="test_radio_1" name="test_radio_group" checked>
                                 <label for="test_radio_1">Test radio 1</label>
-                                &nbsp;
-                                &nbsp;
-                                <input id="test_radio_2" name="test_radio_group" type="radio">
+                                <input type="radio" id="test_radio_2" name="test_radio_group">
                                 <label for="test_radio_2">Test radio 2</label>
-                                &nbsp;
-                                &nbsp;
-                                <input id="test_radio_3" name="test_radio_group" type="radio">
-                                <label for="test_radio_3">Test radio 3</label>
+                                <input type="radio" id="test_radio_3" name="test_radio_group" disabled>
+                                <label for="test_radio_3">Test radio 3 (disabled)</label>
                             </p>
                             <p>
                                 <label for="select_dd">Inline form elements</label><br>
@@ -304,8 +296,12 @@
                                 <input type="button" value="Hello" disabled>
                             </p>
                             <p>
-                                <label for="select_multi">Select multiple</label>
-                                <br>
+                                <label for="file_upload">File upload</label><br>
+                                <input type="file" id="file_upload" name="file_upload" accept="image/*" multiple>
+                                <input type="button" value="Upload">
+                            </p>
+                            <p>
+                                <label for="select_multi">Select multiple</label><br>
                                 <select id="select_multi" name="select_multi" multiple="multiple" size="10">
                                     <optgroup label="Group 1">
                                         <option value="1">Some text goes here</option>
@@ -325,28 +321,55 @@
                                 </select>
                             </p>
                             <p>
-                                <label for="textarea">Textarea</label>
-                                <br>
+                                <label for="textarea">Textarea</label><br>
                                 <textarea id="textarea" name="textarea" rows="5" placeholder="This is an example of HTML5 placeholder text."></textarea>
                             </p>
                             <p>
-                                <label for="url">URL</label>
-                                <br>
-                                <input id="url" name="url" type="url">
+                                <label for="color">Colour</label><br>
+                                <input type="color" id="color" name="color" value="#cc0000">
                             </p>
                             <p>
-                                <label for="email">Email</label>
-                                <br>
+                                <label for="date">Date</label><br>
+                                <input id="date" name="date" type="date">
+                            </p>
+                            <p>
+                                <label for="datetime-local">Datetime local</label><br>
+                                <input id="datetime-local" name="datetime-local" type="datetime-local">
+                            </p>
+                            <p>
+                                <label for="email">Email</label><br>
                                 <input id="email" name="email" type="email" placeholder="name@example.com">
                             </p>
                             <p>
-                                <label for="text">Text</label>
-                                <br>
+                                <label for="month">Month</label><br>
+                                <input id="month" name="month" type="month">
+                            </p>
+                            <p>
+                                <label for="number">Number</label><br>
+                                <input id="number" name="number" type="number" min="0" max="999" step="1">
+                            </p>
+                            <p>
+                                <label for="password">Password</label><br>
+                                <input id="password" name="password" type="password">
+                            </p>
+                            <p>
+                                <label for="range">Range</label><br>
+                                <input id="range" name="range" type="range">
+                            </p>
+                            <p>
+                                <label for="search">Search</label><br>
+                                <input id="search" name="search" type="search">
+                            </p>
+                            <p>
+                                <label for="tel">Tel (phone)</label><br>
+                                <input id="tel" name="tel" type="tel">
+                            </p>
+                            <p>
+                                <label for="text">Text <abbr class="required" title="Required">*</abbr></label><br>
                                 <input id="text" name="text" type="text">
                             </p>
                             <p>
-                                <label for="text-data">Text with data list</label>
-                                <br>
+                                <label for="text-data">Text with data list</label><br>
                                 <input id="text-data" name="text-data" type="text" list="text-data-list">
                                 <datalist id="text-data-list">
                                     <option value="Afghanistan">
@@ -357,49 +380,16 @@
                                 </datalist>
                             </p>
                             <p>
-                                <label for="datetime-local">Datetime local</label>
-                                <br>
-                                <input id="datetime-local" name="datetime-local" type="datetime-local">
+                                <label for="time">Time</label><br>
+                                <input id="time" name="time" type="time">
                             </p>
                             <p>
-                                <label for="number">Number</label>
-                                <br>
-                                <input id="number" name="number" type="number" min="0" max="999" step="1">
+                                <label for="url">URL</label><br>
+                                <input id="url" name="url" type="url">
                             </p>
                             <p>
-                                <label for="tel">Tel (phone)</label>
-                                <br>
-                                <input id="tel" name="tel" type="tel">
-                            </p>
-                            <p>
-                                <label for="datetime">Datetime</label>
-                                <br>
-                                <input id="datetime" name="datetime" type="datetime">
-                            </p>
-                            <p>
-                                <label for="date">Date</label>
-                                <br>
-                                <input id="date" name="date" type="date">
-                            </p>
-                            <p>
-                                <label for="month">Month</label>
-                                <br>
-                                <input id="month" name="month" type="month">
-                            </p>
-                            <p>
-                                <label for="search">Search</label>
-                                <br>
-                                <input id="search" name="search" type="search">
-                            </p>
-                            <p>
-                                <label for="range">Range</label>
-                                <br>
-                                <input id="range" name="range" type="range">
-                            </p>
-                            <p>
-                                <label for="color">Colour</label>
-                                <br>
-                                <input id="color" name="color" type="color" value="#cc0000">
+                                <label for="url">Week</label><br>
+                                <input id="week" name="week" type="week">
                             </p>
                             <p>
                                 <input type="submit" value="Input - Submit">
@@ -520,7 +510,7 @@
                             <a rel="external" href="https://textpattern.com/">Textpattern website</a>
                         </li>
                         <li>
-                            <a rel="external" href="https://docs.textpattern.io/">Textpattern user documentation</a>
+                            <a rel="external" href="https://docs.textpattern.com/">Textpattern user documentation</a>
                         </li>
                         <li>
                             <a rel="external" href="https://textpattern.com/github">Textpattern on GitHub</a>
