@@ -120,7 +120,7 @@ Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulp
 
 h3. Videos
 
-notextile. <video controls>
+notextile. <video controls poster="https://default-theme.textpattern.com/video/big_buck_bunny.jpg">
     <source type="video/mp4" src="https://default-theme.textpattern.com/video/big_buck_bunny.mp4">
     <source type="video/webm" src="https://default-theme.textpattern.com/video/big_buck_bunny.webm">
 </video>
