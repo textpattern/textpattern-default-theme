@@ -133,7 +133,7 @@ h3. Audio
 notextile. <audio controls>
     <source type="audio/mp3" src="https://default-theme.textpattern.com/audio/moonlight_reprise.mp3">
     <source type="audio/ogg; codecs=vorbis" src="https://default-theme.textpattern.com/audio/moonlight_reprise.ogg">
-    I’m sorry, your browser doesn't support HTML5 audio.
+    I’m sorry, your browser doesn’t support HTML5 audio.
 </audio>
 
 <small>"Moonlight Reprise" from "Irsen's Tale" by Kai Engel. License: "Attribution-NonCommercial 3.0 International License":https://creativecommons.org/licenses/by-nc/3.0/</small>
