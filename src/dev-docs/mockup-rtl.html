@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>My site: Welcome to your site</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&amp;subset=latin-ext">
-    <link rel="stylesheet" href="../../dist/four-point-seven/styles/default.css" />
+    <link rel="stylesheet" href="../../dist/four-point-seven/styles/default.css">
+    <meta name="disabled-adaptations" content="watch">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
 </head>
 <body class="articles-page" itemscope itemtype="https://schema.org/WebPage">
@@ -253,7 +254,7 @@
                             </p>
                             <p>
                                 <label for="select_dd">Inline form elements</label><br>
-                                <select id="select_dd" name="select_dd">
+                                <select id="select_dd" name="select_dd" aria-label="Inline select example">
                                     <optgroup label="Group 1">
                                         <option value="1">Some text goes here</option>
                                         <option value="2">Another choice could be here</option>
@@ -270,7 +271,7 @@
                                         <option value="9">Yet another item to be chosen</option>
                                     </optgroup>
                                 </select>
-                                <input id="text_inline" name="text_inline" type="text">
+                                <input id="text_inline" name="text_inline" type="text" aria-label="Inline input example">
                                 <input type="button" value="Hello">
                             </p>
                             <p>
@@ -297,12 +298,12 @@
                             </p>
                             <p>
                                 <label for="file_upload">File upload</label><br>
-                                <input type="file" id="file_upload" name="file_upload" accept="image/*" multiple>
+                                <input type="file" id="file_upload" name="file_upload" accept="image/*" multiple aria-label="File upload">
                                 <input type="button" value="Upload">
                             </p>
                             <p>
                                 <label for="select_multi">Select multiple</label><br>
-                                <select id="select_multi" name="select_multi" multiple="multiple" size="10">
+                                <select id="select_multi" name="select_multi" multiple="multiple" size="10" aria-label="Select multiple">
                                     <optgroup label="Group 1">
                                         <option value="1">Some text goes here</option>
                                         <option value="2">Another choice could be here</option>
@@ -322,43 +323,43 @@
                             </p>
                             <p>
                                 <label for="textarea">Textarea</label><br>
-                                <textarea id="textarea" name="textarea" rows="5" placeholder="This is an example of HTML5 placeholder text."></textarea>
+                                <textarea id="textarea" name="textarea" rows="5" placeholder="This is an example of HTML5 placeholder text." aria-label="Textarea"></textarea>
                             </p>
                             <p>
                                 <label for="color">Colour</label><br>
-                                <input type="color" id="color" name="color" value="#cc0000">
+                                <input type="color" id="color" name="color" value="#cc0000" aria-label="Colour">
                             </p>
                             <p>
                                 <label for="date">Date</label><br>
-                                <input id="date" name="date" type="date">
+                                <input id="date" name="date" type="date" aria-label="Date">
                             </p>
                             <p>
                                 <label for="datetime-local">Datetime local</label><br>
-                                <input id="datetime-local" name="datetime-local" type="datetime-local">
+                                <input id="datetime-local" name="datetime-local" type="datetime-local" aria-label="Datetime local">
                             </p>
                             <p>
                                 <label for="email">Email</label><br>
-                                <input id="email" name="email" type="email" placeholder="name@example.com">
+                                <input id="email" name="email" type="email" placeholder="name@example.com" aria-label="Email">
                             </p>
                             <p>
                                 <label for="month">Month</label><br>
-                                <input id="month" name="month" type="month">
+                                <input id="month" name="month" type="month" aria-label="Month">
                             </p>
                             <p>
                                 <label for="number">Number</label><br>
-                                <input id="number" name="number" type="number" min="0" max="999" step="1">
+                                <input id="number" name="number" type="number" min="0" max="999" step="1" aria-label="Number">
                             </p>
                             <p>
                                 <label for="password">Password</label><br>
-                                <input id="password" name="password" type="password">
+                                <input id="password" name="password" type="password" aria-label="Password">
                             </p>
                             <p>
                                 <label for="range">Range</label><br>
-                                <input id="range" name="range" type="range">
+                                <input id="range" name="range" type="range" aria-label="Range">
                             </p>
                             <p>
                                 <label for="search">Search</label><br>
-                                <input id="search" name="search" type="search">
+                                <input id="search" name="search" type="search" aria-label="Search">
                             </p>
                             <p>
                                 <label for="tel">Tel (phone)</label><br>
@@ -366,11 +367,11 @@
                             </p>
                             <p>
                                 <label for="text">Text <abbr class="required" title="Required">*</abbr></label><br>
-                                <input id="text" name="text" type="text">
+                                <input id="text" name="text" type="text" required aria-label="Text">
                             </p>
                             <p>
                                 <label for="text-data">Text with data list</label><br>
-                                <input id="text-data" name="text-data" type="text" list="text-data-list">
+                                <input id="text-data" name="text-data" type="text" list="text-data-list" aria-label="Text with data list">
                                 <datalist id="text-data-list">
                                     <option value="Afghanistan">
                                     <option value="Albania">
@@ -381,15 +382,15 @@
                             </p>
                             <p>
                                 <label for="time">Time</label><br>
-                                <input id="time" name="time" type="time">
+                                <input id="time" name="time" type="time" aria-label="Time">
                             </p>
                             <p>
                                 <label for="url">URL</label><br>
-                                <input id="url" name="url" type="url">
+                                <input id="url" name="url" type="url" aria-label="URL">
                             </p>
                             <p>
                                 <label for="url">Week</label><br>
-                                <input id="week" name="week" type="week">
+                                <input id="week" name="week" type="week" aria-label="Week">
                             </p>
                             <p>
                                 <input type="submit" value="Input - Submit">
