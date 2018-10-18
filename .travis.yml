@@ -7,3 +7,5 @@ sudo: false
 cache:
   directories:
   - "$HOME/.npm"
+script:
+  - npm run build
