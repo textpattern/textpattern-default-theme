@@ -1,7 +1,7 @@
 # Textpattern CMS default theme
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/textpattern/textpattern-default-theme.svg)](https://greenkeeper.io/)
-[![Build Status](https://img.shields.io/travis/textpattern/textpattern-default-theme.svg)](https://travis-ci.org/textpattern/textpattern-default-theme)
+[![Build Status](https://travis-ci.org/textpattern/textpattern-default-theme.svg)](https://travis-ci.org/textpattern/textpattern-default-theme)
 
 [Demo](https://default-theme.textpattern.com/)
 
