@@ -27,7 +27,7 @@
   "devDependencies": {
     "autoprefixer": "9.2.1",
     "clean-webpack-plugin": "0.1.19",
-    "copy-webpack-plugin": "4.5.3",
+    "copy-webpack-plugin": "4.5.4",
     "cross-env": "5.2.0",
     "css-loader": "1.0.0",
     "dart-sass": "1.14.3",
