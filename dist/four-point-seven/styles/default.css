@@ -1167,6 +1167,8 @@ textarea:focus:invalid {
 
   /**
    * 1. Remove browser-specific default styling.
+   * 2. Improve usability and consistency of cursor style between image-type
+   *    `input` and others.
    */
   button,
 [type=button],
@@ -1185,12 +1187,13 @@ textarea:focus:invalid {
     color: #333333;
     font-weight: normal;
     text-align: center;
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
     /* 1 */
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
     box-shadow: 0 2px 0 #acacac;
+    /* 2 */
+    cursor: pointer;
   }
   button:hover,
 [type=button]:hover,

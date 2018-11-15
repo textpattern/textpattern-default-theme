@@ -15,6 +15,8 @@ button {
 
 /**
  * 1. Remove browser-specific default styling.
+ * 2. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
  */
 
 button,
@@ -34,10 +36,11 @@ button,
     color: $color-text-button;
     font-weight: normal;
     text-align: center;
-    text-shadow: $text-shadow-light;
     /* 1 */
     appearance: none;
     box-shadow: 0 2px 0 $color-button-shadow;
+    /* 2 */
+    cursor: pointer;
 
     &:hover {
         @include gradient-linear(lighten($color-button-gradient-from, 4%), lighten($color-button-gradient-to, 4%));
