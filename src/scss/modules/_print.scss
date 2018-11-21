@@ -31,6 +31,14 @@ body {
 }
 
 /**
+ * Make sure links are not underlined.
+ */
+
+a {
+    text-decoration: none;
+}
+
+/**
  * Visually separate header from body.
  */
 
@@ -60,14 +68,6 @@ form,
 .complementary-content,
 .paginator {
     display: none;
-}
-
-/**
- * Make sure links are not underlined.
- */
-
-a {
-    text-decoration: none;
 }
 
 /**
@@ -330,18 +330,6 @@ caption {
 }
 
 /**
- * Display table head across multi-page tables.
- */
-
-thead {
-    display: table-header-group;
-
-    th {
-        border-top: 1pt solid $color-text-print;
-    }
-}
-
-/**
  * Avoid table rows breaking across multiple pages.
  */
 
@@ -357,6 +345,18 @@ th,
 td {
     padding: 4pt 8pt;
     border-bottom: 1pt solid $color-text-print;
+}
+
+/**
+ * Display table head across multi-page tables.
+ */
+
+thead {
+    display: table-header-group;
+
+    th {
+        border-top: 1pt solid $color-text-print;
+    }
 }
 
 /**

@@ -34,6 +34,14 @@ rules:
   # Require a single space after at-rule names.
   at-rule-name-space-after: always
 
+  # Disallow unknown at-rules.
+  at-rule-no-unknown:
+    - true
+    -
+      ignoreAtRules:
+        - include
+        - mixin
+
   # Disallow vendor prefixes for at-rules.
   at-rule-no-vendor-prefix: true
 
@@ -42,6 +50,9 @@ rules:
 
   # Require a single space or disallow whitespace before the semicolons of at rules.
   at-rule-semicolon-space-before: never
+
+  # Specify a whitelist of allowed at-rules.
+  #at-rule-whitelist:
 
   # Require or disallow an empty line before the closing brace of blocks.
   block-closing-brace-empty-line-before: never
@@ -52,6 +63,9 @@ rules:
   # Require a newline or disallow whitespace before the closing brace of blocks.
   block-closing-brace-newline-before: always-multi-line
 
+  # Require a single space or disallow whitespace after the closing brace of blocks.
+  block-closing-brace-space-after: always-single-line
+
   # Require a single space or disallow whitespace before the closing brace of blocks.
   block-closing-brace-space-before: always-single-line
 
@@ -60,6 +74,9 @@ rules:
 
   # equire a newline after the opening brace of blocks.
   block-opening-brace-newline-after: always-multi-line
+
+  #Require a newline or disallow whitespace before the opening brace of blocks.
+  block-opening-brace-newline-before: never-single-line
 
   # Require a single space or disallow whitespace after the opening brace of blocks.
   block-opening-brace-space-after: always-single-line
@@ -73,11 +90,17 @@ rules:
   # Specify short or long notation for hexadecimal color values.
   color-hex-length: long
 
+  # Require (where possible) or disallow named colors.
+  color-named: never
+
+  # Disallow hex colors.
+  #color-no-hex: true
+
   # Disallow invalid hexadecimal colors.
   color-no-invalid-hex: true
 
-  # Require (where possible) or disallow named colors.
-  color-named: never
+  # Require or disallow an empty line before comments.
+  #comment-empty-line-before:
 
   # Disallow empty comments.
   comment-no-empty: true
@@ -85,8 +108,17 @@ rules:
   # Require or disallow whitespace on the inside of comment markers.
   comment-whitespace-inside: always
 
+  # Specify a blacklist of disallowed words within comments.
+  #comment-word-blacklist:
+
+  # Specify a pattern for custom media query names.
+  #custom-media-pattern:
+
   # Require or disallow an empty line before custom properties (Autofixable).
   custom-property-empty-line-before: never
+
+  # Specify a pattern for custom properties.
+  #custom-property-pattern:
 
   # Require a single space or disallow whitespace after the bang of declarations.
   declaration-bang-space-after: never
@@ -103,9 +135,6 @@ rules:
   # Disallow shorthand properties that override related longhand properties.
   declaration-block-no-shorthand-property-overrides: true
 
-  # Limit the number of declaration within single line declaration blocks.
-  declaration-block-single-line-max-declarations: 1
-
   # Require a newline or disallow whitespace after the semicolons of declaration blocks.
   declaration-block-semicolon-newline-after: always-multi-line
 
@@ -117,6 +146,9 @@ rules:
 
   # Require a single space or disallow whitespace before the semicolons of declaration blocks.
   declaration-block-semicolon-space-before: never
+
+  # Limit the number of declaration within single line declaration blocks.
+  declaration-block-single-line-max-declarations: 1
 
   # Require or disallow a trailing semicolon within declaration blocks.
   declaration-block-trailing-semicolon: always
@@ -130,14 +162,38 @@ rules:
   # Require a single space or disallow whitespace before the colon of declarations.
   declaration-colon-space-before: never
 
+  # Require or disallow an empty line before declarations.
+  #declaration-empty-line-before:
+
+  # Disallow `!important` within declarations.
+  #declaration-no-important:
+
+  # Specify a blacklist of disallowed property and unit pairs within declarations.
+  #declaration-property-unit-blacklist:
+
+  # Specify a whitelist of allowed property and unit pairs within declarations.
+  #declaration-property-unit-whitelist:
+
+  # Specify a blacklist of disallowed property and value pairs within declarations.
+  #declaration-property-value-blacklist:
+
+  # Specify a whitelist of allowed property and value pairs within declarations.
+  #declaration-property-value-whitelist:
+
   # Specify whether or not quotation marks should be used around font family names.
   font-family-name-quotes: always-where-recommended
 
   # Disallow duplicate font family names.
   font-family-no-duplicate-names: true
 
+  # Disallow missing generic families in lists of font family names.
+  font-family-no-missing-generic-family-keyword: true
+
   # Require numeric or named (where possible) `font-weight` values.
   font-weight-notation: named-where-possible
+
+  # Specify a blacklist of disallowed functions.
+  #function-blacklist:
 
   # Disallow an unspaced operator within `calc` functions.
   function-calc-no-unspaced-operator: true
@@ -175,6 +231,15 @@ rules:
   # Require or disallow quotes for URLs.
   function-url-quotes: always
 
+  # Specify a blacklist of disallowed URL schemes.
+  #function-url-scheme-blacklist:
+
+  # Specify a whitelist of allowed URL schemes.
+  #function-url-scheme-whitelist:
+
+  # Specify a whitelist of allowed functions.
+  #function-whitelist:
+
   # Require or disallow whitespace after functions.
   function-whitespace-after: always
 
@@ -184,11 +249,24 @@ rules:
   # Disallow `!important` within keyframe declarations.
   keyframe-declaration-no-important: true
 
+  # Specify a pattern for keyframe names.
+  #keyframes-name-pattern:
+
   # Disallow units for zero lengths.
   length-zero-no-unit: true
 
+  # Specify Unix or Windows linebreaks.
+  linebreaks: unix
+
   # Limit the number of adjacent empty lines.
   max-empty-lines: 3
+
+  # Limit the length of a line.
+  max-line-length:
+    - 80
+    -
+      ignore:
+        - non-comments
 
   # Limit the depth of nesting.
   max-nesting-depth: 4
@@ -199,6 +277,9 @@ rules:
   # Require a single space or disallow whitespace before the colon in media features.
   media-feature-colon-space-before: never
 
+  # Specify a blacklist of disallowed media feature names.
+  #media-feature-name-blacklist:
+
   # Specify lowercase or uppercase for media feature names.
   media-feature-name-case: lower
 
@@ -207,6 +288,12 @@ rules:
 
   # Disallow vendor prefixes for media feature names.
   media-feature-name-no-vendor-prefix: true
+
+  # Specify a whitelist of allowed media feature name and value pairs.
+  #media-feature-name-value-whitelist:
+
+  # Specify a whitelist of allowed media feature names.
+  #media-feature-name-whitelist:
 
   # Require a single space or disallow whitespace on the inside of the parentheses within media features.
   media-feature-parentheses-space-inside: never
@@ -229,8 +316,17 @@ rules:
   # Require a single space or disallow whitespace before the commas of media query lists.
   media-query-list-comma-space-before: never
 
+  # Disallow selectors of lower specificity from coming after overriding selectors of higher specificity.
+  #no-descending-specificity: true
+
   # Disallow duplicate `@import` rules within a stylesheet.
   no-duplicate-at-import-rules: true
+
+  # Disallow duplicate selectors within a stylesheet.
+  #no-duplicate-selectors: true
+
+  # Disallow empty first lines.
+  no-empty-first-line: true
 
   # Disallow empty sources.
   no-empty-source: true
@@ -247,6 +343,9 @@ rules:
   # Disallow missing end-of-source newlines.
   no-missing-end-of-source-newline: true
 
+  # Disallow unknown animations.
+  no-unknown-animations: true
+
   # Require or disallow a leading zero for fractional numbers less than 1.
   number-leading-zero: always
 
@@ -256,14 +355,37 @@ rules:
   # Disallow trailing zeros in numbers.
   number-no-trailing-zeros: true
 
+  # Specify a blacklist of disallowed properties.
+  #property-blacklist:
+
   # Specify lowercase or uppercase for properties.
   property-case: lower
 
   # Disallow unknown properties.
   property-no-unknown: true
 
+  # Disallow vendor prefixes for properties.
+  property-no-vendor-prefix:
+    - true
+    -
+      ignoreProperties:
+        - appearance
+
+  # Specify a whitelist of allowed properties.
+  #property-whitelist:
+
+  # Require or disallow an empty line before rules.
+  rule-empty-line-before:
+    - always-multi-line
+    -
+      except:
+        - first-nested
+
   # Require a single space or disallow whitespace on the inside of the brackets within attribute selectors.
   selector-attribute-brackets-space-inside: never
+
+  # Specify a blacklist of disallowed attribute operators.
+  #selector-attribute-operator-blacklist:
 
   # Require a single space or disallow whitespace after operators within attribute selectors.
   selector-attribute-operator-space-after: never
@@ -271,8 +393,17 @@ rules:
   # Require a single space or disallow whitespace before operators within attribute selectors.
   selector-attribute-operator-space-before: never
 
+  #Specify a whitelist of allowed attribute operators.
+  #selector-attribute-operator-whitelist:
+
   # Require or disallow quotes for attribute values.
   selector-attribute-quotes: always
+
+  # Specify a pattern for class selectors.
+  #selector-class-pattern:
+
+  # Specify a blacklist of disallowed combinators.
+  #selector-combinator-blacklist:
 
   # Require a single space or disallow whitespace after the combinators of selectors.
   selector-combinator-space-after: always
@@ -280,8 +411,14 @@ rules:
   # Require a single space or disallow whitespace before the combinators of selectors.
   selector-combinator-space-before: always
 
+  # Specify a whitelist of allowed combinators.
+  #selector-combinator-whitelist:
+
   # Disallow non-space characters for descendant combinators of selectors.
   selector-descendant-combinator-no-non-space: true
+
+  # Specify a pattern for ID selectors.
+  #selector-id-pattern:
 
   # Require a newline or disallow whitespace after the commas of selector lists.
   selector-list-comma-newline-after: always
@@ -313,14 +450,29 @@ rules:
   # Limit the number of id selectors in a selector.
   selector-max-id: 1
 
+  # Limit the number of pseudo-classes in a selector.
+  selector-max-pseudo-class: 2
+
+  # Limit the specificity of selectors.
+  selector-max-specificity: 1,2,1
+
   # Limit the number of type in a selector.
   selector-max-type: 3
 
   # Limit the number of universal selectors in a selector.
   selector-max-universal: 1
 
+  # Specify a pattern for the selectors of rules nested within rules.
+  #selector-nested-pattern:
+
+  # Disallow qualifying a selector by type.
+  #selector-no-qualifying-type: true
+
   # Disallow vendor prefixes for selectors.
   selector-no-vendor-prefix: true
+
+  # Specify a blacklist of disallowed pseudo-class selectors.
+  #selector-pseudo-class-blacklist:
 
   # Specify lowercase or uppercase for pseudo-class selectors.
   selector-pseudo-class-case: lower
@@ -331,6 +483,12 @@ rules:
   # Require a single space or disallow whitespace on the inside of the parentheses within pseudo-class selectors.
   selector-pseudo-class-parentheses-space-inside: never
 
+  # Specify a whitelist of allowed pseudo-class selectors.
+  #selector-pseudo-class-whitelist:
+
+  # Specify a blacklist of disallowed pseudo-element selectors.
+  #selector-pseudo-element-blacklist:
+
   # Specify lowercase or uppercase for pseudo-element selectors.
   selector-pseudo-element-case: lower
 
@@ -339,6 +497,9 @@ rules:
 
   # Disallow unknown pseudo-element selectors.
   selector-pseudo-element-no-unknown: true
+
+  # Specify a whitelist of allowed pseudo-element selectors.
+  #selector-pseudo-element-whitelist:
 
   # Specify lowercase or uppercase for type selector.
   selector-type-case: lower
@@ -349,20 +510,29 @@ rules:
   # Disallow redundant values in shorthand properties.
   shorthand-property-no-redundant-values: true
 
-  # Specify single or double quotes around strings.
-  string-quotes: double
-
   # Disallow (unescaped) newlines in strings.
   string-no-newline: true
 
+  # Specify single or double quotes around strings.
+  string-quotes: double
+
   # Specify the minimum number of milliseconds for time values.
   time-min-milliseconds: 100
+
+  # Specify a blacklist of disallowed units.
+  #unit-blacklist:
 
   # Specify lowercase or uppercase for units.
   unit-case: lower
 
   # Disallow unknown units.
   unit-no-unknown: true
+
+  # Specify a whitelist of allowed units.
+  #unit-whitelist:
+
+  # Specify lowercase or uppercase for keywords values.
+  #value-keyword-case: lower
 
   # Require a newline or disallow whitespace after the commas of value lists.
   value-list-comma-newline-after: never-multi-line
@@ -590,6 +760,12 @@ rules:
 
   # Disallow Sass variables that are used without interpolation with CSS features that use custom identifiers.
   scss/dollar-variable-no-missing-interpolation: true
+
+  # Disallow duplicate dollar variables within a stylesheet.
+  scss/no-duplicate-dollar-variables: true
+
+  # Require a media feature value be a `$`-variable or disallow `$`-variables in media feature values.
+  scss/media-feature-value-dollar-variable: always
 
   # Disallow linebreaks after Sass operators.
   scss/operator-no-newline-after: true

@@ -493,7 +493,8 @@ samp {
   }
 
   /**
-   * Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+   * Prevent `sub` and `sup` elements from affecting the line height in all
+   * browsers.
    */
   sub,
 sup.footnote,
@@ -1434,6 +1435,13 @@ textarea:focus:invalid {
   }
 
   /**
+   * Make sure links are not underlined.
+   */
+  a {
+    text-decoration: none;
+  }
+
+  /**
    * Visually separate header from body.
    */
   .site-header {
@@ -1460,13 +1468,6 @@ form,
 .complementary-content,
 .paginator {
     display: none;
-  }
-
-  /**
-   * Make sure links are not underlined.
-   */
-  a {
-    text-decoration: none;
   }
 
   /**
@@ -1705,16 +1706,6 @@ var {
   }
 
   /**
-   * Display table head across multi-page tables.
-   */
-  thead {
-    display: table-header-group;
-  }
-  thead th {
-    border-top: 1pt solid #000000;
-  }
-
-  /**
    * Avoid table rows breaking across multiple pages.
    */
   tr {
@@ -1728,6 +1719,16 @@ var {
 td {
     padding: 4pt 8pt;
     border-bottom: 1pt solid #000000;
+  }
+
+  /**
+   * Display table head across multi-page tables.
+   */
+  thead {
+    display: table-header-group;
+  }
+  thead th {
+    border-top: 1pt solid #000000;
   }
 
   /**
