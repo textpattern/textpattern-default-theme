@@ -27,6 +27,8 @@ legend {
     /* 1 */
     display: table;
     /* 1 */
+    box-sizing: border-box;
+    /* 1 */
     max-width: 100%;
     /* 2 */
     padding: 0;
@@ -34,8 +36,6 @@ legend {
     color: inherit;
     /* 1 */
     white-space: normal;
-    /* 1 */
-    box-sizing: border-box;
 }
 
 /**
@@ -57,6 +57,7 @@ input,
 optgroup,
 select,
 textarea {
+    box-sizing: border-box;
     /* 1 */
     max-width: 100%;
     /* 2 */
@@ -66,7 +67,6 @@ textarea {
     /* 3 */
     font-size: 1rem;
     line-height: 1.375; // 22px / 16px
-    box-sizing: border-box;
     vertical-align: baseline;
 }
 
@@ -215,9 +215,9 @@ optgroup {
 }
 
 /**
- * 1. Restrict to vertical resizing to prevent layout breakage.
- * 2. Remove default vertical scrollbar in IE 11.
- * 3. Remove unwanted space below `textarea` in Safari, Chrome, Opera.
+ * 1. Remove default vertical scrollbar in IE 11.
+ * 2. Remove unwanted space below `textarea` in Safari, Chrome, Opera.
+ * 3. Restrict to vertical resizing to prevent layout breakage.
  */
 
 textarea {
@@ -225,11 +225,11 @@ textarea {
     height: auto;
     min-height: 3em;
     /* 1 */
-    resize: vertical;
-    /* 2 */
     overflow: auto;
-    /* 3 */
+    /* 2 */
     vertical-align: top;
+    /* 3 */
+    resize: vertical;
 }
 
 /**
@@ -244,12 +244,12 @@ textarea {
 [disabled] optgroup,
 span.disabled {
     border-color: $color-border-light !important;
-    background: $color-background-form-disabled !important;
     /* 1 */
     opacity: 1;
+    background: $color-background-form-disabled !important;
+    box-shadow: none !important;
     color: $color-text-form-disabled !important;
     text-shadow: none !important;
-    box-shadow: none !important;
     /* 2 */
     cursor: default !important;
 }

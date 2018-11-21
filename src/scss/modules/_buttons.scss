@@ -2,15 +2,15 @@
    ========================================================================== */
 
 /**
- * 1. Correct `button` style inheritance in Firefox, IE 11, and Opera.
- * 2. Address `overflow` set to `hidden` in IE 11.
+ * 1. Address `overflow` set to `hidden` in IE 11.
+ * 2. Correct `button` style inheritance in Firefox, IE 11, and Opera.
  */
 
 button {
     /* 1 */
-    text-transform: none;
-    /* 2 */
     overflow: visible;
+    /* 2 */
+    text-transform: none;
 }
 
 /**
@@ -33,12 +33,12 @@ button,
     border: 1px solid $color-button-border;
     border-radius: 1em;
     background-clip: padding-box;
+    box-shadow: 0 2px 0 $color-button-shadow;
     color: $color-text-button;
     font-weight: normal;
     text-align: center;
     /* 1 */
     appearance: none;
-    box-shadow: 0 2px 0 $color-button-shadow;
     /* 2 */
     cursor: pointer;
 
@@ -53,9 +53,9 @@ button,
     &:active {
         top: 2px;
         border-color: darken($color-button-border, 13%);
+        box-shadow: none;
         color: $color-text-button-active;
         text-decoration: none;
-        box-shadow: none;
     }
 
     &:focus {

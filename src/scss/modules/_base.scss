@@ -47,8 +47,8 @@ nav ol,
 .container,
 .paginator {
     &::after {
+        content: "";
         display: table;
         clear: both;
-        content: "";
     }
 }

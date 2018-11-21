@@ -556,14 +556,24 @@ rules:
  # SMACSS-like property order rules (stylelint-order plugin).
   order/properties-order:
 
+    # Heading.
+
+    - content
+    - quotes
+
     # Box.
 
     - display
+    - visibility
+
     - position
+    - z-index
     - top
     - right
     - bottom
     - left
+
+    - box-sizing
 
     - flex
     - flex-basis
@@ -581,7 +591,6 @@ rules:
     - width
     - min-width
     - max-width
-
     - height
     - min-height
     - max-height
@@ -601,7 +610,12 @@ rules:
     - float
     - clear
 
-    - resize
+    - overflow
+    - overflow-x
+    - overflow-y
+
+    - clip
+    - zoom
 
     - columns
     - column-gap
@@ -611,23 +625,39 @@ rules:
     - column-count
     - column-width
 
-    - grid-gap
-    - grid-template-columns
+    - table-layout
+    - empty-cells
+    - caption-side
+    - border-spacing
+    - border-collapse
+    - list-style
+    - list-style-position
+    - list-style-type
+    - list-style-image
+
+    # Animation.
+
+    - transform
+    - transform-origin
+    - transform-style
+    - backface-visibility
+    - perspective
+    - perspective-origin
+
+    - transition
+    - transition-property
+    - transition-duration
+    - transition-timing-function
+    - transition-delay
 
     - animation
     - animation-name
+    - animation-duration
+    - animation-play-state
     - animation-timing-function
-
-    - transform
-    - transform-box
-    - transform-origin
-    - transform-style
-
-    - transition
-    - transition-delay
-    - transition-duration
-    - transition-property
-    - transition-timing-function
+    - animation-delay
+    - animation-iteration-count
+    - animation-direction
 
     # Border.
 
@@ -666,20 +696,24 @@ rules:
     - outline-style
     - outline-width
 
+    - stroke-width
+    - stroke-linecap
+    - stroke-dasharray
+    - stroke-dashoffset
+    - stroke
+
     # Background.
 
+    - 'opacity'
+
     - background
-    - background-attachment
-    - background-clip
     - background-color
     - background-image
     - background-repeat
     - background-position
     - background-size
-
+    - box-shadow
     - fill
-
-    - opacity
 
     # Text.
 
@@ -688,55 +722,65 @@ rules:
     - font
     - font-family
     - font-size
-    - font-smoothing
+    - font-size-adjust
+    - font-stretch
+    - font-effect
     - font-style
     - font-variant
     - font-weight
 
+    - font-emphasize
+    - font-emphasize-position
+    - font-emphasize-style
+
     - letter-spacing
     - line-height
     - list-style
+    - word-spacing
 
     - text-align
+    - text-align-last
     - text-decoration
     - text-indent
+    - text-justify
     - text-overflow
+    - text-overflow-ellipsis
+    - text-overflow-mode
     - text-rendering
+    - text-outline
     - text-shadow
     - text-transform
     - text-wrap
+    - word-wrap
+    - word-break
 
+    - text-emphasis
+    - text-emphasis-color
+    - text-emphasis-style
+    - text-emphasis-position
+
+    - vertical-align
     - white-space
     - word-spacing
+    - hyphens
 
-    # Cursor.
-
-    - cursor
-    - pointer-events
-    - user-select
+    - src
 
     # Other.
 
-    - appearance
-    - border-collapse
-    - border-spacing
-    - box-shadow
-    - box-sizing
-    - caption-side
-    - content
+    - tab-size
+    - counter-reset
+    - counter-increment
+    - resize
     - cursor
-    - empty-cells
-    - overflow
-    - overflow-x
-    - overflow-y
-    - quotes
+    - pointer-events
     - speak
-    - table-layout
-    - vertical-align
-    - visibility
-    - will-change
-    - z-index
-
+    - user-select
+    - nav-index
+    - nav-up
+    - nav-right
+    - nav-down
+    - nav-left
 
  # Additonal SCSS rules (stylelint-scss plugin).
 

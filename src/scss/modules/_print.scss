@@ -6,9 +6,9 @@
 *::before,
 *::after {
     background: transparent !important;
+    box-shadow: none !important;
     color: $color-text-print !important;
     text-shadow: none !important;
-    box-shadow: none !important;
 }
 
 /**
