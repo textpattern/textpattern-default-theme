@@ -108,7 +108,7 @@
                         <!-- ...or if you want to list all articles from all sections instead, then replace txp:article with txp:article_custom -->
 
                         <!-- add pagination links to foot of article listings if there are more articles available -->
-                        <txp:evaluate>
+                        <txp:evaluate test="newer,older">
                             <nav class="paginator" aria-label="<txp:text item="page_nav" />">
                                 <txp:newer rel="prev">
                                     <txp:text item="newer" />
@@ -123,7 +123,7 @@
                         <txp:article />
 
                         <!-- add pagination links to foot of article if there are more articles available -->
-                        <txp:evaluate>
+                        <txp:evaluate test="prev,next">
                             <nav class="paginator" aria-label="<txp:text item="page_nav" />">
                                 <txp:link_to_prev>
                                     <txp:text item="prev" />
