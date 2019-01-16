@@ -23,6 +23,14 @@ li {
 }
 
 /**
+ * CSS Lists and Counters Module Level 3 list marker styling.
+ */
+
+li::marker {
+    color: color-text-heading;
+}
+
+/**
  * Address margins set differently.
  */
 

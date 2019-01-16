@@ -14,7 +14,7 @@ a {
     /* 2 */
     text-decoration: none;
     /* 3 */
-    text-decoration-skip: ink;
+    text-decoration-skip-ink: auto;
 
     &:hover,
     &:active {
@@ -37,13 +37,16 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
     a {
-        color: $color-text;
+        color: $color-text-heading;
 
         &:hover,
         &:active {
-            color: $color-text;
+            color: $color-text-heading;
             /* 1 */
             text-decoration-color: rgba($color-text, 0.5);
         }

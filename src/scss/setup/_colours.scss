@@ -1,10 +1,12 @@
 // text colours
 
 $color-text:                     #333333 !default;
+$color-text-heading:             #000000 !default;
 $color-text-button:              $color-text !default;
 $color-text-button-hover:        $color-text-button !default;
 $color-text-button-active:       darken($color-text-button, 10%) !default;
 $color-text-form:                #000000 !default;
+$color-text-form-placeholder:    #999999 !default;
 $color-text-form-disabled:       #aaaaaa !default;
 $color-text-footnote:            #585858 !default;
 $color-text-print:               #000000 !default; // solid black prints faster/cleaner
