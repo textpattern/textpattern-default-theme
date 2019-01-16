@@ -1172,28 +1172,28 @@ textarea:focus:invalid {
    * 1. Fix placeholder font properties inheritance.
    */
   ::-webkit-input-placeholder {
+    opacity: 1;
     color: #999999;
     /* 1 */
     font: inherit;
-    opacity: 1;
   }
   :-ms-input-placeholder {
+    opacity: 1;
     color: #999999;
     /* 1 */
     font: inherit;
-    opacity: 1;
   }
   ::-ms-input-placeholder {
+    opacity: 1;
     color: #999999;
     /* 1 */
     font: inherit;
-    opacity: 1;
   }
   ::placeholder {
+    opacity: 1;
     color: #999999;
     /* 1 */
     font: inherit;
-    opacity: 1;
   }
 
   /**

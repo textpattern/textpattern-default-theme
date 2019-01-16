@@ -316,10 +316,10 @@ textarea {
  */
 
 ::placeholder {
+    opacity: 1;
     color: $color-text-form-placeholder;
     /* 1 */
     font: inherit;
-    opacity: 1;
 }
 
 /**
