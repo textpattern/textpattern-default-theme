@@ -11,6 +11,14 @@ main {
 }
 
 /**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+    vertical-align: baseline;
+}
+
+/**
  * Add the correct display in all browsers.
  */
 

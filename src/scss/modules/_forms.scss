@@ -39,14 +39,6 @@ legend {
 }
 
 /**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
-progress {
-    vertical-align: baseline;
-}
-
-/**
  * Show the overflow in Edge.
  */
 
@@ -77,14 +69,6 @@ textarea {
     font-size: 1rem;
     line-height: 1.375; // 22px / 16px
     vertical-align: baseline;
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-
-[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
 }
 
 /**
@@ -151,6 +135,15 @@ textarea {
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
     height: auto;
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+    /* autoprefixer: off */
+    appearance: none;
 }
 
 /**
@@ -263,20 +256,6 @@ span.disabled {
     cursor: default !important;
 }
 
-
-/**
- * Styling for form field validation.
- */
-
-input,
-select,
-textarea {
-    &:focus:invalid {
-        border-color: $color-error-text;
-        box-shadow: none; // Normalize Firefox styling
-    }
-}
-
 /**
  * Width display options for `input` fields. Height display options
  * for textareas.
@@ -306,6 +285,32 @@ textarea {
 
     textarea {
         height: 9.75em;
+    }
+}
+
+/**
+ * Styling for form field validation.
+ */
+
+input,
+select,
+textarea {
+    &:focus:invalid {
+        border-color: $color-error-text;
+        box-shadow: none; // Normalize Firefox styling
+    }
+}
+
+/**
+ * Styling for Firefox-specfic form field validation.
+ */
+
+input,
+select,
+textarea {
+    &:-moz-ui-invalid {
+        border-color: $color-error-text;
+        box-shadow: none;
     }
 }
 

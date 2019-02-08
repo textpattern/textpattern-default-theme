@@ -54,9 +54,9 @@ img {
 }
 
 /**
- * Address margin not present in Safari.
+ * Consistent margins on `figure`.
  */
 
 figure {
-    margin: 0;
+    margin: 1em 0;
 }
