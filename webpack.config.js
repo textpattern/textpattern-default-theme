@@ -1,4 +1,4 @@
-const distDir = __dirname + '/dist/four-point-seven';
+const distDir = __dirname + '/dist/four-point-eight';
 
 const fs = require('fs');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
