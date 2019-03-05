@@ -43,7 +43,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(__dirname +'/dist'),
+        new CleanWebpackPlugin(),
         new StyleLintPlugin({
             configFile: '.stylelintrc.yml',
             syntax: 'scss',
