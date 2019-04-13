@@ -36,7 +36,7 @@
     "mini-css-extract-plugin": "0.6.0",
     "postcss-loader": "3.0.0",
     "sass-loader": "7.1.0",
-    "stylelint": "9.10.1",
+    "stylelint": "10.0.0",
     "stylelint-order": "2.2.1",
     "stylelint-scss": "3.5.4",
     "stylelint-webpack-plugin": "0.10.5",
