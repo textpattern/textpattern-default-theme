@@ -178,15 +178,6 @@ select::-ms-expand {
 }
 
 /**
- * Remove browser-specific `select` UI in Firefox 4+.
- */
-
-select:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 $color-text-form;
-}
-
-/**
  * Override height and background set in a previous rule and allow auto height.
  */
 
@@ -211,7 +202,6 @@ select[size="1"] {
  */
 
 optgroup {
-    color: $color-text-form;
     font-style: normal;
     font-weight: bold;
 }
