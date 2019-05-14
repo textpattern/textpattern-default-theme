@@ -26,11 +26,11 @@
   },
   "devDependencies": {
     "autoprefixer": "9.5.1",
-    "clean-webpack-plugin": "2.0.1",
+    "clean-webpack-plugin": "2.0.2",
     "copy-webpack-plugin": "5.0.3",
     "cross-env": "5.2.0",
     "css-loader": "2.1.1",
-    "dart-sass": "1.19.0",
+    "dart-sass": "1.20.1",
     "fibers": "4.0.1",
     "file-loader": "3.0.1",
     "mini-css-extract-plugin": "0.6.0",
@@ -41,7 +41,7 @@
     "stylelint-scss": "3.6.1",
     "stylelint-webpack-plugin": "0.10.5",
     "webpack": "4.31.0",
-    "webpack-cli": "3.3.1"
+    "webpack-cli": "3.3.2"
   },
   "browserslist": [
     "> 0.5%",
