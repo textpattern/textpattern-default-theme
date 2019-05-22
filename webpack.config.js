@@ -3,7 +3,6 @@ const distDir = __dirname + '/dist/four-point-eight';
 const fs = require('fs');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const Fiber = require('fibers');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
@@ -30,7 +29,6 @@ module.exports = {
                         loader: 'sass-loader',
                         options: {
                             implementation: require('dart-sass'),
-                            fiber: Fiber,
                             outputStyle: 'expanded'
                         }
                     }
