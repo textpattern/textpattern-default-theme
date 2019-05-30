@@ -808,6 +808,9 @@ rules:
   # Disallow Sass variables that are used without interpolation with CSS features that use custom identifiers.
   scss/dollar-variable-no-missing-interpolation: true
 
+  # Disallow quoted strings inside the quote function.
+  scss/function-quote-no-quoted-strings-inside: true
+
   # Disallow duplicate dollar variables within a stylesheet.
   scss/no-duplicate-dollar-variables: true
 
