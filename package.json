@@ -30,7 +30,7 @@
     "copy-webpack-plugin": "5.0.4",
     "cross-env": "5.2.0",
     "css-loader": "3.2.0",
-    "dart-sass": "1.22.8",
+    "sass": "1.22.9",
     "file-loader": "4.2.0",
     "mini-css-extract-plugin": "0.8.0",
     "postcss-loader": "3.0.0",
