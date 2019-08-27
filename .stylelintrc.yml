@@ -180,6 +180,9 @@ rules:
   # Specify a whitelist of allowed property and value pairs within declarations.
   #declaration-property-value-whitelist:
 
+  # Disallow non-numeric values when interpolating a value with a unit.
+  #dimension-no-non-numeric-values
+
   # Specify whether or not quotation marks should be used around font family names.
   font-family-name-quotes: always-where-recommended
 
@@ -790,8 +793,17 @@ rules:
   # Disallow `@extend` with missing placeholders.
   scss/at-extend-no-missing-placeholder: true
 
+  # Check for equality to null is unnecessarily explicit since `null` is falsey in Sass.
+  scss/at-if-no-null: true
+
   # Since leading underscores are not needed, they can be omitted.
   scss/at-import-no-partial-leading-underscore: true
+
+  # Require or disallow extension in `@import` commands.
+  scss/at-import-partial-extension: never
+
+  # Disallow parentheses in conditional @ rules (if, elsif, while).
+  scss/at-rule-conditional-no-parentheses: true
 
   # Disallow unknown at-rules. Should be used instead of stylelint's `at-rule-no-unknown`.
   scss/at-rule-no-unknown: true
