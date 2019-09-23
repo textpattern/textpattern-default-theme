@@ -788,7 +788,7 @@ rules:
     - nav-down
     - nav-left
 
- # Additonal SCSS rules (stylelint-scss plugin).
+ # Additional SCSS rules (stylelint-scss plugin).
 
   # Disallow `@extend` with missing placeholders.
   scss/at-extend-no-missing-placeholder: true
