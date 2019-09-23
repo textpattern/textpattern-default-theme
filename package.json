@@ -30,6 +30,7 @@
     "copy-webpack-plugin": "5.0.4",
     "cross-env": "6.0.0",
     "css-loader": "3.2.0",
+    "fibers": "4.0.1",
     "file-loader": "4.2.0",
     "mini-css-extract-plugin": "0.8.0",
     "postcss-loader": "3.0.0",
