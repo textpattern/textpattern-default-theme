@@ -585,29 +585,23 @@ rules:
     - box-sizing
 
     - grid
-    - grid-after
+    - gap
     - grid-area
-    - grid-auto-columns
-    - grid-auto-flow
-    - grid-auto-rows
-    - grid-before
-    - grid-column
-    - grid-column-end
-    - grid-column-gap
-    - grid-column-start
-    - grid-columns
-    - grid-end
-    - grid-gap
-    - grid-row
-    - grid-row-end
-    - grid-row-gap
-    - grid-row-start
-    - grid-rows
-    - grid-start
     - grid-template
     - grid-template-areas
     - grid-template-columns
     - grid-template-rows
+    - grid-auto-columns
+    - grid-auto-rows
+    - grid-auto-flow
+    - grid-column
+    - grid-column-start
+    - grid-column-end
+    - column-gap
+    - grid-row
+    - grid-row-start
+    - grid-row-end
+    - row-gap
 
     - flex
     - flex-basis
@@ -620,6 +614,11 @@ rules:
     - align-items
     - align-self
     - justify-content
+    - justify-items
+    - justify-self
+    - place-content
+    - place-items
+    - place-self
     - order
 
     - width
@@ -652,11 +651,14 @@ rules:
     - zoom
 
     - columns
+    - column-count
     - column-gap
     - column-fill
     - column-rule
+    - column-rule-width
+    - column-rule-style
+    - column-rule-color
     - column-span
-    - column-count
     - column-width
 
     - table-layout
@@ -775,6 +777,7 @@ rules:
     - text-align
     - text-align-last
     - text-decoration
+    - text-decoration-skip-ink
     - text-indent
     - text-justify
     - text-overflow
