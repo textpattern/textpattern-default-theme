@@ -700,13 +700,6 @@ rules:
     - table-layout
     - empty-cells
     - caption-side
-    - border-spacing
-    - border-collapse
-
-    - list-style
-    - list-style-position
-    - list-style-type
-    - list-style-image
 
     # Manipulations.
 
@@ -751,8 +744,8 @@ rules:
     - border-width
     - border-style
     - border-color
-    - border-collapse
     - border-spacing
+    - border-collapse
     - border-top
     - border-top-width
     - border-top-style
@@ -863,6 +856,11 @@ rules:
     - color
     - direction
 
+    - list-style
+    - list-style-position
+    - list-style-type
+    - list-style-image
+
     - font
     - font-effect
     - font-emphasize
@@ -888,6 +886,10 @@ rules:
     - font-variant-position
     - font-variation-settings
     - font-weight
+    - letter-spacing
+    - line-break
+    - line-clamp
+    - line-height
     - vertical-align
     - hanging-punctuation
     - hyphens
@@ -897,12 +899,6 @@ rules:
     - speak
     - speak-as
     - src
-    - tab-size
-
-    - letter-spacing
-    - line-break
-    - line-clamp
-    - line-height
 
     - text-align
     - text-align-last
@@ -933,10 +929,11 @@ rules:
 
     - unicode-bidi
     - unicode-range
-    - white-space
+    - word-wrap
     - word-break
     - word-spacing
-    - word-wrap
+    - white-space
+    - tab-size
 
     # Other.
 
