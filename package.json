@@ -30,7 +30,6 @@
     "copy-webpack-plugin": "5.0.5",
     "cross-env": "6.0.3",
     "css-loader": "3.2.0",
-    "fibers": "4.0.2",
     "file-loader": "4.2.0",
     "mini-css-extract-plugin": "0.8.0",
     "postcss-loader": "3.0.0",
@@ -42,6 +41,9 @@
     "stylelint-webpack-plugin": "1.0.3",
     "webpack": "4.41.2",
     "webpack-cli": "3.3.10"
+  },
+  "optionalDependencies": {
+    "fibers": "4.0.2"
   },
   "browserslist": [
     "> 0.5%",
