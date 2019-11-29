@@ -1045,9 +1045,6 @@ rules:
   # Disallow duplicate dollar variables within a stylesheet.
   scss/no-duplicate-dollar-variables: true
 
-  # Require a media feature value be a `$`-variable or disallow `$`-variables in media feature values.
-  scss/media-feature-value-dollar-variable: always
-
   # Disallow linebreaks after Sass operators.
   scss/operator-no-newline-after: true
 
