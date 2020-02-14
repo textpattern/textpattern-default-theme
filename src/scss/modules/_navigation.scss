@@ -8,11 +8,18 @@
  * Example HTML:
  *
  * <nav class="site-navigation">
- *     <ul>
- *         <li class="active"><a></li>
- *         <li><a></li>
- *         <li><a></li>
- *     </ul>
+ *     <div>
+ *         <ul>
+ *             <li class="active"><a></li>
+ *             <li><a></li>
+ *             <li><a></li>
+ *         </ul>
+ *         <div class="search">
+ *             <form>
+ *                 <input type="search">
+ *             </form>
+ *        </div>
+ *    </div>
  * </nav>
  */
 
@@ -28,16 +35,15 @@
     ul {
         margin: 0;
         padding: 0;
+        border: solid $color-gradient-border;
+        border-width: 1px 0;
         list-style: none;
     }
 
     li {
-        border-bottom: 1px solid $color-gradient-border;
+        border: solid $color-gradient-border;
+        border-width: 1px 0;
         background-color: $color-gradient-from;
-
-        &:first-child {
-            border-top: 1px solid $color-gradient-border;
-        }
 
         &:hover {
             background-color: lighten($color-gradient-from, 4%);

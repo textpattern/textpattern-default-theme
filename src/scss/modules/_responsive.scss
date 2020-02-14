@@ -9,11 +9,18 @@
      * Example HTML:
      *
      * <nav class="site-navigation">
-     *     <ul>
-     *         <li class="active"><a></li>
-     *         <li><a></li>
-     *         <li><a></li>
-     *     </ul>
+     *     <div>
+     *         <ul>
+     *             <li class="active"><a></li>
+     *             <li><a></li>
+     *             <li><a></li>
+     *         </ul>
+     *         <div class="search">
+     *             <form>
+     *                 <input type="search">
+     *             </form>
+     *        </div>
+     *    </div>
      * </nav>
      */
 
@@ -22,30 +29,20 @@
         border-bottom: 1px solid $color-border;
 
         > div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             width: 88%;
         }
 
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            border: 0;
+        }
+
         li {
-            float: left;
-            border-right: 1px solid $color-gradient-border;
-            border-bottom: 0;
-
-            &:first-child {
-                border-top: 0;
-                border-left: 1px solid $color-gradient-border;
-            }
-
-            [dir="rtl"] & {
-                float: right;
-
-                &:first-child {
-                    border-left: 0;
-                }
-
-                &:last-child {
-                    border-left: 1px solid $color-gradient-border;
-                }
-            }
+            border-width: 0 1px;
         }
 
         a {
@@ -54,18 +51,9 @@
     }
 
     .search {
-        position: absolute;
-        z-index: 2;
-        top: 50%;
-        right: 0;
-        margin-top: -1.0625em;
+        margin-top: 0.2em;
         padding: 0;
         background: transparent;
-
-        [dir="rtl"] & {
-            right: auto;
-            left: 0;
-        }
 
         input[type="search"] {
             width: 2.125em;

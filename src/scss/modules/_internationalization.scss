@@ -150,6 +150,18 @@ bdo[dir="rtl"] {
 }
 
 /**
+ * Swap `select` icon position in RTL languages.
+ */
+
+[dir="rtl"] {
+    select {
+        padding-right: 0.1875em; // 3px / 16px
+        padding-left: 1.5em; // 24px / 16px
+        background-position: 0.5em center; // 8px / 16px
+    }
+}
+
+/**
  * Swap paginator (prev/next) navigation links on articles/article lists.
  */
 
@@ -161,6 +173,15 @@ bdo[dir="rtl"] {
     [rel="next"] {
         float: left;
     }
+}
+
+/**
+ * Swap ‘skip links’ position in RTL languages.
+ */
+
+[dir="rtl"] .skip-link {
+    right: 1px;
+    left: auto;
 }
 
 /**
