@@ -33,7 +33,8 @@
                 <meta itemprop="url" content="https://example.com/">
                 <form role="search" method="get" action="#" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
                     <meta itemprop="target" content="https://example.com/?q={q}">
-                    <input name="q" type="search" itemprop="query-input" placeholder="Search">
+                    <label class="accessibility" for="search"><txp:text item="search" /></label>
+                    <input id="search" name="q" type="search" itemprop="query-input" placeholder="Search">
                 </form>
             </div>
         </div>
