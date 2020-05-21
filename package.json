@@ -47,7 +47,8 @@
   },
   "browserslist": [
     "> 0.5%",
-    "not ie < 11"
+    "Firefox ESR",
+    "IE 11"
   ],
   "scripts": {
     "build": "webpack -p --progress"
