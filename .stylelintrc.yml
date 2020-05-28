@@ -9,6 +9,9 @@ plugins:
 
 rules:
 
+ # Specify percentage or number notation for alpha-values.
+  alpha-value-notation: number
+
   # Specify a blacklist of disallowed at-rules.
   at-rule-blacklist:
     - debug
@@ -84,6 +87,9 @@ rules:
   # Require a single space or disallow whitespace before the opening brace of blocks.
   block-opening-brace-space-before: always
 
+  # Specify modern or legacy notation for applicable color-functions.
+  color-function-notation: legacy
+
   # Specify lowercase or uppercase for hexadecimal color values.
   color-hex-case: lower
 
@@ -115,7 +121,7 @@ rules:
   #custom-media-pattern:
 
   # Require or disallow an empty line before custom properties (Autofixable).
-  custom-property-empty-line-before: never
+  custom-property-empty-line-before: always
 
   # Specify a pattern for custom properties.
   #custom-property-pattern:
@@ -248,6 +254,9 @@ rules:
 
   # Require or disallow whitespace after functions.
   function-whitespace-after: always
+
+  # Specify number or angle notation for degree hues.
+  hue-degree-notation: angle
 
   # Specify indentation.
   indentation: 4
@@ -1027,6 +1036,9 @@ rules:
   # Disallow unknown at-rules. Should be used instead of stylelint's `at-rule-no-unknown`.
   scss/at-rule-no-unknown: true
 
+  # Disallow empty comments.
+  scss/comment-no-empty: true
+
   # Require a newline after the colon in `$`-variable declarations.
   scss/dollar-variable-colon-newline-after: always-multi-line
 
@@ -1044,6 +1056,12 @@ rules:
 
   # Disallow duplicate dollar variables within a stylesheet.
   scss/no-duplicate-dollar-variables: true
+
+  # Disallow duplicate mixins within a stylesheet.
+  scss/no-duplicate-mixins: true
+
+  # Disallows the use of global function names, as these global functions are now located inside built-in Sass modules.
+  scss/no-global-function-names: true
 
   # Disallow linebreaks after Sass operators.
   scss/operator-no-newline-after: true

@@ -55,11 +55,13 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name]'
         }),
-        new CopyWebpackPlugin([
-            {
-                context: 'src/templates',
-                from: '**/*',
-            }
-        ]),
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    context: 'src/templates',
+                    from: '**/*',
+                },
+            ],
+        }),
     ]
 };
