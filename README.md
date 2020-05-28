@@ -1,7 +1,10 @@
 # Textpattern CMS default theme
 
-[![Known Vulnerabilities](https://snyk.io/test/github/textpattern/textpattern-default-theme/badge.svg?targetFile=package.json)](https://snyk.io/test/github/textpattern/textpattern-default-theme?targetFile=package.json)
 [![Build Status](https://travis-ci.org/textpattern/textpattern-default-theme.svg?branch=master)](https://travis-ci.org/textpattern/textpattern-default-theme)
+[![Known Vulnerabilities](https://snyk.io/test/github/textpattern/textpattern-default-theme/badge.svg?targetFile=package.json)](https://snyk.io/test/github/textpattern/textpattern-default-theme?targetFile=package.json)
+[![Dependencies Status](https://david-dm.org/textpattern/textpattern-default-theme/status.svg)](https://david-dm.org/textpattern/textpattern-default-theme)
+[![devDependencies Status](https://david-dm.org/textpattern/textpattern-default-theme/dev-status.svg)](https://david-dm.org/textpattern/textpattern-default-theme?type=dev)
+[![optionalDependencies Status](https://david-dm.org/textpattern/textpattern-default-theme/optional-status.svg)](https://david-dm.org/textpattern/textpattern-default-theme?type=optional)
 
 [Demo](https://default-theme.textpattern.com/)
 
