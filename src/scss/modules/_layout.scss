@@ -1,3 +1,6 @@
+@use "../setup/colours";
+@use "../setup/settings";
+
 /* Layout
    ========================================================================== */
 
@@ -21,7 +24,7 @@ body {
     position: relative;
     /* 2 */
     margin: 0;
-    background: $color-background-box;
+    background: colours.$color-background-box;
 }
 
 /**
@@ -38,8 +41,8 @@ body {
 
 .wrapper {
     padding: 1px 0;
-    border-bottom: 1px solid $color-border;
-    background: $color-background;
+    border-bottom: 1px solid colours.$color-border;
+    background: colours.$color-background;
 }
 
 /**
@@ -58,7 +61,7 @@ body {
 .site-footer,
 .container {
     width: 88%;
-    max-width: $container-max-width;
+    max-width: settings.$container-max-width;
     margin: 0 auto;
 }
 
@@ -75,7 +78,7 @@ body {
 
     h3 {
         margin: 0.5em 0 0; // 12px margin top
-        font-family: $font-serif;
+        font-family: settings.$font-serif;
         font-size: 1.25rem; // 20px / 16px
         font-style: italic;
         font-weight: normal;
@@ -115,7 +118,7 @@ body {
 .complementary-content {
     margin: 2em -6% 0;
     padding: 0 6%;
-    border-top: 2px dashed $color-border;
+    border-top: 2px dashed colours.$color-border;
     /* 1 */
     word-wrap: break-word;
 }

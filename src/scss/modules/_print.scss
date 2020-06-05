@@ -1,3 +1,6 @@
+@use "../setup/colours";
+@use "../setup/settings";
+
 /**
  * Remove unnecessary global styling from printed media.
  */
@@ -7,7 +10,7 @@
 *::after {
     background: transparent !important;
     box-shadow: none !important;
-    color: $color-text-print !important;
+    color: colours.$color-text-print !important;
     text-shadow: none !important;
 }
 
@@ -27,7 +30,7 @@ html {
 body {
     margin: 0.5cm;
     padding: 2em 5em;
-    font-family: $font-print;
+    font-family: settings.$font-print;
 }
 
 /**
@@ -43,7 +46,7 @@ a {
  */
 
 .site-header {
-    border-bottom: 1pt solid $color-text-print;
+    border-bottom: 1pt solid colours.$color-text-print;
 }
 
 /**
@@ -52,7 +55,7 @@ a {
 
 .site-footer {
     margin-top: 12pt;
-    border-top: 1pt solid $color-text-print;
+    border-top: 1pt solid colours.$color-text-print;
 }
 
 /**
@@ -167,7 +170,7 @@ small,
 
 blockquote {
     padding: 0 0 0 8pt;
-    border-left: 3pt solid $color-text-print;
+    border-left: 3pt solid colours.$color-text-print;
     font-size: 16pt;
     /* 1 */
     page-break-inside: avoid;
@@ -175,7 +178,7 @@ blockquote {
 
 [dir="rtl"] blockquote {
     padding: 0 8pt 0 0;
-    border-right: 3pt solid $color-text-print;
+    border-right: 3pt solid colours.$color-text-print;
     border-left: 0;
 }
 
@@ -188,7 +191,7 @@ blockquote {
 pre {
     margin-bottom: 8pt;
     padding: 8pt;
-    border: 1pt solid $color-text-print;
+    border: 1pt solid colours.$color-text-print;
     /* 1 */
     white-space: pre-wrap !important;
 }
@@ -345,7 +348,7 @@ tr {
 th,
 td {
     padding: 4pt 8pt;
-    border-bottom: 1pt solid $color-text-print;
+    border-bottom: 1pt solid colours.$color-text-print;
 }
 
 /**
@@ -356,7 +359,7 @@ thead {
     display: table-header-group;
 
     th {
-        border-top: 1pt solid $color-text-print;
+        border-top: 1pt solid colours.$color-text-print;
     }
 }
 

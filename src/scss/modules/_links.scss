@@ -1,3 +1,7 @@
+@use "sass:color";
+@use "../setup/colours";
+@use "../setup/settings";
+
 /* Links
    ========================================================================== */
 
@@ -10,7 +14,7 @@
 
 a {
     /* 1 */
-    color: $color-link;
+    color: colours.$color-link;
     /* 2 */
     text-decoration: none;
     /* 3 */
@@ -19,12 +23,12 @@ a {
     &:hover,
     &:active {
         outline: 0;
-        color: $color-link-hover;
+        color: colours.$color-link-hover;
         text-decoration: underline;
     }
 
     &:focus {
-        outline: 1px solid $color-link-focus;
+        outline: 1px solid colours.$color-link-focus;
     }
 }
 
@@ -42,13 +46,13 @@ h4,
 h5,
 h6 {
     a {
-        color: $color-text-heading;
+        color: colours.$color-text-heading;
 
         &:hover,
         &:active {
-            color: $color-text-heading;
+            color: colours.$color-text-heading;
             /* 1 */
-            text-decoration-color: rgba($color-text, 0.5);
+            text-decoration-color: rgba(colours.$color-text, 0.5);
         }
     }
 }
@@ -91,9 +95,9 @@ h6 {
     padding: 0.25em 0.5em;
     transform: translateY(-5em);
     transition: transform 0.25s ease-in-out;
-    background-color: lighten($color-gradient-from, 8%);
-    color: $color-text;
-    font-family: $font-sans-serif;
+    background-color: color.adjust(colours.$color-gradient-from, $lightness: 8%);
+    color: colours.$color-text;
+    font-family: settings.$font-sans-serif;
 
     &:focus,
     &:active {

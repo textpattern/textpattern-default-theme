@@ -1,3 +1,6 @@
+@use "../setup/colours";
+@use "../setup/settings";
+
 /* Forms
    ========================================================================== */
 
@@ -12,7 +15,7 @@ fieldset {
     /* 2 */
     margin: 1em 0;
     padding: 1px 1em;
-    border: 1px solid $color-border;
+    border: 1px solid colours.$color-border;
 }
 
 /**
@@ -63,8 +66,8 @@ textarea {
     max-width: 100%;
     /* 2 */
     margin: 0;
-    color: $color-text-form;
-    font-family: $font-form;
+    color: colours.$color-text-form;
+    font-family: settings.$font-form;
     /* 3 */
     font-size: 1rem;
     line-height: 1.375; // 22px / 16px
@@ -95,14 +98,14 @@ select,
 textarea {
     height: 2em; // 32px / 16px
     padding: 0.25em 0.1875em; // 8px / 16px + 3px / 16px
-    border: 1px solid $color-border;
+    border: 1px solid colours.$color-border;
     border-radius: 0;
-    background: $color-background-form;
+    background: colours.$color-background-form;
     /* 1 */
     appearance: none;
 
     &:focus {
-        border-color: $color-link-focus;
+        border-color: colours.$color-link-focus;
         outline: 1px solid transparent; // Allows for repainting in high contrast modes.
     }
 }
@@ -152,7 +155,7 @@ textarea {
 
 select {
     padding-right: 1.5em; // 24px / 16px
-    background: $color-background-form url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='5' viewBox='0 0 17 5'%3E%3Cpolygon fill='%23333' points='0,0 5,5 10,0'/%3E%3C/svg%3E") right center no-repeat;
+    background: colours.$color-background-form url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='5' viewBox='0 0 17 5'%3E%3Cpolygon fill='%23333' points='0,0 5,5 10,0'/%3E%3C/svg%3E") right center no-repeat;
     background-size: 1.0625em 0.3125em; // 17px / 16px, 5px / 16px
     text-transform: none;
 }
@@ -223,12 +226,12 @@ textarea {
 [disabled] option,
 [disabled] optgroup,
 span.disabled {
-    border-color: $color-border-light !important;
+    border-color: colours.$color-border-light !important;
     /* 1 */
     opacity: 1;
-    background: $color-background-form-disabled !important;
+    background: colours.$color-background-form-disabled !important;
     box-shadow: none !important;
-    color: $color-text-form-disabled !important;
+    color: colours.$color-text-form-disabled !important;
     text-shadow: none !important;
     /* 2 */
     cursor: default !important;
@@ -274,7 +277,7 @@ input,
 select,
 textarea {
     &:focus:invalid {
-        border-color: $color-error-text;
+        border-color: colours.$color-error-text;
         box-shadow: none; // Normalize Firefox styling
     }
 }
@@ -287,7 +290,7 @@ input,
 select,
 textarea {
     &:-moz-ui-invalid {
-        border-color: $color-error-text;
+        border-color: colours.$color-error-text;
         box-shadow: none;
     }
 }
@@ -300,7 +303,7 @@ textarea {
 
 ::placeholder {
     opacity: 1;
-    color: $color-text-form-placeholder;
+    color: colours.$color-text-form-placeholder;
     /* 1 */
     font: inherit;
 }
@@ -315,5 +318,5 @@ textarea {
 
 .required {
     border: 0;
-    color: $color-error-text;
+    color: colours.$color-error-text;
 }

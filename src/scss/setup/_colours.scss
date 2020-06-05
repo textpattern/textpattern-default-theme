@@ -1,10 +1,11 @@
+@use "sass:color";
 // text colours
 
 $color-text:                     #333333 !default;
 $color-text-heading:             #000000 !default;
 $color-text-button:              $color-text !default;
 $color-text-button-hover:        $color-text-button !default;
-$color-text-button-active:       darken($color-text-button, 10%) !default;
+$color-text-button-active:       color.adjust($color-text-button, $lightness: -10%) !default;
 $color-text-form:                #000000 !default;
 $color-text-form-placeholder:    #999999 !default;
 $color-text-form-disabled:       #aaaaaa !default;
@@ -29,8 +30,8 @@ $color-background-box:           #f7f7f7 !default;
 $color-background-form:          #ffffff !default;
 $color-background-form-disabled: #eeeeee !default;
 $color-gradient-from:            #eeeeee !default;
-$color-gradient-to:              darken($color-gradient-from, 6.5%) !default;
-$color-gradient-border:          darken($color-gradient-from, 13.5%) !default;
+$color-gradient-to:              color.adjust($color-gradient-from, $lightness: -6.5%) !default;
+$color-gradient-border:          color.adjust($color-gradient-from, $lightness: -13.5%) !default;
 
 // accent colours
 
@@ -39,9 +40,9 @@ $color-highlight-box:            #fff9e1 !default;
 // button colours
 
 $color-button-gradient-from:     $color-gradient-from !default;
-$color-button-gradient-to:       darken($color-button-gradient-from, 6%) !default;
+$color-button-gradient-to:       color.adjust($color-button-gradient-from, $lightness: -6%) !default;
 $color-button-border:            $color-button-gradient-to !default;
-$color-button-shadow:            darken($color-button-border, 20%) !default;
+$color-button-shadow:            color.adjust($color-button-border, $lightness: -20%) !default;
 
 // alert colours
 

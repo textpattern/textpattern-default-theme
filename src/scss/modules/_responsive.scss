@@ -1,8 +1,12 @@
+@use "sass:color";
+@use "../setup/colours";
+@use "../setup/settings";
+
 /* ==========================================================================
    Additional layout for screen media 576px and up
    ========================================================================== */
 
-@media only screen and (min-width: $break-small) {
+@media only screen and (min-width: settings.$break-small) {
     /**
      * Desktop version of the navigation menu. Overrides mobile first version.
      *
@@ -25,8 +29,8 @@
      */
 
     .site-navigation {
-        border-top: 1px solid $color-border;
-        border-bottom: 1px solid $color-border;
+        border-top: 1px solid colours.$color-border;
+        border-bottom: 1px solid colours.$color-border;
 
         > div {
             display: flex;
@@ -59,17 +63,17 @@
             width: 2.125em;
             padding-right: 0;
             transition: width 0.2s ease-in-out, border-color 0.2s ease-in-out;
-            background-color: $color-gradient-from;
+            background-color: colours.$color-gradient-from;
             cursor: pointer;
 
             &:hover {
-                background-color: lighten($color-gradient-from, 4%);
+                background-color: color.adjust(colours.$color-gradient-from, $lightness: 4%);
             }
 
             &:focus {
                 width: 16em;
                 padding-right: 0.1875em;
-                background-color: lighten($color-gradient-from, 8%);
+                background-color: color.adjust(colours.$color-gradient-from, $lightness: 8%);
                 cursor: auto;
             }
         }
@@ -81,7 +85,7 @@
    Additional layout for screen media 864px and up
    ========================================================================== */
 
-@media only screen and (min-width: $break-large) {
+@media only screen and (min-width: settings.$break-large) {
     /**
      * Enlarge baseline text size.
      */
