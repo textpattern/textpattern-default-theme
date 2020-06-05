@@ -27,7 +27,7 @@
   "devDependencies": {
     "autoprefixer": "9.8.0",
     "clean-webpack-plugin": "3.0.0",
-    "copy-webpack-plugin": "6.0.1",
+    "copy-webpack-plugin": "6.0.2",
     "cross-env": "7.0.2",
     "css-loader": "3.5.3",
     "file-loader": "6.0.0",
@@ -35,7 +35,7 @@
     "postcss-loader": "3.0.0",
     "sass": "1.26.8",
     "sass-loader": "8.0.2",
-    "stylelint": "13.5.0",
+    "stylelint": "13.6.0",
     "stylelint-order": "4.1.0",
     "stylelint-scss": "3.17.2",
     "stylelint-webpack-plugin": "2.0.0",
