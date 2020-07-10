@@ -42,8 +42,22 @@ rules:
     - true
     -
       ignoreAtRules:
+        - at-root
+        - each
+        - else
+        - debug
+        - error
+        - extend
+        - for
+        - forward
+        - function
+        - if
         - include
         - mixin
+        - return
+        - use
+        - warn
+        - while
 
   # Disallow vendor prefixes for at-rules.
   at-rule-no-vendor-prefix: true
