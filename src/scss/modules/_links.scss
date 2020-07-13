@@ -68,15 +68,8 @@ h6 {
  */
 
 .paginator {
-    clear: both;
-
-    [rel="prev"] {
-        float: left;
-    }
-
-    [rel="next"] {
-        float: right;
-    }
+    display: flex;
+    justify-content: space-between;
 }
 
 /**

@@ -52,8 +52,7 @@ header,
 footer,
 nav ul,
 nav ol,
-.container,
-.paginator {
+.container {
     &::after {
         content: "";
         display: table;
