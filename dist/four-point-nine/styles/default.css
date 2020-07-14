@@ -45,8 +45,7 @@ header::after,
 footer::after,
 nav ul::after,
 nav ol::after,
-.container::after,
-.paginator::after {
+.container::after {
   content: "";
   display: table;
   clear: both;
@@ -358,15 +357,8 @@ h6 a:active {
    *     <a rel="next">
    */
   .paginator {
-    clear: both;
-  }
-
-  .paginator [rel=prev] {
-    float: left;
-  }
-
-  .paginator [rel=next] {
-    float: right;
+    display: flex;
+    justify-content: space-between;
   }
 
   /**
@@ -768,17 +760,6 @@ bdo[dir=rtl] {
     padding-right: 0.1875em;
     padding-left: 1.5em;
     background-position: 0.5em center;
-  }
-
-  /**
-   * Swap paginator (prev/next) navigation links on articles/article lists.
-   */
-  [dir=rtl] .paginator [rel=prev] {
-    float: right;
-  }
-
-  [dir=rtl] .paginator [rel=next] {
-    float: left;
   }
 
   /**
