@@ -12,8 +12,8 @@ rules:
  # Specify percentage or number notation for alpha-values.
   alpha-value-notation: number
 
-  # Specify a blacklist of disallowed at-rules.
-  at-rule-blacklist:
+  # Specify a list of disallowed at-rules.
+  at-rule-disallowed-list:
     - debug
 
   # Require or disallow an empty line before at-rules.

@@ -67,7 +67,6 @@ nav ol::after,
   html {
     /* 1 */
     -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
             text-size-adjust: 100%;
   }
 
@@ -1245,12 +1244,6 @@ textarea:-moz-ui-invalid {
    * 1. Fix placeholder font properties inheritance.
    */
   :-ms-input-placeholder {
-    opacity: 1;
-    color: #999999;
-    /* 1 */
-    font: inherit;
-  }
-  ::-ms-input-placeholder {
     opacity: 1;
     color: #999999;
     /* 1 */
