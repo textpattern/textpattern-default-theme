@@ -20,8 +20,9 @@ This project is the source for the default theme that ships as standard with [Te
 
 ## Supported web browsers
 
-* Internet Explorer 11.
 * Chrome, Edge, Firefox, Safari and Opera the last two recent stable releases.
+* Internet Explorer 11.
+* Firefox ESR latest major point release.
 
 ## Requirements
 
