@@ -10,6 +10,7 @@
  * 2. Remove default underline style from non-hover state links.
  * 3. Interrupt the decoration line to let the shape of the text show through
  *    in supported browsers.
+ * 4. Remove tap delay in modern browsers.
  */
 
 a {
@@ -19,6 +20,8 @@ a {
     text-decoration: none;
     /* 3 */
     text-decoration-skip-ink: auto;
+    /* 4 */
+    touch-action: manipulation;
 
     &:hover,
     &:active {

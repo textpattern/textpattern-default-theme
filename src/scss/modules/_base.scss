@@ -26,24 +26,6 @@ summary {
     display: list-item;
 }
 
-/**
- * Add the correct display in IE 11.
- */
-
-template {
-    display: none;
-}
-
-/**
- * Remove tap delay in modern browsers.
- */
-
-a,
-input,
-button {
-    touch-action: manipulation;
-}
-
 
 /* Clearfix
    ========================================================================== */

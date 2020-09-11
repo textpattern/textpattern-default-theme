@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* ==========================================================================
+   Styling and layout for all media
+   ========================================================================== */
 /* Reset
    ========================================================================== */
 /**
@@ -23,22 +26,6 @@ summary {
   display: list-item;
 }
 
-/**
- * Add the correct display in IE 11.
- */
-template {
-  display: none;
-}
-
-/**
- * Remove tap delay in modern browsers.
- */
-a,
-input,
-button {
-  touch-action: manipulation;
-}
-
 /* Clearfix
    ========================================================================== */
 header::after,
@@ -51,9 +38,6 @@ nav ol::after,
   clear: both;
 }
 
-/* ==========================================================================
-   Styling and layout for all media
-   ========================================================================== */
 /* ==========================================================================
    Styling and layout for screen media (mobile first)
    ========================================================================== */
@@ -293,6 +277,7 @@ nav ol::after,
    * 2. Remove default underline style from non-hover state links.
    * 3. Interrupt the decoration line to let the shape of the text show through
    *    in supported browsers.
+   * 4. Remove tap delay in modern browsers.
    */
   a {
     /* 1 */
@@ -302,6 +287,8 @@ nav ol::after,
     /* 3 */
     -webkit-text-decoration-skip: ink;
             text-decoration-skip-ink: auto;
+    /* 4 */
+    touch-action: manipulation;
   }
 
   a:hover, a:active {
@@ -990,11 +977,15 @@ li > ol {
   }
 
   /**
-   * Show the overflow in Edge.
+   * 1. Show the overflow in Edge.
+   * 2. Remove tap delay in modern browsers.
    */
   button,
 input {
+    /* 1 */
     overflow: visible;
+    /* 2 */
+    touch-action: manipulation;
   }
 
   /**
