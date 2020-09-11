@@ -1,3 +1,7 @@
+@use "sass:color";
+@use "../setup/colours";
+@use "../setup/helpers";
+
 /* Buttons
    ========================================================================== */
 
@@ -35,18 +39,18 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-    @include gradient-linear($color-button-gradient-from, $color-button-gradient-to);
+    @include helpers.gradient-linear(colours.$color-button-gradient-from, colours.$color-button-gradient-to);
 
     display: inline-block;
     position: relative;
     width: auto;
     height: 2em; // 32px / 16px
     padding: 0.25em 1em; // 4px / 16px
-    border: 1px solid $color-button-border;
+    border: 1px solid colours.$color-button-border;
     border-radius: 1em;
     background-clip: padding-box;
-    box-shadow: 0 2px 0 $color-button-shadow;
-    color: $color-text-button;
+    box-shadow: 0 2px 0 colours.$color-button-shadow;
+    color: colours.$color-text-button;
     font-weight: normal;
     text-align: center;
     /* 1 */
@@ -55,23 +59,23 @@ button,
     cursor: pointer;
 
     &:hover {
-        @include gradient-linear(lighten($color-button-gradient-from, 4%), lighten($color-button-gradient-to, 4%));
+        @include helpers.gradient-linear(color.adjust(colours.$color-button-gradient-from, $lightness: 4%), color.adjust(colours.$color-button-gradient-to, $lightness: 4%));
 
-        border-color: darken($color-button-border, 13%);
-        color: $color-text-button-hover;
+        border-color: color.adjust(colours.$color-button-border, $lightness: -13%);
+        color: colours.$color-text-button-hover;
         text-decoration: none;
     }
 
     &:active {
         top: 2px;
-        border-color: darken($color-button-border, 13%);
+        border-color: color.adjust(colours.$color-button-border, $lightness: -13%);
         box-shadow: none;
-        color: $color-text-button-active;
+        color: colours.$color-text-button-active;
         text-decoration: none;
     }
 
     &:focus {
-        border-color: $color-link-focus;
+        border-color: colours.$color-link-focus;
         outline: 1px solid transparent; // Allows for repainting in high contrast modes.
     }
 }

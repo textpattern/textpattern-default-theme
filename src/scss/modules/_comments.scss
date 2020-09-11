@@ -1,3 +1,7 @@
+@use "sass:color";
+@use "../setup/colours";
+@use "../setup/settings";
+
 /* Comments
    ========================================================================== */
 
@@ -12,8 +16,8 @@
 .comments {
     margin-bottom: 1em;
     padding: 1px 1em;
-    border-radius: $border-radius;
-    background: $color-background-box;
+    border-radius: settings.$border-radius;
+    background: colours.$color-background-box;
     word-wrap: break-word;
 
     h4 {
@@ -37,7 +41,7 @@
  */
 
 .comments-author {
-    background: darken($color-background-box, 3%);
+    background: color.adjust(colours.$color-background-box, $lightness: -3%);
 }
 
 /**
@@ -47,8 +51,8 @@
 #cpreview {
     margin-bottom: 2px;
     padding: 1em;
-    border-radius: $border-radius;
-    background-color: $color-highlight-box;
+    border-radius: settings.$border-radius;
+    background-color: colours.$color-highlight-box;
 }
 
 /**
@@ -56,7 +60,7 @@
  */
 
 .error_message li {
-    color: $color-error-text;
+    color: colours.$color-error-text;
 }
 
 /**
@@ -64,7 +68,7 @@
  */
 
 .comments_error {
-    border-color: $color-error-text;
+    border-color: colours.$color-error-text;
 }
 
 

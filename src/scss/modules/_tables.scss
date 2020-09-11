@@ -1,3 +1,5 @@
+@use "../setup/colours";
+
 /* Tables
    ========================================================================== */
 
@@ -29,7 +31,7 @@ caption {
 th,
 td {
     padding: 0.5em; // 8px / 16px
-    border: 1px solid $color-border-light;
+    border: 1px solid colours.$color-border-light;
     vertical-align: top;
     text-align: left;
 }
@@ -40,12 +42,12 @@ td {
 
 thead {
     tr {
-        background-color: $color-gradient-from;
+        background-color: colours.$color-gradient-from;
     }
 
     th,
     td {
-        border: 1px solid $color-border;
+        border: 1px solid colours.$color-border;
     }
 }
 
@@ -54,7 +56,7 @@ thead {
  */
 
 tbody tr:nth-child(even) {
-    background-color: $color-background-box;
+    background-color: colours.$color-background-box;
 }
 
 /**
