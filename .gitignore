@@ -1,10 +1,12 @@
 # OS generated files #
 ######################
+._*
 .DS_Store
 .DS_Store?
-._*
+.nova
 .Spotlight-V100
 .Trashes
+.vscode
 Icon?
 ehthumbs.db
 Thumbs.db
