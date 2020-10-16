@@ -39,7 +39,7 @@
     "stylelint-order": "4.1.0",
     "stylelint-scss": "3.18.0",
     "stylelint-webpack-plugin": "2.1.1",
-    "webpack": "5.1.0",
+    "webpack": "5.1.2",
     "webpack-cli": "4.0.0"
   },
   "optionalDependencies": {
