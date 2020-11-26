@@ -20,27 +20,38 @@ module.exports = {
                 test: /\.(scss)$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    // Translates CSS into CommonJS modules.
-                    { loader: 'css-loader', options: { importLoaders: 2 } },
-                    // Run postCSS actions.
-                    { loader: 'postcss-loader', options: { plugins: [require('autoprefixer')] } },
-                    // Compiles Sass to CSS.
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 2,
+                        },
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            plugins: [require('autoprefixer')],
+                        },
+                    },
                     {
                         loader: 'sass-loader',
                         options: {
                             implementation: require('sass'),
                             sassOptions: {
-                                outputStyle: 'expanded'
-                            }
-                        }
-                    }
+                                outputStyle: 'expanded',
+                            },
+                        },
+                    },
                 ]
             },
             {
-                test: /\.woff2?$|\.ttf$|\.eot$|\.svg$|\.png|\.jpe?g|\.gif$/,
-                loader: 'file-loader'
+                test: /\.(woff(2)?|svg)$/,
+                type: 'asset/inline',
             },
-        ]
+            {
+                test: /\.(?:ico|gif|jpe?g|png|svg|webp)$/i,
+                type: 'asset/resource',
+            },
+        ],
     },
     plugins: [
         new CleanWebpackPlugin(),
@@ -63,5 +74,5 @@ module.exports = {
                 },
             ],
         }),
-    ]
+    ],
 };
