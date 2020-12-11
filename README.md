@@ -1,7 +1,6 @@
 # Textpattern CMS default theme
 
 [![Build Status](https://travis-ci.org/textpattern/textpattern-default-theme.svg?branch=master)](https://travis-ci.org/textpattern/textpattern-default-theme)
-[![Known Vulnerabilities](https://snyk.io/test/github/textpattern/textpattern-default-theme/badge.svg?targetFile=package.json)](https://snyk.io/test/github/textpattern/textpattern-default-theme?targetFile=package.json)
 
 [Demo](https://default-theme.textpattern.com/)
 
