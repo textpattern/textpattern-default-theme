@@ -1,6 +1,7 @@
 # Textpattern CMS default theme
 
-[![Build Status](https://travis-ci.org/textpattern/textpattern-default-theme.svg?branch=master)](https://travis-ci.org/textpattern/textpattern-default-theme)
+[![Build Status](https://travis-ci.com/textpattern/textpattern-default-theme.svg)](https://travis-ci.com/textpattern/textpattern-default-theme)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/textpattern)](https://github.com/sponsors/textpattern)
 
 [Demo](https://default-theme.textpattern.com/)
 
