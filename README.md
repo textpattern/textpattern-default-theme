@@ -3,8 +3,6 @@
 [![Build Status](https://travis-ci.org/textpattern/textpattern-default-theme.svg?branch=master)](https://travis-ci.org/textpattern/textpattern-default-theme)
 [![Known Vulnerabilities](https://snyk.io/test/github/textpattern/textpattern-default-theme/badge.svg?targetFile=package.json)](https://snyk.io/test/github/textpattern/textpattern-default-theme?targetFile=package.json)
 
-[Demo](https://default-theme.textpattern.com/)
-
 This project is the source for the default theme that ships as standard with [Textpattern CMS](https://textpattern.com/). It is intended as a starting point for new users learning the Textpattern CMS for the first time or existing users that want to adapt their current code for modern standards, and is not intended as a finished production theme (though you could use it as such if you want to).
 
 ## Features
