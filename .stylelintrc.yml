@@ -348,6 +348,9 @@ rules:
   # Require a single space or disallow whitespace before the commas of media query lists.
   media-query-list-comma-space-before: never
 
+  # Disallow invalid named grid areas.
+  named-grid-areas-no-invalid: true
+
   # Disallow selectors of lower specificity from coming after overriding selectors of higher specificity.
   #no-descending-specificity: true
 
