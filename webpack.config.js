@@ -49,14 +49,6 @@ module.exports = {
                     },
                 ]
             },
-            {
-                test: /\.(woff(2)?|svg)$/,
-                type: 'asset/inline',
-            },
-            {
-                test: /\.(?:ico|gif|jpe?g|png|svg|webp)$/i,
-                type: 'asset/resource',
-            },
         ],
     },
     plugins: [
