@@ -38,7 +38,7 @@
     "stylelint": "13.13.1",
     "stylelint-order": "4.1.0",
     "stylelint-scss": "3.19.0",
-    "stylelint-webpack-plugin": "2.1.1",
+    "stylelint-webpack-plugin": "2.2.0",
     "webpack": "5.39.0",
     "webpack-cli": "4.7.2",
     "webpack-manifest-version-sync-plugin": "0.0.4"
