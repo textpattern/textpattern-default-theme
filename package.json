@@ -30,7 +30,7 @@
     "copy-webpack-plugin": "9.0.1",
     "cross-env": "7.0.3",
     "css-loader": "6.2.0",
-    "mini-css-extract-plugin": "2.2.2",
+    "mini-css-extract-plugin": "2.3.0",
     "postcss": "8.3.6",
     "postcss-loader": "6.1.1",
     "sass": "1.39.0",
