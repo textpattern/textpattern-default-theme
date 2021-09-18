@@ -1,6 +1,5 @@
 # Textpattern CMS default theme
 
-[![Build Status](https://travis-ci.org/textpattern/textpattern-default-theme.svg?branch=master)](https://travis-ci.org/textpattern/textpattern-default-theme)
 [![devDependency Status](https://david-dm.org/textpattern/textpattern-default-theme/dev-status.svg)](https://david-dm.org/textpattern/textpattern-default-theme#info=devDependencies)
 
 [Demo](http://www.philwareham.co.uk/)
