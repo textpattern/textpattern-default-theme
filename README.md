@@ -1,6 +1,5 @@
 # Textpattern CMS default theme
 
-[![Build Status](https://travis-ci.com/textpattern/textpattern-default-theme.svg)](https://travis-ci.com/textpattern/textpattern-default-theme)
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/textpattern)](https://github.com/sponsors/textpattern)
 
 This project is the source for the default theme that ships as standard with [Textpattern CMS](https://textpattern.com/). It is intended as a starting point for new users learning the Textpattern CMS for the first time or existing users that want to adapt their current code for modern standards, and is not intended as a finished production theme (though you could use it as such if you want to).
