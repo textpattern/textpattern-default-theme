@@ -1,4 +1,5 @@
 @use "sass:color";
+@use "sass:math";
 @use "../setup/colours";
 @use "../setup/settings";
 
@@ -134,7 +135,7 @@ abbr[title] {
 mark,
 var {
     padding: 0 0.25em; // 0 4px
-    border-radius: settings.$border-radius / 2;
+    border-radius: math.div(settings.$border-radius, 2);
     background: colours.$color-highlight-box;
     color: colours.$color-text;
 }
