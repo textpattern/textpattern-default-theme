@@ -33,7 +33,7 @@
     "mini-css-extract-plugin": "2.6.0",
     "postcss": "8.4.8",
     "postcss-loader": "6.2.1",
-    "sass": "1.49.9",
+    "sass": "1.49.10",
     "sass-loader": "12.6.0",
     "stylelint": "14.5.3",
     "stylelint-order": "5.0.0",
