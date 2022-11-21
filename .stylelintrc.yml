@@ -3,14 +3,19 @@ ignoreFiles:
 
 defaultSeverity: warning
 
+customSyntax: postcss-scss
+
 plugins:
   - stylelint-scss
   - stylelint-order
 
 rules:
 
- # Specify percentage or number notation for alpha-values.
+  # Specify percentage or number notation for alpha-values.
   alpha-value-notation: number
+
+  # Disallow unknown annotations.
+  #annotation-no-unknown: true
 
   # Specify a list of disallowed at-rules.
   at-rule-disallowed-list:
@@ -89,10 +94,10 @@ rules:
   # Disallow empty blocks.
   block-no-empty: true
 
-  # equire a newline after the opening brace of blocks.
+  # Require a newline after the opening brace of blocks.
   block-opening-brace-newline-after: always-multi-line
 
-  #Require a newline or disallow whitespace before the opening brace of blocks.
+  # Require a newline or disallow whitespace before the opening brace of blocks.
   block-opening-brace-newline-before: never-single-line
 
   # Require a single space or disallow whitespace after the opening brace of blocks.
@@ -103,6 +108,9 @@ rules:
 
   # Specify modern or legacy notation for applicable color-functions.
   color-function-notation: legacy
+
+  # Require or disallow alpha channel for hex colors.
+  #color-hex-alpha: never
 
   # Specify lowercase or uppercase for hexadecimal color values.
   color-hex-case: lower
@@ -136,6 +144,9 @@ rules:
 
   # Require or disallow an empty line before custom properties (Autofixable).
   custom-property-empty-line-before: always
+
+  # Disallow missing `var` function for custom properties.
+  #custom-property-no-missing-var-function: true
 
   # Specify a pattern for custom properties.
   #custom-property-pattern:
@@ -191,6 +202,9 @@ rules:
   # Disallow `!important` within declarations.
   #declaration-no-important:
 
+  # Limit the number of values for a list of properties within declarations.
+  #declaration-property-max-values:
+
   # Specify a blacklist of disallowed property and unit pairs within declarations.
   #declaration-property-unit-blacklist:
 
@@ -221,9 +235,6 @@ rules:
   # Specify a blacklist of disallowed functions.
   #function-blacklist:
 
-  # Disallow an invalid expression within `calc` functions.
-  function-calc-no-invalid: true
-
   # Disallow an unspaced operator within `calc` functions.
   function-calc-no-unspaced-operator: true
 
@@ -247,6 +258,9 @@ rules:
 
   # Specify lowercase or uppercase for function names.
   function-name-case: lower
+
+  # Disallow unknown functions.
+  #function-no-unknown: true
 
   # Require a newline or disallow whitespace on the inside of the parentheses of functions.
   function-parentheses-newline-inside: always-multi-line
@@ -275,11 +289,20 @@ rules:
   # Specify number or angle notation for degree hues.
   hue-degree-notation: angle
 
+  # Specify string or URL notation for `@import` rules.
+  #import-notation: url
+
   # Specify indentation.
   indentation: 4
 
+  # Disallow duplicate selectors within keyframe blocks.
+  keyframe-block-no-duplicate-selectors: true
+
   # Disallow `!important` within keyframe declarations.
   keyframe-declaration-no-important: true
+
+  # Specify keyword or percentage notation for keyframe selectors.
+  keyframe-selector-notation: percentage-unless-within-keyword-only-block
 
   # Specify a pattern for keyframe names.
   #keyframes-name-pattern:
@@ -373,7 +396,13 @@ rules:
   no-extra-semicolons: true
 
   # Disallow double-slash comments (`//`) which are not supported by CSS.
-  no-invalid-double-slash-comments: true
+  #no-invalid-double-slash-comments: true
+
+  # Disallow invalid position `@import` rules within a stylesheet.
+  #no-invalid-position-at-import-rule: true
+
+  # Disallow irregular whitespaces.
+  no-irregular-whitespace: true
 
   # Disallow missing end-of-source newlines.
   no-missing-end-of-source-newline: true
@@ -416,6 +445,9 @@ rules:
       except:
         - first-nested
 
+  # Specify a list of disallowed properties for selectors within rules.
+  #rule-selector-property-disallowed-list:
+
   # Require a single space or disallow whitespace on the inside of the brackets within attribute selectors.
   selector-attribute-brackets-space-inside: never
 
@@ -451,6 +483,9 @@ rules:
 
   # Disallow non-space characters for descendant combinators of selectors.
   selector-descendant-combinator-no-non-space: true
+
+  # Specify a list of disallowed selectors.
+  #selector-disallowed-list:
 
   # Specify a pattern for ID selectors.
   #selector-id-pattern:
@@ -505,6 +540,9 @@ rules:
 
   # Disallow vendor prefixes for selectors.
   selector-no-vendor-prefix: true
+
+  # Specify simple or complex notation for `:not()` pseudo-class selectors.
+  selector-not-notation: complex
 
   # Specify a blacklist of disallowed pseudo-class selectors.
   #selector-pseudo-class-blacklist:
