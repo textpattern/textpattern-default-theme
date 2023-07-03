@@ -5,8 +5,9 @@ defaultSeverity: warning
 
 customSyntax: postcss-scss
 
+extends: stylelint-config-standard-scss
+
 plugins:
-  - stylelint-scss
   - stylelint-order
 
 rules:
@@ -33,15 +34,6 @@ rules:
       ignoreAtRules:
         - else
 
-  # Specify lowercase or uppercase for at-rules names.
-  at-rule-name-case: lower
-
-  # Require a newline after at-rule names.
-  at-rule-name-newline-after: always-multi-line
-
-  # Require a single space after at-rule names.
-  at-rule-name-space-after: always
-
   # Disallow unknown at-rules.
   at-rule-no-unknown:
     - true
@@ -67,53 +59,17 @@ rules:
   # Disallow vendor prefixes for at-rules.
   at-rule-no-vendor-prefix: true
 
-  # Require a newline after the semicolon of at-rules.
-  at-rule-semicolon-newline-after: always
-
-  # Require a single space or disallow whitespace before the semicolons of at rules.
-  at-rule-semicolon-space-before: never
-
   # Specify a whitelist of allowed at-rules.
   #at-rule-whitelist:
 
-  # Require or disallow an empty line before the closing brace of blocks.
-  block-closing-brace-empty-line-before: never
-
-  # Require a newline or disallow whitespace after the closing brace of blocks.
-  block-closing-brace-newline-after: always
-
-  # Require a newline or disallow whitespace before the closing brace of blocks.
-  block-closing-brace-newline-before: always-multi-line
-
-  # Require a single space or disallow whitespace after the closing brace of blocks.
-  block-closing-brace-space-after: always-single-line
-
-  # Require a single space or disallow whitespace before the closing brace of blocks.
-  block-closing-brace-space-before: always-single-line
-
   # Disallow empty blocks.
   block-no-empty: true
-
-  # Require a newline after the opening brace of blocks.
-  block-opening-brace-newline-after: always-multi-line
-
-  # Require a newline or disallow whitespace before the opening brace of blocks.
-  block-opening-brace-newline-before: never-single-line
-
-  # Require a single space or disallow whitespace after the opening brace of blocks.
-  block-opening-brace-space-after: always-single-line
-
-  # Require a single space or disallow whitespace before the opening brace of blocks.
-  block-opening-brace-space-before: always
 
   # Specify modern or legacy notation for applicable color-functions.
   color-function-notation: legacy
 
   # Require or disallow alpha channel for hex colors.
   #color-hex-alpha: never
-
-  # Specify lowercase or uppercase for hexadecimal color values.
-  color-hex-case: lower
 
   # Specify short or long notation for hexadecimal color values.
   color-hex-length: long
@@ -128,10 +84,13 @@ rules:
   color-no-invalid-hex: true
 
   # Require or disallow an empty line before comments.
-  #comment-empty-line-before:
+  comment-empty-line-before: null
 
   # Disallow empty comments.
   comment-no-empty: true
+
+  # Specify a pattern for comments.
+  #comment-pattern:
 
   # Require or disallow whitespace on the inside of comment markers.
   comment-whitespace-inside: always
@@ -151,12 +110,6 @@ rules:
   # Specify a pattern for custom properties.
   #custom-property-pattern:
 
-  # Require a single space or disallow whitespace after the bang of declarations.
-  declaration-bang-space-after: never
-
-  # Require a single space or disallow whitespace before the bang of declarations.
-  declaration-bang-space-before: always
-
   # Disallow duplicate custom properties within declaration blocks.
   declaration-block-no-duplicate-custom-properties: true
 
@@ -169,32 +122,8 @@ rules:
   # Disallow shorthand properties that override related longhand properties.
   declaration-block-no-shorthand-property-overrides: true
 
-  # Require a newline or disallow whitespace after the semicolons of declaration blocks.
-  declaration-block-semicolon-newline-after: always-multi-line
-
-  # Require a newline or disallow whitespace before the semicolons of declaration blocks.
-  declaration-block-semicolon-newline-before: never-multi-line
-
-  # Require a single space or disallow whitespace after the semicolons of declaration blocks.
-  declaration-block-semicolon-space-after: always-single-line
-
-  # Require a single space or disallow whitespace before the semicolons of declaration blocks.
-  declaration-block-semicolon-space-before: never
-
   # Limit the number of declaration within single line declaration blocks.
   declaration-block-single-line-max-declarations: 1
-
-  # Require or disallow a trailing semicolon within declaration blocks.
-  declaration-block-trailing-semicolon: always
-
-  # Require a newline or disallow whitespace after the colon of declarations.
-  declaration-colon-newline-after: always-multi-line
-
-  # Require a single space or disallow whitespace after the colon of declarations.
-  declaration-colon-space-after: always-single-line
-
-  # Require a single space or disallow whitespace before the colon of declarations.
-  declaration-colon-space-before: never
 
   # Require or disallow an empty line before declarations.
   #declaration-empty-line-before:
@@ -204,6 +133,9 @@ rules:
 
   # Limit the number of values for a list of properties within declarations.
   #declaration-property-max-values:
+
+  # Disallow unknown values for properties within declarations.
+  #declaration-property-value-no-unknown: true
 
   # Specify a blacklist of disallowed property and unit pairs within declarations.
   #declaration-property-unit-blacklist:
@@ -235,38 +167,20 @@ rules:
   # Specify a blacklist of disallowed functions.
   #function-blacklist:
 
+  # Disallow an invalid expression within `calc` functions.
+  #function-calc-no-invalid: true
+
   # Disallow an unspaced operator within `calc` functions.
   function-calc-no-unspaced-operator: true
 
-  # Require a newline or disallow whitespace after the commas of functions.
-  function-comma-newline-after: always-multi-line
-
-  # Require a newline or disallow whitespace before the commas of functions.
-  function-comma-newline-before: never-multi-line
-
-  # Require a single space or disallow whitespace after the commas of functions.
-  function-comma-space-after: always-single-line
-
-  # Require a single space or disallow whitespace before the commas of functions.
-  function-comma-space-before: never
-
   # Disallow direction values in `linear-gradient()` calls that are not valid.
   function-linear-gradient-no-nonstandard-direction: true
-
-  # Limit the number of adjacent empty lines within functions.
-  function-max-empty-lines: 0
 
   # Specify lowercase or uppercase for function names.
   function-name-case: lower
 
   # Disallow unknown functions.
   #function-no-unknown: true
-
-  # Require a newline or disallow whitespace on the inside of the parentheses of functions.
-  function-parentheses-newline-inside: always-multi-line
-
-  # Require a single space or disallow whitespace on the inside of the parentheses of functions.
-  function-parentheses-space-inside: never-single-line
 
   # Disallow scheme-relative URLs.
   function-url-no-scheme-relative: true
@@ -283,17 +197,11 @@ rules:
   # Specify a whitelist of allowed functions.
   #function-whitelist:
 
-  # Require or disallow whitespace after functions.
-  function-whitespace-after: always
-
   # Specify number or angle notation for degree hues.
   hue-degree-notation: angle
 
   # Specify string or URL notation for `@import` rules.
-  #import-notation: url
-
-  # Specify indentation.
-  indentation: 4
+  #import-notation:
 
   # Disallow duplicate selectors within keyframe blocks.
   keyframe-block-no-duplicate-selectors: true
@@ -301,42 +209,20 @@ rules:
   # Disallow `!important` within keyframe declarations.
   keyframe-declaration-no-important: true
 
-  # Specify keyword or percentage notation for keyframe selectors.
-  keyframe-selector-notation: percentage-unless-within-keyword-only-block
-
   # Specify a pattern for keyframe names.
   #keyframes-name-pattern:
+
+  # Specify keyword or percentage notation for keyframe selectors.
+  keyframe-selector-notation: percentage
 
   # Disallow units for zero lengths.
   length-zero-no-unit: true
 
-  # Specify Unix or Windows linebreaks.
-  linebreaks: unix
-
-  # Limit the number of adjacent empty lines.
-  max-empty-lines: 3
-
-  # Limit the length of a line.
-  max-line-length:
-    - 80
-    -
-      ignore:
-        - non-comments
-
   # Limit the depth of nesting.
   max-nesting-depth: 4
 
-  # Require a single space or disallow whitespace after the colon in media features.
-  media-feature-colon-space-after: always
-
-  # Require a single space or disallow whitespace before the colon in media features.
-  media-feature-colon-space-before: never
-
   # Specify a blacklist of disallowed media feature names.
   #media-feature-name-blacklist:
-
-  # Specify lowercase or uppercase for media feature names.
-  media-feature-name-case: lower
 
   # Disallow unknown media feature names.
   media-feature-name-no-unknown: true
@@ -344,89 +230,63 @@ rules:
   # Disallow vendor prefixes for media feature names.
   media-feature-name-no-vendor-prefix: true
 
+  # Specify a list of allowed name and unit pairs within media features.
+  #media-feature-name-unit-allowed-list:
+
+  # Disallow unknown values for media features.
+  #media-feature-name-value-no-unknown:
+
   # Specify a whitelist of allowed media feature name and value pairs.
   #media-feature-name-value-whitelist:
 
   # Specify a whitelist of allowed media feature names.
   #media-feature-name-whitelist:
 
-  # Require a single space or disallow whitespace on the inside of the parentheses within media features.
-  media-feature-parentheses-space-inside: never
-
-  # Require a single space or disallow whitespace after the range operator in media features.
-  media-feature-range-operator-space-after: always
-
-  # Require a single space or disallow whitespace before the range operator in media features.
-  media-feature-range-operator-space-before: always
-
-  # Require a newline or disallow whitespace after the commas of media query lists.
-  media-query-list-comma-newline-after: never-multi-line
-
-  # Require a newline or disallow whitespace before the commas of media query lists.
-  media-query-list-comma-newline-before: never-multi-line
-
-  # Require a single space or disallow whitespace after the commas of media query lists.
-  media-query-list-comma-space-after: always
-
-  # Require a single space or disallow whitespace before the commas of media query lists.
-  media-query-list-comma-space-before: never
+  # Specify context or prefix notation for media feature ranges.
+  media-feature-range-notation: prefix
 
   # Disallow invalid named grid areas.
   named-grid-areas-no-invalid: true
 
   # Disallow selectors of lower specificity from coming after overriding selectors of higher specificity.
-  #no-descending-specificity: true
+  no-descending-specificity: null
 
   # Disallow duplicate `@import` rules within a stylesheet.
   no-duplicate-at-import-rules: true
 
   # Disallow duplicate selectors within a stylesheet.
-  #no-duplicate-selectors: true
-
-  # Disallow empty first lines.
-  no-empty-first-line: true
+  no-duplicate-selectors: null
 
   # Disallow empty sources.
   no-empty-source: true
-
-  # Disallow end-of-line whitespace.
-  no-eol-whitespace: true
-
-  # Disallow extra semicolons.
-  no-extra-semicolons: true
 
   # Disallow double-slash comments (`//`) which are not supported by CSS.
   #no-invalid-double-slash-comments: true
 
   # Disallow invalid position `@import` rules within a stylesheet.
-  #no-invalid-position-at-import-rule: true
+  no-invalid-position-at-import-rule: null
 
   # Disallow irregular whitespaces.
   no-irregular-whitespace: true
 
-  # Disallow missing end-of-source newlines.
-  no-missing-end-of-source-newline: true
-
   # Disallow unknown animations.
-  no-unknown-animations: true
+  #no-unknown-animations:
 
-  # Require or disallow a leading zero for fractional numbers less than 1.
-  number-leading-zero: always
+  # Disallow unknown custom properties.
+  #no-unknown-custom-properties:
 
   # Limit the number of decimal places allowed in numbers.
   number-max-precision: 7
 
-  # Disallow trailing zeros in numbers.
-  number-no-trailing-zeros: true
-
   # Specify a blacklist of disallowed properties.
   #property-blacklist:
 
-  # Specify lowercase or uppercase for properties.
-  property-case: lower
-
   # Disallow unknown properties.
-  property-no-unknown: true
+  property-no-unknown:
+    - true
+    -
+      ignoreProperties:
+        - contains-intrinsic-size
 
   # Disallow vendor prefixes for properties.
   property-no-vendor-prefix:
@@ -448,17 +308,14 @@ rules:
   # Specify a list of disallowed properties for selectors within rules.
   #rule-selector-property-disallowed-list:
 
-  # Require a single space or disallow whitespace on the inside of the brackets within attribute selectors.
-  selector-attribute-brackets-space-inside: never
+  # Disallow unmatchable An+B selectors.
+  selector-anb-no-unmatchable: true
+
+  # Specify a list of disallowed attribute names.
+  #selector-attribute-name-disallowed-list:
 
   # Specify a blacklist of disallowed attribute operators.
   #selector-attribute-operator-blacklist:
-
-  # Require a single space or disallow whitespace after operators within attribute selectors.
-  selector-attribute-operator-space-after: never
-
-  # Require a single space or disallow whitespace before operators within attribute selectors.
-  selector-attribute-operator-space-before: never
 
   #Specify a whitelist of allowed attribute operators.
   #selector-attribute-operator-whitelist:
@@ -467,40 +324,19 @@ rules:
   selector-attribute-quotes: always
 
   # Specify a pattern for class selectors.
-  #selector-class-pattern:
+  selector-class-pattern: null
 
   # Specify a blacklist of disallowed combinators.
   #selector-combinator-blacklist:
 
-  # Require a single space or disallow whitespace after the combinators of selectors.
-  selector-combinator-space-after: always
-
-  # Require a single space or disallow whitespace before the combinators of selectors.
-  selector-combinator-space-before: always
-
   # Specify a whitelist of allowed combinators.
   #selector-combinator-whitelist:
-
-  # Disallow non-space characters for descendant combinators of selectors.
-  selector-descendant-combinator-no-non-space: true
 
   # Specify a list of disallowed selectors.
   #selector-disallowed-list:
 
   # Specify a pattern for ID selectors.
   #selector-id-pattern:
-
-  # Require a newline or disallow whitespace after the commas of selector lists.
-  selector-list-comma-newline-after: always
-
-  # Require a newline or disallow whitespace before the commas of selector lists.
-  selector-list-comma-newline-before: never-multi-line
-
-  # Require a single space or disallow whitespace after the commas of selector lists.
-  selector-list-comma-space-after: always-single-line
-
-  # Require a single space or disallow whitespace before the commas of selector lists.
-  selector-list-comma-space-before: never
 
   # Limit the number of attribute selectors in a selector.
   selector-max-attribute: 2
@@ -513,9 +349,6 @@ rules:
 
   # Limit the number of compound selectors in a selector.
   selector-max-compound-selectors: 4
-
-  # Limit the number of adjacent empty lines within selectors.
-  selector-max-empty-lines: 0
 
   # Limit the number of id selectors in a selector.
   selector-max-id: 1
@@ -547,23 +380,15 @@ rules:
   # Specify a blacklist of disallowed pseudo-class selectors.
   #selector-pseudo-class-blacklist:
 
-  # Specify lowercase or uppercase for pseudo-class selectors.
-  selector-pseudo-class-case: lower
-
   # Disallow unknown pseudo-class selectors.
   selector-pseudo-class-no-unknown: true
 
-  # Require a single space or disallow whitespace on the inside of the parentheses within pseudo-class selectors.
-  selector-pseudo-class-parentheses-space-inside: never
 
   # Specify a whitelist of allowed pseudo-class selectors.
   #selector-pseudo-class-whitelist:
 
   # Specify a blacklist of disallowed pseudo-element selectors.
   #selector-pseudo-element-blacklist:
-
-  # Specify lowercase or uppercase for pseudo-element selectors.
-  selector-pseudo-element-case: lower
 
   # Specify single or double colon notation for applicable pseudo-elements.
   selector-pseudo-element-colon-notation: double
@@ -586,20 +411,11 @@ rules:
   # Disallow (unescaped) newlines in strings.
   string-no-newline: true
 
-  # Specify single or double quotes around strings.
-  string-quotes: double
-
   # Specify the minimum number of milliseconds for time values.
   time-min-milliseconds: 100
 
-  # Require or disallow the Unicode Byte Order Mark.
-  unicode-bom: never
-
   # Specify a blacklist of disallowed units.
   #unit-blacklist:
-
-  # Specify lowercase or uppercase for units.
-  unit-case: lower
 
   # Disallow unknown units.
   unit-no-unknown: true
@@ -608,22 +424,7 @@ rules:
   #unit-whitelist:
 
   # Specify lowercase or uppercase for keywords values.
-  #value-keyword-case: lower
-
-  # Require a newline or disallow whitespace after the commas of value lists.
-  value-list-comma-newline-after: never-multi-line
-
-  # Require a newline or disallow whitespace before the commas of value lists.
-  value-list-comma-newline-before: never-multi-line
-
-  # Require a single space or disallow whitespace after the commas of value lists.
-  value-list-comma-space-after: always
-
-  # Require a single space or disallow whitespace before the commas of value lists.
-  value-list-comma-space-before: never
-
-  # Limit the number of adjacent empty lines within value lists.
-  value-list-max-empty-lines: 0
+  value-keyword-case: null
 
   # Disallow vendor prefixes for values.
   value-no-vendor-prefix: true
@@ -1007,7 +808,7 @@ rules:
     - all
     - appearance
     - additive-symbols
-    - color-adjust
+    - print-color-adjust
 
     - counter-reset
     - counter-increment
@@ -1076,62 +877,14 @@ rules:
 
  # Additional SCSS rules (stylelint-scss plugin).
 
-  # Disallow `@extend` with missing placeholders.
-  scss/at-extend-no-missing-placeholder: true
+  # Require or disallow whitespace after the colon in `$`-variable declarations.
+  scss/dollar-variable-colon-space-after: null
 
-  # Check for equality to null is unnecessarily explicit since `null` is falsey in Sass.
-  scss/at-if-no-null: true
+  # Require or disallow an empty line before `//`-comments.
+  scss/double-slash-comment-empty-line-before: null
 
-  # Since leading underscores are not needed, they can be omitted.
-  scss/at-import-no-partial-leading-underscore: true
-
-  # Require or disallow extension in `@import` commands.
-  scss/at-import-partial-extension: never
-
-  # Disallow parentheses in conditional @ rules (if, elsif, while).
-  scss/at-rule-conditional-no-parentheses: true
-
-  # Disallow unknown at-rules. Should be used instead of stylelint's `at-rule-no-unknown`.
-  scss/at-rule-no-unknown: true
-
-  # Disallow empty comments.
-  scss/comment-no-empty: true
-
-  # Require a newline after the colon in `$`-variable declarations.
-  scss/dollar-variable-colon-newline-after: always-multi-line
-
-  # Require a single space or disallow whitespace before the colon in `$`-variable declarations.
-  scss/dollar-variable-colon-space-before: never
-
-  # Require `!default` flag for `$`-variable declarations.
-  scss/dollar-variable-default: true
-
-  # Disallow Sass variables that are used without interpolation with CSS features that use custom identifiers.
-  scss/dollar-variable-no-missing-interpolation: true
-
-  # Disallow quoted strings inside the quote function.
-  scss/function-quote-no-quoted-strings-inside: true
-
-  # Disallow duplicate dollar variables within a stylesheet.
-  scss/no-duplicate-dollar-variables: true
-
-  # Disallow duplicate mixins within a stylesheet.
-  scss/no-duplicate-mixins: true
-
-  # Disallows the use of global function names, as these global functions are now located inside built-in Sass modules.
-  scss/no-global-function-names: true
-
-  # Disallow linebreaks after Sass operators.
-  scss/operator-no-newline-after: true
-
-  # Disallow linebreaks before Sass operators.
-  scss/operator-no-newline-before: true
+  # Require or disallow whitespace after the `//` in `//`-comments
+  scss/double-slash-comment-whitespace-inside: null
 
   # Disallow unspaced operators in Sass operations.
-  scss/operator-no-unspaced: true
-
-  # Disallow non-CSS `@import`s in partial files.
-  scss/partial-no-import: true
-
-  # Prevents unneeded nesting selectors.
-  scss/selector-no-redundant-nesting-selector: true
+  scss/operator-no-unspaced: null
