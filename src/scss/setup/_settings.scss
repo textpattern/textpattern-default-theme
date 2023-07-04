@@ -1,31 +1,30 @@
 // font families
-
-$font-serif:          "PT Serif", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif !default;
-$font-sans-serif:     system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$font-form:           system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$font-code:           Menlo, Consolas, Monaco, monospace !default;
-$font-print:          "Helvetica Neue", sans-serif !default;
+$font-serif: "PT Serif", Constantia, "Lucida Bright", Lucidabright,
+    "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif",
+    "Liberation Serif", Georgia, serif !default;
+$font-sans-serif: system-ui, -apple-system, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-form: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-code: Menlo, Consolas, Monaco, monospace !default;
+$font-print: "Helvetica Neue", sans-serif !default;
 
 // typography grid
-
-$base-font-size:      16px !default;
-$base-line-height:    1.5 !default;
-$code-font-size:      0.875rem !default; // 14px / 16px
-$small-font-size:     0.8125rem !default; // 13px / 16px
+$base-font-size: 16px !default;
+$base-line-height: 1.5 !default;
+$code-font-size: 0.875rem !default; // 14px / 16px
+$small-font-size: 0.8125rem !default; // 13px / 16px
 
 // layout grid
-
 $container-max-width: 54em !default; // 864px / 16px
-$break-large:         46em !default; // 736px / 16px
-$break-small:         38em !default; // 608px / 16px
+$break-large: 46em !default; // 736px / 16px
+$break-small: 38em !default; // 608px / 16px
 
 // borders
-
-$border-radius:       0.5em !default; // 8px / 16px
+$border-radius: 0.5em !default; // 8px / 16px
 
 // shadows
-
-$inset-highlighting:  inset 0 1px 0 rgba(#ffffff, 0.25) !default;
-$inset-lowlighting:   inset 0 0.2em 0.25em rgba(#000000, 0.15) !default;
-$text-shadow-light:   1px 1px 0 rgba(#ffffff, 0.5) !default;
-$text-shadow-dark:    -1px -1px 0 rgba(#000000, 0.1) !default;
+$inset-highlighting: inset 0 1px 0 rgba(#ffffff, 0.25) !default;
+$inset-lowlighting: inset 0 0.2em 0.25em rgba(#000000, 0.15) !default;
+$text-shadow-light: 1px 1px 0 rgba(#ffffff, 0.5) !default;
+$text-shadow-dark: -1px -1px 0 rgba(#000000, 0.1) !default;

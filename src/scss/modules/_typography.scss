@@ -254,6 +254,7 @@ hr {
     /* 2 */
     overflow: visible;
     border: 0; // remove the default `hr` border
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 24'%3E%3Cpath fill='%23333' d='M0,0c1.742,13.61,54.74,20.912,119.995,15.279C184.922,9.679,238.594,13.024,240,24c-1.744-13.613-54.742-20.913-120.005-15.284C55.078,14.32,1.405,10.973,0,0z'/%3E%3C/svg%3E") 50% 50% no-repeat;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 24'%3E%3Cpath fill='%23333' d='M0,0c1.742,13.61,54.74,20.912,119.995,15.279C184.922,9.679,238.594,13.024,240,24c-1.744-13.613-54.742-20.913-120.005-15.284C55.078,14.32,1.405,10.973,0,0z'/%3E%3C/svg%3E")
+        50% 50% no-repeat;
     background-size: 240px 24px;
 }

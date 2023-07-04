@@ -91,7 +91,10 @@ h6 {
     padding: 0.25em 0.5em;
     transform: translateY(-5em);
     transition: transform 0.25s ease-in-out;
-    background-color: color.adjust(colours.$color-gradient-from, $lightness: 8%);
+    background-color: color.adjust(
+        colours.$color-gradient-from,
+        $lightness: 8%
+    );
     color: colours.$color-text;
     font-family: settings.$font-sans-serif;
 

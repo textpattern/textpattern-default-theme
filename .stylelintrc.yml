@@ -11,7 +11,6 @@ plugins:
   - stylelint-order
 
 rules:
-
   # Specify percentage or number notation for alpha-values.
   alpha-value-notation: number
 
@@ -25,8 +24,7 @@ rules:
   # Require or disallow an empty line before at-rules.
   at-rule-empty-line-before:
     - always
-    -
-      except:
+    - except:
         - blockless-after-blockless
         - first-nested
       ignore:
@@ -37,8 +35,7 @@ rules:
   # Disallow unknown at-rules.
   at-rule-no-unknown:
     - true
-    -
-      ignoreAtRules:
+    - ignoreAtRules:
         - at-root
         - each
         - else
@@ -284,15 +281,13 @@ rules:
   # Disallow unknown properties.
   property-no-unknown:
     - true
-    -
-      ignoreProperties:
+    - ignoreProperties:
         - contains-intrinsic-size
 
   # Disallow vendor prefixes for properties.
   property-no-vendor-prefix:
     - true
-    -
-      ignoreProperties:
+    - ignoreProperties:
         - appearance
 
   # Specify a whitelist of allowed properties.
@@ -301,8 +296,7 @@ rules:
   # Require or disallow an empty line before rules.
   rule-empty-line-before:
     - always-multi-line
-    -
-      except:
+    - except:
         - first-nested
 
   # Specify a list of disallowed properties for selectors within rules.
@@ -383,7 +377,6 @@ rules:
   # Disallow unknown pseudo-class selectors.
   selector-pseudo-class-no-unknown: true
 
-
   # Specify a whitelist of allowed pseudo-class selectors.
   #selector-pseudo-class-whitelist:
 
@@ -429,10 +422,8 @@ rules:
   # Disallow vendor prefixes for values.
   value-no-vendor-prefix: true
 
-
- # SMACSS-like property order rules (stylelint-order plugin).
+  # SMACSS-like property order rules (stylelint-order plugin).
   order/properties-order:
-
     # Heading.
 
     - content
@@ -875,10 +866,18 @@ rules:
     - size
     - marks
 
- # Additional SCSS rules (stylelint-scss plugin).
+  # Additional SCSS rules (stylelint-scss plugin).
 
   # Require or disallow whitespace after the colon in `$`-variable declarations.
   scss/dollar-variable-colon-space-after: null
+
+  # Require an empty line or disallow empty lines before `$`-variable declarations.
+  scss/dollar-variable-empty-line-before:
+    - always
+    - except:
+        - first-nested
+        - after-comment
+        - after-dollar-variable
 
   # Require or disallow an empty line before `//`-comments.
   scss/double-slash-comment-empty-line-before: null

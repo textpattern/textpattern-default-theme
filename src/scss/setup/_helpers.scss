@@ -1,5 +1,4 @@
 // standard gradients
-
 @mixin gradient-linear($color-gradient-from, $color-gradient-to) {
     background-color: $color-gradient-to;
     background-image: linear-gradient($color-gradient-from, $color-gradient-to);

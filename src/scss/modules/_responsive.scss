@@ -67,19 +67,24 @@
             cursor: pointer;
 
             &:hover {
-                background-color: color.adjust(colours.$color-gradient-from, $lightness: 4%);
+                background-color: color.adjust(
+                    colours.$color-gradient-from,
+                    $lightness: 4%
+                );
             }
 
             &:focus {
                 width: 16em;
                 padding-right: 0.1875em;
-                background-color: color.adjust(colours.$color-gradient-from, $lightness: 8%);
+                background-color: color.adjust(
+                    colours.$color-gradient-from,
+                    $lightness: 8%
+                );
                 cursor: auto;
             }
         }
     }
 }
-
 
 /* ==========================================================================
    Additional layout for screen media 864px and up

@@ -39,7 +39,10 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-    @include helpers.gradient-linear(colours.$color-button-gradient-from, colours.$color-button-gradient-to);
+    @include helpers.gradient-linear(
+        colours.$color-button-gradient-from,
+        colours.$color-button-gradient-to
+    );
 
     display: inline-block;
     position: relative;
@@ -59,16 +62,25 @@ button,
     cursor: pointer;
 
     &:hover {
-        @include helpers.gradient-linear(color.adjust(colours.$color-button-gradient-from, $lightness: 4%), color.adjust(colours.$color-button-gradient-to, $lightness: 4%));
+        @include helpers.gradient-linear(
+            color.adjust(colours.$color-button-gradient-from, $lightness: 4%),
+            color.adjust(colours.$color-button-gradient-to, $lightness: 4%)
+        );
 
-        border-color: color.adjust(colours.$color-button-border, $lightness: -13%);
+        border-color: color.adjust(
+            colours.$color-button-border,
+            $lightness: -13%
+        );
         color: colours.$color-text-button-hover;
         text-decoration: none;
     }
 
     &:active {
         top: 2px;
-        border-color: color.adjust(colours.$color-button-border, $lightness: -13%);
+        border-color: color.adjust(
+            colours.$color-button-border,
+            $lightness: -13%
+        );
         box-shadow: none;
         color: colours.$color-text-button-active;
         text-decoration: none;
