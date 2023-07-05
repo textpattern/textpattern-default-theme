@@ -242,6 +242,9 @@ rules:
   # Specify context or prefix notation for media feature ranges.
   media-feature-range-notation: prefix
 
+  # Disallow invalid media queries.
+  #media-query-no-invalid: true
+
   # Disallow invalid named grid areas.
   named-grid-areas-no-invalid: true
 
