@@ -42,7 +42,7 @@
     "stylelint-webpack-plugin": "4.1.1",
     "webpack": "5.88.1",
     "webpack-cli": "5.1.4",
-    "webpack-manifest-version-sync-plugin": "0.0.4"
+    "webpack-manifest-version-sync-plugin": "1.0.0"
   },
   "browserslist": [
     "> 0.5%",
