@@ -1,5 +1,5 @@
 @media screen and (prefers-reduced-motion: reduce), (update: slow) {
-    .search input[type="search"] {
+    search input[type="search"] {
         transition-duration: 0;
     }
 }
