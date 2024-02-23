@@ -318,6 +318,9 @@ nav ol::after,
     display: flex;
     justify-content: space-between;
   }
+  .paginator [rel=next] {
+    margin-inline-start: auto;
+  }
   /**
    * Visually hide unfocussed/inactive ‘skip links’.
    *

@@ -73,6 +73,10 @@ h6 {
 .paginator {
     display: flex;
     justify-content: space-between;
+
+    [rel="next"] {
+        margin-inline-start: auto;
+    }
 }
 
 /**
