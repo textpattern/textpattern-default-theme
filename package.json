@@ -31,7 +31,7 @@
     "cross-env": "7.0.3",
     "css-loader": "6.10.0",
     "mini-css-extract-plugin": "2.8.1",
-    "postcss": "8.4.35",
+    "postcss": "8.4.36",
     "postcss-loader": "8.1.1",
     "postcss-scss": "4.0.9",
     "sass": "1.72.0",
