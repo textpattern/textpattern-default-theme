@@ -36,7 +36,7 @@
     "postcss-scss": "4.0.9",
     "sass": "1.85.1",
     "sass-loader": "16.0.5",
-    "stylelint": "16.15.0",
+    "stylelint": "16.16.0",
     "stylelint-config-standard-scss": "14.0.0",
     "stylelint-order": "6.0.4",
     "stylelint-webpack-plugin": "5.0.1",
