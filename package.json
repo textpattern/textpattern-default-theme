@@ -37,7 +37,7 @@
     "sass": "1.90.0",
     "sass-loader": "16.0.5",
     "stylelint": "16.23.1",
-    "stylelint-config-standard-scss": "15.0.1",
+    "stylelint-config-standard-scss": "16.0.0",
     "stylelint-order": "7.0.0",
     "stylelint-webpack-plugin": "5.0.1",
     "webpack": "5.101.1",
