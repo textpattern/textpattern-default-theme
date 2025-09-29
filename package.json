@@ -28,7 +28,7 @@
     "autoprefixer": "10.4.21",
     "clean-webpack-plugin": "4.0.0",
     "copy-webpack-plugin": "13.0.1",
-    "cross-env": "10.0.0",
+    "cross-env": "10.1.0",
     "css-loader": "7.1.2",
     "mini-css-extract-plugin": "2.9.4",
     "postcss": "8.5.6",
