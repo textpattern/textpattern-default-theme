@@ -176,7 +176,7 @@ pre {
     /* 1 */
     overflow-x: auto;
     /* 2 */
-    word-wrap: normal;
+    overflow-wrap: normal;
     /* 3 */
     tab-size: 4;
 
@@ -188,7 +188,7 @@ pre {
         font-size: 1em;
         hyphens: none;
         text-align: left;
-        word-wrap: normal;
+        overflow-wrap: normal;
         word-break: normal;
         word-spacing: normal;
         white-space: pre;

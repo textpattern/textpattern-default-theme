@@ -101,7 +101,7 @@ h2 {
     line-height: 28pt;
     orphans: 2;
     widows: 2;
-    page-break-after: avoid;
+    break-after: avoid;
 }
 
 h3 {
@@ -110,7 +110,7 @@ h3 {
     line-height: 22pt;
     orphans: 2;
     widows: 2;
-    page-break-after: avoid;
+    break-after: avoid;
 }
 
 h4 {
@@ -119,7 +119,7 @@ h4 {
     line-height: 18pt;
     orphans: 2;
     widows: 2;
-    page-break-after: avoid;
+    break-after: avoid;
 }
 
 h5 {
@@ -128,7 +128,7 @@ h5 {
     line-height: 16pt;
     orphans: 2;
     widows: 2;
-    page-break-after: avoid;
+    break-after: avoid;
 }
 
 h6 {
@@ -137,7 +137,7 @@ h6 {
     line-height: 14pt;
     orphans: 2;
     widows: 2;
-    page-break-after: avoid;
+    break-after: avoid;
 }
 
 /**
@@ -173,7 +173,7 @@ blockquote {
     border-left: 3pt solid colours.$color-text-print;
     font-size: 16pt;
     /* 1 */
-    page-break-inside: avoid;
+    break-inside: avoid;
 }
 
 [dir="rtl"] blockquote {
@@ -224,7 +224,7 @@ var {
 
 img {
     /* 1 */
-    page-break-inside: avoid;
+    break-inside: avoid;
 
     &.align-left {
         margin: 1em 1em 1em 0;
@@ -338,7 +338,7 @@ caption {
  */
 
 tr {
-    page-break-inside: avoid;
+    break-inside: avoid;
 }
 
 /**
@@ -368,5 +368,5 @@ thead {
  */
 
 .comments {
-    page-break-inside: avoid;
+    break-inside: avoid;
 }
