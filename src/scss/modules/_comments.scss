@@ -16,9 +16,9 @@
 .comments {
     margin-bottom: 1em;
     padding: 1px 1em;
+    overflow-wrap: break-word;
     border-radius: settings.$border-radius;
     background: colours.$color-background-box;
-    overflow-wrap: break-word;
 
     h4 {
         .is-author {

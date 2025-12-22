@@ -166,29 +166,29 @@ samp {
 /**
  * Additional stylng for preformatted text/code.
  *
- * 1. Contain overflow in all browsers.
- * 2. Don't wrap long words.
+ * 1. Don't wrap long words.
+ * 2. Contain overflow in all browsers.
  * 3. Set tab size to 4 spaces.
  */
 
 pre {
     padding: 0.5714286em 1.1428571em; // 8px / 14px + 16px / 14px
     /* 1 */
-    overflow-x: auto;
-    /* 2 */
     overflow-wrap: normal;
+    /* 2 */
+    overflow-x: auto;
     /* 3 */
     tab-size: 4;
 
     code {
         padding: 0;
+        overflow-wrap: normal;
         border: 0;
         background-color: transparent;
         direction: ltr;
         font-size: 1em;
         hyphens: none;
         text-align: left;
-        overflow-wrap: normal;
         word-break: normal;
         word-spacing: normal;
         white-space: pre;
