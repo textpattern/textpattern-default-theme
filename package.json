@@ -39,7 +39,7 @@
     "stylelint": "17.3.0",
     "stylelint-config-standard-scss": "17.0.0",
     "stylelint-order": "7.0.1",
-    "stylelint-webpack-plugin": "5.0.1",
+    "stylelint-webpack-plugin": "5.1.0",
     "webpack": "5.104.1",
     "webpack-cli": "6.0.1",
     "webpack-manifest-version-sync-plugin": "1.0.0"
