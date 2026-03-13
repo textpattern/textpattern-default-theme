@@ -41,7 +41,7 @@
     "stylelint-order": "8.0.0",
     "stylelint-webpack-plugin": "5.1.0",
     "webpack": "5.105.4",
-    "webpack-cli": "6.0.1",
+    "webpack-cli": "7.0.0",
     "webpack-manifest-version-sync-plugin": "1.0.0"
   },
   "browserslist": [
