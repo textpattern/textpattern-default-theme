@@ -1,3 +1,4 @@
+@use "sass:meta";
 @use "setup/settings";
 @use "setup/helpers";
 @use "setup/colours";
@@ -6,38 +7,38 @@
    Styling and layout for all media
    ========================================================================== */
 
-@import "modules/base";
+@use "modules/base";
 
 /* ==========================================================================
    Styling and layout for screen media (mobile first)
    ========================================================================== */
 
 @media screen {
-    @import "modules/layout";
-    @import "modules/navigation";
-    @import "modules/links";
-    @import "modules/typography";
-    @import "modules/internationalization";
-    @import "modules/embedded-content";
-    @import "modules/tables";
-    @import "modules/lists";
-    @import "modules/forms";
-    @import "modules/buttons";
-    @import "modules/comments";
+    @include meta.load-css("modules/layout");
+    @include meta.load-css("modules/navigation");
+    @include meta.load-css("modules/links");
+    @include meta.load-css("modules/typography");
+    @include meta.load-css("modules/internationalization");
+    @include meta.load-css("modules/embedded-content");
+    @include meta.load-css("modules/tables");
+    @include meta.load-css("modules/lists");
+    @include meta.load-css("modules/forms");
+    @include meta.load-css("modules/buttons");
+    @include meta.load-css("modules/comments");
 }
 
-@import "modules/responsive";
+@include meta.load-css("modules/responsive");
 
 /* ==========================================================================
    Additional accessibility for screen media
    ========================================================================== */
 
-@import "modules/accessibility";
+@include meta.load-css("modules/accessibility");
 
 /* ==========================================================================
    Styling and layout for print media
    ========================================================================== */
 
 @media print {
-    @import "modules/print";
+    @include meta.load-css("modules/print");
 }
