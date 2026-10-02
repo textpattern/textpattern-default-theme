@@ -2,31 +2,6 @@
 /* ==========================================================================
    Styling and layout for all media
    ========================================================================== */
-/* Reset
-   ========================================================================== */
-/**
- * Add the correct display in IE 11 and Firefox.
- */
-details,
-main,
-search {
-  display: block;
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Edge, Firefox, and Opera.
- */
-progress {
-  vertical-align: baseline;
-}
-
-/**
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item;
-}
-
 /* Clearfix
    ========================================================================== */
 header::after,
@@ -46,8 +21,7 @@ nav ol::after,
   /* Layout
      ========================================================================== */
   /**
-   * 1. Prevent adjustments of font size after orientation changes in
-   *    IE on Windows Phone and in iOS.
+   * 1. Prevent adjustments of font size after orientation changes.
    */
   html {
     /* 1 */
@@ -130,7 +104,7 @@ nav ol::after,
   .article {
     margin-bottom: 2em;
     /* 1 */
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
   }
   /**
    * Styling for complementary content.
@@ -144,7 +118,7 @@ nav ol::after,
     margin: 2em -6% 0;
     padding: 0 6%;
     /* 1 */
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
     border-top: 2px dashed #cccccc;
   }
   /**
@@ -180,16 +154,16 @@ nav ol::after,
    *             <li><a></li>
    *             <li><a></li>
    *         </ul>
-   *         <div class="search">
+   *         <search>
    *             <form>
    *                 <input type="search">
    *             </form>
-   *        </div>
+   *        </search>
    *    </div>
    * </nav>
    */
   .site-navigation {
-    background-color: rgb(86.8333333333%, 86.8333333333%, 86.8333333333%);
+    background-color: #dddddd;
   }
   .site-navigation > div {
     position: relative;
@@ -199,12 +173,12 @@ nav ol::after,
   .site-navigation ul {
     margin: 0;
     padding: 0;
-    border: solid rgb(79.8333333333%, 79.8333333333%, 79.8333333333%);
+    border: solid #cccccc;
     border-width: 1px 0;
     list-style: none;
   }
   .site-navigation li {
-    border: solid rgb(79.8333333333%, 79.8333333333%, 79.8333333333%);
+    border: solid #cccccc;
     border-width: 1px 0;
     background-color: #eeeeee;
   }
@@ -212,7 +186,7 @@ nav ol::after,
     background-color: rgb(97.3333333333%, 97.3333333333%, 97.3333333333%);
   }
   .site-navigation li:active {
-    background-color: rgb(82.8333333333%, 82.8333333333%, 82.8333333333%);
+    background-color: rgb(82.6666666667%, 82.6666666667%, 82.6666666667%);
     box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
   }
   .site-navigation li.active {
@@ -255,7 +229,6 @@ nav ol::after,
    * 2. Remove default underline style from non-hover state links.
    * 3. Interrupt the decoration line to let the shape of the text show through
    *    in supported browsers.
-   * 4. Remove tap delay in modern browsers.
    */
   a {
     /* 1 */
@@ -265,16 +238,14 @@ nav ol::after,
     /* 3 */
     -webkit-text-decoration-skip: ink;
             text-decoration-skip-ink: auto;
-    /* 4 */
-    touch-action: manipulation;
   }
   a:hover, a:active {
-    outline: 0;
     color: #0066ff;
     text-decoration: underline;
   }
-  a:focus {
-    outline: 1px solid #0066ff;
+  a:focus-visible {
+    outline: 2px solid #0066ff;
+    outline-offset: 2px;
   }
   /**
    * Additional styling for `h1`-`h3` heading links.
@@ -437,7 +408,7 @@ nav ol::after,
   }
   /**
    * 1. Remove the bottom border in Chrome 57+.
-   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   * 2. Add the correct text decoration in Chrome, Edge, Opera, and Safari.
    */
   abbr[title] {
     /* 1 */
@@ -499,8 +470,7 @@ nav ol::after,
     background-color: transparent;
     direction: ltr;
     font-size: 1em;
-    -ms-hyphens: none;
-        hyphens: none;
+    hyphens: none;
     text-align: left;
     word-break: normal;
     word-spacing: normal;
@@ -511,8 +481,8 @@ nav ol::after,
    * browsers.
    */
   sub,
-  sup.footnote,
-  sup {
+  sup,
+  sup.footnote {
     position: relative;
     font-size: 0.75em;
     line-height: 0;
@@ -543,17 +513,9 @@ nav ol::after,
     margin-top: 0.5em;
     font-style: italic;
   }
-  /**
-   * 1. Add the correct box sizing in Firefox.
-   * 2. Show the overflow in Edge and IE.
-   */
   hr {
-    /* 1 */
-    box-sizing: content-box;
     height: 24px;
     margin: 1em 0;
-    /* 2 */
-    overflow: visible;
     border: 0;
     background: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 240 24%27%3E%3Cpath fill=%27%23333%27 d=%27M0,0c1.742,13.61,54.74,20.912,119.995,15.279C184.922,9.679,238.594,13.024,240,24c-1.744-13.613-54.742-20.913-120.005-15.284C55.078,14.32,1.405,10.973,0,0z%27/%3E%3C/svg%3E") 50% 50% no-repeat;
     background-size: 240px 24px;
@@ -688,12 +650,6 @@ nav ol::after,
   /* Embedded content
      ========================================================================== */
   /**
-   * Add the correct display in IE 11.
-   */
-  video {
-    display: inline-block;
-  }
-  /**
    * Make embedded elements responsive.
    */
   img,
@@ -815,7 +771,7 @@ nav ol::after,
    * CSS Lists and Counters Module Level 3 list marker styling.
    */
   li::marker {
-    color: color-text-heading;
+    color: #000000;
   }
   /**
    * Address margins set differently.
@@ -857,34 +813,11 @@ nav ol::after,
   /**
    * Normalize styling of `legend`.
    *
-   * 1. Correct wrapping not present in IE 11 and Edge 12/13.
-   * 2. Remove padding so people aren't caught out if they zero out fieldsets.
-   * 3. Correct `color` not being inherited from fieldset in IE 11.
+   * 1. Remove padding so people aren't caught out if they zero out fieldsets.
    */
   legend {
     /* 1 */
-    display: table;
-    /* 1 */
-    box-sizing: border-box;
-    /* 1 */
-    max-width: 100%;
-    /* 2 */
     padding: 0;
-    /* 3 */
-    color: inherit;
-    /* 1 */
-    white-space: normal;
-  }
-  /**
-   * 1. Show the overflow in Edge.
-   * 2. Remove tap delay in modern browsers.
-   */
-  button,
-  input {
-    /* 1 */
-    overflow: visible;
-    /* 2 */
-    touch-action: manipulation;
   }
   /**
    * 1. Prevent elements from spilling out of their parent.
@@ -915,7 +848,6 @@ nav ol::after,
    */
   [type=color],
   [type=date],
-  [type=datetime],
   [type=datetime-local],
   [type=email],
   [type=month],
@@ -937,24 +869,24 @@ nav ol::after,
     /* 1 */
     appearance: none;
   }
-  [type=color]:focus,
-  [type=date]:focus,
-  [type=datetime]:focus,
-  [type=datetime-local]:focus,
-  [type=email]:focus,
-  [type=month]:focus,
-  [type=number]:focus,
-  [type=password]:focus,
-  [type=search]:focus,
-  [type=tel]:focus,
-  [type=text]:focus,
-  [type=time]:focus,
-  [type=url]:focus,
-  [type=week]:focus,
-  select:focus,
-  textarea:focus {
+  [type=color]:focus-visible,
+  [type=date]:focus-visible,
+  [type=datetime-local]:focus-visible,
+  [type=email]:focus-visible,
+  [type=month]:focus-visible,
+  [type=number]:focus-visible,
+  [type=password]:focus-visible,
+  [type=search]:focus-visible,
+  [type=tel]:focus-visible,
+  [type=text]:focus-visible,
+  [type=time]:focus-visible,
+  [type=url]:focus-visible,
+  [type=week]:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
     border-color: #0066ff;
-    outline: 1px solid transparent;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
   }
   /**
    * 1. Remove any excess padding.
@@ -996,13 +928,6 @@ nav ol::after,
     padding-right: 1.5em;
     background: #ffffff url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2717%27 height=%275%27 viewBox=%270 0 17 5%27%3E%3Cpolygon fill=%27%23333%27 points=%270,0 5,5 10,0%27/%3E%3C/svg%3E") right center no-repeat;
     background-size: 1.0625em 0.3125em;
-    text-transform: none;
-  }
-  /**
-   * Remove browser-specific `select` UI in IE 11.
-   */
-  select::-ms-expand {
-    opacity: 0;
   }
   /**
    * Override height and background set in a previous rule and allow auto height.
@@ -1028,19 +953,16 @@ nav ol::after,
     font-weight: bold;
   }
   /**
-   * 1. Remove default vertical scrollbar in IE 11.
-   * 2. Remove unwanted space below `textarea` in Safari, Chrome, Opera.
-   * 3. Restrict to vertical resizing to prevent layout breakage.
+   * 1. Remove unwanted space below `textarea` in Safari, Chrome, Opera.
+   * 2. Restrict to vertical resizing to prevent layout breakage.
    */
   textarea {
     width: 100%;
     height: auto;
     min-height: 3em;
     /* 1 */
-    overflow: auto;
-    /* 2 */
     vertical-align: top;
-    /* 3 */
+    /* 2 */
     resize: vertical;
   }
   /**
@@ -1109,12 +1031,6 @@ nav ol::after,
    *
    * 1. Fix placeholder font properties inheritance.
    */
-  :-ms-input-placeholder {
-    opacity: 1;
-    color: #999999;
-    /* 1 */
-    font: inherit;
-  }
   ::placeholder {
     opacity: 1;
     color: #999999;
@@ -1135,26 +1051,6 @@ nav ol::after,
   /* Buttons
      ========================================================================== */
   /**
-   * 1. Address `overflow` set to `hidden` in IE 11.
-   * 2. Remove the inheritance of text transform in Edge, Firefox, and IE 11.
-   */
-  button {
-    /* 1 */
-    overflow: visible;
-    /* 2 */
-    text-transform: none;
-  }
-  /**
-   * Remove the inner border and padding in Firefox.
-   */
-  button::-moz-focus-inner,
-  [type=button]::-moz-focus-inner,
-  [type=reset]::-moz-focus-inner,
-  [type=submit]::-moz-focus-inner {
-    padding: 0;
-    border-style: none;
-  }
-  /**
    * 1. Remove browser-specific default styling.
    * 2. Improve usability and consistency of cursor style between image-type
    *    `input` and others.
@@ -1167,12 +1063,10 @@ nav ol::after,
     background-image: linear-gradient(#eeeeee, rgb(87.3333333333%, 87.3333333333%, 87.3333333333%));
     display: inline-block;
     position: relative;
-    width: auto;
     height: 2em;
     padding: 0.25em 1em;
     border: 1px solid rgb(87.3333333333%, 87.3333333333%, 87.3333333333%);
     border-radius: 1em;
-    background-clip: padding-box;
     box-shadow: 0 2px 0 rgb(67.3333333333%, 67.3333333333%, 67.3333333333%);
     color: #333333;
     font-weight: normal;
@@ -1202,12 +1096,13 @@ nav ol::after,
     color: rgb(10%, 10%, 10%);
     text-decoration: none;
   }
-  button:focus,
-  [type=button]:focus,
-  [type=reset]:focus,
-  [type=submit]:focus {
+  button:focus-visible,
+  [type=button]:focus-visible,
+  [type=reset]:focus-visible,
+  [type=submit]:focus-visible {
     border-color: #0066ff;
-    outline: 1px solid transparent;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
   }
   /**
    * Disbaled button additional styling.
@@ -1230,7 +1125,7 @@ nav ol::after,
   .comments {
     margin-bottom: 1em;
     padding: 1px 1em;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
     border-radius: 0.5em;
     background: #f7f7f7;
   }
@@ -1284,7 +1179,7 @@ nav ol::after,
 /* ==========================================================================
    Additional layout for screen media 576px and up
    ========================================================================== */
-@media only screen and (min-width: 38em) {
+@media screen and (min-width: 38em) {
   /**
    * Desktop version of the navigation menu. Overrides mobile first version.
    *
@@ -1297,11 +1192,11 @@ nav ol::after,
    *             <li><a></li>
    *             <li><a></li>
    *         </ul>
-   *         <div class="search">
+   *         <search>
    *             <form>
    *                 <input type="search">
    *             </form>
-   *        </div>
+   *        </search>
    *    </div>
    * </nav>
    */
@@ -1351,7 +1246,7 @@ nav ol::after,
 /* ==========================================================================
    Additional layout for screen media 864px and up
    ========================================================================== */
-@media only screen and (min-width: 46em) {
+@media screen and (min-width: 46em) {
   /**
    * Enlarge baseline text size.
    */
@@ -1396,12 +1291,6 @@ nav ol::after,
     margin: 0.5cm;
     padding: 2em 5em;
     font-family: "Helvetica Neue", sans-serif;
-  }
-  /**
-   * Make sure links are not underlined.
-   */
-  a {
-    text-decoration: none;
   }
   /**
    * Visually separate header from body.

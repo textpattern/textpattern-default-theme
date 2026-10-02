@@ -6,7 +6,7 @@
    Additional layout for screen media 576px and up
    ========================================================================== */
 
-@media only screen and (min-width: settings.$break-small) {
+@media screen and (min-width: settings.$break-small) {
     /**
      * Desktop version of the navigation menu. Overrides mobile first version.
      *
@@ -19,11 +19,11 @@
      *             <li><a></li>
      *             <li><a></li>
      *         </ul>
-     *         <div class="search">
+     *         <search>
      *             <form>
      *                 <input type="search">
      *             </form>
-     *        </div>
+     *        </search>
      *    </div>
      * </nav>
      */
@@ -90,7 +90,7 @@
    Additional layout for screen media 864px and up
    ========================================================================== */
 
-@media only screen and (min-width: settings.$break-large) {
+@media screen and (min-width: settings.$break-large) {
     /**
      * Enlarge baseline text size.
      */

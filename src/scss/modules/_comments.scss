@@ -16,7 +16,7 @@
 .comments {
     margin-bottom: 1em;
     padding: 1px 1em;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
     border-radius: settings.$border-radius;
     background: colours.$color-background-box;
 

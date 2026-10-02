@@ -29,14 +29,8 @@ $color-background-box: #f7f7f7 !default;
 $color-background-form: #ffffff !default;
 $color-background-form-disabled: #eeeeee !default;
 $color-gradient-from: #eeeeee !default;
-$color-gradient-to: color.adjust(
-    $color-gradient-from,
-    $lightness: -6.5%
-) !default;
-$color-gradient-border: color.adjust(
-    $color-gradient-from,
-    $lightness: -13.5%
-) !default;
+$color-gradient-to: #dddddd !default;
+$color-gradient-border: #cccccc !default;
 
 // accent colours
 $color-highlight-box: #fff9e1 !default;

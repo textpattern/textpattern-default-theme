@@ -5,8 +5,7 @@
    ========================================================================== */
 
 /**
- * 1. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
+ * 1. Prevent adjustments of font size after orientation changes.
  */
 
 html {
@@ -103,7 +102,7 @@ body {
 .article {
     margin-bottom: 2em;
     /* 1 */
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
 }
 
 /**
@@ -119,7 +118,7 @@ body {
     margin: 2em -6% 0;
     padding: 0 6%;
     /* 1 */
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
     border-top: 2px dashed colours.$color-border;
 }
 
