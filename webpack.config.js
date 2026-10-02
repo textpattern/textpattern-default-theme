@@ -1,6 +1,5 @@
 const distDir = __dirname + '/dist/four-point-nine';
 
-const fs = require('fs');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ManifestVersionSyncPlugin = require('webpack-manifest-version-sync-plugin');
@@ -9,62 +8,78 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
     mode: 'production',
+
     entry: {
         'styles/default.css': './src/scss/default.scss'
     },
+
     output: {
         path: distDir,
-        filename: '.Trashes'
+        filename: '.Trashes',
     },
+
+    // Keep the generated CSS readable rather than minified.
+    optimization: {
+        minimize: false,
+    },
+
     module: {
         rules: [
             {
-                test: /\.(scss)$/,
+                test: /\.scss$/,
+                exclude: /node_modules/,
                 use: [
                     MiniCssExtractPlugin.loader,
+
                     {
                         loader: 'css-loader',
                         options: {
                             importLoaders: 2,
                         },
                     },
+
                     {
                         loader: 'postcss-loader',
                         options: {
                             postcssOptions: {
                                 plugins: [
-                                    'autoprefixer',
+                                    require('autoprefixer'),
                                 ],
                             },
                         },
                     },
+
                     {
                         loader: 'sass-loader',
                         options: {
-                            implementation: require('sass'),
                             sassOptions: {
-                                outputStyle: 'expanded',
+                                style: 'expanded',
                             },
                         },
                     },
-                ]
+                ],
             },
         ],
     },
+
     plugins: [
         new CleanWebpackPlugin(),
+
+        new MiniCssExtractPlugin({
+            filename: '[name]',
+        }),
+
         new StyleLintPlugin({
             configFile: '.stylelintrc.yml',
             files: '**/*.scss',
             failOnError: false,
-            quiet: false
+            quiet: false,
         }),
-        new MiniCssExtractPlugin({
-            filename: '[name]'
-        }),
+
         new ManifestVersionSyncPlugin({
             manifestPath: 'manifest.json',
         }),
+
         new CopyWebpackPlugin({
             patterns: [
                 {
