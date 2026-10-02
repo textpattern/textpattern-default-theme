@@ -183,14 +183,14 @@ nav ol::after,
     background-color: #eeeeee;
   }
   .site-navigation li:hover {
-    background-color: rgb(97.3333333333%, 97.3333333333%, 97.3333333333%);
+    background-color: #f8f8f8;
   }
   .site-navigation li:active {
-    background-color: rgb(82.6666666667%, 82.6666666667%, 82.6666666667%);
+    background-color: #d4d4d4;
     box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
   }
   .site-navigation li.active {
-    background-color: hsl(0, 0%, 101.3333333333%);
+    background-color: #f8f8f8;
     box-shadow: none;
   }
   .site-navigation a {
@@ -203,7 +203,7 @@ nav ol::after,
     text-decoration: none;
   }
   .site-navigation a:active {
-    color: rgb(10%, 10%, 10%);
+    color: #222222;
     text-decoration: none;
   }
   /**
@@ -434,7 +434,7 @@ nav ol::after,
   code,
   kbd,
   samp {
-    border: 1px solid rgb(89%, 89%, 89%);
+    border: 1px solid #d4d4d4;
     border-radius: 0.2857143em;
     background-color: #f7f7f7;
     color: #333333;
@@ -1059,15 +1059,15 @@ nav ol::after,
   [type=button],
   [type=reset],
   [type=submit] {
-    background-color: rgb(87.3333333333%, 87.3333333333%, 87.3333333333%);
-    background-image: linear-gradient(#eeeeee, rgb(87.3333333333%, 87.3333333333%, 87.3333333333%));
+    background-color: #dddddd;
+    background-image: linear-gradient(#eeeeee, #dddddd);
     display: inline-block;
     position: relative;
     height: 2em;
     padding: 0.25em 1em;
-    border: 1px solid rgb(87.3333333333%, 87.3333333333%, 87.3333333333%);
+    border: 1px solid #dddddd;
     border-radius: 1em;
-    box-shadow: 0 2px 0 rgb(67.3333333333%, 67.3333333333%, 67.3333333333%);
+    box-shadow: 0 2px 0 #aaaaaa;
     color: #333333;
     font-weight: normal;
     text-align: center;
@@ -1080,9 +1080,9 @@ nav ol::after,
   [type=button]:hover,
   [type=reset]:hover,
   [type=submit]:hover {
-    background-color: rgb(91.3333333333%, 91.3333333333%, 91.3333333333%);
-    background-image: linear-gradient(rgb(97.3333333333%, 97.3333333333%, 97.3333333333%), rgb(91.3333333333%, 91.3333333333%, 91.3333333333%));
-    border-color: rgb(74.3333333333%, 74.3333333333%, 74.3333333333%);
+    background-color: #e7e7e7;
+    background-image: linear-gradient(#f8f8f8, #e7e7e7);
+    border-color: #bcbcbc;
     color: #333333;
     text-decoration: none;
   }
@@ -1091,9 +1091,9 @@ nav ol::after,
   [type=reset]:active,
   [type=submit]:active {
     top: 2px;
-    border-color: rgb(74.3333333333%, 74.3333333333%, 74.3333333333%);
+    border-color: #bcbcbc;
     box-shadow: none;
-    color: rgb(10%, 10%, 10%);
+    color: #222222;
     text-decoration: none;
   }
   button:focus-visible,
@@ -1144,7 +1144,7 @@ nav ol::after,
    * <article class="comments comments-author">
    */
   .comments-author {
-    background: rgb(93.862745098%, 93.862745098%, 93.862745098%);
+    background: #eeeeee;
   }
   /**
    * Styling for user comments preview.
@@ -1234,12 +1234,12 @@ nav ol::after,
     cursor: pointer;
   }
   search input[type=search]:hover {
-    background-color: rgb(97.3333333333%, 97.3333333333%, 97.3333333333%);
+    background-color: #f8f8f8;
   }
   search input[type=search]:focus {
     width: 16em;
     padding-right: 0.1875em;
-    background-color: hsl(0, 0%, 101.3333333333%);
+    background-color: #fafafa;
     cursor: auto;
   }
 }

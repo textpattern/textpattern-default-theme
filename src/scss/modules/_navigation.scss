@@ -50,25 +50,16 @@
         background-color: colours.$color-gradient-from;
 
         &:hover {
-            background-color: color.adjust(
-                colours.$color-gradient-from,
-                $lightness: 4%
-            );
+            background-color: colours.$color-button-gradient-hover-from;
         }
 
         &:active {
-            background-color: color.adjust(
-                colours.$color-gradient-to,
-                $lightness: -4%
-            );
+            background-color: colours.$color-gradient-to-darker;
             box-shadow: settings.$inset-lowlighting;
         }
 
         &.active {
-            background-color: color.adjust(
-                colours.$color-gradient-from,
-                $lightness: 8%
-            );
+            background-color: colours.$color-button-gradient-hover-from;
             box-shadow: none;
         }
     }
@@ -85,7 +76,7 @@
         }
 
         &:active {
-            color: color.adjust(colours.$color-text, $lightness: -10%);
+            color: colours.$color-text-button-active;
             text-decoration: none;
         }
     }

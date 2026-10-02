@@ -37,24 +37,18 @@ button,
 
     &:hover {
         @include helpers.gradient-linear(
-            color.adjust(colours.$color-button-gradient-from, $lightness: 4%),
-            color.adjust(colours.$color-button-gradient-to, $lightness: 4%)
+            colours.$color-button-gradient-hover-from,
+            colours.$color-button-gradient-hover-to
         );
 
-        border-color: color.adjust(
-            colours.$color-button-border,
-            $lightness: -13%
-        );
+        border-color: colours.$color-button-border-hover;
         color: colours.$color-text-button-hover;
         text-decoration: none;
     }
 
     &:active {
         top: 2px;
-        border-color: color.adjust(
-            colours.$color-button-border,
-            $lightness: -13%
-        );
+        border-color: colours.$color-button-border-active;
         box-shadow: none;
         color: colours.$color-text-button-active;
         text-decoration: none;

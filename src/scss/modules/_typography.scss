@@ -148,7 +148,7 @@ pre,
 code,
 kbd,
 samp {
-    border: 1px solid color.adjust(colours.$color-border, $lightness: 9%);
+    border: 1px solid colours.$color-border-light;
     border-radius: 0.2857143em; // 4px / 14px
     background-color: colours.$color-background-box;
     color: colours.$color-text;

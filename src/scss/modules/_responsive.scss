@@ -67,19 +67,13 @@
             cursor: pointer;
 
             &:hover {
-                background-color: color.adjust(
-                    colours.$color-gradient-from,
-                    $lightness: 4%
-                );
+                background-color: colours.$color-button-gradient-hover-from;
             }
 
             &:focus {
                 width: 16em;
                 padding-right: 0.1875em;
-                background-color: color.adjust(
-                    colours.$color-gradient-from,
-                    $lightness: 8%
-                );
+                background-color: colours.$color-gradient-from-lighter;
                 cursor: auto;
             }
         }
