@@ -70,38 +70,12 @@ bdo[dir="rtl"] {
     direction: ltr;
 }
 
-[dir="rtl"] {
-    .site-navigation ul,
-    .article-list {
-        padding: 0;
-    }
-}
-
-/**
- * Swap checkbox/radio margin positions in RTL languages.
- */
-
-[dir="rtl"] {
-    input[type="checkbox"],
-    input[type="radio"] {
-        + label {
-            margin: 0 0 0 0.5em;
-
-            &:last-of-type {
-                margin: 0;
-            }
-        }
-    }
-}
-
 /**
  * Swap `select` icon position in RTL languages.
  */
 
 [dir="rtl"] {
     select {
-        padding-right: 0.1875em; // 3px / 16px
-        padding-left: 1.5em; // 24px / 16px
         background-position: 0.5em center; // 8px / 16px
     }
 }

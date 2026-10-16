@@ -595,27 +595,10 @@ nav ol::after,
   [dir=rtl] code {
     direction: ltr;
   }
-  [dir=rtl] .site-navigation ul,
-  [dir=rtl] .article-list {
-    padding: 0;
-  }
-  /**
-   * Swap checkbox/radio margin positions in RTL languages.
-   */
-  [dir=rtl] input[type=checkbox] + label,
-  [dir=rtl] input[type=radio] + label {
-    margin: 0 0 0 0.5em;
-  }
-  [dir=rtl] input[type=checkbox] + label:last-of-type,
-  [dir=rtl] input[type=radio] + label:last-of-type {
-    margin: 0;
-  }
   /**
    * Swap `select` icon position in RTL languages.
    */
   [dir=rtl] select {
-    padding-right: 0.1875em;
-    padding-left: 1.5em;
     background-position: 0.5em center;
   }
   /* Embedded content
@@ -873,7 +856,7 @@ nav ol::after,
   [type=checkbox] + label,
   [type=radio] + label {
     /* 2 */
-    margin: 0 0.5em 0 0;
+    margin-inline: 0.5em 0;
   }
   [type=checkbox] + label:last-of-type,
   [type=radio] + label:last-of-type {
@@ -898,7 +881,7 @@ nav ol::after,
    * Use indicator icon to signify the drop-down ability of `select`.
    */
   select {
-    padding-right: 1.5em;
+    padding-inline: 0 1.5em;
     background: var(--color-background-form) url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2717%27 height=%275%27 viewBox=%270 0 17 5%27%3E%3Cpolygon fill=%27%23333%27 points=%270,0 5,5 10,0%27/%3E%3C/svg%3E") right center no-repeat;
     background-size: 1.0625em 0.3125em;
   }

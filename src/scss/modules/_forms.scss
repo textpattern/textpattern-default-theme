@@ -100,7 +100,7 @@ textarea {
 
     + label {
         /* 2 */
-        margin: 0 0.5em 0 0;
+        margin-inline: 0.5em 0;
 
         &:last-of-type {
             /* 2 */
@@ -132,7 +132,7 @@ textarea {
  */
 
 select {
-    padding-right: 1.5em; // 24px / 16px
+    padding-inline: 0 1.5em; // 24px / 16px
     background: var(--color-background-form)
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='5' viewBox='0 0 17 5'%3E%3Cpolygon fill='%23333' points='0,0 5,5 10,0'/%3E%3C/svg%3E")
         right center no-repeat;
