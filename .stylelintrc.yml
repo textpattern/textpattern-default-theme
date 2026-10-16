@@ -99,7 +99,7 @@ rules:
   #custom-media-pattern:
 
   # Require or disallow an empty line before custom properties (Autofixable).
-  custom-property-empty-line-before: always
+  #custom-property-empty-line-before:
 
   # Disallow missing `var` function for custom properties.
   #custom-property-no-missing-var-function: true
@@ -351,13 +351,13 @@ rules:
   selector-max-id: 1
 
   # Limit the number of pseudo-classes in a selector.
-  selector-max-pseudo-class: 2
+  #selector-max-pseudo-class:
 
   # Limit the specificity of selectors.
   selector-max-specificity: 1,2,1
 
   # Limit the number of type in a selector.
-  selector-max-type: 3
+  #selector-max-type:
 
   # Limit the number of universal selectors in a selector.
   selector-max-universal: 1
