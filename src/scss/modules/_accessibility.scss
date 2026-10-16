@@ -2,4 +2,8 @@
     search input[type="search"] {
         transition-duration: 0;
     }
+
+    .skip-link {
+        transition: none;
+    }
 }

@@ -49,13 +49,14 @@ dd {
  */
 
 .article-list {
-    margin: 0 0 2em;
+    margin-block: 0 2em;
+    margin-inline: 0;
     padding: 0;
-    border-top: 1px solid var(--color-border);
+    border-block-start: 1px solid var(--color-border);
     list-style: none;
 
     li {
-        margin-bottom: 0;
-        border-bottom: 1px solid var(--color-border);
+        margin-block-end: 0;
+        border-block-end: 1px solid var(--color-border);
     }
 }

@@ -19,7 +19,8 @@ a {
     text-decoration-skip-ink: auto;
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus-visible {
         color: var(--color-link-hover);
         text-decoration: underline;
     }
@@ -39,10 +40,7 @@ a {
 }
 
 /**
- * Additional styling for `h1`-`h3` heading links.
- *
- * 1. Expanded CSS level 3 `text-decoration-color` property in supported
- *    browsers, older browsers ignore this addition.
+ * Additional styling for `h1`-`h6` heading links.
  */
 
 :is(h1, h2, h3, h4, h5, h6) a {
@@ -51,6 +49,7 @@ a {
 
 :is(h1, h2, h3, h4, h5, h6) a:is(:hover, :active) {
     color: var(--color-text-heading);
+    text-decoration-color: currentColor;
 }
 
 /**
@@ -92,8 +91,8 @@ a {
     color: var(--color-text);
     font-family: settings.$font-sans-serif;
 
-    &:focus,
-    &:active {
+    &:active,
+    &:focus-visible {
         transform: translateY(0);
     }
 }

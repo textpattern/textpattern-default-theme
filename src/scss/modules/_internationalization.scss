@@ -51,18 +51,6 @@ bdo[dir="rtl"] {
 }
 
 /**
- * Suppress `text-decoration` in some RTL languages for better legibility.
- */
-
-[lang|="ar"],
-[lang|="fa"],
-[lang|="ur"] {
-    a:hover {
-        text-decoration: none;
-    }
-}
-
-/**
  * Computer code should be LTR.
  */
 
