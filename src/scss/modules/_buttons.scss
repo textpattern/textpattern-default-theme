@@ -49,9 +49,11 @@ button,
  * Disbaled button additional styling.
  */
 
-button[disabled],
-[type="button"][disabled],
-[type="reset"][disabled],
-[type="submit"][disabled] {
-    top: 2px !important;
+button:disabled,
+input[type="button"]:disabled,
+input[type="reset"]:disabled,
+input[type="submit"]:disabled {
+    top: 0;
+    box-shadow: none;
+    cursor: not-allowed;
 }

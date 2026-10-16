@@ -181,22 +181,23 @@ textarea {
  * Make sure disabled elements really are disabled and styled appropriately.
  *
  * 1. Override default iOS opacity setting.
- * 2. Re-set default cursor for disabled elements.
  */
 
-[disabled],
-[disabled] option,
-[disabled] optgroup,
-span.disabled {
-    border-color: var(--color-border-light) !important;
+:where(
+    input,
+    select,
+    textarea,
+    optgroup,
+    option
+):disabled {
+    border-color: var(--color-border-light);
     /* 1 */
     opacity: 1;
-    background: var(--color-background-form-disabled) !important;
-    box-shadow: none !important;
-    color: var(--color-text-form-disabled) !important;
-    text-shadow: none !important;
-    /* 2 */
-    cursor: default !important;
+    background-color: var(--color-background-form-disabled);
+    box-shadow: none;
+    color: var(--color-text-form-disabled);
+    text-shadow: none;
+    cursor: not-allowed;
 }
 
 /**
