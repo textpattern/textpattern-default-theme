@@ -11,7 +11,6 @@
     --color-text-form-placeholder: #999;
     --color-text-form-disabled: #aaa;
     --color-text-footnote: #585858;
-    --color-text-print: #000;
 
     // interaction colours
     --color-link: #004cbf;
@@ -49,4 +48,58 @@
     // alert colours
     --color-error-text: #9d261d;
     --color-error-background: #f2dede;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+
+        // text colours
+        --color-text: #d4d4d4;
+        --color-text-heading: #f5f5f5;
+        --color-text-button: #e5e5e5;
+        --color-text-button-hover: #fff;
+        --color-text-button-active: #c4c4c4;
+        --color-text-form: #f0f0f0;
+        --color-text-form-placeholder: #888;
+        --color-text-form-disabled: #707070;
+        --color-text-footnote: #a3a3a3;
+
+        // interaction colours
+        --color-link: #7db0ff;
+        --color-link-hover: #a5c8ff;
+        --color-link-focus: #a5c8ff;
+
+        // borders
+        --color-border: #454545;
+        --color-border-light: #383838;
+
+        // neutral colours
+        --color-background: #171717;
+        --color-background-box: #222;
+        --color-background-form: #202020;
+        --color-background-form-disabled: #292929;
+        --color-gradient-from-lighter: #303030;
+        --color-gradient-from: #292929;
+        --color-gradient-to: #222;
+        --color-gradient-to-darker: #1c1c1c;
+        --color-gradient-border: #414141;
+
+        // accent colours
+        --color-highlight-box: #39321b;
+
+        // button colours
+        --color-button-gradient-from: #353535;
+        --color-button-gradient-to: #292929;
+        --color-button-border: #454545;
+        --color-button-border-hover: #656565;
+        --color-button-gradient-hover-from: #414141;
+        --color-button-gradient-hover-to: #333;
+        --color-button-border-active: #777;
+        --color-button-shadow: #101010;
+
+        // alert colours
+        --color-error-text: #ffaaa5;
+        --color-error-background: #482525;
+    }
 }
