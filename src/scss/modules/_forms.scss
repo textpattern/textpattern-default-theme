@@ -80,12 +80,6 @@ textarea {
     background: var(--color-background-form);
     /* 1 */
     appearance: none;
-
-    &:focus-visible {
-        border-color: var(--color-link-focus);
-        outline: 2px solid transparent; // Allows for repainting in high contrast modes.
-        outline-offset: 2px;
-    }
 }
 
 /**

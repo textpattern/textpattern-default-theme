@@ -282,9 +282,15 @@ nav ol::after,
     color: var(--color-link-hover);
     text-decoration: underline;
   }
-  a:focus-visible {
-    outline: 2px solid var(--color-link-focus);
-    outline-offset: 2px;
+  /**
+   * Focus rings.
+   */
+  :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 3px;
+  }
+  :where(input, select, textarea):focus-visible {
+    border-color: var(--focus-ring);
   }
   /**
    * Additional styling for `h1`-`h3` heading links.
@@ -825,25 +831,6 @@ nav ol::after,
     /* 1 */
     appearance: none;
   }
-  [type=color]:focus-visible,
-  [type=date]:focus-visible,
-  [type=datetime-local]:focus-visible,
-  [type=email]:focus-visible,
-  [type=month]:focus-visible,
-  [type=number]:focus-visible,
-  [type=password]:focus-visible,
-  [type=search]:focus-visible,
-  [type=tel]:focus-visible,
-  [type=text]:focus-visible,
-  [type=time]:focus-visible,
-  [type=url]:focus-visible,
-  [type=week]:focus-visible,
-  select:focus-visible,
-  textarea:focus-visible {
-    border-color: var(--color-link-focus);
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
   /**
    * 1. Remove any excess padding.
    * 2. Correct margins for inline checkbox/radio labels.
@@ -1051,14 +1038,6 @@ nav ol::after,
     box-shadow: none;
     color: var(--color-text-button-active);
     text-decoration: none;
-  }
-  button:focus-visible,
-  [type=button]:focus-visible,
-  [type=reset]:focus-visible,
-  [type=submit]:focus-visible {
-    border-color: var(--color-link-focus);
-    outline: 2px solid transparent;
-    outline-offset: 2px;
   }
   /**
    * Disbaled button additional styling.

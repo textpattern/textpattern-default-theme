@@ -23,11 +23,19 @@ a {
         color: var(--color-link-hover);
         text-decoration: underline;
     }
+}
 
-    &:focus-visible {
-        outline: 2px solid var(--color-link-focus);
-        outline-offset: 2px;
-    }
+/**
+ * Focus rings.
+ */
+
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 3px;
+}
+
+:where(input, select, textarea):focus-visible {
+    border-color: var(--focus-ring);
 }
 
 /**

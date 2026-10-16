@@ -43,12 +43,6 @@ button,
         color: var(--color-text-button-active);
         text-decoration: none;
     }
-
-    &:focus-visible {
-        border-color: var(--color-link-focus);
-        outline: 2px solid transparent; // Allows for repainting in high contrast modes.
-        outline-offset: 2px;
-    }
 }
 
 /**
