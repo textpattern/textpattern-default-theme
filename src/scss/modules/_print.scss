@@ -1,5 +1,3 @@
-@use "../setup/settings";
-
 /* stylelint-disable color-named */
 
 /**
@@ -61,16 +59,6 @@ form,
 .paginator,
 .skip-link {
     display: none;
-}
-
-/**
- * Show long-form for abbreviations in print.
- */
-
-abbr[title] {
-    &::after {
-        content: " (" attr(title) ")";
-    }
 }
 
 /**
@@ -154,17 +142,11 @@ small,
  */
 
 blockquote {
-    padding: 0 0 0 8pt;
-    border-left: 3pt solid var(--color-text-print);
+    padding-inline-start: 8pt;
+    border-inline-start: 3pt solid black;
     font-size: 16pt;
     /* 1 */
     break-inside: avoid;
-}
-
-[dir="rtl"] blockquote {
-    padding: 0 8pt 0 0;
-    border-right: 3pt solid var(--color-text-print);
-    border-left: 0;
 }
 
 /**
@@ -174,9 +156,11 @@ blockquote {
  */
 
 pre {
+    max-width: 100%;
     margin-bottom: 8pt;
     padding: 8pt;
-    border: 1pt solid var(--color-text-print);
+    overflow-wrap: anywhere;
+    border: 1pt solid black;
     /* 1 */
     white-space: pre-wrap !important;
 }
@@ -185,9 +169,9 @@ pre {
  * Use a print-friendly monospaced font and size.
  */
 
-pre,
 code,
 kbd,
+pre,
 samp,
 var {
     font-family: "Courier New", Courier, monospace;
@@ -195,8 +179,6 @@ var {
 
 /**
  * Images.
- *
- * 1. Avoid images breaking across multiple pages.
  *
  * Image alignment (compatible with Textile markup syntax).
  *
@@ -208,8 +190,8 @@ var {
  */
 
 img {
-    /* 1 */
-    break-inside: avoid;
+    max-width: 100%;
+    height: auto;
 
     &.align-left {
         margin: 1em 1em 1em 0;
@@ -233,6 +215,7 @@ img {
 
 figure {
     margin-bottom: 8pt;
+    break-inside: avoid;
 }
 
 /**
@@ -244,46 +227,20 @@ figcaption {
 }
 
 /**
- * Simple bullet styling for `ul` unordered lists.
+ * Remove margins from nested lists.
  */
 
-ul {
-    padding: 0 0 8pt 1.8em;
-    list-style: square;
-}
-
-[dir="rtl"] ul {
-    padding: 0 1.8em 8pt 0;
-}
-
-/**
- * Simple numerical styling for `ol` ordered lists.
- */
-
-ol {
-    padding: 0 0 8pt 1.8em;
-    list-style: decimal;
-}
-
-[dir="rtl"] ol {
-    padding: 0 1.8em 8pt 0;
-}
-
-/**
- * Normalize margins on `dl` definition lists.
- */
-
-dl {
-    padding: 0 0 8pt 1.8em;
-}
-
-[dir="rtl"] dl {
-    padding: 0 1.8em 8pt 0;
+li {
+    > ul,
+    > ol {
+        margin: 0;
+    }
 }
 
 /**
  * 1. Make `table` span entire page width.
  * 2. Ensure margin below `table`.
+ * 3. Adjacent table borders can share a single border.
  */
 
 table {
@@ -291,15 +248,20 @@ table {
     width: 100%;
     /* 2 */
     margin-bottom: 8pt;
+    /* 3 */
+    border-collapse: collapse;
 }
 
 /**
- * Harmonize styling for `caption`.
+ * Display table head across multi-page tables.
  */
 
-caption {
-    margin-bottom: 4pt;
-    font-weight: bold;
+thead {
+    display: table-header-group;
+
+    th {
+        border-top: 1pt solid black;
+    }
 }
 
 /**
@@ -317,19 +279,9 @@ tr {
 th,
 td {
     padding: 4pt 8pt;
-    border-bottom: 1pt solid var(--color-text-print);
-}
-
-/**
- * Display table head across multi-page tables.
- */
-
-thead {
-    display: table-header-group;
-
-    th {
-        border-top: 1pt solid var(--color-text-print);
-    }
+    overflow-wrap: anywhere;
+    border-bottom: 1pt solid black;
+    text-align: start;
 }
 
 /**
