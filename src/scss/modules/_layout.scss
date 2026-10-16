@@ -28,6 +28,8 @@ body {
 /**
  * Outer wrapper for main layouts.
  *
+ * 1. Prevent child margins from collapsing through the wrapper.
+ *
  * Example HTML:
  *
  * <div class="wrapper">
@@ -38,8 +40,9 @@ body {
  */
 
 .wrapper {
-    padding: 1px 0;
-    border-bottom: 1px solid var(--color-border);
+    /* 1 */
+    padding-block: 1px;
+    border-block-end: 1px solid var(--color-border);
     background: var(--color-background);
 }
 
@@ -114,11 +117,12 @@ body {
  */
 
 .complementary-content {
-    margin: 2em -6% 0;
-    padding: 0 6%;
+    margin-block-start: 2em;
+    margin-inline: -6%;
+    padding-inline: 6%;
     /* 1 */
     overflow-wrap: anywhere;
-    border-top: 2px dashed var(--color-border);
+    border-block-start: 2px dashed var(--color-border);
 }
 
 /**
@@ -126,10 +130,10 @@ body {
  *
  * Example HTML:
  *
- * <p class="accessibility">
+ * <p class="visually-hidden">
  */
 
-.accessibility {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;

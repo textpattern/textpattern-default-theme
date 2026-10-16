@@ -119,6 +119,8 @@ nav ol::after,
   /**
    * Outer wrapper for main layouts.
    *
+   * 1. Prevent child margins from collapsing through the wrapper.
+   *
    * Example HTML:
    *
    * <div class="wrapper">
@@ -128,8 +130,9 @@ nav ol::after,
    * </div>
    */
   .wrapper {
-    padding: 1px 0;
-    border-bottom: 1px solid var(--color-border);
+    /* 1 */
+    padding-block: 1px;
+    border-block-end: 1px solid var(--color-border);
     background: var(--color-background);
   }
   /**
@@ -192,20 +195,21 @@ nav ol::after,
    * 1. Prevent really, really long words in article from breaking layout.
    */
   .complementary-content {
-    margin: 2em -6% 0;
-    padding: 0 6%;
+    margin-block-start: 2em;
+    margin-inline: -6%;
+    padding-inline: 6%;
     /* 1 */
     overflow-wrap: anywhere;
-    border-top: 2px dashed var(--color-border);
+    border-block-start: 2px dashed var(--color-border);
   }
   /**
    * Hide text but still allow screen reader access.
    *
    * Example HTML:
    *
-   * <p class="accessibility">
+   * <p class="visually-hidden">
    */
-  .accessibility {
+  .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
