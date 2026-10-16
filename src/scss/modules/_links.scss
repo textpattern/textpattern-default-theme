@@ -30,12 +30,12 @@ a {
  */
 
 :where(a, button, input, select, textarea, [tabindex]):focus-visible {
-    outline: 3px solid var(--focus-ring);
+    outline: 3px solid var(--color-link-focus);
     outline-offset: 3px;
 }
 
 :where(input, select, textarea):focus-visible {
-    border-color: var(--focus-ring);
+    border-color: var(--color-link-focus);
 }
 
 /**
