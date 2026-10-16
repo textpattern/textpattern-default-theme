@@ -1,5 +1,3 @@
-@use "sass:color";
-@use "../setup/colours";
 @use "../setup/settings";
 
 /* Navigation
@@ -28,7 +26,7 @@
  */
 
 .site-navigation {
-    background-color: colours.$color-gradient-to;
+    background-color: var(--color-gradient-to);
 
     > div {
         position: relative;
@@ -39,27 +37,27 @@
     ul {
         margin: 0;
         padding: 0;
-        border: solid colours.$color-gradient-border;
+        border: solid var(--color-gradient-border);
         border-width: 1px 0;
         list-style: none;
     }
 
     li {
-        border: solid colours.$color-gradient-border;
+        border: solid var(--color-gradient-border);
         border-width: 1px 0;
-        background-color: colours.$color-gradient-from;
+        background-color: var(--color-gradient-from);
 
         &:hover {
-            background-color: colours.$color-button-gradient-hover-from;
+            background-color: var(--color-button-gradient-hover-from);
         }
 
         &:active {
-            background-color: colours.$color-gradient-to-darker;
+            background-color: var(--color-gradient-to-darker);
             box-shadow: settings.$inset-lowlighting;
         }
 
         &.active {
-            background-color: colours.$color-button-gradient-hover-from;
+            background-color: var(--color-button-gradient-hover-from);
             box-shadow: none;
         }
     }
@@ -67,16 +65,16 @@
     a {
         display: block;
         padding: 0.5em 6%;
-        color: colours.$color-text;
+        color: var(--color-text);
 
         &:hover,
         &:visited {
-            color: colours.$color-text;
+            color: var(--color-text);
             text-decoration: none;
         }
 
         &:active {
-            color: colours.$color-text-button-active;
+            color: var(--color-text-button-active);
             text-decoration: none;
         }
     }
@@ -88,7 +86,7 @@
 
 search {
     padding: 1em 6% 0.5em;
-    background: colours.$color-background;
+    background: var(--color-background);
 
     input[type="search"] {
         width: 16em;

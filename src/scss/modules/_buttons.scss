@@ -1,7 +1,3 @@
-@use "sass:color";
-@use "../setup/colours";
-@use "../setup/helpers";
-
 /* Buttons
    ========================================================================== */
 
@@ -15,19 +11,16 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-    @include helpers.gradient-linear(
-        colours.$color-button-gradient-from,
-        colours.$color-button-gradient-to
-    );
-
     display: inline-block;
     position: relative;
     height: 2em; // 32px / 16px
     padding: 0.25em 1em; // 4px / 16px
-    border: 1px solid colours.$color-button-border;
+    border: 1px solid var(color-button-border);
     border-radius: 1em;
-    box-shadow: 0 2px 0 colours.$color-button-shadow;
-    color: colours.$color-text-button;
+    background-color:var(--color-button-gradient-hover-to);
+    background-image: linear-gradient(var(--color-button-gradient-hover-from), var(--color-button-gradient-hover-to));
+    box-shadow: 0 2px 0 var(color-button-shadow);
+    color: var(--color-text-button);
     font-weight: normal;
     text-align: center;
     /* 1 */
@@ -36,26 +29,23 @@ button,
     cursor: pointer;
 
     &:hover {
-        @include helpers.gradient-linear(
-            colours.$color-button-gradient-hover-from,
-            colours.$color-button-gradient-hover-to
-        );
-
-        border-color: colours.$color-button-border-hover;
-        color: colours.$color-text-button-hover;
+        border-color: var(--color-button-border-hover);
+        background-color:var(--color-button-gradient-hover-to);
+        background-image: linear-gradient(var(--color-button-gradient-hover-from), var(--color-button-gradient-hover-to));
+        color: var(--color-text-button-hover);
         text-decoration: none;
     }
 
     &:active {
         top: 2px;
-        border-color: colours.$color-button-border-active;
+        border-color: var(--color-button-border-active);
         box-shadow: none;
-        color: colours.$color-text-button-active;
+        color: var(--color-text-button-active);
         text-decoration: none;
     }
 
     &:focus-visible {
-        border-color: colours.$color-link-focus;
+        border-color: var(--color-link-focus);
         outline: 2px solid transparent; // Allows for repainting in high contrast modes.
         outline-offset: 2px;
     }

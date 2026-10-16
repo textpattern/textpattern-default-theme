@@ -1,4 +1,43 @@
 @charset "UTF-8";
+:root {
+  color-scheme: light;
+  --color-text: #333333;
+  --color-text-heading: #000000;
+  --color-text-button: #333333;
+  --color-text-button-hover: #333333;
+  --color-text-button-active: #222222;
+  --color-text-form: #000000;
+  --color-text-form-placeholder: #999999;
+  --color-text-form-disabled: #aaaaaa;
+  --color-text-footnote: #585858;
+  --color-text-print: #000000;
+  --color-link: #004cbf;
+  --color-link-hover: #0066ff;
+  --color-link-focus: #0066ff;
+  --color-border: #cccccc;
+  --color-border-light: #d4d4d4;
+  --color-background: #ffffff;
+  --color-background-box: #f7f7f7;
+  --color-background-form: #ffffff;
+  --color-background-form-disabled: #eeeeee;
+  --color-gradient-from-lighter: #fafafa;
+  --color-gradient-from: #eeeeee;
+  --color-gradient-to: #dddddd;
+  --color-gradient-to-darker: #d4d4d4;
+  --color-gradient-border: #cccccc;
+  --color-highlight-box: #fff9e1;
+  --color-button-gradient-from: #eeeeee;
+  --color-button-gradient-to: #dddddd;
+  --color-button-border: #dddddd;
+  --color-button-border-hover: #bcbcbc;
+  --color-button-gradient-hover-from: #f8f8f8;
+  --color-button-gradient-hover-to: #e7e7e7;
+  --color-button-border-active: #bcbcbc;
+  --color-button-shadow: #aaaaaa;
+  --color-error-text: #9d261d;
+  --color-error-background: #f2dede;
+}
+
 /* ==========================================================================
    Styling and layout for all media
    ========================================================================== */
@@ -37,7 +76,7 @@ nav ol::after,
     position: relative;
     /* 2 */
     margin: 0;
-    background: #f7f7f7;
+    background: var(--color-background-box);
   }
   /**
    * Outer wrapper for main layouts.
@@ -52,8 +91,8 @@ nav ol::after,
    */
   .wrapper {
     padding: 1px 0;
-    border-bottom: 1px solid #cccccc;
-    background: #ffffff;
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-background);
   }
   /**
    * Wrapper for layouts, and for site header/footer.
@@ -119,7 +158,7 @@ nav ol::after,
     padding: 0 6%;
     /* 1 */
     overflow-wrap: anywhere;
-    border-top: 2px dashed #cccccc;
+    border-top: 2px dashed var(--color-border);
   }
   /**
    * Hide text but still allow screen reader access.
@@ -163,7 +202,7 @@ nav ol::after,
    * </nav>
    */
   .site-navigation {
-    background-color: #dddddd;
+    background-color: var(--color-gradient-to);
   }
   .site-navigation > div {
     position: relative;
@@ -173,37 +212,37 @@ nav ol::after,
   .site-navigation ul {
     margin: 0;
     padding: 0;
-    border: solid #cccccc;
+    border: solid var(--color-gradient-border);
     border-width: 1px 0;
     list-style: none;
   }
   .site-navigation li {
-    border: solid #cccccc;
+    border: solid var(--color-gradient-border);
     border-width: 1px 0;
-    background-color: #eeeeee;
+    background-color: var(--color-gradient-from);
   }
   .site-navigation li:hover {
-    background-color: #f8f8f8;
+    background-color: var(--color-button-gradient-hover-from);
   }
   .site-navigation li:active {
-    background-color: #d4d4d4;
+    background-color: var(--color-gradient-to-darker);
     box-shadow: inset 0 0.2em 0.25em rgba(0, 0, 0, 0.15);
   }
   .site-navigation li.active {
-    background-color: #f8f8f8;
+    background-color: var(--color-button-gradient-hover-from);
     box-shadow: none;
   }
   .site-navigation a {
     display: block;
     padding: 0.5em 6%;
-    color: #333333;
+    color: var(--color-text);
   }
   .site-navigation a:hover, .site-navigation a:visited {
-    color: #333333;
+    color: var(--color-text);
     text-decoration: none;
   }
   .site-navigation a:active {
-    color: #222222;
+    color: var(--color-text-button-active);
     text-decoration: none;
   }
   /**
@@ -211,7 +250,7 @@ nav ol::after,
    */
   search {
     padding: 1em 6% 0.5em;
-    background: #ffffff;
+    background: var(--color-background);
   }
   search input[type=search] {
     width: 16em;
@@ -232,7 +271,7 @@ nav ol::after,
    */
   a {
     /* 1 */
-    color: #004cbf;
+    color: var(--color-link);
     /* 2 */
     text-decoration: none;
     /* 3 */
@@ -240,11 +279,11 @@ nav ol::after,
             text-decoration-skip-ink: auto;
   }
   a:hover, a:active {
-    color: #0066ff;
+    color: var(--color-link-hover);
     text-decoration: underline;
   }
   a:focus-visible {
-    outline: 2px solid #0066ff;
+    outline: 2px solid var(--color-link-focus);
     outline-offset: 2px;
   }
   /**
@@ -253,28 +292,11 @@ nav ol::after,
    * 1. Expanded CSS level 3 `text-decoration-color` property in supported
    *    browsers, older browsers ignore this addition.
    */
-  h1 a,
-  h2 a,
-  h3 a,
-  h4 a,
-  h5 a,
-  h6 a {
-    color: #000000;
+  :is(h1, h2, h3, h4, h5, h6) a {
+    color: var(--color-text-heading);
   }
-  h1 a:hover, h1 a:active,
-  h2 a:hover,
-  h2 a:active,
-  h3 a:hover,
-  h3 a:active,
-  h4 a:hover,
-  h4 a:active,
-  h5 a:hover,
-  h5 a:active,
-  h6 a:hover,
-  h6 a:active {
-    color: #000000;
-    /* 1 */
-    text-decoration-color: rgba(51, 51, 51, 0.5);
+  :is(h1, h2, h3, h4, h5, h6) a:is(:hover, :active) {
+    color: var(--color-text-heading);
   }
   /**
    * Paginator (prev/next) navigation links on articles/article lists.
@@ -307,8 +329,8 @@ nav ol::after,
     padding: 0.25em 0.5em;
     transform: translateY(-5em);
     transition: transform 0.25s ease-in-out;
-    background-color: hsl(0, 0%, 101.3333333333%);
-    color: #333333;
+    background-color: var(--color-gradient-from-lighter);
+    color: var(--color-text);
     font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
   .skip-link:focus, .skip-link:active {
@@ -327,7 +349,7 @@ nav ol::after,
    * Global font and text colour.
    */
   body {
-    color: #333333;
+    color: var(--color-text);
     font-family: "PT Serif", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   }
   /**
@@ -347,7 +369,7 @@ nav ol::after,
   h5,
   h6 {
     clear: both;
-    color: #000000;
+    color: var(--color-text-heading);
     font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
   h1 {
@@ -424,8 +446,8 @@ nav ol::after,
   var {
     padding: 0 0.25em;
     border-radius: 0.25em;
-    background: #fff9e1;
-    color: #333333;
+    background: var(--color-highlight-box);
+    color: var(--color-text);
   }
   /**
    * Harmonize size and style of computer text.
@@ -434,10 +456,10 @@ nav ol::after,
   code,
   kbd,
   samp {
-    border: 1px solid #d4d4d4;
+    border: 1px solid var(--color-border-light);
     border-radius: 0.2857143em;
-    background-color: #f7f7f7;
-    color: #333333;
+    background-color: var(--color-background-box);
+    color: var(--color-text);
     font-family: Menlo, Consolas, Monaco, monospace;
     font-size: 0.875rem;
     line-height: 1.5;
@@ -507,7 +529,7 @@ nav ol::after,
   figcaption,
   tfoot,
   .footnote {
-    color: #585858;
+    color: var(--color-text-footnote);
   }
   figcaption {
     margin-top: 0.5em;
@@ -717,7 +739,7 @@ nav ol::after,
   th,
   td {
     padding: 0.5em;
-    border: 1px solid #d4d4d4;
+    border: 1px solid var(--color-border-light);
     vertical-align: top;
     text-align: left;
   }
@@ -725,17 +747,17 @@ nav ol::after,
    * Emphasize table header.
    */
   thead tr {
-    background-color: #eeeeee;
+    background-color: var(--color-gradient-from);
   }
   thead th,
   thead td {
-    border: 1px solid #cccccc;
+    border: 1px solid var(--color-border);
   }
   /**
    * 'Zebra striping' of `tbody` rows.
    */
   tbody tr:nth-child(even) {
-    background-color: #f7f7f7;
+    background-color: var(--color-background-box);
   }
   /**
    * Adjust padding of table footer due to smaller font size.
@@ -771,7 +793,7 @@ nav ol::after,
    * CSS Lists and Counters Module Level 3 list marker styling.
    */
   li::marker {
-    color: #000000;
+    color: var(--color-text-heading);
   }
   /**
    * Address margins set differently.
@@ -789,12 +811,12 @@ nav ol::after,
   .article-list {
     margin: 0 0 2em;
     padding: 0;
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid var(--color-border);
     list-style: none;
   }
   .article-list li {
     margin-bottom: 0;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid var(--color-border);
   }
   /* Forms
      ========================================================================== */
@@ -808,7 +830,7 @@ nav ol::after,
     /* 2 */
     margin: 1em 0;
     padding: 1px 1em;
-    border: 1px solid #cccccc;
+    border: 1px solid var(--color-border);
   }
   /**
    * Normalize styling of `legend`.
@@ -834,7 +856,7 @@ nav ol::after,
     max-width: 100%;
     /* 2 */
     margin: 0;
-    color: #000000;
+    color: var(--color-text-form);
     font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     /* 3 */
     font-size: 1rem;
@@ -863,9 +885,9 @@ nav ol::after,
   textarea {
     height: 2em;
     padding: 0.25em 0.1875em;
-    border: 1px solid #cccccc;
+    border: 1px solid var(--color-border);
     border-radius: 0;
-    background: #ffffff;
+    background: var(--color-background-form);
     /* 1 */
     appearance: none;
   }
@@ -884,7 +906,7 @@ nav ol::after,
   [type=week]:focus-visible,
   select:focus-visible,
   textarea:focus-visible {
-    border-color: #0066ff;
+    border-color: var(--color-link-focus);
     outline: 2px solid transparent;
     outline-offset: 2px;
   }
@@ -926,7 +948,7 @@ nav ol::after,
    */
   select {
     padding-right: 1.5em;
-    background: #ffffff url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2717%27 height=%275%27 viewBox=%270 0 17 5%27%3E%3Cpolygon fill=%27%23333%27 points=%270,0 5,5 10,0%27/%3E%3C/svg%3E") right center no-repeat;
+    background: var(--color-background-form) url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2717%27 height=%275%27 viewBox=%270 0 17 5%27%3E%3Cpolygon fill=%27%23333%27 points=%270,0 5,5 10,0%27/%3E%3C/svg%3E") right center no-repeat;
     background-size: 1.0625em 0.3125em;
   }
   /**
@@ -975,12 +997,12 @@ nav ol::after,
   [disabled] option,
   [disabled] optgroup,
   span.disabled {
-    border-color: #d4d4d4 !important;
+    border-color: var(--color-border-light) !important;
     /* 1 */
     opacity: 1;
-    background: #eeeeee !important;
+    background: var(--color-background-form-disabled) !important;
     box-shadow: none !important;
-    color: #aaaaaa !important;
+    color: var(--color-text-form-disabled) !important;
     text-shadow: none !important;
     /* 2 */
     cursor: default !important;
@@ -1014,7 +1036,7 @@ nav ol::after,
   input:focus:invalid,
   select:focus:invalid,
   textarea:focus:invalid {
-    border-color: #9d261d;
+    border-color: var(--color-error-text);
     box-shadow: none;
   }
   /**
@@ -1023,7 +1045,7 @@ nav ol::after,
   input:-moz-ui-invalid,
   select:-moz-ui-invalid,
   textarea:-moz-ui-invalid {
-    border-color: #9d261d;
+    border-color: var(--color-error-text);
     box-shadow: none;
   }
   /**
@@ -1033,7 +1055,7 @@ nav ol::after,
    */
   ::placeholder {
     opacity: 1;
-    color: #999999;
+    color: var(--color-text-form-placeholder);
     /* 1 */
     font: inherit;
   }
@@ -1046,7 +1068,7 @@ nav ol::after,
    */
   .required {
     border: 0;
-    color: #9d261d;
+    color: var(--color-error-text);
   }
   /* Buttons
      ========================================================================== */
@@ -1059,16 +1081,16 @@ nav ol::after,
   [type=button],
   [type=reset],
   [type=submit] {
-    background-color: #dddddd;
-    background-image: linear-gradient(#eeeeee, #dddddd);
     display: inline-block;
     position: relative;
     height: 2em;
     padding: 0.25em 1em;
-    border: 1px solid #dddddd;
+    border: 1px solid var(color-button-border);
     border-radius: 1em;
-    box-shadow: 0 2px 0 #aaaaaa;
-    color: #333333;
+    background-color: var(--color-button-gradient-hover-to);
+    background-image: linear-gradient(var(--color-button-gradient-hover-from), var(--color-button-gradient-hover-to));
+    box-shadow: 0 2px 0 var(color-button-shadow);
+    color: var(--color-text-button);
     font-weight: normal;
     text-align: center;
     /* 1 */
@@ -1080,10 +1102,10 @@ nav ol::after,
   [type=button]:hover,
   [type=reset]:hover,
   [type=submit]:hover {
-    background-color: #e7e7e7;
-    background-image: linear-gradient(#f8f8f8, #e7e7e7);
-    border-color: #bcbcbc;
-    color: #333333;
+    border-color: var(--color-button-border-hover);
+    background-color: var(--color-button-gradient-hover-to);
+    background-image: linear-gradient(var(--color-button-gradient-hover-from), var(--color-button-gradient-hover-to));
+    color: var(--color-text-button-hover);
     text-decoration: none;
   }
   button:active,
@@ -1091,16 +1113,16 @@ nav ol::after,
   [type=reset]:active,
   [type=submit]:active {
     top: 2px;
-    border-color: #bcbcbc;
+    border-color: var(--color-button-border-active);
     box-shadow: none;
-    color: #222222;
+    color: var(--color-text-button-active);
     text-decoration: none;
   }
   button:focus-visible,
   [type=button]:focus-visible,
   [type=reset]:focus-visible,
   [type=submit]:focus-visible {
-    border-color: #0066ff;
+    border-color: var(--color-link-focus);
     outline: 2px solid transparent;
     outline-offset: 2px;
   }
@@ -1127,7 +1149,7 @@ nav ol::after,
     padding: 1px 1em;
     overflow-wrap: anywhere;
     border-radius: 0.5em;
-    background: #f7f7f7;
+    background: var(--color-background-box);
   }
   .comments h4 .is-author {
     font-weight: normal;
@@ -1144,7 +1166,7 @@ nav ol::after,
    * <article class="comments comments-author">
    */
   .comments-author {
-    background: #eeeeee;
+    background: var(--color-gradient-from);
   }
   /**
    * Styling for user comments preview.
@@ -1153,19 +1175,19 @@ nav ol::after,
     margin-bottom: 2px;
     padding: 1em;
     border-radius: 0.5em;
-    background-color: #fff9e1;
+    background-color: var(--color-highlight-box);
   }
   /**
    * Highlight text colour for comment errors.
    */
   .error_message li {
-    color: #9d261d;
+    color: var(--color-error-text);
   }
   /**
    * Highlighting for comment form errors.
    */
   .comments_error {
-    border-color: #9d261d;
+    border-color: var(--color-error-text);
   }
   /* Popup comments (can be removed if you don't use popups)
      ========================================================================== */
@@ -1201,8 +1223,8 @@ nav ol::after,
    * </nav>
    */
   .site-navigation {
-    border-top: 1px solid #cccccc;
-    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
   }
   .site-navigation > div {
     display: flex;
@@ -1230,16 +1252,16 @@ nav ol::after,
     width: 2.125em;
     padding-right: 0;
     transition: width 0.2s ease-in-out, border-color 0.2s ease-in-out;
-    background-color: #eeeeee;
+    background-color: var(--color-gradient-from);
     cursor: pointer;
   }
   search input[type=search]:hover {
-    background-color: #f8f8f8;
+    background-color: var(--color-button-gradient-hover-from);
   }
   search input[type=search]:focus {
     width: 16em;
     padding-right: 0.1875em;
-    background-color: #fafafa;
+    background-color: var(--color-gradient-from-lighter);
     cursor: auto;
   }
 }
@@ -1274,7 +1296,7 @@ nav ol::after,
   *::after {
     background: transparent !important;
     box-shadow: none !important;
-    color: #000000 !important;
+    color: var(--color-text-print) !important;
     text-shadow: none !important;
   }
   /**
@@ -1296,14 +1318,14 @@ nav ol::after,
    * Visually separate header from body.
    */
   .site-header {
-    border-bottom: 1pt solid #000000;
+    border-bottom: 1pt solid var(--color-text-print);
   }
   /**
    * Visually separate footer from body.
    */
   .site-footer {
     margin-top: 12pt;
-    border-top: 1pt solid #000000;
+    border-top: 1pt solid var(--color-text-print);
   }
   /**
    * Hide unnecessary content from print.
@@ -1399,14 +1421,14 @@ nav ol::after,
    */
   blockquote {
     padding: 0 0 0 8pt;
-    border-left: 3pt solid #000000;
+    border-left: 3pt solid var(--color-text-print);
     font-size: 16pt;
     /* 1 */
     break-inside: avoid;
   }
   [dir=rtl] blockquote {
     padding: 0 8pt 0 0;
-    border-right: 3pt solid #000000;
+    border-right: 3pt solid var(--color-text-print);
     border-left: 0;
   }
   /**
@@ -1417,7 +1439,7 @@ nav ol::after,
   pre {
     margin-bottom: 8pt;
     padding: 8pt;
-    border: 1pt solid #000000;
+    border: 1pt solid var(--color-text-print);
     /* 1 */
     white-space: pre-wrap !important;
   }
@@ -1541,7 +1563,7 @@ nav ol::after,
   th,
   td {
     padding: 4pt 8pt;
-    border-bottom: 1pt solid #000000;
+    border-bottom: 1pt solid var(--color-text-print);
   }
   /**
    * Display table head across multi-page tables.
@@ -1550,7 +1572,7 @@ nav ol::after,
     display: table-header-group;
   }
   thead th {
-    border-top: 1pt solid #000000;
+    border-top: 1pt solid var(--color-text-print);
   }
   /**
    * Avoid user comments breaking across multiple pages.

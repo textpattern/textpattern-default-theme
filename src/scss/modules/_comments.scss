@@ -1,5 +1,3 @@
-@use "sass:color";
-@use "../setup/colours";
 @use "../setup/settings";
 
 /* Comments
@@ -18,7 +16,7 @@
     padding: 1px 1em;
     overflow-wrap: anywhere;
     border-radius: settings.$border-radius;
-    background: colours.$color-background-box;
+    background: var(--color-background-box);
 
     h4 {
         .is-author {
@@ -41,7 +39,7 @@
  */
 
 .comments-author {
-    background: colours.$color-gradient-from;
+    background: var(--color-gradient-from);
 }
 
 /**
@@ -52,7 +50,7 @@
     margin-bottom: 2px;
     padding: 1em;
     border-radius: settings.$border-radius;
-    background-color: colours.$color-highlight-box;
+    background-color: var(--color-highlight-box);
 }
 
 /**
@@ -60,7 +58,7 @@
  */
 
 .error_message li {
-    color: colours.$color-error-text;
+    color: var(--color-error-text);
 }
 
 /**
@@ -68,7 +66,7 @@
  */
 
 .comments_error {
-    border-color: colours.$color-error-text;
+    border-color: var(--color-error-text);
 }
 
 /* Popup comments (can be removed if you don't use popups)

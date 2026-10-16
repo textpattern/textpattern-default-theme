@@ -1,5 +1,3 @@
-@use "sass:color";
-@use "../setup/colours";
 @use "../setup/settings";
 
 /* Links
@@ -14,7 +12,7 @@
 
 a {
     /* 1 */
-    color: colours.$color-link;
+    color: var(--color-link);
     /* 2 */
     text-decoration: none;
     /* 3 */
@@ -22,12 +20,12 @@ a {
 
     &:hover,
     &:active {
-        color: colours.$color-link-hover;
+        color: var(--color-link-hover);
         text-decoration: underline;
     }
 
     &:focus-visible {
-        outline: 2px solid colours.$color-link-focus;
+        outline: 2px solid var(--color-link-focus);
         outline-offset: 2px;
     }
 }
@@ -39,22 +37,12 @@ a {
  *    browsers, older browsers ignore this addition.
  */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    a {
-        color: colours.$color-text-heading;
+:is(h1, h2, h3, h4, h5, h6) a {
+    color: var(--color-text-heading);
+}
 
-        &:hover,
-        &:active {
-            color: colours.$color-text-heading;
-            /* 1 */
-            text-decoration-color: rgba(colours.$color-text, 0.5);
-        }
-    }
+:is(h1, h2, h3, h4, h5, h6) a:is(:hover, :active) {
+    color: var(--color-text-heading);
 }
 
 /**
@@ -92,11 +80,8 @@ h6 {
     padding: 0.25em 0.5em;
     transform: translateY(-5em);
     transition: transform 0.25s ease-in-out;
-    background-color: color.adjust(
-        colours.$color-gradient-from,
-        $lightness: 8%
-    );
-    color: colours.$color-text;
+    background-color: var(--color-gradient-from-lighter);
+    color: var(--color-text);
     font-family: settings.$font-sans-serif;
 
     &:focus,

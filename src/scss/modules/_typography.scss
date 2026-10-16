@@ -1,6 +1,4 @@
-@use "sass:color";
 @use "sass:math";
-@use "../setup/colours";
 @use "../setup/settings";
 
 /* Typography
@@ -20,7 +18,7 @@ html {
  */
 
 body {
-    color: colours.$color-text;
+    color: var(--color-text);
     font-family: settings.$font-serif;
 }
 
@@ -44,7 +42,7 @@ h4,
 h5,
 h6 {
     clear: both;
-    color: colours.$color-text-heading;
+    color: var(--color-text-heading);
     font-family: settings.$font-sans-serif;
 }
 
@@ -136,8 +134,8 @@ mark,
 var {
     padding: 0 0.25em; // 0 4px
     border-radius: math.div(settings.$border-radius, 2);
-    background: colours.$color-highlight-box;
-    color: colours.$color-text;
+    background: var(--color-highlight-box);
+    color: var(--color-text);
 }
 
 /**
@@ -148,10 +146,10 @@ pre,
 code,
 kbd,
 samp {
-    border: 1px solid colours.$color-border-light;
+    border: 1px solid var(--color-border-light);
     border-radius: 0.2857143em; // 4px / 14px
-    background-color: colours.$color-background-box;
-    color: colours.$color-text;
+    background-color: var(--color-background-box);
+    color: var(--color-text);
     font-family: settings.$font-code;
     font-size: settings.$code-font-size;
     line-height: settings.$base-line-height;
@@ -233,7 +231,7 @@ tfoot,
 figcaption,
 tfoot,
 .footnote {
-    color: colours.$color-text-footnote;
+    color: var(--color-text-footnote);
 }
 
 figcaption {

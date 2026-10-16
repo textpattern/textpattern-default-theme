@@ -1,49 +1,52 @@
-@use "sass:color";
-// text colours
-$color-text: #333333 !default;
-$color-text-heading: #000000 !default;
-$color-text-button: $color-text !default;
-$color-text-button-hover: $color-text-button !default;
-$color-text-button-active: #222222 !default;
-$color-text-form: #000000 !default;
-$color-text-form-placeholder: #999999 !default;
-$color-text-form-disabled: #aaaaaa !default;
-$color-text-footnote: #585858 !default;
-$color-text-print: #000000 !default; // solid black prints faster/cleaner
+:root {
+    color-scheme: light;
 
-// interaction colours
-$color-link: #004cbf !default;
-$color-link-hover: #0066ff !default;
-$color-link-focus: $color-link-hover !default;
+    // text colours
+    --color-text: #333333;
+    --color-text-heading: #000000;
+    --color-text-button: #333333;
+    --color-text-button-hover: #333333;
+    --color-text-button-active: #222222;
+    --color-text-form: #000000;
+    --color-text-form-placeholder: #999999;
+    --color-text-form-disabled: #aaaaaa;
+    --color-text-footnote: #585858;
+    --color-text-print: #000000;
 
-// borders
-$color-border: #cccccc !default;
-$color-border-light: #d4d4d4 !default;
+    // interaction colours
+    --color-link: #004cbf;
+    --color-link-hover: #0066ff;
+    --color-link-focus: #0066ff;
 
-// neutral colours
-$color-background: #ffffff !default;
-$color-background-box: #f7f7f7 !default;
-$color-background-form: #ffffff !default;
-$color-background-form-disabled: #eeeeee !default;
-$color-gradient-from-lighter: #fafafa !default;
-$color-gradient-from: #eeeeee !default;
-$color-gradient-to: #dddddd !default;
-$color-gradient-to-darker: #d4d4d4 !default;
-$color-gradient-border: #cccccc !default;
+    // borders
+    --color-border: #cccccc;
+    --color-border-light: #d4d4d4;
 
-// accent colours
-$color-highlight-box: #fff9e1 !default;
+    // neutral colours
+    --color-background: #ffffff;
+    --color-background-box: #f7f7f7;
+    --color-background-form: #ffffff;
+    --color-background-form-disabled: #eeeeee;
+    --color-gradient-from-lighter: #fafafa;
+    --color-gradient-from: #eeeeee;
+    --color-gradient-to: #dddddd;
+    --color-gradient-to-darker: #d4d4d4;
+    --color-gradient-border: #cccccc;
 
-// button colours
-$color-button-gradient-from: #eeeeee !default;
-$color-button-gradient-to: #dddddd !default;
-$color-button-border: #dddddd !default;
-$color-button-border-hover: #bcbcbc !default;
-$color-button-gradient-hover-from: #f8f8f8 !default;
-$color-button-gradient-hover-to: #e7e7e7 !default;
-$color-button-border-active: #bcbcbc !default;
-$color-button-shadow: #aaaaaa !default;
+    // accent colours
+    --color-highlight-box: #fff9e1;
 
-// alert colours
-$color-error-text: #9d261d !default;
-$color-error-background: #f2dede !default;
+    // button colours
+    --color-button-gradient-from: #eeeeee;
+    --color-button-gradient-to: #dddddd;
+    --color-button-border: #dddddd;
+    --color-button-border-hover: #bcbcbc;
+    --color-button-gradient-hover-from: #f8f8f8;
+    --color-button-gradient-hover-to: #e7e7e7;
+    --color-button-border-active: #bcbcbc;
+    --color-button-shadow: #aaaaaa;
+
+    // alert colours
+    --color-error-text: #9d261d;
+    --color-error-background: #f2dede;
+}
