@@ -72,6 +72,7 @@ tfoot {
  * Multi-row span vertical cell alignments.
  */
 
-[rowspan] {
+th[rowspan],
+td[rowspan] {
     vertical-align: middle;
 }
