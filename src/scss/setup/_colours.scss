@@ -2,49 +2,49 @@
     color-scheme: light;
 
     // text colours
-    --color-text: #333333;
-    --color-text-heading: #000000;
-    --color-text-button: #333333;
-    --color-text-button-hover: #333333;
-    --color-text-button-active: #222222;
-    --color-text-form: #000000;
-    --color-text-form-placeholder: #999999;
-    --color-text-form-disabled: #aaaaaa;
+    --color-text: #333;
+    --color-text-heading: #000;
+    --color-text-button: #333;
+    --color-text-button-hover: #333;
+    --color-text-button-active: #222;
+    --color-text-form: #000;
+    --color-text-form-placeholder: #999;
+    --color-text-form-disabled: #aaa;
     --color-text-footnote: #585858;
-    --color-text-print: #000000;
+    --color-text-print: #000;
 
     // interaction colours
     --color-link: #004cbf;
-    --color-link-hover: #0066ff;
-    --color-link-focus: #0066ff;
+    --color-link-hover: #06f;
+    --color-link-focus: #06f;
 
     // borders
-    --color-border: #cccccc;
+    --color-border: #ccc;
     --color-border-light: #d4d4d4;
 
     // neutral colours
-    --color-background: #ffffff;
+    --color-background: #fff;
     --color-background-box: #f7f7f7;
-    --color-background-form: #ffffff;
-    --color-background-form-disabled: #eeeeee;
+    --color-background-form: #fff;
+    --color-background-form-disabled: #eee;
     --color-gradient-from-lighter: #fafafa;
-    --color-gradient-from: #eeeeee;
-    --color-gradient-to: #dddddd;
+    --color-gradient-from: #eee;
+    --color-gradient-to: #ddd;
     --color-gradient-to-darker: #d4d4d4;
-    --color-gradient-border: #cccccc;
+    --color-gradient-border: #ccc;
 
     // accent colours
     --color-highlight-box: #fff9e1;
 
     // button colours
-    --color-button-gradient-from: #eeeeee;
-    --color-button-gradient-to: #dddddd;
-    --color-button-border: #dddddd;
+    --color-button-gradient-from: #eee;
+    --color-button-gradient-to: #ddd;
+    --color-button-border: #ddd;
     --color-button-border-hover: #bcbcbc;
     --color-button-gradient-hover-from: #f8f8f8;
     --color-button-gradient-hover-to: #e7e7e7;
     --color-button-border-active: #bcbcbc;
-    --color-button-shadow: #aaaaaa;
+    --color-button-shadow: #aaa;
 
     // alert colours
     --color-error-text: #9d261d;

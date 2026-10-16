@@ -70,66 +70,11 @@ bdo[dir="rtl"] {
     direction: ltr;
 }
 
-/**
- * Swap image alignment right/left positions in RTL languages.
- */
-
-[dir="rtl"] img {
-    &.align-left {
-        margin: 1em 0 1em 1em;
-        float: right;
-    }
-
-    &.align-right {
-        margin: 1em 1em 1em 0;
-        float: left;
-    }
-}
-
-/**
- * Swap table caption alignment in RTL languages.
- */
-
-[dir="rtl"] caption {
-    text-align: right;
-}
-
-/**
- * Swap table cell text alignments in RTL languages.
- */
-
-[dir="rtl"] {
-    th,
-    td {
-        text-align: right;
-    }
-}
-
-/**
- * Swap menu/list padding positions in RTL languages.
- */
-
-[dir="rtl"] {
-    menu,
-    ol,
-    ul {
-        padding: 0 2em 0 0;
-    }
-}
-
 [dir="rtl"] {
     .site-navigation ul,
     .article-list {
         padding: 0;
     }
-}
-
-/**
- * Swap definition description margin positions in RTL languages.
- */
-
-[dir="rtl"] dd {
-    margin: 0 2em 0 0;
 }
 
 /**
@@ -159,21 +104,4 @@ bdo[dir="rtl"] {
         padding-left: 1.5em; // 24px / 16px
         background-position: 0.5em center; // 8px / 16px
     }
-}
-
-/**
- * Swap ‘skip links’ position in RTL languages.
- */
-
-[dir="rtl"] .skip-link {
-    right: 1px;
-    left: auto;
-}
-
-/**
- * Swap anchor float position on comments.
- */
-
-[dir="rtl"] .comments h4 .comment-anchor {
-    float: left;
 }

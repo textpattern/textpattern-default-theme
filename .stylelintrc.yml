@@ -69,7 +69,7 @@ rules:
   #color-hex-alpha: never
 
   # Specify short or long notation for hexadecimal color values.
-  color-hex-length: long
+  color-hex-length: short
 
   # Require (where possible) or disallow named colors.
   color-named: never

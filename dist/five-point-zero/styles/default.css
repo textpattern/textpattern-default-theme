@@ -1,39 +1,39 @@
 @charset "UTF-8";
 :root {
   color-scheme: light;
-  --color-text: #333333;
-  --color-text-heading: #000000;
-  --color-text-button: #333333;
-  --color-text-button-hover: #333333;
-  --color-text-button-active: #222222;
-  --color-text-form: #000000;
-  --color-text-form-placeholder: #999999;
-  --color-text-form-disabled: #aaaaaa;
+  --color-text: #333;
+  --color-text-heading: #000;
+  --color-text-button: #333;
+  --color-text-button-hover: #333;
+  --color-text-button-active: #222;
+  --color-text-form: #000;
+  --color-text-form-placeholder: #999;
+  --color-text-form-disabled: #aaa;
   --color-text-footnote: #585858;
-  --color-text-print: #000000;
+  --color-text-print: #000;
   --color-link: #004cbf;
-  --color-link-hover: #0066ff;
-  --color-link-focus: #0066ff;
-  --color-border: #cccccc;
+  --color-link-hover: #06f;
+  --color-link-focus: #06f;
+  --color-border: #ccc;
   --color-border-light: #d4d4d4;
-  --color-background: #ffffff;
+  --color-background: #fff;
   --color-background-box: #f7f7f7;
-  --color-background-form: #ffffff;
-  --color-background-form-disabled: #eeeeee;
+  --color-background-form: #fff;
+  --color-background-form-disabled: #eee;
   --color-gradient-from-lighter: #fafafa;
-  --color-gradient-from: #eeeeee;
-  --color-gradient-to: #dddddd;
+  --color-gradient-from: #eee;
+  --color-gradient-to: #ddd;
   --color-gradient-to-darker: #d4d4d4;
-  --color-gradient-border: #cccccc;
+  --color-gradient-border: #ccc;
   --color-highlight-box: #fff9e1;
-  --color-button-gradient-from: #eeeeee;
-  --color-button-gradient-to: #dddddd;
-  --color-button-border: #dddddd;
+  --color-button-gradient-from: #eee;
+  --color-button-gradient-to: #ddd;
+  --color-button-border: #ddd;
   --color-button-border-hover: #bcbcbc;
   --color-button-gradient-hover-from: #f8f8f8;
   --color-button-gradient-hover-to: #e7e7e7;
   --color-button-border-active: #bcbcbc;
-  --color-button-shadow: #aaaaaa;
+  --color-button-shadow: #aaa;
   --color-error-text: #9d261d;
   --color-error-background: #f2dede;
 }
@@ -324,8 +324,8 @@ nav ol::after,
   .skip-link {
     position: absolute;
     z-index: 2;
-    top: 1px;
-    left: 1px;
+    inset-block-start: 1px;
+    inset-inline-start: 1px;
     padding: 0.25em 0.5em;
     transform: translateY(-5em);
     transition: transform 0.25s ease-in-out;
@@ -595,47 +595,9 @@ nav ol::after,
   [dir=rtl] code {
     direction: ltr;
   }
-  /**
-   * Swap image alignment right/left positions in RTL languages.
-   */
-  [dir=rtl] img.align-left {
-    margin: 1em 0 1em 1em;
-    float: right;
-  }
-  [dir=rtl] img.align-right {
-    margin: 1em 1em 1em 0;
-    float: left;
-  }
-  /**
-   * Swap table caption alignment in RTL languages.
-   */
-  [dir=rtl] caption {
-    text-align: right;
-  }
-  /**
-   * Swap table cell text alignments in RTL languages.
-   */
-  [dir=rtl] th,
-  [dir=rtl] td {
-    text-align: right;
-  }
-  /**
-   * Swap menu/list padding positions in RTL languages.
-   */
-  [dir=rtl] menu,
-  [dir=rtl] ol,
-  [dir=rtl] ul {
-    padding: 0 2em 0 0;
-  }
   [dir=rtl] .site-navigation ul,
   [dir=rtl] .article-list {
     padding: 0;
-  }
-  /**
-   * Swap definition description margin positions in RTL languages.
-   */
-  [dir=rtl] dd {
-    margin: 0 2em 0 0;
   }
   /**
    * Swap checkbox/radio margin positions in RTL languages.
@@ -655,19 +617,6 @@ nav ol::after,
     padding-right: 0.1875em;
     padding-left: 1.5em;
     background-position: 0.5em center;
-  }
-  /**
-   * Swap ‘skip links’ position in RTL languages.
-   */
-  [dir=rtl] .skip-link {
-    right: 1px;
-    left: auto;
-  }
-  /**
-   * Swap anchor float position on comments.
-   */
-  [dir=rtl] .comments h4 .comment-anchor {
-    float: left;
   }
   /* Embedded content
      ========================================================================== */
@@ -731,7 +680,7 @@ nav ol::after,
   caption {
     margin-bottom: 0.5em;
     font-style: italic;
-    text-align: left;
+    text-align: start;
   }
   /**
    * Make table cells align top and left by default.
@@ -741,7 +690,7 @@ nav ol::after,
     padding: 0.5em;
     border: 1px solid var(--color-border-light);
     vertical-align: top;
-    text-align: left;
+    text-align: start;
   }
   /**
    * Emphasize table header.
@@ -780,7 +729,8 @@ nav ol::after,
   menu,
   ol,
   ul {
-    padding: 0 0 0 2em;
+    padding-block: 0;
+    padding-inline: 2em 0;
   }
   /**
    * Remove margins from nested lists.
@@ -799,7 +749,8 @@ nav ol::after,
    * Address margins set differently.
    */
   dd {
-    margin: 0 0 0 2em;
+    margin-block: 0;
+    margin-inline: 2em 0;
   }
   /**
    * Additional styling for article lists.
@@ -1155,7 +1106,7 @@ nav ol::after,
     font-weight: normal;
   }
   .comments h4 .comment-anchor {
-    float: right;
+    float: inline-end;
     font-weight: normal;
   }
   /**

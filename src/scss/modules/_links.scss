@@ -75,8 +75,8 @@ a {
 .skip-link {
     position: absolute;
     z-index: 2;
-    top: 1px;
-    left: 1px;
+    inset-block-start: 1px;
+    inset-inline-start: 1px;
     padding: 0.25em 0.5em;
     transform: translateY(-5em);
     transition: transform 0.25s ease-in-out;
