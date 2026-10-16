@@ -110,7 +110,7 @@ nav ol::after,
   .container {
     width: 88%;
     max-width: 54em;
-    margin: 0 auto;
+    margin-inline: auto;
   }
   /**
    * Additional styling for child content within site header.

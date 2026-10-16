@@ -60,7 +60,7 @@ body {
 .container {
     width: 88%;
     max-width: settings.$container-max-width;
-    margin: 0 auto;
+    margin-inline: auto;
 }
 
 /**
