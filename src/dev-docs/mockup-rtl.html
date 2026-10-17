@@ -29,7 +29,7 @@
                 </li>
             </ul>
 
-            <search role="search" aria-label="Search" itemscope itemtype="https://schema.org/WebSite">
+            <search aria-label="Search" itemscope itemtype="https://schema.org/WebSite">
                 <meta itemprop="url" content="https://example.com/">
                 <form method="get" action="#" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
                     <meta itemprop="target" content="https://example.com/?q={q}">
@@ -128,7 +128,7 @@
                         <p>Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.</p>
 
                         <h2>Embedded content</h2>
-                        <p>Remember that all images and videos in the theme are <code>max-width:100%;</code> for flexibility and accommodation of responsive design, so parent containers are what control a given desired image/video width in layout, except when they are at their maximum width already (100%). <strong>Images/video width and height attribute values should <em>never</em> be used.</strong></p>
+                        <p>Remember that all images and videos in the theme are <code>max-width:100%;</code> for flexibility and accommodation of responsive design, so parent containers are what control a given desired image/video width in layout, except when they are at their maximum width already (100%).</p>
                         <h3>Images</h3>
                         <p><img alt="160×160 Image Example" src="https://default-theme.textpattern.com/images/1.png" title="160×160 Image Example"></p>
                         <h3>Images with links</h3>
@@ -152,7 +152,7 @@
                             I’m sorry, your browser doesn’t support HTML5 video in MP4 with H.264 or WebM with VP8/VP9.
                         </video>
                         <audio controls>
-                            <source type="audio/mp3" src="https://default-theme.textpattern.com/audio/moonlight_reprise.mp3">
+                            <source type="audio/mpeg" src="https://default-theme.textpattern.com/audio/moonlight_reprise.mp3">
                             <source type="audio/ogg; codecs=vorbis" src="https://default-theme.textpattern.com/audio/moonlight_reprise.ogg">
                             I’m sorry, your browser doesn’t support HTML5 audio.
                         </audio>
@@ -195,41 +195,41 @@
                             <caption>This is a table caption</caption>
                             <thead>
                                 <tr>
-                                    <th>Planet </th>
-                                    <th>Population </th>
-                                    <th>Government </th>
+                                    <th scope="col">Planet</th>
+                                    <th scope="col">Population</th>
+                                    <th scope="col">Government</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Diso</td>
+                                    <th scope="row">Diso</th>
                                     <td>4.1 B</td>
                                     <td>Democracy</td>
                                 </tr>
                                 <tr>
-                                    <td>Lave</td>
+                                    <th scope="row">Lave</th>
                                     <td>2.5 B</td>
                                     <td>Dictatorship</td>
                                 </tr>
                                 <tr>
-                                    <td>Leesti</td>
+                                    <th scope="row">Leesti</th>
                                     <td>5.0 B</td>
                                     <td>Corporate State</td>
                                 </tr>
                                 <tr>
-                                    <td>Reorte</td>
-                                    <td>3.1 B </td>
+                                    <th scope="row">Reorte</th>
+                                    <td>3.1 B</td>
                                     <td>Dictatorship</td>
                                 </tr>
                                 <tr>
-                                    <td>Zaonce</td>
+                                    <th scope="row">Zaonce</th>
                                     <td>5.3 B</td>
                                     <td>Corporate State</td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <td colspan="3">This is the tfoot </td>
+                                    <td colspan="3">This is the tfoot</td>
                                 </tr>
                             </tfoot>
                         </table>
@@ -255,7 +255,7 @@
                             </p>
                             <p>
                                 <label for="select_dd">Inline form elements</label><br>
-                                <select id="select_dd" name="select_dd" aria-label="Inline select example">
+                                <select id="select_dd" name="select_dd">
                                     <optgroup label="Group 1">
                                         <option value="1">Some text goes here</option>
                                         <option value="2">Another choice could be here</option>
@@ -299,12 +299,12 @@
                             </p>
                             <p>
                                 <label for="file_upload">File upload</label><br>
-                                <input type="file" id="file_upload" name="file_upload" accept="image/*" multiple aria-label="File upload">
+                                <input type="file" id="file_upload" name="file_upload" accept="image/*" multiple>
                                 <input type="button" value="Upload">
                             </p>
                             <p>
                                 <label for="select_multi">Select multiple</label><br>
-                                <select id="select_multi" name="select_multi" multiple="multiple" size="10" aria-label="Select multiple">
+                                <select id="select_multi" name="select_multi" size="10" multiple>
                                     <optgroup label="Group 1">
                                         <option value="1">Some text goes here</option>
                                         <option value="2">Another choice could be here</option>
@@ -324,43 +324,43 @@
                             </p>
                             <p>
                                 <label for="textarea">Textarea</label><br>
-                                <textarea id="textarea" name="textarea" rows="5" placeholder="This is an example of HTML5 placeholder text." aria-label="Textarea"></textarea>
+                                <textarea id="textarea" name="textarea" rows="5" placeholder="This is an example of HTML5 placeholder text."></textarea>
                             </p>
                             <p>
                                 <label for="color">Colour</label><br>
-                                <input type="color" id="color" name="color" value="#cc0000" aria-label="Colour">
+                                <input type="color" id="color" name="color" value="#cc0000">
                             </p>
                             <p>
                                 <label for="date">Date</label><br>
-                                <input id="date" name="date" type="date" aria-label="Date">
+                                <input id="date" name="date" type="date">
                             </p>
                             <p>
                                 <label for="datetime-local">Datetime local</label><br>
-                                <input id="datetime-local" name="datetime-local" type="datetime-local" aria-label="Datetime local">
+                                <input id="datetime-local" name="datetime-local" type="datetime-local">
                             </p>
                             <p>
                                 <label for="email">Email</label><br>
-                                <input id="email" name="email" type="email" placeholder="name@example.com" aria-label="Email">
+                                <input id="email" name="email" type="email" placeholder="name@example.com">
                             </p>
                             <p>
                                 <label for="month">Month</label><br>
-                                <input id="month" name="month" type="month" aria-label="Month">
+                                <input id="month" name="month" type="month">
                             </p>
                             <p>
                                 <label for="number">Number</label><br>
-                                <input id="number" name="number" type="number" min="0" max="999" step="1" aria-label="Number">
+                                <input id="number" name="number" type="number" min="0" max="999" step="1">
                             </p>
                             <p>
                                 <label for="password">Password</label><br>
-                                <input id="password" name="password" type="password" aria-label="Password">
+                                <input id="password" name="password" type="password">
                             </p>
                             <p>
                                 <label for="range">Range</label><br>
-                                <input id="range" name="range" type="range" aria-label="Range">
+                                <input id="range" name="range" type="range">
                             </p>
                             <p>
                                 <label for="search2">Search</label><br>
-                                <input id="search2" name="search" type="search" aria-label="Search">
+                                <input id="search2" name="search" type="search">
                             </p>
                             <p>
                                 <label for="tel">Tel (phone)</label><br>
@@ -368,11 +368,11 @@
                             </p>
                             <p>
                                 <label for="text">Text <abbr class="required" title="Required">*</abbr></label><br>
-                                <input id="text" name="text" type="text" required aria-label="Text">
+                                <input id="text" name="text" type="text" required>
                             </p>
                             <p>
                                 <label for="text-data">Text with data list</label><br>
-                                <input id="text-data" name="text-data" type="text" list="text-data-list" aria-label="Text with data list">
+                                <input id="text-data" name="text-data" type="text" list="text-data-list">
                                 <datalist id="text-data-list">
                                     <option value="Afghanistan">
                                     <option value="Albania">
@@ -383,15 +383,15 @@
                             </p>
                             <p>
                                 <label for="time">Time</label><br>
-                                <input id="time" name="time" type="time" aria-label="Time">
+                                <input id="time" name="time" type="time">
                             </p>
                             <p>
                                 <label for="url">URL</label><br>
-                                <input id="url" name="url" type="url" aria-label="URL">
+                                <input id="url" name="url" type="url">
                             </p>
                             <p>
-                                <label for="url">Week</label><br>
-                                <input id="week" name="week" type="week" aria-label="Week">
+                                <label for="week">Week</label><br>
+                                <input id="week" name="week" type="week">
                             </p>
                             <p>
                                 <input type="submit" value="Input - Submit">
